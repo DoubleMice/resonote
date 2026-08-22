@@ -1,15 +1,110 @@
 source: unchained
-refreshed_at: 2026-08-22T03:21:29.769Z
+refreshed_at: 2026-08-22T18:06:32.251Z
 min_duration: 3300
 min_date: "20260801"
-total_candidates: 1
-done: 0
+total_candidates: 2
+done: 1
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    guid: e2832208-9dde-11f1-894c-2b6d47d836a0
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    duration: 4467
+    published: Sat, 22 Aug 2026 04:06:00 -0000
+    published_sort: "20260822"
+    first_seen_at: 2026-08-22T18:06:32.243Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    image: https://megaphone.imgix.net/podcasts/e2832208-9dde-11f1-894c-2b6d47d836a0/image/e4464df7d57c1037bb487bd04668ccf6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Venice founder Erik Voorhees says crypto's real job was never speculation. It's becoming the rails AI agents
+      actually need. Plus, why he sold equity, not tokens.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at http://unchainedcrypto.com/go/1inch-sn
+
+
+      ========================================================
+
+
+      Stripe bought OpenRouter this month in one of the cleanest crypto-to-AI pivots yet, and Erik Voorhees says most of
+      the industry drew the wrong lesson from it.
+
+
+      Voorhees, founder and CEO of Venice AI, joins Kain Warwick and Taylor Monahan to argue that crypto's job was never
+      to serve crypto people, it was to become the financial rails a decentralized AI future actually needs. He pushes
+      back on the instinct to abandon tokens for pure AI plays, and on the assumption that America deserves to win the
+      AI race just because it is America.
+
+
+      They get into why Voorhees sold Venice's equity but refused to sell its VVV tokens, why he says the big labs are
+      losing money "hand over fist" subsidizing $200-a-month plans, how DeepSeek reset the cost curve for inference, and
+      why he calls the moderation layer sitting inside today's AI models "deceptive."
+
+
+      His answer for who should actually win the AI race has nothing to do with flags.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠Erik Voorhees - Founder and CEO of Venice AI
+
+      Timestamps
+
+
+      🤝 01:51 Why Stripe buying OpenRouter is one of crypto's cleanest AI pivots
+
+
+      🪙 04:02 Why Erik says he can't pivot out of crypto even while building an AI company
+
+
+      ⚖️ 12:43 Crypto has principles, AI didn't: unpacking the two industries' DC playbooks
+
+
+      💧 27:58 1inch Aqua: See how shared liquidity keeps LPs' tokens in their wallet at https://1inch.com/aqua
+
+
+      💰 28:44 Why Erik sold Venice's equity but refuses to sell its VVV tokens
+
+
+      🧩 42:51 Inside Venice's strategy for aggregating every major AI model in one app
+
+
+      📉 49:15 Why Erik says labs are bleeding money on $200 plans, and how DeepSeek reset AI pricing
+
+
+      🌐 57:30 Why Erik says America doesn't deserve to win the AI race by default
+
+
+      🔓 01:02:41 Why Erik has 'zero faith' in politics and trusts decentralized tech instead
+
+
+      🕵️ 01:09:56 Why Erik calls the moderation layer inside AI models 'deceptive'
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-22T18:06:33.550Z
+    transcript_job_id: 6e82227e-dc31-4392-b123-1977f4267e42_4cef868c32af4d26a5cfb7590e76bfb5,3d5ed07d-b5bd-4fb3-b3ee-b6b44e7f63a4_4d9257de51d548c0b24afbc2e40d5fd1,011b7e14-731b-42b6-b4b9-830b942d0a20_ed917c69df474976b1d7fccbf2469382,66e2c7c0-d4d1-4b60-8cfb-6c3bff3ee976_955e0e18ac23484485c5ee39935a33e0,1c72375d-8575-479d-881f-159c2ec936b1_1465659d9683428fbeeb473e77141c22
+    transcript_completed_at: 2026-08-22T18:11:43.512Z
   - id: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     guid: 8d1ab14c-8fbe-11f1-9074-83a5cc59ebf7
     title: Should Tokenized Stock Only Come From Issuers? Yes, Says Carlos Domingo

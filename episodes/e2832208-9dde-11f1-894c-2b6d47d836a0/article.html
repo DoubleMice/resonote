@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uneasy Money：Erik Voorhees 谈 AI 的"隐藏过滤器"</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1e1e1e;
+    line-height: 1.75;
+    font-size: 17px;
+    background: #fff;
+    padding: 40px 20px 80px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.4; margin-bottom: 12px; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+  .meta a { color: #1971c2; }
+  h2 { font-size: 22px; margin: 44px 0 14px; padding-left: 12px; border-left: 4px solid #1971c2; }
+  p { margin-bottom: 16px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; }
+  .card { padding: 14px; border-radius: 8px; font-size: 15px; line-height: 1.6; }
+  .card strong { display: block; margin-bottom: 4px; }
+  .c-red { background: #fff5f5; border-left: 4px solid #fa5252; }
+  .c-blue { background: #e7f5ff; border-left: 4px solid #339af0; }
+  .c-green { background: #ebfbee; border-left: 4px solid #51cf66; }
+  .c-yellow { background: #fff9db; border-left: 4px solid #fcc419; }
+  .c-purple { background: #f3f0ff; border-left: 4px solid #9775fa; }
+  .c-orange { background: #fff4e6; border-left: 4px solid #fd7e14; }
+  blockquote {
+    margin: 20px 0; padding: 14px 18px;
+    background: #f8f9fa; border-left: 4px solid #868e96;
+    font-style: italic; font-size: 16px;
+  }
+  blockquote .src { display: block; font-style: normal; font-size: 13px; color: #868e96; margin-top: 6px; }
+  .gloss { color: #666; font-size: 15px; }
+  .quotes .q { margin-bottom: 16px; padding: 14px 16px; border-radius: 8px; font-size: 15px; }
+  .q .src { display: block; margin-top: 6px; font-size: 13px; opacity: 0.6; }
+  .footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #eee; font-size: 14px; color: #666; }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Erik Voorhees：AI 的"隐藏过滤器"是欺骗，Venice 的选择是直接对话</h1>
+<div class="meta">
+  <strong>Uneasy Money · Unchained</strong>｜嘉宾：Erik Voorhees（Venice AI 创始人兼 CEO）｜主持人：Kain Warwick、Taylor Monahan<br>
+  2026 年 8 月 · 1 小时 14 分钟 · <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3">收听原节目</a>
+</div>
+
+<p>本周 Unchained 的 Uneasy Money 请到了 Venice AI 的创始人 Erik Voorhees。节目从一条大新闻开场：Stripe 收购了 OpenRouter——一家从 NFT 世界完全转身、专注 AI 推理 API 的两年公司。Voorhees 称赞它"踩准了时机，做对了产品"，但他自己选择了另一条路：把加密世界的工具融进一个面向大众的 AI 产品里，而不是离开 crypto。于是这一期聊的全是"融合"带来的麻烦与机会：token 和股权哪个该卖？烧掉所有 token 是什么策略？以及那句贯穿始终的判断——大多数 AI 产品让你隔着公司委员会的过滤器与机器对话，而这是不透明的、可以被轻易滥用的欺骗。</p>
+
+<div class="cards">
+  <div class="card c-red"><strong>Stripe 收购 OpenRouter</strong>从 NFT 硬转向推理 API 的成功样本；Venice 则代表"把 crypto 融进 AI"的另一条路线。</div>
+  <div class="card c-blue"><strong>卖股权，不卖 token</strong>Venice 融资时卖股权、保留全部 token，长期策略是"烧光所有 VVV"。</div>
+  <div class="card c-green"><strong>用户付费返 VVV</strong>把订阅收入的一部分以 VVV 返还用户——"买忠诚度"式的激励设计。</div>
+  <div class="card c-yellow"><strong>AI 的隐藏过滤器</strong>"你在通过公司委员会的过滤器与机器对话"——不透明的审查层让 AI 显得 deceptive。</div>
+  <div class="card c-purple"><strong>原则 vs 民族主义</strong>"美国必须赢？应该赢的是原则。"中美 AI 竞争下的个人立场。</div>
+  <div class="card c-orange"><strong>Crypto 为机器设计</strong>"机器人不会用富国银行的账户"——agent 时代的金融 rails 猜想。</div>
+</div>
+
+<h2>从 OpenRouter 说起：两种离开 crypto 的方式</h2>
+<p>OpenRouter 的故事在 Voorhees 眼里是一个"了不起的成就"：公司成立两年出头，"nailed the timing, nailed the product"，在 API 之上搭建了一个连接推理供给方与需求方的市场，然后被 Stripe 收购。它的路径是彻底告别加密世界——主持人称之为"full pivot out of crypto"，一句"Like goodbye"概括了这种决绝。</p>
+<p>Venice 走的是另一条路。主持人 Kain Warwick 评价说，在"crypto 加 AI"的项目里，Venice 是目前最领先的例子——它不是转向，而是把两者揉在一起。Voorhees 对此的回答相当直白：<em>"I can't pivot out of crypto... it flows through my blood."</em> 他真正关心的不是加密生态本身，而是让最好的 primitives——激励机制、金融工具——走出加密圈，进入普通产品。"如果一切都是加密人给加密人做的加密产品，那我们就错过了重点。"</p>
+
+<h2>Token 的价值不是支付，是 stake</h2>
+<p>很多人以为 Venice 发 token 是为了让用户用 crypto 付款。Voorhees 说那只是"table stakes"——和 Visa、Stripe 一样的支付方式，没什么值得兴奋。真正有意思的是"the ability to give people a stake in a platform and a project"。</p>
+<p>他给出的背景是：除了 Google，所有主要 AI 实验室都是私有的。普通人看着 AI 创造巨额财富，却只能坐在那里担心自己的工作什么时候被抢走。Venice 想证明另一种可能：从创立早期就持有平台 token 的用户，是参与者而不是消费者——"if your users can be participants in it with you instead of just consumers of the thing"。</p>
+
+<h2>回馈计划：用 VVV 买忠诚度</h2>
+<p>他透露了一个尚未部署的设计：把用户每月订阅或积分消费的一部分拿去回购 VVV，再以 VVV 的形式返还给用户，条件是用户留在平台一段时间。他称之为"buying loyalty"——买忠诚度，换来教用户学会用产品的机会；留下的人最终免费获得一份 stake，平台也因此变得更粘。</p>
+<p>这个设计的方向与常见的"发币拉盘"相反：他不愿意对用户说"我们有 token，去买吧"——"that feels a little dirty"。把钱还给已经在消费的用户，更像一个奖励计划，而不是一场销售。</p>
+
+<h2>卖股权，留 token</h2>
+<p>Venice 的融资选择本身就很说明问题。公司先是作为一家怀俄明公司自筹资金干了一年，然后发布 VVV 但一枚不卖，再一年后验证了市场契合度，到了要规模化的时候，面前有两个资产可以卖。结论是：卖股权，留 token。投资人拿到的是一份以特定价格购买 token 的期权，四年解锁——他们必须理解并接受一个非常不传统的财务策略。</p>
+<p>这个策略的核心是通缩："we're gonna try to burn all the tokens in existence"。收入回购 VVV 并销毁，token 供给随时间收缩；股权则相反，随时可以稀释——"There's no reason not to dilute that"。在 Voorhees 看来两者并不冲突：公司自己就是最大的 token 持有者，"每烧一美元都是帮股权持有人"，因为他本人就是最大的股权持有人。至于 Twitter 上永远没人相信这套——"bro, I am the token holder"——他的答案是让数据说话：token 流向、供给、燃烧量全部上链，透明本身就是论证。</p>
+
+<h2>透明 vs 不透明</h2>
+<p>为什么加密世界总是"看起来更糟"？Voorhees 的观察是：股权同样危险，只是看不见——"You don't see the equity that goes to zero when it's a private company. There's no chart." 私有公司的股权归零时没有曲线可看，而加密世界的一切瑕疵都摊在所有人眼前。透明是它被误解的原因，也是它最终能被检验的原因。</p>
+<p>他还顺带批评了 meme coin 时代的监管倒置：一个有真实用途的项目发 token，反而比直接发 meme coin 更容易被认定为证券。结果就是"DeFi summer 成了最后一次正经 token 的夏天"；Voorhees 总结说，激励机制把所有人都推向了 meme coin——"the incentives are structured so that you're better off buying a meme coin"。主持人 Kain 则自嘲当年把 Synthetix 做成纯 DAO、关掉所有实体，律师们都说他疯了。</p>
+
+<h2>两个世界：crypto 与 AI 的意识形态</h2>
+<p>节目里最有张力的部分，是两个技术世界观的对照。Voorhees 概括说，crypto 世界有一些共享原则——去中心化、隐私、个人主权、怀疑集中的权力；而 AI 世界（他承认自己在过度概括）来自学术传统：聪明人相信事物应该被控制，问题只是"谁在控制、目标是什么"。他称之为一种逻辑谬误：把可以理解的窄领域，误当成不可理解的复杂系统。</p>
+<p>面对"强大且可能危险"的技术，只有两种回应：集中化，或者去中心化。加密人选了后者，而大多数 AI 人选了前者。他半开玩笑地说，Venice 其实是一家"AI safety company"——为了防止机器智能成为国家的官方喉舌，为了防止那个"very dystopian"的未来。而他对去中心化的信心，部分来自主持人 Kain 提出的谦逊论据——"The future is actually very complicated and we don't know"，问题局部化总好过系统性、灾难性地爆发——Voorhees 对此深表赞同。</p>
+
+<h2>推理经济学：智能在通缩</h2>
+<p>关于推理生意的经济学，Voorhees 的判断很直接：智能的成本在急剧下降，而且会一直降下去——"the cost of intelligence is falling dramatically"。对世界这是好消息，就像粮食和电价变便宜一样；但对卖 token 的公司，这是噩梦：产品持续通缩、持续商品化，最后"没有人能靠卖 token 赚到实质性的钱"。主持人补充了佐证：DeepSeek V3 发布时价格便宜了 50 倍；开源模型已经追到闭源身后一两个月、成本只有十分之一。</p>
+<p>这也解释了 Venice 的收入结构：API 按量计费是"race to zero"，不指望赚钱；真正有毛利的是 Pro 订阅——用户每月付 18 美元，公司付出 6 到 10 美元的成本。至于 Anthropic 的 200 美元无限计划，他直言那是"hand over fist"地在亏钱，用户一个月能用掉一万美元的 token 却只付 200 美元，"不知道他们能忍多久"。</p>
+
+<h2>本地模型的幻觉</h2>
+<p>他自己买过一台 2 万美元的 Mac Studio（512GB 内存）跑本地模型，结论是 payback curve 一直在往错误的方向走——"there's no way to pay that back"。无论边缘设备多强，"whatever you can run at the edge, you can run something 10x as intelligent from a server"。本地运行的真正价值是控制、隐私保证和学习技术，而不是省钱——"It's a myth and an illusion"。</p>
+<p>对普通人来说，一台 200 美元的上网本通过 API 就能获得同样的智能，没有任何前期资本。真正要紧的不是"谁在本地跑模型"，而是"你能访问什么样的服务器"——如果所有推理都只能来自国家批准的数据中心，只能问被允许的问题，"that is the future that I want to avoid"。</p>
+
+<h2>原则 vs 民族主义</h2>
+<p>面对中美 AI 竞争，Voorhees 的立场毫不含糊："I'm not a nationalist at all. I care about principles." 如果中国模型更好地表达了自由与隐私的原则，他就更关心中国模型。美国如果靠关闭市场、靠监控每个人的推理来"赢"，那它不值得赢——"what should win actually is the principles"。他观察到的趋势是：过去十几年，美国从极端市场化走向越来越强的控制与监控，而中国从威权起点变得市场化——这条曲线让他害怕。</p>
+<p>最让他觉得荒谬的是关于政府持股 AI 公司的讨论：那"basically the most Chinese thing you could do. The most anti-American thing you can do"，而这居然已经进入了可讨论的 Overton window。"We just need 30% guys"——这句话在节目里像玩笑，也像警告。</p>
+
+<h2>零政治信任，技术是唯一出路</h2>
+<p>为什么要坚持去中心化？因为他"zero faith in the political process"——制度的惯性已经无法被任何人控制，"the train has left the station"。唯一的解是技术：Bitcoin 之所以伟大，正因为你不必去哪里投票，直接使用它就好，"you didn't require anyone's permission for it. It actually allowed you to opt out of the system just on your own"。</p>
+<p>金融领域已经有了 crypto；机器智能领域还差得远。他的警告是："if we do not have decentralization in the realm of machine intelligence, then we are in big trouble"。推理已经可以很好地去中心化，训练还不行——有公司在做去中心化训练，有希望，但"they're not competitive yet"。</p>
+
+<h2>AI 的隐藏过滤器</h2>
+<p>本期标题的出处是节目末尾的一段话。他说，智能机器与人类心智的互动本该是美丽的共生，但你其实是在通过一层过滤器与机器对话——Anthropic 的公司委员会、OpenAI 的公司委员会，以及任何介入的国家监管者。"It's got this opaque, undefined like MIDI layer"：你不知道这层有多厚，不知道什么来自机器、什么来自委员会，也不知道边界在哪里。他称之为 deceptive——不透明的、可以被轻易滥用的。而 Venice 的答案只有一句话：<em>"In Venice, there is no layer. You just talk directly to the machine."</em></p>
+<p>对愿意相信的人，靠的是他的历史与声誉；对"加密式偏执"的人，Venice 提供 TEE 模型和端到端加密，整个推理往返可以由一个略懂技术的外部人验证。当然模型是随机的，所以验证的办法是同一个问题问三次、合并统计——"you just gotta brute force it"。</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="q c-blue">"I have zero faith in the political process... The only solution is actually technological."
+    <span class="src">— 政治无解，技术是唯一出路</span></div>
+  <div class="q c-red">"You're interacting with the machine through like a filter of corporate committees... It's got this opaque, undefined MIDI layer."
+    <span class="src">— AI 的"隐藏过滤器"，本期标题的出处</span></div>
+  <div class="q c-green">"In Venice, there is no layer. You just talk directly to the machine."
+    <span class="src">— Venice 的核心承诺</span></div>
+  <div class="q c-yellow">"We're gonna try to burn all the tokens in existence."
+    <span class="src">— VVV 的通缩战略</span></div>
+  <div class="q c-purple">"I'm not a nationalist at all. I care about principles."
+    <span class="src">— 原则先于国籍</span></div>
+  <div class="q c-orange">"I don't see a future where the robots are using bank accounts at Wells Fargo."
+    <span class="src">— 机器时代的金融 rails</span></div>
+</div>
+
+<p class="gloss">注：本文为节目的中文整理与转述；英文引语均来自节目原始转录（<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3">原节目音频</a>）。文中"作者概括"部分为整理者的归纳，不代表嘉宾原话。本内容仅为信息整理，不构成任何投资建议。</p>
+
+<div class="footer">
+  <strong>Uneasy Money · Unchained</strong> — Erik Voorhees（Venice AI 创始人兼 CEO）× Kain Warwick × Taylor Monahan<br>
+  2026 年 8 月 · 1 小时 14 分钟<br>
+  <a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3">收听原节目</a>
+</div>
+
+</div>
+</body>
+</html>

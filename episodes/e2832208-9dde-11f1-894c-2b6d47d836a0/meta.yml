@@ -1,0 +1,29 @@
+id: e2832208-9dde-11f1-894c-2b6d47d836a0
+source: unchained
+title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+guest: "Erik Voorhees"
+guest_role: "Venice AI 创始人兼 CEO"
+published: 2026-08
+duration: 1h14m
+url: "https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3"
+thumbnail: "https://megaphone.imgix.net/podcasts/e2832208-9dde-11f1-894c-2b6d47d836a0/image/e4464df7d57c1037bb487bd04668ccf6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+status: generated
+tags:
+  - ai-products
+  - startup
+  - ai-safety
+  - interview
+  - ceo
+  - founder
+  - strategic
+summary: |
+  Venice AI 创始人 Erik Voorhees 在 Unchained 的 Uneasy Money 节目里，从 Stripe 收购 OpenRouter 聊起，解释了为什么 Venice 选择"卖股权、留 token"，并抛出"烧光所有 VVV"的通缩策略。他批评大多数 AI 产品让用户隔着"公司委员会组成的过滤器"与模型对话，称之为不透明的欺骗；在 AI 地缘政治上，他坚持原则先于民族主义，并把去中心化技术看作政治失灵后的唯一出路。
+core_ideas:
+  - 'Erik Voorhees 认为主流 AI 产品普遍隔着一层"公司委员会"组成的隐藏过滤器——不透明、可被滥用，这是他把 Venice 设计成"无层直连 + TEE 可验证推理"的原因'
+  - 'Venice 融资卖的是股权、留下全部 token：VVV 的长期策略是通缩，收入回购后燃烧，公司自己就是最大的 token 持有者，股权与 token 的利益由此对齐'
+  - 'Token 的真正价值不是支付（那只是 table stakes），而是给用户 stake：把订阅收入的一部分以 VVV 返还，"买忠诚度"，让用户从消费者变成参与者'
+  - '推理经济学正在通缩与商品化：智能成本暴跌，Anthropic 的 $200 订阅在亏钱，API 销售是 race to zero，Pro 订阅（$18/月、成本 $6–10）才是毛利来源'
+  - '本地模型是"省钱幻觉"：$20,000 Mac Studio 的 payback curve 一路走错方向，边缘设备永远输给"10x 更智能"的数据中心，本地的价值是控制与隐私'
+  - '面对中美 AI 竞争，他选原则而非民族主义；"政府持股 AI 公司是最中国的事情"，而他对政治进程零信任，唯一的解是去中心化技术'
+article_path: episodes/e2832208-9dde-11f1-894c-2b6d47d836a0/article.html
+base: /episodes/e2832208-9dde-11f1-894c-2b6d47d836a0/

@@ -1,0 +1,29 @@
+id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+source: latepost
+title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+guest: "陈哲（Peter）"
+guest_role: "AlphEast 创始合伙人"
+published: 2026-06
+duration: 1h54m
+url: "https://podcast.latepost.com/170"
+thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/9/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677/cover.jpg?v=1"
+status: generated
+tags:
+  - robotics
+  - ai-research
+  - interview
+  - investor
+  - deep-dive
+  - technical
+  - strategic
+summary: |
+  晚点聊「具身季报」系列第二期，AlphEast 创始合伙人陈哲（Peter）与主持人程曼祺复盘 26 年 Q2 具身智能 Top 5 进展：荣耀在亦庄人形马拉松包揽前三、Figure 直播分拣 13 万个包裹、五脊二代手领跑 ICRA 灵巧手竞争、英伟达发布全开源 Omni model Cosmos 3 掀起世界模型创投热、Pi 0.7 与 Gen-1 让 VLA 叙事继续延伸。节目还讨论了数据采集范式的演进、绳驱与直驱的技术路线之争、OpenAI 与 Google 的入局、具身模型的两极终局，以及大厂入场的"最后窗口"。
+core_ideas:
+  - '荣耀「闪电」在亦庄人形马拉松包揽冠亚季军，成绩一年内从 2h40m 提升到约 50 分钟——有主制能力、资源和人才密度的大厂，正在把竞争从单一技术创业推向系统性工程作战'
+  - 'Figure 三台机器人连续直播 100+ 小时分拣 13 万个包裹，首次向大众普及人形机器人的工业价值；软包翻面展平这类长尾任务，只有人形 + 具身模型泛化能力才能解决'
+  - '灵巧手成为新战场：五脊二代手（20 自由度直驱）在 ICRA 大获关注，体积只有 Shadow 一半；谁先提供可靠、稳定、廉价的供给，谁就能成为行业事实标准'
+  - '英伟达 6 月发布全开源 Omni model Cosmos 3，用 Mixture of Transformers 统一理解与生成；世界模型创投热随之爆发，4 月初已有人整理出 49 家相关公司'
+  - 'VLA 与 World Model 并非替代关系：Pi 0.7 在传统 VLA 上接轻量世界模型，Generalist 用 50 万小时真实交互数据端到端训练 Gen-1，并明确拒绝 VLA/世界模型的标签'
+  - '具身模型的终局可能两极化：高水平开源模型（英伟达、Google）与顶级闭源模型（Anthropic、OpenAI、阿里、字节）二分天下；宇树 IPO 为行业定下估值锚点，而未来六个月是大厂入场的最后窗口'
+article_path: episodes/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677/article.html
+base: /episodes/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677/

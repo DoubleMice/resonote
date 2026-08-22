@@ -1,0 +1,19 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {"id":"l1","type":"rectangle","x":20,"y":60,"width":230,"height":120,"angle":0,"strokeColor":"#1971c2","backgroundColor":"#a5d8ff","fillStyle":"hachure","strokeWidth":2,"strokeStyle":"solid","roughness":1.5,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":1,"version":1,"versionNonce":1,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"l1t","type":"text","x":30,"y":72,"width":210,"height":96,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":2,"version":1,"versionNonce":2,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":15,"fontFamily":1,"text":"边缘设备\n$200 上网本 · API 足够\n$20,000 Mac Studio\n也喂不饱","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"边缘设备\n$200 上网本 · API 足够\n$20,000 Mac Studio\n也喂不饱","lineHeight":1.25,"baseline":19},
+
+    {"id":"r1","type":"rectangle","x":330,"y":60,"width":230,"height":120,"angle":0,"strokeColor":"#2b8a3e","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"strokeStyle":"solid","roughness":1.5,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":3,"version":1,"versionNonce":3,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"r1t","type":"text","x":340,"y":72,"width":210,"height":96,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":4,"version":1,"versionNonce":4,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":15,"fontFamily":1,"text":"大规模数据中心\n10x 更智能\n单位成本更低\n规模化制造经济","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"大规模数据中心\n10x 更智能\n单位成本更低\n规模化制造经济","lineHeight":1.25,"baseline":19},
+
+    {"id":"a1","type":"arrow","x":250,"y":115,"width":0,"height":0,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":2},"seed":5,"version":1,"versionNonce":5,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"points":[[0,0],[80,0]],"startArrowhead":null,"endArrowhead":"arrow"},
+    {"id":"at","type":"text","x":255,"y":90,"width":90,"height":40,"angle":0,"strokeColor":"#e8590c","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":6,"version":1,"versionNonce":6,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":13,"fontFamily":1,"text":"永远\n更高效","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"永远\n更高效","lineHeight":1.25,"baseline":16},
+
+    {"id":"ft","type":"text","x":60,"y":230,"width":440,"height":60,"angle":0,"strokeColor":"#862e9c","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":7,"version":1,"versionNonce":7,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":16,"fontFamily":1,"text":"本地的价值：完全控制 · 隐私保证 · 学习技术\n而不是省钱——「省钱」是个幻觉","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"本地的价值：完全控制 · 隐私保证 · 学习技术\n而不是省钱——「省钱」是个幻觉","lineHeight":1.25,"baseline":20}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

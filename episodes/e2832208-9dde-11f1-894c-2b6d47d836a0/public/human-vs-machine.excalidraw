@@ -1,0 +1,19 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {"id":"h1","type":"text","x":80,"y":10,"width":120,"height":30,"angle":0,"strokeColor":"#c92a2a","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":1,"version":1,"versionNonce":1,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":22,"fontFamily":1,"text":"人类","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"人类","lineHeight":1.25,"baseline":28},
+    {"id":"h2","type":"text","x":340,"y":10,"width":180,"height":30,"angle":0,"strokeColor":"#2b8a3e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":2,"version":1,"versionNonce":2,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":22,"fontFamily":1,"text":"机器 / Agent","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"机器 / Agent","lineHeight":1.25,"baseline":28},
+
+    {"id":"l1","type":"rectangle","x":20,"y":60,"width":240,"height":120,"angle":0,"strokeColor":"#c92a2a","backgroundColor":"#ffa8a8","fillStyle":"hachure","strokeWidth":2,"strokeStyle":"solid","roughness":1.5,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":3,"version":1,"versionNonce":3,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"l1t","type":"text","x":30,"y":72,"width":220,"height":96,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":4,"version":1,"versionNonce":4,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":15,"fontFamily":1,"text":"银行电汇：打电话\n五步验证 · 跑网点\n层层防护 = 摩擦","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"银行电汇：打电话\n五步验证 · 跑网点\n层层防护 = 摩擦","lineHeight":1.25,"baseline":19},
+
+    {"id":"r1","type":"rectangle","x":320,"y":60,"width":240,"height":120,"angle":0,"strokeColor":"#2b8a3e","backgroundColor":"#b2f2bb","fillStyle":"hachure","strokeWidth":2,"strokeStyle":"solid","roughness":1.5,"opacity":100,"groupIds":[],"frameId":null,"roundness":{"type":3},"seed":5,"version":1,"versionNonce":5,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false},
+    {"id":"r1t","type":"text","x":330,"y":72,"width":220,"height":96,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":6,"version":1,"versionNonce":6,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":15,"fontFamily":1,"text":"公钥对 · 链上资产\n直接访问 · 无需许可\n没有政治守门人","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"公钥对 · 链上资产\n直接访问 · 无需许可\n没有政治守门人","lineHeight":1.25,"baseline":19},
+
+    {"id":"ft","type":"text","x":90,"y":230,"width":380,"height":60,"angle":0,"strokeColor":"#862e9c","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":7,"version":1,"versionNonce":7,"isDeleted":false,"boundElements":[],"updated":1,"link":null,"locked":false,"fontSize":16,"fontFamily":1,"text":"crypto 一直被人嫌弃 UX 差——\n原来它天生是给机器设计的","textAlign":"center","verticalAlign":"middle","containerId":null,"originalText":"crypto 一直被人嫌弃 UX 差——\n原来它天生是给机器设计的","lineHeight":1.25,"baseline":20}
+  ],
+  "appState": {"gridSize": null, "viewBackgroundColor": "#ffffff"},
+  "files": {}
+}

@@ -18266,3 +18266,224 @@ jobs:
     submitted_at: 2026-08-21T18:09:59.816Z
     updated_at: 2026-08-21T18:16:01.996Z
     completed_at: 2026-08-21T18:16:01.996Z
+  - key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z:chunk:0
+    parent_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    attempt_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z
+    provider: mimo
+    id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    source: unchained
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    task_id: 6e82227e-dc31-4392-b123-1977f4267e42_4cef868c32af4d26a5cfb7590e76bfb5
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:06:33.550Z
+    updated_at: 2026-08-22T18:07:44.119Z
+    completed_at: 2026-08-22T18:07:44.119Z
+  - key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z:chunk:1
+    parent_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    attempt_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z
+    provider: mimo
+    id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    source: unchained
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    task_id: 3d5ed07d-b5bd-4fb3-b3ee-b6b44e7f63a4_4d9257de51d548c0b24afbc2e40d5fd1
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:06:33.550Z
+    updated_at: 2026-08-22T18:09:17.918Z
+    completed_at: 2026-08-22T18:09:17.918Z
+  - key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z:chunk:2
+    parent_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    attempt_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z
+    provider: mimo
+    id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    source: unchained
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    task_id: 011b7e14-731b-42b6-b4b9-830b942d0a20_ed917c69df474976b1d7fccbf2469382
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:06:33.550Z
+    updated_at: 2026-08-22T18:10:08.000Z
+    completed_at: 2026-08-22T18:10:08.000Z
+  - key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z:chunk:3
+    parent_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    attempt_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z
+    provider: mimo
+    id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    source: unchained
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    task_id: 66e2c7c0-d4d1-4b60-8cfb-6c3bff3ee976_955e0e18ac23484485c5ee39935a33e0
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:06:33.550Z
+    updated_at: 2026-08-22T18:10:58.072Z
+    completed_at: 2026-08-22T18:10:58.072Z
+  - key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z:chunk:4
+    parent_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    attempt_key: unchained:e2832208-9dde-11f1-894c-2b6d47d836a0:20260822:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3:mimo:2026-08-22T18:06:33.550Z
+    provider: mimo
+    id: e2832208-9dde-11f1-894c-2b6d47d836a0
+    source: unchained
+    title: "Uneasy Money: Why Erik Voorhees Calls AI's Hidden Filter 'Deceptive'"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6298788556.mp3
+    task_id: 1c72375d-8575-479d-881f-159c2ec936b1_1465659d9683428fbeeb473e77141c22
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:06:33.550Z
+    updated_at: 2026-08-22T18:11:43.512Z
+    completed_at: 2026-08-22T18:11:43.512Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:0
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 0eb1062b-9d47-4638-bc7f-b81b72d14821_eddf5e8facac4c178b6f43e2ab028058
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:13:15.758Z
+    completed_at: 2026-08-22T18:13:15.758Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:1
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: f7d4f2fc-f020-40b0-bbfa-8035229487dc_085bd3253ff74fcb82cba9fb83efb660
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:13:58.440Z
+    completed_at: 2026-08-22T18:13:58.440Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:2
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 60f6f4c8-36b7-4ade-a1ac-850d534a671d_8b9e3be77a3c497c977e09b593f1a949
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:14:38.820Z
+    completed_at: 2026-08-22T18:14:38.820Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:3
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 025cbb3b-63fb-41d9-b187-a21633c0a7e5_f77bfe072e2b418cbf099463c9552c34
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:15:19.144Z
+    completed_at: 2026-08-22T18:15:19.144Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:4
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 57fc7f60-f12e-4331-ba48-7b52a1f7129a_9f4ecced58b543fbadc3c78a5aa13621
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:16:04.360Z
+    completed_at: 2026-08-22T18:16:04.360Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:5
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 34d8ca56-16ae-4ebe-98e1-a9e29f076162_cb37e341518a426783ce8fc6b4c5e47f
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:16:46.584Z
+    completed_at: 2026-08-22T18:16:46.584Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:6
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: 5b2bacda-3c95-4767-bee9-be11696e05fe_8e582aab04cb4110b5f8b7a3c44c1ee9
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:17:29.637Z
+    completed_at: 2026-08-22T18:17:29.637Z
+  - key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z:chunk:7
+    parent_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    attempt_key: latepost:9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677:20260629:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3:mimo:2026-08-22T18:11:43.801Z
+    provider: mimo
+    id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
+    source: latepost
+    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
+    task_id: a8498e19-e888-4c0e-8a0a-7dca57207358_6a8cf56ff2de4b01831839953469a928
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-22T18:11:43.801Z
+    updated_at: 2026-08-22T18:17:55.256Z
+    completed_at: 2026-08-22T18:17:55.256Z
