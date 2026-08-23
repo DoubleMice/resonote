@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-23T03:26:27.293Z
+refreshed_at: 2026-08-23T18:06:40.715Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 22
-done: 0
+done: 1
 pending: 0
-needs_transcript: 22
+needs_transcript: 21
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -162,8 +162,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-23T18:06:41.990Z
+    transcript_job_id: 92c604bb-c67e-42d6-9e27-30c57d2c309f_0fcf339e289841ed80772f6314eb513f,05114a59-483f-475e-a690-173d50f876a0_e4689c365dd84279b8746f115aae78ca,bc05d22e-efe9-46cd-995d-4394585f35d3_2ceda043159b44fdab91c475a66a1108,5b520daf-337c-421f-b752-cc94788ca2a5_7389dcc587754919a5f6c5aca1ccab32,8975a9d0-1a1d-4b3b-9e4c-124d73bc0099_2d518ca20f6942fb8324d20033cf58bb,4f77ea42-9a1a-4597-a8ef-7ad3a1071e8c_e8d4b471770a4d34a4022e39a53a740c,f183ef87-0e55-4486-ae91-d766df4f389f_26abeca4432f45728a3cf8cfe2328b27
+    transcript_completed_at: 2026-08-23T18:12:44.236Z
   - id: 567e4022-c39c-4dc5-b16f-125525d1288e
     guid: 567e4022-c39c-4dc5-b16f-125525d1288e
     title: "168: 对话王新宇：美团龙珠怎么投科技？"

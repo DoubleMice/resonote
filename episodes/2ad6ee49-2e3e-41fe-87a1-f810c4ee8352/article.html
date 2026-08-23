@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>访谈 Cerebras 早期投资人周南：英伟达挑战者？Scaling Law 的萌芽、被遗忘的百度美研</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1f2937; background: #fafafa;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { margin-bottom: 40px; }
+  .kicker { font-size: 13px; color: #ea580c; font-weight: 600; letter-spacing: 0.08em; }
+  h1 { font-size: 30px; line-height: 1.4; margin: 10px 0 12px; color: #111827; }
+  .meta { font-size: 14px; color: #6b7280; }
+  h2 { font-size: 22px; margin: 44px 0 14px; color: #111827; padding-left: 12px; border-left: 4px solid #ea580c; }
+  p { margin-bottom: 16px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin: 20px 0 8px; }
+  .card { padding: 14px 16px; border-radius: 8px; font-size: 15px; }
+  .card b { display: block; margin-bottom: 4px; font-size: 15px; }
+  .blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quote {
+    margin: 24px 0; padding: 18px 20px; border-left: 4px solid #3b82f6;
+    background: #eff6ff; border-radius: 0 8px 8px 0; font-style: italic; font-size: 16.5px;
+  }
+  .quote .src { display: block; margin-top: 10px; font-size: 13px; color: #6b7280; font-style: normal; }
+  .gloss { font-size: 14px; color: #6b7280; background: #f3f4f6; border-radius: 6px; padding: 8px 12px; margin: 8px 0 16px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+  footer a { color: #ea580c; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 560px) {
+    .wrap { padding: 32px 16px 48px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">晚点聊 LateTalk · 第 169 期</div>
+  <h1>访谈 Cerebras 早期投资人周南：英伟达挑战者？Scaling Law 的萌芽、被遗忘的百度美研</h1>
+  <div class="meta">嘉宾：周南（Qualcomm Ventures 投资人）· 主持人：曼琪 · 2026 年 6 月 · 时长 1h39m</div>
+</header>
+
+<p>
+Cerebras 在 5 月中旬上市，市值一度接近 1000 亿美元，被外界视作英伟达的补充甚至挑战者。但很少有人知道，这家公司的早期投资人名单里有 Sam Altman——他 2016 年就投了，比百度还早一年。而促成百度这笔投资的，是一位刚入行、第一笔投资就是它的年轻人：周南。本期节目里，周南完整回顾了这段九到十年前的投资过程，也聊到了 OpenAI 的 200 亿美元订单、从训练到推理的算力大转移，以及他心中最意难平的一件往事：一只因为地缘政治没能做起来的百度基金。
+</p>
+
+<div class="cards">
+  <div class="card blue"><b>Cerebras 上市</b>5 月中旬 IPO，市值一度接近 1000 亿美元；创始人 Andrew Feldman 在 Bloomberg 峰会上放话「和所有人合作除了英伟达」。</div>
+  <div class="card green"><b>OpenAI 200 亿美元订单</b>2026 年 1 月签约；最早的投资人 Sam Altman 早在 2016 年就个人投了这家公司。</div>
+  <div class="card yellow"><b>Scaling Law 的萌芽</b>2015 年底的 Deep Speech 2 论文让百度美研第一次形成「当模型更大，当数据更多，训练更久」的经验直觉。</div>
+  <div class="card purple"><b>被遗忘的百度美研</b>2011 年成立、顶峰 250 多人，向 OpenAI、Anthropic、Inflection、Adept 输送了联合创始人。</div>
+  <div class="card red"><b>一只没做成的基金</b>OpenAI、Databricks、Scale AI 都曾躺在百度的 deal list 上，却因中美地缘政治没能投出去。</div>
+  <div class="card orange"><b>非共识投资</b>「伟大的投资发生在没有形成共识之前」——周南用十年亲身验证了这句话。</div>
+</div>
+
+<h2>一整片晶圆做成的 AI 引擎</h2>
+<p>
+Cerebras 的核心创新是 Wafer-Scale Architecture：把一整片晶圆直接做成一个巨大的 AI 计算引擎，而不是像传统芯片制造那样把晶圆切开、封装、再通过 PCB 和 NVLink 互联。周南介绍，这片晶圆上有 84 个芯片无缝互联，计算单元、内存和通信网络都在同一片硅片上，数据不需要频繁地从一颗芯片搬到另一颗芯片，也不用把外部的 HBM 高带宽内存搬来搬去，通信和数据搬运的成本因此大幅降低。
+</p>
+<p>
+它也不只是一家芯片公司，而是从芯片、服务器、散热、电源到编译器、软件栈都自己做的一套原生系统。周南用一个比喻来解释它与 GPU 的根本差别：「GPU有点像是很多很多很强大的人类的这种脑袋瓜，但是它需要靠一个高速的网络去协作。而Cerebras它是一个非常非常巨大的一个大脑，尽量让计算和记忆都发生在同一个硅片上。」
+</p>
+
+<h2>英伟达挑战者？——特定 workload 上的挑战者</h2>
+<p>
+对「英伟达挑战者」这个定位，周南的态度很清醒。他认为 Cerebras 是英伟达在推理这类特定 workload 上的挑战者，却做不了全栈生态的全面替代者。英伟达的护城河并不只是芯片，而是 CUDA、开发者生态、网络、系统、软件、客户信任和供应链组成的整个体系。Cerebras 的机会在于：当某个 workload——尤其是推理——受限于内存带宽、通信延迟和推理响应速度时，它是一个非常优秀的架构选择，招股书显示它的推理速度比现有方案快很多。
+</p>
+<p>
+这种价值的凸显与算力需求的转移同步发生。周南观察到，现在一半以上的 GPU 需求都用在了推理上，AI agent 的爆发又进一步放大了推理芯片的需求。「当这个推理的需求现在在尤其是今年，从去年开始到今年有一个大规模的一个爆发之后」，Cerebras 低延迟、高吞吐的解决方案就变得更有价值、更稀缺。估值从两三年前的数十亿美元涨到上市后的数百亿美元，在他看来是水到渠成。
+</p>
+
+<h2>OpenAI 的 200 亿美元订单与最早的投资者</h2>
+<p>
+2026 年 1 月，OpenAI 与 Cerebras 签下了至少 200 亿美元的合同，还做了架构设计层面的绑定合作。为什么 OpenAI 会对它感兴趣？周南的分析很直接：算力本身就是模型继续 scale 的瓶颈，「现在算力稀缺是number one，是一个核心的一个大瓶颈」；与此同时，任何 frontier lab 都不能依赖单一路径，需要供应链多样化和战略自主性——Anthropic 也在签 TPU。推理的低延迟、高吞吐和 cost per token 优化，直接决定产品体验与商业毛利，这恰好是 Cerebras 的强项。
+</p>
+<p>
+一个常被忽略的事实是，Sam Altman 才是 Cerebras 最早的投资人。OpenAI 2015 年 12 月成立，2016 年他就个人投了 Cerebras，百度则是在 2017 年才投的。周南认为，这说明 Sam Altman 在成立 OpenAI 时就已经预见到：当未来的模型做得很大、应用场景很多的时候，你不能只依赖英伟达一家芯片。这笔个人投资不算关联交易——Sam Altman 投过不少硬件公司，本人也算不上大股东。
+</p>
+
+<h2>起点：百度美研的「第一课」</h2>
+<p>
+周南的投资生涯始于 2016 年的百度美国研究院。此前他在 Barclays 做投行，赶上了阿里、京东那一波移动互联网上市潮。加入百度美研后，他面对的是当时「硅谷最强大的一个AI research lab」：吴恩达的号召力很强，百度是为数不多给足预算让研究员买 GPU 训练模型的 AI lab。研究员们给他上的第一课，成为他十年投资生涯的底色：
+</p>
+<div class="quote">
+「不能就只依赖于英伟达这一个芯片，因为未来会出现非常非常大的一个模型……如果说这个时候不去找这颗芯片的话，那么在十年以后、五年以后、十年以后就会形成英伟达独大的一个局面。」
+<span class="src">—— 2016 年，百度美研研究员给刚入行的周南上的第一课</span>
+</div>
+<p>
+当时的英伟达也并非深度学习的理想答案：它 96% 的 Die Area 是为游戏和图形设计的，不是专门为深度学习优化的。是吴恩达第一个向业界昭告 GPU 可以大规模用于训练 AI 模型——「如果没有Andrew当时的就是给英伟达背书」，大家就不会形成这个认知。所以在当时，找一颗不同架构的芯片作为英伟达之外的第二解决方案，就是周南种下的种子。
+</p>
+
+<h2>Deep Speech 2：Scaling Law 的萌芽</h2>
+<p>
+百度美研的共识来自 2015 年底发表的 Deep Speech 论文（Dario 为一作）。周南加入时论文已经发布，研究员们已经清楚感受到：当模型更大、数据更多、训练更久，模型的表现就会持续提升。只不过在当时，这还是一个经验性的直觉，还没有被当作数学规律系统地表达；后来在语言模型时代，它被更系统地验证和理论化，就是今天大家知道的 Scaling Law。「这个Scaling Law的诞生的这个萌芽就是当年的这篇Deep Speech的这个paper。」
+</p>
+<p>
+压力来自现实：那时百度美研训练的语言模型已经有将近 300 个百万参数——三亿参数量级，在十年前是非常大的数字——而用 GPU 训练这样一个模型要至少三个多月，调一次参、看一次效果就要好几个月。想让模型能力快速迭代，就必须找到更强大的算力系统。周南 2017 年开始满大街寻找与 GPU 不同的算力方案，最终在三家公司里做选择：Graphcore 提效不如 Cerebras（后来 2024 年被软银以 5 亿美元收购），Wave Computing 团队有问题早早消失，Cerebras 给出的是「训练提速一千倍」的承诺：三个多月才能训出来的模型，用它的 Wafer Scale 架构大概几天、几个星期就能训出来。
+</p>
+
+<h2>尽调：把风险从第一性原理拆开</h2>
+<p>
+周南的尽调并不轻松。他带着多位百度 AI 研究员做深度尽调，把风险全部打散来问：良率怎么办、散热怎么办、电源怎么办、编译器怎么办、客户为什么要买。创始人 Andrew Feldman 对这些问题完全不回避，一个一个拆开来讲——「他可以不厌其烦的每天跟我讲两个小时，四个星期」，哪怕面对的是一个芯片小白。他的团队也给了信心：80 多个人里将近 70 个是 PhD，是周南见过 PhD 密度最高的公司；他上一家公司被 AMD 收购后，几乎是带着原班人马创办了 Cerebras。
+</p>
+<p>
+最特别的是验证方式。当时 Cerebras 还没有流片，所有架构构想都只存在于 simulator 上，而能跑这个 simulator 的只有百度一家——因为 pre-Transformer 时代，百度的语言模型是世界上最大的，基于自研的 PaddlePaddle（飞桨）架构。周南把语言模型跑在了 Cerebras 的 simulator 上，信号比较正面（细节不能透露）。英伟达 CUDA 的 key driver、Deep Speech 2 的作者之一 Greg Diamos 亲自参与验证，与 Cerebras 展开了紧密合作，还有研究员后来直接加入了 Cerebras。
+</p>
+<p>
+硬件层面的风险也做了最坏情况测算：如果流片失败，要多花六个月、多花五到十个 million，公司现金流扛得住；散热有已经设计出来的液冷方案；芯片短路则有软件层面的冗余方案。2017 年 8、9 月，周南把十几页纸的投资 memo 交给投决会——CFO Jennifer Li、陆奇和李彦宏本人——不到两天就拍板，「无痛秒过」。当时估值约 7 亿美元，在 16、17 年那个背景下已经快到独角兽了。他当时测算 2025 年 AI 训练市场约 22 billion 美元、Cerebras 能拿到 20% 左右的市占率，预期回报 3 到 5 倍——「现在你看它的这个训练市场那是比22个billion大了不知道多少个量级了」，他承认自己严重低估了 AI 腾飞的速度。
+</p>
+
+<h2>2017-2019 的艰难岁月与流片延误</h2>
+<p>
+投资之后并不是坦途。2017 到 2019 年，Cerebras 经历了非常艰难的阶段：流片推迟了大约一两年，compiler 搞不定、wafer 流片出问题，什么都在 delay——当年风险测算的下限基本上都发生了。周南说，公司能走到上市，早期董事会（Benchmark、Foundation Capital、Eclipse）对 Andrew 的耐心支持起了很大作用：「想让一个计算芯片取得成功，真的是没有十年的时间它是很难实现的。」
+</p>
+<p>
+他也认真思考过反事实：如果流片更快，历史会不会改写？「就比如说OpenAI当时在训练模型的时候，对吧，是老黄拿着这个GPU送过去了。如果那个时候已经有Cerebras，那就是Andrew Feldman拿着GPU送过去了」但 Frontier lab 的 GPU 集群和数据中心基建已经投下去了，这个时候换芯片是巨大的系统风险——半导体的周期决定了硬件公司只能厚积薄发。今天的战略选择因此很清晰：与其去掰扯训练市场，不如把全部精力放在推理 workload 上。Cerebras 现在的大多数客户都是推理场景，OpenAI 的订单还需要定制化 infra——早期 80 多个员工里有相当多的人就是做 infra 的。
+</p>
+
+<h2>百度美研：被遗忘的硅谷黄埔军校</h2>
+<p>
+百度美研 2011 年成立，顶峰时期有至少 250 多名研究员。周南说，那里走出的人是 Inflection 的联合创始人、Adept 的联合创始人、Meta FAIR 实验室的创始成员——「当然就不要讲OpenAI和Anthropic了」。他形容那个阶段是「一堆神仙打架的年代」，人才密度「包括在Google DeepMind都是没有过的」；相当多人是冲着吴恩达来的，他来了之后还带来了很多 DeepMind 的人才。
+</p>
+<p>
+最让他难忘的是 2020 年夏天的一个电话。百度美研的前同事——都是 Dario 的好友——打给他：「GPT-3我们要练出来了。」他们当时正在做 post training，同时已经决定要离开 OpenAI，因为「不再信任Sam Altman」，觉得他对安全这件事很不重视。周南给他们的建议和当年一样：要融很多很多的钱去买算力。他也直言，主流 VC 不会投这个钱。疫情最严重的时候没有疫苗，他没能进城和他们见面；后来是 a16z 的投资人 ANJ 以个人身份成了他们的天使——后面就是 Anthropic 的故事。
+</p>
+<h2>意难平：那只没做成的基金</h2>
+<p>
+周南心中最遗憾的事，是百度当年那只没能募起来的 growth fund。当时百度已经看到地缘政治的风险，想把更前沿的 AI 全栈布局独立出来做一只基金。OpenAI 那时也愿意接受百度投资——陆奇是 Sam Altman 的 mentor——Databricks 是很早被 sourced 来的，连 Scale AI 都在 betting 名单上。但因为地缘政治，很多 LP 最后都打了退堂鼓，基金没有做起来。「如果这个基金做起来了，可能现在百度应该是全世界最牛的shareholder吧」
+</p>
+<p>
+基金做不成之后，周南拿着同一份 investment thesis 聊了 Insight Partners、Sequoia、Benchmark——没有一个人 buy in，都说他们要投 SaaS。「因为等于说是在共识前太久了，就特别反共识」直到 ChatGPT 爆发、Sequoia 那篇 generative AI is here 的文章之后，硅谷的顶级 VC 才在 2023 年后期、2024 年开始全线押注 AI。他后来加入高通创投，把重心转向端侧 AI，并从 2023 年起重新把投资抓回云侧的 infra。
+</p>
+
+<h2>现在与未来：推理成本、砸 winner 与 physical AI</h2>
+<p>
+谈到当前的机会，周南认为推理成本优化是 AI 产业一个很大的战场——推理成本会直接反映到 profit margin 上。典型例子是 Agam：去年 8 月成立、今年 3 月就被 Nvidia 收购，创始人是 MIT 教授韩松的学生。周南发现得早，但「卖得太快了」没投上。他把这层机会放在黄仁勋画的「五层蛋糕」里看：最下面是能源，上面是芯片集群，第三层就是云和 infra——推理优化与云结合得最自然。
+</p>
+<p>
+他也承认，现在做早期投资越来越难：AI 已经是共识，非共识到共识的窗口越来越短，「给你的投资机会的窗口期只有两到，一到两个月」。今年更容易的是投晚期——「今年的一个投资主题就是砸这个winner，用大钱去砸winner」，Benchmark 刚宣布募 20 亿美元的基金，24 小时就募完了；Anthropic 现在估值约一个 trillion 的量级，变成五个 trillion 他也不觉得奇怪。而对还没形成共识的方向，他押注 physical AI：自动驾驶必须做到 99.9 的准确性，physical AI 对准确度的要求更宽容；按语言模型的经验，泛化能力的进步速度会呈现陡峭的曲线，「这个physical AI的aha moment可能会到来得比自动驾驶给我们想象中要早一些」。他还看到，有创业团队已经开始做基于 CPU 的新推理芯片架构——那是下一颗种子。
+
+<h2>核心金句</h2>
+<div class="quote">「不能就只依赖于英伟达这一个芯片，因为未来会出现非常非常大的一个模型。」<span class="src">—— 2016 年百度美研研究员的「第一课」，也是周南投资 Cerebras 的起点</span></div>
+<div class="quote">「GPU有点像是很多很多很强大的人类的这种脑袋瓜……而Cerebras它是一个非常非常巨大的一个大脑」<span class="src">—— 周南解释 wafer-scale 与 GPU 的本质差别</span></div>
+<div class="quote">「他可以不厌其烦的每天跟我讲两个小时，四个星期。」<span class="src">—— Andrew Feldman 把尽调风险一个一个拆开讲，让芯片小白也听懂</span></div>
+<div class="quote">「伟大的投资发生在没有形成共识之前。」<span class="src">—— 周南在 Cerebras 上市时的分享；他用十年亲身验证了这句话</span></div>
+<div class="quote">「physical AI的aha moment可能会到来得比自动驾驶给我们想象中要早一些。」<span class="src">—— 从语言模型的泛化曲线推演机器人的节奏</span></div>
+
+<footer>
+  本文根据《晚点聊 LateTalk》第 169 期整理，嘉宾周南。节目原文与完整对话见
+  <a href="https://podcast.latepost.com/169" rel="noopener">podcast.latepost.com/169</a>。
+  引用均出自本期节目转录文本；标注「作者的概括」处为整理者的转述。
+</footer>
+
+</div>
+</body>
+</html>

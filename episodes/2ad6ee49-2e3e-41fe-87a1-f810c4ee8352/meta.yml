@@ -1,0 +1,34 @@
+id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+source: latepost
+title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+guest: "周南"
+guest_role: "Qualcomm Ventures（高通创投）投资人 · 前百度美研投资团队成员"
+published: 2026-06
+duration: 1h39m
+url: https://podcast.latepost.com/169
+thumbnail: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/2/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352/cover.jpg?v=1
+status: generated
+tags:
+  - chips
+  - hardware
+  - ai-research
+  - startup
+  - interview
+  - investor
+  - strategic
+  - technical
+summary: |
+  高通创投投资人周南回顾他十年前在百度美研完成的第一笔投资——Cerebras：从研究员的第一课
+  「不能只依赖英伟达这一个芯片」，到 2017 年以约 7 亿美元估值、两天通过投决的尽调全程。
+  节目也借 Cerebras 上市与 OpenAI 200 亿美元订单，讨论了算力从训练转向推理的大背景，
+  以及 Deep Speech 2 论文里 Scaling Law 的萌芽、百度美研这所硅谷黄埔军校的兴衰，
+  还有一只因中美地缘政治没能做起来的基金——OpenAI、Databricks 都曾躺在它的 deal list 上。
+core_ideas:
+  - 'Cerebras 是英伟达在推理这类特定 workload 上的挑战者，而不是全栈生态的替代者；英伟达最强的护城河是 CUDA、开发者生态与客户信任组成的整个体系'
+  - 'Sam Altman 是 Cerebras 最早的投资人：2015 年 12 月 OpenAI 成立后不久，他就在 2016 年个人投了这家公司，早于百度 2017 年的投资'
+  - 'Deep Speech 2 论文是 Scaling Law 的萌芽：模型更大、数据更多、训练更久，能力就持续提升——当时只是经验性直觉，后来才被系统验证'
+  - '百度美研的尽调是早期投资人里技术最深入的一份：用全球最大的语言模型跑 Cerebras 的 simulator，把良率、散热、电源、编译器风险逐一拆解'
+  - '2017-2019 年 Cerebras 流片推迟一两年，当年测算的风险下限几乎全部兑现，最终靠董事会的耐心与团队韧性走到上市'
+  - '一只因地缘政治没做成的百度基金是周南的意难平：OpenAI、Databricks、Scale AI 都曾在名单上，后来他拿着同样的 thesis 找一线 VC 也无人 buy in'
+article_path: episodes/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352/article.html
+base: /episodes/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352/

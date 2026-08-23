@@ -18487,3 +18487,122 @@ jobs:
     submitted_at: 2026-08-22T18:11:43.801Z
     updated_at: 2026-08-22T18:17:55.256Z
     completed_at: 2026-08-22T18:17:55.256Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:0
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: 92c604bb-c67e-42d6-9e27-30c57d2c309f_0fcf339e289841ed80772f6314eb513f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:08:19.542Z
+    completed_at: 2026-08-23T18:08:19.542Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:1
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: 05114a59-483f-475e-a690-173d50f876a0_e4689c365dd84279b8746f115aae78ca
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:09:07.369Z
+    completed_at: 2026-08-23T18:09:07.369Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:2
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: bc05d22e-efe9-46cd-995d-4394585f35d3_2ceda043159b44fdab91c475a66a1108
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:10:01.166Z
+    completed_at: 2026-08-23T18:10:01.166Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:3
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: 5b520daf-337c-421f-b752-cc94788ca2a5_7389dcc587754919a5f6c5aca1ccab32
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:10:48.664Z
+    completed_at: 2026-08-23T18:10:48.664Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:4
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: 8975a9d0-1a1d-4b3b-9e4c-124d73bc0099_2d518ca20f6942fb8324d20033cf58bb
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:11:32.582Z
+    completed_at: 2026-08-23T18:11:32.582Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:5
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: 4f77ea42-9a1a-4597-a8ef-7ad3a1071e8c_e8d4b471770a4d34a4022e39a53a740c
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:12:17.886Z
+    completed_at: 2026-08-23T18:12:17.886Z
+  - key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z:chunk:6
+    parent_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    attempt_key: latepost:2ad6ee49-2e3e-41fe-87a1-f810c4ee8352:20260616:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3:mimo:2026-08-23T18:06:41.990Z
+    provider: mimo
+    id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
+    source: latepost
+    title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2ad6ee49-2e3e-41fe-87a1-f810c4ee8352.mp3
+    task_id: f183ef87-0e55-4486-ae91-d766df4f389f_26abeca4432f45728a3cf8cfe2328b27
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-23T18:06:41.990Z
+    updated_at: 2026-08-23T18:12:44.236Z
+    completed_at: 2026-08-23T18:12:44.236Z
