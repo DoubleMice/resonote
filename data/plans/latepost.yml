@@ -1,133 +1,15 @@
 source: latepost
-refreshed_at: 2026-08-22T18:06:32.298Z
+refreshed_at: 2026-08-23T03:26:27.293Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 23
-done: 1
+total_candidates: 22
+done: 0
 pending: 0
 needs_transcript: 22
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
-    guid: 9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677
-    title: "170: 与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人"
-    duration: 6830
-    published: Mon, 29 Jun 2026 11:30:00 +0800
-    published_sort: "20260629"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/170
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677.mp3
-    image: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/9/9ee6b3d1-97e6-46c6-b0fb-d79c5c0f0677/cover.jpg?v=1
-    summary: |-
-      「人形马拉松、Figure AI 直播、中国灵巧手亮相 ICRA、英伟达Cosomos3 & 世界模型投资热、Generalist 和 Pi 的模型进展。」
-
-      这期是《晚点聊》「具身季报」系列第二期，我继续邀请风投机构 Alphaist 的创始合伙人陈哲，来和我们分享最新的具身智能动态和趋势。
-
-      本期节目也会在 Alphaist 的播客《The Alphaist》 串台播出。
-
-      本期季报，依然按 TOP 5 进展和事件展开，包括：
-
-        人形机器人马拉松：荣耀夺冠的更多意味
-        Figure 的 200 小时直播：物流为什么是人形机器人好场景？
-        灵巧手和灵巧操作：谁是手中 G1？
-        英伟达的世界模型 Cosmos 3 和世界模型创投热
-        全球领先的具身模型进展： GEN-1 和 π 0.7。
-
-      我们也延展讨论了一些资本市场的变化、新玩家进入——OpenAI 的 Robotics team 官宣——和行业落地 vs 推进智能的节奏与取舍。
-
-      图注：英伟达对“robotics”领域世界模型的分类。
-
-      图注：Figure AI 直播截图，机器人要处理的任务是在流水线上快速地翻转包裹，让二维码一面朝上。
-
-      本期节目的图文版也已经发布:具身季报 26Q2：世界模型大风不停，和不想被贴标签的人
-
-      本期嘉宾：陈哲，Alphaist Partners 创始合伙人
-
-      本期主播：程曼祺，晚点科技报道负责人
-
-      剪辑：甜食
-
-      时间线：
-
-      02:54 -Q2 Top 5 总览
-
-      07:17 -人形马拉松，荣耀夺冠、大厂加码的先声
-
-      -Figure 连续直播
-
-      14:56 物流，为何是人形机器人的好场景？
-
-      21:19 遥操从不是争议点，是真实部署时的必要模块
-
-      25:24 星动纪元合作中国邮政，总结过往 to B 机器人的场景选择
-
-      28:55 数采范式的 3 次变化
-
-      -灵巧手和灵巧操作
-
-      34:48 ICRA 最大亮点：舞肌等中国高自由度灵巧手
-
-      43:03 灵巧操作：Demo 很惊艳，技术在早期
-
-      53:32 再论直驱和绳驱：大厂继续跟绳驱（Optimus），长期仍看好直驱
-
-      -世界模型
-
-      01:02:57 英伟达 Cosmos 3：从生成视频到直接生成动作
-
-      01:08:51 具身的世界模型分类：3 个相交圆
-
-      01:14:04 世界模型投资热：大模型教会投资人的事，追逐智能
-
-      -Gen-1、π0.7 和不在标签里的公司
-
-      01:19:55 π0.7：VLA 融合轻量世界模型
-
-      01:22:46 Gen-1：从头预训练，不被路线定义
-
-      01:28:40 Google 发布 ER1.6，OpenAI Robotics 团队官宣
-
-      -更多讨论
-
-      01:37:56 智能部分是否赢家通吃？Omni 模型是个变量
-
-      01:42:46 “对长期不确定性探索的容忍度依然差”
-
-      01:47:50 -下季度展望：终端大厂加快入场
-
-      相关链接：
-
-      157 期：【具身季报 26Q1】宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手
-
-      上次季报至今，我们在具身智能、物理 AI 方向的访谈:
-
-      166 期：许华哲再次具身创业：不想错过最大的西瓜
-
-      165 期：GEAR 高深远：世界模型、自进化循环、DreamDojo
-
-      161 期：原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程
-
-      160 期：群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-22T18:11:43.801Z
-    transcript_job_id: 0eb1062b-9d47-4638-bc7f-b81b72d14821_eddf5e8facac4c178b6f43e2ab028058,f7d4f2fc-f020-40b0-bbfa-8035229487dc_085bd3253ff74fcb82cba9fb83efb660,60f6f4c8-36b7-4ade-a1ac-850d534a671d_8b9e3be77a3c497c977e09b593f1a949,025cbb3b-63fb-41d9-b187-a21633c0a7e5_f77bfe072e2b418cbf099463c9552c34,57fc7f60-f12e-4331-ba48-7b52a1f7129a_9f4ecced58b543fbadc3c78a5aa13621,34d8ca56-16ae-4ebe-98e1-a9e29f076162_cb37e341518a426783ce8fc6b4c5e47f,5b2bacda-3c95-4767-bee9-be11696e05fe_8e582aab04cb4110b5f8b7a3c44c1ee9,a8498e19-e888-4c0e-8a0a-7dca57207358_6a8cf56ff2de4b01831839953469a928
-    transcript_completed_at: 2026-08-22T18:17:55.256Z
   - id: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
     guid: 2ad6ee49-2e3e-41fe-87a1-f810c4ee8352
     title: "169: 访谈Cerebras早期投资人周楠：英伟达挑战者？Scaling Law的萌芽、被遗忘的百度美研"
