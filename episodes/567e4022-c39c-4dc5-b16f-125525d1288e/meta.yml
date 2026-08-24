@@ -1,0 +1,31 @@
+---
+id: 567e4022-c39c-4dc5-b16f-125525d1288e
+source: latepost
+title: "168: 对话王新宇：美团龙珠怎么投科技？"
+guest: "王兴宇"
+guest_role: "美团龙珠合伙人、科技投资负责人"
+published: 2026-06
+duration: 2h7m
+url: "https://podcast.latepost.com/168"
+thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/5/567e4022-c39c-4dc5-b16f-125525d1288e/cover.jpg?v=1"
+status: generated
+tags:
+  - interview
+  - investor
+  - robotics
+  - ai-products
+  - hardware
+  - startup
+  - deep-dive
+  - strategic
+summary: |
+  美团龙珠合伙人王兴宇回顾十年科技投资生涯：从 GGV 三年学徒、2018 年 AI 低谷期在昆仑万维投出 pony.ai（16 亿美金估值、当时全世界最高），到 2021 年加入美团龙珠建立「三横三纵」科技投资框架，重注月之暗面（3000 万美金、龙珠大模型唯一标的）与宇树（最大外部股东）。他详述了 NeurIPS 之行对具身智能的「开窍」、「拦腰斩断」的机器人投资框架、2025 年范式的判断，以及「AGI 已经实现」的标准——今天的 AI 已超过 80 亿人的平均水平。
+core_ideas:
+  - 热爱是识人的原点：先看创始人对一件事的热爱与专注，再看其他——「对一件事情有热爱，我觉得可能是那个很重要的原点」
+  - 三横三纵框架：AI/半导体/能源 × EV/机器人/下一代终端，九个格子从 2021 年至今没变；大模型是更 fundamental 的层，「可以占掉所有的格子」
+  - 月之暗面：先「挖人」再投钱——2023 年 7 月 2 号过 IC，3000 万美金，龙珠在大模型创业公司里只投了这唯一一家
+  - 具身智能：NeurIPS 之行发现所有机器人实验室都有宇树的狗促成开窍；locomotion 只投宇树、没有再投过任何公司，manipulation 没有收敛所以投多家
+  - 「AGI 已经实现」：今天的 AI 已超过全球 80 亿人受教育水平与智商的平均值，大家继续往 ASI 的方向走
+  - 2025 范式：王兴兴、梁文锋、张雪代表「热爱 + 专注」的中国范式会越来越多，未来五到十年系统性发生
+article_path: episodes/567e4022-c39c-4dc5-b16f-125525d1288e/article.html
+base: /episodes/567e4022-c39c-4dc5-b16f-125525d1288e/

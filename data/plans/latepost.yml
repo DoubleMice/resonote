@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-24T03:27:12.249Z
+refreshed_at: 2026-08-24T18:10:37.335Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 21
-done: 0
+done: 1
 pending: 0
-needs_transcript: 21
+needs_transcript: 20
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -102,8 +102,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-24T18:10:38.489Z
+    transcript_job_id: 1794f9c1-2384-4376-9bfb-931e80bdbcaf_580848e9233b4e06a5fe05dc51b61976,6a9f4938-d6fb-49b3-9ee6-c020d6aeaa16_73aae5fbed6c4f7a93cf3e514f7e10c3,0655f74f-60b6-4693-b071-16d6e9e30787_456910a4ca64492392bd68e718b2f705,146437f8-be4b-47cf-a405-6b901ffe058c_a3c3ae65410f437a9c08aba7db8158fe,bbcbc242-e53c-4e5d-a621-bd1d6eb12400_3e94aeb8fd0d4a1da5ede61c8730299b,1d308db2-e0af-4c9e-a62b-e63b009957cd_17df1113e0ca43e49087e0c82f6dcef7,eb4565e2-6a58-4b23-8367-2bc1b8d504ee_90e5fcf95b7d45d58a36f4b0a3ceed87,909e2de8-dc01-4883-8c98-7f83fd0795b4_9e2eb7efc3e149eba063ca98dc17a0c5,a1757863-38f7-4266-a252-3bf3218b467a_1fb20259b57d43d6b98e51cda683eacc
+    transcript_completed_at: 2026-08-24T18:18:29.609Z
   - id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
     guid: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
     title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
