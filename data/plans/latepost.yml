@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-25T03:24:02.131Z
+refreshed_at: 2026-08-25T18:10:46.849Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 20
-done: 0
+done: 1
 pending: 0
-needs_transcript: 20
+needs_transcript: 19
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -96,8 +96,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-25T18:14:26.368Z
+    transcript_job_id: 90b1daa7-4d8d-4fc9-9270-2d2c0359b2bd_96894e639358431e8f38b6dabb982cf5,82e0f20b-f96d-4618-a8b8-8121f05fea78_cb49e47614c64856b12de7e8b0b7f96e,08dee1aa-d193-409c-8185-62efa931434f_f4f3fa6674794e598309cbc76c436e04,a3b90273-2df6-4e70-8cad-4b232457c6db_a6a5e2f9f77341ad9cc0eb5641b953b1,e9fb4c8f-2cc2-4b6a-bc57-2726dae1838b_f56db050f08247b297c8f3d83c58728e,66dc2851-486b-4647-b40a-69654fe53e30_e6c306e298ff4aca90605b9368a6518b,63d12901-9ac0-4985-b555-b7595db06e7d_f2a353a843d74106a821d30f1dd4b9d3
+    transcript_completed_at: 2026-08-25T18:20:27.848Z
   - id: c7f4e8c0-49d8-4b44-9257-824f4e254991
     guid: c7f4e8c0-49d8-4b44-9257-824f4e254991
     title: "166: 许华哲再次具身创业：不想错过最大的西瓜"

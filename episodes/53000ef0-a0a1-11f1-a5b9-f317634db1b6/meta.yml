@@ -1,0 +1,28 @@
+id: "53000ef0-a0a1-11f1-a5b9-f317634db1b6"
+source: "unchained"
+title: "One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?"
+guest: "Illia Polosukhin & Charles Guillemet"
+guest_role: "NEAR Protocol 联合创始人 / Ledger CTO"
+published: "2026-08"
+duration: "1h3m"
+url: "https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3"
+thumbnail: "https://megaphone.imgix.net/podcasts/53000ef0-a0a1-11f1-a5b9-f317634db1b6/image/2a7f7dac20c9f6e4bbb31f29cb16624e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+status: generated
+tags:
+  - hardware
+  - panel
+  - founder
+  - engineer
+  - technical
+  - strategic
+summary: |
+  本期 Unchained 请到 NEAR 联合创始人 Illia Polosukhin 与 Ledger CTO Charles Guillemet，讨论加密行业如何为量子计算机做准备。2026 年 3-4 月 Google 论文只公开"算法存在"的零知识证明，EigenLayer 竞赛中 AI 在 48 小时内复现了算法，量子威胁从"五年后"变成"现在就要迁移"。NIST 标准化的三种后量子签名里，全世界只在用 ML-KEM，唯独区块链世界在三种算法间分裂：NEAR 与 Algorand 选格基 ML-KEM，Solana 为延迟选 Falcon，Ethereum 与 Bitcoin 社区倾向哈希路线。两人还讨论了未迁移比特币的三种选项（不处理 / 冻结 / 冻结后重新铸造）、"公钥本来就是公开的"论证，以及 Ledger 安全芯片在固件级与硬件级支持后量子签名的路线图。
+core_ideas:
+  - '量子威胁加速：2026 年 3-4 月 Google 论文只公开 ZK 证明，EigenLayer 竞赛里 AI 在 48 小时内复现算法——"过去 20 年人人都说还要五年"，现在感觉比以往更真实'
+  - 'NEAR 凭账户与访问密钥分离的设计，成为第一个上主网支持后量子签名的主流区块链，并联合 Ledger 统一签名方案'
+  - 'NIST 标准化三种后量子签名：ML-KEM 与 Falcon 是格基、SPHINCS+ 是哈希；全世界只用 ML-KEM，唯独区块链世界三种都要用'
+  - '分裂地图：NEAR 与 Algorand 选 ML-KEM（支持 MPC），Solana 为延迟选 Falcon，Ethereum 与 Bitcoin 社区为保守选哈希变体'
+  - '未迁移比特币的三种选项都糟糕：不处理会引发市场危机，冻结有私有财产问题，冻结后重新铸造（4-5M BTC）能顺带缓解安全预算问题'
+  - 'Ledger 的安全芯片为银行而生，后量子签名先固件级实现、下一代硬件级支持；"公钥本来就是公开的"，所谓只有 500 万比特币暴露的说法是糟糕论证'
+article_path: episodes/53000ef0-a0a1-11f1-a5b9-f317634db1b6/article.html
+base: /episodes/53000ef0-a0a1-11f1-a5b9-f317634db1b6/

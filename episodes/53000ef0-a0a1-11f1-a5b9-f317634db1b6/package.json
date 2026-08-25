@@ -1,0 +1,23 @@
+{
+  "name": "episode-53000ef0-a0a1-11f1-a5b9-f317634db1b6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slidev/cli": "52.18.0",
+    "slidev-addon-excalidraw": "^1.1.0",
+    "slidev-theme-academic": "^2.1.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.59.1"
+  }
+}

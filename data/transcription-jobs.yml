@@ -18759,3 +18759,207 @@ jobs:
     submitted_at: 2026-08-24T18:10:38.489Z
     updated_at: 2026-08-24T18:18:29.609Z
     completed_at: 2026-08-24T18:18:29.609Z
+  - key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z:chunk:0
+    parent_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    attempt_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z
+    provider: mimo
+    id: 53000ef0-a0a1-11f1-a5b9-f317634db1b6
+    source: unchained
+    title: One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    task_id: c7c77f2c-7844-4efc-9ff9-6f1711b2f472_43b61854b2f442ad9d5c27399030108f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:10:48.130Z
+    updated_at: 2026-08-25T18:12:04.126Z
+    completed_at: 2026-08-25T18:12:04.126Z
+  - key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z:chunk:1
+    parent_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    attempt_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z
+    provider: mimo
+    id: 53000ef0-a0a1-11f1-a5b9-f317634db1b6
+    source: unchained
+    title: One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    task_id: 621913e3-2dd5-43ba-a1a6-03705d0f4a84_8d56b0e557904d069d1eac36126b17d9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:10:48.130Z
+    updated_at: 2026-08-25T18:12:44.458Z
+    completed_at: 2026-08-25T18:12:44.458Z
+  - key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z:chunk:2
+    parent_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    attempt_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z
+    provider: mimo
+    id: 53000ef0-a0a1-11f1-a5b9-f317634db1b6
+    source: unchained
+    title: One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    task_id: 706b06ce-c453-4539-9374-70fb1b3a43bd_50a2e17ee5da491e9ad59cbcfaa90597
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:10:48.130Z
+    updated_at: 2026-08-25T18:13:30.052Z
+    completed_at: 2026-08-25T18:13:30.052Z
+  - key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z:chunk:3
+    parent_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    attempt_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z
+    provider: mimo
+    id: 53000ef0-a0a1-11f1-a5b9-f317634db1b6
+    source: unchained
+    title: One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    task_id: 308ee794-a683-48a9-b00f-6d52fcd8ca27_9dd26cddb04047569dfa9ab53a18cb76
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:10:48.130Z
+    updated_at: 2026-08-25T18:14:12.871Z
+    completed_at: 2026-08-25T18:14:12.871Z
+  - key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z:chunk:4
+    parent_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    attempt_key: unchained:53000ef0-a0a1-11f1-a5b9-f317634db1b6:20260825:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3:mimo:2026-08-25T18:10:48.130Z
+    provider: mimo
+    id: 53000ef0-a0a1-11f1-a5b9-f317634db1b6
+    source: unchained
+    title: One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3
+    task_id: 0f7b442f-b769-4ab6-8417-bbdf0088b664_357ea75d8b9b4367a26052f3be65b6e7
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:10:48.130Z
+    updated_at: 2026-08-25T18:14:26.072Z
+    completed_at: 2026-08-25T18:14:26.072Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:0
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: 90b1daa7-4d8d-4fc9-9270-2d2c0359b2bd_96894e639358431e8f38b6dabb982cf5
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:15:59.374Z
+    completed_at: 2026-08-25T18:15:59.374Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:1
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: 82e0f20b-f96d-4618-a8b8-8121f05fea78_cb49e47614c64856b12de7e8b0b7f96e
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:16:28.101Z
+    completed_at: 2026-08-25T18:16:28.101Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:2
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: 08dee1aa-d193-409c-8185-62efa931434f_f4f3fa6674794e598309cbc76c436e04
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:17:22.214Z
+    completed_at: 2026-08-25T18:17:22.214Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:3
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: a3b90273-2df6-4e70-8cad-4b232457c6db_a6a5e2f9f77341ad9cc0eb5641b953b1
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:18:07.378Z
+    completed_at: 2026-08-25T18:18:07.378Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:4
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: e9fb4c8f-2cc2-4b6a-bc57-2726dae1838b_f56db050f08247b297c8f3d83c58728e
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:18:53.350Z
+    completed_at: 2026-08-25T18:18:53.350Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:5
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: 66dc2851-486b-4647-b40a-69654fe53e30_e6c306e298ff4aca90605b9368a6518b
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:19:38.232Z
+    completed_at: 2026-08-25T18:19:38.232Z
+  - key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z:chunk:6
+    parent_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    attempt_key: latepost:75697b83-bdc7-40a6-8fd5-77440b8cc85a:20260528:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3:mimo:2026-08-25T18:14:26.368Z
+    provider: mimo
+    id: 75697b83-bdc7-40a6-8fd5-77440b8cc85a
+    source: latepost
+    title: "167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/75697b83-bdc7-40a6-8fd5-77440b8cc85a.mp3
+    task_id: 63d12901-9ac0-4985-b555-b7595db06e7d_f2a353a843d74106a821d30f1dd4b9d3
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-25T18:14:26.368Z
+    updated_at: 2026-08-25T18:20:27.848Z
+    completed_at: 2026-08-25T18:20:27.848Z

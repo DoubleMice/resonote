@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后量子密码学：全世界用同一种，加密圈为何试三种？ | Unchained</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px; line-height: 1.75; color: #1f2937;
+    background: #fafafa; padding: 32px 20px 64px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { margin-bottom: 32px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 12px; color: #111827; }
+  .meta { font-size: 14px; color: #6b7280; }
+  .meta span { margin-right: 14px; }
+  h2 {
+    font-size: 21px; margin: 40px 0 14px; padding-left: 12px;
+    border-left: 4px solid #1971c2; color: #111827;
+  }
+  p { margin-bottom: 14px; }
+  .quote {
+    margin: 18px 0; padding: 14px 18px; font-style: italic;
+    border-left: 4px solid #1971c2; background: #eef4fb; border-radius: 4px;
+  }
+  .quote .src { display: block; margin-top: 8px; font-size: 13px; font-style: normal; color: #6b7280; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin: 20px 0; }
+  .card { padding: 14px 16px; border-radius: 8px; font-size: 15px; }
+  .card strong { display: block; margin-bottom: 4px; }
+  .blue { background: #eef4fb; border-left: 4px solid #1971c2; }
+  .green { background: #eefaf1; border-left: 4px solid #2f9e44; }
+  .yellow { background: #fff9e8; border-left: 4px solid #f59f00; }
+  .red { background: #fdeeee; border-left: 4px solid #e03131; }
+  .purple { background: #f6eefc; border-left: 4px solid #9c36b5; }
+  .orange { background: #fff3e6; border-left: 4px solid #e8590c; }
+  .gloss { color: #6b7280; font-size: 15px; }
+  .gloss::before { content: "作者概括："; font-weight: 600; color: #9c36b5; }
+  .quotes { margin: 20px 0; }
+  .quotes .q {
+    margin-bottom: 12px; padding: 14px 16px; border-radius: 6px;
+    font-style: italic; font-size: 16px;
+  }
+  .quotes .q .src { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #6b7280; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+  a { color: #1971c2; }
+  @media (max-width: 480px) {
+    h1 { font-size: 23px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>后量子密码学：全世界用同一种，加密圈为何试三种？</h1>
+  <div class="meta">
+    <span>播客：Unchained</span>
+    <span>嘉宾：Illia Polosukhin（NEAR 联合创始人）、Charles Guillemet（Ledger CTO）</span>
+    <span>主持人：Laura Shin</span>
+    <span>2026 年 8 月 · 1 小时 3 分钟</span>
+  </div>
+</header>
+
+<section>
+  <p>量子计算机真正落地之前，加密行业必须先回答一个问题：现有的密码学假设还靠得住吗？本期 Unchained 把两个站在不同战壕里的人请到了一起——NEAR 联合创始人 Illia Polosukhin 从链与软件的角度出发，Ledger 的 CTO Charles Guillemet 从硬件钱包与安全芯片的角度出发。两人有一个共识：威胁的时间线正在明显收缩，而区块链世界的应对方式，和互联网的其余部分完全不同。</p>
+
+  <div class="cards">
+    <div class="card blue"><strong>量子威胁突然变真实</strong>2026 年 3-4 月 Google 论文只公开 ZK 证明；EigenLayer 竞赛里 AI 在 48 小时内找到算法。</div>
+    <div class="card green"><strong>NEAR 已上主网</strong>第一个支持后量子签名的主流区块链，账户模型让它更容易更换密码学。</div>
+    <div class="card yellow"><strong>三种算法并存</strong>NIST 标准化了 ML-KEM、Falcon、SPHINCS+——全世界只用一种，加密圈三种都要用。</div>
+    <div class="card red"><strong>Ledger 的硬件难题</strong>安全芯片为银行而生，后量子签名只能先固件级实现。</div>
+    <div class="card purple"><strong>未迁移的比特币</strong>可能被偷、被冻结，还是冻结后重新铸造？三个选项都引发争论。</div>
+    <div class="card orange"><strong>公钥本来就是公开的</strong>"只有 500 万比特币暴露公钥"是糟糕的论证。</div>
+  </div>
+</section>
+
+<h2>一、达摩克利斯之剑：威胁时间线突然收缩</h2>
+<p>Shor 算法能从公钥反推私钥，一直被当作悬在密码学头上的达摩克利斯之剑（Illia 的原话是 Damocles sword）。过去它要求极其庞大的量子算力，所以大家默认它很遥远。但过去八个月里，两条曲线同时在向加密世界逼近：量子计算机本身的进展，以及 Shor 算法所需算力的急剧下降。</p>
+<div class="quote">
+"过去 20 年，人人都说还要五年。"
+<span class="src">— Illia Polosukhin 转述 Charles Guillemet 的经典说法（原文：for past 20 years everybody says it's going to be in five years）</span>
+</div>
+<p>转折点是 2026 年 3 月到 4 月之间的一篇 Google 论文。论文方谨慎到连算法本身都没有公布，只给出"该算法存在"的零知识证明。随后 EigenLayer 举办了一场面向 AI 的竞赛，让 AI 去找出这个算法——它真的在 48 小时内找到了，此后还持续改进。Illia 说，现在整体上"感觉比以往任何时候都更真实"，所有人都开始认真对待这件事。</p>
+<p class="gloss">作者概括：也就是说，让"从公钥恢复私钥"这件事变得可行的，不只是量子硬件在进步，算法本身也在被 AI 加速改进——两条曲线叠加，才是威胁突然变真实的原因。</p>
+
+<h2>二、NIST 2024：全球迁移令与"五年魔咒"</h2>
+<p>Charles 把后量子迁移推到台前的第一件事，追溯到 2024 年 NIST 的迁移建议与强制令。当时的主流反应是"迟早会迁，但不急"——因为量子计算机还很远。但正如 Illia 所说，这个"五年"和过去二十年的"五年"感觉完全不同：投资规模、关注度、以及 AI 对材料科学和物理研究的加速，都让进度变得真实可见。</p>
+<p>值得注意的一点是两人对紧迫性的理解：Charles 强调，密码学存在的意义是建立对系统安全的信任，"信任一旦被侵蚀，就必须升级"。而区块链的升级路径比普通软件更长——它需要整个社区就算法选择、区块大小、吞吐量影响、迁移期限达成社会共识，所以必须提前行动。</p>
+
+<h2>三、"收获现在、解密以后"：为什么区块链反而简单</h2>
+<p>互联网面临的问题是加密数据：攻击者今天就可以把所有加密流量存下来，等量子计算机出现再逐一解密——这就是"harvest now, decrypt later"（现在收获，以后解密）。等得越久，暴露窗口越长。但 Charles 指出，这个问题在区块链上并不存在："区块链上并没有真正的加密"，威胁只针对签名。所以区块链的底线很简单——赶在量子计算机准备好之前准备好。</p>
+<p>真正复杂的是社会共识：选哪种算法、区块要不要变大、吞吐量受不受影响、迁移期限多长、到期后未迁移的币怎么办。这些决策必须由每条链自己做出，而它们的选择并不一致。</p>
+
+<h2>四、"公钥就是公钥"：一个危险的安心说法</h2>
+<p>有一种流行说法试图缩小风险面：Ethereum 地址是公钥的哈希且被截断，链上不一定看得到公钥，因此只有约 500 万枚比特币暴露了公钥、才有风险。Charles 直接反驳："公钥不是用来保密的，它就是公开的。就算不在链上，它也会出现在各种后端、各种日志里。所有与比特币相关的公钥都在世界上某个地方，不能假设它们私密。"</p>
+<p>Illia 还补充了一条更现实的收集通道：用户把公钥发给 RPC 节点等服务的网络流量，目前仍由可被量子破解的加密保护。任何做"收集现在、解密以后"的人，抓取 RPC 流量就是在为将来收集公钥。</p>
+
+<h2>五、NEAR 的起点：为"换密码学"而生的账户模型</h2>
+<p>NEAR 在加密圈里有一个天然优势：它从设计上就没有把密码学焊死进地址。Illia 回忆，NEAR 刚创建时就决定，账户就是账户——像 Google 账户或 Apple 账户那样，可以有多种访问方式，也就是访问密钥（access keys）。上线时 NEAR 就同时支持 ECDSA 与 EdDSA（分别是 Ethereum 和 Solana 的底层算法），并刻意让添加新密码学变得很容易。</p>
+<p>这个"十年前就盯着五年后的量子计算机"的决定，让 NIST 标准化落地后 NEAR 的迁移异常顺利：加一种新曲线、测试、上线，几乎是一条现成的流水线。用户侧的签名（访问账户）可以先行迁移，因为频率低；而共识层每出一个区块都要签名验证，对性能的要求完全不同，所以共识层暂时仍用 EdDSA——这需要更快、更便宜、更小的后量子密码学，也是整个研究社区在找的东西。</p>
+
+<h2>六、第一个主网后量子签名，与 35+ 条链的责任</h2>
+<p>访谈前几个月，NEAR 带着"首个后量子签名支持"上了主网——Illia 说，据他所知，这是第一次能在主流区块链上用后量子安全的密钥持有资产。但上链只是第一步：托管方、钱包、交易所都要接入同一套签名方案，这需要时间，也需要社会共识。所以 NEAR 选择与 Ledger 合作，保证双方用同一种签名方案和同一套工具，让 Ledger 成为这套方案的首个硬件支持。</p>
+<p>NEAR 的特殊之处还在于它不只对自己的链负责。NEAR Intents 接入了 35 条以上的链，实际上持有这些链上的资产；一个 NEAR 账户可以同时放 Bitcoin、Ethereum、Solana、Tron、Ton，还能用一把 Ledger 统一管理。Illia 的愿景是：用户的 NEAR 账户一旦后量子化，名下所有链的资产都跟着安全（前提是各链完成自己的迁移）——"把种子短语埋进洞里，十年后挖出来，资产都还在。"</p>
+
+<h2>七、三种算法，分裂的社区</h2>
+<p>NIST 标准化了三种后量子签名：ML-KEM 与 Falcon 基于格（lattice），SPHINCS+ 基于哈希（hash）。在区块链世界之外，这个选择没有任何悬念——银行、国防、TLS 全都用 ML-KEM/MLDSA，因为性能好、适合 MPC、实现方便。唯独区块链世界吵成一团，三种算法都被选中：</p>
+<div class="cards">
+  <div class="card blue"><strong>ML-KEM（格基）</strong>NEAR 与 Algorand 在用。签名更小，且是目前唯一支持多方计算（MPC）的算法——不过这个能力是很新的结果，"需要经受时间考验"。</div>
+  <div class="card green"><strong>Falcon（格基）</strong>Solana 基金会选择。Solana 的核心诉求是极低延迟，所以选签名最短的方案，尽量不影响出块速度。</div>
+  <div class="card yellow"><strong>SPHINCS+（哈希）</strong>Ethereum 与 Bitcoin 社区倾向哈希路线。标准版"实现起来很糟糕"，签名巨大、计算和验证都贵，所以要用不同变体和参数自己调整。</div>
+</div>
+<p>Charles 说得很直接：作为钱包，Ledger 必须全部支持——"生态里三种签名都会存在，我们没有真正的争论余地。"而碎片化本身也值得玩味：世界上的延迟敏感应用很多，但只有 Solana 因此选了 Falcon；Charles 认为，除了部分社区对格基安全的过度保守之外，竞争本身也是原因——"每条链都在互相竞争，给用户提供不同的东西，本身就是竞争优势。"</p>
+
+<h2>八、格基 vs 哈希：保守与实用的对峙</h2>
+<p>Ethereum 和 Bitcoin 社区选哈希，理由是保守：哈希本身被研究了很久、长期在产线中运行，而格基密码学虽然有三四十年历史，"此前从未上过产线"——再加上 AI 可能找出漏洞的担忧，他们宁愿选安全假设更保守的路线。代价是哈希签名往往有状态、密钥能签的次数受限、签名仍然偏大。</p>
+<p>NEAR 一方则押注格基，理由同样务实：机构采用几乎必然走 MPC 路线，而哈希签名"极不可能"支持 MPC。Illia 认为，为了让整个 Web3 以合理的方式协作，需要在格基上形成共识——"哈希签名对硬件钱包和 MPC 方案来说非常难支持"。NEAR 当天还宣布与 SafeWard 等团队合作，组成了一个覆盖托管方、银行、监管机构的联盟，在生产环境测试后量子 MPC——此前还没有一个后量子 MPC 方案上过生产。</p>
+
+<h2>九、Ledger 的硬件路线图：固件级先行，硬件级跟上</h2>
+<p>Ledger 面临一个独特的约束：它的安全芯片（secure element）本质上是为银行和身份识别场景设计的极小计算机——有 CPU、少量 Flash、少量 RAM、一个密码学加速器，内存少是故意的，因为设计目标就是只跑安全部分。这种芯片在硬件层面不认识后量子签名。所以当前的方案是在固件层实现 MLDSA 原语，让 CPU 用有限的 RAM 和 Flash 硬算：可行，但速度慢一些，也享受不到安全芯片的全部属性。</p>
+<p>下一代安全芯片会把 MLDSA 和哈希签名做进硬件，实现"更快、更强安全保证"；而 Solana 用的 Falcon 即使到下一代也只走固件。Charles 还澄清了"Ledger 什么时候抗量子"这个问题本身：单靠设备无法抗量子——如果 Bitcoin 没有后量子化，Ledger 也不能保护用户。"这是整个社区共同的努力。"</p>
+<p>顺带一提物理攻击：威胁模型是"小偷闯进你家、偷走设备、试图提取密钥"。这正是安全芯片存在的理由——从芯片里提取密钥极其困难；固件级的 MLDSA 少了一些对策，但对想提取密钥的攻击者来说，差别不大，"依然非常非常困难"。</p>
+
+<h2>十、未迁移的比特币：三个选项，全都糟糕</h2>
+<p>所有讨论最终都会撞上同一个难题：迁移期限到了，还没迁移的币怎么办？最刺眼的就是 Satoshi 的币——早期根本没有种子短语，它们既没有逃生门，数量又巨大。Charles 列出了三个选项：</p>
+<div class="cards">
+  <div class="card red"><strong>选项一：什么都不做</strong>量子计算机一来，币会被偷——"流动性问题、市场问题"。</div>
+  <div class="card orange"><strong>选项二：冻结</strong>宣布这些币任何人不能再花——"可以被看作私有财产问题"，产权立场强硬的人会反对。</div>
+  <div class="card green"><strong>选项三：冻结 + 重新铸造</strong>未迁移的币冻结，但继续在共识层铸造出来——不是到 2176 年发完 100 万枚，而是把未迁移的 400-500 万枚也发出来。</div>
+</div>
+<p>Charles 倾向选项三，理由有两个：不能让攻击者把几百万枚比特币砸进市场，"那会直接毁掉这个项目"；重新铸造还顺带缓解了比特币的"安全预算"问题——长期看矿工奖励可能不够维持链的安全。Laura Shin 和 Illia 都认同这是"一石二鸟"，但 Illia 的判断更现实：冻结大概是最可能的结果，重新铸造"是好方案，只是不认为大家真会选它"。他最担心的是达不成共识：比特币的治理"非常流动"，真要等矿工选择客户端才有定论，威胁足够高时会出现硬分叉——"作为社区，我们应该尽快定一个方案并落地，别再没完没了地讨论。"</p>
+
+<h2>十一、逃生门：零知识证明你的种子短语</h2>
+<p>对普通用户有一个相对温和的出路：量子计算机只能破解"公钥 → 私钥"这条链路，而"24 个单词与私钥之间的关联，量子计算机无法打破"。如果你能出示"拥有对应种子短语"的零知识证明，即使默认私钥支持被关闭，账户仍可继续使用。Charles 强调这适用于任何链——攻击者拿到私钥就能花币，根本不需要你的 24 个单词。</p>
+<p class="gloss">作者概括：换句话说，种子短语本身不是秘密通道，但它是"你能证明自己拥有某个私钥"的凭证；量子计算机无法从公钥反推出这一点，所以它成了生态正在收敛的逃生门。当然，它对 Satoshi 的币无效——早期根本没有种子短语这种东西。</p>
+
+<h2>十二、加密瑞士与跨链防线</h2>
+<p>最后，如果几年后某条链就是没迁移呢？Ledger 的立场是"加密世界的瑞士"：只要一条链的脆弱不影响另一条链的安全，就继续支持所有链，是否持有易受攻击的币由用户自己决定。NEAR 则更复杂——它允许资产跨链交易，被偷的币可以换成后量子资产，污染整体账本，所以 NEAR 一直在做异常检测，阻止被盗加密资产跨链流动，"无时无刻不被从朝鲜到普通黑客的人攻击"。NEAR 的解法是跑在前面：推动标准化、提供 API 与即插即用的支持，让迁移变得容易，用可选性带动大家真的去迁。</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="q blue">"过去 20 年，人人都说还要五年。"
+    <span class="src">— Illia Polosukhin（原文：for past 20 years everybody says it's going to be in five years）</span>
+  </div>
+  <div class="q red">"区块链上没有真正的加密，问题只在签名——你只需要赶在量子计算机之前准备好。"
+    <span class="src">— Charles Guillemet（原文：there is no real encryption in blockchain）</span>
+  </div>
+  <div class="q yellow">"公钥不是用来保密的，它就是公开的。"
+    <span class="src">— Charles Guillemet，反驳"只有 500 万比特币有风险"的说法（原文：a public key is not meant to be private, it's public）</span>
+  </div>
+  <div class="q green">"你的 24 个单词与私钥之间的关联，量子计算机无法打破；它只打破公钥与私钥之间的关联。"
+    <span class="src">— Charles Guillemet，解释 ZK 种子短语逃生门（原文：the link between your 24 words and your private key cannot be broken by a quantum computer）</span>
+  </div>
+  <div class="q purple">"我们真的想当加密世界的瑞士。"
+    <span class="src">— Charles Guillemet（原文：we really want to be like the Switzerland of crypto）</span>
+  </div>
+</div>
+
+<footer>
+  <p>本文基于 Unchained 播客节目整理：<a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3">One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Trying Out Three?</a></p>
+  <p>嘉宾：Illia Polosukhin（NEAR Protocol 联合创始人）、Charles Guillemet（Ledger CTO）· 主持人：Laura Shin · 2026 年 8 月</p>
+  <p>本页内容仅供信息参考，不构成投资建议。</p>
+</footer>
+
+</div>
+</body>
+</html>
