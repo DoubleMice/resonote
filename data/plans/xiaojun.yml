@@ -1,15 +1,31 @@
 source: xiaojun
-refreshed_at: 2026-08-26T03:27:43.331Z
+refreshed_at: 2026-08-26T18:39:51.280Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
-done: 0
+total_candidates: 2
+done: 1
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6a8eadd61352af56ff3c6017
+    guid: 6a8eadd61352af56ff3c6017
+    title: 152. 领读Kimi K3技术报告：从架构创新聊起，注意力美学、多教师蒸馏和开源MoE
+    duration: 7459
+    published: Wed, 26 Aug 2026 09:33:46 GMT
+    published_sort: "20260826"
+    first_seen_at: 2026-08-26T18:39:51.280Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a8eadd61352af56ff3c6017?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a8eadd61352af56ff3c6017/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lrVnGxoafcZ7vzH8HywULkwNb6n6.m4a
+    image: https://image.xyzcdn.net/FhWaLv0I90srM8tw69uhu8gNHfUQ.png
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-26T18:39:52.576Z
+    transcript_job_id: fd1f4c3e-a3b6-4f26-be72-e70f08bb393d_930c6348b7f94565996385c9a2eac978,f34bc930-5282-43a7-9c22-43a8cd1550e3_69fe3fd9ec3844838873b6119f0367c4,0e58a65f-0601-4951-9c2d-e8bf1aaeb803_5063acc9e11448e4bb453e8f7437409c,301141f2-df87-49a8-972f-101a25d6fcee_7124a74cee834ef683c2b353dcfe438d,0eb5337f-74ff-47a1-a641-f99756919e9c_f3940277ed404cdbb95e2cca4606b3b3,65b94b5f-bfe1-4214-a7fb-d354f867bf7f_9b1ceb493b0840c2b87be54e9a719d80,8277e302-b88d-4a0c-a825-95386b873359_d8364442a7fe4014a803afdddac9331f,26be79b5-417e-4fa1-b224-42ff23793c0a_690ed503e2ca4a7ebedbbccf81c54229,926a8187-410c-4a9d-9bf0-c5af50bb5d6d_879d82b5119444aea2d4fe9a717d5733
+    transcript_completed_at: 2026-08-26T18:49:30.756Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去

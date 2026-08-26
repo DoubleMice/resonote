@@ -1,0 +1,33 @@
+id: c7f4e8c0-49d8-4b44-9257-824f4e254991
+source: latepost
+title: "166: 许华哲再次具身创业：不想错过最大的西瓜"
+guest: "许华哲"
+guest_role: "破壳机器人创始人 / 清华大学交叉信息研究院助理教授 / 前星海图联创与首席科学家"
+published: 2026-05
+duration: "2h26m"
+url: "https://podcast.latepost.com/166"
+thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/c/c7f4e8c0-49d8-4b44-9257-824f4e254991/cover.jpg?v=1"
+status: generated
+tags:
+  - robotics
+  - startup
+  - ai-research
+  - interview
+  - founder
+  - researcher
+  - deep-dive
+  - technical
+summary: |
+  许华哲在离开星海图后再次创业，成立破壳机器人，目标是把通用智能（physical AGI）送进家庭。
+  他判断未来 18-24 个月会有一台机器人真正走进家里做事，并主张具身智能应该走 AI native 路线：
+  不是传统机器人学、不是自动驾驶、不是史前深度学习，而是统一大模型加全部数据加规模化后训练。
+  节目还聊了他对行业"卖数据、无脑量产、跳舞"三大现象的批评，以及从科学家到创业者的人生转变。
+core_ideas:
+  - '许华哲判断：未来 18-24 个月会有一台机器人真正走到家里面去做一点事，而破壳的终极目标是"造一个人"——同一个通用机器人可以跳舞、种地、教书'
+  - '具身智能最核心的是智能而不是本体："机器人其实只是一个铁疙瘩"，工业落地往往只需要"稍有智能的机械臂"，离 physical AGI 有巨大夹角'
+  - 'AI native 意味着三条老路都不通：任务无法穷举所以不是传统机器人学，小场景数据闭环做不出来所以不是自动驾驶，小模型堆叠不等于大模型所以不是史前深度学习'
+  - 'AI 本质上是一个归纳器：案例多样性决定归纳质量，且结论形成后很难再补——"最开始就应该把所有的数据放在一起"'
+  - '破壳第一阶段做三件大事：造硬件本体（轮式双臂先切入）、训统一模型（强化学习加规模化后训练，保持泛化性）、定义产品（明确"不做什么"，不做直接接触人体的服务）'
+  - '他担心行业错过"最大的西瓜"：智能是最后的决胜点；卖数据、无脑量产、跳舞都是把力气花在智能之外'
+article_path: episodes/c7f4e8c0-49d8-4b44-9257-824f4e254991/article.html
+base: /episodes/c7f4e8c0-49d8-4b44-9257-824f4e254991/

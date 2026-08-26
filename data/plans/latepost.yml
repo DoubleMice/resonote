@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-26T03:27:43.354Z
+refreshed_at: 2026-08-26T18:39:51.305Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 19
-done: 0
+done: 1
 pending: 0
-needs_transcript: 19
+needs_transcript: 18
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -102,8 +102,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-26T18:49:31.015Z
+    transcript_job_id: aeb57b01-619e-4875-81a3-b80c5fa87e27_2b78c7d342a2496c8ba705cfcb4c40f8,5d7b3b0a-76ad-4b84-8ee6-4a2dcde3fa0e_14744237d48843768f5d556910305826,1f5895de-961a-49a3-82a2-6cc7ad1cbb60_4fa40e6b010c488b863283fee0787420,361ecf61-cf1b-4f08-828e-0ce73ca23857_1bd09700b261415ba148793110421443,48ae6d89-5773-42a0-a82b-edc7fee3e0a1_2aa3fd4f283144fd9a54ccf70cf2728b,7164f9c1-5772-4be3-b7ba-5b57db46f863_9d7e92398e244627b4934507d9596a4d,0623b4b2-aa1b-4ff4-9f94-21e85fe254f9_7f33bccaf0e9471385e0603c3e7878d6,5ddadf94-502a-4bda-8510-a2e06b212e2e_d9762e75ded94186b0ce7f8b50480e39,0ffe874b-206b-4c68-b081-9d273a9a3e94_b7fde566902348759046346ddf1c5c41,e3ade41e-938b-451b-8532-9c71dd6cd564_f764f5459fd544dd9b28bc128a968c00
+    transcript_completed_at: 2026-08-26T18:59:39.161Z
   - id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
     guid: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
     title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"

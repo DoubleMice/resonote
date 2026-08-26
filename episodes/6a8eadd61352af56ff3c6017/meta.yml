@@ -1,0 +1,31 @@
+id: 6a8eadd61352af56ff3c6017
+source: xiaojun
+title: "152. 领读Kimi K3技术报告：从架构创新聊起，注意力美学、多教师蒸馏和开源MoE"
+guest: "孙宇涛"
+guest_role: "清华大学计算机系博士候选人 / 上海创智学院普瑞学者"
+published: 2026-08
+duration: "2h4m"
+url: "https://www.xiaoyuzhoufm.com/episode/6a8eadd61352af56ff3c6017?utm_source=rss"
+thumbnail: "https://image.xyzcdn.net/FhWaLv0I90srM8tw69uhu8gNHfUQ.png"
+status: generated
+tags:
+  - ai-research
+  - interview
+  - researcher
+  - deep-dive
+  - technical
+summary: |
+  孙宇涛（清华大学博士候选人、RetNet 作者之一）逐篇领读 Kimi K3 技术报告：
+  从混合注意力与 Kimi Delta Attention 的 channel-wise 衰减，到 lower-bound decay 的 kernel 协同设计、
+  Gated MLA 的训练稳定性、Attention Residual 与 LatentMoE 的 free lunch，再到多教师合板式的逆蒸馏。
+  两个多小时串起十余篇论文的演进脉络，也聊到 K3 与 DeepSeek V4 的路线分化、
+  100B 激活背后的"魄力"决定，以及他对"大模型没有太本质创新"的暴论。
+core_ideas:
+  - '混合注意力是工程上的 tradeoff，但不是表现上的 tradeoff——3:1 的全注意力配比带来接近 4 倍加速上限，长上下文无损甚至更好'
+  - 'Kimi Delta Attention 把衰减项从标量升级为 channel-wise：同一 head 内每个 channel 独立衰减，是严格更强的能力上限'
+  - 'lower-bound decay 是算法与 kernel 的 co-design：用绝对位置表示相对位置，16-token 窗口内把衰减控制在 BF16 动态范围内'
+  - 'LatentMoE 把 dispatch 通信压缩 2-4 倍，能力不损，是"free lunch"式的结构——推理的 critical path 收益比训练更大'
+  - '逆蒸馏（on-policy distillation）：学生自己生成答案、老师逐步纠正，把异构的 reward 变成同构的模型，多教师合板由此变得简单'
+  - 'K3 的 100B 激活不是技术决定而是魄力决定——"更大的模型才有更大的一个智能上限，如果别的东西没有做太错的话"'
+article_path: episodes/6a8eadd61352af56ff3c6017/article.html
+base: /episodes/6a8eadd61352af56ff3c6017/

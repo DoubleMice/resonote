@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>领读 Kimi K3 技术报告：注意力美学、多教师蒸馏与开源 MoE — 孙宇涛 × 张小珺</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 17px; line-height: 1.75; color: #212529; background: #f8f9fa;
+}
+article { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; background: #fff; }
+header { margin-bottom: 40px; }
+h1 { font-size: 28px; line-height: 1.35; margin-bottom: 8px; color: #1a1a2e; }
+h2 { font-size: 22px; margin: 40px 0 16px; color: #1a1a2e; border-bottom: 2px solid #e9ecef; padding-bottom: 8px; }
+h3 { font-size: 18px; margin: 28px 0 12px; color: #343a40; }
+p { margin-bottom: 16px; }
+.meta { font-size: 14px; color: #868e96; margin-top: 4px; }
+.tag { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; background: #e9ecef; color: #495057; margin-right: 6px; margin-bottom: 4px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 20px 0 32px; }
+.card { padding: 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.card strong { display: block; margin-bottom: 4px; }
+.card span { color: #495057; }
+.c-red { background: #fff5f5; border-left: 4px solid #e03131; }
+.c-blue { background: #e7f5ff; border-left: 4px solid #1971c2; }
+.c-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+.c-purple { background: #f8f0fc; border-left: 4px solid #862e9c; }
+.c-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+.c-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+blockquote {
+  margin: 20px 0; padding: 16px 20px; border-left: 4px solid #1971c2;
+  background: #f1f9ff; border-radius: 0 8px 8px 0; font-style: italic; color: #2b4a6f;
+}
+blockquote .attr { display: block; margin-top: 8px; font-size: 12px; font-style: normal; color: #868e96; }
+blockquote.red { border-left-color: #e03131; background: #fff5f5; color: #6b2020; }
+blockquote.green { border-left-color: #2f9e44; background: #ebfbee; color: #1e4620; }
+blockquote.orange { border-left-color: #e8590c; background: #fff4e6; color: #6b3820; }
+blockquote.purple { border-left-color: #862e9c; background: #f8f0fc; color: #3b1e4a; }
+blockquote.yellow { border-left-color: #f08c00; background: #fff9db; color: #4a3a10; }
+.info-box { margin: 20px 0; padding: 16px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.i-red { background: #fff5f5; border: 1px solid #ffc9c9; }
+.i-blue { background: #e7f5ff; border: 1px solid #a5d8ff; }
+.i-green { background: #ebfbee; border: 1px solid #b2f2bb; }
+.i-orange { background: #fff4e6; border: 1px solid #ffd8a8; }
+.i-purple { background: #f8f0fc; border: 1px solid #eebefa; }
+.i-yellow { background: #fff9db; border: 1px solid #ffec99; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e9ecef; font-size: 13px; color: #868e96; text-align: center; }
+footer a { color: #1971c2; text-decoration: none; }
+@media (max-width: 600px) { article { padding: 32px 16px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<article>
+
+<header>
+<h1>领读 Kimi K3 技术报告：从架构创新聊起，注意力美学、多教师蒸馏和开源 MoE</h1>
+<div class="meta">
+  孙宇涛 · 清华大学计算机系博士候选人 / 上海创智学院普瑞学者<br/>
+  张小珺主持 · 张小珺（Xiaojun）Podcast · 2026 年 8 月 · 2 小时 4 分钟
+</div>
+<div style="margin-top:12px;">
+  <span class="tag">AI 研究</span>
+  <span class="tag">模型架构</span>
+  <span class="tag">注意力机制</span>
+  <span class="tag">开源 MoE</span>
+</div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<p>Kimi K3 是 2026 年开源社区最重要的模型之一：2.8T 总参数、约 100B 激活参数的 MoE，上下文 1M，技术报告一口气引用了二十余篇相关工作。要读懂这份报告，最好的方式不是从头啃公式，而是找一位亲身参与这条研究脉络的人来领读。孙宇涛正是这样的人——他是 RetNet 的作者之一，2023 年（ChatGPT 发布之前）就把方向定在 LLM 架构与预训练，两三年间围绕"推理高效性"做了 RetNet、Ultralight、Looped Language Model 等一系列工作。</p>
+
+<p>这期节目不是论文复述，而是一场架构演进史的导览：为什么线性注意力最后不得不和全注意力混合？衰减项如何一步步从标量变成 channel-wise？为什么说 LatentMoE 是 free lunch？多教师合板为什么成了 post-training 的主流？两个多小时聊完，你会发现 K3 的每一个设计都不是孤立的技术选择，而是十余篇论文、四五年脉络的自然交汇。</p>
+
+<div class="cards">
+<div class="card c-blue">
+<strong>K3 是什么</strong>
+<span>有效扩展到 2.8T 总参数、全量开源的 MoE 模型，激活参数约 100B，上下文 1M</span>
+</div>
+<div class="card c-purple">
+<strong>一节课讲完注意力演进</strong>
+<span>从 RetNet 到 Mamba、DeltaNet、Gated DeltaNet，再到 K3 的 Kimi Delta Attention</span>
+</div>
+<div class="card c-green">
+<strong>稳定性优先的工程哲学</strong>
+<span>Gated MLA、tanh-H 激活、Quantile Balancing——每个设计都在回答怎么训得稳</span>
+</div>
+<div class="card c-orange">
+<strong>开源 MoE 的新路线</strong>
+<span>LatentMoE 压缩通信、MoE-EP 冗余专家均衡，推理收益比训练更大</span>
+</div>
+<div class="card c-red">
+<strong>多教师蒸馏</strong>
+<span>学生做题、老师批改的逆蒸馏，把异构 reward 变成同构模型再合板</span>
+</div>
+<div class="card c-yellow">
+<strong>不止论文</strong>
+<span>K2→K3 的战略转变、Kimi vs DeepSeek 的路线分化，还有一条"暴论"</span>
+</div>
+</div>
+
+<h2>K3 全景：一次"有效"的 2.8T scaling</h2>
+
+<p>K3 最直观的数字是三个：总参数 2.8T（MoE，全量开源）、激活参数约 100B（发布时远超国内其他开源模型）、上下文 1M（更大窗口，解决更复杂任务）。但孙宇涛强调，规模本身不稀奇，关键在于这是不是一次"有效"的 scaling——随便起一个 2.8T 的模型、跑 100B token 就放出来，那是无效的。</p>
+
+<p>他的判断标准是一句第一性原理：</p>
+
+<blockquote>
+"更大的模型才有更大的一个智能上限，如果别的东西没有做太错的话。"
+<span class="attr">— 孙宇涛，论 size 与智能的关系</span>
+</blockquote>
+
+<p>也就是说，K3 的价值在于它把这个规模真正做 work 了：架构、训练 recipe、数据策略叠加在一起，得到相对 K2 约 2.5 倍的 Chinchilla scaling efficiency（作者概括：这是孙宇涛对报告数据的解读，原话未给出精确倍率）。</p>
+
+<h2>混合注意力：先承认线性注意力的失败</h2>
+
+<p>故事要从一个"失败"讲起。孙宇涛自己的博士起点 RetNet 是一个纯线性注意力模型，目标是让线性注意力在 general 场景下逼近全注意力。但结论相当诚实——</p>
+
+<blockquote class="orange">
+"就作为纯线性注意力的一个模型而言，无疑是一个比较失败的一个尝试"
+<span class="attr">— 孙宇涛，评价 RetNet 作为纯线性注意力模型的结局</span>
+</blockquote>
+
+<p>线性注意力的长上下文能力始终追不上全注意力，于是业界的选择是承认失败、两者混合：4 层里放 1 层全注意力（3:1），纯线性注意力部分的加速比上限约为 4 倍。最关键的判断是，这个混合从架构上讲是 tradeoff，但从最终模型表现上看不是：</p>
+
+<blockquote>
+"混合注意力它其实虽然从架构上来讲是一种tradeoff，但是从最后模型本身的表现来说并不是一个tradeoff。"
+<span class="attr">— 孙宇涛，解释混合注意力为何被大规模采用</span>
+</blockquote>
+
+<h2>四年演进：从 RetNet 到 Kimi Delta Attention</h2>
+
+<p>孙宇涛读论文的习惯是把 research 脉络打开：每一项设计背后都有历史原因，每一项都有明确的 credit。线性注意力这条线，每一步都踩在前人肩膀上——RetNet 引入衰减项和 chunk-wise recurrent（chunk 间递归、chunk 内并行）这两个基石；Mamba 把衰减升级为位置相关；DeltaNet 用 delta rule 提高上下文容量；Gated DeltaNet 解决了 kernel 并行化的难题。</p>
+
+<p>K3 的 Kimi Delta Attention（KDA）站在链条终点。直接读 KDA 的公式会觉得"特别特别长"，每个项都对应一段历史，但相比 Gated DeltaNet 的关键改动只有一处：<strong>把衰减项从标量变成 channel-wise</strong>——同一个 head 里，每个 channel 可以有自己独立的衰减系数。</p>
+
+<p>这个改动的底气在于：channel-wise 衰减可以退化回均匀衰减，所以是严格更强的能力上限（formula 意义上严格更好）；代价是 kernel 更难写——标量衰减一个 tile 只有一个变量、非常好处理，channel-wise 之后利用 tensor core 的方式要重新设计。</p>
+
+<h2>一次典型的 co-design：lower-bound decay</h2>
+
+<p>KDA 最有趣的部分不是注意力公式本身，而是它与 kernel 的联合设计。想处理更 fine-grained 的衰减，Q/K 要乘衰减的倒数变换——用绝对位置表示相对位置，这和 RoPE 是同一个思路："减二可以表示为这个三减五"。</p>
+
+<p>问题随之而来：Q 或 K 一侧会除以一个很小的数，数值上必须控制在 BF16 动态范围内才有效。K3 的做法是反着推——Kimi Linear 设定 16 个 token 的窗口，然后数学上反解出：16 token 内最多允许衰减多少，正好不越界。于是算法层面主动限制衰减程度，让 kernelize 更通畅。</p>
+
+<p>这就是孙宇涛反复强调的模型与 infra 的 co-design：不是单方面迁就，而是让算法为 kernel 让路，同时保证递归结果与原来一致。</p>
+
+<h2>稳定性两件套：Gated MLA 与 Attention Residual</h2>
+
+<p>MLA 大家已经很熟：DeepSeek V2 提出，主要目的是减少 KV cache 开销，之后被 V3 和 Kimi K2 采用。K3 继续沿用，但加了一个门控操作——Gated Attention 最早来自 Anthropic，大家最买账的点是训练稳定性。为什么要稳定性优先？因为</p>
+
+<blockquote class="green">
+"模型的能力其实本质上最主要的因素是模型的参数大小。所以说好一点差一点它都不如稳定性要重要。"
+<span class="attr">— 孙宇涛，论为什么稳定性高于能力</span>
+</blockquote>
+
+<p>Gated 与 GQA/MLA 本身正交——不破坏 MLA 的推理性质，又能提升训练稳定性，等于能跑的东西不动、再加一层保险。关于 MLA 的争议，Kimi 的卢福利曾认为 Agent 时代 MLA 应该会被替代（推理阶段计算浪费太多，MTP 能把剩余算力更有效地用起来）；孙宇涛的回应是"MLA它本身就是MQA的一个等价的一个形式"，而 K3 继续沿用则是因为"能跑的东西就不要动"——他也承认这是个"比较暂态的一个状态"。</p>
+
+<p>Attention Residual 是另一个稳定性设计：它不是简单的 LayerNorm 摆放区别。ResNet 时代凯明就讨论过 pre/post-LayerNorm 的稳定性，BERT 时代 post 结果略好，模型变大后 post 出现梯度消失，于是大家都转向 pre。Attention Residual 至少可以退化到 pre-LayerNorm，是严格更强的结果，而且"对于推理来说基本是免费的"——不增加推理开销就能提升结果，大家上得没压力。</p>
+
+<h2>LatentMoE：把通信量降下来的 free lunch</h2>
+
+<p>MoE 训练最大的挑战之一是 all-to-all dispatch 的通信开销，它随 hidden state 大小和激活专家数并行增长，EP 模式下这个 overhead 相当大，还反过来影响 infra 选型。英伟达团队今年年初提出的 LatentMoE 给出一个几乎白赚的方案：把 dispatch 的 hidden state 先压到低维 latent（减小 2 倍、4 倍）再分发；损失的参数量用两种方式补回——提高 FFN intermediate 维度，或拆更多专家、激活更多专家。</p>
+
+<blockquote class="green">
+"它其实还是一个这个free lunch或者类似free lunch的这样的一个结构。"
+<span class="attr">— 孙宇涛，评价 LatentMoE</span>
+</blockquote>
+
+<p>为什么说是 free lunch：一个恰当设计的 LatentMoE 配置可以保持 standard MoE 的结果，能力不变、通信大减。更妙的是推理收益比训练更大——训练优化 throughput，通信可以用 overlap 掩盖；推理的 latency 在 critical path 上，掩盖不掉，"推理的这个 critical path latency 它是免费的"。</p>
+
+<p>一个工程细节值得记住：LatentMoE 的压缩投影和 MLA 的低秩投影一样，中间一定要加 normalization（K3 用 RMSNorm）——两个矩阵连乘在表达能力上是 trivial 的（可以合并），但优化性质完全不同，拆开写就必须配稳定手段。</p>
+
+<h2>逆蒸馏与多教师合板</h2>
+
+<p>蒸馏有两种：黑盒蒸馏（只能拿到输入输出）和白盒蒸馏（拿得到模型和任意中间状态）。MiniLM 反其道而行——让学生自己生成答案，老师逐步纠正推理过程：一种是老师讲课、学生把结果学进来，另一种是学生自己作答、老师逐步纠正。这个后来被命名为 on-policy distillation 的范式，从蒸馏工具变成了 post-training 的主流。</p>
+
+<p>为什么现在流行"自己蒸馏自己"？孙宇涛给出两个原因。管理上：pre-training 把数据合起来一起干就行，post-training 用了各种先进策略后直接合板难度大，on-policy distillation 能把整个 post-training team 的管理简化。技术上：训 math 用 verifiable reward，偏好用 reward model，每个能力的 reward 都是独特的——把它们简化成不同的模型就同构了，多教师合板于是容易很多。这不是 K3 首创，印象里小米、GLM 都是这么做的。</p>
+
+<h2>长上下文：RoPE 下掉，NoPE 上位</h2>
+
+<p>K3 原生支持 128K 长上下文，位置编码的选择是亮点。Cohere 团队最早指出：hybrid attention 里线性注意力已经引入了位置信息，全注意力层可以放心把 RoPE 拿掉。孙宇涛的评价更直接——</p>
+
+<blockquote class="red">
+"RoPE它并不带来任何的长文能力，它甚至是损害长文能力的。"
+<span class="attr">— 孙宇涛，论 RoPE 与长文能力</span>
+</blockquote>
+
+<p>RoPE 本质带来的是 recency bias——对短上下文建模特别有效，扩长文要调参数，不调参数硬外推结果很差。而 NoPE 不需要调整任何模型架构参数就能达到长上下文效果，外推效果更好。孙宇涛的背书很有说服力：看到论文第二天就去复现，然后也很 work——"当时我直接给了一个strong accept。我感觉我这几年可能都没有给过几个strong accept"</p>
+
+<h2>战略与路线：K2→K3、WSD vs cosine、K3 vs V4</h2>
+
+<p>K2 当时主要沿用 DeepSeek V3 的结构，发力点是模型 scaling 本身——1T training，比当时的 DeepSeek V3 还大，先把 pipeline 做稳。K3 则"跟K2大不一样"，引入大量新设计元素。孙宇涛的判断：这是战略问题，不是能力问题，架构团队内部其实一直在做研究，只是看"以什么时候这个亮出来"而已。</p>
+
+<p>训练策略上，MiniCPM 提出 WSD 后几乎所有团队都在用——cooldown 阶段是模型学习最快的一个阶段，那为什么不把更好的数据放到 cooldown 里训？但 WSD 没那么美："你跑17T可能余弦退火是最优的，你跑20T可能就是线性退火是最优的"——LR 其实和 token 数绑定，任意扩展未必有效，而且 WSD 多一个要调的变量。K3 的选择是 cosine decay，只有两个变量，"它其实更好调"。</p>
+
+<p>开源路线上，孙宇涛看到的两个方向：DeepSeek 目前还是更强调性价比（1.2T 一档加更小的 Flash 一档）；Kimi 的主要精力是提升开源模型的一个能力的上限，K3 的 API 相当贵。他认为技术层面的东西大家都不笨，都分得清好坏，组织团队的走向取决于人的选择。</p>
+
+<h2>100B 激活的魄力，与没有阶跃式创新</h2>
+
+<p>问 K3 最 impressive 的地方，孙宇涛的答案不是某个架构创新，而是激活参数——足足 100 billion，比他预期的还要大。而且这是一个非技术决定：</p>
+
+<blockquote class="purple">
+"这个决定是一个非技术性的一个决定，但是这个是需要一定的魄力的。"
+<span class="attr">— 孙宇涛，论 100B 激活决策</span>
+</blockquote>
+
+<p>配合他对行业未来的一贯判断："科学研究是不存在阶跃性的提升的，只是说大家习惯把这个技术的渐进性提升的某些节点会成为一个 milestone。"K3 刚出来的时候他主要就 surprise 这个 size——有价值的技术创新 K3 都单写了论文。</p>
+
+<p>对"我的暴论就是大模型可能没有太本质的创新了"这个判断，他的完整表述是：</p>
+
+<blockquote class="yellow">
+"我的暴论就是大模型可能没有太本质的创新了，后面都是一些改良型的进步。"
+<span class="attr">— 孙宇涛，对行业未来的判断（节目中两处出现）</span>
+</blockquote>
+
+<h2>核心金句</h2>
+
+<p>这期对谈里最值得记住的几句：</p>
+
+<blockquote class="yellow">
+"我的暴论就是大模型可能没有太本质的创新了，后面都是一些改良型的进步。"
+<span class="attr">— 孙宇涛对行业未来的判断</span>
+</blockquote>
+
+<blockquote class="blue">
+"混合注意力它其实虽然从架构上来讲是一种tradeoff，但是从最后模型本身的表现来说并不是一个tradeoff。"
+<span class="attr">— 混合注意力被大规模采用的原因</span>
+</blockquote>
+
+<blockquote class="green">
+"科学研究是不存在阶跃性的提升的，只是说大家习惯把这个技术的渐进性提升的某些节点会成为一个 milestone。"
+<span class="attr">— 关于技术里程碑与 K3 的定位</span>
+</blockquote>
+
+<blockquote class="purple">
+"更大的模型才有更大的一个智能上限，如果别的东西没有做太错的话。"
+<span class="attr">— 关于 size 与智能的第一性原理</span>
+</blockquote>
+
+<blockquote class="orange">
+"有道理你就，对吧，谁有道理谁说了算嘛。"
+<span class="attr">— 关于 Kimi 的团队文化</span>
+</blockquote>
+
+<blockquote class="red">
+"AGI最大的问题就是它没有被well-defined。"
+<span class="attr">— 关于 AGI 与能力的定义</span>
+</blockquote>
+
+<footer>
+本文为《张小珺 Podcast》第 152 期节目的内容整理与导读，引用均出自节目原话。<br/>
+原文出处：<a href="https://www.xiaoyuzhoufm.com/episode/6a8eadd61352af56ff3c6017?utm_source=rss">152. 领读Kimi K3技术报告：从架构创新聊起，注意力美学、多教师蒸馏和开源MoE — 小宇宙</a><br/>
+PodDeck · 让长访谈变成可快速阅读的卡片
+</footer>
+
+</article>
+</body>
+</html>
