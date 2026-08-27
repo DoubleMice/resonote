@@ -1,15 +1,27 @@
 source: lex-fridman
-refreshed_at: 2026-08-26T18:39:51.319Z
+refreshed_at: 2026-08-27T04:57:19.817Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: p-6506
+    guid: https://lexfridman.com/?p=6506
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    duration: 19317
+    published: Wed, 26 Aug 2026 21:47:04 +0000
+    published_sort: "20260826"
+    first_seen_at: 2026-08-27T04:57:19.817Z
+    url: https://lexfridman.com/dhh-2/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dhh-2
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
   - id: p-6474
     guid: https://lexfridman.com/?p=6474
     title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
