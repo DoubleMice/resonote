@@ -1,0 +1,27 @@
+id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+source: latepost
+title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+guest: "高深远"
+guest_role: "港科大博士，NVIDIA GEAR Lab 成员，DreamDojo 联合一作"
+published: 2026-05
+duration: 1h49m
+url: https://podcast.latepost.com/165
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+status: generated
+tags:
+  - ai-research
+  - robotics
+  - interview
+  - deep-dive
+  - technical
+summary: |
+  高深远（港科大博士、NVIDIA GEAR Lab 成员）从自己研究世界模型三年的视角，先把"世界模型"拆成决策派与知识派、再按表示方式分成粒子、显式 3D、隐空间与视频四个流派，论证视频空间是当前最 promising 的路线。随后他展开 GEAR Lab 的 DreamDojo 与 DreamZero 两项工作：前者用约 4.4 万小时人类第一视角视频给 action-conditioned 世界模型迁移泛化能力并做到实时，后者以视频为 backbone 把 VLA 策略与未来状态预测合二为一。最后他解释了由 agent、policy 与世界模型构成的自进化循环，为什么他认为这个循环今年可能出现临界点、但真正爆发需要五年，以及评测没有 zero-shot benchmark、长程记忆缺失等现实瓶颈。
+core_ideas:
+  - '对决策有用的世界模型是"action 条件控制下的未来状态预测"：输入过去的 state 与 action，输出未来的世界状态；文本指令、自车轨迹、机器人动作都是 action'
+  - '四个流派里视频生成最 promising：语言和视频是最 data rich 的两个空间，视频世界模型能直接继承 GPT、Gemini、Sora 的泛化能力，而隐空间（JEPA/AMI）"语言模型接不上，视频模型也接不上"'
+  - 'WAM（世界动作模型，DreamZero）输入文本任务、输出未来视频与 action：功能定位与 VLA 同级，但多输出未来状态，可以当世界模型用'
+  - '自进化循环由三个组件构成：agent（VLM，定义任务并给状态打分）、policy（输出 action）、世界模型（想象未来）；"一旦它的误差累积到一个可接受的程度，整个循环就会变得越来越简单"，高深远认为苗头可能就发生在今年'
+  - 'DreamDojo 用 Cosmos 基模 + 约 4.4 万小时人类第一视角视频（EgoScale，latent action 免标注）+ Fourier GR-1 微调，把新场景新物体的泛化能力迁移给世界模型，并第一次做到实时'
+  - '世界模型没有 zero-shot benchmark："一个世界模型它就对应一个这个机器人本体"，action space 绑死本体，评测只能拿回来自己 train 一遍，投资人也难以判断好坏'
+article_path: episodes/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c/article.html
+base: /episodes/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c/

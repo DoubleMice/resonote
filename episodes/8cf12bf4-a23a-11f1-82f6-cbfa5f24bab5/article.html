@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasury Puts DeFi On Notice as Roman Storm Trial Drags On</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { border-bottom: 3px solid #f59e0b; padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 30px; line-height: 1.4; margin-bottom: 12px; }
+  .meta { font-size: 14px; color: #666; }
+  .meta span { margin-right: 14px; }
+  h2 { font-size: 22px; margin: 40px 0 14px; padding-left: 12px; border-left: 4px solid #f59e0b; }
+  p { margin-bottom: 14px; }
+  .lead { font-size: 18px; color: #444; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 20px 0 8px; }
+  .card { padding: 14px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .card b { display: block; margin-bottom: 4px; font-size: 15px; }
+  .c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .quote {
+    margin: 20px 0; padding: 16px 20px; border-radius: 8px;
+    font-style: italic; font-size: 16.5px; line-height: 1.8;
+  }
+  .quote .src { display: block; margin-top: 8px; font-style: normal; font-size: 13px; opacity: 0.65; }
+  .gloss { background: #f0f0f0; border-left: 4px solid #9ca3af; padding: 12px 16px; border-radius: 6px; font-size: 15px; color: #444; margin: 16px 0; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 14px; color: #666; }
+  footer a { color: #b45309; }
+  @media (max-width: 600px) { .wrap { padding: 28px 16px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Treasury Puts DeFi On Notice as Roman Storm Trial Drags On</h1>
+  <div class="meta">
+    <span>来源：Unchained</span>
+    <span>嘉宾：Peter Van Valkenburgh（Coin Center 执行董事）</span>
+    <span>2026-08 · 1h15m</span>
+  </div>
+</header>
+
+<p class="lead">本期对谈发生在一个奇怪的时间点：财政部一边把数字资产写进对伊朗次级制裁的考察名单，一边宣称已从伊朗人手里扣押约 10 亿美元加密资产；而 Tornado Cash 开发者 Roman Storm 的重审刚刚被推迟到 2027 年 4 月。主持人 Kane Warwick、安全专家 Taylor Monahan 与 Coin Center 执行董事 Peter Van Valkenburgh 花了一小时十五分钟，把制裁、稳定币、零知识密码学和 CFTC 的管辖地图拆了个遍。</p>
+
+<div class="cards">
+  <div class="card c-red"><b>制裁公报</b>数字资产与数字资产中介被列入次级制裁考察名单，DeFi 首次进入官方视野</div>
+  <div class="card c-yellow"><b>十亿美元之谜</b>Bessent 宣称已扣押约 10 亿美元伊朗加密资产，但已知的 Tether 冻结从未到这个量级</div>
+  <div class="card c-blue"><b>Roman Storm 重审</b>Rule 29 无罪动议待裁，重审推迟到 2027 年 4 月</div>
+  <div class="card c-green"><b>ZK 的遗产</b>Tornado Cash 是零知识密码学的第一次大规模实战</div>
+  <div class="card c-purple"><b>SEC 开放 ICO</b>Reg Crypto 提案两条募资通道：四年 500 万 / 十二个月 7500 万美元</div>
+  <div class="card c-orange"><b>Hyperliquid 争议</b>总统发布会点名无 KYC 永续 DEX，CFTC 的管辖权边界一片模糊</div>
+</div>
+
+<h2>一、公报没有点名 DeFi，但也没有说它没事</h2>
+<p>财政部对伊朗的"经济 D-Day"公报包含大量升级措辞：推动对与伊朗做生意的国家和实体实施次级制裁，霍尔木兹海峡持续封锁。Peter 先给听众划了重点——公报没有点名任何加密项目，但把 <strong>digital assets and digital asset intermediaries</strong> 列入了次级制裁考察对象的清单，并留下了一句宽泛到可以装下一切的表述："effectively any source could be a target"，任何政权非法收入的来源、任何经济生命线都可能成为目标。</p>
+<p>Kane 的观察更直接。X 上有人指出，"they left the door open for even DeFi"——Uniswap 能不能和伊朗人交互？Ethereum 能不能？没人回答。他在节目里总结："They didn't say that DeFi wasn't in trouble, which you know probably should be somewhat concerning."没排除，本身就是信号。</p>
+<div class="quote c-blue">"One doesn't normally announce D-Day before they have a D-Day."<span class="src">— Peter Van Valkenburgh，评论公报的戏剧化措辞</span></div>
+
+<h2>二、先打人，不打协议</h2>
+<p>如果行政分支真的要拆解伊朗的加密"经济生命线"，最合理的靶子是什么？Peter 的答案很明确：伊朗交易所、壳公司、钱骡网络和人类经纪人——"the people who actually know exactly who they're dealing with"，他们对自己的交易对象一清二楚，对资金拥有 agency 和 fiduciary 控制权。这些是 "legally and constitutionally reasonable targets"。</p>
+<p>这是一个帕累托式的判断：打掉人类中介，就能切断大约 80% 的可行通道——"you're going to take out 80% of the viable avenues by targeting the entities who are like human brokers rather than some sort of decentralized protocol"。反过来，如果真要去拆节点、中继、矿工甚至写软件的开发者，成本高、附带损害大，收益却微乎其微。Peter 承认公报没有排除这种极端选项，但也指出："Who would put forward a press release saying we're not going to do the crazy thing?"——不声明不做疯狂的事，可能是在保留权利，也可能只是认为疯狂到无需声明。</p>
+<div class="gloss">作者概括：公报的留白既是法律技术，也是政治信号——既没给 DeFi 免罪金牌，也没承诺不碰。</div>
+
+<h2>三、稳定币：绕行制裁的天然向量</h2>
+<p>如果要用去中心化网络绕制裁，最自然的载体是稳定币：它既是中心化资产，又能在去中心化网络上自由流动。Kane 判断监管者必然要找 Circle、Tether 谈话。Peter 则指出一个经常被忽略的事实——我们面对的是可审计的公链："public blockchains that are auditable where we can watch in real time as money flows to known sanctioned addresses"。不需要非公开情报，chain analysis 就够用；Uniswap 前端多年来也一直在做制裁合规。</p>
+<p>更有意思的是 Tether 的定位变化。Peter 认为，"the less gray that Tether has gotten... the more useful an instrument Tether is for... the dollarization of the world"——稳定币越合规，越能充当美元化的工具。把 Tether 逼到躲着美国政府，比让它来 DC 对话更糟。</p>
+
+<h2>四、GENIUS 时代的"二级市场"难题</h2>
+<p>GENIUS 法案为稳定币搭建了监管框架，Treasury 与 OCC 正在落地细则。规则讨论中最尖锐的问题是：发行方对"二级市场"持有者有什么义务？一个从别的钱包收到 USDC 的人，不是来 Circle 换过美元的人，他算不算客户？</p>
+<p>目前的规则走向是：发行方必须有 freeze &amp; seize 能力，能伸进二级市场截停资金流；但无需对持有者做完整的客户尽调。Peter 认为这是合适的平衡——把每个持有 USDC 的地址都当客户，"you might as well just be Venmo"，而且这有严重的隐私问题：一个与你毫无关系的营利公司，不该有法律义务收集你的个人信息，因为"You're a stranger to them"。</p>
+
+<h2>五、"我们 rug 了伊朗人十亿美金"</h2>
+<p>Bessent 在公报里抛出的数字让 Taylor 很意外：财政部宣称已从伊朗人手里扣押约 10 亿美元加密资产。Taylor 的公开知识里，Tether 冻结史上最猛的单日行动也只有 "hundreds of millions of dollars" 级别，从未到十亿；她也不记得大额冻结网络有伊朗背景。Laura 在节目聊天室里补充了一条被遗忘的新闻：今年 4 月曾冻结 3.44 亿美元——USDC 加上 Tron 上的 USDT，据称全部来自伊朗，涉及约 20 个钱包，期间还有误冻后解冻的插曲。</p>
+<p>Taylor 强调，公链冻结是公开事件，对手立刻就会知道，所以执行节奏本身就是策略。她也不认同"Chainalysis 是魔法"的流行印象——判断哪个地址属于伊朗，需要地面人力情报、加密公司、稳定币发行方、桥和托管方的协作闭环。</p>
+
+<h2>六、规模感：八小时的石油美元</h2>
+<p>Kane 给这场制裁战补上了尺度：维持霍尔木兹封锁的成本在数亿美元级，每日被约束的伊朗资金流在数十亿美元级——而累计扣押的加密资产，只相当于八小时的石油美元："the cumulative amount of crypto that they've seized from Iran is probably like eight hours worth of like the oil money movements"。他还用了一个公司融资的类比：这像一家公司把五年累计的融资说成单轮融资，数字没错，时间维度被抹掉了。</p>
+
+<h2>七、Roman Storm：重审推迟到 2027 年 4 月</h2>
+<p>Tornado Cash 的诉讼进入了"hurry up and wait"阶段：Roman Storm 在制裁与洗钱指控上的重审从 10 月推迟到 2027 年 4 月，因为法官正在考虑他的 Rule 29 无罪动议。一审的结果是分裂的：无照资金传输罪被陪审团判有罪，制裁与洗钱两项则因陪审团无法达成一致而宣布 mistrial——"Doesn't mean he's innocent, doesn't mean he's guilty"。</p>
+<p>核心法律问题其实非常基础：什么是 money transmitter？简单的答案是控制客户资金；SDNY 却给出了复杂的答案——"a frying pan doesn't hold the heat but it transmits the heat"，用"导热"来定义资金传输。Peter 的困惑在于，这种推理让开发者无法预判自己的行为是否违法。更关键的事实是："There's no evidence that he ever made a transaction with a sanctioned party."Roman 是写软件的人，付服务器费用，从不控制资金；要定罪，只能靠"知道别人会用你的工具规避制裁就等于共谋"这种过度宽泛的解释。</p>
+<div class="quote c-red">"You can't regulate the guy who wrote software that other people used to move Ethereum because that is information, even if the Ethereum movements are transactions."<span class="src">— Peter Van Valkenburgh，Berman 修正案与软件开发者的边界</span></div>
+
+<h2>八、为什么就是不肯放手？</h2>
+<p>Peter 把 SDNY 的执念解释为自我定位：它是 "the global financial cop on the block"，跨境金融犯罪的拦截点。Tornado Cash 流经大量朝鲜黑客资金，"money that might end up financing nuclear weapons"——这正是他们眼中的核心业务。但矛盾在于：合约是不可变的，"If you throw Roman in jail for 30 years it's still running, then what are you doing?"</p>
+<p>数据也在支持这个疑问。Taylor 指出，"The volumes were impacted by the sanctions... not actually really impacted by the arrest and the prosecution of Roman"——制裁改变了交易量，逮捕没有。朝鲜从未把 Tornado Cash 当真正的 off-ramp，只是工具袋里的一件工具。Peter 的判断是，"this is a misallocation of scarce government resources"：稀缺的执法资源应该去打真人洗钱网络，而冻结黑客所得、改变激励，才是更有效的杠杆。</p>
+
+<h2>九、ZK 的第一次大规模实战</h2>
+<p>抛开诉讼，Tornado Cash 在技术史上的位置是独特的：它是零知识密码学第一次被真正大规模使用——"the first proof of concept of zero-knowledge cryptography that saw like truly large volumes"。Zcash 是第一个科学实验，Roman 团队则把它搬上以太坊，"run it live and battle test it"，以巨大的个人风险验证了一个判断：我们不会永远想在全公开的账本上做全球金融。</p>
+<p>这也是 Peter 愤怒的来源："It's doubly offensive that... the small anti-money laundering benefit you think you might get... by prosecuting this guy, actually just villainizing this guy that created a great technology."在他看来，Roman 应该被当作英雄而非恶棍——"Once we stop doing that, we're gonna stop innovating and stop building the systems that we actually want."Taylor 的总结更私人："I hate this case. I hate what's happened to Roman and all the guys. I wish there was a better path forward."</p>
+
+<h2>十、SEC 的 Reg Crypto：两条新募资通道</h2>
+<p>转机来自 SEC：Reg Crypto 提案为加密公司提供两条募资路径——四年内一次性最多 500 万美元，或任意 12 个月周期内最多 7500 万美元。这是 Hester Peirce 原始 Safe Harbor 思路的延续，目前处于 NPRM 阶段，有 60 天评论期。</p>
+<p>Peter 的观察是：规则没有立法那么永久。Clarity 法案在参议院搁浅，而规则只要未来委员会说一句 "We're scrapping Reg Crypto" 就可能消失。但规则也有自保机制——APA 的 arbitrary-and-capricious 标准，以及投资者惯性的经济现实：当大量美国投资者的真金白银卷入后，再废除规则会伤到本国投资人。他的排序很明确：首选 Clarity，但若因总统家族加密筹款的伦理争议而无法过会，Reg Crypto 是合格的对冲——"As a hedge and as just good policy"。</p>
+
+<h2>十一、回到"公平启动"</h2>
+<p>Kane 把话题拉回代币分配的初心：以太坊早期 ICO 只募了 3000 万美元，放在后来的 Reg D / SAFT 时代面前 "kind of like small potatoes"，但所有权分布 "so wildly decentralized"——"a bunch of random people own Ethereum"。而 Reg D 时代的结局是 VC 拿大头、外国投资者分食、散户无缘；Gensler 时代的终局则更糟："No, the end state is meme coins! Meme coin launchpads"——"Multicoin owning 30% of every Solana project seemed really bad... but every Solana project is a meme coin is a far worse end state"。</p>
+<div class="gloss">作者概括：从"一堆随机的人拥有以太坊"到"每个 Solana 项目都是 meme coin"，监管的意外后果比任何人的想象都糟——出路是合理的规则，而不是弯曲旧规则或全面禁止。</div>
+
+<h2>十二、Hyperliquid 与 CFTC 的管辖地图</h2>
+<p>最后一个话题是总统在发布会上点名 Hyperliquid——"wasn't on my bingo card"。作为上一周期最成功的项目，无 KYC 永续 DEX 如何在美合规落地，发布会上没有任何细节。Peter 拆解了法律现实：perps 看起来很像衍生品，CFTC 对衍生品市场拥有 plenary authority，但合格合约参与者（ECP）的门槛约 500 万美元，比证券的合格投资者（100 万）苛刻得多；而 CFTC 对现货市场没有权限，价格可以被现货操纵。</p>
+<p>他把这个问题分成两个不同的公共政策问题：要不要识别网络上的每个人（Treasury / AML），与要不要做市场监督防操纵（CFTC）。"You could imagine a hybrid regime"——反洗钱按机构要求，市场监督可以靠 pseudonym 和零知识证明。他也提醒，美国的碎片化监管自有其逻辑：七家联邦审慎监管机构、没有统一部委，"the way the US does financial regulation is profoundly weird"——但制衡本身就是 feature。Kane 的立场是："I like the wild west situation. I want a bunch of sheriffs."</p>
+
+<h2>核心金句</h2>
+<div class="quote c-green">"Should be treated as more of a hero than a villain, frankly, because we need to have bold people who try these technologies in novel places like the Ethereum blockchain."<span class="src">— Peter Van Valkenburgh，谈 Tornado Cash 的开发者</span></div>
+<div class="quote c-blue">"A frying pan doesn't hold the heat but it transmits the heat."<span class="src">— Peter 转述 SDNY 的无照资金传输理论</span></div>
+<div class="quote c-yellow">"If you throw Roman in jail for 30 years it's still running, then what are you doing?"<span class="src">— Peter，质疑起诉不可变合约开发者的意义</span></div>
+<div class="quote c-red">"The volumes were impacted by the sanctions... not actually really impacted by the arrest and the prosecution of Roman."<span class="src">— Taylor Monahan，制裁有效，起诉无效</span></div>
+<div class="quote c-purple">"We built some infrastructure. We built pipes."<span class="src">— Peter 谈 Uniswap 的"黄金辩护"：管道不该按货车来管</span></div>
+
+<footer>
+  <p>本文为 Unchained 播客《Treasury Puts DeFi On Notice as Roman Storm Trial Drags On》的图文梳理，主持人 Kane Warwick 与 Taylor Monahan，嘉宾 Peter Van Valkenburgh（Coin Center 执行董事）。引文均可在原始 transcript 中检索到原文。</p>
+  <p><a href="https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3">收听原始节目</a> · 做自己的研究，再决定是否入场。</p>
+</footer>
+
+</div>
+</body>
+</html>

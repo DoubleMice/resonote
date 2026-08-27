@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界模型、自进化循环、DreamDojo —— 晚点聊 LateTalk 第 165 期</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1f2933; line-height: 1.75; font-size: 17px; max-width: 720px; margin: 0 auto; padding: 32px 20px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin: 8px 0 4px; }
+  h2 { font-size: 21px; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e5e7eb; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+  .meta span { margin-right: 14px; }
+  .lead { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 14px 16px; border-radius: 4px; margin: 20px 0; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 16px 0 28px; }
+  .card { padding: 12px 14px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .card b { display: block; margin-bottom: 4px; }
+  .c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  p { margin: 14px 0; }
+  .quote { padding: 12px 16px; border-radius: 8px; font-style: italic; margin: 14px 0; }
+  .quote .ctx { display: block; font-style: normal; font-size: 13px; opacity: 0.65; margin-top: 6px; }
+  .gloss { color: #6b7280; font-size: 15px; }
+  .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+  .footer a { color: #2563eb; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>世界模型、自进化循环、DreamDojo</h1>
+<div class="meta">
+  <span>嘉宾：高深远（港科大博士 · NVIDIA GEAR Lab · DreamDojo 联合一作）</span>
+  <span>来源：晚点聊 LateTalk · 第 165 期</span>
+  <span>2026 年 5 月 · 时长 1 小时 49 分</span>
+</div>
+
+<p class="lead">
+  "世界模型"是 AI 领域典型的 buzzword：做游戏的、做智驾的、做具身的都说自己在做世界模型。高深远从 2023 年下半年开始做这个方向，从自动驾驶世界模型一路做到 NVIDIA GEAR Lab 的 DreamDojo。这期访谈把世界模型的分类、流派、瓶颈和自进化循环讲得格外清楚，也让英伟达与 Google DeepMind 两条路线的思路第一次如此直观。
+</p>
+
+<h2>这期为什么值得读</h2>
+<div class="cards">
+  <div class="card c-blue"><b>世界模型怎么分类</b>决策派 vs 知识派，粒子、显式 3D、隐空间、视频四大流派，各自立场与短板一句话讲清。</div>
+  <div class="card c-green"><b>为什么视频空间是正解</b>语言与视频是仅有的两个数据富矿空间，视频世界模型能直接继承现有基模的泛化能力。</div>
+  <div class="card c-yellow"><b>WAM 新范式</b>DreamZero 把世界模型与 VLA 策略合二为一，被讨论为可能取代 VLA 的架构方向。</div>
+  <div class="card c-purple"><b>自进化循环</b>agent、策略、世界模型三个组件接上之后突破物理时间限制，高深远认为临界点可能就发生在今年。</div>
+  <div class="card c-orange"><b>DreamDojo 拆解</b>约 4.4 万小时人类第一视角视频迁移泛化能力，还把世界模型做到了实时。</div>
+  <div class="card c-red"><b>评测之痛</b>世界模型没有 zero-shot benchmark，一个世界模型对应一台机器人本体，好坏难以判断。</div>
+</div>
+
+<h2>世界模型：一个词，两种面孔</h2>
+<p>
+  高深远给"世界模型"做了一个从上到下的拆解。最 high level 的分法有两类人：一类是决策背景的，他们说的世界模型是有一个 model 去模拟这个世界、模拟这个环境；另一类是做基模、做多模态大模型的，他们有一个 model 拥有 world knowledge，"你用各种维基百科上的问题问他，他基本上都知道"，所以也叫世界模型。
+</p>
+<p>
+  两类说法都自圆其说，但本集讨论的是对决策有用的那一种。它的 formulation 很明确：根据过去的历史预测未来，而且这个预测受 action 条件控制——简单说就是，它会根据过去的 state 加上你要做的 action，预测未来的世界状态。action 的定义也很宽："action 就是对世界的一个干预"，文本指令、自车轨迹、机器人关节动作都算。
+</p>
+
+<h2>四大流派：为什么视频是正解</h2>
+<p>
+  在决策派内部，按世界状态的表示方式还可以再分：最抽象的是粒子表示，然后是显式 3D（World Labs 的路线，做游戏、做自驾有优势）、隐空间（LeCun 的 JEPA/AMI），以及最 data-driven 的视频生成。高深远认为视频是最 promising 的——因为从视频出发，能完全靠数据驱动把它 scale up。
+</p>
+<p>
+  他的判断基于一个更大的图景："通往 AGI 包括这种具身智能，它的思路肯定就是说你从一些数据非常多的一些 domain 开始，然后往数据比较稀缺的一些这种 domain 去做对齐。"目前最 data rich 的两个空间就是语言和视频，机器人 action data 相对稀缺。反过来，隐空间路线的问题在于：新构造的表征空间跟现有的基模对不上，"你直接给语言模型看，语言模型接不上，你给视频模型看，视频模型也接不上"，没法直接利用行业已有的技术红利。
+</p>
+
+<h2>世界模型为什么这两年火了</h2>
+<p>
+  高深远总结了三个因素。第一是生成模型的发展：Sora 发布时的表述是 "video generation as world simulator"，视频生成从"啥都模拟不了"进步到能模拟相当逼真的物理规律。第二是数据：世界模型是世界的模拟器，它不只吃专家轨迹——差的轨迹数据它也要学，才能得到一个没有偏好、没有 bias 的 action 模拟；之前数据不够的时候，做 policy 合理，做世界模型根本得不到有效反馈。
+</p>
+<p>
+  第三是 policy 本身的水平。世界模型的用途是帮 policy 做泛化，但 policy 水平很低的时候"你其实也用不着世界模型"。现在策略模型达到一定水平、输出的 action 分布比较可控了，世界模型正好介入。
+</p>
+
+<h2>策略、世界模型与 WAM</h2>
+<p>
+  策略（policy）与世界模型的关系是互相咬合的："policy 的输出是世界模型的输入，然后世界模型的输出是 policy 下一个时刻的输入"。VLA、RLA、DreamZero 都是 policy，其中 RLA 是典型的端侧策略；世界模型则可以在端侧也可以在云端，大小限制更宽。
+</p>
+<p>
+  GEAR Lab 的 DreamZero 被国内很多文章称为"世界动作模型（WAM）"，高深远特意澄清了它的定位：WAM 严谨来说不是一个 world simulator，它输入文本任务、预测未来的视频以及未来的 action，功能定位和 RLA 一样是 policy；但它比 VLA 多输出未来的 world state，比纯世界模型多输出 action——既可以当 policy 用，也可以起世界模型的作用。它合理的地方在于人做决策本来就有很多 action space："你一开始去做规划的时候，你肯定不是想你最终这个手怎么动了，你肯定是想一些步骤"，文本空间的高层规划本身就是一种 action。
+</p>
+
+<h2>执行之前，先想象：世界模型的四个用途</h2>
+<p>
+  有了世界模型，最直接的好处是"你可以在做之前你就知道它的这个后果"。没有世界模型时，"所有的决策都是先不管后果，就反正我做了就做了"；有了它，可以先做 search——用 DreamZero 做步骤上的搜索，选出完成任务的子任务序列，再用 DreamDojo 对低层动作（接近速度、抓取角度和力度）做优化。高深远说人脑中可能也在发生这个过程，只是人脑发生的很快，几乎感觉不到。
+</p>
+<p>
+  除此之外世界模型还有三个用途。评测：具身智能最大的问题是评测很难、很不公平——每次都要真机部署、有人盯着，"那个人下班了"就没法测；更本质的是光照、位置、校准都不可复现，"所有的比较永远都是不公平的"。世界模型把状态存在电脑上，场景可以重置到一模一样，"拿算力然后去换这些高效性和公平性"。数据生成：世界模型做到实时之后，"你只需要去摇操这个世界模型里的这个机器人，你就能得到这些数据"，摇操设备也已经"简化到手套了"。最后是强化学习与自进化：在虚拟世界里训练，失败没有成本，还能突破物理时间的限制。
+</p>
+
+<h2>自进化循环：三个组件与级联误差</h2>
+<p>
+  高深远对自进化循环的描述是本期最核心的部分。循环里有三个组件：一个连接循环的通用 agent（比如 Gemini 级别的 VLM），它定义当前要做什么任务，并给世界模型预测出来的 world state 打分；一个 policy，负责输出 action；一个世界模型，负责想象未来。以人类类比："大脑的任务规划和思考就是 agent，大脑去，人脑去控制身体的部分是 policy，而我们生活的环境就是世界模型"。
+</p>
+<p>
+  现在循环还没转起来，原因是三个组件各自的泛化能力不够，产生级联误差：agent 给不出可靠的 reward，policy 提不出可靠的 action，世界模型在复杂环境下预测不够逼真。但高深远认为临界点不远——"一旦它的误差累积到一个可接受的程度，整个循环就会变得越来越简单，就相当于是可以实现自进化"，而"我觉得可能就发生在今年"。他也认同哈萨比斯在 Google 官方博客上讲的方向："他的这个想法跟我现在的想法是非常像的"——一个 video space 的世界模型配一个通用智能体，合成一个自进化的 loop。
+</p>
+<p>
+  飞轮一旦转起来是自我强化的：policy 越强，输出的 action 分布越窄，"拿杯子就是拿杯子"，世界模型需要模拟的空间越小、越容易模拟，反馈越准，policy 又更强。policy 强到一定程度还能自己在新环境里自动采集数据——"可能是很差的，但没有关系"，这些数据反哺世界模型学物理规律。不过他也给出更冷静的时间表：world action model 的架构和训练方式"两到三年内能达到一个比较成熟的"水平，而 action-conditioned 世界模型真正成为大爆点，"就可能需要可能五年的这种周期吧"。
+</p>
+
+<h2>突破物理时间：机器人进化的前提</h2>
+<p>
+  为什么机器人不能像大语言模型、像 AlphaGo 那样进化？高深远说得很直白："它最大的问题就是它要被这个物理时间限制住了，就一天 24 个小时"，再加上人还要上班下班。世界模型给了一个虚拟世界："你晚上睡觉，它晚上也过了一天，这个东西都长出来了"——这是 QQ 农场的类比。算力越快，每天迭代的轮数越多；卡更多，能构造的环境更多。假如世界模型真的跟现实没有任何 gap，在集群上跑一个月，"可能会涌现一些东西出来"。
+</p>
+<p>
+  Google DeepMind 的路线选择也与这个逻辑一致：他们喜欢从游戏出发，因为"游戏的 data 你是无限造"，游戏造数据不受物理时间限制，验证也方便。GEAR 自己也做过 Natural Gym，把机器人的 VLA 训练成游戏 policy，"也非常的有用"。
+</p>
+
+<h2>两大阵营的循环对应</h2>
+<p>
+  把自进化循环套到两个阵营上，对应关系非常清晰。Google 这边：世界模型是 Gemini 系列（哈萨比斯认为它配合 Sora 可以做科学发现），policy 是游戏里的 agent，Veo 是"相当于是 DeepMind 的 Sora"，他们习惯把 agent、VLA 全部往 Gemini 上对齐，先在游戏里验证。英伟达这边：Cosmos 负责 VLM 和视频基模，DreamZero 是视频 backbone 的 policy，DreamDojo 是 action-conditioned 的世界模型。
+</p>
+<p>
+  OpenAI 的 Sora 团队已重组进 robotics lab，"感觉最近好像又在 seriously 搞这个事情"。Anthropic 投入很少，但高深远认为它不一定会 miss：做 physical AGI 有两条路线，一条是现在就碰 robot data（大多数 startup 的选择），另一条是先做强基模、把机器人当作"最后一步的事情"——字节、AMI 乃至 Anthropic 都在这条路上。把文本当作 action 之后，强基模本身就是一种世界模型，两条路都 make sense。
+</p>
+
+<h2>三大瓶颈：泛化、长程、效率</h2>
+<p>
+  高深远认为现在最值得做的是三个方向：泛化能力、长程稳定性、效率。其中泛化最重要，"然后是决定这个世界模型能够应用的这个上限的"。泛化又分两半：物理理解的泛化，是面对新场景、新物体依然能模拟——机器人数据只有实验室里的玩具，没见过抹布和水瓶，结果"它抓个抹布像抓个实体一样"；动作控制的泛化，是公平地模拟所有动作——现有数据多是 VLA 用的专家数据，全是"对的"，但世界模型不能有偏好："你给它一个抖的它就是得抖，你给它一个丝滑的它就是得丝滑"。
+</p>
+<p>
+  长程稳定性是生成式世界模型的通病：交互多轮之后误差累积，而且没有记忆。"你把一个东西放到一个柜子里，然后你关上了，然后待会儿你又拿出来"——再打开柜门时，"那个东西在不在完全是一个随机猜的了"，policy 得到的反馈都是一些 random 的信号。不过长期记忆问题也许不该交给视频解决：抽象位置用文本、用长 context 大模型来做更合理，具身真正关心的是单任务里怎么把动作变成高成功率。效率则是与视频生成主线对齐的问题，整个领域都在推，不用太担心。
+</p>
+
+<h2>DreamDojo：从人类视频迁移泛化</h2>
+<p>
+  DreamDojo 的目标是做一个通用的世界模型预训练，开源出去，让大家有了新机器人"微调一下之后就能用起来"。它最大的突破，是把人类第一视角（egocentric）视频里的泛化能力迁移给机器人世界模型：人类视频里大量出现的新场景和新物体，在机器人数据里几乎没有。第二个突破是实时——之前的世界模型要么实时但几乎没泛化，要么有泛化但实时性很差；DreamDojo 做到实时之后，可以连上摇操设备"几乎实时的去控制它"，部署时也能用它搜索每个 action 的后果。
+</p>
+<p>
+  它的管线是典型的基模 + 预训练 + 微调三段式：从 NVIDIA 的 Cosmos 视频基模出发（这个阶段已经包含第三人称视频，拿掉它"效果会差"），再用约 4.4 万小时的人类第一视角视频（EgoScale，44 千小时）做预训练，最后在 Fourier GR-1 的机器人数据上微调。世界模型对数据极其宽容："world model 它可以吃下任何数据"，对质量和标注没有高要求，只要有 action 就好——这与 policy 必须吃专家数据形成鲜明对比。
+</p>
+
+<h2>Latent action：免标注的跨本体钥匙</h2>
+<p>
+  DreamDojo 用 latent action 给海量无标签视频打上动作标签："用一种非常简单的方式对所有这种没有标签的数据打上一个 action 标签"，不管本体是什么、视角是什么，有多少视频就能给多少视频打标签，不损失任何 video 数据的 scalability。高深远说人天生有适应新构型的能力——《冰与火之歌》里布兰是易形者，能进狼的身体、进乌鸦的身体；失去双臂的人能用脚做精细操作。latent action 就是那个"比较居中的一个出发点"：它有噪声，不能精确描述每个本体，但"它可能是到各种各样不同 action space 一个比较自然的一个出发点"。
+</p>
+<p>
+  他也承认这个方向以后是不是还值得研究"也打上个问号"：如果所有数据都有高质量标注，跨本体又不是真正的痛点，"就没有必要到 latent action 去绕一圈"。数据采集的模式正在变化——从"采集数据就是工作"变成"在工作中采数据"，人戴着便携外设干活，数据就顺带采完了，而且自带标签。
+</p>
+
+<h2>评测之痛与分布外的消失</h2>
+<p>
+  世界模型没有公认 benchmark 的根源是它不能 zero-shot："一个世界模型它就对应一个这个机器人本体"。宇树和星海图的机器人自由度不一样，action space 不一样，连相机装在头上还是脖子上都影响模型表现。语言模型能比是因为输入输出空间天然统一，"你强行问它问题，它输出的都是语言"；世界模型则必须把别人的权重拿回来在自己本体上再 train 一遍，代价太高，所以只能比有限几个模型。出路只有两条：要么一个世界模型掌握所有机器人的 action space，要么所有团队收敛到同一台机器人——高深远说，"到那个阶段的话已经是世界模型很强的一个阶段了"。
+</p>
+<p>
+  但分布外问题可能不需要专门解决。他的观察是：对机器人数据是分布外的场景，对几十万小时的人类互联网视频来说可能都是分布内——测试集里的物体"至少在这个数据里都会出现过，或者说类似的物体"。"你把整个互联网视频都训练进来之后的话，其实所有的问题它都是比如说在分布内做插值"，早年人工设计的各种 OOD 方案会被 scaling 取代；"最终 AGI 可能也就是这样，所有的问题都变成见过的问题"。
+</p>
+
+<h2>世界模型之争与创业空间</h2>
+<p>
+  业内现在有两拨人：一拨认为"世界模型完全没有必要，就是我只要做 policy，就一直做 policy 做到底"，Jim Fan 的顾虑是做一个 policy 做一个世界模型比只做一个 policy 要难得多；另一拨以高深远为代表，认为世界模型不需要完美就能帮忙——"它即使很 noisy，然后它泛化性还不够好，在某些 case 下它已经能够足够去提升这个 policy 了"，而且循环是上升的，两个模型一起变好。
+</p>
+<p>
+  至于创业公司还有没有机会，他的判断不算悲观：数据供应商很多、"价格也都会通过竞争打下来"，GPU 和模型效率持续发展，"最终这个也会变成一个大家都能做的事情"。自进化循环里有很多组件可以专精——设计一个好的 reward agent、一个泛化的 policy 或世界模型，选一个专长的 domain（比如家居）先用 data scaling law 在小规模上验证通，再决定要不要推到底。当然赢家不会多，"肯定还是会有几家单独胜出……可能就几家了"，像 LLM 的局面一样。
+</p>
+
+<h2>核心金句</h2>
+<div class="quote" style="background:#eff6ff;border-left:4px solid #3b82f6;">
+  "一旦它的误差累积到一个可接受的程度，整个循环就会变得越来越简单，就相当于是可以实现自进化。"
+  <span class="ctx">—— 高深远，谈自进化循环的临界点，他认为可能就发生在今年</span>
+</div>
+<div class="quote" style="background:#f0fdf4;border-left:4px solid #22c55e;">
+  "你只需要去摇操这个世界模型里的这个机器人，你就能得到这些数据。"
+  <span class="ctx">—— 高深远，谈世界模型替代真机采集数据</span>
+</div>
+<div class="quote" style="background:#fefce8;border-left:4px solid #eab308;">
+  "你给它一个抖的它就是得抖，你给它一个丝滑的它就是得丝滑。"
+  <span class="ctx">—— 高深远，谈世界模型必须公平模拟所有动作，不能只见过专家数据</span>
+</div>
+<div class="quote" style="background:#faf5ff;border-left:4px solid #a855f7;">
+  "所有的问题都变成见过的问题，对，就是这样就解决了。"
+  <span class="ctx">—— 高深远，谈互联网视频规模下 AGI 的分布内化</span>
+</div>
+<div class="quote" style="background:#fff7ed;border-left:4px solid #f97316;">
+  "世界模型它即使很 noisy，然后它泛化性还不够好，在某些 case 下它已经能够足够去提升这个 policy 了。"
+  <span class="ctx">—— 高深远，回应"做一个世界模型比做一个 policy 要难得多"的质疑</span>
+</div>
+<div class="quote" style="background:#fef2f2;border-left:4px solid #ef4444;">
+  "就感觉要左脚踩右脚原地飞升了。"
+  <span class="ctx">—— 主持人曼琪，听完自进化循环后的感受</span>
+</div>
+
+<div class="footer">
+  <p>本文由播客《晚点聊 LateTalk》第 165 期整理改写。原节目：<a href="https://podcast.latepost.com/165">https://podcast.latepost.com/165</a>。引言均可在原始 transcript 中检索到；概括性表述已标注为作者转述。</p>
+</div>
+
+</body>
+</html>

@@ -1,12 +1,101 @@
 source: unchained
-refreshed_at: 2026-08-27T04:57:19.756Z
+refreshed_at: 2026-08-27T21:15:42.174Z
 min_duration: 3300
 min_date: "20260806"
-total_candidates: 0
-done: 0
+total_candidates: 1
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    guid: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    duration: 4488
+    published: Thu, 27 Aug 2026 17:12:00 -0000
+    published_sort: "20260827"
+    first_seen_at: 2026-08-27T21:15:42.174Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    image: https://megaphone.imgix.net/podcasts/8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5/image/3892b7b6593c9fe0eab70f9b00cb1b50.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Roman Storm's retrial slides to April 2027. Peter Van Valkenburgh argues prosecuting Tornado Cash's developers
+      cost real ground in zero knowledge cryptography.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠http://unchainedcrypto.com/go/1inch-sn⁠
+
+
+      ========================================================
+
+
+      Treasury Secretary Scott Bessent has declared "economic D-Day" on Iran, leaving an open question over whether the
+      sanctions crackdown reaches Uniswap and Ethereum or stops at Iranian exchanges, where humans are in the loop.
+
+
+      Kain Warwick and Taylor Monahan take that gap to Peter Van Valkenburgh, executive director of Coin Center, whose
+      defense of the Tornado Cash developers rests as much on zero knowledge cryptography as on sanctions law.
+
+
+      They cover the GENIUS Act's freeze and seize rules for the stablecoin secondary market and Roman Storm's retrial,
+      now pushed to April 2027, where speech protections clash with prosecutors' "frying pan" theory of money
+      transmission.
+
+
+      The SEC's proposed exemptions, the stalled Clarity Act, and Trump’s Hyperliquid all raise the same question: where
+      does decentralization end and regulation begin?
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Peter Van Valkenburgh - Executive Director of Coin Center
+
+      Timestamps
+
+
+      🎯 01:26 Bessent brands Iran sanctions 'economic D-Day', DeFi not exempt
+
+
+      🏦 11:15 Van Valkenburgh explains the freeze-and-seize rules coming for stablecoins
+
+
+      💰 15:18 Bessent claims a $1B Iranian crypto rug, but the receipts don't add up
+
+
+      🌊 25:08 1inch Aqua: back multiple liquidity positions with one wallet balance at
+      http://unchainedcrypto.com/go/1inch-sn
+
+
+      ⚖️ 25:50 Roman Storm's retrial slips to April as an acquittal motion looms
+
+
+      🔐 38:24 Why Van Valkenburgh calls Tornado Cash's developer a hero, not a villain
+
+
+      📜 47:22 SEC's 'Reg Crypto' plan opens two new paths to raise ICO-like capital
+
+
+      🏇 58:07 Trump name-drops Hyperliquid, raising hard questions for the CFTC
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-27T21:15:43.243Z
+    transcript_job_id: dc56f24c-6e26-4349-9aca-0a9dd060ebae_79a400d284c04632b1ed1846001eca73,e5d155a6-a2e1-4a68-aba6-8331a02141d3_9ee27b5c86da4c82b2c676e528a76b5d,cddc2ea4-ae7b-4209-a626-3faf4e1b0488_1011f9ca6c834d50a2bc7ed9d812b07a,5f82148a-05cb-49fa-bc57-8c57bc4265bb_357fc5f9dd234ff6978dfdfafa8174a5,bd313290-e7d9-4117-920c-2748225f5633_3299ee607ae948a0b5433e2ae383d497
+    transcript_completed_at: 2026-08-27T21:18:50.466Z

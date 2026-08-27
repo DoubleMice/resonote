@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-27T04:57:19.804Z
+refreshed_at: 2026-08-27T21:15:42.208Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 18
-done: 0
+done: 1
 pending: 0
-needs_transcript: 18
+needs_transcript: 17
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -177,8 +177,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-27T21:20:13.221Z
+    transcript_job_id: a1622336-0019-4762-825e-9b2c9e94db34_3be9ffa82c794d9482246d08733982b0,5a7ed831-7aed-4e95-971d-bfec74673cd4_4493f5ef0f734ba2a43d27db1c585c23,89dbe832-debb-4787-b807-c161619096fb_29224ff504c34076bd47e7fee4733841,52fba0a7-23ed-4a41-996b-3434cc2a7c0c_b1bc39447dcb401d8d19a97965a6813f,f6c6eaf3-aa70-43d1-b8bc-0f7c9f2eed71_c15b735087d049c089e1df87987336bd,a25047ec-0f64-40f2-be71-c4a2f03bd03b_d49308a53dd3498393adf59cba7c34c5,3be94283-4cad-41a6-9902-667962804af5_52baec5e0cf640ef8a4611f3033162d7,f336e3cf-caca-4d08-898e-349cded079fd_7be0d4c4fb1a4a07abbb4059a7daddd5
+    transcript_completed_at: 2026-08-27T21:24:35.691Z
   - id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
     guid: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
     title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"

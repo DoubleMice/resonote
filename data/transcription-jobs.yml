@@ -19286,3 +19286,224 @@ jobs:
     submitted_at: 2026-08-26T18:49:31.015Z
     updated_at: 2026-08-26T18:59:39.161Z
     completed_at: 2026-08-26T18:59:39.161Z
+  - key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z:chunk:0
+    parent_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    attempt_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z
+    provider: mimo
+    id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    source: unchained
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    task_id: dc56f24c-6e26-4349-9aca-0a9dd060ebae_79a400d284c04632b1ed1846001eca73
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:15:43.243Z
+    updated_at: 2026-08-27T21:16:32.454Z
+    completed_at: 2026-08-27T21:16:32.454Z
+  - key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z:chunk:1
+    parent_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    attempt_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z
+    provider: mimo
+    id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    source: unchained
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    task_id: e5d155a6-a2e1-4a68-aba6-8331a02141d3_9ee27b5c86da4c82b2c676e528a76b5d
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:15:43.243Z
+    updated_at: 2026-08-27T21:17:06.187Z
+    completed_at: 2026-08-27T21:17:06.187Z
+  - key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z:chunk:2
+    parent_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    attempt_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z
+    provider: mimo
+    id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    source: unchained
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    task_id: cddc2ea4-ae7b-4209-a626-3faf4e1b0488_1011f9ca6c834d50a2bc7ed9d812b07a
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:15:43.243Z
+    updated_at: 2026-08-27T21:17:41.130Z
+    completed_at: 2026-08-27T21:17:41.130Z
+  - key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z:chunk:3
+    parent_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    attempt_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z
+    provider: mimo
+    id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    source: unchained
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    task_id: 5f82148a-05cb-49fa-bc57-8c57bc4265bb_357fc5f9dd234ff6978dfdfafa8174a5
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:15:43.243Z
+    updated_at: 2026-08-27T21:18:21.170Z
+    completed_at: 2026-08-27T21:18:21.170Z
+  - key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z:chunk:4
+    parent_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    attempt_key: unchained:8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5:20260827:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3:mimo:2026-08-27T21:15:43.243Z
+    provider: mimo
+    id: 8cf12bf4-a23a-11f1-82f6-cbfa5f24bab5
+    source: unchained
+    title: Treasury Puts DeFi On Notice as Roman Storm Trial Drags On
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4551961437.mp3
+    task_id: bd313290-e7d9-4117-920c-2748225f5633_3299ee607ae948a0b5433e2ae383d497
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:15:43.243Z
+    updated_at: 2026-08-27T21:18:50.466Z
+    completed_at: 2026-08-27T21:18:50.466Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:0
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: a1622336-0019-4762-825e-9b2c9e94db34_3be9ffa82c794d9482246d08733982b0
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:20:55.546Z
+    completed_at: 2026-08-27T21:20:55.546Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:1
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: 5a7ed831-7aed-4e95-971d-bfec74673cd4_4493f5ef0f734ba2a43d27db1c585c23
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:21:30.481Z
+    completed_at: 2026-08-27T21:21:30.481Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:2
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: 89dbe832-debb-4787-b807-c161619096fb_29224ff504c34076bd47e7fee4733841
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:22:01.674Z
+    completed_at: 2026-08-27T21:22:01.674Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:3
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: 52fba0a7-23ed-4a41-996b-3434cc2a7c0c_b1bc39447dcb401d8d19a97965a6813f
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:22:35.332Z
+    completed_at: 2026-08-27T21:22:35.332Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:4
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: f6c6eaf3-aa70-43d1-b8bc-0f7c9f2eed71_c15b735087d049c089e1df87987336bd
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:23:15.012Z
+    completed_at: 2026-08-27T21:23:15.012Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:5
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: a25047ec-0f64-40f2-be71-c4a2f03bd03b_d49308a53dd3498393adf59cba7c34c5
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:23:54.317Z
+    completed_at: 2026-08-27T21:23:54.317Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:6
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: 3be94283-4cad-41a6-9902-667962804af5_52baec5e0cf640ef8a4611f3033162d7
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:24:24.764Z
+    completed_at: 2026-08-27T21:24:24.764Z
+  - key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z:chunk:7
+    parent_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    attempt_key: latepost:c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c:20260518:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3:mimo:2026-08-27T21:20:13.221Z
+    provider: mimo
+    id: c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c
+    source: latepost
+    title: "165: GEAR 高深远：世界模型、自进化循环、DreamDojo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/c2aa54f3-15dc-47a2-8a4d-13790ec4ad7c.mp3
+    task_id: f336e3cf-caca-4d08-898e-349cded079fd_7be0d4c4fb1a4a07abbb4059a7daddd5
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-27T21:20:13.221Z
+    updated_at: 2026-08-27T21:24:35.691Z
+    completed_at: 2026-08-27T21:24:35.691Z
