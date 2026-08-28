@@ -19507,3 +19507,275 @@ jobs:
     submitted_at: 2026-08-27T21:20:13.221Z
     updated_at: 2026-08-27T21:24:35.691Z
     completed_at: 2026-08-27T21:24:35.691Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:0
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 1b64c5fe-2a03-44dc-9027-9d4329e56222_e6d589123c9e4e5c830d8c5000ad9f15
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:26:35.958Z
+    completed_at: 2026-08-28T21:26:35.958Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:1
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 22103a2b-614c-4165-87a4-5696fb4ec1c3_eaff8afcf04d45b7a2c2f5573a4edce3
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:26:57.868Z
+    completed_at: 2026-08-28T21:26:57.868Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:2
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 9642a703-29d8-4a70-a66c-2a3b53d13279_e6b53fcfaf08491daa3c8fb990a09f3f
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:27:19.178Z
+    completed_at: 2026-08-28T21:27:19.178Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:3
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 725432ab-fa86-4549-9216-efd63fb673a5_19cbdb3720ee40a894b3b640c21c1f97
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:27:38.828Z
+    completed_at: 2026-08-28T21:27:38.828Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:4
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 3a18b77b-e7d8-45da-b41e-f185c2452bfc_dd17773fb07d4822aca0b4616175b624
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:27:58.913Z
+    completed_at: 2026-08-28T21:27:58.913Z
+  - key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z:chunk:5
+    parent_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    attempt_key: sv101:73a69583-98ee-43d6-a892-3e7c93012dd9:20260828:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3:mimo:2026-08-28T21:25:46.714Z
+    provider: mimo
+    id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+    source: sv101
+    title: E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/73a69583-98ee-43d6-a892-3e7c93012dd9.mp3
+    task_id: 322053d0-b221-4987-a334-1618e89f6008_fbd23a1e48c942b0a0a688e5f2a47bd3
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:25:46.714Z
+    updated_at: 2026-08-28T21:28:02.830Z
+    completed_at: 2026-08-28T21:28:02.830Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:0
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: d19b8d31-9419-4508-989b-5dd55745035d_3bffeb492c3e485181faca583f70ddb8
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:31:14.818Z
+    completed_at: 2026-08-28T21:31:14.818Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:1
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: d57abdb2-071e-4d46-ab33-801333f38a1d_942d2c83e9354addb89ae42610033340
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:31:39.302Z
+    completed_at: 2026-08-28T21:31:39.302Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:2
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: 4818b79d-2d24-4751-97e3-6f05c8e4539a_0b5a5c12be8b49caa13bd19de6a539c5
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:32:07.586Z
+    completed_at: 2026-08-28T21:32:07.586Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:3
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: 8d4fbad1-676e-4c21-81cb-ddfefdf90364_7e632628036348d78f6cdde8ac1a64f4
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:32:33.383Z
+    completed_at: 2026-08-28T21:32:33.383Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:4
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: 1d84da50-7e1e-4a52-914f-79f999dd1074_1b71105e1ee749fa94760c07142e4d18
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:33:01.132Z
+    completed_at: 2026-08-28T21:33:01.132Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:5
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: a065c93a-a7d8-4d59-ac8b-5eace57b55fd_f93706c922274bbe92ca764246e77b5d
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:33:25.064Z
+    completed_at: 2026-08-28T21:33:25.064Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:6
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: 93e8eb27-a759-49e2-b353-f38a102f2a1f_f0caa6e6b5004ef789abb085eeb4a4fd
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:33:53.933Z
+    completed_at: 2026-08-28T21:33:53.933Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:7
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: a4a65529-d84c-4faf-8147-ec85b472f4a2_01b9363e1a3948999857f1e18643421b
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:34:18.452Z
+    completed_at: 2026-08-28T21:34:18.452Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:8
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: 324b1bef-9d43-4450-a7e1-fe87e7c55a77_3789833706964e488e5c9187d89abef5
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:34:44.801Z
+    completed_at: 2026-08-28T21:34:44.801Z
+  - key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z:chunk:9
+    parent_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    attempt_key: latepost:ca5acce8-68a5-4ae0-b58c-bc9af6e572d7:20260514:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3:mimo:2026-08-28T21:29:58.319Z
+    provider: mimo
+    id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+    source: latepost
+    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
+    task_id: ec5f9dd5-f407-498a-9da0-2ee1472f8785_f3127c7ff9ec49d3afe8420ca228fba1
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 10
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-28T21:29:58.319Z
+    updated_at: 2026-08-28T21:35:11.732Z
+    completed_at: 2026-08-28T21:35:11.732Z

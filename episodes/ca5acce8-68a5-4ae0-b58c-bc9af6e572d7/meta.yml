@@ -1,0 +1,32 @@
+id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
+source: latepost
+title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
+guest: "吴明辉"
+guest_role: "明略科技创始人兼CEO"
+published: "2026-05"
+duration: "2h29m"
+url: "https://podcast.latepost.com/164"
+thumbnail: "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7"
+status: generated
+tags:
+  - ai-products
+  - coding-agents
+  - ai-research
+  - startup
+  - interview
+  - ceo
+  - deep-dive
+  - strategic
+summary: |
+  明略科技创始人吴明辉在 OpenClaw 掀起个人 Agent 热潮后，宣布 SaaS 行业已死：闭源软件分分钟被 AI 复刻，明略转向开源 + Agentic Service（结果即服务）模式。节目中他详细拆解了把 OpenClaw 从个人助理改造成团队协作者的实践、多只专长龙虾在群聊里产生集体智慧的章鱼 Octo、品鉴者体系与龙虾商业伦理学，并复盘了 2020-2022 年千人大团队做组织智能（EIP）最终裁员一半的教训。他给出的终局判断是：基模 Scaling up 到今天已经足够，下一步是靠 Scaling out（集体学习与组织智慧）和人的 Taste 取胜。
+core_ideas:
+  - 'SaaS 已死论：软件曾像矿或工厂一样是不可搬走的资产，如今 Web Coding + AI 分分钟复刻闭源软件，坚持闭源的公司基本只有死路一条；明略的护城河是数据供应链（类比 Wind/Bloomberg）'
+  - 'OpenClaw（龙虾）把“人成为瓶颈”的问题解决了：DeepMiner、Manus、Claude Code 都需要人守在电脑前，而龙虾装在 Mac Mini 上定时任务、远程操作；其日记/memory/soul 三层记忆结构类似谷歌嵌套学习论文，且是白盒可改'
+  - '集体智慧 MOA：把数学、哲学、博弈论等不同专长的龙虾放进群聊，就能实现 Mixture of Agent，做出类似模型内部 Mixture of Experts 的效果——这是章鱼 Octo 的起点'
+  - '章鱼 Octo：股票代码 2718（自然对数底 e），e 的 x 次方导数等于自身，暗合“代码越好写码能力越强”的自强化闭环；骨干网只有 5 个工程师，token 消耗一天 13.7 万美金，一年约一个亿人民币即可复刻主流协作软件'
+  - '商业模式转型：可复刻的软件全部开源，赚钱靠 Agentic Service（广告素材、数据挖掘、短剧生成、定制软件开发）；定制软件从人月计价变成 token 管理费，垂直行业模型可卖出比基模更贵的 token'
+  - 'EIP 复盘：2020 年用 1000 人大团队做超原创的“组织智能”，技术预判早了六年、组织方式错误，2022 年资本寒冬加上海封城，4000 人裁员一半；教训是大团队没戏、越小的团队越好'
+  - '组织新哲学：每个人都要存在（存在感=被认可+收入增长），品鉴者体系（我品鉴故我在）用归因分析让每份贡献被看见，用康德义务论约束龙虾'
+  - '终局判断：基模 Scaling up 到今天足够，下一步是 Scaling out——集体学习、组织智慧保护在每个个体身上；人靠 Taste（想要什么）而非 Think（确定性推理）立足，知识工作者长期都要变成科学家'
+article_path: episodes/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7/article.html
+base: /episodes/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7/

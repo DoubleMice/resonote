@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-28T05:49:52.333Z
+refreshed_at: 2026-08-28T21:25:45.461Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 17
-done: 0
+done: 1
 pending: 0
-needs_transcript: 17
+needs_transcript: 16
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -120,8 +120,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-28T21:29:58.319Z
+    transcript_job_id: d19b8d31-9419-4508-989b-5dd55745035d_3bffeb492c3e485181faca583f70ddb8,d57abdb2-071e-4d46-ab33-801333f38a1d_942d2c83e9354addb89ae42610033340,4818b79d-2d24-4751-97e3-6f05c8e4539a_0b5a5c12be8b49caa13bd19de6a539c5,8d4fbad1-676e-4c21-81cb-ddfefdf90364_7e632628036348d78f6cdde8ac1a64f4,1d84da50-7e1e-4a52-914f-79f999dd1074_1b71105e1ee749fa94760c07142e4d18,a065c93a-a7d8-4d59-ac8b-5eace57b55fd_f93706c922274bbe92ca764246e77b5d,93e8eb27-a759-49e2-b353-f38a102f2a1f_f0caa6e6b5004ef789abb085eeb4a4fd,a4a65529-d84c-4faf-8147-ec85b472f4a2_01b9363e1a3948999857f1e18643421b,324b1bef-9d43-4450-a7e1-fe87e7c55a77_3789833706964e488e5c9187d89abef5,ec5f9dd5-f407-498a-9da0-2ee1472f8785_f3127c7ff9ec49d3afe8420ca228fba1
+    transcript_completed_at: 2026-08-28T21:35:11.732Z
   - id: 09658018-16d6-4d56-84d1-0ae52a411d64
     guid: 09658018-16d6-4d56-84d1-0ae52a411d64
     title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"

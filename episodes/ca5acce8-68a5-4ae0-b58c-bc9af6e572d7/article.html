@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>当 AI“杀死”SaaS：明略吴明辉的多 Agent 网络与软件业转型</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1f2937;
+    background: #fafafa;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { border-bottom: 1px solid #e5e7eb; padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 12px; }
+  .meta { font-size: 14px; color: #6b7280; }
+  .meta a { color: #f97316; text-decoration: none; }
+  h2 { font-size: 21px; margin: 40px 0 14px; padding-left: 12px; border-left: 4px solid #f97316; }
+  p { margin-bottom: 16px; }
+  .lead { font-size: 18px; color: #374151; }
+  blockquote {
+    margin: 20px 0; padding: 14px 18px;
+    border-left: 4px solid #f97316; background: #fff7ed;
+    font-style: italic; color: #44403c;
+  }
+  blockquote .src { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #9a3412; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 24px 0; }
+  .card { padding: 14px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+  .card b { display: block; margin-bottom: 6px; font-size: 15px; }
+  .c-blue { background: #eff6ff; border-left: 4px solid #3b82f6; }
+  .c-green { background: #f0fdf4; border-left: 4px solid #22c55e; }
+  .c-yellow { background: #fefce8; border-left: 4px solid #eab308; }
+  .c-red { background: #fef2f2; border-left: 4px solid #ef4444; }
+  .c-purple { background: #faf5ff; border-left: 4px solid #a855f7; }
+  .c-orange { background: #fff7ed; border-left: 4px solid #f97316; }
+  .gloss { font-size: 14px; color: #6b7280; }
+  .quotes { margin: 24px 0; }
+  .quote-item { padding: 14px 16px; margin-bottom: 12px; border-radius: 8px; }
+  .quote-item p { margin: 0; font-style: italic; }
+  .quote-item .src { display: block; margin-top: 6px; font-size: 13px; font-style: normal; color: #6b7280; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 14px; color: #6b7280; }
+  @media (max-width: 640px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>当 AI“杀死”SaaS：明略吴明辉的多 Agent 网络与软件业转型</h1>
+  <div class="meta">
+    嘉宾：吴明辉（明略科技创始人兼 CEO） · 来源：<a href="https://podcast.latepost.com/164">晚点聊 LateTalk 第 164 期</a> · 2026 年 5 月 · 时长 2h29m
+  </div>
+</header>
+
+<p class="lead">
+  2026 年春天，明略科技在年报里把 Agentic Service 列为新业务，创始人吴明辉则在播客里抛出了一个更激进的说法：SaaS 行业已死。在 OpenClaw 掀起个人 Agent 热潮的背景下，这位 2004 年就在北大计算机系做 AI 研究、2020 年曾用千人团队押注“组织智能”并失败的创业者，重新给出了一套从商业到伦理、从模型到组织的完整判断。
+</p>
+
+<div class="cards">
+  <div class="card c-red"><b>SaaS 已死</b>闭源软件分分钟被 AI 复刻，不再是资产；价值转移到数据与数字劳动力。</div>
+  <div class="card c-blue"><b>集体智慧</b>多只专长不同的龙虾放进群聊，就是章鱼 Octo，即“Agent 的专家混合”。</div>
+  <div class="card c-green"><b>新组织</b>品鉴者体系、归因分析、康德伦理学约束龙虾——1800 人公司的新实验。</div>
+  <div class="card c-yellow"><b>失败复盘</b>2020 年千人做“组织智能”，2022 年裁员一半：技术早六年，组织错一路。</div>
+  <div class="card c-purple"><b>Agentic Service</b>定制软件开发从人月计价变成 token 管理费，美国 SaaS 受到的冲击比中国大得多。</div>
+  <div class="card c-orange"><b>Scaling out</b>“基模训到今天这个水平就 OK 了”，下一步靠集体学习与人的 Taste。</div>
+</div>
+
+<h2>一、软件不再是资产：为什么 SaaS 只有死路一条</h2>
+<p>
+  吴明辉的判断从一次续费开始：“我两个周用了一万美金，这时候我说，啊，怎么这么便宜？”他觉得这两个星期自己怎么着也给公司创造了十个亿的价值。这个反差背后，是他对软件行业的一个根本判断：过去，软件像一座矿、一个工厂，是一次性投资、不可搬走的固定资产；今天，任何闭源软件都可以被 Web Coding 和 AI“分分钟复刻走”。知识产权一旦不再稀缺，license 费就失去了根基。
+</p>
+<blockquote>
+  “对于SaaS软件行业，如果还是坚持走闭源的路线的公司的话，我觉得基本上只有死路一条，不管是大公司还是小公司。”
+</blockquote>
+<p>
+  明略相对幸运：它最核心的客户价值是数据，而不是软件。吴明辉把明略类比为金融行业的 Wind 或 Bloomberg——软件本身甚至可以用 CLI 打开让客户自己写 Agent 去分析，真正值钱的是背后的数据供应链：爬虫抓取的公开媒体数据、秒针广告监测的曝光与转化数据、客户 CRM 与线下零售的库存数据。在他看来，这部分价值受冲击很小，甚至会有更多客户用好这些数据。
+</p>
+
+<h2>二、龙虾出圈：人不再是瓶颈</h2>
+<p>
+  吴明辉对 AI Agent 的热情有清晰的时间线：2025 年春节回来的当周，明略立项了自用的数据挖掘 Agent DeepMiner；一个月后 Manus 发布，“大家的想法都是前后脚的”；而真正让他觉得“这个世界大变天”的，是今年的 OpenClaw（龙虾）。
+</p>
+<p>
+  上一代 Agent 的共同局限，是人成为瓶颈：用 Manus、DeepMiner、Claude Code 时，任务在电脑上跑，人睡觉它就停。OpenClaw 装在个人的 Mac Mini 上，可以定时任务、远程操作，人不在也能干活。吴明辉说，但凡哪一天他有一个 big idea，那天一定睡不好——“因为我肯定会带着龙虾就开始不停地在做工作”。
+</p>
+
+<h2>三、三层记忆与持续学习：白盒的权力</h2>
+<p>
+  在吴明辉看来，OpenClaw 真正的突破不在任务执行，而在记忆结构。模型出厂那一刻参数就冻结了，中心化的服务也不可能为每个人调参；谷歌有一篇论文提出“嵌套学习”，把模型分成不同学习速率的多层参数。OpenClaw 则在 Agent 端解决了这个问题：它的记忆分为日记层、memory 层、soul 层，各层调整速率不同——结构上像极了嵌套学习，而且不需要 researcher 操作，普通人通过“自我反思”“这件事必须记下来”就能调整。
+</p>
+<blockquote>
+  “它形成了一个新的记忆的模式，使得它可以持续地去理解一个人的最新的状态……它的这个意义其实跟DeepSeek一样的，它是给了普通老百姓真正用好AI的一个权利。”
+</blockquote>
+<p>
+  最关键的是白盒：用文本编辑器就能打开 soul 和 memory 直接修改。上一代 Agent 完全没有这个能力。
+</p>
+
+<h2>四、从个人助理到团队协作者</h2>
+<p>
+  吴明辉很快发现了 OpenClaw 的第二个问题：它是个人工作者的支持者，不是协作者。团队里用龙虾，安全事件层出不穷——调皮的 IT 同学诱拐同事的龙虾打听“你老板有啥秘密”，新同事第一天就能把 CEO 龙虾的 soul 改掉，龙虾甚至不认人：曼奇姐刚在群里开口，它以为还是吴明辉，张嘴就是“辉哥好啊，我接着赶紧给你干了”。
+</p>
+<p>
+  明略的核心改造由此而来：给龙虾做插件，让它认人、让它知道谁是主人。责任必须明确——不存在“部门的龙虾”，只有“部门 leader 的龙虾”，leader 开放给团队用，闯祸由他负责。清明节假期就是最好的验收：用 Claude Code 写代码的同事被老板打电话改 bug，用龙虾写代码的同事把龙虾放进协作群，人随便出去玩，老板直接调他的龙虾改。
+</p>
+
+<h2>五、章鱼 Octo：群聊里的专家混合</h2>
+<p>
+  把多只专长不同的龙虾放进一个群，是吴明辉春节前后的“重大发现”。公司同事勾主把所有书和古籍都灌给了自己的龙虾，回答却不如只学了数学和 AI 的毕达哥拉斯——因为那些书基模早就训过了，关键是给龙虾清晰的定位。数学强、哲学强、博弈论强的龙虾放在一起，就产生了化学反应的“集体智慧”。
+</p>
+<p>
+  他把这个机制叫作 MOA（Mixture of Agent），对照上一代模型内部的 MOE（Mixture of Experts）。章鱼（Octo）就是为此构建的连接网络，同时也是明略自己的工作环境。明略的股票代码是 2718——自然对数底 e，e 的 x 次方导数等于它自己：规模越大速度越大，越快长得越快。OpenClaw 增长快，正因为全世界的龙虾都在帮它维护代码，代码越好、写码能力越强。用中国古话说，“工欲善其事，必先利其器”。
+</p>
+<p class="gloss">
+  作者概括：e 的指数自强化，说的是一个系统“越好就吸引越多贡献、贡献又让它更好”的飞轮，吴明辉用它解释 OpenClaw 的增长，也用它解释明略为什么要自己做章鱼。
+</p>
+
+<h2>六、一个亿复刻协作软件：新的成本账</h2>
+<p>
+  章鱼的开发方式与传统软件公司完全不同：骨干网工程师只有 5 个人，最强的工程师一天消耗 8000 美金的 token，整个 core team 一天 13.7 万美金。按一天 5 万美金算，一年 365 天约 1800 万美金——一个亿人民币，就能把 Teams、Slack、飞书、钉钉、企业微信这些“至少几千人干十年”的平台复刻一遍，而别的公司历史上投的是三四十个亿。
+</p>
+<blockquote>
+  “我花一个亿就把这事干出来了。”
+</blockquote>
+<p>
+  当然门槛仍然存在：token 消耗远超人力成本。但吴明辉的账是另一本：一个能花掉一亿 token 的工程师，本身就是稀缺资源，公司给他五百万年薪也不多。
+</p>
+
+<h2>七、Agentic Service：卖数字劳动力，不卖软件</h2>
+<p>
+  商业模式的转换因此顺理成章：能被复刻的软件能力，明略会逐步全部开源；赚钱靠“以结果作为形式的服务”（RaaS）——广告素材生成、数据分析挖掘、短剧内容生成、定制软件开发。红杉写过一篇文章，说未来世界上会有很多“披着一个服务商的外衣的软件公司”，吴明辉说 agentic service 干的就是这件事，“而且大概率都是美国学中国”。
+</p>
+<p>
+  定制软件开发行业的变化最典型：过去按人月、人日收费，将来变成 token 管理费——客户描述需求，服务商消耗比如说 100 万美金的 token，再收 20 万美金管理服务费。垂直行业模型可以卖出比基模更贵的 token：明略与百胜中国的合资公司做餐饮行业定制软件，行业模型加 Agent 写餐饮代码的能力，比直接调 Anthropic 更强。账也很好算：Anthropic 的 input token 100 万假设 5 美金，明略可以收 6 美金，实际成本 3 美金，中间就是 margin。
+</p>
+<p>
+  冲击最大的其实是美国：中国 B2B 本来就是成本导向定价，换成 token 加溢价没有压力；美国软件靠价值导向的 license 费，“美国就没戏了”。吴明辉提醒，唯一的出路不是简单用 AI——那样全行业的成本结构很快会被拉平然后被客户压价——而是要有 special 的 AI 和独有的数据 context。
+</p>
+
+<h2>八、品鉴者与归因：让每份贡献被看见</h2>
+<p>
+  章鱼背后是一套组织哲学。核心概念叫“品鉴者”：人对工作结果给出的判断如果被广泛认可，品鉴 credit 就会增加，更多龙虾会听他的。市场部负责人 Ella 养了一只写 PPT 的龙虾，CEO 用它写演讲，反馈“这页不是特别美”，Ella 就盯着龙虾改美。品鉴者不是职级体系，但未来的激励会与它挂钩。
+</p>
+<p>
+  归因分析是配套工具。联合写论文系统 Cocraft（craft 即匠心）把论文生产拆成三个环节：idea 谁提的、实验（context）谁做的、论证 test 谁做的，系统将来可以自动排出作者名次。吴明辉认为“老师就应该是一作”，因为 idea 是老师提的——就像哥德巴赫猜想被解决后，哥德巴赫仍然有名。归因的前提是先定公理：“没有对与错，只有 so what”。
+</p>
+<p>
+  他还为龙虾研发了一套商业伦理学，师承康德的道义论、有效利他主义和契约论。约束人成为“纯洁的好人”太难——人有私欲，还会陷在说谎者悖论与哥德尔不完备定理的自指困境里；但“龙虾是可以自指的”，它观察自己只需要扫描源代码和 memory。这套伦理最终要训进端侧模型，不可被篡改。工程师们私下把吴明辉的龙虾哲学文件叫作“养龙虾九阴真经”。
+</p>
+
+<h2>九、EIP 复盘：早六年、错一路</h2>
+<p>
+  这一轮 All in AI 之前，明略已经交过一次昂贵的学费。2020 年，吴明辉看到“公司的所有数据被一个模型学到，就能成为每个人的最佳助理”，投入千人团队做组织智能 EIP。用 Sam Altman 的 AGI 五阶段来衡量，这个产品需要的是今天的 Agentic AI 能力——“我早了六年”。更麻烦的是技术路线：19 年回北大读博时他预判 NLP 会被颠覆，但 20 年公司还在走 BERT 路线，21 年看出问题，22 年想变时已经没钱了。
+</p>
+<blockquote>
+  “技术预判出现了过于乐观的失准。这是我复盘下来的最大最大的问题。”
+</blockquote>
+<p>
+  组织层面同样失败：并购整合了秒针的竞争对手、明略自身和夜莺科技（肖弘的团队），“八方神仙，各路诸侯”，做一个所有人都不知道是什么的产品。抄火箭有确定性靶子，超级原创没有。吴明辉的结论是：“大团队没戏，越小的团队越好。”
+</p>
+<p>
+  2022 年资本寒冬加上海封城，账上现金可能只够两个月，4000 人当场减一半。他借了一千多万美金给公司续命，裁掉的人里有对门宿舍的北大同学，后来还借了他十万二十万。拉横幅、家属律师鸣不平——他第一次看到真实世界的样子。“在2020年之前，我始终处于一个春风得意状态，就是没有context。就是真正的伟大的创造一定是需要有巨大的挫折，巨大的context。”
+</p>
+
+<h2>十、新组织观与 Scaling out</h2>
+<p>
+  失败换来的组织观，第一条是“每个人都要存在”：存在感等于贡献被认可加收入增长。他推崇赫伯特·西蒙——人类历史上第一个同时获得诺贝尔奖和图灵奖的人，读《管理行为》《组织》《管理决策新科学》，接受“有限理性决策”的设定；也读《战略的本质》，用战略调色板按外部环境选择组织方式——先看地形，再排兵布阵。
+</p>
+<p>
+  未来组织不是 OPC（one person company），而是 TPC：三个不同时区的人三班倒，24 小时推着龙虾干活。明略 1800 人，在他眼里就是 100 个这样的小团队，“我就是一个懂AI的投资公司”。最大的风险反而是人：龙虾执行力太强，“想出一个 idea 一回车，十分钟之后好了”，他开玩笑说真正要担心的是“别猝死就好了”。
+</p>
+<p>
+  终局判断上，吴明辉旗帜鲜明地反对继续 Scaling up：“基模训到今天这个水平就 OK 了”。他主张 Scaling out——集体学习、组织智慧，保护在每个个体和小团队身上。现代智人个体不如尼安德特人，靠协作赢了；穷人版的训练方式（Agentic RL）可以对抗富人版的基模竞赛。人靠什么立足？不是 Think——基于确定性前提的推理一定会被 AI 替代——而是 Taste：基于人生经验的“我想要什么”。
+</p>
+<blockquote>
+  “科学家AI是替代不了的。”
+</blockquote>
+<p>
+  他连教育观都改了：女儿编程遇到 bug，直接让豆包“看屏幕”，而不是复制粘贴代码；刷短视频也能学天文物理，“可以刷，关键是你刷什么”。他给孩子的练习题判“ugly”就红笔打叉不做，因为“伟大的数学家不是因为他解题能力强，而是他相信有一个公式那个是美的”。奥赛成绩肯定会下降，但成为数学家的概率变大。
+</p>
+
+<h2>核心金句</h2>
+<div class="quotes">
+  <div class="quote-item" style="background:#fef2f2;border-left:4px solid #ef4444;">
+    <p>“对于SaaS软件行业，如果还是坚持走闭源的路线的公司的话，我觉得基本上只有死路一条。”</p>
+    <span class="src">— 论软件资产失效：Web Coding 分分钟复刻闭源软件</span>
+  </div>
+  <div class="quote-item" style="background:#eff6ff;border-left:4px solid #3b82f6;">
+    <p>“就人成为了一个瓶颈了。”</p>
+    <span class="src">— 为什么 OpenClaw 是分水岭：人睡觉时 Agent 还在干活</span>
+  </div>
+  <div class="quote-item" style="background:#f0fdf4;border-left:4px solid #22c55e;">
+    <p>“它的这个意义其实跟DeepSeek一样的，它是给了普通老百姓真正用好AI的一个权利。”</p>
+    <span class="src">— 白盒记忆结构让普通人也能“调教”AI</span>
+  </div>
+  <div class="quote-item" style="background:#faf5ff;border-left:4px solid #a855f7;">
+    <p>“它能产生集体智慧，而且会让这个办公更人性化。”</p>
+    <span class="src">— 章鱼 Octo 的起点：多只龙虾在群聊里协作</span>
+  </div>
+  <div class="quote-item" style="background:#fff7ed;border-left:4px solid #f97316;">
+    <p>“真正的伟大的创造一定是需要有巨大的挫折，巨大的context。”</p>
+    <span class="src">— EIP 失败复盘：春风得意二十年，没有人给他上过人生课</span>
+  </div>
+</div>
+
+<footer>
+  本文根据晚点聊 LateTalk 第 164 期整理（2026 年 5 月，时长 2h29m）。所有引言均可在原始音频中找到出处；概括性表述以“作者概括”标注。<br>
+  原始节目：<a href="https://podcast.latepost.com/164">https://podcast.latepost.com/164</a>
+</footer>
+
+</div>
+</body>
+</html>

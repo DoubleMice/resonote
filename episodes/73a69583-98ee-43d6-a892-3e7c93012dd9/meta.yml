@@ -1,0 +1,31 @@
+id: 73a69583-98ee-43d6-a892-3e7c93012dd9
+source: sv101
+title: "E250｜mRNA的第二战场：对话英博，拆解Moderna人类首个肿瘤疫苗三期突破"
+guest: "英博博士"
+guest_role: "艾博生物创始人、董事长兼CEO，前 Moderna 高级科学家"
+published: "2026-08"
+duration: "1h17m"
+url: "https://sv101.fireside.fm/263"
+thumbnail: "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6"
+status: generated
+tags:
+  - startup
+  - ai-research
+  - interview
+  - ceo
+  - deep-dive
+  - technical
+  - strategic
+summary: |
+  2026 年 8 月，Moderna 与默沙东联合开发的个性化 mRNA 肿瘤疫苗在黑色素瘤术后辅助治疗的三期临床（INTerpath-001）中达到主要终点，Moderna 股价单日暴涨 177%，市值从 250 亿美元升至 690 亿美元。本期邀请艾博生物创始人、前 Moderna 高级科学家英博博士，拆解这项"一人一药"疗法背后的机制：为什么必须与 PD-1 联用、为什么 4-6 周的生产窗口是药品制造的 nightmare、新抗原上限 34 个背后的风险收益比，以及 AI 如何在序列预测、mRNA 优化与自动化生产中贯穿全程。节目还盘点了固定抗原与个性化新抗原两条技术路线、中美研发差距、成本控制与监管逻辑，并对"疫苗变成软件问题"的硅谷乐观论给出了行业内的冷静回应。
+core_ideas:
+  - 'INTerpath-001：全球多中心、双盲随机、入组 1000 多位患者，个性化肿瘤疫苗 + Keytruda 联合组的无复发生存期显著优于单用 PD-1'
+  - '疫苗给免疫系统"点火"负责识别，PD-1 去掉肿瘤的免疫拮抗负责解锁攻击——1 加 1 大于 2'
+  - '一人一药：每人肿瘤高度异质，只针对肿瘤特有新生抗原，把肿瘤当外来病毒识别，不良反应极低'
+  - '制造 nightmare：取样、测序、AI 预测、mRNA 生产、LNP 包封、QC 到回输，全部挤在术后 4-6 周内，必须全自动化'
+  - '新抗原上限 34 个是风险收益比而非生产上限：10% 命中率下 2 个精准抗原就够；覆盖越多，肿瘤逃逸概率越低'
+  - '选黑色素瘤首战是因为术后 3 个月到 1 年复发可快速读出疗效；验证的是机理而非瘤种，非小细胞肺癌三期已启动'
+  - '成本目标：CAR-T 几十万一针前车之鉴，艾博要把个性化疫苗做到中国患者可负担的"几十万 lifetime 费用"'
+  - 'AI 贯穿全流程：新抗原序列是算出来的；核酸药底层只有 A、U、C、G 四个字母，最可能被 AI 驱动'
+article_path: episodes/73a69583-98ee-43d6-a892-3e7c93012dd9/article.html
+base: /episodes/73a69583-98ee-43d6-a892-3e7c93012dd9/
