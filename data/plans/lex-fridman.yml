@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-08-27T21:15:42.218Z
+refreshed_at: 2026-08-28T05:49:52.350Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
@@ -24,8 +24,8 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-08-27T21:18:50.720Z
-    transcript_error: audio chunk is 20.7MB, above DASHSCOPE_DATA_URI_MAX_MB=18
     transcript_completed_at: 2026-08-27T21:20:13.123Z
+    transcript_error: audio chunk is 20.7MB, above DASHSCOPE_DATA_URI_MAX_MB=18
   - id: p-6474
     guid: https://lexfridman.com/?p=6474
     title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
