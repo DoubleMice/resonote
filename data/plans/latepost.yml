@@ -1,131 +1,15 @@
 source: latepost
-refreshed_at: 2026-08-28T21:25:45.461Z
+refreshed_at: 2026-08-29T03:20:49.931Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 17
-done: 1
+total_candidates: 16
+done: 0
 pending: 0
 needs_transcript: 16
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
-    guid: ca5acce8-68a5-4ae0-b58c-bc9af6e572d7
-    title: "164: 当AI“杀死”SaaS，与明略吴明辉聊多Agent网络、软件业转型和 AI 新组织"
-    duration: 8938
-    published: Thu, 14 May 2026 08:45:00 +0800
-    published_sort: "20260514"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/164
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ca5acce8-68a5-4ae0-b58c-bc9af6e572d7.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: |-
-      「闭源软件价值消失，从 token 和模型上赚钱。」
-
-      今天的嘉宾是明略科技创始人吴明辉。2004 年时，他就在北大计算机系做人工智能研究，硕士期间开始创业。
-
-      在这一轮大模型热潮前，明略曾在 2020 年尝试用 AI 做组织智能，大举扩张，包括收购了 Manus 创始人肖宏的上一家创业公司，夜莺科技。这一次 AI 尝试以失败告终。
-
-      这没有影响吴明辉现在对 AI 的热情。24 年以来，明略陆续发布了自己的行业模型，完成了上市。在 OpenClaw 引起个人 Agent 热潮后，他们也开始了一场更彻底的变革。
-
-      这一期我们聊了 AI 怎么影响 SaaS 和软件，明略做出的应对，他们即将开源发布的多 Agent 协同网络章鱼，以及一个存在已久的组织可以怎么被 AI 改变。
-
-      本期节目的图文版也已经发布:对话明略吴明辉：AI 正在杀死 SaaS，但我找到了一条新路
-
-      本期嘉宾
-
-      吴明辉 明略科技创始人
-
-      本期主播
-
-      程曼祺 《晚点》科技报道负责人
-
-      时间线跳转：
-
-      SaaS 已死，软件系统本身会走向开源
-
-      01:42 Agent 正杀死 SaaS 已死，数据和上下文的价值更大了
-
-      05:53 OpenClaw 开启的新可能：穷人版（不从基模入手的）持续学习
-
-      11:53 明略的主业数据挖掘和分析，如何被 AI 改变
-
-      19:51 新探索：Agentic Service。软件开源、自训模型赚 Token。
-
-      多 Agent 协同网络，“龙虾哲学”
-
-      29:15 章鱼想构建集体学习网络，  (eˣ)' = eˣ 的指数级增长要给自己造工具
-
-      35:51 章鱼开发过程：小团队+AI，核心改造是：认人+权限+信任机制 + 品鉴信号
-
-      46:23 龙虾的哲学：康德的义务论约束不了人，但可以约束龙虾
-
-      56:30 vs 巨头：章鱼直接开源，“飞书做 AI 转型，也得开源”
-
-      01:05:51 自研 GUI-VLA 模型，最大场景是软件自动测试
-
-      01:14:35 vs 更小初创企业：1800 人的明略会变得更像“投资公司”
-
-      从 Scaling up 到 Scaling Out：站在"被AI欺负的人"那边
-
-      01:20:33 scaling up 是追求单性能突破，scaling out 是横向扩展 agent 网络；后者对人的价值更友好
-
-      01:26:37 专注行业小型模型，将开源web retriever数据集；Agent 网络可实现个性化持续学习
-
-      01:34:19 验证标准：商业成功+ 科学发现能力；风险是“物理猝死”，大脑太活跃
-
-      5 年前做 EIP（企业智能平台）， 失败的教训
-
-      01:37:47 技术判断太乐观，团队共识不够：
-
-      01:45:29 1000 多人大团队，"八方神仙"做一个没人懂的产品
-
-      01:55:23 从春风得意到减半裁员：看到人的存在；所以现在不裁员，给每个人 AI 船票
-
-      01:58:58 希望本身产生力量，尤其是众人的希望
-
-      02:03:29 新的 AI 投入何时表现在财务上？
-
-      AI 原生一代
-
-      02:08:11 看女儿用 AI：AI 原生一代的观察与启发
-
-      02:11:37 不再和孩子一起刷奥数题，识别 beautiful 的题才做
-
-      02:15:14 没有危险的专业，而是只会 Think 是危险的
-
-      02:18:43 工程师的新价值：在不断变化的应用环境里判断需求，这仍是 AI 无法做的
-
-      02:24:29 Scaling Out一定会发生：小公司会先做出来
-
-      连点成线：Coding is eating the world，从软件重塑世界到代码重塑世界
-
-      剪辑：Nick
-
-      相关链接：
-
-      156期：AI季报26Q1：OpenClaw、OpenAI vs Anthropic的三重对阵、自进化
-
-      151期：MuleRun 陈宇森：Claude Code 带来 Agent 创作新范式、未来的软件是日抛式的
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-28T21:29:58.319Z
-    transcript_job_id: d19b8d31-9419-4508-989b-5dd55745035d_3bffeb492c3e485181faca583f70ddb8,d57abdb2-071e-4d46-ab33-801333f38a1d_942d2c83e9354addb89ae42610033340,4818b79d-2d24-4751-97e3-6f05c8e4539a_0b5a5c12be8b49caa13bd19de6a539c5,8d4fbad1-676e-4c21-81cb-ddfefdf90364_7e632628036348d78f6cdde8ac1a64f4,1d84da50-7e1e-4a52-914f-79f999dd1074_1b71105e1ee749fa94760c07142e4d18,a065c93a-a7d8-4d59-ac8b-5eace57b55fd_f93706c922274bbe92ca764246e77b5d,93e8eb27-a759-49e2-b353-f38a102f2a1f_f0caa6e6b5004ef789abb085eeb4a4fd,a4a65529-d84c-4faf-8147-ec85b472f4a2_01b9363e1a3948999857f1e18643421b,324b1bef-9d43-4450-a7e1-fe87e7c55a77_3789833706964e488e5c9187d89abef5,ec5f9dd5-f407-498a-9da0-2ee1472f8785_f3127c7ff9ec49d3afe8420ca228fba1
-    transcript_completed_at: 2026-08-28T21:35:11.732Z
   - id: 09658018-16d6-4d56-84d1-0ae52a411d64
     guid: 09658018-16d6-4d56-84d1-0ae52a411d64
     title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
