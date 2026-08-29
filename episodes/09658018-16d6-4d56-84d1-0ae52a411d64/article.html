@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>详解 DeepSeek V4：Infra 巨鲸、百万上下文走进现实、极致效率优化</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #1e1e1e; background: #fafafa; line-height: 1.75; font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { margin-bottom: 40px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 12px; }
+  .meta { color: #666; font-size: 14px; }
+  .meta a { color: #1971c2; text-decoration: none; }
+  h2 { font-size: 21px; margin: 44px 0 14px; padding-left: 12px; border-left: 4px solid #1971c2; }
+  p { margin: 12px 0; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  .card { padding: 14px 16px; border-radius: 8px; font-size: 15px; }
+  .card b { display: block; margin-bottom: 4px; }
+  .c-blue { background: #e7f1ff; border-left: 4px solid #1971c2; }
+  .c-green { background: #ebfbee; border-left: 4px solid #2f9e44; }
+  .c-orange { background: #fff4e6; border-left: 4px solid #e8590c; }
+  .c-yellow { background: #fff9db; border-left: 4px solid #f08c00; }
+  .c-purple { background: #f3f0ff; border-left: 4px solid #7048e8; }
+  .c-red { background: #fff5f5; border-left: 4px solid #e03131; }
+  .quote {
+    margin: 20px 0; padding: 18px 22px; border-left: 4px solid #1971c2;
+    background: #f0f6ff; font-style: italic; border-radius: 0 8px 8px 0;
+  }
+  .quote .src { display: block; margin-top: 8px; font-style: normal; font-size: 13px; color: #666; }
+  .gloss { background: #fff9db; border-radius: 8px; padding: 12px 16px; font-size: 15px; margin: 16px 0; }
+  .gloss b { color: #b45309; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 14px; color: #666; }
+  footer a { color: #1971c2; text-decoration: none; }
+  @media (max-width: 560px) {
+    .cards { grid-template-columns: 1fr; }
+    h1 { font-size: 23px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>详解 DeepSeek V4：Infra 巨鲸、百万上下文走进现实、极致效率优化</h1>
+  <div class="meta">
+    晚点聊 · 第 163 期 · 2026 年 4 月<br>
+    嘉宾：刘一峰（UCLA 博士生，模型架构）· 赵晨阳（RadixArc / sglang，Infra）
+  </div>
+</header>
+
+<p>2026 年 4 月，DeepSeek V4 发布。这期《晚点聊》请来了两位一线 AI 从业者——模型架构背景的刘一峰（UCLA 在读博士，此前在月之暗面和字节 Seed 参与基础模型研发）和 Infra 背景的赵晨阳（开源推理框架 sglang 核心团队创业公司 RadixArc 的工程师）——逐层拆解 V4 的技术报告。如果一句话概括：V4 并没有带来新的"范式变化"，它是在 R1 的测试时扩展范式下，用一系列组合创新和工程优化，让百万上下文从理论走进了实用性新阶段。</p>
+
+<div class="cards">
+  <div class="card c-blue"><b>四个新东西一起上</b>混合稀疏注意力、Muon 优化器、MHC 结构、Triton + FP4，全部替换并跑通。</div>
+  <div class="card c-green"><b>百万上下文走进现实</b>从"理论可行"变成"成本可接受"，Agent 与多步任务直接受益。</div>
+  <div class="card c-yellow"><b>两个极端数字</b>单 token 推理 FLOPs 仅为 V3.2 的 27%，KV Cache 占用仅为其 10%。</div>
+  <div class="card c-orange"><b>激活比例压到 3%</b>总参数 1.6T、激活约 49B，把 MoE 的解耦推到更极端的位置。</div>
+  <div class="card c-purple"><b>范式之辩</b>"范式变化这个词在 AI 圈子被用得有点叙事过载了"——这是组合创新，不是新范式。</div>
+  <div class="card c-red"><b>一线视角</b>架构方向（UCLA 博士）+ Infra 方向（sglang 核心团队），发布当天跑通推理与 RL 全链路。</div>
+</div>
+
+<h2>范式之辩：组合创新，不是范式变化</h2>
+<p>节目的第一个争论点，是"范式变化"这个词本身。刘一峰直言："范式变化这个词在AI圈子被用得有点叙事过载了。"在他看来，范式得是十年一遇甚至更稀疏的更替——Transformers、Scaling Law、RLHF 或者 Constitutional AI、Test-Time Scaling 才算范式。一年前的 R1 之所以有范式意义，是因为它在开源世界走通了 long scale reasoning；而 V4 自己也非常坦诚地承认，它 follow 的是 R1 开创的范式，只是在这个范式下解决了一些更难的问题。</p>
+<p>对刘一峰来说，V4 带来的感受不是震撼，而是一种清醒："我们现在不是说我们能不能做到，而是说我们不知道我们还有哪些需要做的。"他认为真正值得探索的是提出新的能力领域——agent 能力、幻觉控制这类——因为一个新能力领域被提出后，大概只要半年到一年就会被现有模型"刷爆"。而像 V4 这种系统级别耦合的工程，会是接下来一两年的主旋律：把百万上下文拆成无数细散优化，再组合成一个整体能跑的东西。</p>
+
+<h2>消失的训练成本与推迟的发布</h2>
+<p>这次技术报告里有一个"消失的东西"：训练成本。V3 时代 DeepSeek 明确公布过最后一次训练成本是 557 万美元；而 V4 的报告和官方博客都没有再明确讲这个数字。两位嘉宾给出了各自的解读：一方面，DeepSeek 已经不再是一个需要靠成本叙事来定义自己的团队，转而希望用模型能力本身发声；另一方面，557 万只是冰山一角——"研发成本肯定是最后一次训练成本的几十倍吧"，真正的大头是前沿探索、对比验证、人力和数据成本。</p>
+<p>发布时间也耐人寻味。V4 原本争取在春节发布，最终晚了两个多月。赵晨阳从 Infra 角度做了推测：DeepSeek 一次引入了四个互相耦合的新 feature——混合稀疏注意力、Muon 优化器、MHC、FP8 训练——任何一个单独上线都需要极大规模的 debug，四个一起上就是组合爆炸问题。其中 Muon 在超大 MoE 上的稳定性、FP8 在生产级的稳定性，都是公开层面极为前沿的尝试。另外值得一提的是，V4 原生支持国产芯片：报告在并行 EP 方案里提到在华为昇腾上做了技术验证，但那是推理侧；训练是否用了国产芯片，报告没有写，外界推测仍以英伟达为主。</p>
+
+<h2>效率革命：两个数字与它们的前提</h2>
+<p>效率是这次讨论最多、也公认做得最好的部分。相比 V3.2，V4 的单 token 推理 FLOPs 只有其 27%，KV Cache 缓存占用只有其 10%。赵晨阳指出，这些数字讨论的是压缩和稀疏带来的注意力改进，它有一个重要前提：上下文越长，效率优势才越显著。如果实际测试场景只有几千 token，V4 相对 V3.2 的节省根本不会这么极致——第三方拿"8K 输入 + 4K 输出"测出的推理速度，反映不出 V4 的架构优势。</p>
+<p>但反过来说，几 K token 到现在已经是连 system prompt 都打不住的状态；常规编程、文字处理的 token 长度都能明显感受到提升，而上下文动辄上百万 token 的 agent 是最大的受益者。赵晨阳的团队（sglang / RadixArc）在 V4 发布当天就把推理和强化学习两条链路都跑通了——注意力机制的变化让前缀缓存、投机采样这些既有方法全部需要重做，他们为此开发了 Shadow Redis 缓存架构（三个异构 KV cache 池，分别维护滑动窗口和两种压缩状态），以及针对稀疏注意力的 KV cache 卸载策略 HiSPARS，能把长上下文场景的吞吐做到 5 倍以上。</p>
+
+<h2>Token 浪费：拿着高压水枪浇花</h2>
+<p>效率提升的另一面，是 token 消耗总量的膨胀。很多用户反映，V4 解决同一个问题的 token 消耗量比之前大了不少。刘一峰在社交媒体上写过一句话："现在的token浪费有种拿着高压水枪浇花的美感。"他分析，训练目标奖励的是"完成任务"而不是"少用 token"；同时 token-wise 的注意力压缩把信息压得比较狠，也需要更多 token 去补足缺失的信息和推理过程。</p>
+<p>这个问题的顽固程度值得警惕：K1.5 报告里就有"长度惩罚"——对用更长回复解决同一问题的回答做惩罚——但即便有这类技术，token 的不可逆增长依然在发生。赵晨阳的立场是："one million token应该拿去做更重要的事情。"他说，现在大家对于上下文的铺张浪费"已经被infra给惯坏了"——infra 固然可以让百万 token 吐得更快，但更重要的是在同样的上下文里解决更多的问题。</p>
+
+<h2>注意力架构：放弃 MLA，拥抱混合稀疏</h2>
+<p>V4 最让研究者震动的一个决定，是放弃了 DeepSeek 自己提出的 MLA 架构。MLA（KV 低秩压缩）从 V2 提出、V3 沿用，Kimi 的 K2 系列和 M5 系列至今仍在用；今年 ICLR 上还有大量基于 MLA 的改进研究。V4 发布后，会场上大家都在讨论：继续在 MLA 范式上"深挖或雕花"的研究还有没有意义？刘一峰的看法是，几个月前大家都以为开源模型架构已收敛到 MLA，V4 的转身说明模型架构本身还有非常大的改进空间。</p>
+<p>新架构的具体形态是：每一层都跑滑动窗口注意力（SWA），再叠加一个长程注意力——CSA 走稀疏路线，在序列维度做 4:1 压缩后再做 top-k 选取；HCA 更激进，做 128:1 压缩但保持稠密注意力。每层选 CSA 还是 HCA 是预定义的：稀疏层负责锁定关键 token，稠密层提供语义上的概览。赵晨阳提到，DeepSeek 内部（松林）比较看好稀疏路线而不是线性，稀疏在工程上更可控，与 KV cache、prefix cache 这些基础设施的亲和性也更好。</p>
+
+<h2>稀疏与线性：两条路线之争</h2>
+<p>刘一峰给了一个非常直观的例子：从 token 1 到 token 1024，线性注意力每一步都在压缩信息，需要压缩 1023 次；而 128 窗口的滑动窗口注意力只需跳 8 次，两个 token 就能几乎无损地交流信息。因此线性注意力在推理、数学推导这类长程任务上上限较低，主要用在千问 3.5 这类"中腰型"模型上；要冲上限的大模型（V4、GLM-5.1）都会倾向稀疏和滑动注意力。</p>
+<p>这个判断有前车之鉴：MiniMax 2.0 用过 Lightning Attention（混合线性注意力），2.1 改回全注意力；M-1 是线性注意力模型，M-2 起都是全注意力——lmsys 的博客称之为 No Free Lunch。赵晨阳的判断是，未来一段时间滑动窗口注意力的模型可能会越来越多，因为它实现相对简单、短程注意能力又强。至于 DeepSeek 此前单独发过论文的 Infini-attention，是少数没有被用到 V4 上的技术之一——对能力提升非常有限，对 infra 却是比较大的挑战。</p>
+
+<h2>激活比例 3%：MoE 解耦的极限</h2>
+<p>V4 Pro 的总参数是 1.6T，激活参数约 49B，激活比例刚过 3%——在这一波模型里是最低的：V3 是 5.5%，MiniMax M-2 是 4.3%，GLM-5.1 是 5.3%，Kimi K2 是 3.2%。这背后是一个明确的工程信念：总参数越大，知识容量越高；激活参数越小，推理成本越低。MoE 的核心价值就是把这两个量解耦，而 V4 把这种解耦推到了更极端的位置——稀疏比从过去的 5:1、10:1、20:1，提到了 30 多比 1、接近 40:1。</p>
+<p>刘一峰提醒，这个难度是随着数量指数上升的："从5%到4%的难度是一个样子，然后从4%到3%是另一个，是远远的强。"40:1 的稀疏比意味着大量冗余 expert，算法上要保证各 expert 训练平衡和 token 路由平衡，Infra 上要保证路由顺畅抵达、合并正确。V4 在前几层 MoE 用了 Hash 路由来避免路由高度集中。当然，激活比例并不是越低越好——太低会带来负载不均、训练不充分、路由抖动，其他团队选择更稳扎稳打的方案也没有对错，只是 V4 确实把这件事做到了极限。</p>
+
+<h2>Muon：从个人开发者到行业标配</h2>
+<p>优化器是另一个被大改的组件。传统 AdamW 对每个元素独立更新，忽略了元素之间的联系——同一个矩阵里，有的元素已经收敛了，有的还没有；Muon 把整个矩阵看作一个整体来优化，各元素步调一致，优化更快。Muon 的开发者 Keller Jordan 本来是个人开发者，24 年 12 月就因为这个成果被招入了 OpenAI。早期版本需要为每个 module 单独调 learning rate，对使用者很不友好；25 年初 Kimi 提出的 Moonlight 让 Muon 和 AdamW 结合，并基本确定了二者的 learning rate 比例系数 0.2——从此全局只需要调一个参数。V4 没有沿用 0.2，而是用了更精确的 0.18。</p>
+<p>对 Infra 团队来说，换 Muon 是一笔大账：好处是砍掉二阶动量，optimizer state 从两倍掉到一倍，节省大量显存；代价是每轮要在 momentum 上跑牛顿-Schulz 迭代再做正交化，不再是逐元素操作，而是完整的矩阵 GEMM——参数被 TP、FSDP 切碎后还得聚合回来再算，调度、checkpointing、checkpoint resume 的复杂度远超以前。赵晨阳的结论是："Muon优化器是检验一个团队工程优化上限的很好试金石。"这笔账值不值，取决于每个团队的工程水平和手头的显卡规模。</p>
+
+<h2>MHC：把层间信息流"车道"加宽</h2>
+<p>MHC 是基于 DeepSeek 此前 HyperConnection 工作的改进。普通 Transformer 的层与层之间假设只有 D 维的信息流宽度；HyperConnection 在 D 维之上再加一个 channel 维，信息流宽度变成 D×C，推理能力显著提升。但朴素的 HyperConnection 梯度回传不稳定——"因为训不好"，社区反响不大。MHC 加入 synchro 算法，把整个信息流的 scale 限制为 1，正反向传播不至于爆炸或消失，训练稳定了。</p>
+<p>刘一峰用"车道变宽了"来形容这个机制：信息不必从第一层慢慢传到最后一层。同一思路的另一条路线是 Kimi 的 Attention Residual——像 DenseNet 一样做跨层直连，第一层可以直接影响最后一层。刘一峰认为 Attention Residual 对层间关系的描述更精确、上限更高，但对 infra 的要求也更高；他自己更倾向 MHC 这类实现相对简单的方案（包括他提出的 Deep Dense Learning）。</p>
+
+<h2>Triton 与 FP4：Infra 层的翻身仗</h2>
+<p>Infra 层面，V4 报告里有两个关键词。一是 Triton：kernel 是把同一块矩阵计算用不同拆分方式跑出不同效率的手艺，CUDA 是英伟达的护城河，性能最高但开发维护成本最高；Triton 大幅降低了写 kernel 的门槛。V4 报告提到 Triton 把 kernel 启动开销压缩到了微秒级别，并带来了位级可重现——同样一个 prompt，两次 forward 的结果更容易复现，对推理工程师 debug 很有帮助。赵晨阳的团队也用 Triton 给小 batch 解码写了 split-k kernel。</p>
+<p>二是 FP4：从 BF16、FP8 到 FP4，浮点存储位宽不断减半，显存容量和数据读取带宽的需求近似砍半。FP4 的数值范围非常狭窄，超大规模训练中容易梯度溢出或归零，以前业界很少直接使用。DeepSeek 的解法是量化感知训练（QAT）：训练阶段做模拟量化——优化器维持 FP32 主权重，计算前压到 FP4 再反量化回 FP8，让模型适应低精度损失；采样阶段用真实的 FP4 权重——与最终发布的 checkpoint 完全一致——真正斩断访存瓶颈。采样在超大模型和长 token budget 下可能占到 RL 时间 70% 以上，这个提速是实打实的。正如赵晨阳所说，FP4 已经正式走出了硬件厂商的 PPT，成为开源语言模型世界真正跑通超级模型的工业标准。</p>
+
+<h2>先分裂再蒸馏与 Evaluation</h2>
+<p>后训练部分，V4 的做法是"先分裂再蒸馏"：先训练擅长不同技能的小专家，再把小专家们学到的技能蒸馏进统一的学生模型。这本质上是在解决多目标优化问题——一味 push coding，数学可能就差了；把数学修好，指令遵循可能又退步。现在的做法是在各个目标上找局部最优，再让一个学生模型同时拟合多个教师模型的输出分布——有点像数学实验课里的插值：把复杂的联合优化，换成在已收敛离散点之间的插值。Kimi 的 multi-stage 专家聚合是同一思路，学术界的模型聚合、model spawning 从 GPT-2 时代就有。</p>
+<p>评测是赵晨阳反复强调的话题。他转述一位 NLP 研究者的话："We cannot optimize what we did not, what we cannot evaluate."——不能优化我们无法评测的东西。benchmark 是具体的任务，发布一两年就会饱和，是 finishing problem；evaluation 才是永远重要的事。现在行业已经出现了"vibe checking"式的信任危机：模型乍看 benchmark 全是 90+，实际差异大家都能感觉到。他给出的一个好消息是，这几代模型没有做 degradation——先前好过的任务再也没有差下去过。V4 这次测了多步任务稳定性、长程对话人格一致、工具调用鲁棒性，"这也是 V4 能不能进入第一梯队的真正问题所在"。</p>
+
+<h2>中美路线与商业模式</h2>
+<p>放到行业层面，两位嘉宾观察到的中美分化很清楚：美国算力充裕，不需要做那么稀疏——稀疏会牺牲一定上限，所以选择先冲性能、再降成本；中国模型更侧重性价比，同样能力下收费比美国模型小一个数量级。赵晨阳认为美国团队在 agentic coding 上形成了强大的数据闭环（RLHF/RLAIF 方法论加上巨量高质量人类反馈数据），而中国团队的优势是架构创新的密度和令人啧舌的工程完成度——V4 一个报告里同时换掉混合稀疏注意力、Muon、FP4 并全部跑通，"这种决心和执行力是相当罕见的"。至于竞争本身，赵晨阳说得直白："只有中美能搞太空竞赛，没有任何国家能够玩得起这波的AI比赛。"</p>
+<p>商业模式上，订阅制还是按 token 计费还没有标准答案。赵晨阳投订阅制一票——先订阅满再加 token 付费，而大部分用户用不到订阅顶格，订阅制反而更赚钱；但反方逻辑同样成立：订阅定高了没人买，定低了公司亏。视频生成是一个有意思的参照：用完额度再买积分，影视从业者有刚需、接受度高，客单价比想象中高很多，用户粘性也大；开源视频和语音模型与闭源的差距很大，恰恰说明这些方向很赚钱。</p>
+
+<h2>核心金句</h2>
+<div class="quote">
+  "范式变化这个词在AI圈子被用得有点叙事过载了。"
+  <span class="src">— 刘一峰，对"范式"一词的严格定义</span>
+</div>
+<div class="quote">
+  "我们现在不是说我们能不能做到，而是说我们不知道我们还有哪些需要做的。"
+  <span class="src">— 刘一峰，谈 V4 带给从业者的感受</span>
+</div>
+<div class="quote">
+  "现在的token浪费有种拿着高压水枪浇花的美感。"
+  <span class="src">— 刘一峰，谈推理 token 消耗持续膨胀</span>
+</div>
+<div class="quote">
+  "We cannot optimize what we did not, what we cannot evaluate."
+  <span class="src">— 赵晨阳转述一位 NLP 研究者的告诫</span>
+</div>
+<div class="quote">
+  "离开了Claude这个世界完全没有下雨。"
+  <span class="src">— 赵晨阳，Claude 因账单下线改换 Codex 后的体验</span>
+</div>
+<div class="quote">
+  "one million token应该拿去做更重要的事情。"
+  <span class="src">— 赵晨阳，关于上下文的高效利用</span>
+</div>
+
+<div class="gloss"><b>作者概括</b>：两位嘉宾对未来一两年的判断高度一致——像 V4 这样的系统级耦合工程还会是主旋律，每个技术细节都对应着巨大的工程投入与商业价值；而 DeepSeek 率先验证的这套工程配方，会成为后续许多开源大模型的默认起点。</div>
+
+<footer>
+  本文为《晚点聊 LateTalk》第 163 期的图文版，由两位嘉宾刘一峰、赵晨阳的对话整理而成。<br>
+  收听原节目：<a href="https://podcast.latepost.com/163">https://podcast.latepost.com/163</a>
+</footer>
+
+</div>
+</body>
+</html>

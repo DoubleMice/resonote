@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-29T03:20:49.931Z
+refreshed_at: 2026-08-29T18:11:31.874Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 16
-done: 0
+done: 1
 pending: 0
-needs_transcript: 16
+needs_transcript: 15
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -257,8 +257,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-29T18:13:19.016Z
+    transcript_job_id: b9daf5fd-7b1b-47ca-8660-938b96c1a8a0_73b743d484874cee97111b1c71712713,6ed89310-5e4d-44e8-b5ff-31dd5c1cb2f5_3db567044bb9419b992b1efb9bd4e88e,5cb32f5b-832b-4c3a-8c6d-af70fd288e35_254331f75c9e45cd8c3f9a27f3a13d0f,4041b93a-fab5-4b7d-851a-565cfda254c9_45b9508a46004a95a795e6afa2888a02,71d23121-4352-4a20-9014-ab1ff74da2bf_5ef4c6a26e274405869d464f293c67da,071e79de-95d0-4c10-96a2-20758e2c77b4_ee7195d307544c69a46ff4d2e5d4c673,de52b0b1-3b07-4952-9667-836442857ff3_92109b4967294dd59de2f28646dc3883
+    transcript_completed_at: 2026-08-29T18:18:39.893Z
   - id: d02867bd-8e0e-42f1-a993-e274fb32f405
     guid: d02867bd-8e0e-42f1-a993-e274fb32f405
     title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"

@@ -1,0 +1,29 @@
+id: "09658018-16d6-4d56-84d1-0ae52a411d64"
+source: "latepost"
+title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+guest: "刘一峰、赵晨阳"
+guest_role: "UCLA 博士生（模型架构）与 RadixArc/sglang 工程师（Infra）"
+published: "2026-04"
+duration: "1h34m"
+url: "https://podcast.latepost.com/163"
+thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/0/09658018-16d6-4d56-84d1-0ae52a411d64/cover.jpg?v=1"
+status: generated
+tags:
+  - ai-research
+  - ai-products
+  - interview
+  - researcher
+  - engineer
+  - technical
+  - deep-dive
+summary: |
+  DeepSeek V4 发布后，晚点聊邀请两位一线 AI 从业者——UCLA 博士生刘一峰与 sglang 核心团队 RadixArc 的赵晨阳——逐层拆解技术报告。V4 并非新范式，而是在 R1 的测试时扩展范式下，通过混合稀疏注意力、Muon 优化器、MHC 结构、Triton 与 FP4 四组互相耦合的组合创新，把百万上下文从"理论可行"推进到"成本可接受"。节目同时讨论了 3% 的极致激活比例、FLOPs 降到 27% 的效率革命、训练成本数字的消失、token 浪费的行业隐忧，以及中美两种模型路线的差异。
+core_ideas:
+  - 'V4 不是范式变化，而是组合工程创新——两位嘉宾一致认为，"范式变化"一词在 AI 圈子已被叙事过载'
+  - '效率革命的双数字：单 token 推理 FLOPs 仅为 V3.2 的 27%，KV Cache 占用仅 10%，但优势随上下文变长才显著'
+  - '激活比例压到 3%（总参数 1.6T、激活约 49B），稀疏比接近 40:1，难度随比例下降指数上升'
+  - '四个新 feature 组合上线：混合稀疏注意力（SWA+CSA/HCA）、Muon 优化器（系数 0.18）、MHC 信息流加宽、Triton+FP4 的 Infra 变革'
+  - 'FP4 走出硬件厂商 PPT：训练时模拟量化、采样时真实量化的 QAT 方案，让 FP4 成为开源大模型工业标准'
+  - '中美路线分化：美国算力充裕先冲性能上限，中国以架构创新密度与工程完成度追求极致性价比'
+article_path: episodes/09658018-16d6-4d56-84d1-0ae52a411d64/article.html
+base: /episodes/09658018-16d6-4d56-84d1-0ae52a411d64/

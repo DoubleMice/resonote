@@ -19779,3 +19779,122 @@ jobs:
     submitted_at: 2026-08-28T21:29:58.319Z
     updated_at: 2026-08-28T21:35:11.732Z
     completed_at: 2026-08-28T21:35:11.732Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:0
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: b9daf5fd-7b1b-47ca-8660-938b96c1a8a0_73b743d484874cee97111b1c71712713
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:14:26.604Z
+    completed_at: 2026-08-29T18:14:26.604Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:1
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: 6ed89310-5e4d-44e8-b5ff-31dd5c1cb2f5_3db567044bb9419b992b1efb9bd4e88e
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:15:06.161Z
+    completed_at: 2026-08-29T18:15:06.161Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:2
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: 5cb32f5b-832b-4c3a-8c6d-af70fd288e35_254331f75c9e45cd8c3f9a27f3a13d0f
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:16:12.774Z
+    completed_at: 2026-08-29T18:16:12.774Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:3
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: 4041b93a-fab5-4b7d-851a-565cfda254c9_45b9508a46004a95a795e6afa2888a02
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:16:58.844Z
+    completed_at: 2026-08-29T18:16:58.844Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:4
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: 71d23121-4352-4a20-9014-ab1ff74da2bf_5ef4c6a26e274405869d464f293c67da
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:17:37.064Z
+    completed_at: 2026-08-29T18:17:37.064Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:5
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: 071e79de-95d0-4c10-96a2-20758e2c77b4_ee7195d307544c69a46ff4d2e5d4c673
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:18:27.484Z
+    completed_at: 2026-08-29T18:18:27.484Z
+  - key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z:chunk:6
+    parent_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    attempt_key: latepost:09658018-16d6-4d56-84d1-0ae52a411d64:20260430:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3:mimo:2026-08-29T18:13:19.016Z
+    provider: mimo
+    id: 09658018-16d6-4d56-84d1-0ae52a411d64
+    source: latepost
+    title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/09658018-16d6-4d56-84d1-0ae52a411d64.mp3
+    task_id: de52b0b1-3b07-4952-9667-836442857ff3_92109b4967294dd59de2f28646dc3883
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-29T18:13:19.016Z
+    updated_at: 2026-08-29T18:18:39.893Z
+    completed_at: 2026-08-29T18:18:39.893Z
