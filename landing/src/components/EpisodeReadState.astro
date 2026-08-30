@@ -1,16 +1,16 @@
 <style is:global>
-  .episode-card.is-read {
+  [data-episode-card].is-read {
     border-color: #e7e5e4;
-    background: #fafaf9;
+    background: rgba(250, 250, 249, 0.72);
   }
 
-  .episode-card.is-read img {
+  [data-episode-card].is-read img {
     filter: saturate(0.72);
     opacity: 0.82;
   }
 
-  .episode-card.is-read h3,
-  .episode-card.is-read p {
+  [data-episode-card].is-read h3,
+  [data-episode-card].is-read p {
     color: #78716c;
   }
 
@@ -23,15 +23,30 @@
 
 <script is:inline>
   (() => {
-    if (window.__poddeckReadStateReady) return
-    window.__poddeckReadStateReady = true
+    if (window.__resonoteReadStateReady) return
+    window.__resonoteReadStateReady = true
 
-    const storageKey = 'poddeck:readEpisodes:v1'
+    const storageKey = 'resonote:readEpisodes:v1'
+    const legacyStorageKey = 'poddeck:readEpisodes:v1'
+
+    const parseStore = (rawValue) => {
+      try {
+        const value = JSON.parse(rawValue || '{}')
+        return value && typeof value === 'object' && !Array.isArray(value) ? value : {}
+      } catch {
+        return {}
+      }
+    }
 
     const loadStore = () => {
       try {
-        const value = JSON.parse(localStorage.getItem(storageKey) || '{}')
-        return value && typeof value === 'object' && !Array.isArray(value) ? value : {}
+        const currentValue = localStorage.getItem(storageKey)
+        if (currentValue !== null) return parseStore(currentValue)
+
+        const legacyValue = localStorage.getItem(legacyStorageKey)
+        const migrated = parseStore(legacyValue)
+        if (legacyValue !== null) localStorage.setItem(storageKey, JSON.stringify(migrated))
+        return migrated
       } catch {
         return {}
       }
@@ -67,6 +82,7 @@
         const id = card.getAttribute('data-episode-id')
         applyCardState(card, Boolean(id && store[id]))
       })
+      document.dispatchEvent(new CustomEvent('resonote:read-state-change', { detail: { store } }))
     }
 
     const setRead = (id, isRead) => {
@@ -108,7 +124,7 @@
     }
 
     window.addEventListener('storage', (event) => {
-      if (event.key === storageKey) syncCards()
+      if (event.key === storageKey || event.key === legacyStorageKey) syncCards()
     })
   })()
 </script>

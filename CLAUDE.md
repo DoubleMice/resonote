@@ -1,4 +1,4 @@
-# PodDeck — Slidev 最佳实践与操作流程
+# 声笺 Resonote — Slidev 最佳实践与操作流程
 
 一个自动把 RSS 长播客访谈转成结构化 Slidev 演示文稿的 pipeline。这个文件是给 Claude Code 看的项目级规范。**强制性硬规则（事实准确性、长度要求等）在 `scripts/prompts/slides-system-rules.md`**，那份会通过 `--append-system-prompt` 直接注入到 generate-slides subprocess 的系统提示词，绕不开。本文件是补充的"项目便利"和"已知陷阱"。
 
@@ -13,7 +13,7 @@
 ## 项目结构
 
 ```
-poddeck/
+resonote/
 ├── sources.yml              # 订阅的频道 + 每个 source 的 min_duration / min_date / cache_limit
 ├── tags.yml                 # 标签词表（约束 LLM 不瞎发明标签）
 ├── episodes.yml             # 早期 discover/download 用的目录（逐步被 plan 替代）
@@ -35,7 +35,7 @@ poddeck/
 │       └── public/*.excalidraw
 │
 ├── landing/                 # Astro 主站
-│   ├── astro.config.mjs     # base = process.env.PODDECK_BASE || '/'
+│   ├── astro.config.mjs     # base = process.env.RESONOTE_BASE || '/'
 │   ├── public/404.html      # GH Pages SPA fallback
 │   └── src/{pages,components,layouts,lib}/
 │
@@ -135,12 +135,12 @@ pnpm run e2e:transcription
 
 ```js
 // landing/astro.config.mjs
-const base = process.env.PODDECK_BASE || '/'       // 本地 '/' / 生产 '/poddeck/'
-const site = process.env.PODDECK_SITE || 'http://localhost:4173'
+const base = process.env.RESONOTE_BASE || '/'       // 本地 '/' / 生产 '/resonote/'
+const site = process.env.RESONOTE_SITE || 'http://localhost:4173'
 ```
 
 - 本地 `pnpm run build` → base=`/` → serve dist 直接访问
-- CI `.github/workflows/deploy.yml` 里设 `PODDECK_BASE=/poddeck/` → GH Pages
+- CI `.github/workflows/deploy.yml` 里设 `RESONOTE_BASE=/resonote/` → GitHub Pages
 - **绝对路径链接必须走 `landing/src/lib/url.ts` 的 `url()` helper**，手写 `href="/..."` 会断裂
 - Slidev 每集 build 传 `--base ${SITE_BASE}episodes/<id>/ --router-mode hash`（由 build-all.ts 处理）
 - 返回按钮用 `<a href="../../">`（相对路径，base 无关）
@@ -182,6 +182,20 @@ npx slidev export --format png --output audit   # 逐页 PNG
 ---
 
 ## 视觉最佳实践
+
+### 统一视觉系统
+
+每个新 episode 都会从 `episodes/_templates/style.css` 获得声笺 Resonote 的共享
+editorial theme。它统一处理纸张色背景、标题衬线字体、正文中文字体、卡片圆角、
+阴影和语义色。生成内容时：
+
+- 不要修改 `style.css`，不要在 `slides.md` 内写 `<style>`。
+- 封面由 `class: text-center` 自动使用深色杂志风格；正文页使用暖白纸张背景。
+- 一页只设一个视觉焦点：卡片组、对比、引言或图解四选一，不要把每句话都装进框里。
+- `opacity-40` / `opacity-50` 只用于日期、出处等元信息；正文至少使用 `opacity-70`。
+- 不要用 emoji 作为卡片标题或结构图标；使用编号、短标签或矢量图。
+- 文章必须内联 `episodes/_templates/article-theme.css`，并使用统一的
+  `.cards` / `.card` / `.c-blue` 等语义类，不能每篇自创一套 CSS。
 
 ### Two-cols 大图布局是王牌
 
@@ -484,7 +498,7 @@ Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在�
 
 ```vue
 <template>
-  <a href="/" class="poddeck-back" title="返回 PodDeck">← PodDeck</a>
+  <a href="../../" class="poddeck-back" title="返回声笺">← 声笺 / RESONOTE</a>
 </template>
 
 <style scoped>

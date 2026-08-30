@@ -40,6 +40,11 @@ Follow the structure in the system prompt (RULE 4):
 
 Excalidraw diagrams: first check `episodes/{{ID}}/public/` for reusable templates that fit your themes. If you need a new diagram, write minimal JSON following the pattern in the existing templates.
 
+Visual theme: `episodes/{{ID}}/style.css` is already present and defines the
+shared 声笺 / Resonote editorial look. Do not edit it and do not add per-deck CSS.
+Use the semantic blue/green/orange/red/yellow/purple card utilities from the
+system rules. Keep body copy high-contrast and do not use emoji as card icons.
+
 Layout capacity rules:
 - Treat every slide as a fixed 16:9 poster. There is no scroll area in export.
 - Dense overview/card pages must use `mt-4`, `gap-3`, `p-3`, `text-sm`, and short 1-2 sentence cards.
@@ -55,6 +60,7 @@ colorSchema: light
 addons:
   - slidev-addon-excalidraw
 title: '{{TITLE}}'
+coverDate: ''
 class: text-center
 transition: slide-left
 mdc: true
@@ -79,7 +85,12 @@ Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.ht
 - "核心金句" block with 4-6 grep-verified quotes with context labels
 - Footer with source episode link
 
-**Format**: Self-contained HTML with inline `<style>`. No external CSS, no JavaScript, no images. Clean typography: system font stack, max-width ~720px, comfortable line-height. Responsive.
+**Format**: First read `episodes/_templates/article-theme.css`, then paste it
+verbatim into `<style data-poddeck-theme>`. Do not create custom CSS or inline
+style attributes. Use a semantic `<article>` structure and the shared classes
+listed in RULE 10. Add the `.poddeck-home` link to `../../` as the first element
+inside `<body>`. No external CSS, JavaScript, or images. Responsive behavior is
+already included in the shared theme.
 
 **Write to file**: `Write: episodes/{{ID}}/article.html` then `Bash: wc -c episodes/{{ID}}/article.html` to confirm (> 5KB).
 

@@ -18,17 +18,16 @@ const pending = episodes.filter(e => e.status !== 'generated' && e.status !== 'f
 const failed = episodes.filter(e => e.status === 'failed')
 ---
 
-<Base title={`#${tag} · PodDeck`}>
-  <a href={url('/')} class="text-xs text-stone-500 hover:text-stone-900">← 全部标签</a>
+<Base title={`#${tag} · 声笺 Resonote`} description={`浏览声笺中与 ${tag} 相关的播客内容。`}>
+  <a href={url('/')} class="back-link">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 5 7.5 10l5 5M8 10h7" /></svg>
+    返回首页
+  </a>
 
-  <header class="mt-4 mb-10">
-    <div class="text-sm text-stone-500">标签</div>
-    <h1 class="font-serif text-3xl md:text-4xl font-bold mt-1">
-      #<span class="text-blue-600">{tag}</span>
-    </h1>
-    <div class="text-xs text-stone-400 mt-2">
-      {episodes.length} 集相关 · {generated.length} 集已生成
-    </div>
+  <header class="collection-header">
+    <div class="collection-kicker">RESONOTE · TOPIC</div>
+    <h1><span>#</span>{tag}</h1>
+    <p>{episodes.length} 集相关内容，其中 {generated.length} 集已有视觉笔记。</p>
   </header>
 
   {generated.length > 0 && (
@@ -61,3 +60,31 @@ const failed = episodes.filter(e => e.status === 'failed')
     </section>
   )}
 </Base>
+
+<style>
+  .back-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 18px;
+    color: #69767d;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--pd-blue); }
+  .back-link svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .collection-header { margin-bottom: 34px; padding: 28px 0 30px; border-bottom: 1px solid rgba(var(--pd-ink-rgb), 0.11); }
+  .collection-kicker { margin-bottom: 9px; color: var(--pd-blue); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.18em; }
+  .collection-header h1 {
+    margin: 0;
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 4.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+  .collection-header h1 span { margin-right: 5px; color: var(--pd-amber); }
+  .collection-header p { margin: 13px 0 0; color: #65736d; font-size: 0.84rem; }
+</style>

@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro'
+import EpisodeRow from '../components/EpisodeRow.astro'
+import LibraryFilters from '../components/LibraryFilters.astro'
+import { loadEpisodes, sortEpisodesForLibrary } from '../lib/data'
+
+const episodes = sortEpisodesForLibrary(loadEpisodes())
+const generated = episodes.filter(episode => episode.status === 'generated').length
+const articles = episodes.filter(episode => episode.article_path).length
+---
+
+<Base
+  title="内容库 · 声笺 Resonote"
+  description="浏览和筛选声笺收录的播客视觉笔记与长读文章。"
+>
+  <header class="library-header">
+    <div>
+      <div class="library-kicker">RESONOTE · THE ARCHIVE</div>
+      <h1>所有声笺</h1>
+      <p>循着关键词、内容形式、主题或阅读状态，找到下一份值得翻阅的思想记录。</p>
+    </div>
+    <dl class="library-stats">
+      <div><dt>收录</dt><dd>{episodes.length}</dd></div>
+      <div><dt>视觉笔记</dt><dd>{generated}</dd></div>
+      <div><dt>文章</dt><dd>{articles}</dd></div>
+    </dl>
+  </header>
+
+  <LibraryFilters />
+
+  <noscript>
+    <p class="library-noscript">当前已显示全部内容；启用 JavaScript 后可使用筛选、未读状态和渐进加载。</p>
+  </noscript>
+
+  <div class="library-list" id="library-list">
+    {episodes.map((episode, index) => <EpisodeRow episode={episode} initialHidden={index >= 36} />)}
+  </div>
+</Base>
+
+<style>
+  .library-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 36px;
+    margin-bottom: 30px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+  }
+  .library-kicker { margin-bottom: 9px; color: var(--pd-blue); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.17em; }
+  .library-header h1 {
+    margin: 0;
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+  .library-header p { max-width: 640px; margin: 14px 0 0; color: #63706b; font-size: 0.92rem; line-height: 1.75; }
+  .library-stats { display: flex; gap: 8px; margin: 0; }
+  .library-stats > div {
+    min-width: 82px;
+    padding: 12px 14px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-radius: 3px 13px 13px 3px;
+    background: rgba(251, 248, 241, 0.76);
+    text-align: center;
+  }
+  .library-stats dt { color: #748079; font-size: 0.62rem; }
+  .library-stats dd { margin: 2px 0 0; color: var(--pd-ink); font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 1.45rem; font-weight: 700; line-height: 1; }
+  .library-list { display: grid; gap: 11px; }
+  :global(.js .library-row[data-initial-hidden="true"]) { display: none; }
+  :global(html:not(.js) .library-controls) { display: none; }
+  .library-noscript {
+    margin: 0 0 18px;
+    padding: 12px 14px;
+    border: 1px solid rgba(var(--pd-accent-rgb), 0.18);
+    border-radius: 12px;
+    color: #536761;
+    background: rgba(var(--pd-accent-rgb), 0.07);
+    font-size: 0.78rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 760px) {
+    .library-header { grid-template-columns: 1fr; align-items: start; gap: 20px; }
+    .library-stats { width: 100%; }
+    .library-stats > div { min-width: 0; flex: 1; }
+  }
+  @media (max-width: 420px) {
+    .library-header h1 { font-size: 2.65rem; }
+    .library-stats > div { padding-inline: 8px; }
+  }
+</style>

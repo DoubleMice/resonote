@@ -27,8 +27,8 @@ on:
         default: ''
 
 env:
-  PODDECK_BASE: /poddeck/
-  PODDECK_SITE: https://doublemice.github.io
+  RESONOTE_BASE: /resonote/
+  RESONOTE_SITE: https://doublemice.github.io
   ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
   ANTHROPIC_DEFAULT_HAIKU_MODEL: deepseek-v4-flash
   ANTHROPIC_DEFAULT_OPUS_MODEL: deepseek-v4-pro
@@ -37,7 +37,7 @@ env:
   ENABLE_TOOL_SEARCH: 'true'
 
 concurrency:
-  group: generate-and-deploy
+  group: content-pipeline
   cancel-in-progress: false
 
 permissions:
@@ -48,13 +48,14 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Sync latest main
-        run: git pull --ff-only origin main
+      - name: Sync latest branch
+        run: git pull --ff-only origin "${GITHUB_REF_NAME}"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -144,11 +145,8 @@ jobs:
       - name: Build all
         run: pnpm run build
 
-      - name: Inject 404.html into root dist
-        run: |
-          if [ -f landing/public/404.html ]; then
-            cp landing/public/404.html dist/404.html
-          fi
+      - name: Audit home interactions and responsive layout
+        run: pnpm run audit:home
 
       - name: Verify slide routing
         run: pnpm run verify:routing
@@ -162,8 +160,11 @@ jobs:
             echo "No generated changes to commit"
           else
             git commit -m "auto: generate rss episode"
-            git push
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -173,6 +174,10 @@ jobs:
   deploy:
     needs: generate
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -49,20 +49,26 @@ const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 
 function scaffoldEpisode(id: string): void {
   const dir = join(EPISODES_DIR, id)
-  if (existsSync(dir)) {
-    log.raw(`  ${id}: dir exists, leaving in place`)
-    return
-  }
-  log.raw(`  ${id}: scaffolding from _templates/`)
+  log.raw(`  ${id}: syncing scaffold from _templates/`)
   mkdirSync(dir, { recursive: true })
-  // copy package.json and rewrite name
-  const pkg = JSON.parse(readFileSync(join(TEMPLATES_DIR, 'package.json'), 'utf-8'))
-  pkg.name = `episode-${id}`
-  writeFileSync(join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
-  // copy global-bottom.vue
-  cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), join(dir, 'global-bottom.vue'))
-  // copy public/ excalidraw templates (CC can reuse or delete as needed)
-  cpSync(join(TEMPLATES_DIR, 'public'), join(dir, 'public'), { recursive: true })
+  const packagePath = join(dir, 'package.json')
+  if (!existsSync(packagePath)) {
+    const pkg = JSON.parse(readFileSync(join(TEMPLATES_DIR, 'package.json'), 'utf-8'))
+    pkg.name = `episode-${id}`
+    writeFileSync(packagePath, JSON.stringify(pkg, null, 2) + '\n')
+  }
+  const globalBottomPath = join(dir, 'global-bottom.vue')
+  if (!existsSync(globalBottomPath)) {
+    cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), globalBottomPath)
+  }
+  const stylePath = join(dir, 'style.css')
+  if (!existsSync(stylePath)) {
+    cpSync(join(TEMPLATES_DIR, 'style.css'), stylePath)
+  }
+  const publicPath = join(dir, 'public')
+  if (!existsSync(publicPath)) {
+    cpSync(join(TEMPLATES_DIR, 'public'), publicPath, { recursive: true })
+  }
 }
 
 function renderTask(id: string, source: string, title: string): string {

@@ -5,7 +5,7 @@
 //   import { url } from '../lib/url'
 //   <a href={url('/sources/lex-fridman/')}>
 //
-// With base = '/poddeck/', url('/sources/lex-fridman/') → '/poddeck/sources/lex-fridman/'
+// With base = '/resonote/', url('/sources/lex-fridman/') → '/resonote/sources/lex-fridman/'
 
 export function url(path: string): string {
   const base = import.meta.env.BASE_URL || '/'

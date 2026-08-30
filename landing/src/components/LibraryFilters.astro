@@ -1,0 +1,303 @@
+---
+import { CATEGORIES } from '../lib/data'
+---
+
+<section class="library-controls" aria-label="筛选内容">
+  <div class="library-search-wrap">
+    <label class="sr-only" for="library-search">在内容库中搜索</label>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 20-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" /></svg>
+    <input id="library-search" type="search" placeholder="搜索标题、嘉宾、来源或标签" autocomplete="off" spellcheck="false" />
+  </div>
+
+  <div class="library-filter-row">
+    <div class="library-format-tabs" id="library-format-tabs" role="group" aria-label="内容形式">
+      <button type="button" data-format="all" aria-pressed="true">全部</button>
+      <button type="button" data-format="slides" aria-pressed="false">视觉笔记</button>
+      <button type="button" data-format="article" aria-pressed="false">文章</button>
+    </div>
+
+    <label class="category-select">
+      <span class="sr-only">选择分类</span>
+      <select id="library-category">
+        <option value="all">全部分类</option>
+        {CATEGORIES.map(category => <option value={category.id}>{category.label}</option>)}
+        <option value="other">其他</option>
+      </select>
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+    </label>
+
+    <button class="unread-toggle" id="library-unread" type="button" aria-pressed="false">
+      <span aria-hidden="true"></span>只看未读
+    </button>
+
+    <button class="filter-reset" id="library-reset" type="button">重置</button>
+  </div>
+
+  <div class="library-filter-meta">
+    <span id="library-result-count" role="status" aria-live="polite"></span>
+    <span>支持标题、嘉宾、来源和标签</span>
+  </div>
+</section>
+
+<div class="library-empty hidden" id="library-empty">
+  <strong>没有符合条件的内容</strong>
+  <span>尝试缩短关键词，或重置格式与分类筛选。</span>
+  <button type="button" data-library-reset>清除筛选</button>
+</div>
+
+<div class="library-more-wrap">
+  <button type="button" class="library-more hidden" id="library-more"></button>
+</div>
+
+<style>
+  .library-controls {
+    position: sticky;
+    top: 82px;
+    z-index: 18;
+    margin-bottom: 24px;
+    padding: 14px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+    border-radius: 4px 18px 18px 4px;
+    background: rgba(251, 248, 241, 0.92);
+    box-shadow: 0 15px 38px rgba(var(--pd-ink-rgb), 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+  .library-search-wrap { position: relative; }
+  .library-search-wrap > svg {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #6d7b75;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    transform: translateY(-50%);
+  }
+  .library-search-wrap input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 14px 0 43px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+    border-radius: 13px;
+    color: var(--pd-ink);
+    background: rgba(255, 253, 248, 0.86);
+    font: inherit;
+    font-size: 0.82rem;
+  }
+  .library-search-wrap input:focus { border-color: rgba(var(--pd-accent-rgb), 0.48); outline: 0; box-shadow: 0 0 0 4px rgba(var(--pd-accent-rgb), 0.09); }
+  .library-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 10px; }
+  .library-format-tabs {
+    display: inline-flex;
+    gap: 3px;
+    padding: 3px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-radius: 999px;
+    background: #eee8de;
+  }
+  .library-format-tabs button {
+    min-height: 44px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 999px;
+    color: #62706a;
+    background: transparent;
+    font-size: 0.74rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .library-format-tabs button[aria-pressed="true"] { color: white; background: var(--pd-ink); box-shadow: 0 5px 13px rgba(var(--pd-ink-rgb), 0.16); }
+  .category-select { position: relative; display: inline-flex; }
+  .category-select select {
+    min-height: 44px;
+    appearance: none;
+    padding: 0 38px 0 14px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+    border-radius: 999px;
+    color: #586761;
+    background: rgba(255, 253, 248, 0.82);
+    font-size: 0.74rem;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .category-select svg { position: absolute; top: 50%; right: 13px; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; transform: translateY(-50%); pointer-events: none; }
+  .unread-toggle,
+  .filter-reset {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 7px;
+    padding: 0 13px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+    border-radius: 999px;
+    color: #61706a;
+    background: rgba(255, 253, 248, 0.74);
+    font-size: 0.74rem;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .unread-toggle > span { width: 9px; height: 9px; border: 1.5px solid #74817b; border-radius: 50%; }
+  .unread-toggle[aria-pressed="true"] { border-color: rgba(var(--pd-accent-rgb), 0.28); color: var(--pd-blue); background: #e7eee9; }
+  .unread-toggle[aria-pressed="true"] > span { border-color: var(--pd-blue); background: var(--pd-blue); box-shadow: inset 0 0 0 2px #e7eee9; }
+  .filter-reset { margin-left: auto; border-color: transparent; background: transparent; }
+  .filter-reset:hover { color: var(--pd-ink); background: rgba(var(--pd-ink-rgb), 0.055); }
+  .library-filter-meta { display: flex; justify-content: space-between; gap: 16px; margin-top: 10px; padding: 0 3px; color: #7b8882; font-size: 0.66rem; }
+  #library-result-count { color: #5d6e67; font-weight: 700; }
+  .library-empty {
+    margin: 24px 0;
+    padding: 52px 24px;
+    border: 1px dashed rgba(var(--pd-ink-rgb), 0.18);
+    border-radius: 18px;
+    color: #6f7d77;
+    text-align: center;
+  }
+  .library-empty strong { display: block; margin-bottom: 6px; color: var(--pd-ink); font-family: Iowan Old Style, Baskerville, "Songti SC", serif; font-size: 1.2rem; }
+  .library-empty span { display: block; font-size: 0.8rem; }
+  .library-empty button,
+  .library-more {
+    min-height: 44px;
+    margin-top: 18px;
+    padding: 0 18px;
+    border: 1px solid rgba(var(--pd-accent-rgb), 0.25);
+    border-radius: 999px;
+    color: var(--pd-blue);
+    background: rgba(255, 253, 248, 0.78);
+    font-size: 0.76rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .library-more-wrap { text-align: center; }
+  .library-more { margin-top: 24px; min-width: 180px; }
+  .library-more:hover, .library-empty button:hover { color: white; background: var(--pd-blue); }
+  @media (max-width: 620px) {
+    .library-controls { top: 74px; margin-inline: -6px; padding: 10px; border-radius: 16px; }
+    .library-filter-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .library-format-tabs { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); }
+    .category-select select, .category-select { width: 100%; }
+    .unread-toggle { justify-content: center; }
+    .filter-reset { grid-column: 1 / -1; justify-content: center; margin-left: 0; }
+    .library-filter-meta span:last-child { display: none; }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const list = document.getElementById('library-list')
+    const search = document.getElementById('library-search')
+    const category = document.getElementById('library-category')
+    const unread = document.getElementById('library-unread')
+    const reset = document.getElementById('library-reset')
+    const empty = document.getElementById('library-empty')
+    const more = document.getElementById('library-more')
+    const count = document.getElementById('library-result-count')
+    const tabs = [...document.querySelectorAll('#library-format-tabs [data-format]')]
+    if (!list || !(search instanceof HTMLInputElement) || !(category instanceof HTMLSelectElement) || !unread || !reset || !empty || !more || !count || !tabs.length) return
+
+    // The control owns the progressive-disclosure button, but visually it
+    // belongs after the result list.
+    if (more.parentElement) list.after(more.parentElement)
+
+    const items = [...list.querySelectorAll('[data-library-item]')]
+    const pageSize = 36
+    items.forEach(item => item.removeAttribute('data-initial-hidden'))
+    let limit = pageSize
+    let format = 'all'
+
+    const readParams = () => {
+      const params = new URLSearchParams(window.location.search)
+      search.value = params.get('q') || ''
+      const requestedCategory = params.get('category') || 'all'
+      category.value = [...category.options].some(option => option.value === requestedCategory) ? requestedCategory : 'all'
+      const requestedFormat = params.get('format') || 'all'
+      format = tabs.some(tab => tab.dataset.format === requestedFormat) ? requestedFormat : 'all'
+      unread.setAttribute('aria-pressed', String(params.get('unread') === '1'))
+    }
+
+    const writeParams = () => {
+      const url = new URL(window.location.href)
+      const query = search.value.trim()
+      if (query) url.searchParams.set('q', query)
+      else url.searchParams.delete('q')
+      if (category.value !== 'all') url.searchParams.set('category', category.value)
+      else url.searchParams.delete('category')
+      if (format !== 'all') url.searchParams.set('format', format)
+      else url.searchParams.delete('format')
+      if (unread.getAttribute('aria-pressed') === 'true') url.searchParams.set('unread', '1')
+      else url.searchParams.delete('unread')
+      history.replaceState(null, '', url)
+    }
+
+    const syncTabs = () => {
+      tabs.forEach(tab => {
+        const selected = tab.dataset.format === format
+        tab.setAttribute('aria-pressed', String(selected))
+      })
+    }
+
+    const applyFilters = (resetLimit = false, updateUrl = true) => {
+      if (resetLimit) limit = pageSize
+      const tokens = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
+      const onlyUnread = unread.getAttribute('aria-pressed') === 'true'
+      const matches = items.filter(item => {
+        const formatMatch = format === 'all'
+          || (format === 'slides' && item.getAttribute('data-has-slides') === 'true')
+          || (format === 'article' && item.getAttribute('data-has-article') === 'true')
+        const categoryMatch = category.value === 'all' || item.getAttribute('data-category') === category.value
+        const searchText = item.getAttribute('data-search') || ''
+        const searchMatch = tokens.every(token => searchText.includes(token))
+        const readMatch = !onlyUnread || !item.classList.contains('is-read')
+        return formatMatch && categoryMatch && searchMatch && readMatch
+      })
+
+      items.forEach(item => { item.hidden = true })
+      matches.slice(0, limit).forEach(item => { item.hidden = false })
+      count.textContent = `${matches.length} 集内容`
+      empty.classList.toggle('hidden', matches.length > 0)
+
+      const remaining = Math.max(matches.length - limit, 0)
+      more.classList.toggle('hidden', remaining === 0)
+      more.textContent = remaining ? `再显示 ${Math.min(pageSize, remaining)} 集 · 还剩 ${remaining} 集` : ''
+      syncTabs()
+      if (updateUrl) writeParams()
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        format = tab.dataset.format || 'all'
+        applyFilters(true)
+      })
+    })
+
+    search.addEventListener('input', () => applyFilters(true))
+    category.addEventListener('change', () => applyFilters(true))
+    unread.addEventListener('click', () => {
+      unread.setAttribute('aria-pressed', String(unread.getAttribute('aria-pressed') !== 'true'))
+      applyFilters(true)
+    })
+    more.addEventListener('click', () => {
+      limit += pageSize
+      applyFilters(false)
+    })
+
+    const resetAll = () => {
+      search.value = ''
+      category.value = 'all'
+      format = 'all'
+      unread.setAttribute('aria-pressed', 'false')
+      applyFilters(true)
+      search.focus()
+    }
+    reset.addEventListener('click', resetAll)
+    empty.querySelector('[data-library-reset]')?.addEventListener('click', resetAll)
+    document.addEventListener('resonote:read-state-change', () => applyFilters(false, false))
+    window.addEventListener('popstate', () => {
+      readParams()
+      applyFilters(true, false)
+    })
+
+    readParams()
+    applyFilters(true, false)
+  })()
+</script>

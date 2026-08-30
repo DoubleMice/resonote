@@ -1,8 +1,8 @@
-# PodDeck
+# 声笺 Resonote
 
-**Live**: http://doublemice.github.io/poddeck/
+**在线访问**：https://doublemice.github.io/resonote/
 
-PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev 演示文稿，并部署到 GitHub Pages。每集包含可 grep 验证的嘉宾原话、核心论点、手绘示意图和可阅读 article。
+声笺把播客 RSS 中的长访谈整理成结构化视觉笔记与中文长读文章，并发布到 GitHub Pages。每集内容包含可从转写稿中核对的嘉宾原话、核心论点和手绘示意图。
 
 ## 当前状态
 
@@ -14,7 +14,7 @@ PodDeck 把播客 RSS 里的长访谈和 transcript 自动转成结构化 Slidev
 - 封面来源：RSS item `itunes:image`，缺失时 fallback 到 channel image
 - 生成入口：`claude -p` subprocess；本地使用 Claude Code 登录态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
 - 部署入口：GitHub Actions → GitHub Pages
-- 首页“最新添加”按 slides 生成/更新时间排序，缺失时回退到播客发布时间
+- 首页“本期新笺”和“近日新笺”按视觉笔记的生成或更新时间排序，缺失时回退到播客发布时间
 
 ## 关注源
 
@@ -112,17 +112,18 @@ git commit -m "generate rss episode"
 git push
 ```
 
-生成并部署由手动或定时 GitHub Actions 触发，发布地址为 `http://doublemice.github.io/poddeck/`。
+生成与部署由手动或定时 GitHub Actions 触发，发布地址为 `https://doublemice.github.io/resonote/`。
 
 ## GitHub Actions 生成
 
-仓库提供三个 workflow：
+仓库提供四个 workflow：
 
 - `Discover`：定时刷新 RSS cache 和 plan，提交 `needs_transcript` / `pending` 队列。
 - `Deploy to GitHub Pages`：手动触发，只构建并部署已有内容。
 - `Generate and Deploy`：每天定时或手动触发，执行 `cache:refresh → plan → plan:run → normalize:meta → build → commit → deploy`。
+- `Transcription E2E`：手动验证当前配置的 MiMo 转写接口，不生成内容，也不写入仓库。
 
-`Generate and Deploy` 需要在 GitHub repository secrets 中配置：
+`Generate and Deploy` 需要在 GitHub 仓库的 Secrets 中配置：
 
 ```text
 ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek API key 或兼容 Anthropic token>
@@ -218,7 +219,7 @@ pnpm run build
 ## 项目结构
 
 ```text
-poddeck/
+resonote/
 ├── sources.yml              # RSS source 配置
 ├── tags.yml                 # 标签词表
 ├── episodes.yml             # 历史 episode 目录兼容
@@ -238,27 +239,24 @@ poddeck/
 │   ├── build-all.ts         # episodes + landing → dist
 │   └── prompts/             # generation prompts and hard rules
 └── .github/workflows/
-    ├── discover.yml         # scheduled RSS cache/plan refresh
-    └── deploy.yml           # GitHub Pages deploy
+    ├── discover.yml             # 定时刷新 RSS cache 和 plan
+    ├── generate-and-deploy.yml  # 生成内容并部署
+    ├── transcription-e2e.yml    # 转写接口验证
+    └── deploy.yml               # 手动部署 GitHub Pages
 ```
 
 ## 部署
 
 `.github/workflows/deploy.yml` 和 `.github/workflows/generate-and-deploy.yml` 设置：
 
-- `PODDECK_BASE=/poddeck/`
-- `PODDECK_SITE=https://doublemice.github.io`
+- `RESONOTE_BASE=/resonote/`
+- `RESONOTE_SITE=https://doublemice.github.io`
+
+构建脚本仍会读取旧的 `PODDECK_BASE` 和 `PODDECK_SITE`，方便已有本地配置迁移；GitHub Actions 只使用新的 `RESONOTE_*` 变量。
 
 部署流程：
 
-1. `pnpm install --frozen-lockfile`
-2. `pnpm exec playwright install --with-deps chromium`
-3. `sudo apt-get install -y ffmpeg`
-4. `pnpm run normalize:meta -- --fix`
-5. `pnpm run build`
-6. commit generated content
-7. upload `dist/`
-8. deploy GitHub Pages
+手动部署会安装依赖与 Chromium、校验 episode metadata、构建全部页面、验证 Slide 路由，再上传 `dist/` 并发布到 GitHub Pages。生成工作流还会安装 `ffmpeg`、整理新内容、修复可恢复的 metadata 问题，并在部署前提交生成结果。
 
 仓库 Pages 设置使用 **GitHub Actions**。
 

@@ -1,0 +1,223 @@
+---
+import type { EpisodeWithSource } from '../lib/data'
+import { url } from '../lib/url'
+
+interface Props {
+  episode: EpisodeWithSource
+}
+
+const { episode } = Astro.props
+
+function displayDate(value?: string): string {
+  if (!value) return ''
+  const compact = value.match(/^(\d{4})(\d{2})(\d{2})$/)
+  if (compact) return `${compact[1]}.${compact[2]}.${compact[3]}`
+  const parsed = Date.parse(value)
+  if (!Number.isFinite(parsed)) return value
+  return new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date(parsed)).replaceAll('/', '.')
+}
+
+const publishedValue = episode.published_sort || episode.published
+const published = displayDate(publishedValue)
+const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
+---
+
+<article class="featured-note" data-episode-card data-episode-id={episode.id}>
+  <div class="featured-cover">
+    {episode.thumbnail ? (
+      <img src={episode.thumbnail} alt="" loading="eager" fetchpriority="high" />
+    ) : (
+      <div class="wave-fallback" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+    )}
+    <div class="cover-shade" aria-hidden="true"></div>
+    <span class="featured-stamp"><span>NEW NOTE</span> 本期新笺</span>
+    {episode.duration && <span class="featured-duration">{episode.duration}</span>}
+  </div>
+
+  <div class="featured-body">
+    <div class="featured-meta">
+      <a
+        href={url(`/sources/${episode.sourceRef.id}/`)}
+        style={`--source-color: ${episode.sourceRef.color || '#525252'}`}
+      >
+        <span aria-hidden="true"></span>{episode.sourceRef.name}
+      </a>
+      {published && <time datetime={publishedValue}>{published}</time>}
+    </div>
+
+    <h2><a href={noteUrl} data-mark-read-link>{episode.title}</a></h2>
+
+    {episode.summary && <p>{episode.summary.replace(/\n/g, ' ')}</p>}
+
+    {episode.tags && episode.tags.length > 0 && (
+      <div class="featured-tags" aria-label="内容标签">
+        {episode.tags.slice(0, 3).map(tag => (
+          <a href={url(`/tags/${tag}/`)}>#{tag}</a>
+        ))}
+      </div>
+    )}
+
+    <div class="featured-actions">
+      <a class="featured-primary" href={noteUrl} data-mark-read-link>
+        阅读视觉笔记
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" /></svg>
+      </a>
+      {episode.article_path && (
+        <a class="featured-secondary" href={url(episode.article_path)} data-mark-read-link>
+          阅读文章
+        </a>
+      )}
+    </div>
+  </div>
+</article>
+
+<style>
+  .featured-note {
+    overflow: hidden;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.13);
+    border-radius: 4px 22px 22px 4px;
+    background: rgba(251, 248, 241, 0.94);
+    box-shadow: 12px 14px 0 rgba(var(--pd-ink-rgb), 0.045), 0 24px 56px rgba(var(--pd-ink-rgb), 0.11);
+  }
+  .featured-cover {
+    position: relative;
+    aspect-ratio: 16 / 8.7;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 78% 18%, rgba(var(--pd-seal-rgb), 0.27), transparent 32%),
+      linear-gradient(135deg, #31443f, #1f2b28);
+  }
+  .featured-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
+  .featured-note:hover .featured-cover img { transform: scale(1.018); }
+  .cover-shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(var(--pd-ink-rgb), 0.06) 20%, rgba(var(--pd-ink-rgb), 0.58) 100%);
+  }
+  .featured-stamp,
+  .featured-duration {
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    min-height: 30px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    color: #fffaf2;
+    background: rgba(var(--pd-ink-rgb), 0.72);
+    backdrop-filter: blur(9px);
+  }
+  .featured-stamp {
+    top: 16px;
+    left: 16px;
+    gap: 7px;
+    padding: 0 10px;
+    border-radius: 3px 10px 10px 3px;
+    font-size: 0.68rem;
+    font-weight: 760;
+  }
+  .featured-stamp span { color: #efd6c9; font-size: 0.55rem; letter-spacing: 0.13em; }
+  .featured-duration {
+    right: 14px;
+    bottom: 13px;
+    padding: 0 9px;
+    border-radius: 999px;
+    font-size: 0.62rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .wave-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 9px; }
+  .wave-fallback span { width: 4px; height: 18%; border-radius: 999px; background: rgba(247, 239, 224, 0.78); }
+  .wave-fallback span:nth-child(2n) { height: 38%; }
+  .wave-fallback span:nth-child(3n) { height: 62%; background: rgba(201, 113, 94, 0.9); }
+  .wave-fallback span:nth-child(5) { height: 78%; }
+  .featured-body { padding: 20px 22px 22px; }
+  .featured-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 11px;
+    color: #78837e;
+    font-size: 0.65rem;
+  }
+  .featured-meta > a {
+    display: inline-flex;
+    min-height: 32px;
+    align-items: center;
+    gap: 7px;
+    overflow: hidden;
+    color: #5e6b66;
+    font-weight: 720;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .featured-meta > a span { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: var(--source-color); }
+  .featured-meta time { flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+  h2 {
+    margin: 0;
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: clamp(1.28rem, 2.1vw, 1.75rem);
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+  }
+  h2 a { color: var(--pd-ink); text-decoration: none; }
+  h2 a:hover { color: var(--pd-blue); }
+  .featured-body > p {
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 11px 0 0;
+    color: #66726d;
+    font-size: 0.76rem;
+    line-height: 1.7;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .featured-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+  .featured-tags a {
+    display: inline-flex;
+    min-height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 999px;
+    color: #64716c;
+    background: rgba(var(--pd-ink-rgb), 0.055);
+    font-size: 0.62rem;
+    text-decoration: none;
+  }
+  .featured-tags a:hover { color: var(--pd-blue); background: rgba(var(--pd-accent-rgb), 0.1); }
+  .featured-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 17px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(var(--pd-ink-rgb), 0.09);
+  }
+  .featured-actions > a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 12px 12px 3px;
+    font-size: 0.72rem;
+    font-weight: 760;
+    text-decoration: none;
+  }
+  .featured-primary { gap: 7px; padding: 0 15px; color: #fffaf2; background: var(--pd-ink); }
+  .featured-primary:hover { background: var(--pd-blue); }
+  .featured-primary svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .featured-secondary { padding: 0 12px; color: var(--pd-blue); }
+  .featured-secondary:hover { background: rgba(var(--pd-accent-rgb), 0.08); }
+  @media (max-width: 460px) {
+    .featured-body { padding: 18px; }
+    .featured-actions > a { flex: 1 1 auto; }
+  }
+</style>

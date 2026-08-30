@@ -10,13 +10,13 @@ on:
         default: 'manual deploy'
 
 env:
-  PODDECK_BASE: /poddeck/
-  PODDECK_SITE: https://doublemice.github.io
+  RESONOTE_BASE: /resonote/
+  RESONOTE_SITE: https://doublemice.github.io
 
 # 同一时间只允许一个 deploy
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -26,6 +26,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -46,17 +47,20 @@ jobs:
       - name: Install playwright-chromium browser binaries
         run: pnpm exec playwright install --with-deps chromium
 
+      - name: Validate episode metadata
+        run: pnpm run normalize:meta
+
       - name: Build all (slidev episodes + Astro landing)
         run: pnpm run build
 
-      - name: Inject 404.html into root dist (SPA fallback)
-        run: |
-          if [ -f landing/public/404.html ]; then
-            cp landing/public/404.html dist/404.html
-          fi
+      - name: Audit home interactions and responsive layout
+        run: pnpm run audit:home
 
       - name: Verify slide routing
         run: pnpm run verify:routing
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -66,6 +70,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

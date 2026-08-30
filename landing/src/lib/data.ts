@@ -6,7 +6,7 @@ import { resolve, join } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { parse } from 'yaml'
 
-const PROJECT_ROOT = resolve(process.cwd(), '..')   // landing/ → poddeck/
+const PROJECT_ROOT = resolve(process.cwd(), '..')   // landing/ → Resonote repository root
 
 export interface Source {
   id: string
@@ -79,9 +79,26 @@ export function sortEpisodesByPublishedDesc<T extends Pick<EpisodeMeta, 'id' | '
   })
 }
 
+export function sortEpisodesForLibrary<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title' | 'status' | 'article_path'>>(episodes: T[]): T[] {
+  return [...episodes].sort((a, b) => {
+    const aReadable = a.status === 'generated' || Boolean(a.article_path)
+    const bReadable = b.status === 'generated' || Boolean(b.article_path)
+    if (aReadable !== bReadable) return aReadable ? -1 : 1
+
+    const byPublished = episodePublishedTime(b) - episodePublishedTime(a)
+    if (byPublished !== 0) return byPublished
+    return `${b.title}:${b.id}`.localeCompare(`${a.title}:${a.id}`)
+  })
+}
+
 function resolveArticlePath(meta: EpisodeMeta): string | undefined {
   const articlePath = meta.article_path || `episodes/${meta.id}/article.html`
   return existsSync(resolve(PROJECT_ROOT, articlePath)) ? articlePath : undefined
+}
+
+function resolveEpisodeStatus(id: string, status: EpisodeMeta['status']): EpisodeMeta['status'] {
+  if (status !== 'generated') return status
+  return existsSync(resolve(PROJECT_ROOT, 'episodes', id, 'slides.md')) ? status : 'downloaded'
 }
 
 // Category definitions with display order
@@ -98,6 +115,8 @@ export type CategoryId = typeof CATEGORIES[number]['id']
 export interface EpisodeWithSource extends EpisodeMeta {
   sourceRef: Source
 }
+
+let episodeCache: EpisodeWithSource[] | undefined
 
 function readYaml<T>(path: string, fallback?: T): T {
   if (!existsSync(path)) {
@@ -215,6 +234,8 @@ function loadScanCacheMaps(): {
 }
 
 export function loadEpisodes(): EpisodeWithSource[] {
+  if (episodeCache) return episodeCache
+
   const sources = loadSources()
   const sourceMap = Object.fromEntries(sources.map(s => [s.id, s]))
   const { categoryMap } = loadPlanMaps()
@@ -239,6 +260,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       meta.published_sort = meta.published_sort || cacheMeta?.published_sort
       meta.published = meta.published || cacheMeta?.published
       meta.article_path = resolveArticlePath(meta)
+      meta.status = resolveEpisodeStatus(meta.id, meta.status)
       if (meta.status === 'generated') {
         meta.generated_sort = episodeGeneratedTime(meta.id)
         meta.generated_at = meta.generated_sort ? new Date(meta.generated_sort).toISOString() : undefined
@@ -276,7 +298,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
           duration: ep.duration ? `${Math.round(ep.duration / 60)}m` : undefined,
           url: ep.url,
           thumbnail: ep.image,
-          status: ep.status,
+          status: resolveEpisodeStatus(ep.id, ep.status),
           summary: ep.summary,
           category: ep.category,
           base: `/episodes/${ep.id}/`,
@@ -297,6 +319,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
     const sourceRef = sourceMap[ep.source] || fallbackSource(ep.source)
     results.push({
       ...ep,
+      status: resolveEpisodeStatus(ep.id, ep.status),
       base: ep.base || `/episodes/${ep.id}/`,
       article_path: resolveArticlePath(ep),
       sourceRef,
@@ -327,7 +350,8 @@ export function loadEpisodes(): EpisodeWithSource[] {
     return (b.published ?? '').localeCompare(a.published ?? '')
   })
 
-  return results
+  episodeCache = results
+  return episodeCache
 }
 
 export function loadSourcesWithFallbacks(episodes?: EpisodeWithSource[]): Source[] {

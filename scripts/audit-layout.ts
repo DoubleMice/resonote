@@ -8,7 +8,7 @@
 //   pnpm run audit:layout -- --all
 //   pnpm run audit:layout -- --all --png --keep
 
-import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, rmSync, statSync, cpSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -42,6 +42,7 @@ interface Offender {
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
+const SHARED_SLIDE_THEME = join(EPISODES_DIR, '_templates', 'style.css')
 const DEFAULT_THRESHOLD = 8
 
 function parseArgs(): Args {
@@ -93,6 +94,8 @@ function generatedEpisodes(): string[] {
 
 async function renderEpisode(id: string, outDir: string, png: boolean): Promise<string> {
   const episodeDir = join(EPISODES_DIR, id)
+  const episodeStylePath = join(episodeDir, 'style.css')
+  const borrowedSharedTheme = !existsSync(episodeStylePath)
   if (!existsSync(join(episodeDir, 'slides.md'))) {
     throw new Error(`slides.md not found for episode ${id}`)
   }
@@ -102,35 +105,41 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
 
   const htmlDir = join(outDir, 'html')
 
-  if (png) {
-    const pngDir = join(outDir, 'png')
-    const exportResult = await run('pnpm', [
+  if (borrowedSharedTheme) cpSync(SHARED_SLIDE_THEME, episodeStylePath)
+
+  try {
+    if (png) {
+      const pngDir = join(outDir, 'png')
+      const exportResult = await run('pnpm', [
+        'exec',
+        'slidev',
+        'export',
+        '--format',
+        'png',
+        '--output',
+        pngDir,
+      ], { cwd: episodeDir, reject: false })
+
+      if (exportResult.code !== 0) {
+        throw new Error(`${id} export failed\n${exportResult.stderr.slice(0, 1000)}`)
+      }
+    }
+
+    const buildResult = await run('pnpm', [
       'exec',
       'slidev',
-      'export',
-      '--format',
-      'png',
-      '--output',
-      pngDir,
+      'build',
+      '--base',
+      './',
+      '--out',
+      htmlDir,
     ], { cwd: episodeDir, reject: false })
 
-    if (exportResult.code !== 0) {
-      throw new Error(`${id} export failed\n${exportResult.stderr.slice(0, 1000)}`)
+    if (buildResult.code !== 0) {
+      throw new Error(`${id} build failed\n${buildResult.stderr.slice(0, 1000)}`)
     }
-  }
-
-  const buildResult = await run('pnpm', [
-    'exec',
-    'slidev',
-    'build',
-    '--base',
-    './',
-    '--out',
-    htmlDir,
-  ], { cwd: episodeDir, reject: false })
-
-  if (buildResult.code !== 0) {
-    throw new Error(`${id} build failed\n${buildResult.stderr.slice(0, 1000)}`)
+  } finally {
+    if (borrowedSharedTheme) rmSync(episodeStylePath, { force: true })
   }
 
   return htmlDir
@@ -138,7 +147,7 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
 
 function outputDirFor(id: string, keep: boolean): string {
   if (keep) return join(EPISODES_DIR, id, 'audit-layout')
-  return join(tmpdir(), 'poddeck-layout-audit', id)
+  return join(tmpdir(), 'resonote-layout-audit', id)
 }
 
 async function auditEpisode(id: string, outDir: string, threshold: number): Promise<Issue[]> {

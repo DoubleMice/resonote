@@ -144,7 +144,7 @@ export function preferredTranscript(transcripts: RssTranscript[]): RssTranscript
 export async function fetchText(url: string): Promise<string> {
   const res = await fetch(url, {
     headers: {
-      'user-agent': 'PodDeck RSS fetcher',
+      'user-agent': 'Resonote RSS fetcher',
       accept: 'application/rss+xml, application/xml, text/xml, text/plain, */*',
     },
   })

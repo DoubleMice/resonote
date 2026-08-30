@@ -103,15 +103,25 @@ function saveTranscriptionJobs(file: TranscriptionJobsFile): void {
 
 function scaffoldEpisode(id: string): void {
   const dir = join(EPISODES_DIR, id)
-  if (existsSync(join(dir, 'package.json'))) return
   mkdirSync(dir, { recursive: true })
-  // Copy package.json, rewrite name
-  const pkg = JSON.parse(readFileSync(join(TEMPLATES_DIR, 'package.json'), 'utf-8'))
-  pkg.name = `episode-${id}`
-  writeFileSync(join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
-  // Copy global-bottom.vue
-  cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), join(dir, 'global-bottom.vue'))
-  cpSync(join(TEMPLATES_DIR, 'public'), join(dir, 'public'), { recursive: true })
+  const packagePath = join(dir, 'package.json')
+  if (!existsSync(packagePath)) {
+    const pkg = JSON.parse(readFileSync(join(TEMPLATES_DIR, 'package.json'), 'utf-8'))
+    pkg.name = `episode-${id}`
+    writeFileSync(packagePath, JSON.stringify(pkg, null, 2) + '\n')
+  }
+  const globalBottomPath = join(dir, 'global-bottom.vue')
+  if (!existsSync(globalBottomPath)) {
+    cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), globalBottomPath)
+  }
+  const stylePath = join(dir, 'style.css')
+  if (!existsSync(stylePath)) {
+    cpSync(join(TEMPLATES_DIR, 'style.css'), stylePath)
+  }
+  const publicPath = join(dir, 'public')
+  if (!existsSync(publicPath)) {
+    cpSync(join(TEMPLATES_DIR, 'public'), publicPath, { recursive: true })
+  }
 }
 
 async function ensureRssTranscript(entry: PlanEntry): Promise<void> {
@@ -395,7 +405,7 @@ async function downloadAudio(audioUrl: string, targetPath: string): Promise<{ by
   const response = await fetch(audioUrl, {
     headers: {
       accept: 'audio/*,*/*',
-      'user-agent': 'PodDeck transcription fetcher/1.0',
+      'user-agent': 'Resonote transcription fetcher/1.0',
     },
   })
   const body = await response.arrayBuffer()
@@ -419,7 +429,7 @@ async function prepareTranscriptionAudioInputs(sourceId: string, entry: PlanEntr
   if (!entry.audio_url) throw new Error(`No audio URL for ${entry.id}`)
   if (!shouldUseDataUri(sourceId, entry.audio_url)) return [{ fileUrl: entry.audio_url, mode: 'url' }]
 
-  const workDir = mkdtempSync(join(tmpdir(), 'poddeck-asr-'))
+  const workDir = mkdtempSync(join(tmpdir(), 'resonote-asr-'))
   log.raw(`  downloading audio for local DashScope upload ${sourceId}/${entry.id}`)
   try {
     const inputPath = join(workDir, 'input')

@@ -1,14 +1,28 @@
-import { resolve, join, basename } from 'node:path'
-import { existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync } from 'node:fs'
+import { resolve, join, basename, dirname, sep } from 'node:path'
+import {
+  existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync,
+  readFileSync, writeFileSync,
+} from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
+import { applyArticleTheme } from './lib/article-theme.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
+const TEMPLATES_DIR = join(EPISODES_DIR, '_templates')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
+const SLIDE_THEME_PATH = join(TEMPLATES_DIR, 'style.css')
+const GLOBAL_BOTTOM_PATH = join(TEMPLATES_DIR, 'global-bottom.vue')
+const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
+
+function themedArticleHtml(articlePath: string): string {
+  const html = readFileSync(articlePath, 'utf-8')
+  const css = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
+  return applyArticleTheme(html, css)
+}
 
 function resolveEpisodeArticlePath(id: string, meta: EpisodeMeta): string | null {
   const declared = meta.article_path ? resolve(ROOT, meta.article_path) : null
@@ -40,8 +54,37 @@ function generatedEpisodeIds(): string[] {
   return ids.sort()
 }
 
+function articleArtifacts(): { sourcePath: string; outputRelative: string }[] {
+  if (!existsSync(EPISODES_DIR)) return []
+  const artifacts: { sourcePath: string; outputRelative: string }[] = []
+
+  for (const entry of readdirSync(EPISODES_DIR)) {
+    if (entry.startsWith('_')) continue
+    const dir = join(EPISODES_DIR, entry)
+    if (!statSync(dir).isDirectory()) continue
+    const metaPath = join(dir, 'meta.yml')
+    if (!existsSync(metaPath)) continue
+
+    const meta = readYaml<EpisodeMeta>(metaPath)
+    const sourcePath = resolveEpisodeArticlePath(entry, meta)
+    if (!sourcePath) continue
+    artifacts.push({
+      sourcePath,
+      outputRelative: (meta.article_path || `episodes/${entry}/${basename(sourcePath)}`).replace(/^[/\\]+/, ''),
+    })
+  }
+
+  return artifacts.sort((a, b) => a.outputRelative.localeCompare(b.outputRelative))
+}
+
 async function buildEpisode(id: string, base: string): Promise<string | null> {
   const dir = join(EPISODES_DIR, id)
+  const episodeStylePath = join(dir, 'style.css')
+  const episodeGlobalBottomPath = join(dir, 'global-bottom.vue')
+  const borrowedSharedTheme = !existsSync(episodeStylePath)
+  const originalGlobalBottom = existsSync(episodeGlobalBottomPath)
+    ? readFileSync(episodeGlobalBottomPath, 'utf-8')
+    : null
   const metaPath = join(dir, 'meta.yml')
   if (!existsSync(metaPath)) {
     log.warn(`  skip ${id} — no meta.yml`)
@@ -51,16 +94,29 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
 
   log.info(`building ${id}`)
 
-  // slidev build needs the base path for correct asset URLs in final bundle
-  const { code, stderr } = await run('pnpm', [
-    'exec', 'slidev', 'build',
-    '--base', base,
-    '--router-mode', 'hash',
-    '--out', 'dist',
-  ], { cwd: dir, reject: false })
+  // Older episodes predate the shared theme. Stage it only for the build so
+  // every deployed deck is visually consistent without rewriting 200+ decks.
+  if (borrowedSharedTheme) cpSync(SLIDE_THEME_PATH, episodeStylePath)
+  // The navigation chrome is also staged at build time so legacy decks get
+  // the current accessible control without rewriting their source folders.
+  cpSync(GLOBAL_BOTTOM_PATH, episodeGlobalBottomPath)
 
-  if (code !== 0) {
-    throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)
+  try {
+    // slidev build needs the base path for correct asset URLs in final bundle
+    const { code, stderr } = await run('pnpm', [
+      'exec', 'slidev', 'build',
+      '--base', base,
+      '--router-mode', 'hash',
+      '--out', 'dist',
+    ], { cwd: dir, reject: false })
+
+    if (code !== 0) {
+      throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)
+    }
+  } finally {
+    if (borrowedSharedTheme) rmSync(episodeStylePath, { force: true })
+    if (originalGlobalBottom === null) rmSync(episodeGlobalBottomPath, { force: true })
+    else writeFileSync(episodeGlobalBottomPath, originalGlobalBottom, 'utf-8')
   }
   log.ok(`  ${id} built`)
   return join(dir, 'dist')
@@ -83,9 +139,10 @@ async function main() {
   log.step('Build all — assembling dist/')
 
   // Site base path — matches landing/astro.config.mjs `base`.
-  // Local:    PODDECK_BASE unset → /
-  // CI/prod:  PODDECK_BASE=/poddeck/ → https://kvenux.github.io/poddeck/
-  const SITE_BASE = process.env.PODDECK_BASE || '/'
+  // Local:    RESONOTE_BASE unset → /
+  // CI/prod:  RESONOTE_BASE=/resonote/ → https://doublemice.github.io/resonote/
+  // Keep PODDECK_BASE as a migration fallback for existing local environments.
+  const SITE_BASE = process.env.RESONOTE_BASE || process.env.PODDECK_BASE || '/'
 
   // Collect generated episodes from durable per-episode artifacts. Plan files
   // are an execution queue and can be refreshed independently.
@@ -104,6 +161,8 @@ async function main() {
     })
   }
   log.info(`found ${episodes.length} generated episodes (base=${SITE_BASE})`)
+  const articles = articleArtifacts()
+  log.info(`found ${articles.length} readable articles`)
 
   // Clean dist
   if (existsSync(DIST_DIR)) rmSync(DIST_DIR, { recursive: true, force: true })
@@ -137,9 +196,20 @@ async function main() {
     cpSync(ep.path, dst, { recursive: true })
     if (ep.articlePath) {
       const articleDst = join(dst, basename(ep.articlePath))
-      log.raw(`copying ${ep.articlePath} → ${articleDst}`)
-      cpSync(ep.articlePath, articleDst)
+      log.raw(`theming ${ep.articlePath} → ${articleDst}`)
+      writeFileSync(articleDst, themedArticleHtml(ep.articlePath), 'utf-8')
     }
+  }
+
+  for (const article of articles) {
+    const articleDst = resolve(DIST_DIR, article.outputRelative)
+    if (!articleDst.startsWith(`${DIST_DIR}${sep}`)) {
+      throw new Error(`article output escapes dist: ${article.outputRelative}`)
+    }
+    if (existsSync(articleDst)) continue
+    mkdirSync(dirname(articleDst), { recursive: true })
+    log.raw(`theming ${article.sourcePath} → ${articleDst}`)
+    writeFileSync(articleDst, themedArticleHtml(article.sourcePath), 'utf-8')
   }
 
   log.ok(`\nFinal dist assembled at ${DIST_DIR}`)

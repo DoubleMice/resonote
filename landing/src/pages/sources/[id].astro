@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro'
 import EpisodeCard from '../../components/EpisodeCard.astro'
+import FormatTabs from '../../components/FormatTabs.astro'
 import { loadEpisodes, loadSourcesWithFallbacks, sortEpisodesByPublishedDesc } from '../../lib/data'
 import { url } from '../../lib/url'
 
@@ -15,28 +16,65 @@ const episodes = sortEpisodesByPublishedDesc(loadEpisodes().filter(e => e.source
 const generated = episodes.filter(e => e.status === 'generated')
 ---
 
-<Base title={`${source.name} · PodDeck`}>
-  <a href={url('/')} class="text-xs text-stone-500 hover:text-stone-900">← 全部源头</a>
+<Base title={`${source.name} · 声笺 Resonote`} description={`浏览声笺收录的 ${source.name} 节目。`}>
+  <a href={url('/')} class="back-link">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 5 7.5 10l5 5M8 10h7" /></svg>
+    返回首页
+  </a>
 
-  <header class="mt-4 mb-10 border-l-4 pl-4 py-2" style={`border-color: ${source.color || '#525252'}`}>
-    <h1 class="font-serif text-3xl md:text-4xl font-bold">{source.name}</h1>
+  <header class="collection-header" style={`--source-color: ${source.color || '#525252'}`}>
+    <div class="collection-kicker"><span aria-hidden="true"></span>RESONOTE · PODCAST SOURCE</div>
+    <h1>{source.name}</h1>
     {source.description && (
-      <p class="text-stone-600 mt-2">{source.description}</p>
+      <p>{source.description}</p>
     )}
-    <div class="text-xs text-stone-400 mt-2">
-      {generated.length} 集已生成 · {episodes.length} 集收录
+    <div class="collection-meta">
+      {generated.length} 集已有视觉笔记 · 共收录 {episodes.length} 集
     </div>
   </header>
 
   {episodes.length > 0 && (
-    <section id="episode-grid" class="mb-12">
-      <div class="flex items-end justify-between gap-4 mb-4">
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500">节目</h2>
-        <div class="text-xs text-stone-400">按发布时间由近及远</div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {episodes.map(ep => <EpisodeCard episode={ep} />)}
-      </div>
-    </section>
+    <div id="episode-grid">
+      <FormatTabs />
+      <section class="mb-12" data-format-section>
+        <div class="flex items-end justify-between gap-4 mb-4">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-stone-500">节目</h2>
+          <div class="text-xs text-stone-400">按发布时间由近及远</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {episodes.map(ep => <EpisodeCard episode={ep} />)}
+        </div>
+      </section>
+    </div>
   )}
 </Base>
+
+<style>
+  .back-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 18px;
+    color: #69767d;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .back-link:hover { color: var(--pd-blue); }
+  .back-link svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .collection-header { margin-bottom: 34px; padding: 28px 0 30px; border-bottom: 1px solid rgba(var(--pd-ink-rgb), 0.11); }
+  .collection-kicker { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; color: var(--pd-blue); font-size: 0.67rem; font-weight: 800; letter-spacing: 0.18em; }
+  .collection-kicker span { width: 9px; height: 9px; border-radius: 50%; background: var(--source-color); }
+  .collection-header h1 {
+    max-width: 18em;
+    margin: 0;
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 4.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+  .collection-header p { max-width: 720px; margin: 15px 0 0; color: #606f69; font-size: 0.9rem; line-height: 1.75; }
+  .collection-meta { margin-top: 13px; color: #7b8781; font-size: 0.72rem; }
+</style>

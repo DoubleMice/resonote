@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>PodDeck — 跳转中...</title>
+  <title>声笺 Resonote — 找不到页面</title>
   <style>
     body {
       font-family: ui-sans-serif, system-ui, sans-serif;
-      background: #fafaf9;
-      color: #44403c;
+      background: #eee8dc;
+      color: #26322f;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -20,9 +20,9 @@
       max-width: 480px;
       padding: 2rem;
     }
-    h1 { font-size: 1.5rem; margin: 0 0 0.5rem; }
-    p { color: #78716c; font-size: 0.9rem; line-height: 1.5; }
-    a { color: #2563eb; }
+    h1 { font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif; font-size: 1.7rem; margin: 0 0 0.5rem; }
+    p { color: #68736f; font-size: 0.9rem; line-height: 1.65; }
+    a { color: #355f58; text-underline-offset: 0.2em; }
   </style>
   <script>
     // SPA fallback for GitHub Pages.
@@ -30,7 +30,7 @@
     // is /episodes/<id>/<rest> and redirect to the hash-routed Slidev SPA.
     // For pure /<unknown> paths, fall through to the visible "lost" page.
     (function () {
-      // Pattern matches both /episodes/<id>/<rest> (local) and /poddeck/episodes/<id>/<rest> (GH Pages)
+      // Pattern matches both /episodes/<id>/<rest> (local) and /resonote/episodes/<id>/<rest> (GitHub Pages)
       var path = window.location.pathname
       var match = path.match(/^(.*?\/episodes\/([^\/]+)\/)(.*)$/)
       if (match) {
@@ -61,8 +61,8 @@
 <body>
   <div class="box">
     <h1>404 · 找不到这个页面</h1>
-    <p>这个 URL 不在 PodDeck 上。<br />如果你点的是某集的深度链接，正在跳转到该集首页。</p>
-    <p><a href="./">← 回到 PodDeck 首页</a></p>
+    <p>这张声笺暂时不在这里。<br />如果你点的是某集的深度链接，我们会尝试带你回到该集首页。</p>
+    <p><a href="./">← 回到声笺首页</a></p>
   </div>
 </body>
 </html>

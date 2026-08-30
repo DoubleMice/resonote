@@ -1,4 +1,4 @@
-# PodDeck RSS 订阅源配置
+# 声笺 Resonote RSS 订阅源配置
 # 每个 source 是一个播客 RSS feed
 # filter_keywords: 可选。plan.ts 不启用 use_keywords_in_plan 时仅用于 discover 不做过滤
 # min_duration: 最小时长秒数（plan.ts 用这个过滤）。默认 3600 = 60 分钟

@@ -1,42 +1,91 @@
-<div class="format-tabs flex gap-2 mb-6" id="format-tabs">
-  <button class="tab-btn active px-4 py-1.5 rounded-full text-sm font-medium border border-stone-200 bg-blue-600 text-white" data-format="slides">
-    幻灯片
-  </button>
-  <button class="tab-btn px-4 py-1.5 rounded-full text-sm font-medium border border-stone-200 text-stone-600 hover:bg-stone-100" data-format="articles">
-    文章
-  </button>
+<div class="format-bar mb-7">
+  <div class="format-tabs inline-flex gap-1 p-1" id="format-tabs" role="group" aria-label="内容格式">
+    <button class="tab-btn active" data-format="all" aria-pressed="true">全部</button>
+    <button class="tab-btn" data-format="slides" aria-pressed="false">视觉笔记</button>
+    <button class="tab-btn" data-format="article" aria-pressed="false">文章</button>
+  </div>
+  <span class="format-count" id="format-count" role="status" aria-live="polite"></span>
 </div>
+
+<style>
+  .format-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .format-tabs {
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-radius: 999px;
+    background: rgba(251, 248, 241, 0.72);
+    box-shadow: 0 8px 24px rgba(var(--pd-ink-rgb), 0.05);
+  }
+  .tab-btn {
+    min-width: 72px;
+    min-height: 44px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 999px;
+    color: #68757d;
+    background: transparent;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  }
+  .tab-btn:hover { color: var(--pd-ink); }
+  .tab-btn.active {
+    color: #fff;
+    background: var(--pd-ink);
+    box-shadow: 0 5px 14px rgba(var(--pd-ink-rgb), 0.18);
+  }
+  .format-count { color: #7a858b; font-size: 0.72rem; }
+  @media (max-width: 520px) {
+    .format-bar { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .format-tabs { display: grid; width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .tab-btn { min-width: 0; padding: 0 12px; }
+  }
+</style>
 
 <script is:inline>
   (function() {
     var tabs = document.querySelectorAll('#format-tabs .tab-btn')
     var grid = document.getElementById('episode-grid')
+    var count = document.getElementById('format-count')
     if (!tabs.length || !grid) return
 
-    tabs.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var format = btn.dataset.format
+    function activate(btn, updateUrl) {
+        var format = btn.dataset.format || 'all'
         tabs.forEach(function(b) {
-          b.classList.remove('active', 'bg-blue-600', 'text-white')
-          b.classList.add('text-stone-600')
+          b.classList.remove('active')
+          b.setAttribute('aria-pressed', 'false')
         })
-        btn.classList.add('active', 'bg-blue-600', 'text-white')
-        btn.classList.remove('text-stone-600')
+        btn.classList.add('active')
+        btn.setAttribute('aria-pressed', 'true')
 
-        var attr = format === 'slides' ? 'data-has-slides' : 'data-has-article'
+        var visibleCount = 0
         grid.querySelectorAll('.episode-card').forEach(function(card) {
-          card.style.display = card.getAttribute(attr) === 'true' ? '' : 'none'
+          var visible = format === 'all'
+            || (format === 'slides' && card.getAttribute('data-has-slides') === 'true')
+            || (format === 'article' && card.getAttribute('data-has-article') === 'true')
+          card.hidden = !visible
+          if (visible) visibleCount += 1
         })
 
-        // hide empty sections
         grid.querySelectorAll('[data-format-section]').forEach(function(section) {
-          var hasVisible = false
-          section.querySelectorAll('.episode-card').forEach(function(c) {
-            if (c.style.display !== 'none') hasVisible = true
-          })
-          section.style.display = hasVisible ? '' : 'none'
+          section.hidden = !section.querySelector('.episode-card:not([hidden])')
         })
-      })
+
+        if (count) count.textContent = visibleCount + ' 集内容'
+        if (updateUrl) {
+          var url = new URL(window.location.href)
+          if (format === 'all') url.searchParams.delete('format')
+          else url.searchParams.set('format', format)
+          history.replaceState(null, '', url)
+        }
+    }
+
+    tabs.forEach(function(btn) {
+      btn.addEventListener('click', function() { activate(btn, true) })
     })
+
+    var initial = new URLSearchParams(window.location.search).get('format')
+    var initialTab = grid.querySelector ? document.querySelector('#format-tabs [data-format="' + (initial || 'all') + '"]') : null
+    activate(initialTab || tabs[0], false)
   })()
 </script>

@@ -1,4 +1,4 @@
-# PodDeck — 项目规划
+# 声笺 Resonote — 项目规划
 
 本地 Claude Code 驱动的播客 → Slidev 演示文稿汇聚站，部署到 GitHub Pages。
 
@@ -6,7 +6,7 @@
 
 | 领域 | 选型 |
 |------|------|
-| 名称 | **PodDeck** |
+| 名称 | **声笺 Resonote** |
 | Slides 引擎 | Slidev (`slidev-theme-academic` + `slidev-addon-excalidraw`) |
 | Landing 站 | Astro + Tailwind |
 | 生成机制 | Claude Code headless `claude -p` |
@@ -19,7 +19,7 @@
 ## 目录结构
 
 ```
-poddeck/
+resonote/
 ├── .github/workflows/
 │   ├── discover.yml          # cron: 每天扫描新集，提交字幕，发 issue 提醒
 │   └── deploy.yml            # push 触发: 构建全站并部署 gh-pages

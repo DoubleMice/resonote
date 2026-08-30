@@ -1,0 +1,379 @@
+---
+import type { Source } from '../lib/data'
+import { url } from '../lib/url'
+
+interface TagWithCount {
+  tag: string
+  count: number
+}
+
+interface SourceWithCount extends Source {
+  count: number
+}
+
+interface Props {
+  tags: TagWithCount[]
+  sources: SourceWithCount[]
+}
+
+const { tags, sources } = Astro.props
+const featuredTags = tags.slice(0, 18)
+---
+
+<section class="discovery-section mb-16" id="content-explore" aria-labelledby="discovery-title">
+  <div class="discovery-intro">
+    <div>
+      <div class="discovery-overline">A WAY INTO THE ARCHIVE</div>
+      <h2 id="discovery-title">从一枚标签，或一档播客开始</h2>
+      <p>循着关心的话题或熟悉的声音，翻到一份恰好值得留下的声笺。</p>
+    </div>
+    <a href={url('/library/')}>翻阅完整内容库 <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="discovery-card" id="discovery-tabs">
+    <div class="discovery-tabs" role="tablist" aria-label="内容探索方式">
+      <button
+        class="discovery-tab"
+        id="discovery-tab-tags"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        aria-controls="discovery-panel-tags"
+        tabindex="0"
+        data-discovery-tab="tags"
+      >
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M9 3 4 8v7a2 2 0 0 0 2 2h7l5-5-9-9Z" /><circle cx="7.3" cy="10" r="1" /></svg>
+        <span>热门标签</span>
+        <span class="tab-count">{tags.length}</span>
+      </button>
+      <button
+        class="discovery-tab"
+        id="discovery-tab-sources"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        aria-controls="discovery-panel-sources"
+        tabindex="-1"
+        data-discovery-tab="sources"
+      >
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 15.5v-11A1.5 1.5 0 0 1 5.5 3H16v12H5.5A1.5 1.5 0 0 0 4 16.5v0A1.5 1.5 0 0 0 5.5 18H16" /><path d="M7 7h6M7 10h4" /></svg>
+        <span>播客来源</span>
+        <span class="tab-count">{sources.length}</span>
+      </button>
+    </div>
+
+    <div
+      class="discovery-panel"
+      id="discovery-panel-tags"
+      role="tabpanel"
+      aria-labelledby="discovery-tab-tags"
+      data-discovery-panel="tags"
+    >
+      <div class="panel-summary">
+        <strong>大家都在关注</strong>
+        <span>数字代表收录内容数量</span>
+      </div>
+      <div class="tag-cloud">
+        {featuredTags.map(({ tag, count }, index) => (
+          <a href={url(`/tags/${tag}/`)} class:list={['tag-chip', { prominent: index < 5 }]}>
+            <span class="tag-label">#{tag}</span>
+            <span class="item-count">{count}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div
+      class="discovery-panel"
+      id="discovery-panel-sources"
+      role="tabpanel"
+      aria-labelledby="discovery-tab-sources"
+      data-discovery-panel="sources"
+      hidden
+    >
+      <div class="panel-summary">
+        <strong>从常听的节目进入</strong>
+        <span>按当前收录量排序</span>
+      </div>
+      <div class="source-grid">
+        {sources.map(source => (
+          <a
+            href={url(`/sources/${source.id}/`)}
+            class="source-item"
+            style={`--source-color: ${source.color || '#525252'}`}
+            aria-label={`${source.name}，收录 ${source.count} 集`}
+          >
+            <span class="source-dot" aria-hidden="true"></span>
+            <span class="source-copy">
+              <span class="source-name">{source.name}</span>
+              <span class="source-count">{source.count} 集内容</span>
+            </span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" /></svg>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .discovery-section { scroll-margin-top: 88px; }
+  .discovery-intro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 28px;
+    margin-bottom: 18px;
+  }
+  .discovery-overline {
+    color: var(--pd-blue);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+  }
+  .discovery-intro h2 {
+    margin: 5px 0 0;
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.45rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+  .discovery-intro p {
+    max-width: 40rem;
+    margin: 8px 0 0;
+    color: #68736f;
+    font-size: 0.8rem;
+    line-height: 1.65;
+  }
+  .discovery-intro > a {
+    display: inline-flex;
+    min-height: 44px;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 5px;
+    color: var(--pd-blue);
+    font-size: 0.74rem;
+    font-weight: 750;
+    text-decoration: none;
+  }
+  .discovery-card {
+    overflow: hidden;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.11);
+    border-radius: 4px 18px 18px 4px;
+    background: rgba(251, 248, 241, 0.82);
+    box-shadow: 0 14px 38px rgba(var(--pd-ink-rgb), 0.055);
+  }
+  .discovery-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    padding: 6px;
+    border-bottom: 1px solid rgba(var(--pd-ink-rgb), 0.09);
+    background: rgba(229, 223, 211, 0.52);
+  }
+  .discovery-tab {
+    position: relative;
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 18px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    color: #67726e;
+    background: transparent;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 720;
+    cursor: pointer;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  }
+  .discovery-tab:hover { color: var(--pd-ink); background: rgba(255, 252, 246, 0.58); }
+  .discovery-tab[aria-selected="true"] {
+    border-color: rgba(var(--pd-ink-rgb), 0.08);
+    color: var(--pd-ink);
+    background: var(--pd-paper);
+    box-shadow: 0 3px 10px rgba(var(--pd-ink-rgb), 0.06);
+  }
+  .discovery-tab svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.55;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .tab-count {
+    min-width: 24px;
+    padding: 2px 6px;
+    border-radius: 999px;
+    color: #75817c;
+    background: rgba(var(--pd-ink-rgb), 0.06);
+    font-size: 0.61rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .discovery-tab[aria-selected="true"] .tab-count { color: var(--pd-blue); background: rgba(var(--pd-accent-rgb), 0.1); }
+  .discovery-panel {
+    min-height: 228px;
+    padding: 22px 24px 25px;
+  }
+  .discovery-panel[hidden] { display: none; }
+  .panel-summary {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  .panel-summary strong { color: var(--pd-ink); font-size: 0.78rem; font-weight: 780; }
+  .panel-summary span { color: #7e8984; font-size: 0.65rem; }
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .tag-chip {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 13px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-radius: 999px;
+    color: #596863;
+    background: #f5f0e7;
+    font-size: 0.74rem;
+    text-decoration: none;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+  }
+  .tag-chip.prominent { border-color: rgba(var(--pd-accent-rgb), 0.2); color: var(--pd-blue); background: rgba(var(--pd-accent-rgb), 0.075); }
+  .tag-chip:hover {
+    border-color: rgba(var(--pd-seal-rgb), 0.34);
+    color: var(--pd-blue);
+    background: #f8eee8;
+  }
+  .tag-label { font-weight: 680; }
+  .item-count { color: #89928d; font-size: 0.61rem; font-variant-numeric: tabular-nums; }
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+  }
+  .source-item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    min-height: 60px;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.04);
+    border-radius: 13px;
+    color: var(--pd-ink);
+    background: rgba(244, 239, 230, 0.8);
+    text-decoration: none;
+    transition: border-color 180ms ease, background 180ms ease;
+  }
+  .source-item:hover {
+    border-color: rgba(var(--pd-accent-rgb), 0.16);
+    background: #edf1eb;
+  }
+  .source-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--source-color);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--source-color) 12%, transparent);
+  }
+  .source-copy { min-width: 0; }
+  .source-name,
+  .source-count {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .source-name { font-size: 0.75rem; font-weight: 720; }
+  .source-count { margin-top: 3px; color: #7d8984; font-size: 0.62rem; }
+  .source-item > svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: #7d8883;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 180ms ease, transform 180ms ease;
+  }
+  .source-item:hover > svg { stroke: var(--pd-blue); transform: translateX(2px); }
+  @media (max-width: 820px) {
+    .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 640px) {
+    .discovery-intro { align-items: flex-start; }
+    .discovery-intro p { max-width: 28rem; }
+    .discovery-panel { min-height: 0; padding: 20px 18px 22px; }
+  }
+  @media (max-width: 520px) {
+    .discovery-intro { display: block; }
+    .discovery-intro > a { margin-top: 7px; }
+    .discovery-tab { min-height: 46px; padding-inline: 8px; }
+    .discovery-tab svg { display: none; }
+    .panel-summary { align-items: flex-start; flex-direction: column; gap: 3px; }
+    .source-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    const root = document.getElementById('discovery-tabs')
+    if (!root) return
+
+    const tabs = [...root.querySelectorAll('[data-discovery-tab]')]
+    const panels = [...root.querySelectorAll('[data-discovery-panel]')]
+    const keys = tabs.map(tab => tab.getAttribute('data-discovery-tab'))
+
+    const activate = (key, { focus = false, updateUrl = false } = {}) => {
+      if (!keys.includes(key)) key = 'tags'
+
+      tabs.forEach(tab => {
+        const selected = tab.getAttribute('data-discovery-tab') === key
+        tab.setAttribute('aria-selected', String(selected))
+        tab.setAttribute('tabindex', selected ? '0' : '-1')
+        if (selected && focus) tab.focus()
+      })
+      panels.forEach(panel => {
+        panel.hidden = panel.getAttribute('data-discovery-panel') !== key
+      })
+
+      if (updateUrl) {
+        const nextUrl = new URL(window.location.href)
+        if (key === 'sources') nextUrl.searchParams.set('explore', 'sources')
+        else nextUrl.searchParams.delete('explore')
+        window.history.replaceState(window.history.state, '', nextUrl)
+      }
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => {
+        activate(tab.getAttribute('data-discovery-tab'), { updateUrl: true })
+      })
+      tab.addEventListener('keydown', event => {
+        let nextIndex
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length
+        else if (event.key === 'Home') nextIndex = 0
+        else if (event.key === 'End') nextIndex = tabs.length - 1
+        else return
+
+        event.preventDefault()
+        activate(keys[nextIndex], { focus: true, updateUrl: true })
+      })
+    })
+
+    const initial = new URL(window.location.href).searchParams.get('explore')
+    activate(initial === 'sources' ? 'sources' : 'tags')
+  })()
+</script>

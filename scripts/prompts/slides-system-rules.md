@@ -1,4 +1,4 @@
-# PodDeck Slide Generation — HARD RULES
+# Resonote Slide Generation — HARD RULES
 
 You are generating a Slidev presentation from a podcast transcript. These rules are non-negotiable. They are injected into your system prompt so you cannot "forget" them.
 
@@ -133,6 +133,21 @@ Read the project's `CLAUDE.md` for:
 - No `layout: section` divider pages
 - No `layout: fact` standalone-number pages
 
+The episode scaffold already contains `style.css`, which is the shared Resonote
+editorial theme. Treat it as the source of truth:
+- Do not replace or rewrite `style.css`, and do not add a slide-local `<style>` block.
+- Let the shared theme handle the paper background, typography, card radius,
+  shadows, and semantic colors. Use the existing Tailwind card utilities to
+  describe meaning, not to invent a new visual language for each episode.
+- Keep one clear visual focal point per slide: title + either a card group,
+  a diagram, a comparison, or a quote. Do not make every sentence a separate box.
+- Reserve `opacity-40` / `opacity-50` for metadata and attribution only. Body
+  explanations must remain fully readable (`opacity-70` or stronger).
+- Do not use emoji as structural icons or card labels. Use numbered labels,
+  short text labels, or simple CSS shapes instead.
+- Titles should be sentence case, concise, and preferably fit on one or two
+  lines. Do not use ALL CAPS as decoration.
+
 ## RULE 6.5 — Slide capacity budget (prevents export clipping)
 
 Slidev renders to a fixed 16:9 canvas. Treat each slide as a poster with a hard capacity budget, not a scrollable page.
@@ -151,7 +166,7 @@ When in doubt, split content across more slides. More pages with clean layout ar
 
 ## RULE 7 — Global back button
 
-Each episode directory must contain a `global-bottom.vue` with a fixed-position `← PodDeck` link. Copy the template from an existing episode (e.g., `episodes/ugvHCXCOmm4/global-bottom.vue`).
+Each episode directory must contain a `global-bottom.vue` with a fixed-position `← 声笺 / RESONOTE` link. Copy the canonical file from `episodes/_templates/global-bottom.vue`.
 
 ## RULE 8 — Self-audit before declaring done
 
@@ -207,8 +222,17 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 
 **Format requirements:**
 - Self-contained HTML with inline `<style>` — no external CSS, no JavaScript, no images
-- Clean typography: system font stack (`-apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif`)
-- Max-width ~720px, comfortable line-height 1.75, font-size 17px
+- Read `episodes/_templates/article-theme.css` and paste it verbatim into
+  `<style data-poddeck-theme>`. This shared theme is mandatory; do not invent
+  episode-specific CSS or use inline `style="..."` attributes.
+- Use one semantic `<article>` wrapper with `<header>`, content, and `<footer>`.
+- At the beginning of `<body>`, include a `.poddeck-home` link to `../../` with
+  a small inline SVG left-arrow and the visible brand `声笺 / RESONOTE`.
+- Use the shared semantic classes: `.meta`, `.tag`, `.cards`, `.card` plus
+  `.c-blue|green|orange|red|purple|yellow`, `.info-box`, `.compare`, and
+  blockquote `.attr`.
+- Editorial typography, reading width, line-height, responsive behavior, focus
+  states, and print styles are all defined by the shared theme.
 - Responsive to mobile
 - File size between 5KB and 500KB
 

@@ -16,6 +16,7 @@ jobs:
   mimo:
     name: Verify MiMo transcription
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       TRANSCRIPT_PROVIDER: mimo
       MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}

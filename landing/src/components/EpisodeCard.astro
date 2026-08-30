@@ -11,25 +11,47 @@ const isGenerated = episode.status === 'generated'
 const hasArticle = !!episode.article_path
 const thumbnail = episode.thumbnail
 const pendingLabel = episode.status === 'failed'
-  ? 'generation failed'
+  ? '生成失败'
   : episode.status === 'needs_transcript'
-    ? 'waiting for transcript'
-    : 'transcript ready · slides coming'
+    ? '等待转写'
+    : '文字稿已就绪 · 正在整理'
+const primaryUrl = isGenerated
+  ? url(episode.base || `/episodes/${episode.id}/`)
+  : hasArticle
+    ? url(episode.article_path!)
+    : episode.url
+const primaryLabel = isGenerated ? '查看视觉笔记' : hasArticle ? '阅读文章' : '打开原文'
+const primaryExternal = !isGenerated && !hasArticle
+
+function displayDate(value?: string): string {
+  if (!value) return ''
+  const compact = value.match(/^(\d{4})(\d{2})(\d{2})$/)
+  if (compact) return `${compact[1]}.${compact[2]}.${compact[3]}`
+  const parsed = Date.parse(value)
+  if (!Number.isFinite(parsed)) return value
+  return new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date(parsed)).replaceAll('/', '.')
+}
+
+const published = displayDate(episode.published_sort || episode.published)
 ---
 
 <article
-  class="episode-card bg-white rounded-lg border border-stone-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col"
+  class="episode-card overflow-hidden flex flex-col"
   data-episode-card
   data-episode-id={episode.id}
   data-has-slides={String(isGenerated)}
   data-has-article={String(hasArticle)}
 >
-  <div class="relative aspect-video bg-stone-100">
+  <div class="episode-cover relative aspect-video bg-stone-100">
     {thumbnail ? (
       <img
         src={thumbnail}
-        alt={episode.title}
-        class="w-full h-full object-cover"
+        alt=""
+        class="w-full h-full object-cover transition-opacity"
         loading="lazy"
       />
     ) : (
@@ -38,41 +60,59 @@ const pendingLabel = episode.status === 'failed'
       </div>
     )}
     {!isGenerated && (
-      <div class="absolute inset-0 bg-stone-900/60 flex items-center justify-center">
+      <div class="pending-overlay absolute inset-0 flex items-center justify-center">
           <span class="text-white text-xs bg-stone-800 px-3 py-1 rounded-full">
           {pendingLabel}
           </span>
       </div>
     )}
     <a
+      href={primaryUrl}
+      class="cover-hitbox absolute inset-0"
+      aria-label={`${primaryLabel}：${episode.title}`}
+      data-mark-read-link
+      target={primaryExternal ? '_blank' : undefined}
+      rel={primaryExternal ? 'noopener' : undefined}
+    ></a>
+    <a
       href={url(`/sources/${episode.sourceRef.id}/`)}
-      class="absolute top-2 left-2 text-xs text-white px-2 py-0.5 rounded-full font-medium hover:opacity-90 transition-opacity"
-      style={`background-color: ${episode.sourceRef.color || '#525252'}`}
+      class="source-badge absolute top-3 left-3 text-[11px] px-2.5 py-1 rounded-full font-semibold"
+      style={`--source-color: ${episode.sourceRef.color || '#525252'}`}
       onclick="event.stopPropagation()"
     >
+      <span aria-hidden="true"></span>
       {episode.sourceRef.name}
     </a>
     <span
       data-read-badge
-      class="hidden read-badge absolute top-2 right-2 text-[10px] text-white bg-stone-900/80 px-2 py-0.5 rounded-full font-medium"
+      class="hidden read-badge absolute top-3 right-3 text-[10px] text-white bg-stone-900/80 px-2.5 py-1 rounded-full font-semibold"
     >
       已读
     </span>
     {episode.duration && (
-      <div class="absolute bottom-2 right-2 text-[10px] text-white bg-black/60 px-1.5 py-0.5 rounded">
+      <div class="duration-badge absolute bottom-3 right-3 text-[10px] text-white bg-black/65 px-2 py-1 rounded-full backdrop-blur-sm">
         {episode.duration}
       </div>
     )}
   </div>
 
-  <div class="p-4 flex-1 flex flex-col">
-    <h3 class="font-semibold text-base leading-snug mb-2 line-clamp-2">
-      {episode.title}
+  <div class="p-5 flex-1 flex flex-col">
+    <h3 class="episode-title font-semibold text-[17px] leading-snug mb-2 line-clamp-2">
+      <a
+        href={primaryUrl}
+        data-mark-read-link
+        target={primaryExternal ? '_blank' : undefined}
+        rel={primaryExternal ? 'noopener' : undefined}
+      >
+        {episode.title}
+      </a>
     </h3>
 
-    {episode.guest && (
-      <div class="text-xs text-stone-500 mb-2">
-        {episode.guest}{episode.guest_role ? ` · ${episode.guest_role}` : ''}
+    {(episode.guest || published) && (
+      <div class="episode-byline text-xs text-stone-500 mb-2">
+        {published && <time datetime={episode.published_sort || episode.published}>{published}</time>}
+        {published && episode.guest && <span aria-hidden="true"> · </span>}
+        {episode.guest && <span>{episode.guest}{episode.guest_role ? ` · ${episode.guest_role}` : ''}</span>}
       </div>
     )}
 
@@ -83,11 +123,11 @@ const pendingLabel = episode.status === 'failed'
     )}
 
     {episode.tags && episode.tags.length > 0 && (
-      <div class="flex flex-wrap gap-1 mb-3">
-        {episode.tags.slice(0, 4).map(tag => (
+      <div class="episode-tags flex flex-wrap gap-1 mb-3">
+        {episode.tags.slice(0, 3).map(tag => (
           <a
             href={url(`/tags/${tag}/`)}
-            class="text-[10px] px-2 py-0.5 bg-stone-100 hover:bg-blue-100 text-stone-600 hover:text-blue-700 rounded-full transition-colors"
+            class="episode-tag"
           >
             #{tag}
           </a>
@@ -95,35 +135,35 @@ const pendingLabel = episode.status === 'failed'
       </div>
     )}
 
-    <div class="mt-auto pt-2 flex items-center justify-between gap-3">
-      <div class="flex flex-wrap gap-x-3 gap-y-1 min-w-0">
+    <div class="card-footer mt-auto pt-3">
+      <div class="primary-actions">
         {isGenerated ? (
           <a
             href={url(episode.base || `/episodes/${episode.id}/`)}
             data-mark-read-link
-            class="text-sm font-medium text-blue-600 hover:text-blue-800"
+            class="episode-action action-slides"
           >
-            查看 slides →
+            视觉笔记 <span aria-hidden="true">→</span>
           </a>
         ) : (
-          <span class="text-xs text-stone-400">{episode.status === 'failed' ? '生成失败' : episode.status === 'needs_transcript' ? '等待转写' : 'slides 未生成'}</span>
+          <span class="text-xs text-stone-400">{episode.status === 'failed' ? '生成失败' : episode.status === 'needs_transcript' ? '等待转写' : '视觉笔记未生成'}</span>
         )}
         {hasArticle && (
           <a
             href={url(episode.article_path!)}
             data-mark-read-link
-            class="text-sm font-medium text-green-600 hover:text-green-800"
+            class="episode-action action-article"
           >
-            阅读文章 →
+            文章 <span aria-hidden="true">→</span>
           </a>
         )}
       </div>
-      <div class="flex shrink-0 items-center gap-2">
+      <div class="utility-actions">
         <button
           type="button"
           data-read-toggle
           aria-pressed="false"
-          class="read-toggle text-xs px-2 py-1 rounded border border-stone-200 text-stone-500 hover:text-stone-900 hover:border-stone-400 transition-colors"
+          class="read-toggle"
           title="切换已读状态"
         >
           <span data-read-toggle-label>标为已读</span>
@@ -133,7 +173,7 @@ const pendingLabel = episode.status === 'failed'
           target="_blank"
           rel="noopener"
           data-mark-read-link
-          class="text-xs text-stone-400 hover:text-stone-600"
+          class="original-link"
         >
           原文 ↗
         </a>
@@ -141,3 +181,110 @@ const pendingLabel = episode.status === 'failed'
     </div>
   </div>
 </article>
+
+<style>
+  .episode-card {
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.10);
+    border-radius: 4px 18px 18px 4px;
+    background: rgba(251, 248, 241, 0.84);
+    box-shadow: 0 10px 30px rgba(var(--pd-ink-rgb), 0.05);
+    transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  }
+  .episode-card:hover {
+    border-color: rgba(var(--pd-accent-rgb), 0.28);
+    background: rgba(255, 253, 248, 0.97);
+    box-shadow: 0 18px 42px rgba(var(--pd-ink-rgb), 0.09);
+  }
+  .episode-card:focus-within {
+    border-color: rgba(var(--pd-accent-rgb), 0.32);
+    box-shadow: 0 0 0 4px rgba(var(--pd-accent-rgb), 0.08), 0 18px 42px rgba(var(--pd-ink-rgb), 0.09);
+  }
+  .episode-cover::after {
+    position: absolute;
+    inset: auto 0 0;
+    height: 36%;
+    pointer-events: none;
+    content: "";
+    background: linear-gradient(transparent, rgba(var(--pd-ink-rgb), 0.18));
+  }
+  .cover-hitbox { z-index: 1; border-radius: 0; }
+  .pending-overlay { z-index: 1; background: rgba(var(--pd-ink-rgb), 0.58); pointer-events: none; }
+  .source-badge {
+    z-index: 3;
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 6px;
+    max-width: calc(100% - 88px);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    color: var(--pd-ink);
+    background: rgba(255, 253, 248, 0.92);
+    box-shadow: 0 4px 14px rgba(var(--pd-ink-rgb), 0.15);
+    backdrop-filter: blur(10px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .source-badge > span { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: var(--source-color); }
+  .read-badge, .duration-badge { z-index: 2; pointer-events: none; }
+  .episode-title {
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    letter-spacing: -0.012em;
+  }
+  .episode-title a { color: inherit; text-decoration: none; }
+  .episode-title a:hover { color: var(--pd-blue); }
+  .episode-byline { min-height: 1.25rem; }
+  .episode-tag {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    padding: 0 9px;
+    border-radius: 999px;
+    color: #5e6d67;
+    background: #f0ebe2;
+    font-size: 0.65rem;
+    text-decoration: none;
+    transition: color 180ms ease, background 180ms ease;
+  }
+  .episode-tag:hover { color: var(--pd-blue); background: #e7eee9; }
+  .card-footer { border-top: 1px solid rgba(var(--pd-ink-rgb), 0.08); }
+  .primary-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .episode-action {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 13px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 750;
+    text-decoration: none;
+  }
+  .action-slides { color: #fff; background: var(--pd-blue); box-shadow: 0 6px 15px rgba(var(--pd-accent-rgb), 0.18); }
+  .action-slides:hover { background: #294f49; }
+  .action-article { color: #794c40; background: #f3e8e1; }
+  .action-article:hover { background: #ecddd4; }
+  .episode-action span { transition: transform 180ms ease; }
+  .episode-action:hover span { transform: translateX(2px); }
+  .utility-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; }
+  .read-toggle,
+  .original-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    padding: 0 9px;
+    border-radius: 10px;
+    color: #778188;
+    background: transparent;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+  .read-toggle { border: 0; cursor: pointer; }
+  .read-toggle:hover, .original-link:hover { color: var(--pd-ink); background: rgba(var(--pd-ink-rgb), 0.055); }
+  @media (max-width: 420px) {
+    .episode-card > div:last-child { padding: 18px; }
+    .episode-action { flex: 1; }
+  }
+</style>

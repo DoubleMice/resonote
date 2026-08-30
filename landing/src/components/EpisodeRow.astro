@@ -1,0 +1,224 @@
+---
+import type { EpisodeWithSource } from '../lib/data'
+import { CATEGORIES } from '../lib/data'
+import { url } from '../lib/url'
+
+interface Props {
+  episode: EpisodeWithSource
+  initialHidden?: boolean
+}
+
+const { episode, initialHidden = false } = Astro.props
+const hasSlides = episode.status === 'generated'
+const hasArticle = Boolean(episode.article_path)
+const category = CATEGORIES.find(item => item.id === episode.category)
+const searchText = [
+  episode.title,
+  episode.guest,
+  episode.guest_role,
+  episode.sourceRef.name,
+  ...(episode.tags || []),
+].filter(Boolean).join(' ').toLowerCase()
+
+function displayDate(value?: string): string {
+  if (!value) return '日期未知'
+  const compact = value.match(/^(\d{4})(\d{2})(\d{2})$/)
+  if (compact) return `${compact[1]}.${compact[2]}.${compact[3]}`
+  const parsed = Date.parse(value)
+  if (!Number.isFinite(parsed)) return value
+  return new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date(parsed)).replaceAll('/', '.')
+}
+
+const published = displayDate(episode.published_sort || episode.published)
+---
+
+<article
+  class="library-row"
+  data-episode-card
+  data-library-item
+  data-episode-id={episode.id}
+  data-has-slides={String(hasSlides)}
+  data-has-article={String(hasArticle)}
+  data-category={episode.category || 'other'}
+  data-search={searchText}
+  data-initial-hidden={initialHidden ? 'true' : undefined}
+>
+  <div class="row-cover">
+    {episode.thumbnail ? (
+      <img src={episode.thumbnail} alt="" loading="lazy" />
+    ) : (
+      <div class="row-cover-fallback" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    )}
+  </div>
+
+  <div class="row-content">
+    <div class="row-eyebrow">
+      <a href={url(`/sources/${episode.sourceRef.id}/`)} class="row-source" style={`--source-color: ${episode.sourceRef.color || '#525252'}`}>
+        <span aria-hidden="true"></span>{episode.sourceRef.name}
+      </a>
+      <span aria-hidden="true">·</span>
+      <time datetime={episode.published_sort || episode.published}>{published}</time>
+      {category && <><span aria-hidden="true">·</span><span>{category.label}</span></>}
+    </div>
+
+    <h2 class="row-title">
+      {hasSlides ? (
+        <a href={url(episode.base || `/episodes/${episode.id}/`)} data-mark-read-link>{episode.title}</a>
+      ) : hasArticle ? (
+        <a href={url(episode.article_path!)} data-mark-read-link>{episode.title}</a>
+      ) : (
+        <a href={episode.url} target="_blank" rel="noopener" data-mark-read-link>{episode.title}</a>
+      )}
+    </h2>
+
+    <div class="row-details">
+      {episode.guest && <span>{episode.guest}{episode.guest_role ? ` · ${episode.guest_role}` : ''}</span>}
+      {episode.duration && <span>{episode.duration}</span>}
+      {episode.tags?.slice(0, 2).map(tag => <a href={url(`/tags/${tag}/`)}>#{tag}</a>)}
+    </div>
+  </div>
+
+  <div class="row-actions">
+    <div class="row-formats">
+      {hasSlides && (
+        <a class="row-action row-action-primary" href={url(episode.base || `/episodes/${episode.id}/`)} data-mark-read-link>
+          视觉笔记 <span aria-hidden="true">→</span>
+        </a>
+      )}
+      {hasArticle && (
+        <a class="row-action row-action-secondary" href={url(episode.article_path!)} data-mark-read-link>
+          文章 <span aria-hidden="true">→</span>
+        </a>
+      )}
+      {!hasSlides && !hasArticle && <span class="row-status">待生成</span>}
+    </div>
+    <button type="button" class="row-read-toggle read-toggle" data-read-toggle aria-pressed="false" title="切换已读状态">
+      <span data-read-toggle-label>标为已读</span>
+    </button>
+  </div>
+  <span class="row-read-badge hidden" data-read-badge>已读</span>
+</article>
+
+<style>
+  .library-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 124px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    min-height: 116px;
+    padding: 15px 16px;
+    border: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-radius: 4px 17px 17px 4px;
+    background: rgba(251, 248, 241, 0.8);
+    box-shadow: 0 8px 26px rgba(var(--pd-ink-rgb), 0.04);
+    transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  }
+  .library-row:hover {
+    border-color: rgba(var(--pd-accent-rgb), 0.25);
+    background: rgba(255, 253, 248, 0.97);
+    box-shadow: 0 13px 34px rgba(var(--pd-ink-rgb), 0.07);
+  }
+  .row-cover {
+    width: 124px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 11px;
+    background: #e8e5de;
+  }
+  .row-cover img { width: 100%; height: 100%; object-fit: cover; }
+  .row-cover-fallback {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: linear-gradient(135deg, #e7ece7, #eee7dc);
+  }
+  .row-cover-fallback span { width: 4px; border-radius: 999px; background: #668078; }
+  .row-cover-fallback span:nth-child(1) { height: 17px; }
+  .row-cover-fallback span:nth-child(2) { height: 30px; background: #b45d4d; }
+  .row-cover-fallback span:nth-child(3) { height: 22px; }
+  .row-content { min-width: 0; }
+  .row-eyebrow {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    color: #7a858b;
+    font-size: 0.67rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-source { display: inline-flex; min-width: 0; align-items: center; gap: 5px; overflow: hidden; color: #66747c; font-weight: 700; text-decoration: none; text-overflow: ellipsis; }
+  .row-source:hover { color: var(--pd-blue); }
+  .row-source > span { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: var(--source-color); }
+  .row-title {
+    margin: 7px 0 8px;
+    overflow: hidden;
+    color: var(--pd-ink);
+    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.012em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .row-title a { color: inherit; text-decoration: none; }
+  .row-title a:hover { color: var(--pd-blue); }
+  .row-details { display: flex; min-width: 0; align-items: center; gap: 12px; overflow: hidden; color: #7b858b; font-size: 0.69rem; white-space: nowrap; }
+  .row-details a { color: #687980; text-decoration: none; }
+  .row-details a:hover { color: var(--pd-blue); }
+  .row-actions { display: flex; min-width: 174px; align-items: flex-end; flex-direction: column; gap: 7px; }
+  .row-formats { display: flex; align-items: center; justify-content: flex-end; gap: 6px; }
+  .row-action {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 5px;
+    padding: 0 11px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 750;
+    text-decoration: none;
+  }
+  .row-action-primary { color: white; background: var(--pd-blue); }
+  .row-action-primary:hover { background: #294f49; }
+  .row-action-secondary { color: #794c40; background: #f3e8e1; }
+  .row-action-secondary:hover { background: #ecddd4; }
+  .row-status { padding: 6px 9px; border-radius: 999px; color: #8a8580; background: #f1efeb; font-size: 0.68rem; }
+  .row-read-toggle {
+    min-height: 44px;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 8px;
+    color: #7b858b;
+    background: transparent;
+    font-size: 0.65rem;
+    cursor: pointer;
+  }
+  .row-read-toggle:hover { color: var(--pd-ink); background: rgba(var(--pd-ink-rgb), 0.055); }
+  .row-read-badge { position: absolute; top: 8px; right: 9px; color: #617078; font-size: 0.6rem; font-weight: 750; }
+  @media (max-width: 760px) {
+    .library-row { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 13px; }
+    .row-cover { width: 96px; }
+    .row-actions { grid-column: 1 / -1; width: 100%; min-width: 0; align-items: center; justify-content: space-between; flex-direction: row; padding-top: 2px; }
+    .row-title { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .row-read-badge { top: auto; right: 15px; bottom: 20px; }
+  }
+  @media (max-width: 430px) {
+    .library-row { grid-template-columns: 74px minmax(0, 1fr); }
+    .row-cover { width: 74px; }
+    .row-details { gap: 7px; }
+    .row-details a { display: none; }
+    .row-action { min-height: 44px; }
+  }
+</style>
