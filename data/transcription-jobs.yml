@@ -19898,3 +19898,88 @@ jobs:
     submitted_at: 2026-08-29T18:13:19.016Z
     updated_at: 2026-08-29T18:18:39.893Z
     completed_at: 2026-08-29T18:18:39.893Z
+  - key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z:chunk:0
+    parent_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    attempt_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z
+    provider: mimo
+    id: d02867bd-8e0e-42f1-a993-e274fb32f405
+    source: latepost
+    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    task_id: 32d2cbad-6030-435d-80b6-0ecf2178e781_db183da856e84d1184f79c22ba717fb1
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-30T18:13:20.820Z
+    updated_at: 2026-08-30T18:14:45.547Z
+    completed_at: 2026-08-30T18:14:45.547Z
+  - key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z:chunk:1
+    parent_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    attempt_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z
+    provider: mimo
+    id: d02867bd-8e0e-42f1-a993-e274fb32f405
+    source: latepost
+    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    task_id: 4129599f-d5b6-4366-9ff9-5ae21ebb3693_70f6bd6ad08c4c9dac91d2953af49c5d
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-30T18:13:20.820Z
+    updated_at: 2026-08-30T18:15:40.211Z
+    completed_at: 2026-08-30T18:15:40.211Z
+  - key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z:chunk:2
+    parent_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    attempt_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z
+    provider: mimo
+    id: d02867bd-8e0e-42f1-a993-e274fb32f405
+    source: latepost
+    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    task_id: 09902840-80c9-43d0-b904-096941675b49_2874e50a80fb4c67a2007ae153000be6
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-30T18:13:20.820Z
+    updated_at: 2026-08-30T18:16:22.110Z
+    completed_at: 2026-08-30T18:16:22.110Z
+  - key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z:chunk:3
+    parent_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    attempt_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z
+    provider: mimo
+    id: d02867bd-8e0e-42f1-a993-e274fb32f405
+    source: latepost
+    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    task_id: 14c032ab-678f-4bff-8b88-6cb6a85cdcd9_cdb5287477794b0fbb3dc8c453c8d152
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-30T18:13:20.820Z
+    updated_at: 2026-08-30T18:17:07.562Z
+    completed_at: 2026-08-30T18:17:07.562Z
+  - key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z:chunk:4
+    parent_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    attempt_key: latepost:d02867bd-8e0e-42f1-a993-e274fb32f405:20260426:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3:mimo:2026-08-30T18:13:20.820Z
+    provider: mimo
+    id: d02867bd-8e0e-42f1-a993-e274fb32f405
+    source: latepost
+    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
+    task_id: 3ec832d9-ae86-4c46-9539-91e421b5012c_0eed0ad0738346458c82bb7dce208f97
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-08-30T18:13:20.820Z
+    updated_at: 2026-08-30T18:18:23.832Z
+    completed_at: 2026-08-30T18:18:23.832Z

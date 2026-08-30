@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>批量生素材、模型筛网红 —— 与飞书深诺沈晨岗聊 AI 时代的出海营销</title>
+<style data-poddeck-theme>
+:root {
+  color-scheme: light;
+  --pd-ink: #26322f;
+  --pd-muted: #68736f;
+  --pd-paper: #fbf8f1;
+  --pd-canvas: #eee8dc;
+  --pd-line: #d7cec0;
+  --pd-blue: #355f58;
+  --pd-green: #557461;
+  --pd-amber: #aa5143;
+  --pd-red: #a34742;
+  --pd-purple: #75667b;
+  --pd-yellow: #a9864d;
+  --pd-shadow: 0 24px 70px rgba(38, 50, 47, 0.1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--pd-canvas);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 !important;
+  color: var(--pd-ink);
+  background:
+    radial-gradient(circle at 92% 5%, rgba(53, 95, 88, 0.11), transparent 25rem),
+    radial-gradient(circle at 8% 22%, rgba(170, 81, 67, 0.045), transparent 22rem),
+    repeating-linear-gradient(90deg, rgba(38, 50, 47, 0.012) 0 1px, transparent 1px 7px),
+    linear-gradient(180deg, #f7f2e9 0%, var(--pd-canvas) 100%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 1.85;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.poddeck-home {
+  position: fixed;
+  z-index: 20;
+  top: 18px;
+  left: 20px;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 12px 12px 3px;
+  color: var(--pd-ink);
+  background: rgba(251, 248, 241, 0.9);
+  box-shadow: 0 8px 28px rgba(38, 50, 47, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.poddeck-home svg { width: 16px; height: 16px; }
+.poddeck-home-lockup { display: inline-flex; align-items: baseline; gap: 6px; }
+.poddeck-home-lockup strong { color: inherit; font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif; font-size: 14px; }
+.poddeck-home-lockup small { color: var(--pd-muted); font-size: 8px; font-weight: 750; letter-spacing: 0.14em; }
+.poddeck-home:hover { border-color: rgba(53, 95, 88, 0.42); color: var(--pd-blue); background: #fffdf8; }
+.poddeck-home:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+
+.poddeck-reading-progress {
+  position: fixed;
+  z-index: 40;
+  inset: 0 0 auto;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(38, 50, 47, 0.06);
+}
+
+.poddeck-reading-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--pd-amber), #bd8063 45%, var(--pd-blue));
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.poddeck-to-top {
+  position: fixed;
+  z-index: 22;
+  right: 22px;
+  bottom: 22px;
+  display: inline-grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(38, 50, 47, 0.13);
+  border-radius: 50%;
+  color: var(--pd-ink);
+  background: rgba(251, 248, 241, 0.92);
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.11);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.poddeck-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.poddeck-to-top:hover { border-color: rgba(53, 95, 88, 0.38); color: var(--pd-blue); }
+.poddeck-to-top:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.poddeck-to-top svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.poddeck-article {
+  width: min(100% - 40px, 780px);
+  max-width: 780px !important;
+  margin: 28px auto 56px !important;
+  padding: clamp(36px, 6vw, 72px) clamp(24px, 6vw, 68px) 72px !important;
+  border: 1px solid rgba(38, 50, 47, 0.09);
+  border-radius: 4px 24px 24px 4px;
+  background: rgba(255, 252, 246, 0.95) !important;
+  box-shadow: var(--pd-shadow);
+}
+
+.poddeck-article > header {
+  position: relative;
+  margin: 0 0 52px !important;
+  padding: 0 0 28px;
+  border-bottom: 1px solid var(--pd-line);
+}
+
+.poddeck-article > header::before {
+  display: block;
+  width: 52px;
+  height: 5px;
+  margin-bottom: 22px;
+  border-radius: 0;
+  content: "";
+  background: linear-gradient(90deg, var(--pd-amber), #bf745f);
+}
+
+h1, h2, h3 {
+  color: var(--pd-ink) !important;
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 18em;
+  margin: 0 0 16px !important;
+  font-size: clamp(2.15rem, 6vw, 3.35rem) !important;
+  font-weight: 700;
+  line-height: 1.13 !important;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin: 58px 0 20px !important;
+  padding: 0 0 11px !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--pd-line) !important;
+  font-size: clamp(1.5rem, 3.2vw, 1.88rem) !important;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+h2::after {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  content: "";
+  background: var(--pd-amber);
+}
+
+h3 {
+  margin: 34px 0 12px !important;
+  font-size: 1.2rem !important;
+  line-height: 1.4;
+}
+
+p { margin: 0 0 1.1em !important; }
+
+strong { color: #213b35; font-weight: 720; }
+
+a { color: var(--pd-blue); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { color: #294d47; }
+a:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.25); outline-offset: 3px; border-radius: 3px; }
+
+.meta,
+.byline,
+.subtitle {
+  color: var(--pd-muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.7;
+}
+
+.tag,
+.label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  margin: 3px 5px 3px 0 !important;
+  padding: 3px 10px !important;
+  border: 1px solid #d9d7d0;
+  border-radius: 999px !important;
+  color: #55635e !important;
+  background: #f1ece3 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem !important;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.cards,
+.topic-cards,
+.card-grid,
+.overview,
+.stat-grid,
+.compare {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin: 24px 0 38px !important;
+}
+
+.card,
+.topic-card,
+.overview-card,
+.stat-card,
+.data-card,
+.num-card,
+.info-box,
+.highlight-box,
+.insight-box,
+.compare > div {
+  --card-accent: var(--pd-blue);
+  position: relative;
+  min-width: 0;
+  padding: 18px 18px 17px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 14px !important;
+  color: var(--pd-ink) !important;
+  background: #eef3ef !important;
+  box-shadow: 0 8px 24px rgba(38, 50, 47, 0.05);
+  font-size: 0.86rem !important;
+  line-height: 1.65 !important;
+}
+
+.card strong,
+.topic-card strong,
+.overview-card strong,
+.stat-card strong,
+.data-card strong,
+.num-card strong,
+.info-box strong,
+.highlight-box strong,
+.insight-box strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--pd-ink) !important;
+  font-size: 0.95rem;
+}
+
+.card span,
+.topic-card span,
+.overview-card span,
+.desc,
+.text,
+.gl { color: #53645e !important; }
+
+.card-blue, .c-blue, .i-blue, .q-blue, .quote-blue, .blue { --card-accent: var(--pd-blue); }
+.card-green, .c-green, .i-green, .q-green, .quote-green, .green { --card-accent: var(--pd-green); }
+.card-orange, .c-orange, .i-orange, .q-orange, .quote-orange, .orange { --card-accent: var(--pd-amber); }
+.card-red, .c-red, .i-red, .q-red, .quote-red, .red { --card-accent: var(--pd-red); }
+.card-purple, .c-purple, .i-purple, .q-purple, .quote-purple, .purple { --card-accent: var(--pd-purple); }
+.card-yellow, .c-yellow, .i-yellow, .q-yellow, .quote-yellow, .yellow { --card-accent: var(--pd-yellow); }
+
+.card-green, .c-green, .i-green { background: #f0f5f1 !important; }
+.card-orange, .c-orange, .i-orange { background: #faf2e9 !important; }
+.card-red, .c-red, .i-red { background: #f9eeee !important; }
+.card-purple, .c-purple, .i-purple { background: #f4f1f6 !important; }
+.card-yellow, .c-yellow, .i-yellow { background: #faf6e9 !important; }
+
+blockquote,
+.quote,
+.quote-block,
+.quote-card,
+.quote-item,
+.q {
+  --card-accent: var(--pd-blue);
+  position: relative;
+  margin: 28px 0 !important;
+  padding: 22px 24px 20px 28px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 0 16px 16px 0 !important;
+  color: #354d47 !important;
+  background: #eef3ef !important;
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.055);
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  font-size: 1.06rem !important;
+  font-style: normal !important;
+  line-height: 1.75 !important;
+}
+
+blockquote::before,
+.quote-block::before,
+.quote-card::before,
+.quote-item::before {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  content: "“";
+  color: var(--card-accent);
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  opacity: 0.32;
+}
+
+blockquote.red, .quote-red, .q-red { --card-accent: var(--pd-red); background: #f9eeee !important; }
+blockquote.green, .quote-green, .q-green { --card-accent: var(--pd-green); background: #f0f5f1 !important; }
+blockquote.orange, .quote-orange, .q-orange { --card-accent: var(--pd-amber); background: #faf2e9 !important; }
+blockquote.purple, .quote-purple, .q-purple { --card-accent: var(--pd-purple); background: #f4f1f6 !important; }
+blockquote.yellow, .quote-yellow, .q-yellow { --card-accent: var(--pd-yellow); background: #faf6e9 !important; }
+
+.attr,
+.attribution,
+.q-attr,
+.src,
+.from,
+.context,
+.ctx {
+  display: block;
+  margin-top: 10px !important;
+  color: var(--pd-muted) !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem !important;
+  font-style: normal !important;
+  line-height: 1.55;
+}
+
+.number,
+.num,
+.stat-num,
+.value {
+  color: var(--pd-blue) !important;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 1.75rem !important;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.gloss,
+.note {
+  margin: 24px 0 !important;
+  padding: 14px 16px !important;
+  border-left: 3px solid var(--pd-amber);
+  border-radius: 0 10px 10px 0;
+  color: #5c5850 !important;
+  background: #f5efe5 !important;
+  font-size: 0.86rem !important;
+}
+
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 0.45em; }
+hr, .divider { height: 1px; margin: 38px 0; border: 0; background: var(--pd-line); }
+
+footer {
+  margin-top: 58px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid var(--pd-line) !important;
+  color: var(--pd-muted) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.7;
+  text-align: left !important;
+}
+
+.poddeck-toc {
+  position: fixed;
+  z-index: 18;
+  top: 90px;
+  left: calc(50% + 430px);
+  width: min(230px, calc(50vw - 470px));
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+  padding: 16px 14px 16px 16px;
+  border-left: 1px solid rgba(38, 50, 47, 0.12);
+  color: var(--pd-muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  scrollbar-width: thin;
+}
+
+.poddeck-toc-title {
+  margin-bottom: 10px;
+  color: #75817b;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.poddeck-toc ol { margin: 0; padding: 0; list-style: none; }
+.poddeck-toc li { margin: 0; }
+.poddeck-toc a {
+  display: block;
+  overflow: hidden;
+  padding: 5px 8px;
+  border-radius: 7px;
+  color: #6f7c76;
+  font-size: 0.69rem;
+  line-height: 1.45;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.poddeck-toc a:hover { color: var(--pd-blue); background: rgba(53, 95, 88, 0.06); }
+.poddeck-toc a[aria-current="location"] { color: var(--pd-ink); background: rgba(53, 95, 88, 0.09); font-weight: 700; }
+
+@media (max-width: 700px) {
+  body { font-size: 16px; line-height: 1.78; }
+  .poddeck-home { position: static; margin: 12px 14px 0; }
+  .poddeck-article {
+    width: calc(100% - 20px);
+    margin: 10px auto 24px !important;
+    padding: 34px 20px 44px !important;
+    border-radius: 18px;
+  }
+  .poddeck-article > header { margin-bottom: 38px !important; }
+  .cards, .topic-cards, .card-grid, .overview, .stat-grid, .compare { grid-template-columns: 1fr !important; }
+  h2 { margin-top: 46px !important; }
+  blockquote, .quote, .quote-block, .quote-card, .quote-item, .q { padding: 20px 18px 18px 22px !important; }
+}
+
+@media (max-width: 1280px) {
+  .poddeck-toc { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+@media print {
+  body { background: #fff; }
+  .poddeck-home, .poddeck-reading-progress, .poddeck-to-top, .poddeck-toc { display: none; }
+  .poddeck-article { width: 100%; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<a class="poddeck-home" href="../../" title="返回声笺">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/>
+  </svg>
+  <span class="poddeck-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
+</a>
+
+<article class="poddeck-article">
+
+<header>
+  <div class="meta">晚点聊 LateTalk · 第 162 期 · 2026 年 4 月 · 时长 1 小时 11 分</div>
+  <h1>批量生素材、模型筛网红</h1>
+  <div class="subtitle">与飞书深诺 Meetsocial 沈晨岗聊 AI 时代的出海营销</div>
+  <div class="byline">嘉宾：沈晨岗（Charles）· 飞书深诺创始人兼 CEO ｜ 主持：洪浩 ｜ 本期节目由飞书深诺特别支持播出</div>
+</header>
+
+<div class="cards">
+
+<div class="card c-blue">
+<strong>出海进入 2.0</strong>
+<span>2025 年起，中国出海主流从"卖货"转向产品与品牌，竞争沿价值链向上攀升。</span>
+</div>
+
+<div class="card c-green">
+<strong>DMES 模型</strong>
+<span>数字化能力 × 心智影响力 × 产品创新力 × 商业转化力，D 是所有维度的乘数。</span>
+</div>
+
+<div class="card c-orange">
+<strong>AI 的共识与非共识</strong>
+<span>"AI 很重要，一定要马上用"是共识；"AI 到底能解决什么问题"没有人说得清。</span>
+</div>
+
+<div class="card c-red">
+<strong>翻车与爆量并存</strong>
+<span>麦当劳荷兰 AI 广告被骂到下架；短剧客户一周收货 6000 条创意，广告消耗翻到一天十几万美金。</span>
+</div>
+
+<div class="card c-purple">
+<strong>对 AI Agent 保持克制</strong>
+<span>先内部人机协同，能对应明确商业结果，才谈交付给客户。</span>
+</div>
+
+<div class="card c-yellow">
+<strong>数字化原生的护城河</strong>
+<span>2015 年就建数据仓库的营销公司，今天在数据上叠加 AI；传统广告集团却要先打碎重组。</span>
+</div>
+
+</div>
+
+<h2>出海 1.0 → 2.0：沿价值阶梯向上攀升</h2>
+
+<p>沈晨岗把出海的内容分成四个阶段：商品、产品、品牌、企业。最早的商品阶段就是把货卖出去；产品阶段，功能之外开始有综合价值；品牌阶段，产品给用户带来身份与情绪价值，影响心智；而最终的竞争状态，是出海一家有灵魂、有生命力的企业。用手机来理解最直观——华强北组件组合出来的手机是商品，贴个白牌白标就能卖更多的是产品，像小米那样把产品与自己的精神、研发能力结合起来的才是品牌，而今天小米的全球化，已经是企业的全球化。</p>
+
+<p>公司成立的前十年（约 2013/14 年起），主流是商品出海，靠流量和价格卖货：当天回本、一周回本、一个月回本，就可以大量地卖。沈晨岗的判断是，2025 年起主流进入产品到品牌的阶段——"如果前面10年是商品到产品，现在是产品到品牌会更多，占的比例会更大"。经营的重心从"销"转向"营"，在产品和品牌上花更多时间打造持续竞争力。</p>
+
+<p>为什么是 2025 年？沈晨岗强调这不是一夜之间的变化，而是"量变到质变"的过程。流量成本上升、同质化竞争加剧，最初靠价格获得的竞争力越来越弱，领先的、有危机感的企业开始意识到，要往产品功能、设计、品牌上寻找更高阶的竞争力。同时媒体对商品的合规与质量要求不断上升，把靠偷工减料、违规擦边"下卷"的路堵得越来越死——"很多企业就只能去做那些难而正确的事情"。</p>
+
+<blockquote class="blue">
+"有典型客户一年销售额几亿甚至超过 10 亿、平台上有几千万海外用户，成本却越来越高、利润越来越少——这条路他已经看得到头了。"
+<span class="attr">沈晨岗 · 转型需要产品设计与用户运营的长期铺垫，前面少做的功课这时都要还</span>
+</blockquote>
+
+<h2>两种样本：Anker 的先见之明与"二代"的用户视角</h2>
+
+<p>Anker 是沈晨岗反复提到的转型样本。它最初就是商品销售——创始团队没有更多资源，但一边积累销售，一边有意识地打造产品能力和品牌能力。做充电宝、充电线赚到的收入，被持续投入研发：充电线怎么做得更好、充电宝效能怎么提升、接头工艺怎么改进。营销上也在建立品牌，"如何让消费者真的是喜欢你，记住你，然后同时再逐步再爱上你"，这是一个品牌逐渐建立的过程。</p>
+
+<p>沈晨岗说，这类企业的认知从一开始就处于比较高的位置："即使是在做第一步的时候，他其实已经在想我什么时候可以为第二步做一些准备，做一些铺垫。"与"一代"相对的，是出海"二代"——比如美特斯邦威的公子，重新创立出海品牌，做法与上一代很不一样。一代企业在生产组织、市场判断、运营方式上有很强的惯性；二代则更懂得海外消费者，而商品到产品、产品到品牌的关键转折，恰恰是理解用户需要什么。</p>
+
+<blockquote class="green">
+"一个是我生产出来想要卖掉，第二个是说，我的用户需要什么产品，我来生产。"
+<span class="attr">沈晨岗 · 出发点的转变：从生产者视角转向用户视角</span>
+</blockquote>
+
+<p>Anker 每年做大量的用户调研，小米也做大量的用户调研。飞书深诺正在帮客户做数字化的全球调研，让产品迭代始终走在竞争对手前面——这是 1.0 到 2.0 之间很重要的一个点。</p>
+
+<h2>DMES 模型与数字化的两个层面</h2>
+
+<p>飞书深诺发布的 MeetBrand 报告提出了 DMES 模型，用来衡量出海品牌的发展潜力：D 是 Digital Competence 数字化能力，M 是 Mental Dominance 心智影响力，E 是 Product Evolution 产品创新力，S 是 Sales Performance 商业转化力。沈晨岗解释，这个排序一方面是因为叫起来顺口，更关键的是它是"商品到产品到品牌到企业"四阶段的反向描述：S 对应销售，E 对应产品迭代，M 对应影响用户心智。</p>
+
+<p>D 之所以被单独拿出来，是因为它不是并列的第四项，而是一个贯穿所有能力的乘数——"它是一个 multiple，就是 multi，它是一个乘以各个维度的加成的一个系数"。销售过程要数字化，产品研发迭代要数字化，影响用户心智要数字化，整个企业运营都要数字化。欧莱雅是沈晨岗举的例子：渠道销售、产品迭代、用户心智都很强，但大家看到的是它最近三五年在数字化上投入巨量资金做全业务流程转型——所有表象能力背后的支撑，正是 D。</p>
+
+<p>数字化落地在两个层面。第一层是现有运营框架下的效率：星巴克接小程序、电子支付，把点单、交易、会员档案与消费历史整合在一起，原本冗长复杂的团队工作被提升到新高度；供应链、商品交付、商品设计都是如此。第二层是决策的效率与质量：星巴克的供应链决策、美团的骑手分配、运力、时间与激励调度，都是大量快速、本地化的决策，可以通过数字化反馈来验证决策对不对、有效不有效，然后持续调整。</p>
+
+<blockquote class="yellow">
+"如果两家企业在同一个层面上竞争，如果我可以比对手对市场的反应、对消费者的反应更快……那我就是竞争胜利。"
+<span class="attr">沈晨岗 · 数字化在竞争层面持续拉开的差距</span>
+</blockquote>
+
+<h2>AI 的共识与非共识</h2>
+
+<p>沈晨岗把 AI 时代的行业心态总结成一个共识和一个非共识。最大的共识是：AI 很重要，一定要马上用。最大的非共识是：AI 到底能解决什么问题？每个人心里的标准差异很大，很多人自己也不清楚。他在群里看到一幅漫画，画的就是这种状态——AI 重不重要？很重要。能解决什么问题呢？不知道。什么时候上 AI 呢？现在。</p>
+
+<blockquote class="blue">
+"AI很重要，大家说AI重不重要？大家说很重要。然后AI能解决什么问题呢？不知道。然后呢什么时候上AI呢？现在。"
+<span class="attr">沈晨岗 · 对 AI 应用现状最形象的描述</span>
+</blockquote>
+
+<p>他认为尝试可以做，但要知道尝试也有成本。关键是把 AI 纳入目标体系：我要达到什么目标、预期什么产出，AI 在里面能做什么，AI 与人怎么配合。如果只是"为了做而做"，做出来的东西没有人买单，投入产出就是问题——AI 的价值必须与商业目标结合，否则无法商业化地体现出来。</p>
+
+<h2>AI 的边界：麦当劳翻车、客服与自动驾驶</h2>
+
+<p>去年麦当劳在荷兰上线了一支几乎完全由 AI 生成的节日广告，迅速遭到大量吐槽并最终下架。争议不只是画面粗糙，更在于广告传达出的气质被认为是廉价的、偷懒的、没有诚意的。沈晨岗认为这是个典型的不匹配案例——"AI能做的事情和他希望AI要做到的东西之间产生巨大的差距"。AI 出图出视频很容易，但商业图片和视频有商业目标：让人喜欢、点赞、买、注册还是下单？为不同商业目标做创意的答案，行业还没有很好地回答。</p>
+
+<p>同样的边界在客服场景里更明显。简单的问题，AI 能很好甚至更好地回答；但涉及更专业的判断，比如客户要不要在这个媒体上花钱，AI 只要答错一次，影响就是致命的。沈晨岗把它比作自动驾驶：AI 的判断出错概率可能比人小很多，但仍然不能合规上路，因为只要出一次问题就是大问题，而且"背后还有一个谁来对这个商业结果负责的问题"。容错空间小的场景，不能直接让 AI 决策。</p>
+
+<p>客户最大的幻觉也源于此：以为接上一个"能量块"，收入就能提升百分之多少。沈晨岗说，这是一个比较危险的幻觉——"客户就想，我用一个AI，我接了一个能量块……它有个magic，然后我的收入能提升百分之多少？"他给不出通用的 ROI 承诺：如果能做通用承诺，那一定不是在很高价值的量级上解决问题。正确的做法是把复杂问题逐层结构下去，找到 AI 能力能匹配的环节，多个 agent 组合起来逐步深入业务——不可能一蹴而就。</p>
+
+<h2>从 ChatGPT 到 Claude Code：能力的渐进释放</h2>
+
+<p>在沈晨岗的观察里，AI 对行业的影响不是突变，而是一层一层递进的。影响最大的是 ChatGPT 出现的那一刻——不是因为它马上改变了哪个行业，而是它把知识通用化以后，变成了一种极其高效、而且是个性化的知识分发能力，这种能力以前不可想象。客服是最早被改变的场景：成本高、对知识或能力的要求相对不高，对话式 AI 自然延伸过去。</p>
+
+<p>这两年的新变量是 AI coding。沈晨岗认为 Anthropic 做的 Claude Code 是革命性的变化，是沿着 AI 发展方向的一次跃升式能力提升——"原来要100个工程师写代码的能力，它可能AI就能把这个事情在很短的时间内做好"。全球领先科技企业的编程工作已经大部分由 AI Coding 承接，人在上面做审核、校验和管理。能力的释放与延伸是渐进的：即便潜力巨大，落地到商业场景仍需要一个过程。</p>
+
+<h2>内容生成先行，策略决策在后</h2>
+
+<p>在营销行业内部，AI 的第一波影响落在内容生成：创意、文字、图片、视频——原本高成本的制作场景变得成本更低、门槛更低、效率更高，还能同时交付很多。第二波是数据驱动的策略层面，这部分还在演进和打磨中。沈晨岗把 AI 分成两层：提高执行速度与执行量的层面，AI 像程序化代码一样快；而复杂、高价值的决策判断，难度要大得多。</p>
+
+<p>一个营销运营的优化师，每天要面对成百上千个决策点：这条广告还要不要留着？要不要调整 Meta 的出价？要不要减少谷歌的预算？要不要增加日本市场的投放？这些决策累积起来影响最终结果，而花钱的商业决策容错空间很小，目前大部分仍依赖人。AI 的能力正在从后端逐渐走向前端——就像刚毕业的博士也要跟着师傅学，"为什么这样调、为什么这样投"，积累了经验认知之后才能独立负责决策。直接调一个大模型就让它做决策，是做不到的，还要在业务环境里构建决策模型，那本身就是一个学习和迭代的过程。</p>
+
+<h2>硅谷见闻与后发优势</h2>
+
+<p>沈晨岗在硅谷待了几个星期，见了 Meta、Google、英伟达和多家创业公司。硅谷对 AI 的热情非常高——"咖啡馆里面都是在讲AI的项目"，大量大厂出来的人创业是普遍现象。整体上硅谷更重视基础模型（包括具身智能的基础模型）研究，而中国在业务应用的速度和迭代程度上更快：应用场景更多，To C 和 To B 都能更快落地产品。</p>
+
+<p>他把这归因于"后发优势"：先发者的业务流程早已固定，调整非常困难；我们的流程没那么固化，调整反而更容易。一个例子是美团：它有一套很强的餐饮管理系统，希望打入美国市场，但美国餐饮店的结算和管理系统已有沉淀，上下游嵌套在一起，"他明明知道是好的，但他改变的成本、调整成本巨大"，大家没有改变的动力。所以应用场景会先在中国推进出来，再向全球扩散——"包袱更轻，同时数字化的原生能力和意识会更强"，这是一个用好 AI 的巨大机会窗口。</p>
+
+<h2>数字化原生 vs 传统广告集团</h2>
+
+<p>国际营销公司有非常强的历史运营惯性，组织上和意识上的调整难度都很大。而飞书深诺从成立的第一天就是数字化的、全球化的——2015 年就建了第一代数据仓库，用惠普和 Tableau 的系统，当时投了一两百万人民币（在当时是巨款）。所有媒体、所有创意广告、所有广告运营，都数字化沉淀在一个系统里。</p>
+
+<p>这对传统广告集团是难以克服的困难：全球最大的广告公司，数据分散在各个旗下公司，客户信息互不相通、互相竞争，表面的整合并没有数字化的连接。而用 AI 的重要前提就是有数据——要给客户做预算调整建议，需要知道历史钱花在哪、哪些花得好、哪些花得不好。飞书深诺的情况是：数据一直在，缺的是计算与分析能力，AI 恰好补上了这一块。"我们是在已有的基础上去叠加AI的能力。对美国的很多产业企业来讲，它是需要先打碎了重组自己才能用好AI。但这个对他们来讲几乎是不可能完成的任务。"</p>
+
+<blockquote class="red">
+"这个就像当年诺基亚为什么在智能手机上看着自己挂了，它明明知道这个地方方向，但它转不过来。"
+<span class="attr">沈晨岗 · 每一种新的技术流程，都会让旧的流程惯性变成转身的阻碍</span>
+</blockquote>
+
+<p>所以 AI 出现的是一个行业重组的机会窗口：原生数字化能力更强、历史包袱更少的企业，有机会影响、塑造、改变这个行业，形成新的结构。</p>
+
+<h2>对 AI Agent 的克制</h2>
+
+<p>行业里很多出海营销平台在做自己的 AI 甚至 Agent 产品，飞书深诺却显得谨慎克制。沈晨岗在讨论场合直接提问：能不能定义一下什么叫 AI Agent？"其实就现在我认为没有人能说的清楚。"市场上大部分所谓 Agent，都很难把自己和某个明确的工作目标、商业结果对应起来——"做一个市场调研"的结果是什么？怎样算合格？怎样算为客户可用？这些衡量既不精确也不量化。</p>
+
+<p>因此飞书深诺的大量 AI Agent 在内部使用，与人类专家协同：专家通过使用 Agent，把结果变成用户需要的、明确的、可交付的价值。至于对外宣称 Agent 能给客户创造多少价值，沈晨岗认为"那些都是不负责任的说法"——要么是给客户做测试、玩一玩，真正创造价值的交付，要有更严谨、更负责的态度。</p>
+
+<h2>创意 agentic flow：一周 6000 条与质量杠杆</h2>
+
+<p>在内部工作流里，创意的生产已经是一个 agentic flow。一个大任务被拆成很多小任务节点和小 agent：理解客户需求的 agent、规划创意策略的 agent、制作图片和视频的不同 agent、质量检查的 agent，由产品经理或项目经理调度，最后交付客户想要的稿。客户额外要求（比如 logo 放在什么位置）也被变成标准作业流程，嵌入创意过程。产能的跃升是惊人的："我原来一天可能是人一天只做五个到十个这样的创意，我现在可以几百个甚至上千个"——取决于需求的标准化和复杂程度。</p>
+
+<p>春节的短剧案例是最近最典型的例子：给一个做短剧的客户做视频剪辑创意，一个星期交付了 6000 条，客户的广告消耗从一天几千美金涨到一天十几万美金——广告花得越多，说明效果越好，才会持续投。而春节期间靠人加班，根本不可能完成这样的交付。整个流程被数字化管理，数据反馈给 agent 学习："有时候它不知道自己不知道对错，它需要人告诉它这样是对的"。</p>
+
+<p>产能上来之后，真正稀缺的是质量。"如果质量差百分之一，你最后的效果可能就会差百分之十以上"——创意的成本不只是制作成本，还包括为它花的投放成本，质量因此形成一个巨大的杠杆。而怎么定义"好创意"，恰恰是 AI 自己发展不出来的知识框架："它没办法自己来创造一个算法。这个算法是一定是人整理抽象整理出来，然后再交给AI。"让大模型打标，它可以打出成百上千个标签形容一张创意，但没有方法和逻辑描述"怎么做出一个好创意"，标签就没有意义。AI 沿着人给的知识框架迭代，因此"如何定义好创意"本身成了营销公司最值钱的资产之一。</p>
+
+<p>人才结构也随之变化。沈晨岗说，可商品化的知识不需要再思考——"当计算机出来的时候，很多人不去学那个什么几位数乘法"，因为这些知识已经变成工具化、外化的能力。桥梁工程师可能不知道怎么开根号，但知道用计算机能算出桥的承重，并在此基础上搭建更复杂的业务逻辑。会算多位乘法这类能力价值很低；人需要的是更上层的抽象思考能力。同时他提醒，AI 用得越多，人主动思考和判断的机会可能越少——新入行的人要主动积累传统工作经验来建立审美与判断。</p>
+
+<h2>护城河与未来五年</h2>
+
+<p>当被问到 AI 会不会让客户绕过服务商自己干，沈晨岗讲了两个层面。第一是能力复用：为 6000 条创意建立的 AI 基础设施，可以复用于十万家客户，成本分摊到每家都很低；企业自己做，等于独自负担全部成本，"他是算不过来账的"。第二是数据积累："我们每天有花费超过两千万美金的数据在我们的这个系统里面进行沉淀和学习"——单个企业无法达到的学习速度与质量。此外，飞书深诺还有一个独立子品牌蜜雪科技（蜜雪 Experience），帮企业建立网站、用户数据收集系统、数据管理系统、运营管理系统。很多客户广告效果不好，其实是数据地基的问题："他的网站上的数据收集的都有错，那他怎么会做很好的广告呢？"广告优化上提高 1%、2% 很难，数字化能力简单调整一下可能就提高 10%、20%——帮助客户做好他那部分，才能形成乘数效应，是相乘，不是相加。</p>
+
+<p>展望未来三到五年，沈晨岗看到三个方向。一是营销匹配效率持续提升，全球数字营销的增长率还会不断走高。二是营销的民主化：以前只有大企业做得起的 TVC 视频广告，现在几个人的小企业也能用 AI 低成本制作高品质创意，向全球适合的用户营销——门槛被极大降低。三是营销与商业数字化的连接越来越紧密，营销将等同于企业经营：比如为 Shein 做营销，广告投放的用户反馈会告诉它哪些产品受欢迎程度在上升、哪些在下降，再反馈给上游决定加单、减单、取消，与供应链、上游生产数字化连接在一起。</p>
+
+<blockquote class="green">
+"然后这里就形成了一个数字神经中枢的反馈系统。在这个反馈系统上面，作为这个企业整体，它是不是反应得更快、决策得更好，就构成了它在新的全球化竞争时代的一个竞争力。"
+<span class="attr">沈晨岗 · 用户看没看、喜不喜欢、点没点、买没买、复不复购，都发生在营销这个界面上</span>
+</blockquote>
+
+<p>沈晨岗说，战略上自己并不焦虑，焦虑在战术实现：让整个团队理解 AI 转变的意义和逻辑，改变已有的做法——"这个调整不是说你一个人可以完成的，需要是大家一个团队整个团队一起来进行这方面的调整"；但他同时觉得很有机会，因为"我们就觉得很难，其他人可能觉得更难"。最后，他给准备出海的创业者三句话：长期主义，眼光放远，同时平衡好眼前的第一步和第二步；从一开始就对数据技术有足够的重视——"到中后期阶段再发现问题再去补，你的成本是巨大的"；以及，选择一个好的合作伙伴，"现在已经不是一个一个小团队包打天下的这样子的一个状态"，合作是乘数效应。</p>
+
+<div class="cards">
+
+<div class="card c-blue">
+<strong>金句一</strong>
+<span>"AI很重要，大家说AI重不重要？大家说很重要。然后AI能解决什么问题呢？不知道。然后呢什么时候上AI呢？现在。"——全行业共识与非共识的写照</span>
+</div>
+
+<div class="card c-red">
+<strong>金句二</strong>
+<span>"如果质量差百分之一，你最后的效果可能就会差百分之十以上。"——创意质量是投放效果的杠杆</span>
+</div>
+
+<div class="card c-green">
+<strong>金句三</strong>
+<span>"我们一个星期给他做了六千个这样的创意……他的花费从一天几千美金到一天十几万美金。"——春节短剧案例</span>
+</div>
+
+<div class="card c-orange">
+<strong>金句四</strong>
+<span>"这个算法是一定是人整理抽象整理出来，然后再交给AI。"——AI 的边界：知识框架必须人来创造</span>
+</div>
+
+<div class="card c-purple">
+<strong>金句五</strong>
+<span>"我们每天有花费超过两千万美金的数据在我们的这个系统里面进行沉淀和学习。"——复用与数据是护城河</span>
+</div>
+
+<div class="card c-yellow">
+<strong>金句六</strong>
+<span>"你越AI化，数字化的沉淀会越多，你的迭代的速度和效率会更高，你的成本就会更低，你的量能获得更大，这就形成了正反馈。"</span>
+</div>
+
+</div>
+
+<footer>
+  <p>本文为「声笺 Resonote」基于《晚点聊 LateTalk》第 162 期整理的长文版本。原文出处：<a href="https://podcast.latepost.com/162">podcast.latepost.com/162</a> · 飞书深诺 Meetsocial · 嘉宾沈晨岗（Charles）。</p>
+  <p>所有引言均可在节目字幕中检索验证；「作者概括」以外的段落均为嘉宾原话整理。</p>
+</footer>
+
+</article>
+</body>
+</html>

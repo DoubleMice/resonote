@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-08-30T03:22:53.118Z
+refreshed_at: 2026-08-30T18:11:32.895Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 15
-done: 0
+done: 1
 pending: 0
-needs_transcript: 15
+needs_transcript: 14
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -119,8 +119,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-08-30T18:13:20.820Z
+    transcript_job_id: 32d2cbad-6030-435d-80b6-0ecf2178e781_db183da856e84d1184f79c22ba717fb1,4129599f-d5b6-4366-9ff9-5ae21ebb3693_70f6bd6ad08c4c9dac91d2953af49c5d,09902840-80c9-43d0-b904-096941675b49_2874e50a80fb4c67a2007ae153000be6,14c032ab-678f-4bff-8b88-6cb6a85cdcd9_cdb5287477794b0fbb3dc8c453c8d152,3ec832d9-ae86-4c46-9539-91e421b5012c_0eed0ad0738346458c82bb7dce208f97
+    transcript_completed_at: 2026-08-30T18:18:23.832Z
   - id: b573ae95-f9b3-4428-94e7-79d33418400b
     guid: b573ae95-f9b3-4428-94e7-79d33418400b
     title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
