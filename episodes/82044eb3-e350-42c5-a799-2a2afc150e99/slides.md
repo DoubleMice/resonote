@@ -1670,6 +1670,6 @@ Acquired · Formula 1 · Spring 2026
 
 <div class="mt-8 text-xs opacity-50">
 
-← PodDeck
+← 声笺 Resonote
 
 </div>

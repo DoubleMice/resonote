@@ -1883,7 +1883,7 @@ Forbes 估值 **130 亿美元**。2024 年营收 **12 亿美元**，营业利润
 
 <div class="mt-8 text-sm opacity-50">
 
-Acquired × PodDeck · 2026 年 1 月重制版
+Acquired × 声笺 Resonote · 2026 年 1 月重制版
 
 </div>
 

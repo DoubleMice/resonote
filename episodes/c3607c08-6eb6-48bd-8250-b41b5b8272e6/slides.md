@@ -972,5 +972,5 @@ layout: end
 </div>
 
 <div class="mt-8 text-xs opacity-40">
-本演示文稿由 PodDeck 自动生成 · 2026年6月
+本演示文稿由 声笺 Resonote 自动生成 · 2026年6月
 </div>

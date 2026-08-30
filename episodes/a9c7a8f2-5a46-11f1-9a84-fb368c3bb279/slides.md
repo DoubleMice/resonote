@@ -1086,5 +1086,5 @@ Bits + Bips · 2026年5月 · 嘉宾: Arjun Sethi
 </div>
 
 <div class="mt-8">
-  ← PodDeck
+  ← 声笺 Resonote
 </div>

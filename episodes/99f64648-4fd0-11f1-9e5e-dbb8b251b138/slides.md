@@ -974,5 +974,5 @@ Coinbase 与 Hyperliquid 的故事，是加密行业成熟化的一个缩影
 </div>
 
 <div class="mt-8 text-xs opacity-40">
-← 返回 PodDeck 浏览更多深度对谈解析
+← 返回 声笺 Resonote 浏览更多深度对谈解析
 </div>

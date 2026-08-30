@@ -1059,5 +1059,5 @@ Unchained 十周年特辑
 
 <div class="mt-8 text-xs opacity-40">
 — Laura Shin<br/>
-© 2026 PodDeck · 为深度内容重塑阅读体验
+© 2026 声笺 Resonote · 为深度内容重塑阅读体验
 </div>

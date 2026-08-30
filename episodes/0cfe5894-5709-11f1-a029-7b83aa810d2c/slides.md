@@ -19,7 +19,7 @@ Uneasy Money · Kane Work, Taylor Monahan & Luke Annette · 2026-05
 </div>
 
 <div class="mt-4 text-xs opacity-40">
-PodDeck · AI-generated visual summary
+声笺 Resonote · AI-generated visual summary
 </div>
 
 ---

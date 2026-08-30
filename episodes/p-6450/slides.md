@@ -22,7 +22,7 @@ Lex Fridman Podcast · 4h24m · May 2026
 </div>
 
 <div class="mt-10 text-xs opacity-40">
-← PodDeck
+← 声笺 Resonote
 </div>
 
 ---

@@ -1812,6 +1812,6 @@ AR 眼镜战争 · 代理式编程基础设施 · VC 的权力更替 · 苹果 A
 
 <div class="mt-6 text-xs opacity-50">
 
-← PodDeck
+← 声笺 Resonote
 
 </div>

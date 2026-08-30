@@ -1216,7 +1216,7 @@ layout: end
 
 <div class="mt-6">
 
-[返回 PodDeck](../../)
+[返回 声笺 Resonote](../../)
 
 </div>
 

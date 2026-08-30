@@ -1479,6 +1479,6 @@ layout: end
 
 <div class="mt-4 text-xs opacity-40">
 
-本演示文稿由 PodDeck 自动生成 · 2026-06
+本演示文稿由 声笺 Resonote 自动生成 · 2026-06
 
 </div>

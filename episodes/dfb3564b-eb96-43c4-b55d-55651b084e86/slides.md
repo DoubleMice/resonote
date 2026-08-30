@@ -1505,5 +1505,5 @@ TBPN · 2026年7月21日 · 2小时34分钟<br/>
 </div>
 
 <div class="mt-8 text-xs opacity-40">
-← PodDeck 返回主页
+← 声笺 Resonote 返回主页
 </div>

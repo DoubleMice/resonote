@@ -1506,7 +1506,7 @@ layout: end
 </div>
 
 <div class="text-sm opacity-50 mt-3">
-完整节目可在 TBPN 收听 · 图文版请访问 PodDeck
+完整节目可在 TBPN 收听 · 图文版请访问 声笺 Resonote
 </div>
 
 <div class="mt-8 text-sm italic opacity-60">

@@ -994,5 +994,5 @@ layout: end
 </div>
 
 <div class="mt-8 text-xs opacity-30">
-🤖 Generated with Claude Code · PodDeck
+🤖 Generated with Claude Code · 声笺 Resonote
 </div>

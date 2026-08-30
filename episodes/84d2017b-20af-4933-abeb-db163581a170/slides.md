@@ -1163,5 +1163,5 @@ layout: end
 </div>
 
 <div class="mt-6 text-xs opacity-40">
-返回 [PodDeck](/)
+返回 [声笺 Resonote](/)
 </div>

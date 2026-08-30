@@ -1405,6 +1405,6 @@ layout: end
 
 <div class="mt-8 text-xs opacity-40">
 
-PodDeck · 把长播客变成结构化演示文稿
+声笺 Resonote · 把长播客变成结构化演示文稿
 
 </div>

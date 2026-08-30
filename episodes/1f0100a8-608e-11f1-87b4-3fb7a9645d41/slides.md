@@ -822,5 +822,5 @@ layout: end
 </div>
 
 <div class="mt-6 text-xs opacity-40">
-← 返回 PodDeck 主站
+← 返回 声笺 Resonote 主站
 </div>

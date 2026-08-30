@@ -1402,5 +1402,5 @@ Acquired.fm · Season 13 · Episode 2
 
 <div class="text-xs opacity-40 mt-8">
 基于 Acquired 播客对 Costco 的深度分析生成<br/>
-🤖 生成工具：Claude Code · PodDeck
+🤖 生成工具：Claude Code · 声笺 Resonote
 </div>

@@ -1187,5 +1187,5 @@ layout: end
 </div>
 
 <div class="mt-4">
-  <a href="../../" class="text-xs opacity-40 hover:opacity-80 transition">← 返回 PodDeck</a>
+  <a href="../../" class="text-xs opacity-40 hover:opacity-80 transition">← 返回 声笺 Resonote</a>
 </div>

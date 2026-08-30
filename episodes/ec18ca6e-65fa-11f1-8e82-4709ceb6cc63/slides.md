@@ -22,7 +22,7 @@ Unchained Podcast · 2026 年 6 月
 </div>
 
 <div class="text-xs opacity-40 mt-12">
-← PodDeck
+← 声笺 Resonote
 </div>
 
 ---
@@ -1091,5 +1091,5 @@ layout: end
 
 <div class="mt-6 text-xs opacity-40">
 
-← PodDeck
+← 声笺 Resonote
 </div>

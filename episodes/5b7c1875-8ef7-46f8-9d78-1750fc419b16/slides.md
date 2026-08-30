@@ -1417,7 +1417,7 @@ layout: end
 </div>
 
 <div class="mt-8 text-xs opacity-50">
-PodDeck — AI 播客结构化演示
+声笺 Resonote — AI 播客结构化演示
 </div>
 
 </div>

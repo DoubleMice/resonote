@@ -1073,5 +1073,5 @@ Arthur Hayes on Unchained · 2026 年 5 月
 </div>
 
 <div class="mt-6 text-xs opacity-40">
-← PodDeck
+← 声笺 Resonote
 </div>

@@ -1325,5 +1325,5 @@ TBPN · 2026 年 5 月
 </div>
 
 <div class="text-sm opacity-50 mt-4">
-← PodDeck
+← 声笺 Resonote
 </div>

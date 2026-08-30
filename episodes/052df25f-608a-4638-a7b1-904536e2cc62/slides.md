@@ -1264,7 +1264,7 @@ Tyler Cowen 预测 AI 在宗教领域的影响将是**教派化（sect-like）**
 </div>
 
 <div class="mt-12 text-xs opacity-40">
-PodDeck · 结构化播客笔记 · 自动生成
+声笺 Resonote · 结构化播客笔记 · 自动生成
 </div>
 
 </div>

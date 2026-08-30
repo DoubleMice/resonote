@@ -1053,6 +1053,6 @@ John Gu · Flirting with Models S7E30 · 2026
 
 <div class="mt-6 text-sm opacity-60">
 
-← 返回 PodDeck 浏览更多深度访谈
+← 返回 声笺 Resonote 浏览更多深度访谈
 
 </div>
