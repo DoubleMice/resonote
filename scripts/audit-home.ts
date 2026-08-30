@@ -70,7 +70,13 @@ async function auditDesktop(page: Page) {
 
   page.on('pageerror', error => runtimeErrors.push(error.message))
   page.on('console', message => {
-    if (message.type() === 'error') runtimeErrors.push(message.text())
+    const text = message.text()
+    // Resource responses are checked below with their URL. Chromium's generic
+    // console line omits the URL and would otherwise make an external cover
+    // image failure indistinguishable from a broken first-party asset.
+    if (message.type() === 'error' && !text.startsWith('Failed to load resource:')) {
+      runtimeErrors.push(text)
+    }
   })
   page.on('response', response => {
     const responseUrl = new URL(response.url())
