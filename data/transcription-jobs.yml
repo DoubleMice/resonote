@@ -181,10 +181,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260522/03%3A52/33306d56-6f36-45a0-b054-7bb3648e6f19.json?Expires=1779479532&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=2FSHGSIZLSWNxwyU7mbyyvqS138%3D&response-content-disposition=attachment%3Bfilename%3D33306d56-6f36-45a0-b054-7bb3648e6f19.json
     completed_at: 2026-05-21T19:53:28.165Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
-      GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
-      FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2F\
+      jNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5j\
+      aGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
   - key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z:chunk:1
     parent_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3
     attempt_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z
@@ -203,10 +203,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260522/03%3A52/0c775fa1-56a4-40ad-b1bd-a125ae7d0e75.json?Expires=1779479533&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=Ng4TBiXENmPnc%2BlYjuW8ueCuerI%3D&response-content-disposition=attachment%3Bfilename%3D0c775fa1-56a4-40ad-b1bd-a125ae7d0e75.json
     completed_at: 2026-05-21T19:52:55.442Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
-      GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
-      FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2F\
+      jNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5j\
+      aGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
   - key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z:chunk:2
     parent_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3
     attempt_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z
@@ -225,10 +225,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260522/03%3A52/8b1b530c-7fe2-4668-aa91-52b58877d488.json?Expires=1779479535&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=fd4nFqYIV9jxU1Vddsdky4g0blk%3D&response-content-disposition=attachment%3Bfilename%3D8b1b530c-7fe2-4668-aa91-52b58877d488.json
     completed_at: 2026-05-21T19:52:55.977Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
-      GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
-      FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2F\
+      jNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5j\
+      aGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
   - key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z:chunk:3
     parent_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3
     attempt_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z
@@ -247,10 +247,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260522/03%3A52/085e699e-fb82-4915-904e-e6e86784a1d6.json?Expires=1779479533&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=38EA8Wb1bsXGw7vGgJXU4Gfd8zw%3D&response-content-disposition=attachment%3Bfilename%3D085e699e-fb82-4915-904e-e6e86784a1d6.json
     completed_at: 2026-05-21T19:52:56.515Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
-      GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
-      FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2F\
+      jNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5j\
+      aGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
   - key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z:chunk:4
     parent_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3
     attempt_key: unchained:90201d54-54e1-11f1-91ed-7f3ac4aa9566:20260521:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6770697075.mp3:attempt:2026-05-21T19:51:13.789Z
@@ -269,10 +269,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260522/03%3A52/1806badd-e53e-4ae6-901c-640c5614a090.json?Expires=1779479532&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=6wr2ax2hCpWkB9hGbTkhY0b2EYw%3D&response-content-disposition=attachment%3Bfilename%3D1806badd-e53e-4ae6-901c-640c5614a090.json
     completed_at: 2026-05-21T19:52:57.042Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjN\
-      GFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5jaG\
-      FpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2F\
+      jNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6dW5j\
+      aGFpbmVkOjkwMjAxZDU0LTU0ZTEtMTFmMS05MWVkLTdmM2FjNGFhOTU2NjoyMDI2MDUyMTpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjc3MDY5NzA3NS5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIxVDE5OjUxOjEzLjc4OVo'"
   - key: flirting-with-models:da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94:20260217:https://episodes.captivate.fm/episode/da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94.mp3
     attempt_key: 2026-05-21T19:51:48.751Z
     id: da3a5b9f-4d03-4188-8c6c-d0d3b83ecb94
@@ -319,10 +319,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260523/03%3A42/3dc8d315-4f42-4c76-b00b-008fd397d21e.json?Expires=1779565368&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=0y1EGT%2BN4YmO8hLBJUYwOUQ76ts%3D&response-content-disposition=attachment%3Bfilename%3D3dc8d315-4f42-4c76-b00b-008fd397d21e.json
     completed_at: 2026-05-22T19:44:04.625Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxM\
-      zMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5jaG\
-      FpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWY\
+      xMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5j\
+      aGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
   - key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z:chunk:1
     parent_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3
     attempt_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z
@@ -341,10 +341,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260523/03%3A42/a5ca914d-7679-446e-b0ee-a113c844d643.json?Expires=1779565368&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=xUm0BDsJ1RehhVA03ASSoI%2B4h6c%3D&response-content-disposition=attachment%3Bfilename%3Da5ca914d-7679-446e-b0ee-a113c844d643.json
     completed_at: 2026-05-22T19:43:32.458Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxM\
-      zMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5jaG\
-      FpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWY\
+      xMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5j\
+      aGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
   - key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z:chunk:2
     parent_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3
     attempt_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z
@@ -363,10 +363,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260523/03%3A42/767b15e3-f370-4e67-b305-fc34336bed6a.json?Expires=1779565369&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=Xiugk2P5fXWRkxJYWX4uzHRhRl4%3D&response-content-disposition=attachment%3Bfilename%3D767b15e3-f370-4e67-b305-fc34336bed6a.json
     completed_at: 2026-05-22T19:43:33.005Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxM\
-      zMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5jaG\
-      FpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWY\
+      xMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5j\
+      aGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
   - key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z:chunk:3
     parent_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3
     attempt_key: unchained:95b52c22-5591-11f1-92f6-fb1f1333f4f9:20260522:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6621041707.mp3:attempt:2026-05-22T19:41:59.708Z
@@ -385,10 +385,10 @@ jobs:
     transcription_url: http://dashscope-result-bj.oss-cn-beijing.aliyuncs.com/prod/qwen3-asr-flash-filetrans/20260523/03%3A42/ff5c1470-7f9e-4028-8366-c39941828162.json?Expires=1779565365&OSSAccessKeyId=LTAI5tGzqbGcEmE58b221XQy&Signature=RhkOg92GQlIlG%2Fgat1l6jUSXVXo%3D&response-content-disposition=attachment%3Bfilename%3Dff5c1470-7f9e-4028-8366-c39941828162.json
     completed_at: 2026-05-22T19:43:33.545Z
     error: "ENAMETOOLONG: name too long, mkdir
-      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxM\
-      zMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5jaG\
-      FpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWV\
-      nYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
+      '/home/runner/work/resonote/resonote/data/transcripts/.chunks/dW5jaGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWY\
+      xMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMubWVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6dW5j\
+      aGFpbmVkOjk1YjUyYzIyLTU1OTEtMTFmMS05MmY2LWZiMWYxMzMzZjRmOToyMDI2MDUyMjpodHRwczovL3BkcmwuZm0vOThlMGIxL3RyYWZmaWMub\
+      WVnYXBob25lLmZtL0xTSE1MNjYyMTA0MTcwNy5tcDM6YXR0ZW1wdDoyMDI2LTA1LTIyVDE5OjQxOjU5LjcwOFo'"
   - key: flirting-with-models:e8459525-96f7-4ef3-adea-b9266f987e60:20260209:https://episodes.captivate.fm/episode/e8459525-96f7-4ef3-adea-b9266f987e60.mp3
     attempt_key: 2026-05-22T19:42:25.974Z
     id: e8459525-96f7-4ef3-adea-b9266f987e60
@@ -19983,3 +19983,28 @@ jobs:
     submitted_at: 2026-08-30T18:13:20.820Z
     updated_at: 2026-08-30T18:18:23.832Z
     completed_at: 2026-08-30T18:18:23.832Z
+  - key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3:mimo:2026-08-31T18:15:00.395Z:chunk:0
+    parent_key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3
+    attempt_key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3:mimo:2026-08-31T18:15:00.395Z
+    provider: mimo
+    id: b573ae95-f9b3-4428-94e7-79d33418400b
+    source: latepost
+    title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-08-31T18:15:00.395Z
+    updated_at: 2026-08-31T18:15:49.570Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
