@@ -34,7 +34,7 @@ You are generating a Slidev presentation deck for ONE podcast episode. **Write a
 Follow the structure in the system prompt (RULE 4):
 - Cover page (academic theme, text-center)
 - "Why this episode matters" overview page (4-6 topic cards)
-- 12-16 content pages covering the themes
+- Content pages covering the themes — at least 70% of the deck total per RULE 4 (e.g. ~20 for a 28-page deck; scale with transcript length)
 - At least **4 pages with Excalidraw diagrams** (two-cols layout)
 - Core quotes page (`核心金句`) — 4-6 verified quotes with labels
 - End page (`layout: end`) with one closing quote
@@ -106,6 +106,19 @@ Fix any sentence that has one of these problems:
 - a number or "X times faster/cheaper/larger" claim without a clear metric
 - company names, product names, and customer names piled into a slogan instead of a sentence
 - marketing shorthand that sounds good but does not say what happened
+- nominalized or abstract-verb filler (`对……进行分析`, `赋能`, `释放潜力`) where a plain verb works
+- mechanical frames and filler (`通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `值得注意的是`) — for `不是……而是……`, state the actual claim directly unless it is a verbatim quote
+- the same entity called by different names across slides — pick one fixed Chinese name
+
+The translationese review checklist in RULE 0.5 of the system prompt lists more cues — run through it here as well. These are review cues, not mechanical bans; check context before rewriting.
+
+Then run a mechanical self-scan over your own output with the Grep tool (or `rg`) — hits are a review queue, not auto-replacements:
+
+```bash
+rg -n '赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(而且|更是)|不是.{0,16}而是|通过.{0,24}从而|进行.{0,8}(分析|讨论|检查)|实现.{0,8}(提升|增长|优化)|完成.{0,8}(构建|部署)|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳' episodes/{{ID}}/slides.md episodes/{{ID}}/article.html episodes/{{ID}}/meta.yml
+```
+
+For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? concretize with transcript evidence? narrow or delete). Protected names, fixed terms, and grep-verified quotes stay untouched. After each rewrite, re-check subject, condition, and outcome, and confirm terminology is still consistent.
 
 For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
 
@@ -153,7 +166,7 @@ Output a JSON summary on stdout:
 - Write any quote without grep-verifying it against the transcript
 - Reference content from other podcast episodes (even if the speaker also appeared elsewhere)
 - Invent specific company names, dates, or numbers
-- Produce fewer than 18 slides for a 1+ hour interview
+- Produce fewer slides than the RULE 4 minimum for the transcript length (e.g. fewer than 28 for a 60-150k char transcript)
 - Skip the self-audit phase
 - Write commentary in Chinese that sounds like an English quote translation (if you're paraphrasing, mark it as paraphrase, not as a quote)
 

@@ -30,6 +30,28 @@ Mandatory checks:
 - Keep numbers only when the transcript supports the same metric. If the metric is unclear, use a qualitative sentence instead of inventing a numeric comparison.
 - Company names and customer names are not automatic actors. For example, `United Airlines 的移动端已显示 "Powered by Natomi"` is acceptable; `United Airlines 证明 AI 实验室更快` is not.
 - Avoid over-compressed marketing phrases such as `OpenAI 认证`, `生来就在企业级`, or `AI 不是在做 AI 的事情`. Rewrite them as complete claims with attribution.
+- Keep one fixed Chinese name per entity across the whole deck. Do not rotate synonyms (主体/角色/核心人物) for variety.
+- No translationese or AI-flavored filler. Review the text for these patterns and rewrite or delete:
+  - Nominalized verbs: write `分析日志` / `调整配置`, not `对日志进行分析` / `作出配置调整`.
+  - Abstract business verbs used as filler: `赋能` `助力` `解锁潜力` `释放潜力` `注入活力` — state who did what and what resulted.
+  - Mechanical frames: `通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `随着……不断……，……正日益……` — keep only if both the cause and the effect actually appear in the transcript. For `不是……而是……`, state the actual claim directly instead; keep the contrast only inside verbatim quotes.
+  - Filler framing: `值得注意的是`, `在这个时间点`, `从本质上讲`, `对于……而言` — delete and state the fact directly.
+  - Empty elevation and vague attribution: `标志着……新篇章`, `未来可期`, `专家认为`, `行业报告显示` — delete unless the guest said it (then RULE 1 grep applies).
+  - Unidiomatic evaluatives: `一等的方案`, `上佳选择`, `颇具价值` — use an ordinary evaluation, or state the concrete evidence instead. (Fixed terms like `一等公民` stay as-is.)
+  - Pseudo-analysis endings: `从而确保`, `进一步彰显`, `反映了……` — keep only a real causal chain; delete the commentary tail if there is none.
+  - Relation avoidance: use `是` / `有` for simple relations, not `作为……`, `充当……`, `拥有……`.
+  - Forced triads and fake ranges: don't arrange points into threes or same-length clauses for rhythm; `从 X 到 Y` only when X and Y share one scale.
+  - Decoration: no dash-driven suspense, no bold-label-then-colon on every list item, no emoji icons.
+  - Over-hedging: keep one layer of uncertainty, not `可能潜在地或许会`.
+  - Slogan endings: never close a slide or section with an empty uplifting line; end on a fact, a quote, or a concrete consequence.
+
+Process each flagged sentence with a decision, not a reflex swap:
+1. Fixed use (formal term, quote, genre-normal)? → keep as-is.
+2. Is there a more common phrasing that keeps the same meaning, strength, and tone? → use it.
+3. Does the transcript provide facts to replace the evaluation with? → write the concrete action, number, or result. No evidence, no concretization (RULE 3).
+4. No safe rewrite? → narrow the claim to what the evidence supports, or delete.
+
+These are review cues, not mechanical bans. Check context before rewriting; never change a term that has an operational definition.
 
 Examples:
 - Bad: `AI 实验室比联合航空快一千倍。`
@@ -37,7 +59,7 @@ Examples:
 - Bad: `Puneet 生来就在企业级。`
 - Good: `Puneet 的背景是华尔街自动化交易系统，因此他把 Natomi 设计成面向大型企业部署的产品。`
 - Bad: `AI 不是在做 AI 的事情，而是在替代预算。`
-- Good: `Natomi 的目标不是展示 AI demo，而是替代企业原本投向客服、销售和营销流程的人力预算。`
+- Good: `Natomi 的目标是替代企业原本投向客服、销售和营销流程的人力预算。`
 
 ## RULE 1 — Every quote must be grep-able
 
@@ -47,6 +69,11 @@ Examples:
 - delete the sentence
 
 **Never** write something like `"How hard can it be?"` unless you ran `grep "how hard can it be"` on the transcript and saw it.
+
+Treat verification as a state, not a feeling:
+- A quote you remember or can reconstruct from memory is a **candidate** — it is not verified.
+- A quote is **verified** only once the exact phrase appeared in the grep output for THIS episode's transcript.
+- Never promote a candidate because it "sounds like something they would say". If grep fails, downgrade to a paraphrase without quotes or drop the sentence.
 
 ## RULE 2 — No cross-episode contamination
 
@@ -180,6 +207,7 @@ After writing `slides.md`:
    - Does the page have visual structure (cards/borders/colors/diagrams)?
    - Can a reader understand this page in isolation?
    - Is every quote on this page verified against the transcript?
+   - Does the Chinese read natively (no RULE 0.5 translationese patterns)?
    - Are there layout overflows or broken diagrams?
 5. Fix every issue you find. Then rebuild and re-audit.
 
@@ -248,6 +276,8 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 - Footer with source episode link
 - Write in narrative prose for reading, not bullet points
 - Mark paraphrases/glosses clearly as "作者概括:" (same as RULE 3)
+- Voice: magazine-style tech prose — vary sentence length, stay restrained, no forced first person or humor; never end a section on an empty uplifting line, end on a fact, a quote, or a concrete consequence
+- Prefer `是` / `有` for simple relations instead of `作为……` / `充当……`; keep one fixed Chinese name per entity; do not rename or translate proper nouns — explain unclear terms in the adjacent sentence instead
 
 ---
 
@@ -256,7 +286,7 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 If you output a quote without grep-verifying it, you have violated Rule 1.
 If you mix content from other episodes, you have violated Rule 2.
 If you invent company names or dates, you have violated Rule 3.
-If you produce < 18 pages for a 2h+ interview, you have violated Rule 4.
+If you produce fewer slides than the RULE 4 table minimum for the transcript size (e.g. < 28 for 60-150k chars, < 35 for 150-250k), you have violated Rule 4.
 If you skip visual audit, you have violated Rule 8.
 
 **All rules apply. All the time.**
