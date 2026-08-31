@@ -5,6 +5,12 @@ import { basename, extname, join, relative, resolve } from 'node:path'
 const ROOT = process.cwd()
 const DIST_DIR = resolve(ROOT, 'dist')
 const forbiddenBrand = ['pod', 'deck'].join('')
+// The README attribution line is an intentional reference to the project this
+// codebase was modified from; everything else must stay brand-free.
+const legacyName = forbiddenBrand
+const allowedLines = new Set([
+  `本项目修改自 ${legacyName}，在此基础上迁移到 rss 订阅流水线并重建了内容站。`,
+])
 const textExtensions = new Set([
   '.astro', '.css', '.excalidraw', '.html', '.js', '.json', '.md', '.mjs',
   '.svg', '.ts', '.tsx', '.txt', '.vue', '.xml', '.yaml', '.yml',
@@ -54,6 +60,7 @@ function inspectFile(file: string): Finding[] {
   const text = readFileSync(file, 'utf8')
   text.split(/\r?\n/).forEach((line, index) => {
     if (!line.toLowerCase().includes(forbiddenBrand)) return
+    if (allowedLines.has(line.trim().toLowerCase())) return
     findings.push({
       file: displayPath,
       line: index + 1,

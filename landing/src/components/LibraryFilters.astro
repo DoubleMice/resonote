@@ -184,6 +184,7 @@ import { CATEGORIES } from '../lib/data'
 
 <script is:inline>
   (() => {
+    const init = () => {
     const list = document.getElementById('library-list')
     const search = document.getElementById('library-search')
     const category = document.getElementById('library-category')
@@ -299,5 +300,9 @@ import { CATEGORIES } from '../lib/data'
 
     readParams()
     applyFilters(true, false)
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true })
+    else init()
   })()
 </script>

@@ -46,7 +46,7 @@ const isLibrary = pathname.includes('/library')
     </main>
     <footer class="site-footer">
       <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-        <span>声笺 · 让声音有余韵，让思想落成页</span>
+        <span>声笺 · 余音绕梁，落墨成笺</span>
         <span>RESONOTE · EDITORIAL ARCHIVE</span>
       </div>
     </footer>
@@ -79,6 +79,10 @@ const isLibrary = pathname.includes('/library')
     margin: 0;
     font-feature-settings: "cv11", "ss01";
   }
+  /* Author display rules (e.g. scoped .library-row { display: grid }) otherwise
+     defeat the UA [hidden] rule, making filter/progressive-disclosure state
+     visually ineffective. */
+  [hidden] { display: none !important; }
   .resonote-shell {
     color: var(--resonote-ink);
     background:

@@ -44,6 +44,7 @@
 
 <script is:inline>
   (function() {
+    var init = function() {
     var tabs = document.querySelectorAll('#format-tabs .tab-btn')
     var grid = document.getElementById('episode-grid')
     var count = document.getElementById('format-count')
@@ -87,5 +88,9 @@
     var initial = new URLSearchParams(window.location.search).get('format')
     var initialTab = grid.querySelector ? document.querySelector('#format-tabs [data-format="' + (initial || 'all') + '"]') : null
     activate(initialTab || tabs[0], false)
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true })
+    else init()
   })()
 </script>

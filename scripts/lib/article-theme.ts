@@ -75,6 +75,48 @@ export const articleReaderScript = `<script data-resonote-reader>
 })()
 </script>`
 
+export interface ArticleNavNeighbor {
+  href: string
+  title: string
+}
+
+export interface ArticleNav {
+  // 上一篇 = 上一期（更早）；下一篇 = 下一期（更新）
+  prev: ArticleNavNeighbor | null
+  next: ArticleNavNeighbor | null
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+export function articlePagerHtml(nav: ArticleNav): string | null {
+  const sides: string[] = []
+  if (nav.prev) {
+    const title = escapeHtml(nav.prev.title)
+    sides.push(
+      `<a class="resonote-pager-link is-prev" href="${escapeHtml(nav.prev.href)}" aria-label="上一篇：${title}">` +
+      `<span class="resonote-pager-dir">← 上一篇</span>` +
+      `<span class="resonote-pager-title">${title}</span></a>`,
+    )
+  }
+  if (nav.next) {
+    const title = escapeHtml(nav.next.title)
+    sides.push(
+      `<a class="resonote-pager-link is-next" href="${escapeHtml(nav.next.href)}" aria-label="下一篇：${title}">` +
+      `<span class="resonote-pager-dir">下一篇 →</span>` +
+      `<span class="resonote-pager-title">${title}</span></a>`,
+    )
+  }
+  if (!sides.length) return null
+  return `<nav class="resonote-pager" aria-label="相邻文章">${sides.join('')}</nav>`
+}
+
 const homeLinkPattern = /<a\b(?=[^>]*class=["'][^"']*\bresonote-home\b[^"']*["'])[^>]*>[\s\S]*?<\/a>/i
 
 function addClass(openingTag: string, className: string): string {
@@ -97,7 +139,7 @@ function markReadingWrapper(sourceHtml: string): string {
   return html
 }
 
-export function applyArticleTheme(sourceHtml: string, themeCss: string): string {
+export function applyArticleTheme(sourceHtml: string, themeCss: string, nav?: ArticleNav): string {
   let html = sourceHtml
   const hasReadingWrapper = /<(?:article|main)\b/i.test(html)
     || /class=["'][^"']*\b(?:container|wrap)\b[^"']*["']/i.test(html)
@@ -141,6 +183,14 @@ export function applyArticleTheme(sourceHtml: string, themeCss: string): string 
     html = /<\/body>/i.test(html)
       ? html.replace(/<\/body>/i, `${articleReaderScript}\n</body>`)
       : `${html}\n${articleReaderScript}`
+  }
+
+  if (nav) {
+    const pager = articlePagerHtml(nav)
+    if (pager) {
+      if (/<\/article>/i.test(html)) html = html.replace(/<\/article>/i, `${pager}\n</article>`)
+      else if (/<\/body>/i.test(html)) html = html.replace(/<\/body>/i, `${pager}\n</body>`)
+    }
   }
 
   return html

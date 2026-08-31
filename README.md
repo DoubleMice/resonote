@@ -1,6 +1,6 @@
 # 声笺 Resonote
 
-> 让声音有余韵，让思想落成页。
+> 余音绕梁，落墨成笺。
 
 [访问声笺](https://doublemice.github.io/resonote/) · [浏览内容库](https://doublemice.github.io/resonote/library/)
 
@@ -9,7 +9,7 @@
 ## 产品体验
 
 - 首页以“本期新笺”为主要入口，首屏提供全站搜索和内容统计。
-- 热门标签与播客来源位于页面上半部分，可通过页签切换；下方依次展示近日新笺、主题索引和可渐进展开的完整内容库。
+- 热门标签与播客来源位于页面上半部分，可通过页签切换；下方依次展示近日新笺和可渐进展开的完整内容库。
 - 内容库支持按标题、嘉宾、来源或标签搜索，并可组合筛选视觉笔记、文章、主题和未读内容。筛选条件会同步到 URL，便于收藏或分享。
 - 打开视觉笔记或文章后，该内容会在当前浏览器中标记为已读；阅读状态只保存在本地，不会上传。
 - 界面采用暖纸色、墨绿和朱砂色，标题使用宋体风格，并适配桌面端与移动端。
@@ -24,7 +24,7 @@
 - 封面优先使用 RSS 条目的 `itunes:image`，缺失时使用频道封面
 - 内容生成通过 `claude -p` 子进程执行；本地使用 Claude Code 登录状态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
 - GitHub Actions 负责内容发现、生成、检查和 GitHub Pages 部署
-- 首页“本期新笺”和“近日新笺”按 `meta.yml` 中持久化的 `generated_at` 排序；内容库按 `published_sort` 中的播客发布日期排序
+- 首页“本期新笺”和“近日新笺”按播客发布日期（`published_sort`）排序，仅展示已生成视觉笔记的集数；内容库同样按发布日期排序
 
 ## 快速开始
 
@@ -329,5 +329,7 @@ resonote/
 - 只修改转写队列、`data/transcripts/.chunks/` 或脚本缓存逻辑时，无需重建 GitHub Pages；新增/修改 `episodes/*`、`landing/*`、`data/transcripts/*.txt` 后生成 deck 或页面内容时需要重新 build/deploy。
 
 ## 致谢
+
+本项目修改自 PodDeck，在此基础上迁移到 RSS 订阅流水线并重建了内容站。
 
 Slides 由 [Slidev](https://sli.dev) 渲染。生成由 [Claude Code](https://claude.com/claude-code) 驱动。

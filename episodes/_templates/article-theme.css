@@ -427,6 +427,47 @@ footer {
 .resonote-toc a:hover { color: var(--resonote-blue); background: rgba(53, 95, 88, 0.06); }
 .resonote-toc a[aria-current="location"] { color: var(--resonote-ink); background: rgba(53, 95, 88, 0.09); font-weight: 700; }
 
+.resonote-pager {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 58px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--resonote-line);
+}
+.resonote-pager-link {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+  padding: 16px 18px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 14px 14px 3px;
+  background: rgba(251, 248, 241, 0.75);
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+.resonote-pager-link:hover {
+  border-color: rgba(53, 95, 88, 0.4);
+  background: #fffdf8;
+  box-shadow: 0 14px 30px rgba(38, 50, 47, 0.08);
+  transform: translateY(-2px);
+}
+.resonote-pager-link:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.resonote-pager-link.is-next { align-items: flex-end; text-align: right; }
+.resonote-pager-dir { color: var(--resonote-blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
+.resonote-pager-title {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--resonote-ink);
+  font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 @media (max-width: 700px) {
   body { font-size: 16px; line-height: 1.78; }
   .resonote-home { position: static; margin: 12px 14px 0; }
@@ -440,6 +481,8 @@ footer {
   .cards, .topic-cards, .card-grid, .overview, .stat-grid, .compare { grid-template-columns: 1fr !important; }
   h2 { margin-top: 46px !important; }
   blockquote, .quote, .quote-block, .quote-card, .quote-item, .q { padding: 20px 18px 18px 22px !important; }
+  .resonote-pager { grid-template-columns: 1fr; }
+  .resonote-pager-link.is-next { align-items: flex-start; text-align: left; }
 }
 
 @media (max-width: 1280px) {
@@ -453,6 +496,6 @@ footer {
 
 @media print {
   body { background: #fff; }
-  .resonote-home, .resonote-reading-progress, .resonote-to-top, .resonote-toc { display: none; }
+  .resonote-home, .resonote-reading-progress, .resonote-to-top, .resonote-toc, .resonote-pager { display: none; }
   .resonote-article { width: 100%; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0; box-shadow: none; }
 }

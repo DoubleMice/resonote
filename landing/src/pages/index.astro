@@ -7,39 +7,21 @@ import SearchBox from '../components/SearchBox.astro'
 import DiscoveryTabs from '../components/DiscoveryTabs.astro'
 import LibraryFilters from '../components/LibraryFilters.astro'
 import {
-  loadEpisodes, loadSourcesWithFallbacks, collectTags, CATEGORIES,
-  sortEpisodesByGeneratedDesc, sortEpisodesForLibrary,
+  loadEpisodes, loadSourcesWithFallbacks, collectTags,
+  sortEpisodesByPublishedDesc, sortEpisodesForLibrary,
 } from '../lib/data'
 import { url } from '../lib/url'
-
-const CATEGORY_NOTES = {
-  'ai-tech': '模型、产品与技术前沿',
-  'mind-body': '认知、健康与人的内在世界',
-  science: '科学发现与解释世界的方法',
-  business: '公司、增长与职业选择',
-  culture: '历史、社会与文化观察',
-} as const
 
 const episodes = loadEpisodes()
 const sources = loadSourcesWithFallbacks(episodes)
 const tags = collectTags(episodes)
 const generated = episodes.filter(episode => episode.status === 'generated')
 const articles = episodes.filter(episode => episode.article_path)
-const sortedGenerated = sortEpisodesByGeneratedDesc(generated)
+const sortedGenerated = sortEpisodesByPublishedDesc(generated)
 const libraryEpisodes = sortEpisodesForLibrary(episodes)
 const latest = sortedGenerated.slice(0, 7)
 const featured = latest[0]
 const recent = latest.slice(1)
-
-const categoryIndex = CATEGORIES.map(category => {
-  const all = sortedGenerated.filter(episode => episode.category === category.id)
-  return {
-    ...category,
-    total: all.length,
-    description: CATEGORY_NOTES[category.id],
-    featured: all[0],
-  }
-}).filter(category => category.total > 0)
 
 const sourcesWithCount = sources
   .map(source => ({
@@ -49,16 +31,16 @@ const sourcesWithCount = sources
   .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
 ---
 
-<Base title="声笺 · Resonote" description="让声音有余韵，让思想落成页。把长播客整理成值得翻阅的视觉笔记与长读文章。">
+<Base title="声笺 · Resonote" description="余音绕梁，落墨成笺。把长播客整理成值得翻阅的视觉笔记与长读文章。">
   <section class:list={['hero-grid', { 'hero-grid-single': !featured }]} aria-labelledby="home-title">
     <div class="hero-copy">
       <div class="section-kicker">声笺 · RESONOTE</div>
       <h1 id="home-title" class="hero-title">
-        让声音有余韵，<br /><span>让思想落成页</span>
+        余音绕梁，<br /><span>落墨成笺</span>
       </h1>
       <p class="hero-lede">
-        从漫长对谈中提炼叙事、论点与原话，整理成有手绘图的视觉笔记和适合长读的中文文章。
-        用约 15 分钟，留下一条值得反复翻阅的思想脉络。
+        长谈既尽，余韵未散。从两三小时的对谈中撷取叙事、论点与原话，佐以手绘图，
+        整理成可翻阅的视觉笔记与中文长文。约一刻钟的翻阅，留住两三个小时的深思。
       </p>
 
       <div class="hero-search">
@@ -89,48 +71,12 @@ const sourcesWithCount = sources
         <div>
           <div class="section-overline">RECENT NOTES</div>
           <h2 id="recent-title">近日新笺</h2>
-          <p>最近整理完成的视觉笔记与长读文章。</p>
+          <p>最近发布的对谈，已整理成视觉笔记与长读文章。</p>
         </div>
         <a href={url('/library/')}>查看内容库 <span aria-hidden="true">→</span></a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {recent.map(episode => <EpisodeCard episode={episode} />)}
-      </div>
-    </section>
-  )}
-
-  {categoryIndex.length > 0 && (
-    <section class="content-section mb-16" aria-labelledby="theme-title">
-      <div class="section-heading">
-        <div>
-          <div class="section-overline">THEMATIC INDEX</div>
-          <h2 id="theme-title">主题索引</h2>
-          <p>按关心的方向进入档案，快速找到一组相互照见的声音。</p>
-        </div>
-      </div>
-
-      <div class="theme-index">
-        {categoryIndex.map((category, index) => (
-          <a
-            class="theme-card"
-            href={`${url('/library/')}?category=${category.id}`}
-            aria-label={`${category.label}，${category.total} 集内容`}
-          >
-            <div class="theme-card-top">
-              <span class="theme-number">{String(index + 1).padStart(2, '0')}</span>
-              <span class="theme-count">{category.total} 集</span>
-            </div>
-            <h3>{category.label}</h3>
-            <p>{category.description}</p>
-            {category.featured && (
-              <div class="theme-latest">
-                <span>最近收录</span>
-                <strong>{category.featured.title}</strong>
-              </div>
-            )}
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" /></svg>
-          </a>
-        ))}
       </div>
     </section>
   )}
@@ -227,8 +173,7 @@ const sourcesWithCount = sources
     text-decoration: none;
   }
   .hero-library-link svg,
-  .archive-cta svg,
-  .theme-card > svg {
+  .archive-cta svg {
     width: 17px;
     height: 17px;
     fill: none;
@@ -263,69 +208,6 @@ const sourcesWithCount = sources
     font-weight: 750;
     text-decoration: none;
   }
-  .theme-index { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
-  .theme-card {
-    position: relative;
-    display: flex;
-    min-height: 250px;
-    flex-direction: column;
-    padding: 18px 17px;
-    overflow: hidden;
-    border: 1px solid rgba(var(--resonote-ink-rgb), 0.1);
-    border-radius: 3px 16px 16px 3px;
-    color: var(--resonote-ink);
-    background: rgba(251, 248, 241, 0.72);
-    text-decoration: none;
-    transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
-  }
-  .theme-card:hover {
-    border-color: rgba(var(--resonote-accent-rgb), 0.27);
-    background: rgba(255, 253, 248, 0.96);
-    box-shadow: 0 15px 34px rgba(var(--resonote-ink-rgb), 0.07);
-    transform: translateY(-2px);
-  }
-  .theme-card::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 3px;
-    content: "";
-    background: var(--resonote-amber);
-    opacity: 0;
-    transition: opacity 180ms ease;
-  }
-  .theme-card:hover::before { opacity: 0.85; }
-  .theme-card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-  .theme-number {
-    color: var(--resonote-amber);
-    font-family: Iowan Old Style, Baskerville, Georgia, serif;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-  }
-  .theme-count { color: #84908a; font-size: 0.61rem; }
-  .theme-card h3 {
-    margin: 19px 0 0;
-    font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
-    font-size: 1.12rem;
-    line-height: 1.22;
-  }
-  .theme-card > p { min-height: 2.8em; margin: 7px 0 0; color: #78837e; font-size: 0.67rem; line-height: 1.5; }
-  .theme-latest { min-width: 0; margin-top: auto; padding-top: 17px; border-top: 1px solid rgba(var(--resonote-ink-rgb), 0.08); }
-  .theme-latest span { display: block; margin-bottom: 5px; color: #929a96; font-size: 0.56rem; }
-  .theme-latest strong {
-    display: -webkit-box;
-    overflow: hidden;
-    color: #56635e;
-    font-size: 0.67rem;
-    font-weight: 650;
-    line-height: 1.48;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-  .theme-card > svg { position: absolute; right: 14px; bottom: 14px; color: var(--resonote-blue); opacity: 0; }
-  .theme-card:hover > svg { opacity: 1; transform: translateX(2px); }
   .home-library-list { display: grid; gap: 11px; }
   :global(.js .home-library-list .library-row[data-initial-hidden="true"]) { display: none; }
   .archive-cta {
@@ -363,14 +245,12 @@ const sourcesWithCount = sources
     .hero-grid { grid-template-columns: 1fr; align-items: start; }
     .hero-copy { max-width: 760px; }
     .hero-grid :global(.featured-note) { max-width: 690px; }
-    .theme-index { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
   @media (max-width: 680px) {
     .hero-grid { gap: 36px; margin-bottom: 4.5rem; padding-top: 0; }
     .hero-title { font-size: clamp(2.45rem, 12.5vw, 3.45rem); }
     .hero-foot { align-items: flex-start; flex-direction: column; gap: 5px; }
     .hero-library-link { margin-left: -2px; }
-    .theme-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .archive-cta { align-items: flex-start; flex-direction: column; }
   }
   @media (max-width: 480px) {
@@ -380,8 +260,6 @@ const sourcesWithCount = sources
     .hero-stats dd { white-space: normal; }
     .section-heading { align-items: flex-start; }
     .section-heading > a { white-space: nowrap; }
-    .theme-index { grid-template-columns: 1fr; }
-    .theme-card { min-height: 218px; }
     .archive-cta { padding: 26px 22px; }
     .archive-cta > a { width: 100%; }
   }
