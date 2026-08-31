@@ -54,6 +54,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Verify standalone repository identity
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: test "$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.fork')" = "false"
+
       - name: Sync latest branch
         run: git pull --ff-only origin "${GITHUB_REF_NAME}"
 
@@ -90,6 +95,9 @@ jobs:
             echo "ANTHROPIC_AUTH_TOKEN secret is required"
             exit 1
           fi
+
+      - name: Run unit tests
+        run: pnpm test
 
       - name: Refresh RSS cache
         run: pnpm run cache:refresh
@@ -144,6 +152,9 @@ jobs:
 
       - name: Build all
         run: pnpm run build
+
+      - name: Audit independent brand identity
+        run: pnpm run audit:brand
 
       - name: Audit home interactions and responsive layout
         run: pnpm run audit:home

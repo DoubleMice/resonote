@@ -81,17 +81,17 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
 <style>
   .featured-note {
     overflow: hidden;
-    border: 1px solid rgba(var(--pd-ink-rgb), 0.13);
+    border: 1px solid rgba(var(--resonote-ink-rgb), 0.13);
     border-radius: 4px 22px 22px 4px;
     background: rgba(251, 248, 241, 0.94);
-    box-shadow: 12px 14px 0 rgba(var(--pd-ink-rgb), 0.045), 0 24px 56px rgba(var(--pd-ink-rgb), 0.11);
+    box-shadow: 12px 14px 0 rgba(var(--resonote-ink-rgb), 0.045), 0 24px 56px rgba(var(--resonote-ink-rgb), 0.11);
   }
   .featured-cover {
     position: relative;
     aspect-ratio: 16 / 8.7;
     overflow: hidden;
     background:
-      radial-gradient(circle at 78% 18%, rgba(var(--pd-seal-rgb), 0.27), transparent 32%),
+      radial-gradient(circle at 78% 18%, rgba(var(--resonote-seal-rgb), 0.27), transparent 32%),
       linear-gradient(135deg, #31443f, #1f2b28);
   }
   .featured-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms ease; }
@@ -99,7 +99,7 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
   .cover-shade {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(var(--pd-ink-rgb), 0.06) 20%, rgba(var(--pd-ink-rgb), 0.58) 100%);
+    background: linear-gradient(180deg, rgba(var(--resonote-ink-rgb), 0.06) 20%, rgba(var(--resonote-ink-rgb), 0.58) 100%);
   }
   .featured-stamp,
   .featured-duration {
@@ -110,7 +110,7 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.34);
     color: #fffaf2;
-    background: rgba(var(--pd-ink-rgb), 0.72);
+    background: rgba(var(--resonote-ink-rgb), 0.72);
     backdrop-filter: blur(9px);
   }
   .featured-stamp {
@@ -167,8 +167,8 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
     line-height: 1.28;
     letter-spacing: -0.025em;
   }
-  h2 a { color: var(--pd-ink); text-decoration: none; }
-  h2 a:hover { color: var(--pd-blue); }
+  h2 a { color: var(--resonote-ink); text-decoration: none; }
+  h2 a:hover { color: var(--resonote-blue); }
   .featured-body > p {
     display: -webkit-box;
     overflow: hidden;
@@ -187,11 +187,11 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
     padding: 0 8px;
     border-radius: 999px;
     color: #64716c;
-    background: rgba(var(--pd-ink-rgb), 0.055);
+    background: rgba(var(--resonote-ink-rgb), 0.055);
     font-size: 0.62rem;
     text-decoration: none;
   }
-  .featured-tags a:hover { color: var(--pd-blue); background: rgba(var(--pd-accent-rgb), 0.1); }
+  .featured-tags a:hover { color: var(--resonote-blue); background: rgba(var(--resonote-accent-rgb), 0.1); }
   .featured-actions {
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +199,7 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
     gap: 10px;
     margin-top: 17px;
     padding-top: 16px;
-    border-top: 1px solid rgba(var(--pd-ink-rgb), 0.09);
+    border-top: 1px solid rgba(var(--resonote-ink-rgb), 0.09);
   }
   .featured-actions > a {
     display: inline-flex;
@@ -211,11 +211,11 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
     font-weight: 760;
     text-decoration: none;
   }
-  .featured-primary { gap: 7px; padding: 0 15px; color: #fffaf2; background: var(--pd-ink); }
-  .featured-primary:hover { background: var(--pd-blue); }
+  .featured-primary { gap: 7px; padding: 0 15px; color: #fffaf2; background: var(--resonote-ink); }
+  .featured-primary:hover { background: var(--resonote-blue); }
   .featured-primary svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-  .featured-secondary { padding: 0 12px; color: var(--pd-blue); }
-  .featured-secondary:hover { background: rgba(var(--pd-accent-rgb), 0.08); }
+  .featured-secondary { padding: 0 12px; color: var(--resonote-blue); }
+  .featured-secondary:hover { background: rgba(var(--resonote-accent-rgb), 0.08); }
   @media (max-width: 460px) {
     .featured-body { padding: 18px; }
     .featured-actions > a { flex: 1 1 auto; }

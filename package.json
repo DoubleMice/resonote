@@ -16,18 +16,21 @@
     "analyze": "tsx scripts/analyze-scan.ts",
     "sync": "echo 'TODO: P4'",
     "build": "tsx scripts/build-all.ts",
+    "audit:brand": "tsx scripts/audit-brand.ts",
     "audit:home": "tsx scripts/audit-home.ts",
     "audit:layout": "tsx scripts/audit-layout.ts",
     "normalize:meta": "tsx scripts/normalize-meta.ts",
     "e2e:transcription": "tsx scripts/e2e-transcription.ts",
+    "test": "tsx --test scripts/lib/*.test.ts",
     "test:mimo": "tsx --test scripts/lib/mimo.test.ts",
+    "test:workspace": "tsx --test scripts/lib/episode-workspace.test.ts",
     "test:sources": "tsx --test scripts/lib/source-filter.test.ts",
     "test:yaml": "tsx --test scripts/lib/yaml-repair.test.ts",
     "test:article-theme": "tsx --test scripts/lib/article-theme.test.ts",
     "verify:routing": "tsx scripts/verify-slide-routing.ts",
     "preview": "npx --yes serve@14.2.6 dist -p 4173",
     "dev:landing": "echo 'TODO: P4'",
-    "dev:episode": "bash -c 'cd episodes/$0 && npx slidev --port 3031'"
+    "dev:episode": "tsx scripts/dev-episode.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

@@ -1,12 +1,12 @@
 import { resolve, join, basename, dirname, sep } from 'node:path'
 import {
-  existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync,
-  readFileSync, writeFileSync,
+  existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync, readFileSync, writeFileSync,
 } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
 import { applyArticleTheme } from './lib/article-theme.ts'
+import { stageEpisodePresentation } from './lib/episode-workspace.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -14,8 +14,6 @@ const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = join(EPISODES_DIR, '_templates')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
-const SLIDE_THEME_PATH = join(TEMPLATES_DIR, 'style.css')
-const GLOBAL_BOTTOM_PATH = join(TEMPLATES_DIR, 'global-bottom.vue')
 const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
 
 function themedArticleHtml(articlePath: string): string {
@@ -79,12 +77,6 @@ function articleArtifacts(): { sourcePath: string; outputRelative: string }[] {
 
 async function buildEpisode(id: string, base: string): Promise<string | null> {
   const dir = join(EPISODES_DIR, id)
-  const episodeStylePath = join(dir, 'style.css')
-  const episodeGlobalBottomPath = join(dir, 'global-bottom.vue')
-  const borrowedSharedTheme = !existsSync(episodeStylePath)
-  const originalGlobalBottom = existsSync(episodeGlobalBottomPath)
-    ? readFileSync(episodeGlobalBottomPath, 'utf-8')
-    : null
   const metaPath = join(dir, 'meta.yml')
   if (!existsSync(metaPath)) {
     log.warn(`  skip ${id} — no meta.yml`)
@@ -94,12 +86,9 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
 
   log.info(`building ${id}`)
 
-  // Older episodes predate the shared theme. Stage it only for the build so
-  // every deployed deck is visually consistent without rewriting 200+ decks.
-  if (borrowedSharedTheme) cpSync(SLIDE_THEME_PATH, episodeStylePath)
-  // The navigation chrome is also staged at build time so legacy decks get
-  // the current accessible control without rewriting their source folders.
-  cpSync(GLOBAL_BOTTOM_PATH, episodeGlobalBottomPath)
+  // Shared presentation chrome is staged for the command and removed again so
+  // every deck uses one canonical implementation without copying it per episode.
+  const cleanupPresentation = stageEpisodePresentation(dir, TEMPLATES_DIR)
 
   try {
     // slidev build needs the base path for correct asset URLs in final bundle
@@ -114,9 +103,7 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
       throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)
     }
   } finally {
-    if (borrowedSharedTheme) rmSync(episodeStylePath, { force: true })
-    if (originalGlobalBottom === null) rmSync(episodeGlobalBottomPath, { force: true })
-    else writeFileSync(episodeGlobalBottomPath, originalGlobalBottom, 'utf-8')
+    cleanupPresentation()
   }
   log.ok(`  ${id} built`)
   return join(dir, 'dist')
@@ -141,8 +128,7 @@ async function main() {
   // Site base path — matches landing/astro.config.mjs `base`.
   // Local:    RESONOTE_BASE unset → /
   // CI/prod:  RESONOTE_BASE=/resonote/ → https://doublemice.github.io/resonote/
-  // Keep PODDECK_BASE as a migration fallback for existing local environments.
-  const SITE_BASE = process.env.RESONOTE_BASE || process.env.PODDECK_BASE || '/'
+  const SITE_BASE = process.env.RESONOTE_BASE || '/'
 
   // Collect generated episodes from durable per-episode artifacts. Plan files
   // are an execution queue and can be refreshed independently.

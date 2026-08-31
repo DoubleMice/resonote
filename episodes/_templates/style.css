@@ -1,26 +1,26 @@
 :root {
-  --poddeck-ink: #26322f;
-  --poddeck-muted: #68736f;
-  --poddeck-paper: #fbf8f1;
-  --poddeck-paper-deep: #f0eadd;
-  --poddeck-line: #d7cec0;
-  --poddeck-blue: #355f58;
-  --poddeck-green: #557461;
-  --poddeck-amber: #aa5143;
-  --poddeck-red: #a34742;
-  --poddeck-purple: #75667b;
-  --poddeck-yellow: #a9864d;
-  --poddeck-shadow: 0 12px 32px rgba(38, 50, 47, 0.08);
+  --resonote-ink: #26322f;
+  --resonote-muted: #68736f;
+  --resonote-paper: #fbf8f1;
+  --resonote-paper-deep: #f0eadd;
+  --resonote-line: #d7cec0;
+  --resonote-blue: #355f58;
+  --resonote-green: #557461;
+  --resonote-amber: #aa5143;
+  --resonote-red: #a34742;
+  --resonote-purple: #75667b;
+  --resonote-yellow: #a9864d;
+  --resonote-shadow: 0 12px 32px rgba(38, 50, 47, 0.08);
 }
 
 .slidev-layout {
   position: relative;
   overflow: hidden;
-  color: var(--poddeck-ink);
+  color: var(--resonote-ink);
   background:
     radial-gradient(circle at 94% 8%, rgba(53, 95, 88, 0.09), transparent 24%),
     repeating-linear-gradient(90deg, rgba(38, 50, 47, 0.01) 0 1px, transparent 1px 7px),
-    linear-gradient(180deg, #fffdf8 0%, var(--poddeck-paper) 100%);
+    linear-gradient(180deg, #fffdf8 0%, var(--resonote-paper) 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 1.01rem;
@@ -32,13 +32,13 @@
   inset: 0 0 auto;
   height: 4px;
   content: "";
-  background: linear-gradient(90deg, var(--poddeck-amber), #bd8063 42%, var(--poddeck-blue) 100%);
+  background: linear-gradient(90deg, var(--resonote-amber), #bd8063 42%, var(--resonote-blue) 100%);
 }
 
 .slidev-layout h1,
 .slidev-layout h2,
 .slidev-layout h3 {
-  color: var(--poddeck-ink);
+  color: var(--resonote-ink);
   text-wrap: balance;
 }
 
@@ -60,7 +60,7 @@
   height: 3px;
   border-radius: 999px;
   content: "";
-  background: var(--poddeck-amber);
+  background: var(--resonote-amber);
 }
 
 .slidev-layout h2 {
@@ -85,7 +85,7 @@
 }
 
 .slidev-layout a {
-  color: var(--poddeck-blue);
+  color: var(--resonote-blue);
   text-decoration-color: rgba(53, 95, 88, 0.35);
   text-underline-offset: 0.18em;
 }
@@ -95,7 +95,7 @@
   margin-block: 1rem;
   padding: 1rem 1.2rem 1rem 1.35rem;
   border: 1px solid rgba(53, 95, 88, 0.15);
-  border-left: 4px solid var(--poddeck-blue);
+  border-left: 4px solid var(--resonote-blue);
   border-radius: 0 14px 14px 0;
   color: #354d47;
   background: rgba(238, 243, 239, 0.9);
@@ -144,7 +144,7 @@
 }
 
 .slidev-layout tr:last-child td { border-bottom: 0; }
-.slidev-layout li::marker { color: var(--poddeck-blue); }
+.slidev-layout li::marker { color: var(--resonote-blue); }
 .slidev-layout :where(a, button):focus-visible {
   outline: 3px solid rgba(53, 95, 88, 0.3);
   outline-offset: 3px;
@@ -165,23 +165,23 @@
 .slidev-layout .bg-gray-50,
 .slidev-layout .bg-stone-50 { background-color: #f4f2ed !important; }
 
-.slidev-layout .border-blue-500 { border-color: var(--poddeck-blue) !important; }
-.slidev-layout .border-green-500 { border-color: var(--poddeck-green) !important; }
-.slidev-layout .border-orange-500 { border-color: var(--poddeck-amber) !important; }
-.slidev-layout .border-red-500 { border-color: var(--poddeck-red) !important; }
-.slidev-layout .border-purple-500 { border-color: var(--poddeck-purple) !important; }
-.slidev-layout .border-yellow-500 { border-color: var(--poddeck-yellow) !important; }
+.slidev-layout .border-blue-500 { border-color: var(--resonote-blue) !important; }
+.slidev-layout .border-green-500 { border-color: var(--resonote-green) !important; }
+.slidev-layout .border-orange-500 { border-color: var(--resonote-amber) !important; }
+.slidev-layout .border-red-500 { border-color: var(--resonote-red) !important; }
+.slidev-layout .border-purple-500 { border-color: var(--resonote-purple) !important; }
+.slidev-layout .border-yellow-500 { border-color: var(--resonote-yellow) !important; }
 
 .slidev-layout .text-blue-600,
-.slidev-layout .text-blue-700 { color: var(--poddeck-blue) !important; }
+.slidev-layout .text-blue-700 { color: var(--resonote-blue) !important; }
 .slidev-layout .text-green-600,
-.slidev-layout .text-green-700 { color: var(--poddeck-green) !important; }
+.slidev-layout .text-green-700 { color: var(--resonote-green) !important; }
 .slidev-layout .text-orange-600,
 .slidev-layout .text-orange-700 { color: #a95f24 !important; }
 .slidev-layout .text-red-600,
-.slidev-layout .text-red-700 { color: var(--poddeck-red) !important; }
+.slidev-layout .text-red-700 { color: var(--resonote-red) !important; }
 .slidev-layout .text-purple-600,
-.slidev-layout .text-purple-700 { color: var(--poddeck-purple) !important; }
+.slidev-layout .text-purple-700 { color: var(--resonote-purple) !important; }
 
 .slidev-layout.cover,
 .slidev-layout.end,
@@ -255,7 +255,7 @@
 .slidev-layout.quote blockquote,
 .slidev-layout.statement blockquote {
   border: 0;
-  color: var(--poddeck-ink);
+  color: var(--resonote-ink);
   background: transparent;
   box-shadow: none;
   font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;

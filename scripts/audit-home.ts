@@ -11,7 +11,7 @@ const screenshotDir = process.env.RESONOTE_AUDIT_OUTPUT
 let targetUrl = configuredTargetUrl || ''
 
 async function startBuiltSite() {
-  const rawBase = process.env.RESONOTE_BASE || process.env.PODDECK_BASE || '/'
+  const rawBase = process.env.RESONOTE_BASE || '/'
   const siteBase = `/${rawBase.replace(/^\/+|\/+$/g, '')}${rawBase === '/' ? '' : '/'}`
   const contentTypes: Record<string, string> = {
     '.css': 'text/css; charset=utf-8',

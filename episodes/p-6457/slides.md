@@ -22,7 +22,7 @@ Lex Fridman Podcast · May 2026 · 3h 2m
 </div>
 
 <div class="text-xs opacity-40 mt-8">
-Part of the 声笺 Resonote series — poddeck.github.io
+Part of the 声笺 Resonote series — doublemice.github.io/resonote
 </div>
 
 ---
@@ -1382,5 +1382,5 @@ layout: end
 </div>
 
 <div class="mt-12 text-xs opacity-40">
-Part of 声笺 Resonote · poddeck.github.io
+Part of 声笺 Resonote · doublemice.github.io/resonote
 </div>

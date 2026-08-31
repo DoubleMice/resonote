@@ -1,5 +1,5 @@
 <template>
-  <a href="../../" class="poddeck-back" title="返回声笺" aria-label="返回声笺 Resonote 首页">
+  <a href="../../" class="resonote-back" title="返回声笺" aria-label="返回声笺 Resonote 首页">
     <svg viewBox="0 0 20 20" aria-hidden="true">
       <path d="M11.75 4.75 6.5 10l5.25 5.25M7 10h7" />
     </svg>
@@ -8,7 +8,7 @@
 </template>
 
 <style scoped>
-.poddeck-back {
+.resonote-back {
   position: fixed;
   top: 12px;
   left: 12px;
@@ -31,7 +31,7 @@
   font-family: ui-sans-serif, system-ui, sans-serif;
   transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
-.poddeck-back svg {
+.resonote-back svg {
   width: 14px;
   height: 14px;
   fill: none;
@@ -56,12 +56,12 @@
   font-weight: 750;
   letter-spacing: 0.13em;
 }
-.poddeck-back:hover {
+.resonote-back:hover {
   color: #355f58;
   background: rgba(255, 253, 248, 0.98);
   border-color: rgba(53, 95, 88, 0.36);
 }
-.poddeck-back:focus-visible {
+.resonote-back:focus-visible {
   outline: 3px solid rgba(53, 95, 88, 0.28);
   outline-offset: 2px;
 }

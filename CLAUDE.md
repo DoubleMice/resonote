@@ -488,40 +488,13 @@ Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在�
 1. **长度**：至少 **18-24 页**。2+ 小时的访谈至少值得 20 页。
 2. **手绘图比例**：**至少 20%** 的页面用 Excalidraw（5 页里有 1 页）。一个 20 页 deck 至少 4 张手绘图。
 3. **核心金句页**：倒数第二页必须是"核心金句"——4-6 条精选引言，每条配简短 context。
-4. **返回按钮**：每个 episode 必须有 `global-bottom.vue` 提供返回 landing 的入口。
+4. **返回按钮**：构建、布局检查和单集开发会临时注入 `episodes/_templates/global-bottom.vue`，统一提供返回网站的入口；不要在单集目录复制该文件。
 5. **开场**：前 2 页讲清楚"为什么这期特别"——不只是标题，要让读者 10 秒内理解要讲什么。
 6. **结构感**：不要平铺直叙。每 3-5 页应该有一次视觉 break（quote / statement / 大图）。
 
-### `global-bottom.vue` 标准模板
+### 共享返回控件
 
-每个 `episodes/<id>/` 目录下都应该有这个文件：
-
-```vue
-<template>
-  <a href="../../" class="poddeck-back" title="返回声笺">← 声笺 / RESONOTE</a>
-</template>
-
-<style scoped>
-.poddeck-back {
-  position: fixed;
-  bottom: 14px;
-  left: 14px;
-  z-index: 100;
-  font-size: 11px;
-  color: rgba(30,30,30,0.55);
-  text-decoration: none;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(0,0,0,0.08);
-}
-.poddeck-back:hover {
-  color: rgba(30,30,30,0.95);
-  background: white;
-}
-</style>
-```
+返回控件只维护在 `episodes/_templates/global-bottom.vue`。`build-all.ts`、`audit-layout.ts` 与 `dev-episode.ts` 会在执行期间将它放入单集目录，并在命令结束后恢复工作区。修改导航样式时只更新共享模板。
 
 ### 核心金句页模板
 

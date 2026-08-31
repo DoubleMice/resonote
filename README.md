@@ -1,20 +1,44 @@
 # 声笺 Resonote
 
-**在线访问**：https://doublemice.github.io/resonote/
+> 让声音有余韵，让思想落成页。
 
-声笺把播客 RSS 中的长访谈整理成结构化视觉笔记与中文长读文章，并发布到 GitHub Pages。每集内容包含可从转写稿中核对的嘉宾原话、核心论点和手绘示意图。
+[访问声笺](https://doublemice.github.io/resonote/) · [浏览内容库](https://doublemice.github.io/resonote/library/)
 
-## 当前状态
+声笺把长篇播客整理成结构化视觉笔记与中文长读文章，并发布到 GitHub Pages。每份笔记围绕可从转写稿中核对的嘉宾原话和核心论点展开，配合手绘示意图呈现内容脉络。
 
-- RSS-only pipeline：`cache:refresh → plan → plan:run → build → deploy`
+## 产品体验
+
+- 首页以“本期新笺”为主要入口，首屏提供全站搜索和内容统计。
+- 热门标签与播客来源位于页面上半部分，可通过页签切换；下方依次展示近日新笺、主题索引和完整内容库入口。
+- 内容库支持按标题、嘉宾、来源或标签搜索，并可组合筛选视觉笔记、文章、主题和未读内容。筛选条件会同步到 URL，便于收藏或分享。
+- 打开视觉笔记或文章后，该内容会在当前浏览器中标记为已读；阅读状态只保存在本地，不会上传。
+- 界面采用暖纸色、墨绿和朱砂色，标题使用宋体风格，并适配桌面端与移动端。
+
+## 技术概览
+
+- 内容流水线：`cache:refresh → plan → plan:run → build → deploy`
 - 数据入口：`sources.yml` 中的 `rss_url`
-- transcript 来源：RSS `podcast:transcript`，优先 `text/plain`，再 fallback 到 VTT/SRT/HTML
-- 只有音频的 RSS episode 会进入 `needs_transcript` 队列，等待本地或手动转写补全
-- 音频转写：默认 MiMo `mimo-v2.5`；可用 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope；受限音频走本地下载 + `ffmpeg` 切片 + data URI
-- 封面来源：RSS item `itunes:image`，缺失时 fallback 到 channel image
-- 生成入口：`claude -p` subprocess；本地使用 Claude Code 登录态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
-- 部署入口：GitHub Actions → GitHub Pages
+- 转写稿来源：优先读取 RSS `podcast:transcript` 中的 `text/plain`，其次处理 VTT、SRT 或 HTML
+- 只提供音频的 RSS 条目会进入 `needs_transcript` 队列，等待自动或人工转写
+- 自动转写默认使用 MiMo `mimo-v2.5`；设置 `TRANSCRIPT_PROVIDER=dashscope` 后改用 DashScope。受限音频会先下载到本地，再由 `ffmpeg` 切片并以 data URI 提交
+- 封面优先使用 RSS 条目的 `itunes:image`，缺失时使用频道封面
+- 内容生成通过 `claude -p` 子进程执行；本地使用 Claude Code 登录状态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
+- GitHub Actions 负责内容发现、生成、检查和 GitHub Pages 部署
 - 首页“本期新笺”和“近日新笺”按视觉笔记的生成或更新时间排序，缺失时回退到播客发布时间
+
+## 快速开始
+
+需要 Node.js 20.19 或更高版本，以及 pnpm 9.15.9。自动转写还需要 `ffmpeg` 和对应服务的 API key。
+
+```bash
+git clone https://github.com/DoubleMice/resonote.git
+cd resonote
+pnpm install
+pnpm run build
+pnpm run preview
+```
+
+本地预览地址为 `http://localhost:4173`。只开发某一集视觉笔记时，可运行 `pnpm run dev:episode <episodeId>`，默认地址为 `http://localhost:3031`。
 
 ## 关注源
 
@@ -62,27 +86,24 @@
 ## 命令速查
 
 ```bash
-# 安装依赖
-pnpm install
-
-# 1. 拉取 RSS metadata
+# 1. 拉取 RSS 元数据
 pnpm run cache:refresh
 pnpm run cache:refresh -- --id=tbpn
 pnpm run cache:refresh -- --limit=20
 
-# 2. 从 cache 生成 plan
+# 2. 从缓存生成执行计划
 pnpm run plan
 pnpm run plan -- --id=tbpn
 pnpm run plan -- --min-duration=5400
 
-# 3. 执行 plan 中 pending 的条目
+# 3. 执行计划中状态为 pending 的条目
 pnpm run plan:run
 pnpm run plan:run -- --limit=1
 pnpm run plan:run -- --id=tbpn
 pnpm run plan:run -- --auto-transcribe --transcribe-limit=3 --transcribe-wait-minutes=2
 pnpm run plan:run -- --dry-run
 
-# 4. metadata 校验、构建、本地预览
+# 4. 校验元数据、构建并预览
 pnpm run normalize:meta
 pnpm run build
 pnpm run preview
@@ -90,15 +111,44 @@ pnpm run preview
 # 5. 单集开发模式
 pnpm run dev:episode <episodeId>
 
-# 6. 本地统计 RSS cache
+# 6. 统计本地 RSS 缓存
 pnpm run analyze
 pnpm run analyze -- --thresholds=30,60,120
 
-# 7. 真实 API 转写 E2E（读取当前环境、.env.local、scripts/env.local.sh）
+# 7. 调用真实 API 验证转写（读取当前环境、.env.local、scripts/env.local.sh）
 pnpm run e2e:transcription
 ```
 
-本地预览地址：`http://localhost:4173`
+## 质量检查
+
+首次运行浏览器检查前，需要安装项目锁定版本对应的 Chromium：
+
+```bash
+pnpm exec playwright install chromium
+```
+
+```bash
+# 校验所有单集元数据并构建整站
+pnpm run normalize:meta
+pnpm run build
+
+# 检查源码与构建产物中的品牌标识
+pnpm run audit:brand
+
+# 检查首页搜索、探索页签、内容顺序及桌面端/移动端横向溢出
+pnpm run audit:home
+
+# 检查已构建视觉笔记的 Slidev 版本、静态资源和深度链接
+pnpm run verify:routing
+
+# 运行单元测试
+pnpm test
+
+# 检查指定视觉笔记是否超出画布；加入 --png --keep 可保留审阅图
+pnpm run audit:layout -- --id=<episodeId>
+```
+
+`audit:brand`、`audit:home` 和 `verify:routing` 读取 `dist/`，因此应先运行 `pnpm run build`。CI 会依次执行元数据校验、整站构建、品牌检查、首页交互检查和路由检查。
 
 ## 常用收尾流程
 
@@ -118,10 +168,12 @@ git push
 
 仓库提供四个 workflow：
 
-- `Discover`：定时刷新 RSS cache 和 plan，提交 `needs_transcript` / `pending` 队列。
-- `Deploy to GitHub Pages`：手动触发，只构建并部署已有内容。
-- `Generate and Deploy`：每天定时或手动触发，执行 `cache:refresh → plan → plan:run → normalize:meta → build → commit → deploy`。
+- `Discover`：每天 03:00 UTC 刷新 RSS 缓存和执行计划，提交 `needs_transcript` / `pending` 队列。
+- `Deploy to GitHub Pages`：手动触发，校验并构建已有内容，通过首页和路由检查后部署。
+- `Generate and Deploy`：每天 18:00 UTC 或手动触发，执行 `cache:refresh → plan → plan:run → normalize:meta → build → audit → commit → deploy`。
 - `Transcription E2E`：手动验证当前配置的 MiMo 转写接口，不生成内容，也不写入仓库。
+
+`Discover` 和 `Generate and Deploy` 共用 `content-pipeline` 并发组，避免同时更新内容文件；两个部署流程共用 `pages` 并发组，按顺序发布。直接 push 到 `main` 不会触发这些 workflow。
 
 `Generate and Deploy` 需要在 GitHub 仓库的 Secrets 中配置：
 
@@ -150,7 +202,7 @@ ENABLE_TOOL_SEARCH=true
 - `transcribe_wait_minutes`：提交转写后短轮询等待分钟数，默认 `2`。
 - `category`：可选分类过滤。
 
-push 到 `main` 不触发 GitHub Actions；自动生成与部署只来自定时任务或手动 workflow。
+自动生成与部署只来自定时任务或手动 workflow。
 
 ## 添加新 RSS 源
 
@@ -230,13 +282,18 @@ resonote/
 ├── episodes/
 │   ├── _templates/          # 新 episode scaffold
 │   └── <episodeId>/         # 单集 Slidev 项目
-├── landing/                 # Astro landing
+├── landing/                 # Astro 网站与交互界面
 ├── scripts/
 │   ├── lib/rss.ts           # RSS parser + transcript cleaner
 │   ├── refresh-cache.ts     # RSS → scan-cache
 │   ├── plan.ts              # scan-cache → plan
 │   ├── run-plan.ts          # plan → transcript + generation
 │   ├── build-all.ts         # episodes + landing → dist
+│   ├── dev-episode.ts       # 注入共享控件并启动单集开发服务
+│   ├── audit-brand.ts       # 源码与构建产物品牌检查
+│   ├── audit-home.ts        # 首页交互与响应式检查
+│   ├── audit-layout.ts      # 单集 Slidev 画布溢出检查
+│   ├── verify-slide-routing.ts # 构建产物与深度链接检查
 │   └── prompts/             # generation prompts and hard rules
 └── .github/workflows/
     ├── discover.yml             # 定时刷新 RSS cache 和 plan
@@ -252,11 +309,13 @@ resonote/
 - `RESONOTE_BASE=/resonote/`
 - `RESONOTE_SITE=https://doublemice.github.io`
 
-构建脚本仍会读取旧的 `PODDECK_BASE` 和 `PODDECK_SITE`，方便已有本地配置迁移；GitHub Actions 只使用新的 `RESONOTE_*` 变量。
+仓库地址为 `https://github.com/DoubleMice/resonote.git`。构建脚本与 GitHub Actions 统一使用 `RESONOTE_*` 环境变量，浏览器阅读记录保存在 `resonote:readEpisodes:v1`。
 
 部署流程：
 
-手动部署会安装依赖与 Chromium、校验 episode metadata、构建全部页面、验证 Slide 路由，再上传 `dist/` 并发布到 GitHub Pages。生成工作流还会安装 `ffmpeg`、整理新内容、修复可恢复的 metadata 问题，并在部署前提交生成结果。
+手动部署会安装依赖与 Chromium、校验单集元数据、构建全部页面、检查首页交互和响应式布局，并验证 Slide 路由。全部通过后才会上传 `dist/` 并发布到 GitHub Pages。生成工作流还会安装 `ffmpeg`、整理新内容、修复可恢复的元数据问题，并在部署前提交生成结果。
+
+视觉笔记的返回控件只维护在 `episodes/_templates/global-bottom.vue`。构建、布局检查和单集开发会临时注入该文件，并在命令结束后恢复单集目录，避免每期内容保存一份重复组件。
 
 仓库 Pages 设置使用 **GitHub Actions**。
 

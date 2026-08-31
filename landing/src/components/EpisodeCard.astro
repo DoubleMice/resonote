@@ -184,20 +184,20 @@ const published = displayDate(episode.published_sort || episode.published)
 
 <style>
   .episode-card {
-    border: 1px solid rgba(var(--pd-ink-rgb), 0.10);
+    border: 1px solid rgba(var(--resonote-ink-rgb), 0.10);
     border-radius: 4px 18px 18px 4px;
     background: rgba(251, 248, 241, 0.84);
-    box-shadow: 0 10px 30px rgba(var(--pd-ink-rgb), 0.05);
+    box-shadow: 0 10px 30px rgba(var(--resonote-ink-rgb), 0.05);
     transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
   }
   .episode-card:hover {
-    border-color: rgba(var(--pd-accent-rgb), 0.28);
+    border-color: rgba(var(--resonote-accent-rgb), 0.28);
     background: rgba(255, 253, 248, 0.97);
-    box-shadow: 0 18px 42px rgba(var(--pd-ink-rgb), 0.09);
+    box-shadow: 0 18px 42px rgba(var(--resonote-ink-rgb), 0.09);
   }
   .episode-card:focus-within {
-    border-color: rgba(var(--pd-accent-rgb), 0.32);
-    box-shadow: 0 0 0 4px rgba(var(--pd-accent-rgb), 0.08), 0 18px 42px rgba(var(--pd-ink-rgb), 0.09);
+    border-color: rgba(var(--resonote-accent-rgb), 0.32);
+    box-shadow: 0 0 0 4px rgba(var(--resonote-accent-rgb), 0.08), 0 18px 42px rgba(var(--resonote-ink-rgb), 0.09);
   }
   .episode-cover::after {
     position: absolute;
@@ -205,10 +205,10 @@ const published = displayDate(episode.published_sort || episode.published)
     height: 36%;
     pointer-events: none;
     content: "";
-    background: linear-gradient(transparent, rgba(var(--pd-ink-rgb), 0.18));
+    background: linear-gradient(transparent, rgba(var(--resonote-ink-rgb), 0.18));
   }
   .cover-hitbox { z-index: 1; border-radius: 0; }
-  .pending-overlay { z-index: 1; background: rgba(var(--pd-ink-rgb), 0.58); pointer-events: none; }
+  .pending-overlay { z-index: 1; background: rgba(var(--resonote-ink-rgb), 0.58); pointer-events: none; }
   .source-badge {
     z-index: 3;
     display: inline-flex;
@@ -218,9 +218,9 @@ const published = displayDate(episode.published_sort || episode.published)
     max-width: calc(100% - 88px);
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.58);
-    color: var(--pd-ink);
+    color: var(--resonote-ink);
     background: rgba(255, 253, 248, 0.92);
-    box-shadow: 0 4px 14px rgba(var(--pd-ink-rgb), 0.15);
+    box-shadow: 0 4px 14px rgba(var(--resonote-ink-rgb), 0.15);
     backdrop-filter: blur(10px);
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -228,12 +228,12 @@ const published = displayDate(episode.published_sort || episode.published)
   .source-badge > span { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: var(--source-color); }
   .read-badge, .duration-badge { z-index: 2; pointer-events: none; }
   .episode-title {
-    color: var(--pd-ink);
+    color: var(--resonote-ink);
     font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
     letter-spacing: -0.012em;
   }
   .episode-title a { color: inherit; text-decoration: none; }
-  .episode-title a:hover { color: var(--pd-blue); }
+  .episode-title a:hover { color: var(--resonote-blue); }
   .episode-byline { min-height: 1.25rem; }
   .episode-tag {
     display: inline-flex;
@@ -247,8 +247,8 @@ const published = displayDate(episode.published_sort || episode.published)
     text-decoration: none;
     transition: color 180ms ease, background 180ms ease;
   }
-  .episode-tag:hover { color: var(--pd-blue); background: #e7eee9; }
-  .card-footer { border-top: 1px solid rgba(var(--pd-ink-rgb), 0.08); }
+  .episode-tag:hover { color: var(--resonote-blue); background: #e7eee9; }
+  .card-footer { border-top: 1px solid rgba(var(--resonote-ink-rgb), 0.08); }
   .primary-actions { display: flex; flex-wrap: wrap; gap: 8px; }
   .episode-action {
     display: inline-flex;
@@ -262,7 +262,7 @@ const published = displayDate(episode.published_sort || episode.published)
     font-weight: 750;
     text-decoration: none;
   }
-  .action-slides { color: #fff; background: var(--pd-blue); box-shadow: 0 6px 15px rgba(var(--pd-accent-rgb), 0.18); }
+  .action-slides { color: #fff; background: var(--resonote-blue); box-shadow: 0 6px 15px rgba(var(--resonote-accent-rgb), 0.18); }
   .action-slides:hover { background: #294f49; }
   .action-article { color: #794c40; background: #f3e8e1; }
   .action-article:hover { background: #ecddd4; }
@@ -282,7 +282,7 @@ const published = displayDate(episode.published_sort || episode.published)
     text-decoration: none;
   }
   .read-toggle { border: 0; cursor: pointer; }
-  .read-toggle:hover, .original-link:hover { color: var(--pd-ink); background: rgba(var(--pd-ink-rgb), 0.055); }
+  .read-toggle:hover, .original-link:hover { color: var(--resonote-ink); background: rgba(var(--resonote-ink-rgb), 0.055); }
   @media (max-width: 420px) {
     .episode-card > div:last-child { padding: 18px; }
     .episode-action { flex: 1; }

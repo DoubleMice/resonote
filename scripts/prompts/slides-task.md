@@ -86,9 +86,9 @@ Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.ht
 - Footer with source episode link
 
 **Format**: First read `episodes/_templates/article-theme.css`, then paste it
-verbatim into `<style data-poddeck-theme>`. Do not create custom CSS or inline
+verbatim into `<style data-resonote-theme>`. Do not create custom CSS or inline
 style attributes. Use a semantic `<article>` structure and the shared classes
-listed in RULE 10. Add the `.poddeck-home` link to `../../` as the first element
+listed in RULE 10. Add the `.resonote-home` link to `../../` as the first element
 inside `<body>`. No external CSS, JavaScript, or images. Responsive behavior is
 already included in the shared theme.
 

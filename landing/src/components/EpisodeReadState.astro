@@ -27,7 +27,6 @@
     window.__resonoteReadStateReady = true
 
     const storageKey = 'resonote:readEpisodes:v1'
-    const legacyStorageKey = 'poddeck:readEpisodes:v1'
 
     const parseStore = (rawValue) => {
       try {
@@ -40,13 +39,7 @@
 
     const loadStore = () => {
       try {
-        const currentValue = localStorage.getItem(storageKey)
-        if (currentValue !== null) return parseStore(currentValue)
-
-        const legacyValue = localStorage.getItem(legacyStorageKey)
-        const migrated = parseStore(legacyValue)
-        if (legacyValue !== null) localStorage.setItem(storageKey, JSON.stringify(migrated))
-        return migrated
+        return parseStore(localStorage.getItem(storageKey))
       } catch {
         return {}
       }
@@ -124,7 +117,7 @@
     }
 
     window.addEventListener('storage', (event) => {
-      if (event.key === storageKey || event.key === legacyStorageKey) syncCards()
+      if (event.key === storageKey) syncCards()
     })
   })()
 </script>

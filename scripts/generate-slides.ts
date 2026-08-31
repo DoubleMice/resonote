@@ -12,11 +12,12 @@
 
 import { resolve, join } from 'node:path'
 import {
-  readFileSync, existsSync, mkdirSync, writeFileSync, cpSync,
+  readFileSync, existsSync, writeFileSync,
 } from 'node:fs'
 import { spawn, execSync } from 'node:child_process'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
+import { scaffoldEpisodeWorkspace } from './lib/episode-workspace.ts'
 import type { EpisodesFile, Episode, SourcesFile } from './lib/types.ts'
 
 // Resolve the claude CLI native binary so we can spawn it directly,
@@ -47,30 +48,6 @@ const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
 
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 
-function scaffoldEpisode(id: string): void {
-  const dir = join(EPISODES_DIR, id)
-  log.raw(`  ${id}: syncing scaffold from _templates/`)
-  mkdirSync(dir, { recursive: true })
-  const packagePath = join(dir, 'package.json')
-  if (!existsSync(packagePath)) {
-    const pkg = JSON.parse(readFileSync(join(TEMPLATES_DIR, 'package.json'), 'utf-8'))
-    pkg.name = `episode-${id}`
-    writeFileSync(packagePath, JSON.stringify(pkg, null, 2) + '\n')
-  }
-  const globalBottomPath = join(dir, 'global-bottom.vue')
-  if (!existsSync(globalBottomPath)) {
-    cpSync(join(TEMPLATES_DIR, 'global-bottom.vue'), globalBottomPath)
-  }
-  const stylePath = join(dir, 'style.css')
-  if (!existsSync(stylePath)) {
-    cpSync(join(TEMPLATES_DIR, 'style.css'), stylePath)
-  }
-  const publicPath = join(dir, 'public')
-  if (!existsSync(publicPath)) {
-    cpSync(join(TEMPLATES_DIR, 'public'), publicPath, { recursive: true })
-  }
-}
-
 function renderTask(id: string, source: string, title: string): string {
   return readFileSync(TASK_FILE, 'utf-8')
     .replaceAll('{{ID}}', id)
@@ -89,7 +66,8 @@ async function generateOne(ep: Episode, sourcesFile: SourcesFile): Promise<boole
   }
 
   // scaffold
-  scaffoldEpisode(ep.id)
+  log.raw(`  ${ep.id}: syncing scaffold from _templates/`)
+  scaffoldEpisodeWorkspace(EPISODES_DIR, TEMPLATES_DIR, ep.id)
 
   // prepare the task prompt
   const taskPrompt = renderTask(ep.id, ep.source, ep.title)

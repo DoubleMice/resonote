@@ -57,21 +57,21 @@ const isLibrary = pathname.includes('/library')
 <style is:global>
   :root {
     color-scheme: light;
-    --pd-ink: #26322f;
-    --pd-muted: #68736f;
-    --pd-paper: #fbf8f1;
-    --pd-canvas: #eee8dc;
-    --pd-line: #d7cec0;
-    --pd-blue: #355f58;
-    --pd-amber: #aa5143;
-    --pd-sage: #829188;
-    --pd-gold: #ad8756;
-    --pd-ink-rgb: 38, 50, 47;
-    --pd-accent-rgb: 53, 95, 88;
-    --pd-seal-rgb: 170, 81, 67;
+    --resonote-ink: #26322f;
+    --resonote-muted: #68736f;
+    --resonote-paper: #fbf8f1;
+    --resonote-canvas: #eee8dc;
+    --resonote-line: #d7cec0;
+    --resonote-blue: #355f58;
+    --resonote-amber: #aa5143;
+    --resonote-sage: #829188;
+    --resonote-gold: #ad8756;
+    --resonote-ink-rgb: 38, 50, 47;
+    --resonote-accent-rgb: 53, 95, 88;
+    --resonote-seal-rgb: 170, 81, 67;
   }
   html {
-    background: var(--pd-canvas);
+    background: var(--resonote-canvas);
     scroll-behavior: smooth;
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
   }
@@ -80,18 +80,18 @@ const isLibrary = pathname.includes('/library')
     font-feature-settings: "cv11", "ss01";
   }
   .resonote-shell {
-    color: var(--pd-ink);
+    color: var(--resonote-ink);
     background:
-      radial-gradient(circle at 86% -6%, rgba(var(--pd-accent-rgb), 0.12), transparent 34rem),
-      radial-gradient(circle at 7% 18%, rgba(var(--pd-seal-rgb), 0.045), transparent 24rem),
-      repeating-linear-gradient(90deg, rgba(var(--pd-ink-rgb), 0.012) 0 1px, transparent 1px 7px),
-      linear-gradient(180deg, #f8f4ec 0, var(--pd-canvas) 34rem);
+      radial-gradient(circle at 86% -6%, rgba(var(--resonote-accent-rgb), 0.12), transparent 34rem),
+      radial-gradient(circle at 7% 18%, rgba(var(--resonote-seal-rgb), 0.045), transparent 24rem),
+      repeating-linear-gradient(90deg, rgba(var(--resonote-ink-rgb), 0.012) 0 1px, transparent 1px 7px),
+      linear-gradient(180deg, #f8f4ec 0, var(--resonote-canvas) 34rem);
   }
   .site-header {
     position: sticky;
     top: 0;
     z-index: 30;
-    border-bottom: 1px solid rgba(var(--pd-ink-rgb), 0.09);
+    border-bottom: 1px solid rgba(var(--resonote-ink-rgb), 0.09);
     background: rgba(251, 248, 241, 0.87);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -101,7 +101,7 @@ const isLibrary = pathname.includes('/library')
     min-height: 44px;
     align-items: center;
     gap: 11px;
-    color: var(--pd-ink);
+    color: var(--resonote-ink);
     font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, Georgia, serif;
     font-size: 1.35rem;
     letter-spacing: -0.03em;
@@ -115,7 +115,7 @@ const isLibrary = pathname.includes('/library')
     stroke-width: 1.55;
     stroke-linecap: round;
   }
-  .brand-mark svg path:last-child { stroke: var(--pd-amber); stroke-width: 1.8; }
+  .brand-mark svg path:last-child { stroke: var(--resonote-amber); stroke-width: 1.8; }
   .brand-lockup { display: grid; gap: 1px; line-height: 1; }
   .brand-lockup strong { font-weight: 700; }
   .brand-lockup small {
@@ -143,20 +143,20 @@ const isLibrary = pathname.includes('/library')
     left: 12px;
     height: 2px;
     content: "";
-    background: var(--pd-amber);
+    background: var(--resonote-amber);
     opacity: 0;
     transform: scaleX(0.35);
     transition: opacity 180ms ease, transform 180ms ease;
   }
-  .nav-link:hover { color: var(--pd-blue); }
+  .nav-link:hover { color: var(--resonote-blue); }
   .nav-link[aria-current="page"] {
-    color: var(--pd-ink);
+    color: var(--resonote-ink);
   }
   .nav-link[aria-current="page"]::after { opacity: 1; transform: scaleX(1); }
   .site-nav { display: flex; align-items: center; gap: 2px; }
   .site-footer {
     margin-top: 5rem;
-    border-top: 1px solid rgba(var(--pd-ink-rgb), 0.1);
+    border-top: 1px solid rgba(var(--resonote-ink-rgb), 0.1);
     color: #737d78;
     font-size: 0.75rem;
     background: rgba(251, 248, 241, 0.58);
@@ -169,14 +169,14 @@ const isLibrary = pathname.includes('/library')
     padding: 8px 12px;
     border-radius: 8px;
     color: white;
-    background: var(--pd-ink);
+    background: var(--resonote-ink);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-220%);
   }
   .skip-link:focus { opacity: 1; pointer-events: auto; transform: translateY(0); }
   :where(a, button, input, select):focus-visible {
-    outline: 3px solid rgba(var(--pd-accent-rgb), 0.28);
+    outline: 3px solid rgba(var(--resonote-accent-rgb), 0.28);
     outline-offset: 3px;
   }
   .sr-only {

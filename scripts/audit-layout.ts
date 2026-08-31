@@ -8,7 +8,7 @@
 //   pnpm run audit:layout -- --all
 //   pnpm run audit:layout -- --all --png --keep
 
-import { existsSync, mkdirSync, readdirSync, rmSync, statSync, cpSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -17,6 +17,7 @@ import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { readYaml } from './lib/yaml-io.ts'
 import type { EpisodeMeta } from './lib/types.ts'
+import { stageEpisodePresentation } from './lib/episode-workspace.ts'
 
 interface Args {
   all: boolean
@@ -42,7 +43,7 @@ interface Offender {
 
 const ROOT = process.cwd()
 const EPISODES_DIR = resolve(ROOT, 'episodes')
-const SHARED_SLIDE_THEME = join(EPISODES_DIR, '_templates', 'style.css')
+const TEMPLATES_DIR = join(EPISODES_DIR, '_templates')
 const DEFAULT_THRESHOLD = 8
 
 function parseArgs(): Args {
@@ -94,8 +95,6 @@ function generatedEpisodes(): string[] {
 
 async function renderEpisode(id: string, outDir: string, png: boolean): Promise<string> {
   const episodeDir = join(EPISODES_DIR, id)
-  const episodeStylePath = join(episodeDir, 'style.css')
-  const borrowedSharedTheme = !existsSync(episodeStylePath)
   if (!existsSync(join(episodeDir, 'slides.md'))) {
     throw new Error(`slides.md not found for episode ${id}`)
   }
@@ -105,7 +104,7 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
 
   const htmlDir = join(outDir, 'html')
 
-  if (borrowedSharedTheme) cpSync(SHARED_SLIDE_THEME, episodeStylePath)
+  const cleanupPresentation = stageEpisodePresentation(episodeDir, TEMPLATES_DIR)
 
   try {
     if (png) {
@@ -139,7 +138,7 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
       throw new Error(`${id} build failed\n${buildResult.stderr.slice(0, 1000)}`)
     }
   } finally {
-    if (borrowedSharedTheme) rmSync(episodeStylePath, { force: true })
+    cleanupPresentation()
   }
 
   return htmlDir
@@ -180,7 +179,7 @@ async function auditEpisode(id: string, outDir: string, threshold: number): Prom
 
       const viewportBottom = window.innerHeight
       const viewportRight = window.innerWidth
-      const ignored = '.poddeck-back, .slidev-page-number, .slidev-page-total, .slidev-presenter, [aria-hidden="true"]'
+      const ignored = '.resonote-back, .slidev-page-number, .slidev-page-total, .slidev-presenter, [aria-hidden="true"]'
 
       const offenders = Array.from(root.querySelectorAll<HTMLElement>('*'))
         .filter((el) => !el.matches(ignored) && !el.closest(ignored))

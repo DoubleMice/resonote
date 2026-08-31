@@ -1,21 +1,21 @@
-export const articleHomeLink = `<a class="poddeck-home" href="../../" aria-label="返回声笺 Resonote 首页">
+export const articleHomeLink = `<a class="resonote-home" href="../../" aria-label="返回声笺 Resonote 首页">
   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11.75 4.75 6.5 10l5.25 5.25M7 10h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  <span class="poddeck-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
+  <span class="resonote-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
 </a>`
 
-export const articleReaderChrome = `<div class="poddeck-reading-progress" aria-hidden="true"><span></span></div>
-<button class="poddeck-to-top" type="button" aria-label="返回文章顶部" title="返回顶部">
+export const articleReaderChrome = `<div class="resonote-reading-progress" aria-hidden="true"><span></span></div>
+<button class="resonote-to-top" type="button" aria-label="返回文章顶部" title="返回顶部">
   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5.5 11.5 4.5-4.5 4.5 4.5M10 7v8"/></svg>
 </button>`
 
-export const articleReaderScript = `<script data-poddeck-reader>
+export const articleReaderScript = `<script data-resonote-reader>
 (() => {
-  if (window.__poddeckReaderReady) return
-  window.__poddeckReaderReady = true
+  if (window.__resonoteReaderReady) return
+  window.__resonoteReaderReady = true
 
-  const progress = document.querySelector('.poddeck-reading-progress span')
-  const topButton = document.querySelector('.poddeck-to-top')
-  const article = document.querySelector('.poddeck-article')
+  const progress = document.querySelector('.resonote-reading-progress span')
+  const topButton = document.querySelector('.resonote-to-top')
+  const article = document.querySelector('.resonote-article')
 
   const updateProgress = () => {
     const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1)
@@ -38,10 +38,10 @@ export const articleReaderScript = `<script data-poddeck-reader>
   if (headings.length < 3) return
 
   const toc = document.createElement('nav')
-  toc.className = 'poddeck-toc'
+  toc.className = 'resonote-toc'
   toc.setAttribute('aria-label', '文章目录')
   const title = document.createElement('div')
-  title.className = 'poddeck-toc-title'
+  title.className = 'resonote-toc-title'
   title.textContent = '文章目录'
   const list = document.createElement('ol')
 
@@ -75,7 +75,7 @@ export const articleReaderScript = `<script data-poddeck-reader>
 })()
 </script>`
 
-const homeLinkPattern = /<a\b(?=[^>]*class=["'][^"']*\bpoddeck-home\b[^"']*["'])[^>]*>[\s\S]*?<\/a>/i
+const homeLinkPattern = /<a\b(?=[^>]*class=["'][^"']*\bresonote-home\b[^"']*["'])[^>]*>[\s\S]*?<\/a>/i
 
 function addClass(openingTag: string, className: string): string {
   if (new RegExp(`\\b${className}\\b`).test(openingTag)) return openingTag
@@ -90,25 +90,21 @@ function addClass(openingTag: string, className: string): string {
 function markReadingWrapper(sourceHtml: string): string {
   let html = sourceHtml
   const semantic = html.match(/<(?:article|main)\b[^>]*>/i)?.[0]
-  if (semantic) return html.replace(semantic, addClass(semantic, 'poddeck-article'))
+  if (semantic) return html.replace(semantic, addClass(semantic, 'resonote-article'))
 
   const classWrapper = html.match(/<[a-z][\w:-]*\b(?=[^>]*class=["'][^"']*\b(?:container|wrap)\b[^"']*["'])[^>]*>/i)?.[0]
-  if (classWrapper) return html.replace(classWrapper, addClass(classWrapper, 'poddeck-article'))
+  if (classWrapper) return html.replace(classWrapper, addClass(classWrapper, 'resonote-article'))
   return html
 }
 
 export function applyArticleTheme(sourceHtml: string, themeCss: string): string {
-  // Keep legacy article bodies intact while canonicalizing the public brand
-  // whenever they are materialized into the site build.
   let html = sourceHtml
-    .replaceAll('PodDeck', '声笺 Resonote')
-    .replaceAll('PODDECK', 'RESONOTE')
   const hasReadingWrapper = /<(?:article|main)\b/i.test(html)
     || /class=["'][^"']*\b(?:container|wrap)\b[^"']*["']/i.test(html)
   const existingHomeLink = html.match(homeLinkPattern)?.[0]
 
-  if (!html.includes('data-poddeck-theme')) {
-    const theme = `<style data-poddeck-theme>\n${themeCss}\n</style>`
+  if (!html.includes('data-resonote-theme')) {
+    const theme = `<style data-resonote-theme>\n${themeCss}\n</style>`
     html = /<\/head>/i.test(html)
       ? html.replace(/<\/head>/i, `${theme}\n</head>`)
       : `${theme}\n${html}`
@@ -119,7 +115,7 @@ export function applyArticleTheme(sourceHtml: string, themeCss: string): string 
     html = html
       .replace(
         /<body(?:\s[^>]*)?>/i,
-        (match: string) => `${match}\n<article class="poddeck-article">`,
+        (match: string) => `${match}\n<article class="resonote-article">`,
       )
       .replace(/<\/body>/i, '</article>\n</body>')
   } else {
@@ -135,13 +131,13 @@ export function applyArticleTheme(sourceHtml: string, themeCss: string): string 
       : `${articleHomeLink}\n${html}`
   }
 
-  if (!html.includes('poddeck-reading-progress')) {
+  if (!html.includes('resonote-reading-progress')) {
     html = /<body(?:\s[^>]*)?>/i.test(html)
       ? html.replace(/<body(?:\s[^>]*)?>/i, (match: string) => `${match}\n${articleReaderChrome}`)
       : `${articleReaderChrome}\n${html}`
   }
 
-  if (!html.includes('data-poddeck-reader')) {
+  if (!html.includes('data-resonote-reader')) {
     html = /<\/body>/i.test(html)
       ? html.replace(/<\/body>/i, `${articleReaderScript}\n</body>`)
       : `${html}\n${articleReaderScript}`

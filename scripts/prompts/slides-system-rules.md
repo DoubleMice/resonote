@@ -223,10 +223,10 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 **Format requirements:**
 - Self-contained HTML with inline `<style>` — no external CSS, no JavaScript, no images
 - Read `episodes/_templates/article-theme.css` and paste it verbatim into
-  `<style data-poddeck-theme>`. This shared theme is mandatory; do not invent
+  `<style data-resonote-theme>`. This shared theme is mandatory; do not invent
   episode-specific CSS or use inline `style="..."` attributes.
 - Use one semantic `<article>` wrapper with `<header>`, content, and `<footer>`.
-- At the beginning of `<body>`, include a `.poddeck-home` link to `../../` with
+- At the beginning of `<body>`, include a `.resonote-home` link to `../../` with
   a small inline SVG left-arrow and the visible brand `声笺 / RESONOTE`.
 - Use the shared semantic classes: `.meta`, `.tag`, `.cards`, `.card` plus
   `.c-blue|green|orange|red|purple|yellow`, `.info-box`, `.compare`, and
