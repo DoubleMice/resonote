@@ -4,10 +4,12 @@ title: "#496 – FFmpeg: The Incredible Technology Behind Video on the Internet"
 guest: "Jean-Baptiste Kempf & Kieran Kunhya"
 guest_role: engineer
 published: 2026-05
+published_sort: "20260506"
 duration: 4h24m
 url: "https://lexfridman.com/ffmpeg/?utm_source=rss&utm_medium=rss&utm_campaign=ffmpeg"
 thumbnail: "https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png"
 status: generated
+generated_at: "2026-06-04T20:32:28.000Z"
 tags:
   - technical
   - deep-dive

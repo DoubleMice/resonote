@@ -49,6 +49,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Restore episode build cache
+        uses: actions/cache@v5
+        with:
+          path: .cache/episode-builds
+          key: resonote-episode-builds-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            resonote-episode-builds-v1-${{ runner.os }}-
+
       - name: Install playwright-chromium browser binaries
         run: pnpm exec playwright install --with-deps chromium
 

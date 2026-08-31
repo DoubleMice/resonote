@@ -1,10 +1,15 @@
 ---
 import Base from '../layouts/Base.astro'
 import EpisodeCard from '../components/EpisodeCard.astro'
+import EpisodeRow from '../components/EpisodeRow.astro'
 import FeaturedNote from '../components/FeaturedNote.astro'
 import SearchBox from '../components/SearchBox.astro'
 import DiscoveryTabs from '../components/DiscoveryTabs.astro'
-import { loadEpisodes, loadSourcesWithFallbacks, collectTags, CATEGORIES } from '../lib/data'
+import LibraryFilters from '../components/LibraryFilters.astro'
+import {
+  loadEpisodes, loadSourcesWithFallbacks, collectTags, CATEGORIES,
+  sortEpisodesByGeneratedDesc, sortEpisodesForLibrary,
+} from '../lib/data'
 import { url } from '../lib/url'
 
 const CATEGORY_NOTES = {
@@ -20,9 +25,8 @@ const sources = loadSourcesWithFallbacks(episodes)
 const tags = collectTags(episodes)
 const generated = episodes.filter(episode => episode.status === 'generated')
 const articles = episodes.filter(episode => episode.article_path)
-const sortedGenerated = [...generated].sort((a, b) =>
-  (b.generated_sort ?? 0) - (a.generated_sort ?? 0)
-  || (b.published ?? '').localeCompare(a.published ?? ''))
+const sortedGenerated = sortEpisodesByGeneratedDesc(generated)
+const libraryEpisodes = sortEpisodesForLibrary(episodes)
 const latest = sortedGenerated.slice(0, 7)
 const featured = latest[0]
 const recent = latest.slice(1)
@@ -130,6 +134,22 @@ const sourcesWithCount = sources
       </div>
     </section>
   )}
+
+  <section class="content-section home-library mb-16" aria-labelledby="home-library-title">
+    <div class="section-heading">
+      <div>
+        <div class="section-overline">THE COMPLETE ARCHIVE</div>
+        <h2 id="home-library-title">全部声笺</h2>
+        <p>完整收录既有播客内容；可按形式、主题、关键词和阅读状态筛选。</p>
+      </div>
+      <a href={url('/library/')}>独立打开内容库 <span aria-hidden="true">→</span></a>
+    </div>
+
+    <LibraryFilters />
+    <div class="home-library-list" id="library-list">
+      {libraryEpisodes.map((episode, index) => <EpisodeRow episode={episode} initialHidden={index >= 36} />)}
+    </div>
+  </section>
 
   <aside class="archive-cta" aria-labelledby="archive-title">
     <div>
@@ -306,6 +326,8 @@ const sourcesWithCount = sources
   }
   .theme-card > svg { position: absolute; right: 14px; bottom: 14px; color: var(--resonote-blue); opacity: 0; }
   .theme-card:hover > svg { opacity: 1; transform: translateX(2px); }
+  .home-library-list { display: grid; gap: 11px; }
+  :global(.js .home-library-list .library-row[data-initial-hidden="true"]) { display: none; }
   .archive-cta {
     display: flex;
     align-items: center;

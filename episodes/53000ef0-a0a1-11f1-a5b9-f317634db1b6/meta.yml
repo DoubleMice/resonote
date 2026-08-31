@@ -4,10 +4,12 @@ title: "One Type of Post-Quantum Cryptography Is Most Popular. Why Is Crypto Try
 guest: "Illia Polosukhin & Charles Guillemet"
 guest_role: "NEAR Protocol 联合创始人 / Ledger CTO"
 published: "2026-08"
+published_sort: "20260825"
 duration: "1h3m"
 url: "https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8720816242.mp3"
 thumbnail: "https://megaphone.imgix.net/podcasts/53000ef0-a0a1-11f1-a5b9-f317634db1b6/image/2a7f7dac20c9f6e4bbb31f29cb16624e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
 status: generated
+generated_at: "2026-08-25T19:46:46.000Z"
 tags:
   - hardware
   - panel

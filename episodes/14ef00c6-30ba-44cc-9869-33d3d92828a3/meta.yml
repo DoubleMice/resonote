@@ -4,10 +4,12 @@ title: "Costco"
 guest: "Ben Gilbert & David Rosenthal"
 guest_role: "Acquired 播客主持人"
 published: 2026-01
+published_sort: "20260102"
 duration: 3h1m
 url: https://www.acquired.fm/episodes/costco
 thumbnail: https://img.transistorcdn.com/jFPz1nSL8JfyAmY8ab_xqfZWEVOQ1VqoHhJKdxvzTEY/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9hMWI0/NTE4ZGMzNWQ2ODli/ZTExZDkwNjBmZjVl/ZmQ1OS5wbmc.jpg
 status: generated
+generated_at: "2026-06-25T19:45:21.000Z"
 tags:
   - deep-dive
   - strategic

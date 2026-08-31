@@ -194,6 +194,7 @@ title: "<full title>"
 guest: "<guest name>"
 guest_role: "<e.g. Anthropic CEO>"
 published: <YYYY-MM from task input>
+published_sort: <YYYYMMDD from task input>
 duration: <duration from task input>
 url: <source episode URL>
 thumbnail: <RSS episode image URL, optional>
@@ -206,6 +207,9 @@ core_ideas:
 article_path: episodes/<id>/article.html
 base: /episodes/<id>/
 ```
+
+The orchestrator adds `generated_at` only after the deck passes its layout
+audit. Do not infer or write that timestamp yourself.
 
 The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
 

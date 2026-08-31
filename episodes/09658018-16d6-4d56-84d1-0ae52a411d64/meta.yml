@@ -4,10 +4,12 @@ title: "163: 详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极�
 guest: "刘一峰、赵晨阳"
 guest_role: "UCLA 博士生（模型架构）与 RadixArc/sglang 工程师（Infra）"
 published: "2026-04"
+published_sort: "20260430"
 duration: "1h34m"
 url: "https://podcast.latepost.com/163"
 thumbnail: "https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/0/09658018-16d6-4d56-84d1-0ae52a411d64/cover.jpg?v=1"
 status: generated
+generated_at: "2026-08-29T18:54:36.000Z"
 tags:
   - ai-research
   - ai-products

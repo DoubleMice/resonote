@@ -4,10 +4,12 @@ title: "Formula 1"
 guest: "Ben Gilbert & David Rosenthal"
 guest_role: "hosts"
 published: 2026-03
+published_sort: "20260302"
 duration: 4h30m
 url: https://www.acquired.fm/episodes/formula-1
 thumbnail: https://img.transistorcdn.com/ORaQ7w0zdqAScJ9YPCf3I4RKe_muT-If0IMRT5rIuE8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS84MzRh/NWY0NDJlNzAzNDY1/OGY2NThlZDBkYmU1/NzdjMC5wbmc.jpg
 status: generated
+generated_at: "2026-05-21T21:10:14.000Z"
 tags:
   - deep-dive
   - strategic

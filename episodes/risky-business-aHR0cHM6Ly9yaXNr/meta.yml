@@ -4,10 +4,12 @@ title: 'Risky Business #839 -- TeamPCP stole GitHub&apos;s internal repos'
 guest: "Patrick Gray, Adam Boileau, James Wilson"
 guest_role: "Security News Panel"
 published: "2026-05"
+published_sort: "20241211"
 duration: "1h0m"
 url: "https://risky.biz/RB839/"
 thumbnail: "https://risky.biz/static/img/rb-feed-main.png"
 status: generated
+generated_at: "2026-05-29T21:31:23.000Z"
 tags:
   - interview
   - panel

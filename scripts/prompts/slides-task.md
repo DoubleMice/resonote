@@ -6,7 +6,8 @@ You are generating a Slidev presentation deck for ONE podcast episode. **Write a
 - **Source**: `{{SOURCE}}`
 - **Title**: `{{TITLE}}`
 - **Source episode URL**: `{{URL}}`
-- **Published**: `{{PUBLISHED}}` (use exactly this `YYYY-MM` value in `meta.yml`)
+- **Published**: `{{PUBLISHED}}` (use exactly this `YYYY-MM` display value in `meta.yml`)
+- **Published sort key**: `{{PUBLISHED_SORT}}` (use exactly this `YYYYMMDD` value as `published_sort` in `meta.yml`)
 - **Duration**: `{{DURATION}}` (use exactly this display value in `meta.yml`)
 - **Thumbnail**: `{{THUMBNAIL}}`
 - **Transcript file**: `data/transcripts/{{ID}}.txt`

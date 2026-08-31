@@ -6,6 +6,9 @@ import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
 import { applyArticleTheme } from './lib/article-theme.ts'
+import {
+  cachedEpisodeDist, episodeBuildFingerprint, storeEpisodeDist,
+} from './lib/build-cache.ts'
 import { stageEpisodePresentation } from './lib/episode-workspace.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
@@ -14,7 +17,10 @@ const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = join(EPISODES_DIR, '_templates')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
+const BUILD_CACHE_DIR = resolve(ROOT, process.env.RESONOTE_BUILD_CACHE_DIR || '.cache/episode-builds')
 const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
+let episodeCacheHits = 0
+let episodeCacheMisses = 0
 
 function themedArticleHtml(articlePath: string): string {
   const html = readFileSync(articlePath, 'utf-8')
@@ -84,6 +90,20 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
   }
   const meta = readYaml<EpisodeMeta>(metaPath)
 
+  const fingerprint = episodeBuildFingerprint({
+    rootDir: ROOT,
+    episodeDir: dir,
+    templatesDir: TEMPLATES_DIR,
+    base,
+  })
+  const cachedDist = cachedEpisodeDist(BUILD_CACHE_DIR, id, fingerprint)
+  if (cachedDist) {
+    episodeCacheHits++
+    log.info(`building ${id} — cache hit`)
+    return cachedDist
+  }
+  episodeCacheMisses++
+
   log.info(`building ${id}`)
 
   // Shared presentation chrome is staged for the command and removed again so
@@ -91,6 +111,7 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
   const cleanupPresentation = stageEpisodePresentation(dir, TEMPLATES_DIR)
 
   try {
+    rmSync(join(dir, 'dist'), { recursive: true, force: true })
     // slidev build needs the base path for correct asset URLs in final bundle
     const { code, stderr } = await run('pnpm', [
       'exec', 'slidev', 'build',
@@ -106,7 +127,7 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
     cleanupPresentation()
   }
   log.ok(`  ${id} built`)
-  return join(dir, 'dist')
+  return storeEpisodeDist(BUILD_CACHE_DIR, id, fingerprint, join(dir, 'dist'))
 }
 
 async function buildLanding(): Promise<string> {
@@ -164,6 +185,7 @@ async function main() {
   if (episodeDists.length !== episodes.length) {
     throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
   }
+  log.info(`episode build cache: ${episodeCacheHits} hit, ${episodeCacheMisses} rebuilt`)
 
   // Build landing
   log.step('Building landing')

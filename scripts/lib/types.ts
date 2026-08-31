@@ -38,6 +38,7 @@ export interface Episode {
   title: string
   url: string
   published?: string
+  published_sort?: string
   duration?: string
   tags?: string[]
   status: EpisodeStatus
@@ -54,6 +55,7 @@ export interface EpisodeMeta extends Episode {
   article_path?: string
   base?: string
   category?: string
+  generated_at?: string
 }
 
 export interface EpisodesFile {

@@ -137,6 +137,7 @@ function renderTask(entry: PlanEntry, sourceId: string): string {
     .replaceAll('{{TITLE}}', entry.title)
     .replaceAll('{{URL}}', entry.url || '')
     .replaceAll('{{PUBLISHED}}', formatPublishedMonth(entry))
+    .replaceAll('{{PUBLISHED_SORT}}', entry.published_sort || '')
     .replaceAll('{{THUMBNAIL}}', entry.image || '')
     .replaceAll('{{DURATION}}', formatDuration(entry.duration))
 }
@@ -176,16 +177,17 @@ function hasGeneratedEpisode(id: string): boolean {
   }
 }
 
-function syncMetaStatus(id: string, status: PlanEntry['status']): void {
-  const metaPath = join(EPISODES_DIR, id, 'meta.yml')
+function syncMetaStatus(entry: PlanEntry, status: PlanEntry['status']): void {
+  const metaPath = join(EPISODES_DIR, entry.id, 'meta.yml')
   if (!existsSync(metaPath)) return
   try {
     const meta = readYaml<Record<string, unknown>>(metaPath)
-    if (meta.status === status) return
     meta.status = status
+    if (entry.published_sort) meta.published_sort = String(entry.published_sort)
+    if (status === 'generated' && !meta.generated_at) meta.generated_at = new Date().toISOString()
     writeYaml(metaPath, meta)
   } catch (error: any) {
-    log.warn(`  failed to sync meta status for ${id}: ${error.message}`)
+    log.warn(`  failed to sync metadata for ${entry.id}: ${error.message}`)
   }
 }
 
@@ -1029,7 +1031,7 @@ async function processEntry(
     const layoutOk = await auditGeneratedLayout(entry.id)
     entry.status = layoutOk ? 'generated' : 'audit_failed'
     savePlan(planPath, plan)
-    syncMetaStatus(entry.id, entry.status)
+    syncMetaStatus(entry, entry.status)
     log.ok(`  → status=${entry.status}`)
     stats.episodes.push({
       id: entry.id,
@@ -1061,7 +1063,7 @@ async function processEntry(
       ? 'audit_failed'
       : 'failed'
   savePlan(planPath, plan)
-  syncMetaStatus(entry.id, entry.status)
+  syncMetaStatus(entry, entry.status)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
   const tokenStr = result.inputTokens > 0
@@ -1116,7 +1118,7 @@ async function main() {
       if (entry.status !== 'generated' && hasGeneratedEpisode(entry.id)) {
         entry.status = 'generated'
         savePlan(path, plan)
-        syncMetaStatus(entry.id, 'generated')
+        syncMetaStatus(entry, 'generated')
         continue
       }
       if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {

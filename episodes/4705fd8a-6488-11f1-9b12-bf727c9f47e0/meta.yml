@@ -4,10 +4,12 @@ title: "The Chopping Block: Zcash Infinite Mint Bug + AI Hackers vs Formal Verif
 guest: "Haseeb Qureshi, Mert Mumtaz, Ilia Polosukhin, Tom Schmidt"
 guest_role: "Dragonfly Managing Partner, Helius CEO, NEAR Protocol Co-founder, DeFi Maven"
 published: 2026-06
+published_sort: "20260610"
 duration: 57m
 url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4468999810.mp3
 thumbnail: https://megaphone.imgix.net/podcasts/4705fd8a-6488-11f1-9b12-bf727c9f47e0/image/0f4308215455961435a8ab510d39da92.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
 status: generated
+generated_at: "2026-06-10T20:19:25.000Z"
 tags:
   - ai-safety
   - coding-agents

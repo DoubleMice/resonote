@@ -3,7 +3,6 @@
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { resolve, join } from 'node:path'
-import { execFileSync } from 'node:child_process'
 import { parse } from 'yaml'
 
 const PROJECT_ROOT = resolve(process.cwd(), '..')   // landing/ → Resonote repository root
@@ -79,6 +78,21 @@ export function sortEpisodesByPublishedDesc<T extends Pick<EpisodeMeta, 'id' | '
   })
 }
 
+export function episodeGeneratedTime(ep: Pick<EpisodeMeta, 'generated_at'>): number {
+  const parsed = Date.parse(String(ep.generated_at || ''))
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+export function sortEpisodesByGeneratedDesc<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title' | 'generated_at'>>(episodes: T[]): T[] {
+  return [...episodes].sort((a, b) => {
+    const byGenerated = episodeGeneratedTime(b) - episodeGeneratedTime(a)
+    if (byGenerated !== 0) return byGenerated
+    const byPublished = episodePublishedTime(b) - episodePublishedTime(a)
+    if (byPublished !== 0) return byPublished
+    return `${b.title}:${b.id}`.localeCompare(`${a.title}:${a.id}`)
+  })
+}
+
 export function sortEpisodesForLibrary<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title' | 'status' | 'article_path'>>(episodes: T[]): T[] {
   return [...episodes].sort((a, b) => {
     const aReadable = a.status === 'generated' || Boolean(a.article_path)
@@ -124,37 +138,6 @@ function readYaml<T>(path: string, fallback?: T): T {
     throw new Error(`Missing ${path}`)
   }
   return parse(readFileSync(path, 'utf-8')) as T
-}
-
-function gitCommitTime(paths: string[]): number | undefined {
-  try {
-    const output = execFileSync('git', ['log', '-1', '--format=%ct', '--', ...paths], {
-      cwd: PROJECT_ROOT,
-      encoding: 'utf-8',
-      stdio: ['ignore', 'pipe', 'ignore'],
-    }).trim()
-    const seconds = Number(output)
-    return Number.isFinite(seconds) && seconds > 0 ? seconds * 1000 : undefined
-  } catch {
-    return undefined
-  }
-}
-
-function fileMtime(paths: string[]): number | undefined {
-  const times = paths
-    .filter(path => existsSync(path))
-    .map(path => statSync(path).mtimeMs)
-  return times.length > 0 ? Math.max(...times) : undefined
-}
-
-function episodeGeneratedTime(id: string): number | undefined {
-  const relPaths = [
-    `episodes/${id}/slides.md`,
-    `episodes/${id}/meta.yml`,
-    `episodes/${id}/article.html`,
-  ]
-  const absPaths = relPaths.map(path => resolve(PROJECT_ROOT, path))
-  return gitCommitTime(relPaths) ?? fileMtime(absPaths)
 }
 
 export function loadSources(): Source[] {
@@ -261,10 +244,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       meta.published = meta.published || cacheMeta?.published
       meta.article_path = resolveArticlePath(meta)
       meta.status = resolveEpisodeStatus(meta.id, meta.status)
-      if (meta.status === 'generated') {
-        meta.generated_sort = episodeGeneratedTime(meta.id)
-        meta.generated_at = meta.generated_sort ? new Date(meta.generated_sort).toISOString() : undefined
-      }
+      if (meta.status === 'generated') meta.generated_sort = episodeGeneratedTime(meta)
       const sourceRef = sourceMap[meta.source] || fallbackSource(meta.source)
       results.push({ ...meta, sourceRef })
       seenIds.add(meta.id)

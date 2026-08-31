@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro'
 import EpisodeCard from '../../components/EpisodeCard.astro'
 import FormatTabs from '../../components/FormatTabs.astro'
-import { loadEpisodes, collectTags } from '../../lib/data'
+import { loadEpisodes, collectTags, sortEpisodesByPublishedDesc } from '../../lib/data'
 import { url } from '../../lib/url'
 
 export async function getStaticPaths() {
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { tag } = Astro.props
-const episodes = loadEpisodes().filter(e => (e.tags || []).includes(tag))
+const episodes = sortEpisodesByPublishedDesc(loadEpisodes().filter(e => (e.tags || []).includes(tag)))
 const generated = episodes.filter(e => e.status === 'generated')
 const pending = episodes.filter(e => e.status !== 'generated' && e.status !== 'failed')
 const failed = episodes.filter(e => e.status === 'failed')
