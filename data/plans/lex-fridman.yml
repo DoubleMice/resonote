@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-08-30T18:11:32.908Z
+refreshed_at: 2026-08-31T03:05:11.963Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
@@ -12,7 +12,7 @@ downloaded: 0
 episodes:
   - id: p-6506
     guid: https://lexfridman.com/?p=6506
-    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding & Linux"
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
     duration: 19317
     published: Wed, 26 Aug 2026 21:47:04 +0000
     published_sort: "20260826"
@@ -28,7 +28,7 @@ episodes:
     transcript_error: audio chunk is 20.7MB, above DASHSCOPE_DATA_URI_MAX_MB=18
   - id: p-6474
     guid: https://lexfridman.com/?p=6474
-    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant & Lee"
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
     duration: 13987
     published: Tue, 28 Jul 2026 20:06:06 +0000
     published_sort: "20260728"

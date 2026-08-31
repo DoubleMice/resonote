@@ -1,130 +1,15 @@
 source: latepost
-refreshed_at: 2026-08-30T18:11:32.895Z
+refreshed_at: 2026-08-31T03:05:11.948Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 15
-done: 1
+total_candidates: 14
+done: 0
 pending: 0
 needs_transcript: 14
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: d02867bd-8e0e-42f1-a993-e274fb32f405
-    guid: d02867bd-8e0e-42f1-a993-e274fb32f405
-    title: "162: 批量生素材、模型筛网红|与飞书深诺Meetsocial沈晨岗聊AI时代的出海营销"
-    duration: 4282
-    published: Mon, 27 Apr 2026 06:30:00 +0800
-    published_sort: "20260426"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/162
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/d02867bd-8e0e-42f1-a993-e274fb32f405.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      出海对于中国企业来说并不新鲜，无论是早年的华为、中兴，还是大疆、影石、拓竹这样的消费硬件公司，再到 Tiktok、腾讯游戏、Temu 等互联网公司，成功的例子有非常多。但之所以我们说它是一个新的话题，是因为我们来到这个 AI
-      的时代，不仅看到大批的 AI 创业公司正在积极的向海外拓展，也见证着 AI 改造他们出海的路径、方式、增长、营销。
-
-
-      过去一年，我们也看到了很多借助 AI 营销翻车的案例，比如麦当劳在荷兰上线的一支几乎是由 AI
-      生成的节日广告，上线后就迅速遭到了大量的吐槽：不仅仅是画面看起来比较粗糙，更在于这个广告它传达出来的气质被认为是廉价的、偷懒的，没有什么诚意。
-
-
-      今天的播客，我们与飞书深诺 Meetsocial  的创始人兼 CEO 沈晨岗先生一起聊了聊，AI 在今天究竟是如何改变中国企业出海模式的？中国与美国的 AI 营销生态究竟有什么区别？在 AI
-      时代到来以后，企业需要建立起哪些新的能力，才能在营销战中脱颖而出？
-
-
-      本期节目由飞书深诺特别支持播出
-
-
-      本期嘉宾
-
-
-      沈晨岗，飞书深诺集团创始人兼 CEO
-
-
-      本期主播
-
-
-      高洪浩，晚点 latepost 主笔
-
-
-      时间线：
-
-
-      Part 1 中国企业出海变迁史
-
-
-      04:17 中国企业出海的三个阶段：产品、公司、品牌
-
-
-      07:43 早年中国出海企业没有认识到营销的力量
-
-
-      09:45 2025 年开始中国企业出海营销范式发生变化
-
-
-      12:32 转型成功的出海企业案例：安克
-
-
-      16:18 衡量企业出海能力的模型指标：D-MES
-
-
-      Part 2 AI 时代下，中国企业出海的新变化
-
-
-      22:47 出海营销领域在 AI 上的共识与非共识
-
-
-      25:29 AI 的使用应该与企业的商业化目标相匹配
-
-
-      30:38 过去三年，AI 如何改变出海营销
-
-
-      Part 3 中国与美国的 AI 营销
-
-       34:07 硅谷观察记：中美 AI 营销的差异
-
-      38:30 美国营销公司的历史包袱导致 AI 难落地
-
-
-      Part 4 AI 在未来将如何改变出海营销
-
-
-      42:16 Agent 时代的出海营销模式
-
-
-      48:42 案例：Agent 变革短剧投流
-
-
-      51:46 AI 时代，创意和审美变得更重要
-
-
-      57:07 出海服务商如何适应 AI 时代
-
-
-      01:01:30 三年和五年后，AI 将如何改变出海营销
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-08-30T18:13:20.820Z
-    transcript_job_id: 32d2cbad-6030-435d-80b6-0ecf2178e781_db183da856e84d1184f79c22ba717fb1,4129599f-d5b6-4366-9ff9-5ae21ebb3693_70f6bd6ad08c4c9dac91d2953af49c5d,09902840-80c9-43d0-b904-096941675b49_2874e50a80fb4c67a2007ae153000be6,14c032ab-678f-4bff-8b88-6cb6a85cdcd9_cdb5287477794b0fbb3dc8c453c8d152,3ec832d9-ae86-4c46-9539-91e421b5012c_0eed0ad0738346458c82bb7dce208f97
-    transcript_completed_at: 2026-08-30T18:18:23.832Z
   - id: b573ae95-f9b3-4428-94e7-79d33418400b
     guid: b573ae95-f9b3-4428-94e7-79d33418400b
     title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
