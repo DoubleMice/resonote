@@ -3,13 +3,14 @@ import { CATEGORIES } from '../lib/data'
 ---
 
 <section class="library-controls" aria-label="筛选内容">
-  <div class="library-search-wrap">
-    <label class="sr-only" for="library-search">在内容库中搜索</label>
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 20-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" /></svg>
-    <input id="library-search" type="search" placeholder="搜索标题、嘉宾、来源或标签" autocomplete="off" spellcheck="false" />
-  </div>
+  <div class="library-toolbar">
+    <div class="library-search-wrap">
+      <label class="sr-only" for="library-search">在内容库中搜索</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 20-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" /></svg>
+      <input id="library-search" type="search" placeholder="搜索标题、嘉宾、来源或标签" autocomplete="off" spellcheck="false" />
+      <span id="library-result-count" class="library-count" role="status" aria-live="polite"></span>
+    </div>
 
-  <div class="library-filter-row">
     <div class="library-format-tabs" id="library-format-tabs" role="group" aria-label="内容形式">
       <button type="button" data-format="all" aria-pressed="true">全部</button>
       <button type="button" data-format="slides" aria-pressed="false">视觉笔记</button>
@@ -32,11 +33,6 @@ import { CATEGORIES } from '../lib/data'
 
     <button class="filter-reset" id="library-reset" type="button">重置</button>
   </div>
-
-  <div class="library-filter-meta">
-    <span id="library-result-count" role="status" aria-live="polite"></span>
-    <span>支持标题、嘉宾、来源和标签</span>
-  </div>
 </section>
 
 <div class="library-empty hidden" id="library-empty">
@@ -55,7 +51,7 @@ import { CATEGORIES } from '../lib/data'
     top: 82px;
     z-index: 18;
     margin-bottom: 24px;
-    padding: 14px;
+    padding: 9px 10px;
     border: 1px solid rgba(var(--resonote-ink-rgb), 0.11);
     border-radius: 4px 18px 18px 4px;
     background: rgba(251, 248, 241, 0.92);
@@ -63,23 +59,25 @@ import { CATEGORIES } from '../lib/data'
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
   }
-  .library-search-wrap { position: relative; }
+  .library-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .library-search-wrap { position: relative; flex: 1 1 250px; min-width: 210px; }
   .library-search-wrap > svg {
     position: absolute;
     top: 50%;
-    left: 14px;
-    width: 18px;
-    height: 18px;
+    left: 13px;
+    width: 17px;
+    height: 17px;
     fill: none;
     stroke: #6d7b75;
     stroke-width: 1.8;
     stroke-linecap: round;
     transform: translateY(-50%);
+    pointer-events: none;
   }
   .library-search-wrap input {
     width: 100%;
-    min-height: 48px;
-    padding: 0 14px 0 43px;
+    min-height: 44px;
+    padding: 0 92px 0 40px;
     border: 1px solid rgba(var(--resonote-ink-rgb), 0.11);
     border-radius: 13px;
     color: var(--resonote-ink);
@@ -88,7 +86,24 @@ import { CATEGORIES } from '../lib/data'
     font-size: 0.82rem;
   }
   .library-search-wrap input:focus { border-color: rgba(var(--resonote-accent-rgb), 0.48); outline: 0; box-shadow: 0 0 0 4px rgba(var(--resonote-accent-rgb), 0.09); }
-  .library-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 10px; }
+  .library-count {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    max-width: 92px;
+    padding: 4px 9px;
+    overflow: hidden;
+    border-radius: 999px;
+    color: #5d6e67;
+    background: #ece7db;
+    font-size: 0.64rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
   .library-format-tabs {
     display: inline-flex;
     gap: 3px;
@@ -98,8 +113,8 @@ import { CATEGORIES } from '../lib/data'
     background: #eee8de;
   }
   .library-format-tabs button {
-    min-height: 44px;
-    padding: 0 14px;
+    min-height: 36px;
+    padding: 0 13px;
     border: 0;
     border-radius: 999px;
     color: #62706a;
@@ -113,7 +128,7 @@ import { CATEGORIES } from '../lib/data'
   .category-select select {
     min-height: 44px;
     appearance: none;
-    padding: 0 38px 0 14px;
+    padding: 0 36px 0 14px;
     border: 1px solid rgba(var(--resonote-ink-rgb), 0.11);
     border-radius: 999px;
     color: #586761;
@@ -141,10 +156,8 @@ import { CATEGORIES } from '../lib/data'
   .unread-toggle > span { width: 9px; height: 9px; border: 1.5px solid #74817b; border-radius: 50%; }
   .unread-toggle[aria-pressed="true"] { border-color: rgba(var(--resonote-accent-rgb), 0.28); color: var(--resonote-blue); background: #e7eee9; }
   .unread-toggle[aria-pressed="true"] > span { border-color: var(--resonote-blue); background: var(--resonote-blue); box-shadow: inset 0 0 0 2px #e7eee9; }
-  .filter-reset { margin-left: auto; border-color: transparent; background: transparent; }
+  .filter-reset { border-color: transparent; background: transparent; }
   .filter-reset:hover { color: var(--resonote-ink); background: rgba(var(--resonote-ink-rgb), 0.055); }
-  .library-filter-meta { display: flex; justify-content: space-between; gap: 16px; margin-top: 10px; padding: 0 3px; color: #7b8882; font-size: 0.66rem; }
-  #library-result-count { color: #5d6e67; font-weight: 700; }
   .library-empty {
     margin: 24px 0;
     padding: 52px 24px;
@@ -172,13 +185,17 @@ import { CATEGORIES } from '../lib/data'
   .library-more { margin-top: 24px; min-width: 180px; }
   .library-more:hover, .library-empty button:hover { color: white; background: var(--resonote-blue); }
   @media (max-width: 620px) {
-    .library-controls { top: 74px; margin-inline: -6px; padding: 10px; border-radius: 16px; }
-    .library-filter-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .library-controls { top: 74px; margin-inline: -6px; padding: 8px; border-radius: 14px; }
+    .library-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 7px; }
+    .library-search-wrap { grid-column: 1 / -1; }
+    .library-search-wrap input { padding-right: 80px; }
+    .library-count { right: 8px; max-width: 76px; }
     .library-format-tabs { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); }
-    .category-select select, .category-select { width: 100%; }
-    .unread-toggle { justify-content: center; }
-    .filter-reset { grid-column: 1 / -1; justify-content: center; margin-left: 0; }
-    .library-filter-meta span:last-child { display: none; }
+    .library-format-tabs button { min-height: 44px; }
+    .category-select, .category-select select { width: 100%; }
+    .category-select select { padding: 0 32px 0 12px; }
+    .unread-toggle { justify-content: center; padding: 0 10px; }
+    .filter-reset { padding: 0 12px; }
   }
 </style>
 
