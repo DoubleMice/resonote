@@ -39,6 +39,8 @@ function publishedTime(meta: { published?: string; published_sort?: string }): n
   if (!value) return 0
   const compact = value.match(/^(\d{4})(\d{2})(\d{2})$/)
   if (compact) return Date.UTC(Number(compact[1]), Number(compact[2]) - 1, Number(compact[3]))
+  const compactMonth = value.match(/^(\d{4})(\d{2})$/)
+  if (compactMonth) return Date.UTC(Number(compactMonth[1]), Number(compactMonth[2]) - 1, 1)
   const monthDate = value.match(/^(\d{4})-(\d{2})$/)
   if (monthDate) return Date.UTC(Number(monthDate[1]), Number(monthDate[2]) - 1, 1)
   const parsed = Date.parse(value)

@@ -60,6 +60,12 @@ export function episodePublishedTime(ep: Pick<EpisodeMeta, 'published' | 'publis
     return Date.UTC(Number(year), Number(month) - 1, Number(day))
   }
 
+  const compactMonth = value.match(/^(\d{4})(\d{2})$/)
+  if (compactMonth) {
+    const [, year, month] = compactMonth
+    return Date.UTC(Number(year), Number(month) - 1, 1)
+  }
+
   const monthDate = value.match(/^(\d{4})-(\d{2})$/)
   if (monthDate) {
     const [, year, month] = monthDate

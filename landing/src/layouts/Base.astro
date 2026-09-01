@@ -22,6 +22,7 @@ const isLibrary = pathname.includes('/library')
     <meta name="theme-color" content="#eee8dc" />
     <script is:inline>document.documentElement.classList.add('js')</script>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2326322f'/%3E%3Cpath d='M9 6h10l4 4v16H9zM19 6v5h4' fill='none' stroke='%23f6efe3' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpath d='M13 19v-4m3 6v-8m3 6v-4' fill='none' stroke='%23c56755' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="alternate" type="application/rss+xml" title="声笺 Resonote" href={url('/rss.xml')} />
     <title>{title}</title>
   </head>
   <body class="resonote-shell text-stone-900 antialiased min-h-screen">
@@ -47,6 +48,14 @@ const isLibrary = pathname.includes('/library')
     <footer class="site-footer">
       <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-2">
         <span>声笺 · 余音绕梁，落墨成笺</span>
+        <a href={url('/rss.xml')} class="footer-rss" title="RSS 订阅声笺更新">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5.2" cy="18.8" r="1.7" />
+          </svg>
+          <span>RSS 订阅</span>
+        </a>
         <span>RESONOTE · EDITORIAL ARCHIVE</span>
       </div>
     </footer>
@@ -164,6 +173,24 @@ const isLibrary = pathname.includes('/library')
     color: #737d78;
     font-size: 0.75rem;
     background: rgba(251, 248, 241, 0.58);
+  }
+  .footer-rss {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 6px;
+    color: #737d78;
+    text-decoration: none;
+    transition: color 180ms ease;
+  }
+  .footer-rss:hover { color: var(--resonote-amber); }
+  .footer-rss svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
   }
   .skip-link {
     position: fixed;

@@ -131,6 +131,14 @@ pnpm run e2e:transcription
 - `pnpm run e2e:transcription` 会发起真实 API 请求，配置加载顺序为当前环境变量、`.env.local`、`scripts/env.local.sh`，不创建额外本地配置文件。
 - 只修改转写中间状态、chunk cache 或 ASR 脚本时无需重建 GitHub Pages；新增 transcript 并生成/修改 deck 后才需要 build/deploy。
 
+## RSS 订阅输出
+
+- `landing/src/pages/rss.xml.ts` 在 astro build 时静态生成 `dist/rss.xml`（RSS 2.0），随 build-all.ts 拷贝进最终 dist，生产地址为 `https://doublemice.github.io/resonote/rss.xml`。
+- 收录范围 = 可读内容（`status: generated` 或有 `article_path`），按 published 倒序、全量收录、不设上限；item 链接优先文章（`article.html`），无文章时指向 deck，描述里给出两种格式的链接。
+- 生成逻辑在 `landing/src/lib/rss.ts`（纯函数，`landing/src/lib/rss.test.ts` 有单测，进 `pnpm test`）；描述是双重转义的 HTML，订阅器解析后按富文本渲染。
+- 发现入口：`Base.astro` head 里的 `<link rel="alternate">` 自动发现 + 页脚"RSS 订阅"链接；绝对 URL 依赖 `RESONOTE_SITE` + `RESONOTE_BASE`（CI 已设置），本地构建默认指向 `http://localhost:4173`。
+- 改动 episode 内容或 meta 后需要 build/deploy 才会更新 feed；feed 只依赖 meta 数据，不依赖 transcript 或转写状态。
+
 ## Base Path 环境变量
 
 ```js
