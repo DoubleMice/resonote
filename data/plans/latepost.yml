@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-09-01T03:05:06.797Z
+refreshed_at: 2026-09-01T18:13:22.560Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
@@ -125,8 +125,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-31T18:15:00.395Z
-    transcript_completed_at: 2026-08-31T18:15:49.570Z
+    transcript_submitted_at: 2026-09-01T18:15:10.680Z
+    transcript_completed_at: 2026-09-01T18:15:58.229Z
     transcript_error: |
       MiMo transcription failed: 401 {
           "error": {

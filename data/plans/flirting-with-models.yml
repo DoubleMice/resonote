@@ -1,5 +1,5 @@
 source: flirting-with-models
-refreshed_at: 2026-09-01T03:05:06.769Z
+refreshed_at: 2026-09-01T18:13:22.533Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-31T18:15:49.697Z
-    transcript_completed_at: 2026-08-31T18:15:50.189Z
+    transcript_submitted_at: 2026-09-01T18:15:58.358Z
+    transcript_completed_at: 2026-09-01T18:15:58.632Z
     transcript_error: "audio download failed: 404 Missing redirect URL"
   - id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
     guid: 1431fb8e-f94d-4254-8cd7-295d196a88dd

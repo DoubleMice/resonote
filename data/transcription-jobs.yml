@@ -20008,3 +20008,28 @@ jobs:
               "type": "invalid_key"
           }
       }
+  - key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3:mimo:2026-09-01T18:15:10.680Z:chunk:0
+    parent_key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3
+    attempt_key: latepost:b573ae95-f9b3-4428-94e7-79d33418400b:20260423:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3:mimo:2026-09-01T18:15:10.680Z
+    provider: mimo
+    id: b573ae95-f9b3-4428-94e7-79d33418400b
+    source: latepost
+    title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/b573ae95-f9b3-4428-94e7-79d33418400b.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-09-01T18:15:10.680Z
+    updated_at: 2026-09-01T18:15:58.229Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
