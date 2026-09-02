@@ -20033,3 +20033,28 @@ jobs:
               "type": "invalid_key"
           }
       }
+  - key: latepost:68e222fe-2a2e-43ee-811a-dfdb445a9deb:20260901:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/68e222fe-2a2e-43ee-811a-dfdb445a9deb.mp3:mimo:2026-09-02T18:13:15.210Z:chunk:0
+    parent_key: latepost:68e222fe-2a2e-43ee-811a-dfdb445a9deb:20260901:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/68e222fe-2a2e-43ee-811a-dfdb445a9deb.mp3
+    attempt_key: latepost:68e222fe-2a2e-43ee-811a-dfdb445a9deb:20260901:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/68e222fe-2a2e-43ee-811a-dfdb445a9deb.mp3:mimo:2026-09-02T18:13:15.210Z
+    provider: mimo
+    id: 68e222fe-2a2e-43ee-811a-dfdb445a9deb
+    source: latepost
+    title: "180: 具身智能的金钱游戏：进展难测、收入催熟与 IPO 竞速"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/68e222fe-2a2e-43ee-811a-dfdb445a9deb.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-09-02T18:13:15.210Z
+    updated_at: 2026-09-02T18:13:38.440Z
+    error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }

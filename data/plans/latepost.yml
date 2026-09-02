@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-09-02T03:06:41.705Z
+refreshed_at: 2026-09-02T18:13:13.945Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 15
 done: 0
 pending: 0
-needs_transcript: 14
+needs_transcript: 13
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 68e222fe-2a2e-43ee-811a-dfdb445a9deb
@@ -133,7 +133,9 @@ episodes:
 
       小红书@曼祺_火柴Q即刻@曼祺_火柴Q
 
-      小红书@高洪浩 ALaNGo 即刻@高洪浩 ALaNGo
+      即刻@李梓楠
+
+      即刻@CherieHsu
 
       ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
 
@@ -144,8 +146,20 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-02T18:13:15.210Z
+    transcript_error: |
+      MiMo transcription failed: 401 {
+          "error": {
+              "message": "Invalid API Key",
+              "param": "Please provide valid API Key",
+              "code": "401",
+              "type": "invalid_key"
+          }
+      }
+    transcript_completed_at: 2026-09-02T18:13:38.440Z
   - id: b573ae95-f9b3-4428-94e7-79d33418400b
     guid: b573ae95-f9b3-4428-94e7-79d33418400b
     title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
