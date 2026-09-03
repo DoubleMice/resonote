@@ -22,7 +22,7 @@
 - 只提供音频的 RSS 条目会进入 `needs_transcript` 队列，等待自动或人工转写
 - 自动转写默认使用 MiMo `mimo-v2.5`；设置 `TRANSCRIPT_PROVIDER=dashscope` 后改用 DashScope。受限音频会先下载到本地，再由 `ffmpeg` 切片并以 data URI 提交
 - 封面优先使用 RSS 条目的 `itunes:image`，缺失时使用频道封面
-- 内容生成通过 `claude -p` 子进程执行；本地使用 Claude Code 登录状态，GitHub Actions 使用 `ANTHROPIC_AUTH_TOKEN`
+- 内容生成通过 `claude -p` 子进程执行；GitHub Actions 使用 MiMo 的 Anthropic 兼容接口，本地可使用同一接口或 Claude Code 登录状态
 - GitHub Actions 负责内容发现、生成、检查和 GitHub Pages 部署
 - 首页“本期新笺”和“近日新笺”按播客发布日期（`published_sort`）排序，仅展示已生成视觉笔记的集数；内容库同样按发布日期排序
 
@@ -178,21 +178,23 @@ git push
 `Generate and Deploy` 需要在 GitHub 仓库的 Secrets 中配置：
 
 ```text
-ANTHROPIC_AUTH_TOKEN=<你的 DeepSeek API key 或兼容 Anthropic token>
-MIMO_API_KEY=<MiMo API key，默认用于自动转写缺 transcript 的 RSS 音频>
+TRANSCRIPTION_API_KEY=<用于自动转写的 API key>
+CONTENT_API_KEY=<用于文稿整理和内容生成的 API key>
 DASHSCOPE_API_KEY=<DashScope API key，可选，用于 TRANSCRIPT_PROVIDER=dashscope 回退>
 ```
 
-workflow 使用 DeepSeek Anthropic 兼容环境变量：
+内容生成地址和模型通过 GitHub Actions Variables 配置：
 
 ```text
-ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
-ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
-ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro
-ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro
-ANTHROPIC_MODEL=deepseek-v4-flash
-ENABLE_TOOL_SEARCH=true
+TRANSCRIPTION_PROVIDER=mimo
+TRANSCRIPTION_BASE_URL=https://api.xiaomimimo.com/v1
+TRANSCRIPTION_MODEL_NAME=mimo-v2.5
+TRANSCRIPTION_MAX_COMPLETION_TOKENS=32768
+CONTENT_BASE_URL=https://api.xiaomimimo.com/anthropic
+CONTENT_MODEL_NAME=mimo-v2.5
 ```
+
+workflow 将这些值映射到 Claude Code 使用的 `ANTHROPIC_*` 环境变量。未配置 Variable 时也使用上述 MiMo 默认值。
 
 手动触发参数：
 
@@ -247,12 +249,12 @@ pnpm run build
 
 - 下载 RSS transcript 到 `data/transcripts/<id>.txt`
 - scaffold `episodes/<id>/`
-- 调用 `claude -p --model haiku --effort max`，通过 Haiku 映射使用 `deepseek-v4-flash` 生成 `slides.md`、`meta.yml`、`article.html`
+- 调用 `claude -p --model haiku --effort max`，通过 Haiku 映射使用 `CONTENT_MODEL_NAME`（默认 `mimo-v2.5`）生成 `slides.md`、`meta.yml`、`article.html`
 - 只有当 Claude 成功退出且 `slides.md`、`meta.yml` 都存在时，plan 状态才写为 `generated`
 
 `--auto-transcribe` 会为 `needs_transcript` episode 提交自动转写。默认 `TRANSCRIPT_PROVIDER=mimo`，调用 MiMo `mimo-v2.5` 的 `chat/completions` 音频理解接口，随音频发送逐字转写指令并关闭 thinking；音频统一在本地下载、经 `ffmpeg` 切片后以 data URI 分段提交，避开 URL 抓取差异和 MiMo URL 100MB 限制。可设置 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope 异步 ASR，DashScope 普通公网音频直接提交 URL，Megaphone/Unchained 这类受限音频走切片 data URI。分段任务的状态保存在 `data/transcription-jobs.yml`，临时 chunk 文本放在 `data/transcripts/.chunks/`，该目录用短 hash 命名并被 git ignore；所有 chunk 成功后合并为 `data/transcripts/<id>.txt`，plan 状态回到 `pending`。
 
-转写配置项：`TRANSCRIPT_PROVIDER=mimo|dashscope`、`MIMO_API_KEY`、`MIMO_BASE_URL`、`MIMO_MODEL`（默认 `mimo-v2.5`）、`MIMO_MAX_COMPLETION_TOKENS`（默认 `32768`）、`DASHSCOPE_API_KEY`、`DASHSCOPE_DATA_URI_CHUNK_SECONDS`、`DASHSCOPE_DATA_URI_MAX_MB`。
+GitHub Actions 中的转写配置项为 `TRANSCRIPTION_API_KEY`、`TRANSCRIPTION_PROVIDER`、`TRANSCRIPTION_BASE_URL`、`TRANSCRIPTION_MODEL_NAME` 和 `TRANSCRIPTION_MAX_COMPLETION_TOKENS`；workflow 会将它们映射到转写脚本读取的 `TRANSCRIPT_PROVIDER` 和 `MIMO_*` 环境变量。本地也可直接设置这些内部环境变量。其他转写配置项包括 `DASHSCOPE_API_KEY`、`DASHSCOPE_DATA_URI_CHUNK_SECONDS` 和 `DASHSCOPE_DATA_URI_MAX_MB`。
 
 真实 API E2E 使用 `pnpm run e2e:transcription`。脚本加载顺序为当前环境变量、`.env.local`、`scripts/env.local.sh`，不会创建额外本地配置文件；默认测试 MiMo，设置 `TRANSCRIPT_PROVIDER=dashscope` 可测试 DashScope。
 
@@ -321,8 +323,7 @@ resonote/
 
 ## 已知限制
 
-- CI 生成需要 `ANTHROPIC_AUTH_TOKEN` secret；缺少该 secret 时只使用本地生成流程。
-- 默认自动转写需要 `MIMO_API_KEY` secret；显式 `TRANSCRIPT_PROVIDER=dashscope` 时需要 `DASHSCOPE_API_KEY` secret；缺少对应 secret 时 `needs_transcript` 只排队。
+- CI 内容生成需要 `CONTENT_API_KEY` secret，默认自动转写需要 `TRANSCRIPTION_API_KEY` secret；两者分别配置、互不复用。显式 `TRANSCRIPTION_PROVIDER=dashscope` 时，转写还需要 `DASHSCOPE_API_KEY` secret。缺少对应的转写 secret 时，`needs_transcript` 条目只进入队列。
 - Megaphone/Unchained 分段转写需要系统 `ffmpeg`；CI 已安装，本地执行需确保 `ffmpeg -version` 可用。
 - `sources.yml` 中 `rss_url` 为空的 source 会写空 cache/plan。
 - GitHub Pages 深度链接依赖 `landing/public/404.html` 做 fallback。

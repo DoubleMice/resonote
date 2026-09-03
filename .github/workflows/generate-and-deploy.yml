@@ -29,11 +29,11 @@ on:
 env:
   RESONOTE_BASE: /resonote/
   RESONOTE_SITE: https://doublemice.github.io
-  ANTHROPIC_BASE_URL: https://api.deepseek.com/anthropic
-  ANTHROPIC_DEFAULT_HAIKU_MODEL: deepseek-v4-flash
-  ANTHROPIC_DEFAULT_OPUS_MODEL: deepseek-v4-pro
-  ANTHROPIC_DEFAULT_SONNET_MODEL: deepseek-v4-pro
-  ANTHROPIC_MODEL: deepseek-v4-flash
+  ANTHROPIC_BASE_URL: ${{ vars.CONTENT_BASE_URL || 'https://api.xiaomimimo.com/anthropic' }}
+  ANTHROPIC_DEFAULT_HAIKU_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
+  ANTHROPIC_DEFAULT_OPUS_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
+  ANTHROPIC_DEFAULT_SONNET_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
+  ANTHROPIC_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ENABLE_TOOL_SEARCH: 'true'
 
 concurrency:
@@ -95,12 +95,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg
 
-      - name: Verify Anthropic auth token
+      - name: Verify MiMo content generation token
         env:
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.CONTENT_API_KEY }}
         run: |
           if [ -z "${ANTHROPIC_AUTH_TOKEN}" ]; then
-            echo "ANTHROPIC_AUTH_TOKEN secret is required"
+            echo "CONTENT_API_KEY secret is required for content generation"
             exit 1
           fi
 
@@ -115,12 +115,12 @@ jobs:
 
       - name: Generate episodes
         env:
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
-          TRANSCRIPT_PROVIDER: ${{ vars.TRANSCRIPT_PROVIDER }}
-          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
-          MIMO_BASE_URL: ${{ vars.MIMO_BASE_URL }}
-          MIMO_MODEL: ${{ vars.MIMO_MODEL }}
-          MIMO_MAX_COMPLETION_TOKENS: ${{ vars.MIMO_MAX_COMPLETION_TOKENS }}
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.CONTENT_API_KEY }}
+          TRANSCRIPT_PROVIDER: ${{ vars.TRANSCRIPTION_PROVIDER }}
+          MIMO_API_KEY: ${{ secrets.TRANSCRIPTION_API_KEY }}
+          MIMO_BASE_URL: ${{ vars.TRANSCRIPTION_BASE_URL }}
+          MIMO_MODEL: ${{ vars.TRANSCRIPTION_MODEL_NAME }}
+          MIMO_MAX_COMPLETION_TOKENS: ${{ vars.TRANSCRIPTION_MAX_COMPLETION_TOKENS }}
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: |
           set -euo pipefail
