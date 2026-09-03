@@ -21,7 +21,7 @@ const isLibrary = pathname.includes('/library')
     <meta name="description" content={description} />
     <meta name="theme-color" content="#eee8dc" />
     <script is:inline>document.documentElement.classList.add('js')</script>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2326322f'/%3E%3Cpath d='M9 6h10l4 4v16H9zM19 6v5h4' fill='none' stroke='%23f6efe3' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpath d='M13 19v-4m3 6v-8m3 6v-4' fill='none' stroke='%23c56755' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
     <link rel="alternate" type="application/rss+xml" title="声笺 Resonote" href={url('/rss.xml')} />
     <title>{title}</title>
   </head>
