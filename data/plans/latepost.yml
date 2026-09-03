@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-09-02T18:13:13.945Z
+refreshed_at: 2026-09-03T03:24:53.849Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 15
-done: 0
+done: 1
 pending: 0
 needs_transcript: 13
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 68e222fe-2a2e-43ee-811a-dfdb445a9deb
@@ -146,20 +146,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-02T18:13:15.210Z
-    transcript_error: |
-      MiMo transcription failed: 401 {
-          "error": {
-              "message": "Invalid API Key",
-              "param": "Please provide valid API Key",
-              "code": "401",
-              "type": "invalid_key"
-          }
-      }
-    transcript_completed_at: 2026-09-02T18:13:38.440Z
+    transcript_submitted_at: 2026-09-03T03:32:15.658Z
+    transcript_completed_at: 2026-09-03T03:35:32.061Z
+    transcript_job_id: 89167b95-96a6-4d4b-890a-659ce8245d95_7a58df200e57478e8051a643dc5cf0e8,64547a8f-8efd-4e30-9fd9-a439eff31ba1_fc76817b029f4143b72b32e0e62a3843,a74238e6-47fe-4d43-9caa-23df7dba3f75_d2dc90880367472e810393f464d4b1e1,b6c216c5-45de-406a-b366-67ddd2d57535_a92d95cf2a614a19926ab4e229ab59cc,28ab8946-c7c8-4463-8237-2e901bcef2b8_6f0133974454447f898eebe3e8a8e892
   - id: b573ae95-f9b3-4428-94e7-79d33418400b
     guid: b573ae95-f9b3-4428-94e7-79d33418400b
     title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"

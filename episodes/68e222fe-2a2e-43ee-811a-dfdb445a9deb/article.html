@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>具身智能的金钱游戏：进展难测、收入催熟与 IPO 竞速</title>
+<style data-resonote-theme>
+:root {
+  color-scheme: light;
+  --resonote-ink: #26322f;
+  --resonote-muted: #68736f;
+  --resonote-paper: #fbf8f1;
+  --resonote-canvas: #eee8dc;
+  --resonote-line: #d7cec0;
+  --resonote-blue: #355f58;
+  --resonote-green: #557461;
+  --resonote-amber: #aa5143;
+  --resonote-red: #a34742;
+  --resonote-purple: #75667b;
+  --resonote-yellow: #a9864d;
+  --resonote-shadow: 0 24px 70px rgba(38, 50, 47, 0.1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--resonote-canvas);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 !important;
+  color: var(--resonote-ink);
+  background:
+    radial-gradient(circle at 92% 5%, rgba(53, 95, 88, 0.11), transparent 25rem),
+    radial-gradient(circle at 8% 22%, rgba(170, 81, 67, 0.045), transparent 22rem),
+    repeating-linear-gradient(90deg, rgba(38, 50, 47, 0.012) 0 1px, transparent 1px 7px),
+    linear-gradient(180deg, #f7f2e9 0%, var(--resonote-canvas) 100%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 1.85;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.resonote-home {
+  position: fixed;
+  z-index: 20;
+  top: 18px;
+  left: 20px;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 12px 12px 3px;
+  color: var(--resonote-ink);
+  background: rgba(251, 248, 241, 0.9);
+  box-shadow: 0 8px 28px rgba(38, 50, 47, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.resonote-home svg { width: 16px; height: 16px; }
+.resonote-home-lockup { display: inline-flex; align-items: baseline; gap: 6px; }
+.resonote-home-lockup strong { color: inherit; font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif; font-size: 14px; }
+.resonote-home-lockup small { color: var(--resonote-muted); font-size: 8px; font-weight: 750; letter-spacing: 0.14em; }
+.resonote-home:hover { border-color: rgba(53, 95, 88, 0.42); color: var(--resonote-blue); background: #fffdf8; }
+.resonote-home:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+
+.resonote-reading-progress {
+  position: fixed;
+  z-index: 40;
+  inset: 0 0 auto;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(38, 50, 47, 0.06);
+}
+
+.resonote-reading-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--resonote-amber), #bd8063 45%, var(--resonote-blue));
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.resonote-to-top {
+  position: fixed;
+  z-index: 22;
+  right: 22px;
+  bottom: 22px;
+  display: inline-grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(38, 50, 47, 0.13);
+  border-radius: 50%;
+  color: var(--resonote-ink);
+  background: rgba(251, 248, 241, 0.92);
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.11);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.resonote-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.resonote-to-top:hover { border-color: rgba(53, 95, 88, 0.38); color: var(--resonote-blue); }
+.resonote-to-top:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.resonote-to-top svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.resonote-article {
+  width: min(100% - 40px, 780px);
+  max-width: 780px !important;
+  margin: 28px auto 56px !important;
+  padding: clamp(36px, 6vw, 72px) clamp(24px, 6vw, 68px) 72px !important;
+  border: 1px solid rgba(38, 50, 47, 0.09);
+  border-radius: 4px 24px 24px 4px;
+  background: rgba(255, 252, 246, 0.95) !important;
+  box-shadow: var(--resonote-shadow);
+}
+
+.resonote-article > header {
+  position: relative;
+  margin: 0 0 52px !important;
+  padding: 0 0 28px;
+  border-bottom: 1px solid var(--resonote-line);
+}
+
+.resonote-article > header::before {
+  display: block;
+  width: 52px;
+  height: 5px;
+  margin-bottom: 22px;
+  border-radius: 0;
+  content: "";
+  background: linear-gradient(90deg, var(--resonote-amber), #bf745f);
+}
+
+h1, h2, h3 {
+  color: var(--resonote-ink) !important;
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 18em;
+  margin: 0 0 16px !important;
+  font-size: clamp(2.15rem, 6vw, 3.35rem) !important;
+  font-weight: 700;
+  line-height: 1.13 !important;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin: 58px 0 20px !important;
+  padding: 0 0 11px !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--resonote-line) !important;
+  font-size: clamp(1.5rem, 3.2vw, 1.88rem) !important;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+h2::after {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  content: "";
+  background: var(--resonote-amber);
+}
+
+h3 {
+  margin: 34px 0 12px !important;
+  font-size: 1.2rem !important;
+  line-height: 1.4;
+}
+
+p { margin: 0 0 1.1em !important; }
+
+strong { color: #213b35; font-weight: 720; }
+
+a { color: var(--resonote-blue); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { color: #294d47; }
+a:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.25); outline-offset: 3px; border-radius: 3px; }
+
+.meta,
+.byline,
+.subtitle {
+  color: var(--resonote-muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.7;
+}
+
+.tag,
+.label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  margin: 3px 5px 3px 0 !important;
+  padding: 3px 10px !important;
+  border: 1px solid #d9d7d0;
+  border-radius: 999px !important;
+  color: #55635e !important;
+  background: #f1ece3 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem !important;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.cards,
+.topic-cards,
+.card-grid,
+.overview,
+.stat-grid,
+.compare {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin: 24px 0 38px !important;
+}
+
+.card,
+.topic-card,
+.overview-card,
+.stat-card,
+.data-card,
+.num-card,
+.info-box,
+.highlight-box,
+.insight-box,
+.compare > div {
+  --card-accent: var(--resonote-blue);
+  position: relative;
+  min-width: 0;
+  padding: 18px 18px 17px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 14px !important;
+  color: var(--resonote-ink) !important;
+  background: #eef3ef !important;
+  box-shadow: 0 8px 24px rgba(38, 50, 47, 0.05);
+  font-size: 0.86rem !important;
+  line-height: 1.65 !important;
+}
+
+.card strong,
+.topic-card strong,
+.overview-card strong,
+.stat-card strong,
+.data-card strong,
+.num-card strong,
+.info-box strong,
+.highlight-box strong,
+.insight-box strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--resonote-ink) !important;
+  font-size: 0.95rem;
+}
+
+.card span,
+.topic-card span,
+.overview-card span,
+.desc,
+.text,
+.gl { color: #53645e !important; }
+
+.card-blue, .c-blue, .i-blue, .q-blue, .quote-blue, .blue { --card-accent: var(--resonote-blue); }
+.card-green, .c-green, .i-green, .q-green, .quote-green, .green { --card-accent: var(--resonote-green); }
+.card-orange, .c-orange, .i-orange, .q-orange, .quote-orange, .orange { --card-accent: var(--resonote-amber); }
+.card-red, .c-red, .i-red, .q-red, .quote-red, .red { --card-accent: var(--resonote-red); }
+.card-purple, .c-purple, .i-purple, .q-purple, .quote-purple, .purple { --card-accent: var(--resonote-purple); }
+.card-yellow, .c-yellow, .i-yellow, .q-yellow, .quote-yellow, .yellow { --card-accent: var(--resonote-yellow); }
+
+.card-green, .c-green, .i-green { background: #f0f5f1 !important; }
+.card-orange, .c-orange, .i-orange { background: #faf2e9 !important; }
+.card-red, .c-red, .i-red { background: #f9eeee !important; }
+.card-purple, .c-purple, .i-purple { background: #f4f1f6 !important; }
+.card-yellow, .c-yellow, .i-yellow { background: #faf6e9 !important; }
+
+blockquote,
+.quote,
+.quote-block,
+.quote-card,
+.quote-item,
+.q {
+  --card-accent: var(--resonote-blue);
+  position: relative;
+  margin: 28px 0 !important;
+  padding: 22px 24px 20px 28px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 0 16px 16px 0 !important;
+  color: #354d47 !important;
+  background: #eef3ef !important;
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.055);
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  font-size: 1.06rem !important;
+  font-style: normal !important;
+  line-height: 1.75 !important;
+}
+
+blockquote::before,
+.quote-block::before,
+.quote-card::before,
+.quote-item::before {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  content: "“";
+  color: var(--card-accent);
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  opacity: 0.32;
+}
+
+blockquote.red, .quote-red, .q-red { --card-accent: var(--resonote-red); background: #f9eeee !important; }
+blockquote.green, .quote-green, .q-green { --card-accent: var(--resonote-green); background: #f0f5f1 !important; }
+blockquote.orange, .quote-orange, .q-orange { --card-accent: var(--resonote-amber); background: #faf2e9 !important; }
+blockquote.purple, .quote-purple, .q-purple { --card-accent: var(--resonote-purple); background: #f4f1f6 !important; }
+blockquote.yellow, .quote-yellow, .q-yellow { --card-accent: var(--resonote-yellow); background: #faf6e9 !important; }
+
+.attr,
+.attribution,
+.q-attr,
+.src,
+.from,
+.context,
+.ctx {
+  display: block;
+  margin-top: 10px !important;
+  color: var(--resonote-muted) !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem !important;
+  font-style: normal !important;
+  line-height: 1.55;
+}
+
+.number,
+.num,
+.stat-num,
+.value {
+  color: var(--resonote-blue) !important;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 1.75rem !important;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.gloss,
+.note {
+  margin: 24px 0 !important;
+  padding: 14px 16px !important;
+  border-left: 3px solid var(--resonote-amber);
+  border-radius: 0 10px 10px 0;
+  color: #5c5850 !important;
+  background: #f5efe5 !important;
+  font-size: 0.86rem !important;
+}
+
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 0.45em; }
+hr, .divider { height: 1px; margin: 38px 0; border: 0; background: var(--resonote-line); }
+
+footer {
+  margin-top: 58px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid var(--resonote-line) !important;
+  color: var(--resonote-muted) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.7;
+  text-align: left !important;
+}
+
+.resonote-toc {
+  position: fixed;
+  z-index: 18;
+  top: 90px;
+  left: calc(50% + 430px);
+  width: min(230px, calc(50vw - 470px));
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+  padding: 16px 14px 16px 16px;
+  border-left: 1px solid rgba(38, 50, 47, 0.12);
+  color: var(--resonote-muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  scrollbar-width: thin;
+}
+
+.resonote-toc-title {
+  margin-bottom: 10px;
+  color: #75817b;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.resonote-toc ol { margin: 0; padding: 0; list-style: none; }
+.resonote-toc li { margin: 0; }
+.resonote-toc a {
+  display: block;
+  overflow: hidden;
+  padding: 5px 8px;
+  border-radius: 7px;
+  color: #6f7c76;
+  font-size: 0.69rem;
+  line-height: 1.45;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resonote-toc a:hover { color: var(--resonote-blue); background: rgba(53, 95, 88, 0.06); }
+.resonote-toc a[aria-current="location"] { color: var(--resonote-ink); background: rgba(53, 95, 88, 0.09); font-weight: 700; }
+
+.resonote-pager {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 58px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--resonote-line);
+}
+.resonote-pager-link {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+  padding: 16px 18px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 14px 14px 3px;
+  background: rgba(251, 248, 241, 0.75);
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+.resonote-pager-link:hover {
+  border-color: rgba(53, 95, 88, 0.4);
+  background: #fffdf8;
+  box-shadow: 0 14px 30px rgba(38, 50, 47, 0.08);
+  transform: translateY(-2px);
+}
+.resonote-pager-link:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.resonote-pager-link.is-next { align-items: flex-end; text-align: right; }
+.resonote-pager-dir { color: var(--resonote-blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
+.resonote-pager-title {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--resonote-ink);
+  font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 700px) {
+  body { font-size: 16px; line-height: 1.78; }
+  .resonote-home { position: static; margin: 12px 14px 0; }
+  .resonote-article {
+    width: calc(100% - 20px);
+    margin: 10px auto 24px !important;
+    padding: 34px 20px 44px !important;
+    border-radius: 18px;
+  }
+  .resonote-article > header { margin-bottom: 38px !important; }
+  .cards, .topic-cards, .card-grid, .overview, .stat-grid, .compare { grid-template-columns: 1fr !important; }
+  h2 { margin-top: 46px !important; }
+  blockquote, .quote, .quote-block, .quote-card, .quote-item, .q { padding: 20px 18px 18px 22px !important; }
+  .resonote-pager { grid-template-columns: 1fr; }
+  .resonote-pager-link.is-next { align-items: flex-start; text-align: left; }
+}
+
+@media (max-width: 1280px) {
+  .resonote-toc { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+@media print {
+  body { background: #fff; }
+  .resonote-home, .resonote-reading-progress, .resonote-to-top, .resonote-toc, .resonote-pager { display: none; }
+  .resonote-article { width: 100%; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<a class="resonote-home" href="../../" title="返回声笺">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/>
+  </svg>
+  <span class="resonote-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
+</a>
+
+<article class="resonote-article">
+
+<header>
+  <div class="meta">晚点聊 LateTalk · 第 180 期 · 2026 年 9 月 · 时长 1 小时 3 分</div>
+  <h1>具身智能的金钱游戏</h1>
+  <div class="subtitle">进展难测、收入催熟与 IPO 竞速——报道作者与主播复盘这场由金钱主导的竞赛</div>
+  <div class="byline">嘉宾：李梓楠（子南）、徐煜萌（玉萌）·《晚点 LatePost》记者 ｜ 主播：程曼祺 ·《晚点 LatePost》科技报道负责人</div>
+</header>
+
+<div class="cards">
+
+<div class="card c-blue">
+<strong>钱融得多，研发花得少</strong>
+<span>"大家拿了很多钱，但是大家花钱很少"——头部公司融资超 50 亿元，研发一年约 3000 万元。</span>
+</div>
+
+<div class="card c-amber">
+<strong>进展难测</strong>
+<span>没有公认 benchmark，普通人接触不到产品；行业要么被极大高估，要么被低估。</span>
+</div>
+
+<div class="card c-green">
+<strong>收入先于技术成熟</strong>
+<span>全行业最大客户是地方数据采集中心；机器人公司与零部件厂商互为供应商加客户。</span>
+</div>
+
+<div class="card c-purple">
+<strong>IPO 竞速</strong>
+<span>宇树上市之后，确定已有投行在工作的公司达 14 家，都想赶在牛市窗口里上市。</span>
+</div>
+
+<div class="card c-red">
+<strong>一级攒局，二级拷问</strong>
+<span>融资像攒局一样布阵营；二级市场开始追问可验证的收入、订单与复购。</span>
+</div>
+
+<div class="card c-yellow">
+<strong>谁在认真做事</strong>
+<span>从研发数字、销量统计到马斯克的量产指引，这篇整理逐项拆给你看。</span>
+</div>
+
+</div>
+
+<h2>为什么是"金钱游戏"</h2>
+
+<p>宇树上市之后，中国具身智能的创业热潮到了一个高峰。晚点编辑部从几个月前开始操作一篇关于具身行业融资与进展的全景观察，记者们接触了多位具身智能创业者、数据与零部件供应商，以及一二级市场投资人。这期节目请来报道《具身智能的金钱游戏》的两位作者子南和玉萌，一起复盘报道里的发现与分歧。</p>
+
+<p>节目里讨论的三个问题，恰好对应标题的三个词。进展难测：技术还在早期，行业却已经热闹得不像话；收入催熟：技术不成熟、估值与期待却很高时，一批公司不得不提前把收入撑大；IPO 竞速：A 股与港股的机器人行情都在下半年转折，排队上市的公司和汹涌的热情会走向哪里，谁也没有确定的答案。</p>
+
+<h2>不对劲的感觉：钱很多，但花得很少</h2>
+
+<p>记者与多位从业者交流后形成的第一印象，是"大家拿了很多钱，但是大家花钱很少"。报道中的一家头部公司，累计融资超过 50 亿元，研发投入一年约 3000 万元——"你把钱都放余额宝，一年都有五千万"，最差的理财方式，利息就够覆盖研发成本。</p>
+
+<blockquote class="blue">
+"大家拿了很多钱，但是大家花钱很少。"
+<span class="attr">两位报道作者与多位从业者交流后形成的第一印象</span>
+</blockquote>
+
+<p>一位采访对象把这场竞赛比作打德州：大家像比谁口袋深一样比筹码。他在意的显然不是技术本身。</p>
+
+<blockquote class="orange">
+"比谁的筹码多，而不是说比谁的技术更先进。"
+<span class="attr">受访对象谈这场竞赛的性质：比估值、比谁先上市</span>
+</blockquote>
+
+<p>两位作者因此自嘲，说报道的其实不是一个科技赛道，而是一个融资驱动的东西。有信源反问他们：你觉得这个行业还有几个是认真做事的人？</p>
+
+<p>研发为什么投不出去？公开数字最能说明问题：宇树去年（2025 年）研发投入 1.45 亿元，来自招股书；蜜雪冰城同一年研发投入 1.05 亿元——一家卖奶茶的公司，研发投入和头部机器人公司一个量级。智元大约 1300 人，研发投入估计在五个亿左右。编辑部内部还有个笑话：提到那家研发 3000 万的公司，主编说"我们晚点研发投入都比这个多"——把记者工资算作研发投入的话。</p>
+
+<p>症结在判断力。两位作者认为，很多公司缺乏"去做那个技术 bet"的能力——押注到底投什么方向，而不是钱本身。没有技术判断，研发预算自然投不出去；强行花钱，可能"死得更快"。智元是一种资源型玩法：方向都做，靠资源试错，也有合理性；更典型的技术驱动型公司，则围绕明确判断做系列验证，从 demo 做到原型再到产品。多数公司卡在第一步。</p>
+
+<p>钱花到了哪里？比较公开的去处是广告和春晚。宇树、松延动力、银河通用这些公司上春晚，"大概每家的花费是至少在 6000 万以上的"——按 3000 万每年的研发水平，上个春晚就够那家公司继续干两年。一位宇树人士的话被反复引用：</p>
+
+<blockquote class="red">
+"上春晚没问题，都要上春晚就有问题。"
+<span class="attr">一位宇树人士的话（报道转述）：第一个上春晚是广告，一起上就没效了</span>
+</blockquote>
+
+<p>融资的钱还有隐性成本："据我所知这些融资它基本上都是有回购协议的。"公司达不到投资人的要求，创始人要想清楚自己兜不兜得住——他可以少拿一点钱。</p>
+
+<h2>进展为什么测不准</h2>
+
+<p>技术进展难以判断，一部分是客观困难。大语言模型有公开的 benchmark，模型发布后大家自己测、自己试；而具身智能没有公认的 benchmark，产品又贵又重、主要卖给企业，普通人没有手感。更根本的是复现问题：同一个模型放在不同的硬件上，由于硬件一致性，表现可能不一样。</p>
+
+<blockquote class="green">
+"它复现本身就更难，成本更高。"
+<span class="attr">同一套模型在不同硬件上表现不一致，进展因此很难被第三方验证</span>
+</blockquote>
+
+<p>二级市场能拿到的证据同样稀缺。记者向算力提供方打听的口径是，"整个行业有千卡以上集群的公司就八家"——文章发出后，有人对记者说，八家都多了。今年 4 月，一位二级市场信源转述某具身公司创始人的话：整个行业"就没有用过十万小时以上的数据去跑过一次模型"，这与许多公司对外宣传的数据口径相左。还有一家自称行业前两名的数据公司，上半年"累计生产了五万小时的数据"，签过的最大订单却只有一万小时——产量很大，订单很小。</p>
+
+<p>观测难，讲故事的空间就大。行业因此容易在两种状态之间摇摆：</p>
+
+<blockquote class="yellow">
+"要么有可能会被极大的高估，要么有可能会被低估。"
+<span class="attr">报道作者对具身行业估值状态的基本判断</span>
+</blockquote>
+
+<p>摇摆之下，创始人的打法也在分化。一派认为应该扎扎实实押注并验证技术方向；另一派要在窗口期内尽量多融资、做大收入、先上市——上市公司身份更安全，融资渠道更好。做技术的人看到"某某大哥"换打法也受资本认可、人才愿意加入，道心也会摇摆。而创始人换路线，对外有一套很微妙的说法："他会告诉别人说我迭代了"——他不会告诉你换了一条路线。</p>
+
+<h2>去现场看进展：70 秒的轴承与两秒的转身</h2>
+
+<p>很多机器人公司会邀请媒体去参观。两位作者坦承，十几分钟、半小时的演示，外行根本看不出门道；有公司记者连着去了三次，"我感觉不到它比之前的很明显的进步是什么"。</p>
+
+<p>一个创业公司的现场故事被反复提起：一家成立不到一年的公司，用机器人的爪子抓一个轴承、放到塑料盒里，这个东西做了 70 秒。主编问：这个机器人到底能替代几个比亚迪工人？记者反问：快递分拣员拿个东西转身放下，可能两秒都不需要吧。</p>
+
+<blockquote class="red">
+"如果我是投资人，我应该不会投这个。"
+<span class="attr">记者参观后的直言；但单点快照说明不了趋势，要看加速度</span>
+</blockquote>
+
+<p>加速度恰恰最难观测。特斯拉是现成的验算样本：按马斯克最初的说法，Optimus 三代去年一季度就该至少完成设计定型；按记者跟进的口径，实际到今年 6 月底才实现——"他至少晚了 18 个月吧"，过程中还降低了要求。马斯克曾经一周发一次机器人照片或视频，现在很久没发——他此前可能高估了技术进步的斜率。</p>
+
+<blockquote class="blue">
+"我常常会迟到，但我一般都会做到。"
+<span class="attr">马斯克常说的话（节目中被转述）；在场者的回应是"看大家等不等得起"</span>
+</blockquote>
+
+<h2>收入催熟：先做大，再上市</h2>
+
+<p>收入要先于技术做大，直接动力是上市。港股 18C 制度（2022 年 10 月由港交所首次提出，2023 年 3 月正式生效）要求已商业化公司最近一个会计年度的特专科技业务收入至少 2.5 亿港币——按机器人均价 20 到 30 万元一台，凑收入不算特别难，但它只是最低门槛；上市排队者众多，公司普遍觉得收入越高、增长越漂亮越好，于是有了把收入做大的诉求。</p>
+
+<p>那么大体量收入从哪来？去年全行业最大的客户是地方数据采集中心。按记者的粗略印象，这一块可能占机器人公司收入盘子的三到四成以上；其次是宇树公开可见的收入——卖给科研机构、学校，以及迎宾导览；另外，一家收入体量做得比较大的具身创业公司，有将近四成的收入来自制造业场景。</p>
+
+<blockquote class="amber">
+"凑四个这样的地方政府的数据采集中心，这个公司就够 18C 的收入了。"
+<span class="attr">四个中心约两亿元，逼近 2.5 亿港币（约两亿多人民币）的收入门槛</span>
+</blockquote>
+
+<p>数采中心一般是这么运转的：地方政府与机器人公司合资成立数采公司，政府出钱或者出地，合资公司实际运营，雇佣大学生和年轻人做数据采集。对地方政府来说这笔账非常好算：一台机器人约配两名操作员，"100 台机器人我就创造 200 个就业岗位"，就业具体可见，又没有污染、不占地方、收益可控。</p>
+
+<blockquote class="green">
+"对于地方政府来说，这个产业真的太好了。"
+<span class="attr">报道作者转述各方观察：无污染、就业具体、回报算得过来</span>
+</blockquote>
+
+<p>记者听到的机器人单价约四五十万元一台，数采中心常见规模 100 台，总投入 5000 万元左右，对地方国资"不算特别大的投入"。到去年底，公开能找到的数采中心有 80 多个——自贡（与优必选合作）、攀枝花都在名单上。机器人公司拿到设备订单与收入，还和政府约定：生产出来的数据由机器人公司优先购买，买多少量、多长时间内买，事先谈好。数据有买家，整个模式才转得起来。</p>
+
+<p>但裂缝同样明显。一个是开工率：采了数据卖不出去，人力成本却一直要付，那就先不开工。一个是地方散伙：中部某省会买了 8000 万元金额的机器人，今年初数采中心散伙，机器人转卖给周边院校当教具——一开始是生产资料，最后成了教具。财务上可能亏，认知上不算亏：地方至少知道了这事的深浅。还有一个是技术换代：行业转向 Ego 数据与 World Model 数据，真机采集需求变少，有公司主动压低这部分收入比例。这有点像早年的数据中心："你买了很多 V100，可能过了两年之后就没有人用 V 卡了"，大家都要去用新卡。</p>
+
+<h2>质疑最少的收入：科研、跳舞与迎宾</h2>
+
+<p>卖机器人给科研机构、学校，以及迎宾导览（跳舞），是宇树公开可见的两块确定性收入，也是目前质疑最少的收入——机器人跳舞、学校买回去做研究，产生的价值明确，需求真实。担心的人说科研市场体量不大，但作为起步市场它是合格的。</p>
+
+<p>科研市场的价值还不止收入本身。整个行业技术最前沿的人，如果用的是你的硬件，说明你的硬件未来很有可能最适配最先进的技术——你有机会成为这个领域基础设施的提供方之一。看宇树这类公司，不能只数科研带来的收入，它带来的更长远价值更重要。</p>
+
+<h2>制造业收入：互为对方的供应商加客户</h2>
+
+<p>制造业场景的收入是怎么实现的？两位作者给出的描述很直接：机器人公司把机器人卖给制造业零部件公司，零部件公司又把零部件卖回给机器人公司——互为对方的供应商加客户。此外，零部件公司常常还会投资机器人公司。一个机器人公司要对接几百家供应商，"两千台我一百个供应商一人买二十台不就两千台"——每家买 20 台，拆机、测试、产线上放几台，量就凑出来了。</p>
+
+<p>对制造业公司来说，这笔账也好算。产能过剩的背景下，与其扩建旧产能，不如投一家机器人公司："我花十个亿去建个厂，还不如我花五个亿我去投个机器人公司。"投完顺势进入新领域：搞机器人事业部，把零部件卖给全行业，完成从车企供应商到机器人供应链的转身。估值的吸引力更直接——</p>
+
+<blockquote class="orange">
+"你估值可能就是汽车十五倍，机器人三十倍。"
+<span class="attr">报道作者转述：同样的公司，贴上机器人标签估值体系完全不同</span>
+</blockquote>
+
+<p>有零部件公司的董秘，在把零部件卖给机器人公司之后，会对分析师喊话："我不是汽车行业的公司了，我现在是一个机器人公司"，请按机器人供应商的倍率来估值。资本市场看重预期，机器人收入对一百亿市值公司来说可能只有五千万，但大家期待它明年翻一倍、后年再翻一倍——"有想象空间很重要"，对上市公司来说，这常常是花钱买一个期待。</p>
+
+<p>最极端的例子是长盛轴承：宇树上完春晚之后，大家去翻长盛轴承的财报，发现宇树等机器人公司只买了长盛大概八百万的零部件，但长盛轴承从底部涨上来翻了五倍。机器人贡献的收入不高，市值涨幅却非常夸张——当时的资本市场对机器人的追捧到了这种程度。当然这套玩法有前提：体量不能太大。"你就算买一万台机器人，大家都不会把你当个机器人公司"——宁德时代买了也没人当它是机器人公司；市值几百亿的中型公司才有弹性，比如市值三百亿的公司，PE 翻一倍就是六百亿。可复盘的对照是三花智控：与 Optimus 合作前是一千亿出头的规模，如今已是 A 股机器人体量最大的公司之一。</p>
+
+<p>生态的极致是智元的分级经销体系。按一年帮智元完成的销售额分级：两千万是 VAP，一千万是金牌，五百万是银牌，两百万是最低的认证；自购也算——"你自己买一千万就是帮他卖了一千万啊"。级别越高，能拿到的货源越多，智元的支持也越多：机器人卖给谁、怎么卖、卖了之后的维护，都需要厂商配合。级别最高的几家经销商伙伴都有谁？均胜电子、宁波华翔、卧龙电驱——这些零部件公司同时是智元的股东，买机器人花了 5000 万，投资升值可能又回来 5000 万，还离 IPO 更近。它们也确实是去年机器人板块涨得最好的几只股票。</p>
+
+<h2>IPO 竞速：为什么必须做大</h2>
+
+<p>融了这么多钱，公司就必须奔着做大去了——回购协议让不达标这件事有了代价，公司需要给所有投资人一个交代。做大的当前竞争就是 IPO：宇树之外，"已经有投行在上面工作的是十四家"，实际有上市想法的更多。牛市有窗口——"我们如果从 24 年 9 月开始算的话，现在我们牛市有 20 多个月了"；错过这轮窗口，行情下来再上，估值打折还是小事，"那都有可能上不了"。</p>
+
+<p>并非所有公司都有这种压力。特斯拉、小鹏、小米做机器人基本不对外卖——"现在其实这些公司是不卖机器人的"。对马斯克来说机器人是研发投入，今年本就没有出售计划，"没有人会去算他要卖多少"；巨头现金流充足、已经上市，可以慢慢等。创业公司不行："创业公司还是需要有收入"——技术进展不确定，融资停不下来，上市前的每一段路都要靠收入续命。谁从容、谁着急，决定了行业里两种完全不同的活法。</p>
+
+<p>预期管理是最新的分野。马斯克最初喊出 2026 年 10 万台，供应链立刻按计算器：有合作关系的零部件商把单价直接乘 10 万，测算今年的业绩增长。结果他搞到 8 月份才造了 300 台——按 ARR 年化 3600 台，跟 10 万台差 30 倍，是一个超级大的 miss。供应链企业大部分业绩不如预期，责任很大程度上在预期本身："因为他之前把大家的预期拉得太高了。"二级市场的朋友开始说：大家看看国产链吧。</p>
+
+<p>国产链的代表是智元。邓总（节目附录确认：智元机器人邓泰华）给出的指引是 1.6 万台，比马斯克年化的小几千台大得多，也比他们去年约四五千台的产量激进不了多少。市场相信它：</p>
+
+<blockquote class="green">
+"目前为止邓总的信用记录比马斯克好吧。"
+<span class="attr">现场回应 1.6 万台指引靠不靠谱；但这种指引没有办法证伪</span>
+</blockquote>
+
+<p>销量与收入的含金量，是两位作者反复提醒的地方。汽车行业每周发一次销量、精确到个位，机器人行业却没人统计——外资分析师要翻主流公司的公告、挨个问买家，问了八十几个公司，才凑出去年底国内人形机器人约八千台的数字：前两名宇树、智元断崖式领先，第三名优必选只有百台级。而且"出货量不能算真实的销量"，压在渠道里不算卖出去。二级市场朋友的话更直接：</p>
+
+<blockquote class="red">
+"To B 生意就是你想卖多少就卖多少。"
+<span class="attr">转述一位二级市场人士；主播当场提醒"这个发言比较危险"</span>
+</blockquote>
+
+<p>没有锚的定价也与此相关："机器人行业是没有预期的。"别的行业有"今年能赚多少"的锚，达不到就跌；机器人行业对它的预期一直在调整，二级玩家只能做波段——事后来看，一直拿着不动反而是亏的。而基本面的底色是，"它的应用没到爆发的状态"——有机器人收入的公司不少，收入是否可持续，要看应用什么时候真正起来。</p>
+
+<h2>一级市场：攒局与 Club Deal</h2>
+
+<p>具身融资与传统风险投资不一样：传统 VC 承担风险、博高回报、看重独立判断，而具身的融资常有一位攒局的人（FA 或者活跃机构的人士），从第一轮就开始布置阵营。阵营有结构：T0 产投 6 到 8 家——智元、自变量、乐聚、银河这些具身公司自己成了产投方，代表确定的订单；T0 VC 10 到 15 家——红杉、高瓴、顺为、春华、源码等，代表技术上的认可。每一轮拉几家产投、几家 VC 上牌桌，豪华阵容"可以为后面的几次的融资背书"——后面的机构看到阵容就投，估值一定有一个上涨的预期。</p>
+
+<p>竞争关系在这样的结构里消失了。大模型时代高瓴和红杉一起投的项目还挺少的，具身项目里它们同轮出现却更多——公开信息里，两家投在同一轮的就有它石、无界、米清智能和魔角科技，它们同时也是星动纪元、智元的股东。被问到为什么竞争消失，投资人的回答是：</p>
+
+<blockquote class="purple">
+"大家一起赚钱有什么好排斥的。"
+<span class="attr">投资人谈同轮竞合：只要投得够前，估值一定会很快上升</span>
+</blockquote>
+
+<p>条款也越来越硬：有机构被要求承诺连续多轮领投，一位朋友觉得这个要求很没有道理，最后没有投。也有一部分 T0 机构会拒绝 Club Deal——拒绝的人最看重的还是创始人的定力：在这个泡沫里，创始人是不是还专注在他们想要做的事情上。</p>
+
+<h2>二级市场的拷问：泡沫的第五步</h2>
+
+<p>泡沫最直接的试金石是宇树上市后的表现。上市 6 个月内的股价走势，是整个行业最受关注的观察窗口：回到公开市场就是被充分定价，早期炒高价格的人会慢慢退场，留下的价格更趋近于内在价值。二级调研也不再听故事："他们就会去找一些可验证、可量化的东西"——今年研发投多少、明年投多少、收入预期与来源、在手订单，还有复购的概率有多少。回答不上细节的，不买。</p>
+
+<p>报道的结尾用了一句话，节目里嘉宾把它念出来向作者发问："质疑泡沫，理解泡沫，拥抱泡沫，享受泡沫"——第五步是什么？没有人给出答案。二级的人只是在泡沫里找到自己相信、愿意下注的人。</p>
+
+<p>投资人也分两类："有一类投资人他就是想赚一个主题的钱"，希望尽快退出；还有一批投资人非常坚信具身这个行业的价值，不因能否上市而紧张，核心是周期性确认创始团队还在认真做技术、纯粹推进。而最接近传统 VC 的一笔，可能是红杉种子 2019 年投宇树：那时行业完全没有共识，大家看到的是"王兴兴拿着机器狗，他做出一个产品后那个激动的样子"——这还是很接近传统风险投资的判断标准的。</p>
+
+<p>往前看，未来一年有几件值得盯的事。一是数据 scaling 的验证："我们如果有个 1000 万小时的数据，然后我们可能就能验证这个模型到底有没有 scaling"——头部公司距这个目标已经不远。二是宇树上市 6 个月后的定价：是真的到 3000 亿元，还是比现在还低。三是新公司还会不会冒出来——"因为技术没有收敛，所以有很多新公司还在不断的出现"；对照大模型在 23 年下半年就基本关闭的新公司窗口，具身的牌局还远没定型。王兴兴在宇树上市前后一直在管理预期，说行业里面可能两到三年之内会有一些应用落地——这个预期比投资人定价时用的更低，但可能也更靠谱。而最终裁决回到最朴素的一句话：</p>
+
+<blockquote class="amber">
+"一个股票能不能上市其实就看有多少人愿意买吧。"
+<span class="attr">愿意买的前提，是产品与技术给出更明确的价值</span>
+</blockquote>
+
+<div class="cards">
+
+<div class="card c-blue">
+<strong>金句一</strong>
+<span>"比谁的筹码多，而不是说比谁的技术更先进。"——这场竞赛像德州扑克，比的是谁口袋深</span>
+</div>
+
+<div class="card c-amber">
+<strong>金句二</strong>
+<span>"要么有可能会被极大的高估，要么有可能会被低估。"——进展难以观测，估值注定摇摆</span>
+</div>
+
+<div class="card c-red">
+<strong>金句三</strong>
+<span>"上春晚没问题，都要上春晚就有问题。"——一位宇树人士谈行业内卷式的营销（报道转述）</span>
+</div>
+
+<div class="card c-purple">
+<strong>金句四</strong>
+<span>"我常常会迟到，但我一般都会做到。"——马斯克；在场者的回应是"看大家等不等得起"</span>
+</div>
+
+<div class="card c-green">
+<strong>金句五</strong>
+<span>"目前为止邓总的信用记录比马斯克好吧。"——智元 1.6 万台指引与特斯拉 10 万台指引的对照</span>
+</div>
+
+<div class="card c-yellow">
+<strong>金句六</strong>
+<span>"质疑泡沫，理解泡沫，拥抱泡沫，享受泡沫。"——报道结尾的泡沫四步曲，第五步没人回答</span>
+</div>
+
+</div>
+
+<footer>
+  <p>本文为「声笺 Resonote」基于《晚点聊 LateTalk》第 180 期节目音频整理。节目原文出处：<a href="https://podcast.latepost.com/180">podcast.latepost.com/180</a>。相关报道《具身智能的金钱游戏》由《晚点 LatePost》发布（作者李梓楠、徐煜萌、申远）。</p>
+  <p>所有引言均可在节目字幕中检索验证；正文中的总结与连接部分为编者整理，不构成对嘉宾原话的转述。节目附注：口头提到的"邓总"指智元机器人创始人、董事会主席兼 CEO 邓泰华。</p>
+</footer>
+
+</article>
+</body>
+</html>

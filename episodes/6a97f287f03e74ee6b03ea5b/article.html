@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公司会消亡，优秀不等于卓越 —— 与曾鸣聊 AI 时代的产业史观</title>
+<style data-resonote-theme>
+:root {
+  color-scheme: light;
+  --resonote-ink: #26322f;
+  --resonote-muted: #68736f;
+  --resonote-paper: #fbf8f1;
+  --resonote-canvas: #eee8dc;
+  --resonote-line: #d7cec0;
+  --resonote-blue: #355f58;
+  --resonote-green: #557461;
+  --resonote-amber: #aa5143;
+  --resonote-red: #a34742;
+  --resonote-purple: #75667b;
+  --resonote-yellow: #a9864d;
+  --resonote-shadow: 0 24px 70px rgba(38, 50, 47, 0.1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--resonote-canvas);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 !important;
+  color: var(--resonote-ink);
+  background:
+    radial-gradient(circle at 92% 5%, rgba(53, 95, 88, 0.11), transparent 25rem),
+    radial-gradient(circle at 8% 22%, rgba(170, 81, 67, 0.045), transparent 22rem),
+    repeating-linear-gradient(90deg, rgba(38, 50, 47, 0.012) 0 1px, transparent 1px 7px),
+    linear-gradient(180deg, #f7f2e9 0%, var(--resonote-canvas) 100%);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 1.85;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.resonote-home {
+  position: fixed;
+  z-index: 20;
+  top: 18px;
+  left: 20px;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 12px 12px 3px;
+  color: var(--resonote-ink);
+  background: rgba(251, 248, 241, 0.9);
+  box-shadow: 0 8px 28px rgba(38, 50, 47, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.resonote-home svg { width: 16px; height: 16px; }
+.resonote-home-lockup { display: inline-flex; align-items: baseline; gap: 6px; }
+.resonote-home-lockup strong { color: inherit; font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif; font-size: 14px; }
+.resonote-home-lockup small { color: var(--resonote-muted); font-size: 8px; font-weight: 750; letter-spacing: 0.14em; }
+.resonote-home:hover { border-color: rgba(53, 95, 88, 0.42); color: var(--resonote-blue); background: #fffdf8; }
+.resonote-home:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+
+.resonote-reading-progress {
+  position: fixed;
+  z-index: 40;
+  inset: 0 0 auto;
+  height: 3px;
+  overflow: hidden;
+  background: rgba(38, 50, 47, 0.06);
+}
+
+.resonote-reading-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--resonote-amber), #bd8063 45%, var(--resonote-blue));
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.resonote-to-top {
+  position: fixed;
+  z-index: 22;
+  right: 22px;
+  bottom: 22px;
+  display: inline-grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(38, 50, 47, 0.13);
+  border-radius: 50%;
+  color: var(--resonote-ink);
+  background: rgba(251, 248, 241, 0.92);
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.11);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.resonote-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.resonote-to-top:hover { border-color: rgba(53, 95, 88, 0.38); color: var(--resonote-blue); }
+.resonote-to-top:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.resonote-to-top svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.resonote-article {
+  width: min(100% - 40px, 780px);
+  max-width: 780px !important;
+  margin: 28px auto 56px !important;
+  padding: clamp(36px, 6vw, 72px) clamp(24px, 6vw, 68px) 72px !important;
+  border: 1px solid rgba(38, 50, 47, 0.09);
+  border-radius: 4px 24px 24px 4px;
+  background: rgba(255, 252, 246, 0.95) !important;
+  box-shadow: var(--resonote-shadow);
+}
+
+.resonote-article > header {
+  position: relative;
+  margin: 0 0 52px !important;
+  padding: 0 0 28px;
+  border-bottom: 1px solid var(--resonote-line);
+}
+
+.resonote-article > header::before {
+  display: block;
+  width: 52px;
+  height: 5px;
+  margin-bottom: 22px;
+  border-radius: 0;
+  content: "";
+  background: linear-gradient(90deg, var(--resonote-amber), #bf745f);
+}
+
+h1, h2, h3 {
+  color: var(--resonote-ink) !important;
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 18em;
+  margin: 0 0 16px !important;
+  font-size: clamp(2.15rem, 6vw, 3.35rem) !important;
+  font-weight: 700;
+  line-height: 1.13 !important;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin: 58px 0 20px !important;
+  padding: 0 0 11px !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--resonote-line) !important;
+  font-size: clamp(1.5rem, 3.2vw, 1.88rem) !important;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+h2::after {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  content: "";
+  background: var(--resonote-amber);
+}
+
+h3 {
+  margin: 34px 0 12px !important;
+  font-size: 1.2rem !important;
+  line-height: 1.4;
+}
+
+p { margin: 0 0 1.1em !important; }
+
+strong { color: #213b35; font-weight: 720; }
+
+a { color: var(--resonote-blue); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { color: #294d47; }
+a:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.25); outline-offset: 3px; border-radius: 3px; }
+
+.meta,
+.byline,
+.subtitle {
+  color: var(--resonote-muted) !important;
+  font-size: 0.88rem !important;
+  line-height: 1.7;
+}
+
+.tag,
+.label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  margin: 3px 5px 3px 0 !important;
+  padding: 3px 10px !important;
+  border: 1px solid #d9d7d0;
+  border-radius: 999px !important;
+  color: #55635e !important;
+  background: #f1ece3 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem !important;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.cards,
+.topic-cards,
+.card-grid,
+.overview,
+.stat-grid,
+.compare {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin: 24px 0 38px !important;
+}
+
+.card,
+.topic-card,
+.overview-card,
+.stat-card,
+.data-card,
+.num-card,
+.info-box,
+.highlight-box,
+.insight-box,
+.compare > div {
+  --card-accent: var(--resonote-blue);
+  position: relative;
+  min-width: 0;
+  padding: 18px 18px 17px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 14px !important;
+  color: var(--resonote-ink) !important;
+  background: #eef3ef !important;
+  box-shadow: 0 8px 24px rgba(38, 50, 47, 0.05);
+  font-size: 0.86rem !important;
+  line-height: 1.65 !important;
+}
+
+.card strong,
+.topic-card strong,
+.overview-card strong,
+.stat-card strong,
+.data-card strong,
+.num-card strong,
+.info-box strong,
+.highlight-box strong,
+.insight-box strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--resonote-ink) !important;
+  font-size: 0.95rem;
+}
+
+.card span,
+.topic-card span,
+.overview-card span,
+.desc,
+.text,
+.gl { color: #53645e !important; }
+
+.card-blue, .c-blue, .i-blue, .q-blue, .quote-blue, .blue { --card-accent: var(--resonote-blue); }
+.card-green, .c-green, .i-green, .q-green, .quote-green, .green { --card-accent: var(--resonote-green); }
+.card-orange, .c-orange, .i-orange, .q-orange, .quote-orange, .orange { --card-accent: var(--resonote-amber); }
+.card-red, .c-red, .i-red, .q-red, .quote-red, .red { --card-accent: var(--resonote-red); }
+.card-purple, .c-purple, .i-purple, .q-purple, .quote-purple, .purple { --card-accent: var(--resonote-purple); }
+.card-yellow, .c-yellow, .i-yellow, .q-yellow, .quote-yellow, .yellow { --card-accent: var(--resonote-yellow); }
+
+.card-green, .c-green, .i-green { background: #f0f5f1 !important; }
+.card-orange, .c-orange, .i-orange { background: #faf2e9 !important; }
+.card-red, .c-red, .i-red { background: #f9eeee !important; }
+.card-purple, .c-purple, .i-purple { background: #f4f1f6 !important; }
+.card-yellow, .c-yellow, .i-yellow { background: #faf6e9 !important; }
+
+blockquote,
+.quote,
+.quote-block,
+.quote-card,
+.quote-item,
+.q {
+  --card-accent: var(--resonote-blue);
+  position: relative;
+  margin: 28px 0 !important;
+  padding: 22px 24px 20px 28px !important;
+  border: 1px solid rgba(53, 95, 88, 0.13) !important;
+  border-left: 4px solid var(--card-accent) !important;
+  border-radius: 0 16px 16px 0 !important;
+  color: #354d47 !important;
+  background: #eef3ef !important;
+  box-shadow: 0 10px 28px rgba(38, 50, 47, 0.055);
+  font-family: Iowan Old Style, Baskerville, "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+  font-size: 1.06rem !important;
+  font-style: normal !important;
+  line-height: 1.75 !important;
+}
+
+blockquote::before,
+.quote-block::before,
+.quote-card::before,
+.quote-item::before {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  content: "“";
+  color: var(--card-accent);
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  opacity: 0.32;
+}
+
+blockquote.red, .quote-red, .q-red { --card-accent: var(--resonote-red); background: #f9eeee !important; }
+blockquote.green, .quote-green, .q-green { --card-accent: var(--resonote-green); background: #f0f5f1 !important; }
+blockquote.orange, .quote-orange, .q-orange { --card-accent: var(--resonote-amber); background: #faf2e9 !important; }
+blockquote.purple, .quote-purple, .q-purple { --card-accent: var(--resonote-purple); background: #f4f1f6 !important; }
+blockquote.yellow, .quote-yellow, .q-yellow { --card-accent: var(--resonote-yellow); background: #faf6e9 !important; }
+
+.attr,
+.attribution,
+.q-attr,
+.src,
+.from,
+.context,
+.ctx {
+  display: block;
+  margin-top: 10px !important;
+  color: var(--resonote-muted) !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem !important;
+  font-style: normal !important;
+  line-height: 1.55;
+}
+
+.number,
+.num,
+.stat-num,
+.value {
+  color: var(--resonote-blue) !important;
+  font-family: Iowan Old Style, Baskerville, Georgia, serif;
+  font-size: 1.75rem !important;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.gloss,
+.note {
+  margin: 24px 0 !important;
+  padding: 14px 16px !important;
+  border-left: 3px solid var(--resonote-amber);
+  border-radius: 0 10px 10px 0;
+  color: #5c5850 !important;
+  background: #f5efe5 !important;
+  font-size: 0.86rem !important;
+}
+
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 0.45em; }
+hr, .divider { height: 1px; margin: 38px 0; border: 0; background: var(--resonote-line); }
+
+footer {
+  margin-top: 58px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid var(--resonote-line) !important;
+  color: var(--resonote-muted) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.7;
+  text-align: left !important;
+}
+
+.resonote-toc {
+  position: fixed;
+  z-index: 18;
+  top: 90px;
+  left: calc(50% + 430px);
+  width: min(230px, calc(50vw - 470px));
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+  padding: 16px 14px 16px 16px;
+  border-left: 1px solid rgba(38, 50, 47, 0.12);
+  color: var(--resonote-muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  scrollbar-width: thin;
+}
+
+.resonote-toc-title {
+  margin-bottom: 10px;
+  color: #75817b;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.resonote-toc ol { margin: 0; padding: 0; list-style: none; }
+.resonote-toc li { margin: 0; }
+.resonote-toc a {
+  display: block;
+  overflow: hidden;
+  padding: 5px 8px;
+  border-radius: 7px;
+  color: #6f7c76;
+  font-size: 0.69rem;
+  line-height: 1.45;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resonote-toc a:hover { color: var(--resonote-blue); background: rgba(53, 95, 88, 0.06); }
+.resonote-toc a[aria-current="location"] { color: var(--resonote-ink); background: rgba(53, 95, 88, 0.09); font-weight: 700; }
+
+.resonote-pager {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 58px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--resonote-line);
+}
+.resonote-pager-link {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+  padding: 16px 18px;
+  border: 1px solid rgba(38, 50, 47, 0.12);
+  border-radius: 3px 14px 14px 3px;
+  background: rgba(251, 248, 241, 0.75);
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+.resonote-pager-link:hover {
+  border-color: rgba(53, 95, 88, 0.4);
+  background: #fffdf8;
+  box-shadow: 0 14px 30px rgba(38, 50, 47, 0.08);
+  transform: translateY(-2px);
+}
+.resonote-pager-link:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 3px; }
+.resonote-pager-link.is-next { align-items: flex-end; text-align: right; }
+.resonote-pager-dir { color: var(--resonote-blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
+.resonote-pager-title {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--resonote-ink);
+  font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 700px) {
+  body { font-size: 16px; line-height: 1.78; }
+  .resonote-home { position: static; margin: 12px 14px 0; }
+  .resonote-article {
+    width: calc(100% - 20px);
+    margin: 10px auto 24px !important;
+    padding: 34px 20px 44px !important;
+    border-radius: 18px;
+  }
+  .resonote-article > header { margin-bottom: 38px !important; }
+  .cards, .topic-cards, .card-grid, .overview, .stat-grid, .compare { grid-template-columns: 1fr !important; }
+  h2 { margin-top: 46px !important; }
+  blockquote, .quote, .quote-block, .quote-card, .quote-item, .q { padding: 20px 18px 18px 22px !important; }
+  .resonote-pager { grid-template-columns: 1fr; }
+  .resonote-pager-link.is-next { align-items: flex-start; text-align: left; }
+}
+
+@media (max-width: 1280px) {
+  .resonote-toc { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+@media print {
+  body { background: #fff; }
+  .resonote-home, .resonote-reading-progress, .resonote-to-top, .resonote-toc, .resonote-pager { display: none; }
+  .resonote-article { width: 100%; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0; box-shadow: none; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="resonote-home" href="../../" title="返回声笺">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/>
+  </svg>
+  <span class="resonote-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
+</a>
+
+<article class="resonote-article">
+
+<header>
+  <h1>公司会消亡，优秀不等于卓越</h1>
+  <div class="meta">
+    曾鸣 · 阿里巴巴集团前总参谋长 · 商业访谈录（张小珺主持）· 第 153 期 · 2026 年 9 月 · 时长 2 小时 34 分
+  </div>
+  <div class="meta" style="margin-top:4px;">
+    收听：<a href="https://www.xiaoyuzhoufm.com/episode/6a97f287f03e74ee6b03ea5b?utm_source=rss">小宇宙 FM</a>
+  </div>
+</header>
+
+<h2>为什么这期值得关注</h2>
+
+<div class="cards">
+
+<div class="card c-red">
+<strong>公司会消亡</strong>
+<span>科层制管理的公司制度会衰亡；公司生老病死是常态——新公司才有机会，年轻人才有梦想。</span>
+</div>
+
+<div class="card c-blue">
+<strong>时代企业没有传承</strong>
+<span>几乎没有任何时代企业能活成下一个时代的企业：不是多不多的问题，是有没有的问题。</span>
+</div>
+
+<div class="card c-yellow">
+<strong>三阶段框架</strong>
+<span>基础设施化 → 智能体应用 → 原生应用。2026 年 token 成为度量衡，是第一阶段基本完成的标志。</span>
+</div>
+
+<div class="card c-purple">
+<strong>模型 = 炼油厂 = AI 云</strong>
+<span>OpenAI、Anthropic 大概率不是原生应用时代的大赢家——就像石油公司做不了汽车。</span>
+</div>
+
+<div class="card c-green">
+<strong>组织：岗位 → 任务</strong>
+<span>New Lab 与一人公司是新组织形态的雏形；只有用新的组织形态，才能生成新的战略。</span>
+</div>
+
+<div class="card c-orange">
+<strong>从电到机器人</strong>
+<span>机器人更像电器而不是汽车；AI 时代对个人而言，是可以被定义为"创造力时代"的时代。</span>
+</div>
+
+</div>
+
+<h2>开场论断：公司会消亡</h2>
+
+<p>访谈的开场，曾鸣就给出整场最重的一句话：</p>
+
+<blockquote class="red">
+"科层制管理的这种公司制度会衰亡。"
+<span class="attr">曾鸣 · 谈公司这种工业时代的组织制度</span>
+</blockquote>
+
+<p>他随即补了一句：公司制度衰亡，不代表会被另一个叫"公司"的东西接替——"也可能不叫公司。肯定不叫公司……所以公司会消失，公司会消亡。"但说起这件事他并不伤感："这没有什么可以遗憾的呀。将来有更好玩的，你说多少人现在去公司上班是开心的？"当主持人追问，上一代时代企业里能活成下一代的有多少，他给了两个更冷的回答："不是多不多的问题，是有没有的问题。"以及，"基本没有。"</p>
+
+<p>他认可的例子只有两个：IBM 做到过一次，微软算是做到过一次——"微软某种程度上错过了移动互联网，但是它保持住了搜索的火苗，然后有了云计算的积累"。那 Google 和字节呢？他把问题原样抛了回去："Google不一定会成为下一个时代的Google，字节会是下一个时代的字节吗？"然后自己回答："同样的大概率也不会啊。"</p>
+
+<blockquote class="blue">
+"人有生老病死，公司也有生老病死，没有比这更正常的了。所以新公司才有机会，年轻人才有梦想啊。"
+<span class="attr">曾鸣 · 时代更替的另一面：新公司才有机会，年轻人才有梦想</span>
+</blockquote>
+
+<h2>为什么听他说：三个决定与"相信所以看见"</h2>
+
+<p>曾鸣最常被引用的一段经历，是他作为阿里巴巴集团前总参谋长参与的那些战略决定。他把自己参与过的、最重要的决定收敛成三个：</p>
+
+<blockquote class="purple">
+"实际上可能最重要的决定就是三个：创立淘宝、创立支付宝、创立阿里云。"
+<span class="attr">曾鸣 · 复盘阿里二十年</span>
+</blockquote>
+
+<p>他特别强调这三个决定当时的处境："而且这三个决定不但当时在整个社会是不被认可的，公司内部的争议也非常非常的激烈。"那这些在当时争议极大的决定，靠什么来判断对错？他的回答是："不知道啊，因为相信所以看见啊。"他同时提醒，"最成功的企业一定是反共识的，但反共识不一定成功"——幸存者偏差要时刻警惕。</p>
+
+<p>除了阿里云这类大决定，他更在意层层递进的次级战略：阿里云从只服务一个场景还是一开始就多场景起步、到开源还是闭源、再到要不要自己做数据库（去 IOE）——战略到落地，每一层都是决定，也都可能致命。</p>
+
+<h2>新书《智能》：三阶段框架的由来</h2>
+
+<p>过去几年，曾鸣说自己一直处于一种困惑里："的确是非常非常的困惑，因为你知道肯定是有很多的新东西会出现，但你不知道哪一些是稍纵即逝的小浪花，哪一些是代表未来的大的浪潮。"转折发生在今年上半年——"有一些趋势性的信号开始converge……然后我看到了一个可能的框架，是可以去解释当下发生的很多事情，甚至去推演未来下一步的发展的。"他把这套框架写进了正在写的新书《智能》里。</p>
+
+<p>框架的底层是一个历史规律：每一种通用技术的产业化都按同一套剧本走。第一步是基础设施化——"这个技术逐渐的被社会接受，然后它成了这个社会的基础设施"；第二步，基于基础设施爆发海量新应用——"基于这个基础设施，产生了海量的新的应用，就是百花齐放的时代"；第三步才是原生应用——"当这些海量的应用出现以后，大家发现我们需要一些更底层的方法去运行这个新的世界……我把第三个阶段叫做原生应用的阶段"。</p>
+
+<p>对照互联网史，第一阶段是电信网络与浏览器，第二阶段是门户与搜索引擎，第三阶段才是原生应用。他把移动互联网的相位差讲得更细：智能手机很早就有了，但直到 2010 年前后，应用生态才真正起势——"一直到2010年它还是美国市场智能手机的百分之四十几的市场份额，iPhone只有百分之二十几"；在那前后爆发的墨迹天气之类的一堆应用，日活很快过亿，却几乎都不代表未来。所以他对眼下的判断是：第二阶段还有很长时间可以打，"其实还有可能八年也好十年也好，非常精彩的时间是属于第二阶段的"。</p>
+
+<p>为什么说 2026 年是标志性的一年？因为 token 第一次成为整个行业的度量衡：黄仁勋在英伟达 GTC 大会上宣布"英伟达的未来就是 token factory"，Sam Altman 随后也表示 OpenAI 的核心就是卖 token。"当一个技术有了一个标准的度量衡以后，它就能被规模化的、标准化的使用"——就像一度电、一吨水、一个 GB 的流量。而第二阶段的主角，他定义为智能体："我认为AI进入的第二个阶段就是智能体阶段。智能体就是AI时代的新应用。"</p>
+
+<h2>能力时代：还在等一个"浏览器"</h2>
+
+<p>把 agent 比作新应用还不够，曾鸣给了一个更锋利的历史坐标。"92年的时候我最狂热的是什么？是建个网站啊。"1992 年建网站，就是 2026 年做 agent——"我们把我们懂的能力封装起来，然后分享出去让别人也可以使用"；OpenClaw 出现后他突然意识到，"原来能力是可以这样被封装、被调用的"。他认为这轮创新的本质是："所以AGI这轮的创新就是让我们从信息时代进入到了能力时代。"</p>
+
+<p>但他同时提醒，真正的百花齐放还缺一个关键环节："我们还在等一个浏览器出来。"以及，"我完全没有看到雅虎的雏形。所以我说连浏览器现在都没出现。"他对雅虎的定义是结构化信息、降低认知压力——"它是在熵减，它不是在熵增……降低大家的认知压力"；今天需要的是一个同样的角色，把 agent 的标准统一起来、让用户用很简单的方法就能调用。</p>
+
+<blockquote class="yellow">
+"我觉得下一个……最大的机会就是一个类似浏览器这样的机会……是它会把agent的标准统一起来，然后同时能够让用户用很简单的方法就能调用agent……然后会有海量的agent爆发。这个可能就是未来两年可能最让人兴奋的一件事情。"
+<span class="attr">曾鸣 · 对 Agent 生态下一阶段的判断</span>
+</blockquote>
+
+<p>他不会抢跑：雅虎 1994 年才成立，门户大战是浏览器普及之后的事——"我们等看到了雅虎，让雅虎先辉煌三年，我们大概才能看到谁想去挑战雅虎"。有了历史坐标，他反而平静："我就不焦虑了，我就在等着这些发生就好了。"</p>
+
+<p>真正的拦路虎是信任。他连续发问："你敢不敢把一件重要的事情交给agent？你钱包敢交给agent吗？你个人的隐私敢交给agent吗？"答案需要一个新物种来给："这些东西其实都需要有一个可能一个新的服务商来给大家建立这种信任。让我们愿意说OK，那我相信你定的标准……我相信你的推荐，然后我相信里面的agent，我是敢用的，好用不好用那是我后面自己的选择。"</p>
+
+<p>至于数据飞轮，他提醒前提链要先成立："数据飞轮的前提是真实世界的反馈嘛……真实世界的反馈的前提是你这个Agent要能独立去干活嘛，要离开人的这个参与嘛。"一旦 Agent 真的独立完成任务，飞轮会升级——"数据飞轮升级到了智力飞轮。就是智能的飞轮啊。"再往后才是他所说的第三阶段：Agentic OS。"因为你是OS就开始调度资源了嘛。就是它就不再做匹配了。就是你只要告诉他一个意图，我就直接调用市场上所有的Agent。"——Agent 直接把活干完，"你都见不到那个Agent"。但他认为这还很远，"我个人觉得是第三阶段的事情是比较远的"；前置条件是第二阶段先真正爆发——"首先Agent得爆发，真正的爆发出来"，直到我们"大概才会找到一个最自然的跟AI互动的方式"。</p>
+
+<h2>模型的类比：炼油厂、AOL 与 AI 云</h2>
+
+<p>对于模型公司到底值多少钱、会不会被应用公司吃掉，曾鸣用了一组连环类比。大家常说数据是新时代的石油，那模型呢？"那模型实际上是一个炼油厂。"石油时代的剧本里，"化工企业后面比纯粹炼油的企业要有价值得多。化工就是应用。"另一个类比是那个"消失了的公司"：美国在线 AOL 是互联网基础接入服务商，"它让所有的人都能够接到互联网上"，然后自己消失了。在他看来，今天的模型公司就是同一类角色："我觉得说的直白一点就是AI云公司。就是未来的AI云公司。"</p>
+
+<p>所以当主持人惊叹 Anthropic 成立不到十年就市值万亿时，他的回应是："这个描述本身就是一个幻觉和误解。"他专门查过历史：雅虎 95 年成立，2000 年就达到 1200 亿美元市值，只用了五年，折合成今天差不多是 1 万亿美元——"年轻人容易认为每个时代，这一次不一样，这就是典型的这次不一样。"他承认第一波跑出来的公司会很大："当一个技术有这么大的冲击力的时候，第一波成功跑出来的公司就有这么大的价值。"但大不等于活到最后。</p>
+
+<blockquote class="green">
+"汽车离开了石油肯定不转，对吧？但是你石油公司肯定做不了汽车。你没听说过哪个汽车公司是由石油公司转化来的。"
+<span class="attr">曾鸣 · 用石油与汽车的关系框定模型公司与应用公司的边界</span>
+</blockquote>
+
+<p>同样的逻辑指向今天领跑的模型公司："它很可能会往后活得不错，但它大概率不是原生应用阶段的大玩家，大赢家。"至于未来最大的公司在哪里，他说："我相信未来会有，一定会有一个10万亿美元的公司。但是未必是现在领跑的这两家公司。"他不认同陆奇 2024 年的判断。陆奇说："OpenAI就是这种AGI公司，未来一定会比Google大，只是大5倍还是大10倍的问题。"曾鸣想的是：真正的赢家未必是现在领跑的这两家。</p>
+
+<h2>终局：寡头竞争 + 政府强监管</h2>
+
+<p>模型行业的格局会收敛成什么样？曾鸣的答案非常"基础设施"："因为整个社会依赖于它，所以政府一定会强监管。"他反问："你现在水电费能随便涨价吗？……这才叫基础设施。"他直言这个现实对很多正在创业的人很残酷——公共基础设施只有一种商业模式成立：寡头垄断加政府强监管，供给太重要，所以不能只有一个供应商，也不会无序竞争。中国这边他给了更具体的淘汰赛时间表：就像世界杯八进四、四进二，"今年年底，谁如果跑不到3T的模型，估计谁就出局了"；等前两三名把优势拉开，"这两三家可能就不太容易再拉开了"。</p>
+
+<p>中美节奏被他看成两种不同的剧本：美国先发的企业有两三年的先发期，所以"它有一个健康酝酿DNA的阶段"；中国企业更像在美国原型上的快速跟进——大家同时起步、看到的图像差不多，就"必然变成百团大战"、容易出现同质化竞争。中国公司里，他点名 Kimi 更原生、智谱起步早且有大公司资源支撑、字节 All in 之后速度非常快——但字节的机会在 AI 云，不在大应用："字节是有很大的机会成为AI云公司的"，"但是那个大的to C的应用是有非常大的不确定性的"。</p>
+
+<p>对豆包，他的判断更不留情面："豆包肯定不是啊。对吧，要不然它肯定不计成本地往里砸了。它不砸了就是因为豆包不够，不够那么未来啊。"豆包是"第一代AI产品"，本质还是聊天机器人——"豆包没有行动力，智能体的核心是独立完成任务"。上一代的入口做不了下一代的入口："你如果不是Agent的事实标准的话，你其实是很难成为入口的。"连腾讯他也不觉得安全："腾讯作为最安全的为什么最近这么恐慌，就是因为也有可能不安全啊。"他补了一句更广义的判断："人跟人的关系都会被重新定义。Agent在里面的重要性也会大幅上升。"人和货物的关系一样会被重构——"我觉得阿里也一样有那个挑战"。</p>
+
+<h2>组织：岗位消失，任务涌现</h2>
+
+<p class="note">以下内容依据节目字幕中繁体口述段落转述整理（简体字幕无法逐字对应）：</p>
+
+<p>曾鸣认为 AI 原生组织最根本的变化是粒度：组织的基本单元从岗位变成任务，硅基与碳基员工围绕任务流转，科层与中层逐步消亡。一人公司是这条路上的阶段产物——它把原来一个公司靠管理与协调成本才能做成的事，压缩到一个人身上；但一个人能干的活永远有限，一定要有分工、也一定要有合作，所以组织不会消失。他把这种新组织里的个人叫作六边形战士——每个人都能独立完成一件完整的事，再与其他的六边形战士协作。</p>
+
+<p>老公司怎么办？他的回答很直接：不换脑袋就换人——认知先升级，理解新品种长成什么样、要跨过的鸿沟有多大；否则一路"AI+"加下去，原生公司起来时就会很绝望。转型本质上是反人性的，非常困难。对想参与前沿竞争的大公司，他的建议是：想继续在最前沿参与竞争，就得在 AI 原生方面做更大的努力——但竞争是相对的：跟兔子赛跑和跟猎豹赛跑，要求不一样。</p>
+
+<p>2026 年最热的组织现象是 New Lab。曾鸣认为它"是新的组织形态的早期的雏形"——为什么叫 Lab？"就是因为不满意公司嘛……公司要被淘汰了嘛。"New Lab 有泡沫吗？他认为大概率有，但早期的泡沫是好事——事前没有上帝视角，只能让大家去试错，市场愿意用重资源支持试错，这正是市场机制的价值。这一轮 New Lab 能以这么高的估值起步，是因为大家认为他们至少起步就是 OpenAI 跟 Anthropic——当潜在回报那么高的时候，愿意下的赌注自然就更高。他特别强调组织与战略的关系：只有用新的组织形态，才能生成新的战略——战略的生成方式与原有组织不匹配，未来决策频率越来越高、质量要求越来越高，旧组织承载不了。</p>
+
+<h2>巨浪面前，没有人安全</h2>
+
+<p>聊到巨头，他先给了一句总纲式的警告："我从来觉得在巨浪面前没有人是安全的。谁觉得安全，谁就是最不安全的。"All in AI 是必要条件，"这是必要条件。够不够要看技术演化的路径有多么颠覆，然后新公司获取资源的能力有多大"。他数了一遍美国玩家：微软"好像又有点吃不准它到底能不能走过去了，因为它对模型的投入不够，它模型这块其实已经出局了……目前它已经买不起OpenAI了"；Google 的问题在应用侧——"Google就相当于微软的上一段，也许它能成为一个很好的AI云公司，但是它能不能成为一个消费者的大应用，这个还真的不那么确定"，不过"它有TPU，有大模型……我觉得Google作为一个云厂商活下来，这个应该是没问题"。</p>
+
+<p>xAI 和 Meta 被他归为"直接退出竞赛"的一类——"像xAI跟Meta就直接退出竞赛了"。理由是人的状态和组织形态："我在硅谷只要是碰到有一群工程师的场合，XAI的那个人永远是最疲惫的那个人"——"人太累的时候是没有创新的。你一定是在一个相对开放放松的状态，你才会有新的东西出来"。Meta 的问题则是另一个极端：组织太大、调度困难，而且"大部分的研究员也不觉得小扎懂模型"。对照组是 OpenAI 和 Anthropic：OpenAI 靠的是 Sam 真心依赖 Ilya、Ilya 驱动一切的搭配；Anthropic 组织能力非常强，Dario 把握 Mission 与 Vision——两家本质上都是新时代的创业公司。</p>
+
+<p>这也是他整场反复强调产业史观的原因：看懂剧本，才知道自己站在第几幕。</p>
+
+<h2>机器人、电器与车</h2>
+
+<p>机器人在他的框架里"还在非常早期，就还在摸索到底怎么落地"，核心制约是数据。被问到类比到哪个阶段时，他说："最简单的类比就是他们自己认为的还在2020年左右的阶段，还没到ChatGPT的阶段的大模型公司。"他翻了翻车的历史：1900-1920 年美国真有几千家造车公司，直到流水线出现、福特做出第一个 To C 突破，汽车才成为大产业。他形容当下："现在相当于大家都能手搓一个机器人公司，但是哪个机器人公司能完成规模化量产，谁都不知道。"</p>
+
+<blockquote class="orange">
+"机器人可能更好的类比就是电器的发展。"——"因为基于电可以有N种电器……我们可能会出现N个不同的机器人，真的是适用不同的大场景的。"
+<span class="attr">曾鸣 · 为什么机器人更像电器而不是汽车</span>
+</blockquote>
+
+<p>他给出的对应关系很工整："Token类比的是电嘛。"模型=电，Agent=电器，机器人=N 种电器里最大的那批。这也是为什么大家都看好机器人："它是一个AI跟物理世界交互的一个基本的界面。……就有点像电，什么东西都可以被电再重新干一遍。"</p>
+
+<h2>创造力时代与教育的冲突</h2>
+
+<p>访谈的收尾部分，他把视角从产业拉回人。借用德鲁克对工业时代的划分——生产力革命、管理革命、知识革命——他认为 AI 时代可以被定义为创造力时代：因为"所有可以被结构化处理的知识，这样类型的工作都会被AI接管"，人"终于被解放出来，可以去开发自己的潜能"。他重新定义了创造力："创造力不是简单的会写首歌，或者会画幅画。它可能是更多的原创的定义复杂问题的能力。"它必须是无中生有的——"因为如果是已经有的东西的话，机器都已经当做data获取到了"。</p>
+
+<p>随之而来的是教育。他说："以前的教育体制还是一种智商激励。……它本质是知识的灌输嘛……智商的开发都是第二位的。"——"那这肯定是不行的。"他感慨："你想想看我们从小到大有多少兴趣被压抑了。……我们都是在最早的时间，为了不输在起跑线上，被摁在了原来世界的固定模式里头。"他判断接下来最大的冲突会出在教育系统——年轻人已经知道未来完全不一样："你随便问高中生，他们大概都知道用现在的方法大学毕业以后找工作都找不着。"而社会消化这场技术革命需要多久？"一代人。20年起步。因为他们才是原住民啊。"00 后创业者想象的世界，已经"完全不是我们现在能够理解的世界"。</p>
+
+<blockquote class="green">
+"如果从人的角度来看，AI时代可以被定义为创造力时代。"
+<span class="attr">曾鸣 · 生产力革命 → 管理革命 → 知识革命 → 创造力时代</span>
+</blockquote>
+
+<h2>快问快答：一个快乐的研究员</h2>
+
+<p>快问快答部分，他说自己眼下最关键的一个 bet 是"出现一个足够好用的to C的agent"；他读过的最重要的书是《基业长青》系列和德鲁克的书，本科时几乎全文抄过弗里德曼讲市场基本运行机制的那本小书——"建立了我对市场的基本运行机制的理解"；他高中就放弃了理科奥数竞赛——"我其实更加喜欢历史啊人文啊这些东西"；全球最喜欢的城市，"目前可能还是上海"。</p>
+
+<p>给 00 后的话，他讲的是心态的反转："原来我们倾向于降低不确定性。但是我觉得在这个阶段其实是要拥抱不确定性。不确定性就是最大的机会。"主持人问他对"语言即世界工作室"这个名字的第一印象，他笑着说："可能要改成自媒体即世界。"他靠看访谈"做数据训练"，让自己不那么累。问到自己的使命时，他给了这期节目最好的一句收尾：</p>
+
+<blockquote class="blue">
+"我觉得就是做一个快乐的研究员啊。"
+<span class="attr">曾鸣 · 对"您自己的使命是什么"的回答</span>
+</blockquote>
+
+<footer>
+  <p>本文为「声笺 Resonote」基于《商业访谈录》第 153 期整理的长文版本。原文出处：<a href="https://www.xiaoyuzhoufm.com/episode/6a97f287f03e74ee6b03ea5b?utm_source=rss">小宇宙 FM · 张小珺的商业访谈录</a> · 嘉宾：曾鸣（阿里巴巴集团前总参谋长）。</p>
+  <p>所有引言均可在节目字幕中检索验证；带「转述」或「作者概括」标记的段落为整理者的概括，其余为嘉宾原话整理。</p>
+</footer>
+
+</article>
+</body>
+
+</html>

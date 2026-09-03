@@ -1,0 +1,35 @@
+id: 6a97f287f03e74ee6b03ea5b
+source: xiaojun
+title: 153. 和曾鸣聊产业史观：残酷的真相、会消亡的公司、优秀≠卓越、“OAI、Anth大概率不是原生时代大赢家”
+guest: 曾鸣
+guest_role: 阿里巴巴集团前总参谋长
+published: 2026-09
+published_sort: "20260903"
+duration: 2h34m
+url: https://www.xiaoyuzhoufm.com/episode/6a97f287f03e74ee6b03ea5b?utm_source=rss
+thumbnail: https://image.xyzcdn.net/Fsy62527gh_p4bqQd1VQBizA03Qg.png
+status: generated
+generated_at: "2026-09-03T04:10:00.000Z"
+tags:
+  - ai-products
+  - startup
+  - interview
+  - researcher
+  - deep-dive
+  - strategic
+summary: |
+  阿里巴巴集团前总参谋长曾鸣从"公司会消亡"的论断开场，用一套产业史框架把 AI 时代讲成可以对照的历史：
+  技术产业化总是先完成基础设施化，再爆发新应用，最后沉淀出原生应用——2026 年 token 成为度量衡，
+  是第一阶段基本完成的标志性年份。他用炼油厂与 AOL 解释为什么 OpenAI、Anthropic 大概率不是原生应用时代的大赢家，
+  用"浏览器时刻"和信任入口框定 Agent 的机会，再把话题从岗位到任务的组织革命、
+  New Lab 与一人公司，一路聊到优秀不等于卓越、机器人更像电器、创造力时代与教育的冲突。
+core_ideas:
+  - 三阶段框架：基础设施化 → 新应用（智能体） → 原生应用；第二阶段还有 8-10 年的精彩时间
+  - 时代企业没有传承：公司生老病死是常态，不取决于战略选择——谁都很难一直在牌桌上
+  - 模型 = 炼油厂 = AI 云：OpenAI、Anthropic 大概率不是原生应用阶段的大赢家，但未来一定有 10 万亿美元的公司
+  - Agent 的浏览器时刻还没来：下一个最大机会是类似浏览器、能统一 Agent 标准的入口，信任由新服务商建立
+  - 组织范式革命：岗位 → 任务；一人公司与 New Lab 是新组织形态雏形；只有用新组织形态才能生成新战略
+  - AI 云终局：寡头竞争 + 政府强监管；今年年底谁跑不到 3T 模型基本出局
+  - 创造力时代：AI 接管所有可结构化处理的知识后，人只剩创造力；教育是接下来最大的冲突
+article_path: episodes/6a97f287f03e74ee6b03ea5b/article.html
+base: /episodes/6a97f287f03e74ee6b03ea5b/
