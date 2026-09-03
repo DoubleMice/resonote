@@ -4,6 +4,7 @@ import {
   buildMiMoTranscriptionRequest,
   DEFAULT_MIMO_MAX_COMPLETION_TOKENS,
   DEFAULT_MIMO_MODEL,
+  MiMoClient,
   resolveMaxCompletionTokens,
 } from './mimo.ts'
 
@@ -31,4 +32,22 @@ test('builds the documented audio-understanding request with a transcription ins
   })
   assert.equal(userContent[1]?.type, 'text')
   assert.match(String(userContent[1]?.text), /transcribe.*verbatim/i)
+})
+
+test('uses OpenAI-compatible Bearer authentication', async () => {
+  const originalFetch = globalThis.fetch
+  let authorization = ''
+  globalThis.fetch = async (_input, init) => {
+    authorization = String((init?.headers as Record<string, string>)?.Authorization || '')
+    return new Response(JSON.stringify({ choices: [{ message: { content: 'ok transcript' } }] }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    })
+  }
+  try {
+    await new MiMoClient({ apiKey: 'test-key' }).transcribe('data:audio/wav;base64,AAAA')
+    assert.equal(authorization, 'Bearer test-key')
+  } finally {
+    globalThis.fetch = originalFetch
+  }
 })

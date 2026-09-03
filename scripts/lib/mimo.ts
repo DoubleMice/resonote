@@ -98,7 +98,7 @@ export class MiMoClient {
     const response = await fetch(this.url, {
       method: 'POST',
       headers: {
-        'api-key': this.apiKey,
+        Authorization: `Bearer ${this.apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(buildMiMoTranscriptionRequest(this.model, audioData)),
