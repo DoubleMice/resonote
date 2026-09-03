@@ -195,6 +195,7 @@ CONTENT_MODEL_NAME=mimo-v2.5
 ```
 
 workflow 将这些值映射到 Claude Code 使用的 `ANTHROPIC_*` 环境变量。未配置 Variable 时也使用上述 MiMo 默认值。
+可选的 `CONTENT_EFFORT` 控制文稿整理时的思考强度，支持 `low`、`medium`、`high`、`xhigh` 和 `max`。未设置或值为空时，生成命令不会传递 `--effort`，由模型和 Claude Code 使用默认行为；不支持的值会让生成任务立即报错。
 
 手动触发参数：
 
@@ -249,7 +250,7 @@ pnpm run build
 
 - 下载 RSS transcript 到 `data/transcripts/<id>.txt`
 - scaffold `episodes/<id>/`
-- 调用 `claude -p --model haiku --effort max`，通过 Haiku 映射使用 `CONTENT_MODEL_NAME`（默认 `mimo-v2.5`）生成 `slides.md`、`meta.yml`、`article.html`
+- 调用 `claude -p --model haiku`，通过 Haiku 映射使用 `CONTENT_MODEL_NAME`（默认 `mimo-v2.5`）生成 `slides.md`、`meta.yml`、`article.html`；设置 `CONTENT_EFFORT` 时追加对应的 `--effort` 参数
 - 只有当 Claude 成功退出且 `slides.md`、`meta.yml` 都存在时，plan 状态才写为 `generated`
 
 `--auto-transcribe` 会为 `needs_transcript` episode 提交自动转写。默认 `TRANSCRIPT_PROVIDER=mimo`，调用 MiMo `mimo-v2.5` 的 `chat/completions` 音频理解接口，随音频发送逐字转写指令并关闭 thinking；音频统一在本地下载、经 `ffmpeg` 切片后以 data URI 分段提交，避开 URL 抓取差异和 MiMo URL 100MB 限制。可设置 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope 异步 ASR，DashScope 普通公网音频直接提交 URL，Megaphone/Unchained 这类受限音频走切片 data URI。分段任务的状态保存在 `data/transcription-jobs.yml`，临时 chunk 文本放在 `data/transcripts/.chunks/`，该目录用短 hash 命名并被 git ignore；所有 chunk 成功后合并为 `data/transcripts/<id>.txt`，plan 状态回到 `pending`。

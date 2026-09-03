@@ -34,6 +34,7 @@ env:
   ANTHROPIC_DEFAULT_OPUS_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ANTHROPIC_DEFAULT_SONNET_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ANTHROPIC_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
+  CONTENT_EFFORT: ${{ vars.CONTENT_EFFORT }}
   ENABLE_TOOL_SEARCH: 'true'
 
 concurrency:

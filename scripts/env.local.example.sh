@@ -19,6 +19,7 @@ export MIMO_MAX_COMPLETION_TOKENS="${TRANSCRIPTION_MAX_COMPLETION_TOKENS}"
 export DASHSCOPE_API_KEY=""
 export CONTENT_API_KEY=""
 export ANTHROPIC_AUTH_TOKEN="${CONTENT_API_KEY}"
+export CONTENT_EFFORT=""
 
 # Optional overrides for local testing.
 export CONTENT_BASE_URL="https://api.xiaomimimo.com/anthropic"

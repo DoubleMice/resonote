@@ -28,6 +28,7 @@ import { run } from './lib/spawn.ts'
 import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
 import { MiMoClient } from './lib/mimo.ts'
 import { scaffoldEpisodeWorkspace } from './lib/episode-workspace.ts'
+import { contentEffortArgs } from './lib/content-effort.ts'
 import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -957,7 +958,7 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,
       '--allowedTools', 'Read,Write,Edit,Bash,Grep,Glob',
-      '--effort', 'max',
+      ...contentEffortArgs(),
       '--permission-mode', 'bypassPermissions',
       combinedPrompt,
     ], {

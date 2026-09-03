@@ -18,6 +18,7 @@ import { spawn, execSync } from 'node:child_process'
 import { readYaml, writeYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
 import { scaffoldEpisodeWorkspace } from './lib/episode-workspace.ts'
+import { contentEffortArgs } from './lib/content-effort.ts'
 import type { EpisodesFile, Episode, SourcesFile } from './lib/types.ts'
 
 // Resolve the claude CLI native binary so we can spawn it directly,
@@ -80,7 +81,7 @@ async function generateOne(ep: Episode, sourcesFile: SourcesFile): Promise<boole
     const child = spawn(claudeBin, [
       '-p',
       '--model', 'haiku',
-      '--effort', 'max',
+      ...contentEffortArgs(),
       '--append-system-prompt', systemRules,
       '--add-dir', EPISODES_DIR,
       '--add-dir', TRANSCRIPTS_DIR,
