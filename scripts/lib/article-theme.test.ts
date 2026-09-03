@@ -15,6 +15,7 @@ test('adds the shared theme and home link to a semantic article', () => {
   assert.match(result, /<article class="resonote-article">/)
   assert.match(result, /class="resonote-reading-progress"/)
   assert.match(result, /data-resonote-reader/)
+  assert.match(result, /href="\.\.\/\.\.\/favicon\.svg" data-resonote-favicon/)
   assert.equal(result.match(/<article\b/g)?.length, 1)
 })
 
@@ -36,6 +37,7 @@ test('does not duplicate an existing theme or home link', () => {
   assert.equal(twice.match(/class="resonote-home"/g)?.length, 1)
   assert.equal(twice.match(/data-resonote-reader/g)?.length, 1)
   assert.equal(twice.match(/class="resonote-reading-progress"/g)?.length, 1)
+  assert.equal(twice.match(/data-resonote-favicon/g)?.length, 1)
   assert.equal(twice.match(/class="[^"]*\bresonote-article\b[^"]*"/g)?.length, 1)
   assert.match(twice, /声笺/)
   assert.match(twice, /RESONOTE/)

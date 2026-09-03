@@ -1,3 +1,5 @@
+import { applySiteFavicon } from './site-favicon.ts'
+
 export const articleHomeLink = `<a class="resonote-home" href="../../" aria-label="返回声笺 Resonote 首页">
   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11.75 4.75 6.5 10l5.25 5.25M7 10h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span class="resonote-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
@@ -139,8 +141,13 @@ function markReadingWrapper(sourceHtml: string): string {
   return html
 }
 
-export function applyArticleTheme(sourceHtml: string, themeCss: string, nav?: ArticleNav): string {
-  let html = sourceHtml
+export function applyArticleTheme(
+  sourceHtml: string,
+  themeCss: string,
+  nav?: ArticleNav,
+  faviconHref = '../../favicon.svg',
+): string {
+  let html = applySiteFavicon(sourceHtml, faviconHref)
   const hasReadingWrapper = /<(?:article|main)\b/i.test(html)
     || /class=["'][^"']*\b(?:container|wrap)\b[^"']*["']/i.test(html)
   const existingHomeLink = html.match(homeLinkPattern)?.[0]

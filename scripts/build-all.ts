@@ -8,6 +8,7 @@ import { log } from './lib/log.ts'
 import { applyArticleTheme } from './lib/article-theme.ts'
 import type { ArticleNav } from './lib/article-theme.ts'
 import { injectDeckChrome } from './lib/deck-chrome.ts'
+import { applySiteFavicon } from './lib/site-favicon.ts'
 import type { DeckNav } from './lib/deck-chrome.ts'
 import {
   cachedEpisodeDist, episodeBuildFingerprint, storeEpisodeDist,
@@ -25,10 +26,10 @@ const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
 let episodeCacheHits = 0
 let episodeCacheMisses = 0
 
-function themedArticleHtml(articlePath: string, nav?: ArticleNav): string {
+function themedArticleHtml(articlePath: string, nav: ArticleNav | undefined, faviconHref: string): string {
   const html = readFileSync(articlePath, 'utf-8')
   const css = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
-  return applyArticleTheme(html, css, nav)
+  return applyArticleTheme(html, css, nav, faviconHref)
 }
 
 // Ordering for 上一篇/下一篇 navigation — newest first, mirroring the landing
@@ -236,6 +237,7 @@ async function main() {
   // Local:    RESONOTE_BASE unset → /
   // CI/prod:  RESONOTE_BASE=/resonote/ → https://doublemice.github.io/resonote/
   const SITE_BASE = process.env.RESONOTE_BASE || '/'
+  const SITE_FAVICON = `${SITE_BASE.replace(/\/?$/, '/')}favicon.svg`
 
   // Collect generated episodes from durable per-episode artifacts. Plan files
   // are an execution queue and can be refreshed independently.
@@ -306,7 +308,10 @@ async function main() {
     if (existsSync(deckIndex)) {
       writeFileSync(
         deckIndex,
-        injectDeckChrome(readFileSync(deckIndex, 'utf-8'), deckNav.get(ep.id) || { prev: null, next: null }),
+        applySiteFavicon(
+          injectDeckChrome(readFileSync(deckIndex, 'utf-8'), deckNav.get(ep.id) || { prev: null, next: null }),
+          SITE_FAVICON,
+        ),
         'utf-8',
       )
     }
@@ -316,7 +321,11 @@ async function main() {
       log.raw(`theming ${ep.articlePath} → ${articleDst}`)
       writeFileSync(
         articleDst,
-        themedArticleHtml(ep.articlePath, articleNavForRelative(articleNav.get(ep.id), `episodes/${ep.id}`)),
+        themedArticleHtml(
+          ep.articlePath,
+          articleNavForRelative(articleNav.get(ep.id), `episodes/${ep.id}`),
+          SITE_FAVICON,
+        ),
         'utf-8',
       )
     }
@@ -333,7 +342,11 @@ async function main() {
     const outputDir = posix.dirname(article.outputRelative.split(sep).join('/'))
     writeFileSync(
       articleDst,
-      themedArticleHtml(article.sourcePath, articleNavForRelative(articleNav.get(article.episodeId), outputDir)),
+      themedArticleHtml(
+        article.sourcePath,
+        articleNavForRelative(articleNav.get(article.episodeId), outputDir),
+        SITE_FAVICON,
+      ),
       'utf-8',
     )
   }
