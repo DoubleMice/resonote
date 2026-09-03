@@ -1,31 +1,15 @@
 source: xiaojun
-refreshed_at: 2026-09-03T03:24:53.825Z
+refreshed_at: 2026-09-03T06:02:58.631Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a97f287f03e74ee6b03ea5b
-    guid: 6a97f287f03e74ee6b03ea5b
-    title: 153. 和曾鸣聊产业史观：残酷的真相、会消亡的公司、优秀≠卓越、“OAI、Anth大概率不是原生时代大赢家”
-    duration: 9258
-    published: Thu, 03 Sep 2026 00:00:00 GMT
-    published_sort: "20260903"
-    first_seen_at: 2026-09-03T03:24:53.825Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a97f287f03e74ee6b03ea5b?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6a97f287f03e74ee6b03ea5b/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/luZvhPtdKotbkVR-SHFRKVVUiM2P.m4a
-    image: https://image.xyzcdn.net/Fsy62527gh_p4bqQd1VQBizA03Qg.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-03T03:24:55.129Z
-    transcript_job_id: 6462493b-c9e5-4cfc-9c04-da58d5d0452b_57e487f2647c41b590e62b3327f4aee3,84c07091-ec4e-4ba8-96c1-4e56cf746bf8_a17b26513aac43b7899f683854802feb,2583ca19-9bff-4efd-b31b-37bb3a8690c0_69aca4f7641942a881a77c03b7ad6e03,e2df8852-c82c-4785-b10d-cc1fad3a55a6_bf2c00dc62c645f781f481b7c0bc81b6,e6a33fda-7029-4960-8720-f09c6b68bfac_3fd5d104b9994fb982eb62091dbddcbd,3934ba2d-61d1-4893-92b8-93132caabe6b_14f055eb9af140eb81dd4d5b76dbd21b,01bb5aeb-3c9d-406e-9440-7ff0c09e9fb2_8e24b3989c664559adca2bd911b1dd05,ea5d4e39-4203-47f6-92b8-8acb708f49e4_d1abad41a7be4661a9da749540e5100e,25aa9c96-bdd9-4607-ae01-fbf06bd0cead_f1ddec1ec7b0464599830b19532331d9,d3ff13d7-039e-4396-bf5b-261d59f4890f_fbba259c978a4e23ade2e6d1ef6296a9,0a79663a-117b-43ba-a222-9f92a7482199_fdebe36d76754f208f6443bfe4fc0828
-    transcript_completed_at: 2026-09-03T03:32:15.403Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
