@@ -20585,3 +20585,122 @@ jobs:
     submitted_at: 2026-09-04T09:36:39.120Z
     updated_at: 2026-09-04T09:48:16.708Z
     completed_at: 2026-09-04T09:48:16.708Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:0
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 5a47ecf6-f286-41c2-807b-47ccfc3ba876_189cf830ae294ed5a761294deeb77e0f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:16:22.884Z
+    completed_at: 2026-09-04T18:16:22.884Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:1
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: f60c279d-6299-45c7-a3d2-fa647badea42_ea9c9f9321504fa5955101a3e9791c54
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:17:14.590Z
+    completed_at: 2026-09-04T18:17:14.590Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:2
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 0e08aa49-a20f-4ac3-97a5-165b09784860_cbcf1cd3604941c8b924403459a8a584
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:18:27.856Z
+    completed_at: 2026-09-04T18:18:27.856Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:3
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 9cb05596-93c7-4941-80d5-4efdbe8bfe5f_5ba5793ef63d43ad961c8d2e260bda4b
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:19:32.537Z
+    completed_at: 2026-09-04T18:19:32.537Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:4
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 7e9d22df-ac3c-402a-9eed-1e37eaa2edd9_22ff7bad5d624857902249feccb0d442
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:20:35.127Z
+    completed_at: 2026-09-04T18:20:35.127Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:5
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 6538b579-9ac4-4c9f-9049-acb54dc61810_eb0babaec081487bbc8f2b89ac092bde
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:22:08.055Z
+    completed_at: 2026-09-04T18:22:08.055Z
+  - key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z:chunk:6
+    parent_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    attempt_key: latepost:aedaf6bd-54e1-41d8-ab81-0184570cefc8:20260417:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3:mimo:2026-09-04T18:14:49.361Z
+    provider: mimo
+    id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+    source: latepost
+    title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/aedaf6bd-54e1-41d8-ab81-0184570cefc8.mp3
+    task_id: 2c30fa45-c542-4208-b303-3ba8a6933fcb_26aaba6fcb0b452da426d4dde48d4ade
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-04T18:14:49.361Z
+    updated_at: 2026-09-04T18:22:50.966Z
+    completed_at: 2026-09-04T18:22:50.966Z

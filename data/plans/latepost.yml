@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-04T09:29:34.163Z
+refreshed_at: 2026-09-04T18:12:54.326Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
 done: 0
 pending: 0
-needs_transcript: 13
+needs_transcript: 12
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -125,9 +125,9 @@ episodes:
     status: failed
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 4d52dbf2-551c-4c61-969c-645c02b61c95_b2d84f1015c94d22963ec535b9eccb5a,b8cd32dd-1d24-4234-8f8e-4437c5717221_944dcebf2e0c415f91100ec3adfa9d8a,829d81fe-d2ff-4195-acb6-fa46d481ce91_c2d0ed401e7e4b3a935d03380c89c14c,e34bf438-43e2-4099-b1c7-6e69ab7ea049_19ecbf7f003645e2b1fb76755c9b265e,4f61975b-14c9-4985-81b5-67a5261ed636_e6cc9e5d2e42454fba78c2fea43b91ab,2edcb941-f1a3-4b4c-a271-cd6668aeb0cf_d02bae10214c475b8bc0bf35d4a68b95,4be7780f-9758-4e2c-ac20-5130cbbe2101_a79eafa690aa464c921d3aa098b2ff75,ab6a0887-5952-4991-ba66-0e16d759a94f_fe4f917c43f04a0380b02c23531325bc,af705965-8ec0-46fb-8765-d0ddfbeac03c_9848d9ac463042bfa481cddc324f6e2c
     transcript_submitted_at: 2026-09-04T09:36:39.120Z
     transcript_completed_at: 2026-09-04T09:48:16.708Z
-    transcript_job_id: 4d52dbf2-551c-4c61-969c-645c02b61c95_b2d84f1015c94d22963ec535b9eccb5a,b8cd32dd-1d24-4234-8f8e-4437c5717221_944dcebf2e0c415f91100ec3adfa9d8a,829d81fe-d2ff-4195-acb6-fa46d481ce91_c2d0ed401e7e4b3a935d03380c89c14c,e34bf438-43e2-4099-b1c7-6e69ab7ea049_19ecbf7f003645e2b1fb76755c9b265e,4f61975b-14c9-4985-81b5-67a5261ed636_e6cc9e5d2e42454fba78c2fea43b91ab,2edcb941-f1a3-4b4c-a271-cd6668aeb0cf_d02bae10214c475b8bc0bf35d4a68b95,4be7780f-9758-4e2c-ac20-5130cbbe2101_a79eafa690aa464c921d3aa098b2ff75,ab6a0887-5952-4991-ba66-0e16d759a94f_fe4f917c43f04a0380b02c23531325bc,af705965-8ec0-46fb-8765-d0ddfbeac03c_9848d9ac463042bfa481cddc324f6e2c
   - id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
     guid: aedaf6bd-54e1-41d8-ab81-0184570cefc8
     title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
@@ -297,8 +297,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-04T18:14:49.361Z
+    transcript_job_id: 5a47ecf6-f286-41c2-807b-47ccfc3ba876_189cf830ae294ed5a761294deeb77e0f,f60c279d-6299-45c7-a3d2-fa647badea42_ea9c9f9321504fa5955101a3e9791c54,0e08aa49-a20f-4ac3-97a5-165b09784860_cbcf1cd3604941c8b924403459a8a584,9cb05596-93c7-4941-80d5-4efdbe8bfe5f_5ba5793ef63d43ad961c8d2e260bda4b,7e9d22df-ac3c-402a-9eed-1e37eaa2edd9_22ff7bad5d624857902249feccb0d442,6538b579-9ac4-4c9f-9049-acb54dc61810_eb0babaec081487bbc8f2b89ac092bde,2c30fa45-c542-4208-b303-3ba8a6933fcb_26aaba6fcb0b452da426d4dde48d4ade
+    transcript_completed_at: 2026-09-04T18:22:50.966Z
   - id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
     guid: f0fd718b-1219-4c04-bad3-94d22b65ff7f
     title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
