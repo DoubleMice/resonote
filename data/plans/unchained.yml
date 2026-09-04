@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-09-04T03:12:18.035Z
+refreshed_at: 2026-09-04T09:29:34.118Z
 min_duration: 3300
 min_date: "20260814"
 total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -99,5 +99,9 @@ episodes:
       🔄 01:07:01 Cronos rolls back a $100M hack, and Moonwell gets hit again
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-04T09:29:35.484Z
+    transcript_job_id: 115f77da-e7f8-4960-a777-63aa01977ea4_81496cf8368d407ab9ecd727d2de808f,045def81-9954-4955-b557-9ddf82473d0d_5e330fb153f64df9b0ff0cf73b18a7c1,d9882bda-0f60-443a-b848-191e06f48d55_a3cb96486b784060b008ea0b0db15833,c423192f-b513-4f5f-95a8-9c437ee6302a_396612b391df423b9635a43e049b6977,b21921a2-06f7-4335-a4a5-403fbefbb6bc_645edf426c9e4dd993ad664e83482792,545ad2f4-e3fc-4d25-a192-245b3287d785_abf28a58101e4fc6879710f6f6f1ce41
+    transcript_completed_at: 2026-09-04T09:34:41.720Z
