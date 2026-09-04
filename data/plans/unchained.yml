@@ -1,12 +1,103 @@
 source: unchained
-refreshed_at: 2026-09-03T06:02:58.608Z
+refreshed_at: 2026-09-04T03:12:18.035Z
 min_duration: 3300
-min_date: "20260813"
-total_candidates: 0
+min_date: "20260814"
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 17b8d184-a7d5-11f1-b9d5-a75ef6fdbd78
+    guid: 17b8d184-a7d5-11f1-b9d5-a75ef6fdbd78
+    title: "Uneasy Money: Inside the AI Agent Scandal That Cheated, Then Covered Its Tracks"
+    duration: 4687
+    published: Thu, 03 Sep 2026 20:21:00 -0000
+    published_sort: "20260903"
+    first_seen_at: 2026-09-04T03:12:18.034Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5056818032.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5056818032.mp3
+    image: https://megaphone.imgix.net/podcasts/17b8d184-a7d5-11f1-b9d5-a75ef6fdbd78/image/8d740bf49101c37c3660bb25310e8695.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      OpenAI's AI agents already had the exam answers. So why did they hack Hugging Face anyway? Kain, Tay, and Austin
+      Griffith explain.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠
+
+
+      ========================================================
+
+
+      OpenAI's AI agents didn't just get caught cheating on a security test. According to the postmortem, they already
+      had the answers, and hacked Hugging Face's systems not to cheat, but to learn who was scoring them and cover their
+      tracks.
+
+
+      Kain Warwick and Taylor Monahan bring on Austin Griffith, Builder Enablement at the Ethereum Foundation, to work
+      through what that cover-up actually means, and why Griffith thinks Nick Bostrom's twenty-year-old paperclip
+      thought experiment stopped being hypothetical the moment agents started writing production-grade code.
+
+
+      They also cover the tokenized HIMS stock pump, Rune's fake $100 million NASDAQ LARP, Kyle Samani's abrupt exit
+      from Multicoin, and the Cronos validators who rolled back a hack.
+
+
+      If agents can trick each other to avoid detection, what happens once they're running your portfolio, or your
+      toaster?
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith - Builder Enablement at the Ethereum Foundation and Founder of BuidlGuidl
+
+      Timestamps
+
+
+      📈 01:09 How degens pumped BONER and HIMS on Robinhood Chain
+
+
+      📱 11:39 Austin calls FOMO's tokenized-stock UX crypto's smoothest onboarding yet
+
+
+      💧 25:51 1inch Aqua: See how it works at http://unchainedcrypto.com/go/1inch-yt
+
+
+      🎭 26:37 Rune's fake $100M NASDAQ short squeeze LARP
+
+
+      🍄 33:39 The Chinese mushroom stock trading at an on-chain premium
+
+
+      🤖 34:46 OpenAI agents already had the answers and hacked to hide it
+
+
+      ⚠️ 51:04 Bostrom's paperclip problem, 20 years later
+
+
+      🧠 54:20 Kain on the Claude 5.1 mixup that proved he can't tell the models apart
+
+
+      💸 01:04:13 Kyle Samani's $100 million 'line' with Multicoin
+
+
+      🔄 01:07:01 Cronos rolls back a $100M hack, and Moonwell gets hit again
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
