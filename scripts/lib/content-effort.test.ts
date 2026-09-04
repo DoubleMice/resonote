@@ -3,8 +3,17 @@ import test from 'node:test'
 import { contentEffortArgs } from './content-effort.ts'
 
 test('omits the Claude effort option when CONTENT_EFFORT is unset', () => {
-  assert.deepEqual(contentEffortArgs(undefined), [])
-  assert.deepEqual(contentEffortArgs('  '), [])
+  const originalEffort = process.env.CONTENT_EFFORT
+  delete process.env.CONTENT_EFFORT
+
+  try {
+    assert.deepEqual(contentEffortArgs(), [])
+    assert.deepEqual(contentEffortArgs('  '), [])
+  }
+  finally {
+    if (originalEffort === undefined) delete process.env.CONTENT_EFFORT
+    else process.env.CONTENT_EFFORT = originalEffort
+  }
 })
 
 test('passes a configured Claude effort level', () => {
