@@ -202,8 +202,9 @@ editorial theme。它统一处理纸张色背景、标题衬线字体、正文�
 - 一页只设一个视觉焦点：卡片组、对比、引言或图解四选一，不要把每句话都装进框里。
 - `opacity-40` / `opacity-50` 只用于日期、出处等元信息；正文至少使用 `opacity-70`。
 - 不要用 emoji 作为卡片标题或结构图标；使用编号、短标签或矢量图。
-- 文章必须内联 `episodes/_templates/article-theme.css`，并使用统一的
-  `.cards` / `.card` / `.c-blue` 等语义类，不能每篇自创一套 CSS。
+- 文章源文件只保留语义 HTML，不内联 CSS、脚本或阅读控件；构建阶段统一注入
+  `episodes/_templates/article-theme.css`。文章使用统一的 `.cards` / `.card` /
+  `.c-blue` 等语义类，不能每篇自创一套 CSS。
 
 ### Two-cols 大图布局是王牌
 

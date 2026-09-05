@@ -119,7 +119,36 @@ export function articlePagerHtml(nav: ArticleNav): string | null {
   return `<nav class="resonote-pager" aria-label="相邻文章">${sides.join('')}</nav>`
 }
 
-const homeLinkPattern = /<a\b(?=[^>]*class=["'][^"']*\bresonote-home\b[^"']*["'])[^>]*>[\s\S]*?<\/a>/i
+const homeLinkPattern = /<a\b(?=[^>]*class=["'][^"']*\bresonote-home\b[^"']*["'])[^>]*>[\s\S]*?<\/a>\s*/gi
+const styleBlockPattern = /<style\b([^>]*)>[\s\S]*?<\/style>\s*/gi
+const stylesheetLinkPattern = /<link\b(?=[^>]*\brel\s*=\s*(["'])stylesheet\1)[^>]*>\s*/gi
+const inlineStylePattern = /\sstyle\s*=\s*(?:"[^"]*"|'[^']*')/gi
+const readerChromePattern = /<div\b(?=[^>]*class=["'][^"']*\bresonote-reading-progress\b[^"']*["'])[^>]*>[\s\S]*?<\/div>\s*|<button\b(?=[^>]*class=["'][^"']*\bresonote-to-top\b[^"']*["'])[^>]*>[\s\S]*?<\/button>\s*/gi
+const readerScriptPattern = /<script\b(?=[^>]*\bdata-resonote-reader\b)[^>]*>[\s\S]*?<\/script>\s*/gi
+const articlePagerPattern = /<nav\b(?=[^>]*class=["'][^"']*\bresonote-pager\b[^"']*["'])[^>]*>[\s\S]*?<\/nav>\s*/gi
+
+function applyCanonicalArticleStyles(sourceHtml: string, themeCss: string): string {
+  const extensions: string[] = []
+  let html = sourceHtml.replace(styleBlockPattern, (block: string, attributes: string) => {
+    if (/\bdata-resonote-article-style\b/i.test(attributes)) extensions.push(block.trim())
+    return ''
+  })
+
+  // Generated articles are content artifacts. Presentation belongs to the
+  // shared theme, so legacy external and inline declarations cannot override
+  // it. A rare intentional extension must opt in with data-resonote-article-style.
+  html = html
+    .replace(stylesheetLinkPattern, '')
+    .replace(inlineStylePattern, '')
+
+  const styles = [
+    `<style data-resonote-theme>\n${themeCss}\n</style>`,
+    ...extensions,
+  ].join('\n')
+  return /<\/head>/i.test(html)
+    ? html.replace(/<\/head>/i, `${styles}\n</head>`)
+    : `${styles}\n${html}`
+}
 
 function addClass(openingTag: string, className: string): string {
   if (new RegExp(`\\b${className}\\b`).test(openingTag)) return openingTag
@@ -150,17 +179,13 @@ export function applyArticleTheme(
   let html = applySiteFavicon(sourceHtml, faviconHref)
   const hasReadingWrapper = /<(?:article|main)\b/i.test(html)
     || /class=["'][^"']*\b(?:container|wrap)\b[^"']*["']/i.test(html)
-  const existingHomeLink = html.match(homeLinkPattern)?.[0]
-
-  if (!html.includes('data-resonote-theme')) {
-    const theme = `<style data-resonote-theme>\n${themeCss}\n</style>`
-    html = /<\/head>/i.test(html)
-      ? html.replace(/<\/head>/i, `${theme}\n</head>`)
-      : `${theme}\n${html}`
-  }
+  html = applyCanonicalArticleStyles(html, themeCss)
+    .replace(homeLinkPattern, '')
+    .replace(readerChromePattern, '')
+    .replace(readerScriptPattern, '')
+    .replace(articlePagerPattern, '')
 
   if (!hasReadingWrapper && /<body(?:\s[^>]*)?>/i.test(html) && /<\/body>/i.test(html)) {
-    if (existingHomeLink) html = html.replace(existingHomeLink, '')
     html = html
       .replace(
         /<body(?:\s[^>]*)?>/i,
@@ -171,26 +196,14 @@ export function applyArticleTheme(
     html = markReadingWrapper(html)
   }
 
-  const currentHomeLink = html.match(homeLinkPattern)?.[0]
-  if (currentHomeLink) {
-    html = html.replace(currentHomeLink, articleHomeLink)
-  } else {
-    html = /<body(?:\s[^>]*)?>/i.test(html)
-      ? html.replace(/<body(?:\s[^>]*)?>/i, (match: string) => `${match}\n${articleHomeLink}`)
-      : `${articleHomeLink}\n${html}`
-  }
+  const bodyChrome = `${articleReaderChrome}\n${articleHomeLink}`
+  html = /<body(?:\s[^>]*)?>/i.test(html)
+    ? html.replace(/<body(?:\s[^>]*)?>/i, (match: string) => `${match}\n${bodyChrome}`)
+    : `${bodyChrome}\n${html}`
 
-  if (!html.includes('resonote-reading-progress')) {
-    html = /<body(?:\s[^>]*)?>/i.test(html)
-      ? html.replace(/<body(?:\s[^>]*)?>/i, (match: string) => `${match}\n${articleReaderChrome}`)
-      : `${articleReaderChrome}\n${html}`
-  }
-
-  if (!html.includes('data-resonote-reader')) {
-    html = /<\/body>/i.test(html)
-      ? html.replace(/<\/body>/i, `${articleReaderScript}\n</body>`)
-      : `${html}\n${articleReaderScript}`
-  }
+  html = /<\/body>/i.test(html)
+    ? html.replace(/<\/body>/i, `${articleReaderScript}\n</body>`)
+    : `${html}\n${articleReaderScript}`
 
   if (nav) {
     const pager = articlePagerHtml(nav)

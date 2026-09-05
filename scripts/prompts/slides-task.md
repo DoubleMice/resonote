@@ -77,7 +77,7 @@ Use the source episode URL, published date, duration, and thumbnail from the inp
 
 ### Phase 3.5 — Generate `article.html`
 
-Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.html`.
+Produce a complete semantic HTML article document at `episodes/{{ID}}/article.html`.
 
 **Content**: Follow the same themes and quotes you extracted in Phase 1. Write narrative prose for reading, not bullet points.
 - Header: title, guest, source, date
@@ -86,12 +86,11 @@ Produce a standalone, self-contained HTML article at `episodes/{{ID}}/article.ht
 - "核心金句" block with 4-6 grep-verified quotes with context labels
 - Footer with source episode link
 
-**Format**: First read `episodes/_templates/article-theme.css`, then paste it
-verbatim into `<style data-resonote-theme>`. Do not create custom CSS or inline
-style attributes. Use a semantic `<article>` structure and the shared classes
-listed in RULE 10. Add the `.resonote-home` link to `../../` as the first element
-inside `<body>`. No external CSS, JavaScript, or images. Responsive behavior is
-already included in the shared theme.
+**Format**: Do not embed `<style>`, stylesheet links, inline `style` attributes,
+JavaScript, navigation, or reader chrome. `scripts/build-all.ts` injects the
+current shared theme and chrome into every article, making the built output
+self-contained. Use a semantic `<article>` structure and the shared classes
+listed in RULE 10. No images. Responsive behavior comes from the shared theme.
 
 **Write to file**: `Write: episodes/{{ID}}/article.html` then `Bash: wc -c episodes/{{ID}}/article.html` to confirm (> 5KB).
 
