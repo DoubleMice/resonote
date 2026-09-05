@@ -1,5 +1,4 @@
 packages:
-  - 'episodes/*'
   - 'landing'
 allowBuilds:
   esbuild: true

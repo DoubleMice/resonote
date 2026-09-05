@@ -113,11 +113,12 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
         'exec',
         'slidev',
         'export',
+        join(episodeDir, 'slides.md'),
         '--format',
         'png',
         '--output',
         pngDir,
-      ], { cwd: episodeDir, reject: false })
+      ], { cwd: ROOT, reject: false })
 
       if (exportResult.code !== 0) {
         throw new Error(`${id} export failed\n${exportResult.stderr.slice(0, 1000)}`)
@@ -128,11 +129,12 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
       'exec',
       'slidev',
       'build',
+      join(episodeDir, 'slides.md'),
       '--base',
       './',
       '--out',
       htmlDir,
-    ], { cwd: episodeDir, reject: false })
+    ], { cwd: ROOT, reject: false })
 
     if (buildResult.code !== 0) {
       throw new Error(`${id} build failed\n${buildResult.stderr.slice(0, 1000)}`)

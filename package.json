@@ -9,16 +9,16 @@
   "description": "Resonote podcast visual notes and long-form article pipeline",
   "scripts": {
     "discover": "tsx scripts/discover.ts",
-    "generate": "tsx scripts/generate-slides.ts",
+    "generate": "tsx scripts/run-plan.ts",
     "cache:refresh": "tsx scripts/refresh-cache.ts",
     "plan": "tsx scripts/plan.ts",
     "plan:run": "tsx scripts/run-plan.ts",
     "analyze": "tsx scripts/analyze-scan.ts",
-    "sync": "echo 'TODO: P4'",
     "build": "tsx scripts/build-all.ts",
     "audit:brand": "tsx scripts/audit-brand.ts",
     "audit:home": "tsx scripts/audit-home.ts",
     "audit:layout": "tsx scripts/audit-layout.ts",
+    "validate:artifacts": "tsx scripts/validate-artifacts.ts",
     "normalize:meta": "tsx scripts/normalize-meta.ts",
     "e2e:transcription": "tsx scripts/e2e-transcription.ts",
     "test": "tsx --test scripts/lib/*.test.ts landing/src/lib/*.test.ts",
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@slidev/cli": "52.18.0",
+    "@slidev/parser": "52.18.0",
     "slidev-addon-excalidraw": "^1.1.1",
     "slidev-theme-academic": "^2.1.0"
   },

@@ -47,6 +47,7 @@ export interface Episode {
 }
 
 export interface EpisodeMeta extends Episode {
+  source_title?: string
   guest?: string
   guest_role?: string
   thumbnail?: string

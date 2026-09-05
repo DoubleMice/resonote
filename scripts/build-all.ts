@@ -201,11 +201,11 @@ async function buildEpisode(id: string, base: string): Promise<string | null> {
     rmSync(join(dir, 'dist'), { recursive: true, force: true })
     // slidev build needs the base path for correct asset URLs in final bundle
     const { code, stderr } = await run('pnpm', [
-      'exec', 'slidev', 'build',
+      'exec', 'slidev', 'build', join(dir, 'slides.md'),
       '--base', base,
       '--router-mode', 'hash',
-      '--out', 'dist',
-    ], { cwd: dir, reject: false })
+      '--out', join(dir, 'dist'),
+    ], { cwd: ROOT, reject: false })
 
     if (code !== 0) {
       throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)

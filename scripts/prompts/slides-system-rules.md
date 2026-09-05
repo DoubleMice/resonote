@@ -70,6 +70,12 @@ Examples:
 
 **Never** write something like `"How hard can it be?"` unless you ran `grep "how hard can it be"` on the transcript and saw it.
 
+Persist that verification in `episodes/<id>/quote-evidence.yml`. For every
+quoted passage in `slides.md` or `article.html`, record the artifact name, an
+exact substring copied from the artifact, and the exact transcript excerpt that
+supports it. Translated quotes use the translated artifact excerpt plus the
+original-language transcript excerpt. The orchestrator verifies both strings.
+
 Treat verification as a state, not a feeling:
 - A quote you remember or can reconstruct from memory is a **candidate** — it is not verified.
 - A quote is **verified** only once the exact phrase appeared in the grep output for THIS episode's transcript.
@@ -160,9 +166,9 @@ Read the project's `CLAUDE.md` for:
 - No `layout: section` divider pages
 - No `layout: fact` standalone-number pages
 
-The episode scaffold already contains `style.css`, which is the shared Resonote
-editorial theme. Treat it as the source of truth:
-- Do not replace or rewrite `style.css`, and do not add a slide-local `<style>` block.
+The orchestrator temporarily stages the canonical `style.css` while generating,
+auditing, developing, and building a deck. Treat it as read-only shared state:
+- Do not create, replace, or rewrite `style.css`, and do not add a slide-local `<style>` block.
 - Let the shared theme handle the paper background, typography, card radius,
   shadows, and semantic colors. Use the existing Tailwind card utilities to
   describe meaning, not to invent a new visual language for each episode.
@@ -193,13 +199,15 @@ When in doubt, split content across more slides. More pages with clean layout ar
 
 ## RULE 7 — Global back button
 
-Each episode directory must contain a `global-bottom.vue` with a fixed-position `← 声笺 / RESONOTE` link. Copy the canonical file from `episodes/_templates/global-bottom.vue`.
+The orchestrator temporarily stages `episodes/_templates/global-bottom.vue`
+during generation, audit, development, and build. Do not create, copy, or edit
+`global-bottom.vue` inside an episode directory.
 
 ## RULE 8 — Self-audit before declaring done
 
 After writing `slides.md`:
 
-1. Run `pnpm run build` OR `npx slidev export --format png --output audit` in the episode dir
+1. From the repo root, run `pnpm exec slidev export episodes/<id>/slides.md --format png --output episodes/<id>/audit`
 2. Run `pnpm run audit:layout -- --id=<episodeId>` from the repo root
 3. Read **every** PNG one by one
 4. For each page, ask:
@@ -213,31 +221,23 @@ After writing `slides.md`:
 
 **Do not claim the episode is done until you have visually audited every page and found no fabrications.**
 
-## RULE 9 — Write `meta.yml` with these required fields
+## RULE 9 — Write only editorial fields in `meta.yml`
 
 ```yaml
-id: <episodeId>
-source: <sourceId>         # must exist in sources.yml
-title: "<full title>"
+title: "<Chinese display title; default to the input title>"
 guest: "<guest name>"
 guest_role: "<e.g. Anthropic CEO>"
-published: <YYYY-MM from task input>
-published_sort: <YYYYMMDD from task input>
-duration: <duration from task input>
-url: <source episode URL>
-thumbnail: <RSS episode image URL, optional>
-status: generated        # initial generation status; orchestrator may normalize after audit
-tags: [...]                # pick from tags.yml
+tags: [...]              # pick from tags.yml
 summary: |
   2-3 sentence summary
 core_ideas:
   - 3-6 bullet items
-article_path: episodes/<id>/article.html
-base: /episodes/<id>/
 ```
 
-The orchestrator adds `generated_at` only after the deck passes its layout
-audit. Do not infer or write that timestamp yourself.
+The orchestrator owns and overwrites `id`, `source`, `source_title`, `published`,
+`published_sort`, `duration`, `url`, `thumbnail`, `category`, `status`,
+`generated_at`, `article_path`, and `base`. Do not infer or write those fields.
+It adds `generated_at` only after the deck passes static and layout audits.
 
 The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
 
@@ -276,6 +276,25 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 - Mark paraphrases/glosses clearly as "作者概括:" (same as RULE 3)
 - Voice: magazine-style tech prose — vary sentence length, stay restrained, no forced first person or humor; never end a section on an empty uplifting line, end on a fact, a quote, or a concrete consequence
 - Prefer `是` / `有` for simple relations instead of `作为……` / `充当……`; keep one fixed Chinese name per entity; do not rename or translate proper nouns — explain unclear terms in the adjacent sentence instead
+
+## RULE 11 — Persist quote evidence
+
+After slides and article are final, write `episodes/<id>/quote-evidence.yml`:
+
+```yaml
+episode_id: <id>
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '<exact substring copied from slides.md>'
+    transcript_excerpt: '<exact substring copied from the transcript>'
+  - artifact: article.html
+    artifact_excerpt: '<exact substring copied from article.html>'
+    transcript_excerpt: '<exact substring copied from the transcript>'
+```
+
+Use one entry per quote occurrence. Both excerpts are checked with exact string
+matching, so do not normalize the transcript excerpt or omit markup that occurs
+inside the artifact excerpt.
 
 ---
 

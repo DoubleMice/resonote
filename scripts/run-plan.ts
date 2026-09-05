@@ -1,8 +1,9 @@
 // Execute pending entries in data/plans/*.yml:
 //   1. download RSS transcript → data/transcripts/<id>.txt
-//   2. scaffold episodes/<id>/ from _templates
-//   3. invoke claude -p to generate slides.md + meta.yml
-//   4. update plan entry status (pending → generated | audit_failed | failed)
+//   2. scaffold durable episode assets from _templates
+//   3. invoke claude -p to generate slides.md + editorial meta.yml + article.html
+//   4. canonicalize deterministic fields and validate generated artifacts
+//   5. update plan entry status (pending → generated | audit_failed | failed)
 //
 // Usage:
 //   pnpm run plan:run                              # all pending across all plans
@@ -27,8 +28,10 @@ import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
 import { MiMoClient } from './lib/mimo.ts'
-import { scaffoldEpisodeWorkspace } from './lib/episode-workspace.ts'
+import { scaffoldEpisodeWorkspace, stageEpisodePresentation } from './lib/episode-workspace.ts'
 import { contentEffortArgs } from './lib/content-effort.ts'
+import { canonicalizeGeneratedMeta, canonicalizeSlidesFrontmatter } from './lib/generated-artifacts.ts'
+import { validateEpisodeArtifacts } from './lib/artifact-validator.ts'
 import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -61,7 +64,6 @@ const STALE_SUBMITTING_MINUTES = Number(process.env.DASHSCOPE_STALE_SUBMITTING_M
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
-let workspaceInstallPromise: Promise<boolean> | null = null
 const stats = {
   generated: 0,
   failed: 0,
@@ -178,18 +180,46 @@ function hasGeneratedEpisode(id: string): boolean {
   }
 }
 
-function syncMetaStatus(entry: PlanEntry, status: PlanEntry['status']): void {
+function canonicalizeEpisodeArtifacts(
+  entry: PlanEntry,
+  sourceId: string,
+  status: PlanEntry['status'],
+): boolean {
   const metaPath = join(EPISODES_DIR, entry.id, 'meta.yml')
-  if (!existsSync(metaPath)) return
+  const slidesPath = join(EPISODES_DIR, entry.id, 'slides.md')
+  if (!existsSync(metaPath)) return false
   try {
-    const meta = readYaml<Record<string, unknown>>(metaPath)
-    meta.status = status
-    if (entry.published_sort) meta.published_sort = String(entry.published_sort)
-    if (status === 'generated' && !meta.generated_at) meta.generated_at = new Date().toISOString()
-    writeYaml(metaPath, meta)
+    canonicalizeGeneratedMeta(metaPath, {
+      id: entry.id,
+      source: sourceId,
+      sourceTitle: entry.title,
+      published: formatPublishedMonth(entry),
+      publishedSort: entry.published_sort || '',
+      duration: formatDuration(entry.duration),
+      url: entry.url || '',
+      thumbnail: entry.image,
+      category: entry.category,
+      status,
+    })
+    if (existsSync(slidesPath)) {
+      const meta = readYaml<Record<string, unknown>>(metaPath)
+      canonicalizeSlidesFrontmatter(slidesPath, String(meta.title || entry.title))
+    }
+    return true
   } catch (error: any) {
-    log.warn(`  failed to sync metadata for ${entry.id}: ${error.message}`)
+    log.warn(`  failed to canonicalize artifacts for ${entry.id}: ${error.message}`)
+    return false
   }
+}
+
+function validateGeneratedArtifacts(id: string): boolean {
+  const issues = validateEpisodeArtifacts({ rootDir: ROOT, id, strict: true })
+  for (const issue of issues) {
+    const message = `  ${issue.file}: [${issue.code}] ${issue.message}`
+    if (issue.level === 'error') log.err(message)
+    else log.warn(message)
+  }
+  return issues.every(issue => issue.level !== 'error')
 }
 
 function dashscopeClient(): DashScopeClient | null {
@@ -866,28 +896,7 @@ async function runAutoTranscription(plans: { source: string; path: string; plan:
   }
 }
 
-async function ensureWorkspaceLinks(): Promise<boolean> {
-  if (!workspaceInstallPromise) {
-    workspaceInstallPromise = (async () => {
-      log.raw('  refreshing pnpm workspace links')
-      const result = await run('pnpm', [
-        'install',
-        '--no-frozen-lockfile',
-      ], { cwd: ROOT, reject: false })
-      if (result.code === 0) return true
-      log.err('  pnpm workspace install failed')
-      const output = `${result.stdout}\n${result.stderr}`.trim()
-      if (output) log.raw(output.split('\n').slice(-40).join('\n'))
-      return false
-    })()
-  }
-  return workspaceInstallPromise
-}
-
 async function auditGeneratedLayout(id: string): Promise<boolean> {
-  const installOk = await ensureWorkspaceLinks()
-  if (!installOk) return false
-
   log.raw(`  auditing layout for ${id}`)
   const result = await run('pnpm', [
     'exec',
@@ -1029,10 +1038,12 @@ async function processEntry(
   scaffoldEpisodeWorkspace(EPISODES_DIR, TEMPLATES_DIR, entry.id)
 
   if (retryAuditOnly) {
-    const layoutOk = await auditGeneratedLayout(entry.id)
-    entry.status = layoutOk ? 'generated' : 'audit_failed'
+    const artifactsOk = canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded')
+    const staticOk = artifactsOk && validateGeneratedArtifacts(entry.id)
+    const layoutOk = staticOk && await auditGeneratedLayout(entry.id)
+    entry.status = staticOk && layoutOk ? 'generated' : 'audit_failed'
     savePlan(planPath, plan)
-    syncMetaStatus(entry, entry.status)
+    canonicalizeEpisodeArtifacts(entry, sourceId, entry.status)
     log.ok(`  → status=${entry.status}`)
     stats.episodes.push({
       id: entry.id,
@@ -1053,18 +1064,38 @@ async function processEntry(
     return
   }
 
-  const result = await generateOne(entry, sourceId)
-  const artifactsOk = hasGeneratedArtifacts(entry.id)
-  const layoutOk = result.ok && artifactsOk
+  const cleanupPresentation = stageEpisodePresentation(
+    join(EPISODES_DIR, entry.id),
+    TEMPLATES_DIR,
+  )
+  let result: GenerateResult = {
+    ok: false,
+    inputTokens: 0,
+    outputTokens: 0,
+    durationMs: 0,
+    isRateLimit: false,
+  }
+  try {
+    result = await generateOne(entry, sourceId)
+  } catch (error: any) {
+    log.err(`  generation failed before completion: ${error.message}`)
+  } finally {
+    cleanupPresentation()
+  }
+  const generatedFilesExist = hasGeneratedArtifacts(entry.id)
+  const artifactsOk = generatedFilesExist
+    && canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded')
+  const staticOk = result.ok && artifactsOk && validateGeneratedArtifacts(entry.id)
+  const layoutOk = staticOk
     ? await auditGeneratedLayout(entry.id)
     : false
-  entry.status = result.ok && artifactsOk && layoutOk
+  entry.status = result.ok && artifactsOk && staticOk && layoutOk
     ? 'generated'
     : result.ok && artifactsOk
       ? 'audit_failed'
       : 'failed'
   savePlan(planPath, plan)
-  syncMetaStatus(entry, entry.status)
+  canonicalizeEpisodeArtifacts(entry, sourceId, entry.status)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
   const tokenStr = result.inputTokens > 0
@@ -1119,7 +1150,7 @@ async function main() {
       if (entry.status !== 'generated' && hasGeneratedEpisode(entry.id)) {
         entry.status = 'generated'
         savePlan(path, plan)
-        syncMetaStatus(entry, 'generated')
+        canonicalizeEpisodeArtifacts(entry, source, 'generated')
         continue
       }
       if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {

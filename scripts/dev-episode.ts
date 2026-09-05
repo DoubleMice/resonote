@@ -22,8 +22,10 @@ async function main() {
   try {
     log.info(`starting episode ${id} on http://localhost:3031`)
     const code = await new Promise<number>((resolveChild, rejectChild) => {
-      const child = spawn(command, ['exec', 'slidev', '--port', '3031'], {
-        cwd: directory,
+      const child = spawn(command, [
+        'exec', 'slidev', join(directory, 'slides.md'), '--port', '3031',
+      ], {
+        cwd: ROOT,
         stdio: 'inherit',
         shell: false,
       })

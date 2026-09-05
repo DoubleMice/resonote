@@ -1,6 +1,6 @@
 # 声笺 Resonote — Slidev 最佳实践与操作流程
 
-一个自动把 RSS 长播客访谈转成结构化 Slidev 演示文稿的 pipeline。这个文件是给 Claude Code 看的项目级规范。**强制性硬规则（事实准确性、长度要求等）在 `scripts/prompts/slides-system-rules.md`**，那份会通过 `--append-system-prompt` 直接注入到 generate-slides subprocess 的系统提示词，绕不开。本文件是补充的"项目便利"和"已知陷阱"。
+一个自动把 RSS 长播客访谈转成结构化 Slidev 演示文稿的 pipeline。这个文件是给 Claude Code 看的项目级规范。**强制性硬规则（事实准确性、长度要求等）在 `scripts/prompts/slides-system-rules.md`**，那份会注入 `run-plan` 启动的内容生成 subprocess。本文件是补充的"项目便利"和"已知陷阱"。
 
 ## 技术栈
 
@@ -26,12 +26,11 @@ resonote/
 │   └── plans/               # 按 source 的执行计划 yml（git 提交，状态追踪）
 │
 ├── episodes/
-│   ├── _templates/          # 新 episode scaffold: package.json, global-bottom.vue, public/ 6 张通用 excalidraw
-│   └── <videoId>/           # 每集一个独立 Slidev 项目
+│   ├── _templates/          # 共享 style.css、global-bottom.vue、public/ 6 张通用 excalidraw
+│   └── <videoId>/           # 每集的内容源文件
 │       ├── slides.md        # ← CC 生成
 │       ├── meta.yml         # ← CC 生成
-│       ├── global-bottom.vue  # 返回按钮（相对路径 ../../）
-│       ├── package.json
+│       ├── article.html     # ← CC 生成
 │       └── public/*.excalidraw
 │
 ├── landing/                 # Astro 主站
@@ -46,8 +45,8 @@ resonote/
 │   ├── refresh-cache.ts     # RSS → data/scan-cache/*.jsonl
 │   ├── plan.ts              # cache → 过滤 → data/plans/*.yml
 │   ├── run-plan.ts          # 执行 pending（download + claude -p）
-│   ├── generate-slides.ts   # 单集生成（不推荐直接用，prefer plan:run）
 │   ├── analyze-scan.ts      # 时长阈值统计表
+│   ├── validate-artifacts.ts # 确定性产物契约检查
 │   ├── build-all.ts         # slidev build × N + astro build + 组装 dist/
 │   └── lib/                 # yaml-io / spawn / yt / log / types
 │
@@ -102,6 +101,7 @@ pnpm run plan:run -- --dry-run                 # 预览
 # metadata 校验 + 构建 + 预览
 pnpm run normalize:meta                         # 校验 episodes/*/meta.yml
 pnpm run normalize:meta -- --fix                # 修复可恢复 YAML 问题，例如非法 \'
+pnpm run validate:artifacts                     # 校验 metadata、frontmatter、引用和文件契约
 pnpm run build                                 # 所有 generated episode + landing → dist/
 pnpm run preview                               # serve dist/ on :4173
 
@@ -156,8 +156,8 @@ const site = process.env.RESONOTE_SITE || 'http://localhost:4173'
 ## 导出验证（playwright-chromium）
 
 ```bash
-npm install -D playwright-chromium              # 一次性
-npx slidev export --format png --output audit   # 逐页 PNG
+pnpm exec playwright install chromium           # 一次性
+pnpm exec slidev export episodes/<id>/slides.md --format png --output episodes/<id>/audit
 # 然后 Read 每张 PNG 看效果
 ```
 
@@ -193,9 +193,9 @@ npx slidev export --format png --output audit   # 逐页 PNG
 
 ### 统一视觉系统
 
-每个新 episode 都会从 `episodes/_templates/style.css` 获得声笺 Resonote 的共享
-editorial theme。它统一处理纸张色背景、标题衬线字体、正文中文字体、卡片圆角、
-阴影和语义色。生成内容时：
+生成、审计、开发和构建会临时注入 `episodes/_templates/style.css` 中的声笺
+Resonote 共享 editorial theme。它统一处理纸张色背景、标题衬线字体、正文中文
+字体、卡片圆角、阴影和语义色。生成内容时：
 
 - 不要修改 `style.css`，不要在 `slides.md` 内写 `<style>`。
 - 封面由 `class: text-center` 自动使用深色杂志风格；正文页使用暖白纸张背景。
@@ -292,10 +292,10 @@ layout: two-cols
 
 ```bash
 # 1. 确保 playwright-chromium 已安装
-npm install -D playwright-chromium
+pnpm exec playwright install chromium
 
 # 2. 导出全部 slides 为 PNG
-npx slidev export --format png --output screenshots
+pnpm exec slidev export episodes/<id>/slides.md --format png --output episodes/<id>/screenshots
 
 # 3. 用 Read 工具逐页检查可疑页面
 # Read C:/path/to/screenshots/6.png
@@ -461,15 +461,11 @@ GH Pages 不支持 SPA history 路由。当前每集统一使用 hash 路由（`
 
 Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在第二页显示 404。根 workspace 通过 pnpm override 固定 `@slidev/cli` 版本，升级时必须运行 `pnpm run verify:routing`；该命令会检查所有产物版本一致，并对最早和最新 episode 做浏览器翻页、刷新与旧链接迁移验证。
 
-### 4. Windows 下 pnpm 子进程僵尸化
+### 4. 生成只使用 `run-plan.ts`
 
-并行跑 `pnpm run generate --id=A` + `pnpm run generate --id=B` 时偶尔 pnpm shim 无法检测到 child 退出，父 bash 悬挂。症状：任务显示 running 但 `ps` 里只有 pnpm 没有 node cli.js。
-
-修法：`kill <pnpm-pid>` 强制终结即可。`data/plans/*.yml` 的状态已经写回过，不会丢数据。
-
-### 5. `generate-slides.ts` 父进程不要 mutate `episodes.yml`
-
-多个并行 subprocess 同时读写 `episodes.yml` 会最后写覆盖前写。真实状态存在 `episodes/<id>/meta.yml`，父进程只读不写共享 yaml。`data/plans/<source>.yml` 每个 source 一个文件，同 source 无并发，可以安全写回。
+`pnpm run generate` 与 `pnpm run plan:run` 指向同一个入口。真实状态写入
+`data/plans/<source>.yml` 和单集 `meta.yml`；不要恢复依赖 `episodes.yml` 与
+未实现 `sync` 命令的旧生成路径。
 
 ---
 

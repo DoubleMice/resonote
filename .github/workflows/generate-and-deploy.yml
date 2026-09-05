@@ -130,17 +130,14 @@ jobs:
           transcribe_wait_minutes="${{ inputs.transcribe_wait_minutes || '2' }}"
           source="${{ inputs.source || '' }}"
           category="${{ inputs.category || '' }}"
-          export TRANSCRIPT_PROVIDER="${TRANSCRIPT_PROVIDER:-mimo}"
-          export MIMO_BASE_URL="${MIMO_BASE_URL:-https://api.xiaomimimo.com/v1}"
-          export MIMO_MODEL="${MIMO_MODEL:-mimo-v2.5}"
-          export MIMO_MAX_COMPLETION_TOKENS="${MIMO_MAX_COMPLETION_TOKENS:-32768}"
+          provider="${TRANSCRIPT_PROVIDER:-mimo}"
           args=(--limit=${limit})
-          if [ "${TRANSCRIPT_PROVIDER}" = "mimo" ] && [ -n "${MIMO_API_KEY}" ]; then
+          if [ "${provider}" = "mimo" ] && [ -n "${MIMO_API_KEY}" ]; then
             args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
-          elif [ "${TRANSCRIPT_PROVIDER}" = "dashscope" ] && [ -n "${DASHSCOPE_API_KEY}" ]; then
+          elif [ "${provider}" = "dashscope" ] && [ -n "${DASHSCOPE_API_KEY}" ]; then
             args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
           else
-            echo "Transcript provider ${TRANSCRIPT_PROVIDER} is not configured; skipping auto transcription"
+            echo "Transcript provider ${provider} is not configured; skipping auto transcription"
           fi
           if [ -n "${source}" ]; then
             args+=(--id=${source})
@@ -153,11 +150,8 @@ jobs:
       - name: Normalize generated metadata
         run: pnpm run normalize:meta -- --fix
 
-      - name: Update lockfile for generated workspaces
-        run: pnpm install --lockfile-only
-
-      - name: Link generated workspaces
-        run: pnpm install --no-frozen-lockfile
+      - name: Validate generated artifacts
+        run: pnpm run validate:artifacts
 
       - name: Build all
         run: pnpm run build

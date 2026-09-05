@@ -6,18 +6,19 @@ You are generating a Slidev presentation deck for ONE podcast episode. **Write a
 - **Source**: `{{SOURCE}}`
 - **Title**: `{{TITLE}}`
 - **Source episode URL**: `{{URL}}`
-- **Published**: `{{PUBLISHED}}` (use exactly this `YYYY-MM` display value in `meta.yml`)
-- **Published sort key**: `{{PUBLISHED_SORT}}` (use exactly this `YYYYMMDD` value as `published_sort` in `meta.yml`)
-- **Duration**: `{{DURATION}}` (use exactly this display value in `meta.yml`)
+- **Published**: `{{PUBLISHED}}`
+- **Published sort key**: `{{PUBLISHED_SORT}}`
+- **Duration**: `{{DURATION}}`
 - **Thumbnail**: `{{THUMBNAIL}}`
 - **Transcript file**: `data/transcripts/{{ID}}.txt`
-- **Episode directory** (already scaffolded with package.json, global-bottom.vue, public/ templates): `episodes/{{ID}}/`
+- **Episode directory** (already scaffolded with reusable `public/` diagram templates; shared style and chrome are staged temporarily): `episodes/{{ID}}/`
 
 ## What to produce
 
 1. `episodes/{{ID}}/slides.md` — the Slidev markdown
 2. `episodes/{{ID}}/meta.yml` — episode metadata for the landing page
 3. `episodes/{{ID}}/article.html` — standalone HTML article
+4. `episodes/{{ID}}/quote-evidence.yml` — machine-verifiable quote provenance
 
 ## Workflow (follow in order)
 
@@ -41,8 +42,8 @@ Follow the structure in the system prompt (RULE 4):
 
 Excalidraw diagrams: first check `episodes/{{ID}}/public/` for reusable templates that fit your themes. If you need a new diagram, write minimal JSON following the pattern in the existing templates.
 
-Visual theme: `episodes/{{ID}}/style.css` is already present and defines the
-shared 声笺 / Resonote editorial look. Do not edit it and do not add per-deck CSS.
+Visual theme: the orchestrator has temporarily staged the shared `style.css` in
+the episode directory. Do not edit or recreate it and do not add per-deck CSS.
 Use the semantic blue/green/orange/red/yellow/purple card utilities from the
 system rules. Keep body copy high-contrast and do not use emoji as card icons.
 
@@ -72,8 +73,10 @@ drawings:
 
 ### Phase 3 — Write `meta.yml`
 
-Use the exact schema from RULE 9 in the system prompt. Only use tags that exist in the root `tags.yml`.
-Use the source episode URL, published date, duration, and thumbnail from the input block above exactly as provided. Do not infer these fields from the episode ID or transcript length.
+Use the editorial-only schema from RULE 9 in the system prompt. Only write
+`title`, `guest`, `guest_role`, `tags`, `summary`, and `core_ideas`. Only use tags
+that exist in the root `tags.yml`. The orchestrator writes all source-derived,
+path, and status fields after generation.
 
 ### Phase 3.5 — Generate `article.html`
 
@@ -130,9 +133,16 @@ Acceptable rewrites:
 - `Natomi 已在 United Airlines 移动端落地；OpenAI 将它列为大规模部署生成式 AI 的案例。`
 - `Puneet 的自动化交易背景，让他从一开始就按大型企业部署场景设计 Natomi。`
 
+### Phase 3.7 — Persist quote evidence
+
+Write `episodes/{{ID}}/quote-evidence.yml` using RULE 11. Include every quote
+occurrence from both `slides.md` and `article.html`, with exact artifact and
+transcript excerpts. Re-run Grep while building this file; remembered wording is
+not evidence.
+
 ### Phase 4 — Build and self-audit
 
-1. `cd episodes/{{ID}}` then `Bash: npx slidev export --format png --output audit` to render every slide to PNG
+1. From the repo root, run `Bash: pnpm exec slidev export episodes/{{ID}}/slides.md --format png --output episodes/{{ID}}/audit` to render every slide to PNG
 2. From repo root, run `Bash: pnpm run audit:layout -- --id={{ID}}`
 3. For EACH slide PNG in `audit/`, `Read` the image and check:
    - Text overflow / layout breaks

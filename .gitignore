@@ -19,6 +19,7 @@ dist/
 # Per-episode failure markers
 episodes/*/.failed
 episodes/*/global-bottom.vue
+episodes/*/style.css
 
 # Vite caches
 **/.vite/

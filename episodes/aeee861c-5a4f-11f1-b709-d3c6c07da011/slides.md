@@ -1,3 +1,4 @@
+---
 theme: academic
 colorSchema: light
 addons:

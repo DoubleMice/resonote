@@ -30,7 +30,10 @@ function repositoryFiles(): string[] {
     ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
     { cwd: ROOT, encoding: 'utf8' },
   )
-  return output.split('\0').filter(Boolean).map(file => resolve(ROOT, file))
+  return output.split('\0')
+    .filter(Boolean)
+    .map(file => resolve(ROOT, file))
+    .filter(existsSync)
 }
 
 function walk(directory: string): string[] {

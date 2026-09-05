@@ -17,7 +17,6 @@ function fixture() {
   writeFileSync(join(root, 'pnpm-lock.yaml'), 'lockfileVersion: 9\n')
   mkdirSync(join(root, 'scripts', 'lib'), { recursive: true })
   writeFileSync(join(root, 'scripts', 'lib', 'episode-workspace.ts'), 'export {}\n')
-  writeFileSync(join(episode, 'package.json'), '{}\n')
   writeFileSync(join(episode, 'slides.md'), '# Slide\n')
   writeFileSync(join(episode, 'meta.yml'), 'status: generated\n')
   writeFileSync(join(episode, 'article.html'), '<article>one</article>\n')

@@ -22,6 +22,7 @@ export interface Source {
 export interface EpisodeMeta {
   id: string
   source: string
+  source_title?: string
   title: string
   guest?: string
   guest_role?: string
