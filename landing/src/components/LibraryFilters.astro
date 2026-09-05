@@ -27,6 +27,15 @@ import { CATEGORIES } from '../lib/data'
       <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
     </label>
 
+    <label class="sort-select">
+      <span class="sr-only">内容排序</span>
+      <select id="library-sort" aria-label="内容排序">
+        <option value="generated">最新生成</option>
+        <option value="published">Podcast 发布日期</option>
+      </select>
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg>
+    </label>
+
     <button class="unread-toggle" id="library-unread" type="button" aria-pressed="false">
       <span aria-hidden="true"></span>只看未读
     </button>
@@ -124,8 +133,10 @@ import { CATEGORIES } from '../lib/data'
     cursor: pointer;
   }
   .library-format-tabs button[aria-pressed="true"] { color: white; background: var(--resonote-ink); box-shadow: 0 5px 13px rgba(var(--resonote-ink-rgb), 0.16); }
-  .category-select { position: relative; display: inline-flex; }
-  .category-select select {
+  .category-select,
+  .sort-select { position: relative; display: inline-flex; }
+  .category-select select,
+  .sort-select select {
     min-height: 44px;
     appearance: none;
     padding: 0 36px 0 14px;
@@ -137,7 +148,10 @@ import { CATEGORIES } from '../lib/data'
     font-weight: 650;
     cursor: pointer;
   }
-  .category-select svg { position: absolute; top: 50%; right: 13px; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; transform: translateY(-50%); pointer-events: none; }
+  .category-select svg,
+  .sort-select svg { position: absolute; top: 50%; right: 13px; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; transform: translateY(-50%); pointer-events: none; }
+  .category-select select:focus-visible,
+  .sort-select select:focus-visible { border-color: rgba(var(--resonote-accent-rgb), 0.48); outline: 0; box-shadow: 0 0 0 4px rgba(var(--resonote-accent-rgb), 0.09); }
   .unread-toggle,
   .filter-reset {
     display: inline-flex;
@@ -186,16 +200,17 @@ import { CATEGORIES } from '../lib/data'
   .library-more:hover, .library-empty button:hover { color: white; background: var(--resonote-blue); }
   @media (max-width: 620px) {
     .library-controls { top: 74px; margin-inline: -6px; padding: 8px; border-radius: 14px; }
-    .library-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 7px; }
+    .library-toolbar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .library-search-wrap { grid-column: 1 / -1; }
     .library-search-wrap input { padding-right: 80px; }
     .library-count { right: 8px; max-width: 76px; }
     .library-format-tabs { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); }
     .library-format-tabs button { min-height: 44px; }
-    .category-select, .category-select select { width: 100%; }
-    .category-select select { padding: 0 32px 0 12px; }
-    .unread-toggle { justify-content: center; padding: 0 10px; }
-    .filter-reset { padding: 0 12px; }
+    .category-select, .category-select select,
+    .sort-select, .sort-select select { width: 100%; }
+    .category-select select,
+    .sort-select select { padding: 0 32px 0 12px; }
+    .unread-toggle, .filter-reset { justify-content: center; padding: 0 12px; }
   }
 </style>
 
@@ -205,13 +220,14 @@ import { CATEGORIES } from '../lib/data'
     const list = document.getElementById('library-list')
     const search = document.getElementById('library-search')
     const category = document.getElementById('library-category')
+    const sortSelect = document.getElementById('library-sort')
     const unread = document.getElementById('library-unread')
     const reset = document.getElementById('library-reset')
     const empty = document.getElementById('library-empty')
     const more = document.getElementById('library-more')
     const count = document.getElementById('library-result-count')
     const tabs = [...document.querySelectorAll('#library-format-tabs [data-format]')]
-    if (!list || !(search instanceof HTMLInputElement) || !(category instanceof HTMLSelectElement) || !unread || !reset || !empty || !more || !count || !tabs.length) return
+    if (!list || !(search instanceof HTMLInputElement) || !(category instanceof HTMLSelectElement) || !(sortSelect instanceof HTMLSelectElement) || !unread || !reset || !empty || !more || !count || !tabs.length) return
 
     // The control owns the progressive-disclosure button, but visually it
     // belongs after the result list.
@@ -230,6 +246,7 @@ import { CATEGORIES } from '../lib/data'
       category.value = [...category.options].some(option => option.value === requestedCategory) ? requestedCategory : 'all'
       const requestedFormat = params.get('format') || 'all'
       format = tabs.some(tab => tab.dataset.format === requestedFormat) ? requestedFormat : 'all'
+      sortSelect.value = params.get('sort') === 'published' ? 'published' : 'generated'
       unread.setAttribute('aria-pressed', String(params.get('unread') === '1'))
     }
 
@@ -242,6 +259,8 @@ import { CATEGORIES } from '../lib/data'
       else url.searchParams.delete('category')
       if (format !== 'all') url.searchParams.set('format', format)
       else url.searchParams.delete('format')
+      if (sortSelect.value === 'published') url.searchParams.set('sort', 'published')
+      else url.searchParams.delete('sort')
       if (unread.getAttribute('aria-pressed') === 'true') url.searchParams.set('unread', '1')
       else url.searchParams.delete('unread')
       history.replaceState(null, '', url)
@@ -256,6 +275,15 @@ import { CATEGORIES } from '../lib/data'
 
     const applyFilters = (resetLimit = false, updateUrl = true) => {
       if (resetLimit) limit = pageSize
+      const primarySortAttribute = sortSelect.value === 'published' ? 'data-published-sort' : 'data-generated-sort'
+      items.sort((a, b) => {
+        const primary = Number(b.getAttribute(primarySortAttribute) || 0) - Number(a.getAttribute(primarySortAttribute) || 0)
+        if (primary !== 0) return primary
+        const published = Number(b.getAttribute('data-published-sort') || 0) - Number(a.getAttribute('data-published-sort') || 0)
+        if (published !== 0) return published
+        return (b.getAttribute('data-sort-key') || '').localeCompare(a.getAttribute('data-sort-key') || '')
+      })
+      items.forEach(item => list.append(item))
       const tokens = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
       const onlyUnread = unread.getAttribute('aria-pressed') === 'true'
       const matches = items.filter(item => {
@@ -290,6 +318,7 @@ import { CATEGORIES } from '../lib/data'
 
     search.addEventListener('input', () => applyFilters(true))
     category.addEventListener('change', () => applyFilters(true))
+    sortSelect.addEventListener('change', () => applyFilters(true))
     unread.addEventListener('click', () => {
       unread.setAttribute('aria-pressed', String(unread.getAttribute('aria-pressed') !== 'true'))
       applyFilters(true)
@@ -302,6 +331,7 @@ import { CATEGORIES } from '../lib/data'
     const resetAll = () => {
       search.value = ''
       category.value = 'all'
+      sortSelect.value = 'generated'
       format = 'all'
       unread.setAttribute('aria-pressed', 'false')
       applyFilters(true)

@@ -1,6 +1,6 @@
 ---
 import type { EpisodeWithSource } from '../lib/data'
-import { CATEGORIES } from '../lib/data'
+import { CATEGORIES, episodeGeneratedTime, episodePublishedTime } from '../lib/data'
 import { url } from '../lib/url'
 
 interface Props {
@@ -45,6 +45,9 @@ const published = displayDate(episode.published_sort || episode.published)
   data-has-article={String(hasArticle)}
   data-category={episode.category || 'other'}
   data-search={searchText}
+  data-generated-sort={episodeGeneratedTime(episode)}
+  data-published-sort={episodePublishedTime(episode)}
+  data-sort-key={`${episode.title}:${episode.id}`}
   data-initial-hidden={initialHidden ? 'true' : undefined}
 >
   <div class="row-cover">

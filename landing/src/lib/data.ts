@@ -99,11 +99,17 @@ export function sortEpisodesByGeneratedDesc<T extends Pick<EpisodeMeta, 'id' | '
   })
 }
 
-export function sortEpisodesForLibrary<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title' | 'status' | 'article_path'>>(episodes: T[]): T[] {
+export type LibrarySort = 'generated' | 'published'
+
+export function sortEpisodesForLibrary<T extends Pick<EpisodeMeta, 'id' | 'published' | 'published_sort' | 'title' | 'generated_at'>>(
+  episodes: T[],
+  sort: LibrarySort = 'generated',
+): T[] {
   return [...episodes].sort((a, b) => {
-    const aReadable = a.status === 'generated' || Boolean(a.article_path)
-    const bReadable = b.status === 'generated' || Boolean(b.article_path)
-    if (aReadable !== bReadable) return aReadable ? -1 : 1
+    if (sort === 'generated') {
+      const byGenerated = episodeGeneratedTime(b) - episodeGeneratedTime(a)
+      if (byGenerated !== 0) return byGenerated
+    }
 
     const byPublished = episodePublishedTime(b) - episodePublishedTime(a)
     if (byPublished !== 0) return byPublished
