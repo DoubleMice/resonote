@@ -133,7 +133,7 @@ pnpm run e2e:transcription
 
 ## RSS 订阅输出
 
-- `landing/src/pages/rss.xml.ts` 在 astro build 时静态生成 `dist/rss.xml`（RSS 2.0），随 build-all.ts 拷贝进最终 dist，生产地址为 `https://doublemice.github.io/resonote/rss.xml`。
+- `landing/src/pages/rss.xml.ts` 在 astro build 时静态生成 `dist/rss.xml`（RSS 2.0），随 build-all.ts 拷贝进最终 dist，生产地址为 `https://resonote.doublemice.top/rss.xml`（自定义域名，CNAME 指向 doublemice.github.io）。
 - 收录范围 = 可读内容（`status: generated` 或有 `article_path`），按 published 倒序、全量收录、不设上限；item 链接优先文章（`article.html`），无文章时指向 deck，描述里给出两种格式的链接。
 - 生成逻辑在 `landing/src/lib/rss.ts`（纯函数，`landing/src/lib/rss.test.ts` 有单测，进 `pnpm test`）；描述是双重转义的 HTML，订阅器解析后按富文本渲染。
 - 发现入口：`Base.astro` head 里的 `<link rel="alternate">` 自动发现 + 页脚"RSS 订阅"链接；绝对 URL 依赖 `RESONOTE_SITE` + `RESONOTE_BASE`（CI 已设置），本地构建默认指向 `http://localhost:4173`。
@@ -143,12 +143,12 @@ pnpm run e2e:transcription
 
 ```js
 // landing/astro.config.mjs
-const base = process.env.RESONOTE_BASE || '/'       // 本地 '/' / 生产 '/resonote/'
+const base = process.env.RESONOTE_BASE || '/'       // 本地 '/' / 生产 '/'（自定义域名 resonote.doublemice.top）
 const site = process.env.RESONOTE_SITE || 'http://localhost:4173'
 ```
 
-- 本地 `pnpm run build` → base=`/` → serve dist 直接访问
-- CI `.github/workflows/deploy.yml` 里设 `RESONOTE_BASE=/resonote/` → GitHub Pages
+- 生产主域为 `resonote.doublemice.top`（Cloudflare CNAME → doublemice.github.io，DNS only），CI workflow 里设 `RESONOTE_BASE=/` + `RESONOTE_SITE=https://resonote.doublemice.top`
+- 旧的 `doublemice.github.io/resonote` 链接由 GitHub Pages 自动 301 到自定义域名
 - **绝对路径链接必须走 `landing/src/lib/url.ts` 的 `url()` helper**，手写 `href="/..."` 会断裂
 - Slidev 每集 build 传 `--base ${SITE_BASE}episodes/<id>/ --router-mode hash`（由 build-all.ts 处理）
 - 返回按钮用 `<a href="../../">`（相对路径，base 无关）

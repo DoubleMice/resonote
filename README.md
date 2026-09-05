@@ -2,7 +2,7 @@
 
 将长篇播客整理为中文视觉笔记与长读文章，并发布到 GitHub Pages。
 
-[访问网站](https://doublemice.github.io/resonote/) · [浏览内容库](https://doublemice.github.io/resonote/library/) · [订阅 RSS](https://doublemice.github.io/resonote/rss.xml)
+[访问网站](https://resonote.doublemice.top/) · [浏览内容库](https://resonote.doublemice.top/library/) · [订阅 RSS](https://resonote.doublemice.top/rss.xml)
 
 ## 功能
 

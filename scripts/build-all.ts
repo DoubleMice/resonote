@@ -235,7 +235,7 @@ async function main() {
 
   // Site base path — matches landing/astro.config.mjs `base`.
   // Local:    RESONOTE_BASE unset → /
-  // CI/prod:  RESONOTE_BASE=/resonote/ → https://doublemice.github.io/resonote/
+  // CI/prod:  RESONOTE_BASE=/ → https://resonote.doublemice.top/
   const SITE_BASE = process.env.RESONOTE_BASE || '/'
   const SITE_FAVICON = `${SITE_BASE.replace(/\/?$/, '/')}favicon.svg`
 

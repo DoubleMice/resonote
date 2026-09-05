@@ -10,8 +10,8 @@ on:
         default: 'manual deploy'
 
 env:
-  RESONOTE_BASE: /resonote/
-  RESONOTE_SITE: https://doublemice.github.io
+  RESONOTE_BASE: /
+  RESONOTE_SITE: https://resonote.doublemice.top
 
 # 同一时间只允许一个 deploy
 concurrency:

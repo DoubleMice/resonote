@@ -27,8 +27,8 @@ on:
         default: ''
 
 env:
-  RESONOTE_BASE: /resonote/
-  RESONOTE_SITE: https://doublemice.github.io
+  RESONOTE_BASE: /
+  RESONOTE_SITE: https://resonote.doublemice.top
   ANTHROPIC_BASE_URL: ${{ vars.CONTENT_BASE_URL || 'https://api.xiaomimimo.com/anthropic' }}
   ANTHROPIC_DEFAULT_HAIKU_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ANTHROPIC_DEFAULT_OPUS_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
