@@ -20704,3 +20704,88 @@ jobs:
     submitted_at: 2026-09-04T18:14:49.361Z
     updated_at: 2026-09-04T18:22:50.966Z
     completed_at: 2026-09-04T18:22:50.966Z
+  - key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z:chunk:0
+    parent_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    attempt_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z
+    provider: mimo
+    id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+    source: latepost
+    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    task_id: 054669bf-9662-496c-b8f5-3e6591b07b2d_965b5f1ae81d485ab6e911033862896b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-05T18:12:55.041Z
+    updated_at: 2026-09-05T18:13:55.613Z
+    completed_at: 2026-09-05T18:13:55.613Z
+  - key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z:chunk:1
+    parent_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    attempt_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z
+    provider: mimo
+    id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+    source: latepost
+    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    task_id: ff2f1c39-2244-4b05-8250-4ccb9028e542_a8f52c0f30b940e5856f34ba118a0830
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-05T18:12:55.041Z
+    updated_at: 2026-09-05T18:14:32.994Z
+    completed_at: 2026-09-05T18:14:32.994Z
+  - key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z:chunk:2
+    parent_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    attempt_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z
+    provider: mimo
+    id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+    source: latepost
+    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    task_id: 07d2c00c-352a-415c-b56b-05c831e2d38d_fd79c303ede34191ac851005fd19dca5
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-05T18:12:55.041Z
+    updated_at: 2026-09-05T18:15:13.223Z
+    completed_at: 2026-09-05T18:15:13.223Z
+  - key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z:chunk:3
+    parent_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    attempt_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z
+    provider: mimo
+    id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+    source: latepost
+    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    task_id: d8eba93e-9eef-4b4f-a843-c1f475719285_a4514159ec924b06bae506397d04865d
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-05T18:12:55.041Z
+    updated_at: 2026-09-05T18:15:59.223Z
+    completed_at: 2026-09-05T18:15:59.223Z
+  - key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z:chunk:4
+    parent_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    attempt_key: latepost:f0fd718b-1219-4c04-bad3-94d22b65ff7f:20260407:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3:mimo:2026-09-05T18:12:55.041Z
+    provider: mimo
+    id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+    source: latepost
+    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
+    task_id: a9548002-b8a3-4a15-9d3c-5b77a45cc09a_f261b1e773934fd5b763d082a4d2f053
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-05T18:12:55.041Z
+    updated_at: 2026-09-05T18:16:14.024Z
+    completed_at: 2026-09-05T18:16:14.024Z

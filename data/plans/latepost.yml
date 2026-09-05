@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-05T03:04:55.487Z
+refreshed_at: 2026-09-05T18:11:00.008Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
 done: 0
 pending: 0
-needs_transcript: 12
+needs_transcript: 11
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -415,8 +415,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-05T18:12:55.041Z
+    transcript_job_id: 054669bf-9662-496c-b8f5-3e6591b07b2d_965b5f1ae81d485ab6e911033862896b,ff2f1c39-2244-4b05-8250-4ccb9028e542_a8f52c0f30b940e5856f34ba118a0830,07d2c00c-352a-415c-b56b-05c831e2d38d_fd79c303ede34191ac851005fd19dca5,d8eba93e-9eef-4b4f-a843-c1f475719285_a4514159ec924b06bae506397d04865d,a9548002-b8a3-4a15-9d3c-5b77a45cc09a_f261b1e773934fd5b763d082a4d2f053
+    transcript_completed_at: 2026-09-05T18:16:14.024Z
   - id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
     guid: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
     title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
