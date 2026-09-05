@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-09-04T18:12:54.326Z
+refreshed_at: 2026-09-05T03:04:55.487Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
@@ -300,8 +300,8 @@ episodes:
     status: failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-04T18:14:49.361Z
     transcript_job_id: 5a47ecf6-f286-41c2-807b-47ccfc3ba876_189cf830ae294ed5a761294deeb77e0f,f60c279d-6299-45c7-a3d2-fa647badea42_ea9c9f9321504fa5955101a3e9791c54,0e08aa49-a20f-4ac3-97a5-165b09784860_cbcf1cd3604941c8b924403459a8a584,9cb05596-93c7-4941-80d5-4efdbe8bfe5f_5ba5793ef63d43ad961c8d2e260bda4b,7e9d22df-ac3c-402a-9eed-1e37eaa2edd9_22ff7bad5d624857902249feccb0d442,6538b579-9ac4-4c9f-9049-acb54dc61810_eb0babaec081487bbc8f2b89ac092bde,2c30fa45-c542-4208-b303-3ba8a6933fcb_26aaba6fcb0b452da426d4dde48d4ade
+    transcript_submitted_at: 2026-09-04T18:14:49.361Z
     transcript_completed_at: 2026-09-04T18:22:50.966Z
   - id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
     guid: f0fd718b-1219-4c04-bad3-94d22b65ff7f
