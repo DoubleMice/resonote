@@ -58,7 +58,7 @@ export function episodeBuildFingerprint(options: FingerprintOptions): string {
   for (const path of collectFiles(episode).sort()) {
     updateFile(hash, `episode/${relative(episode, path).split(sep).join('/')}`, path)
   }
-  for (const name of ['global-bottom.vue', 'style.css']) {
+  for (const name of ['style.css']) {
     updateFile(hash, `templates/${name}`, join(templates, name))
   }
   for (const name of ['package.json', 'pnpm-lock.yaml']) {

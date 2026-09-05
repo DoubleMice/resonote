@@ -2,12 +2,9 @@
 // dist assembly (not at slidev build time) so the chrome always reflects the
 // latest episode ordering without invalidating the episode build cache.
 //
-// Two jobs:
-//  1. Compact the shared `.resonote-back` button (from global-bottom.vue) so it
-//     no longer overlaps slide H1 titles. Desktop titles start at y=59px; the
-//     compact chrome must end above that line.
-//  2. Add 上一篇/下一篇 links next to it, resolved from the site-wide episode
-//     ordering (published desc, same as the library page).
+// One viewport-level component owns the home and 上一篇/下一篇 links. Keeping
+// every control outside Slidev's transform-scaled canvas prevents the controls
+// from drifting into each other at different viewport ratios.
 
 export interface DeckNeighbor {
   href: string
@@ -30,19 +27,15 @@ function escapeHtml(value: string): string {
 }
 
 const deckChromeCss = `
-/* NOTE: Slidev renders global-bottom inside a transform-scaled slide wrapper,
-   so these px values are in unscaled slide units (slide canvas ≈ 980×551).
-   Content h1 titles start at ≈ 40px in the same units, so the whole chrome
-   row must end above that line on every viewport. */
-.resonote-back.resonote-back { top: 5px; left: 8px; min-height: 0; padding: 5px 9px 5px 7px; }
-.resonote-back.resonote-back .brand-lockup small { display: none; }
-.resonote-back.resonote-back .brand-lockup strong { font-size: 11px; }
-.resonote-back.resonote-back svg { width: 12px; height: 12px; }
+/* Hide ignored legacy components that may survive in an old build cache. */
+.resonote-back { display: none !important; }
 .rn-deck-nav {
+  --rn-slide-width: min(100vw, calc(100vh * 16 / 9));
+  --rn-slide-height: min(100vh, calc(100vw * 9 / 16));
   position: fixed;
-  top: 5px;
-  left: 72px;
-  z-index: 100;
+  top: calc((100vh - var(--rn-slide-height)) / 2 + 8px);
+  left: calc((100vw - var(--rn-slide-width)) / 2 + 8px);
+  z-index: 1000;
   display: inline-flex;
   gap: 5px;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", sans-serif;
@@ -65,6 +58,8 @@ const deckChromeCss = `
   text-decoration: none;
   transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
+.rn-deck-home { border-radius: 10px 3px 3px 10px; }
+.rn-deck-wordmark { font-family: Iowan Old Style, Baskerville, "Songti SC", STSong, serif; }
 .rn-deck-btn svg {
   width: 12px;
   height: 12px;
@@ -77,7 +72,6 @@ const deckChromeCss = `
 .rn-deck-btn:hover { color: #355f58; background: rgba(255, 253, 248, 0.98); border-color: rgba(53, 95, 88, 0.36); }
 .rn-deck-btn:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 2px; }
 @media (max-width: 700px) {
-  .rn-deck-nav { left: 8px; top: 40px; }
   .rn-deck-label { display: none; }
   .rn-deck-btn { padding: 5px 8px; }
 }
@@ -86,10 +80,12 @@ const deckChromeCss = `
 const chevronLeft = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5" /></svg>'
 const chevronRight = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" /></svg>'
 
-export function injectDeckChrome(html: string, nav: DeckNav): string {
+export function injectDeckChrome(html: string, nav: DeckNav, homeHref = '../../'): string {
   if (!/<\/body>/i.test(html)) return html
 
-  const buttons: string[] = []
+  const buttons: string[] = [
+    `<a class="rn-deck-btn rn-deck-home" href="${escapeHtml(homeHref)}" aria-label="返回声笺 Resonote 首页">${chevronLeft}<span class="rn-deck-wordmark">声笺</span></a>`,
+  ]
   if (nav.prev) {
     const title = escapeHtml(nav.prev.title)
     buttons.push(
@@ -106,9 +102,7 @@ export function injectDeckChrome(html: string, nav: DeckNav): string {
   const parts = [
     `<style data-resonote-chrome>\n${deckChromeCss}\n</style>`,
   ]
-  if (buttons.length) {
-    parts.push(`<div class="rn-deck-nav" data-resonote-nav>${buttons.join('')}</div>`)
-  }
+  parts.push(`<nav class="rn-deck-nav" data-resonote-nav aria-label="内容导航">${buttons.join('')}</nav>`)
 
   return html.replace(/<\/body>/i, `${parts.join('\n')}\n</body>`)
 }

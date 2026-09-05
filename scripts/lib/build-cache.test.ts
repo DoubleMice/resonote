@@ -22,7 +22,6 @@ function fixture() {
   writeFileSync(join(episode, 'article.html'), '<article>one</article>\n')
   writeFileSync(join(episode, 'public', 'diagram.excalidraw'), '{}\n')
   writeFileSync(join(templates, 'style.css'), ':root {}\n')
-  writeFileSync(join(templates, 'global-bottom.vue'), '<template />\n')
   return { root, episode, templates }
 }
 
@@ -42,12 +41,12 @@ test('episode fingerprints ignore landing metadata but include presentation inpu
   }
 })
 
-test('episode fingerprints include shared chrome and the deployed base path', () => {
+test('episode fingerprints include the shared style and deployed base path', () => {
   const { root, episode, templates } = fixture()
   try {
     const options = { rootDir: root, episodeDir: episode, templatesDir: templates, base: '/resonote/episodes/episode-1/' }
     const initial = episodeBuildFingerprint(options)
-    writeFileSync(join(templates, 'global-bottom.vue'), '<template>changed</template>\n')
+    writeFileSync(join(templates, 'style.css'), ':root { color: green; }\n')
     assert.notEqual(episodeBuildFingerprint(options), initial)
     assert.notEqual(episodeBuildFingerprint({ ...options, base: '/other/' }), initial)
   } finally {

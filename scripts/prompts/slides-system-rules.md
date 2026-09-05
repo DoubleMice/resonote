@@ -197,11 +197,11 @@ Mandatory capacity limits:
 
 When in doubt, split content across more slides. More pages with clean layout are better than one clipped dense page.
 
-## RULE 7 — Global back button
+## RULE 7 — Site navigation
 
-The orchestrator temporarily stages `episodes/_templates/global-bottom.vue`
-during generation, audit, development, and build. Do not create, copy, or edit
-`global-bottom.vue` inside an episode directory.
+The build orchestrator injects the site home and adjacent-episode navigation
+after Slidev produces HTML. Do not create, copy, or edit `global-bottom.vue`
+inside an episode directory.
 
 ## RULE 8 — Self-audit before declaring done
 

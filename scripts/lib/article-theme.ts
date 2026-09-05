@@ -1,9 +1,11 @@
 import { applySiteFavicon } from './site-favicon.ts'
 
-export const articleHomeLink = `<a class="resonote-home" href="../../" aria-label="返回声笺 Resonote 首页">
+export function articleHomeLink(homeHref = '../../'): string {
+  return `<a class="resonote-home" href="${escapeHtml(homeHref)}" aria-label="返回声笺 Resonote 首页">
   <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11.75 4.75 6.5 10l5.25 5.25M7 10h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span class="resonote-home-lockup"><strong>声笺</strong><small>RESONOTE</small></span>
 </a>`
+}
 
 export const articleReaderChrome = `<div class="resonote-reading-progress" aria-hidden="true"><span></span></div>
 <button class="resonote-to-top" type="button" aria-label="返回文章顶部" title="返回顶部">
@@ -175,6 +177,7 @@ export function applyArticleTheme(
   themeCss: string,
   nav?: ArticleNav,
   faviconHref = '../../favicon.svg',
+  homeHref = '../../',
 ): string {
   let html = applySiteFavicon(sourceHtml, faviconHref)
   const hasReadingWrapper = /<(?:article|main)\b/i.test(html)
@@ -196,7 +199,7 @@ export function applyArticleTheme(
     html = markReadingWrapper(html)
   }
 
-  const bodyChrome = `${articleReaderChrome}\n${articleHomeLink}`
+  const bodyChrome = `${articleReaderChrome}\n${articleHomeLink(homeHref)}`
   html = /<body(?:\s[^>]*)?>/i.test(html)
     ? html.replace(/<body(?:\s[^>]*)?>/i, (match: string) => `${match}\n${bodyChrome}`)
     : `${bodyChrome}\n${html}`

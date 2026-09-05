@@ -34,16 +34,17 @@ export function stageEpisodePresentation(
   templatesDir: string,
 ): () => void {
   const stylePath = join(episodeDir, 'style.css')
-  const chromePath = join(episodeDir, 'global-bottom.vue')
+  const legacyChromePath = join(episodeDir, 'global-bottom.vue')
   const templateStyle = readFileSync(join(templatesDir, 'style.css'), 'utf8')
-  const templateChrome = readFileSync(join(templatesDir, 'global-bottom.vue'), 'utf8')
   const existingStyle = existsSync(stylePath) ? readFileSync(stylePath, 'utf8') : null
-  const existingChrome = existsSync(chromePath) ? readFileSync(chromePath, 'utf8') : null
   const originalStyle = existingStyle === templateStyle ? null : existingStyle
-  const originalChrome = existingChrome === templateChrome ? null : existingChrome
+  const legacyChrome = existsSync(legacyChromePath) ? readFileSync(legacyChromePath, 'utf8') : null
 
   cpSync(join(templatesDir, 'style.css'), stylePath)
-  cpSync(join(templatesDir, 'global-bottom.vue'), chromePath)
+  // Navigation is injected into the assembled HTML in viewport coordinates.
+  // Suppress any ignored legacy component while Slidev runs so an old local
+  // file cannot reintroduce the scaled, overlapping back button.
+  rmSync(legacyChromePath, { force: true })
 
   let cleaned = false
   return () => {
@@ -51,7 +52,6 @@ export function stageEpisodePresentation(
     cleaned = true
     if (originalStyle === null) rmSync(stylePath, { force: true })
     else writeFileSync(stylePath, originalStyle)
-    if (originalChrome === null) rmSync(chromePath, { force: true })
-    else writeFileSync(chromePath, originalChrome)
+    if (legacyChrome !== null) writeFileSync(legacyChromePath, legacyChrome)
   }
 }

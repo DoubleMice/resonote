@@ -26,10 +26,15 @@ const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
 let episodeCacheHits = 0
 let episodeCacheMisses = 0
 
-function themedArticleHtml(articlePath: string, nav: ArticleNav | undefined, faviconHref: string): string {
+function themedArticleHtml(
+  articlePath: string,
+  nav: ArticleNav | undefined,
+  faviconHref: string,
+  homeHref: string,
+): string {
   const html = readFileSync(articlePath, 'utf-8')
   const css = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
-  return applyArticleTheme(html, css, nav, faviconHref)
+  return applyArticleTheme(html, css, nav, faviconHref, homeHref)
 }
 
 // Ordering for 上一篇/下一篇 navigation — newest first, mirroring the landing
@@ -294,6 +299,12 @@ async function main() {
   log.step('Assembling final dist/')
   log.raw(`copying ${landingDist} → ${DIST_DIR}`)
   cpSync(landingDist, DIST_DIR, { recursive: true })
+  const fallbackPath = join(DIST_DIR, '404.html')
+  if (existsSync(fallbackPath)) {
+    const fallbackHtml = applySiteFavicon(readFileSync(fallbackPath, 'utf-8'), SITE_FAVICON)
+      .replace(/href="[^"]*" data-resonote-home/, `href="${SITE_BASE}" data-resonote-home`)
+    writeFileSync(fallbackPath, fallbackHtml, 'utf-8')
+  }
 
   const epOut = join(DIST_DIR, 'episodes')
   mkdirSync(epOut, { recursive: true })
@@ -309,7 +320,11 @@ async function main() {
       writeFileSync(
         deckIndex,
         applySiteFavicon(
-          injectDeckChrome(readFileSync(deckIndex, 'utf-8'), deckNav.get(ep.id) || { prev: null, next: null }),
+          injectDeckChrome(
+            readFileSync(deckIndex, 'utf-8'),
+            deckNav.get(ep.id) || { prev: null, next: null },
+            SITE_BASE,
+          ),
           SITE_FAVICON,
         ),
         'utf-8',
@@ -325,6 +340,7 @@ async function main() {
           ep.articlePath,
           articleNavForRelative(articleNav.get(ep.id), `episodes/${ep.id}`),
           SITE_FAVICON,
+          SITE_BASE,
         ),
         'utf-8',
       )
@@ -346,6 +362,7 @@ async function main() {
         article.sourcePath,
         articleNavForRelative(articleNav.get(article.episodeId), outputDir),
         SITE_FAVICON,
+        SITE_BASE,
       ),
       'utf-8',
     )

@@ -26,7 +26,7 @@ resonote/
 │   └── plans/               # 按 source 的执行计划 yml（git 提交，状态追踪）
 │
 ├── episodes/
-│   ├── _templates/          # 共享 style.css、global-bottom.vue、public/ 6 张通用 excalidraw
+│   ├── _templates/          # 共享 style.css、article-theme.css、public/ 通用 excalidraw
 │   └── <videoId>/           # 每集的内容源文件
 │       ├── slides.md        # ← CC 生成
 │       ├── meta.yml         # ← CC 生成
@@ -493,13 +493,13 @@ Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在�
 1. **长度**：至少 **18-24 页**。2+ 小时的访谈至少值得 20 页。
 2. **手绘图比例**：**至少 20%** 的页面用 Excalidraw（5 页里有 1 页）。一个 20 页 deck 至少 4 张手绘图。
 3. **核心金句页**：倒数第二页必须是"核心金句"——4-6 条精选引言，每条配简短 context。
-4. **返回按钮**：构建、布局检查和单集开发会临时注入 `episodes/_templates/global-bottom.vue`，统一提供返回网站的入口；不要在单集目录复制该文件。
+4. **内容导航**：`build-all.ts` 在组装最终 HTML 时统一注入返回首页、上一篇和下一篇；不要在单集目录创建 `global-bottom.vue`。
 5. **开场**：前 2 页讲清楚"为什么这期特别"——不只是标题，要让读者 10 秒内理解要讲什么。
 6. **结构感**：不要平铺直叙。每 3-5 页应该有一次视觉 break（quote / statement / 大图）。
 
 ### 共享返回控件
 
-返回控件只维护在 `episodes/_templates/global-bottom.vue`。`build-all.ts`、`audit-layout.ts` 与 `dev-episode.ts` 会在执行期间将它放入单集目录，并在命令结束后恢复工作区。修改导航样式时只更新共享模板。
+内容页顶部导航只维护在 `scripts/lib/deck-chrome.ts`，并由 `build-all.ts` 在组装阶段注入。Slidev 构建期间会屏蔽单集目录里可能残留的 `global-bottom.vue`，避免旧控件重新出现。
 
 ### 核心金句页模板
 

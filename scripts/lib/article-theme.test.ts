@@ -28,6 +28,13 @@ test('wraps unstructured body content in an article', () => {
   assert.match(result, /<\/article>[\s\S]*<\/body>/)
 })
 
+test('uses the configured site root for the article home link', () => {
+  const html = '<html><head></head><body><article><h1>标题</h1></article></body></html>'
+  const result = applyArticleTheme(html, css, undefined, '/favicon.svg', '/')
+
+  assert.match(result, /class="resonote-home" href="\/"/)
+})
+
 test('does not duplicate an existing theme or home link', () => {
   const html = '<html><head><style data-resonote-theme>old</style></head><body><a class="resonote-home" href="../../">声笺 Resonote</a><article><div>正文</div><h1>标题</h1></article></body></html>'
   const result = applyArticleTheme(html, css)

@@ -155,6 +155,21 @@ async function main() {
 
       await page.goto(episodeUrl, { waitUntil: 'domcontentloaded' })
       await page.waitForURL(url => url.hash === '#/1')
+
+      const nav = page.locator('[data-resonote-nav]')
+      assert.equal(await nav.count(), 1, 'deck must contain exactly one canonical navigation')
+      assert.equal(await page.locator('a.resonote-back').count(), 0, 'legacy scaled home link must be absent')
+      const homeHref = await nav.locator('.rn-deck-home').getAttribute('href')
+      assert.ok(homeHref, 'deck navigation must link to the site home')
+      assert.equal(new URL(homeHref, episodeUrl).pathname, siteBase)
+      const navBoxes = await nav.locator('.rn-deck-btn').evaluateAll(elements => elements.map(element => {
+        const box = element.getBoundingClientRect()
+        return { left: box.left, right: box.right }
+      }))
+      navBoxes.slice(1).forEach((box, index) => {
+        assert.ok(navBoxes[index].right <= box.left, 'deck navigation controls must not overlap')
+      })
+
       await page.keyboard.press('ArrowRight')
       await page.waitForURL(url => url.hash === '#/2')
       assert.equal(new URL(page.url()).pathname, episodePath)
@@ -178,6 +193,14 @@ async function main() {
       console.log(`slide routing verified: ${episodePath}#/2 (${episode.published})`)
       await page.close()
     }
+
+    const fallbackPage = await browser.newPage()
+    const fallbackUrl = `http://127.0.0.1:${address.port}${siteBase}missing/nested/path`
+    await fallbackPage.goto(fallbackUrl, { waitUntil: 'domcontentloaded' })
+    const fallbackHome = await fallbackPage.locator('[data-resonote-home]').getAttribute('href')
+    assert.ok(fallbackHome, '404 page must contain a canonical home link')
+    assert.equal(new URL(fallbackHome, fallbackUrl).pathname, siteBase)
+    await fallbackPage.close()
   }
   finally {
     await browser.close()
