@@ -10,6 +10,7 @@ on:
         default: 'manual deploy'
 
 env:
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
   RESONOTE_BASE: /
   RESONOTE_SITE: https://resonote.doublemice.top
 
@@ -49,25 +50,36 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Restore episode build cache
-        uses: actions/cache@v5
-        with:
-          path: .cache/episode-builds
-          key: resonote-episode-builds-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            resonote-episode-builds-v1-${{ runner.os }}-
-
-      - name: Install playwright-chromium browser binaries
-        run: pnpm exec playwright install --with-deps chromium
-
       - name: Run unit tests
         run: pnpm test
+
+      - name: Cache Playwright browser
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-shell-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install playwright-chromium browser binaries
+        run: pnpm exec playwright install --with-deps --only-shell chromium
 
       - name: Validate episode metadata
         run: pnpm run normalize:meta
 
       - name: Validate generated artifacts
         run: pnpm run validate:artifacts
+
+      - name: Compute episode build cache key
+        id: episode-cache
+        run: pnpm run build -- --cache-key
+
+      - name: Restore episode build cache
+        uses: actions/cache@v5
+        with:
+          path: .cache/episode-builds
+          key: resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-${{ steps.episode-cache.outputs.key }}
+          restore-keys: |
+            resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-
+            resonote-episode-builds-v1-${{ runner.os }}-
 
       - name: Build all (slidev episodes + Astro landing)
         run: pnpm run build

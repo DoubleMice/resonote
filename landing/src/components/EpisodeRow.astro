@@ -45,6 +45,7 @@ const published = displayDate(episode.published_sort || episode.published)
   data-has-article={String(hasArticle)}
   data-category={episode.category || 'other'}
   data-search={searchText}
+  data-search-guest={episode.guest || undefined}
   data-generated-sort={episodeGeneratedTime(episode)}
   data-published-sort={episodePublishedTime(episode)}
   data-sort-key={`${episode.title}:${episode.id}`}

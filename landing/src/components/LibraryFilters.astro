@@ -214,7 +214,7 @@ import { CATEGORIES } from '../lib/data'
   }
 </style>
 
-<script is:inline>
+<script>
   (() => {
     const init = () => {
     const list = document.getElementById('library-list')
@@ -238,6 +238,8 @@ import { CATEGORIES } from '../lib/data'
     items.forEach(item => item.removeAttribute('data-initial-hidden'))
     let limit = pageSize
     let format = 'all'
+    // Server output already uses this order. Sorting is independent of filters.
+    let appliedSort = 'generated'
 
     const readParams = () => {
       const params = new URLSearchParams(window.location.search)
@@ -275,15 +277,20 @@ import { CATEGORIES } from '../lib/data'
 
     const applyFilters = (resetLimit = false, updateUrl = true) => {
       if (resetLimit) limit = pageSize
-      const primarySortAttribute = sortSelect.value === 'published' ? 'data-published-sort' : 'data-generated-sort'
-      items.sort((a, b) => {
-        const primary = Number(b.getAttribute(primarySortAttribute) || 0) - Number(a.getAttribute(primarySortAttribute) || 0)
-        if (primary !== 0) return primary
-        const published = Number(b.getAttribute('data-published-sort') || 0) - Number(a.getAttribute('data-published-sort') || 0)
-        if (published !== 0) return published
-        return (b.getAttribute('data-sort-key') || '').localeCompare(a.getAttribute('data-sort-key') || '')
-      })
-      items.forEach(item => list.append(item))
+      if (appliedSort !== sortSelect.value) {
+        const primarySortAttribute = sortSelect.value === 'published' ? 'data-published-sort' : 'data-generated-sort'
+        items.sort((a, b) => {
+          const primary = Number(b.getAttribute(primarySortAttribute) || 0) - Number(a.getAttribute(primarySortAttribute) || 0)
+          if (primary !== 0) return primary
+          const published = Number(b.getAttribute('data-published-sort') || 0) - Number(a.getAttribute('data-published-sort') || 0)
+          if (published !== 0) return published
+          return (b.getAttribute('data-sort-key') || '').localeCompare(a.getAttribute('data-sort-key') || '')
+        })
+        const ordered = document.createDocumentFragment()
+        items.forEach(item => ordered.append(item))
+        list.append(ordered)
+        appliedSort = sortSelect.value
+      }
       const tokens = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
       const onlyUnread = unread.getAttribute('aria-pressed') === 'true'
       const matches = items.filter(item => {
@@ -297,8 +304,11 @@ import { CATEGORIES } from '../lib/data'
         return formatMatch && categoryMatch && searchMatch && readMatch
       })
 
-      items.forEach(item => { item.hidden = true })
-      matches.slice(0, limit).forEach(item => { item.hidden = false })
+      const visible = new Set(matches.slice(0, limit))
+      items.forEach(item => {
+        const hidden = !visible.has(item)
+        if (item.hidden !== hidden) item.hidden = hidden
+      })
       count.textContent = `${matches.length} 集内容`
       empty.classList.toggle('hidden', matches.length > 0)
 

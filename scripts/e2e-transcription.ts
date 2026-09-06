@@ -1,10 +1,12 @@
 import { Buffer } from 'node:buffer'
-import { existsSync, readFileSync } from 'node:fs'
-import { resolve } from 'node:path'
+import { existsSync, readFileSync, mkdtempSync, rmSync, statSync } from 'node:fs'
+import { resolve, join } from 'node:path'
+import { tmpdir } from 'node:os'
 import { setTimeout as sleep } from 'node:timers/promises'
 import { DashScopeClient } from './lib/dashscope.ts'
 import { MiMoClient } from './lib/mimo.ts'
 import { log } from './lib/log.ts'
+import { downloadAudio, splitAudio } from './lib/transcription-audio.ts'
 
 const ROOT = process.cwd()
 const SAMPLE_AUDIO_URL = 'https://example-files.cnbj1.mi-fds.com/example-files/audio/audio_example.wav'
@@ -96,6 +98,20 @@ async function testDashScope(): Promise<void> {
 
 async function main(): Promise<void> {
   loadLocalEnv()
+  // Optional regression check for an actual failed podcast download. It uses
+  // the production encoder, then the usual small sample checks API access.
+  if (process.env.E2E_AUDIO_URL) {
+    const directory = mkdtempSync(join(tmpdir(), 'resonote-audio-e2e-'))
+    try {
+      const input = join(directory, 'input')
+      const downloaded = await downloadAudio(process.env.E2E_AUDIO_URL, input)
+      const chunks = await splitAudio(input, directory, 900, 18 * 1024 * 1024)
+      const maximum = Math.max(...chunks.map(path => statSync(path).size))
+      log.ok(`Audio preprocess passed: ${downloaded.bytes} bytes → ${chunks.length} chunks; largest ${maximum} bytes`)
+    } finally {
+      rmSync(directory, { recursive: true, force: true })
+    }
+  }
   const selected = provider()
   log.step(`Transcription E2E — provider=${selected}`)
   if (selected === 'dashscope') await testDashScope()

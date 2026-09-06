@@ -17,7 +17,7 @@
 
 import { resolve, join } from 'node:path'
 import {
-  readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, mkdtempSync, rmSync, statSync,
+  readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync, readdirSync, mkdtempSync, rmSync, statSync,
 } from 'node:fs'
 import { spawn } from 'node:child_process'
 import { createHash } from 'node:crypto'
@@ -28,15 +28,14 @@ import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
 import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
 import { MiMoClient } from './lib/mimo.ts'
+import { downloadAudio, splitAudio } from './lib/transcription-audio.ts'
 import { scaffoldEpisodeWorkspace, stageEpisodePresentation } from './lib/episode-workspace.ts'
-import { contentEffortArgs } from './lib/content-effort.ts'
+import { contentCommand, parseContentLog } from './lib/content-runner.ts'
 import { canonicalizeGeneratedMeta, canonicalizeSlidesFrontmatter } from './lib/generated-artifacts.ts'
 import { validateEpisodeArtifacts } from './lib/artifact-validator.ts'
 import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
 
 const ROOT = process.cwd()
-const isWin = process.platform === 'win32'
-const SOURCES_PATH = resolve(ROOT, 'sources.yml')
 const PLANS_DIR = resolve(ROOT, 'data/plans')
 const TRANSCRIPTS_DIR = resolve(ROOT, 'data/transcripts')
 const TRANSCRIPT_CHUNKS_DIR = resolve(TRANSCRIPTS_DIR, '.chunks')
@@ -48,6 +47,8 @@ const RULES_FILE = resolve(PROMPTS_DIR, 'slides-system-rules.md')
 const TASK_FILE = resolve(PROMPTS_DIR, 'slides-task.md')
 
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
+const onlyEpisode = process.argv.find(a => a.startsWith('--episode='))?.split('=')[1]
+const retryFailed = process.argv.includes('--retry-failed')
 const limit = Number(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] ?? 9999)
 const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency='))?.split('=')[1] ?? 1)
 const dryRun = process.argv.includes('--dry-run')
@@ -64,6 +65,7 @@ const STALE_SUBMITTING_MINUTES = Number(process.env.DASHSCOPE_STALE_SUBMITTING_M
 
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
+const transcriptionFailures = new Set<string>()
 const stats = {
   generated: 0,
   failed: 0,
@@ -76,8 +78,7 @@ const stats = {
 
 function loadPlans(): { source: string; path: string; plan: PlanFile }[] {
   if (!existsSync(PLANS_DIR)) {
-    log.err(`${PLANS_DIR} not found — run \`pnpm run plan\` first`)
-    process.exit(1)
+    throw new Error(`${PLANS_DIR} not found — run \`pnpm run plan\` first`)
   }
   const files = readdirSync(PLANS_DIR).filter(f => f.endsWith('.yml'))
   return files.map(f => {
@@ -123,14 +124,6 @@ async function ensureRssTranscript(entry: PlanEntry): Promise<void> {
   const txt = cleanTranscript(raw, transcript.type || transcript.url)
   writeFileSync(txtPath, txt, 'utf-8')
   log.ok(`    cleaned → ${txtPath} (${txt.length} chars)`)
-}
-
-function resolveClaudeBin(): string {
-  if (isWin) {
-    const p = 'C:\\nvm4w\\nodejs\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe'
-    if (existsSync(p)) return p
-  }
-  return 'claude'
 }
 
 function renderTask(entry: PlanEntry, sourceId: string): string {
@@ -288,21 +281,13 @@ function shouldUseDataUri(sourceId: string, audioUrl: string): boolean {
 
 function shouldRetryFailedTranscription(sourceId: string, entry: PlanEntry): boolean {
   if (entry.status !== 'transcribe_failed' || !entry.audio_url) return false
+  if (retryFailed) return true
+  const lastAttempt = Math.max(...[entry.transcript_completed_at, entry.transcript_submitted_at]
+    .map(value => Date.parse(value || '')).filter(Number.isFinite))
+  if (Number.isFinite(lastAttempt) && Date.now() - lastAttempt < 48 * 60 * 60_000) return false
   if (transcriptProvider === 'mimo') return true
   if (!shouldUseDataUri(sourceId, entry.audio_url)) return false
   return isRetriableTranscriptionError(entry.transcript_error)
-}
-
-function inferAudioMimeType(audioUrl: string, contentType: string | null): string {
-  const normalized = contentType?.split(';')[0]?.trim().toLowerCase()
-  if (normalized?.startsWith('audio/')) return normalized
-  const pathname = (() => {
-    try { return new URL(audioUrl).pathname.toLowerCase() } catch { return audioUrl.toLowerCase() }
-  })()
-  if (pathname.endsWith('.m4a') || pathname.endsWith('.mp4')) return 'audio/mp4'
-  if (pathname.endsWith('.wav')) return 'audio/wav'
-  if (pathname.endsWith('.ogg')) return 'audio/ogg'
-  return 'audio/mpeg'
 }
 
 function transcriptionChunkDir(parentKey: string, attemptKey: string): string {
@@ -412,19 +397,6 @@ function isStaleSubmitting(job: TranscriptionJob, now: string): boolean {
   return Date.parse(now) - submitted >= STALE_SUBMITTING_MINUTES * 60_000
 }
 
-async function downloadAudio(audioUrl: string, targetPath: string): Promise<{ bytes: number; mimeType: string }> {
-  const response = await fetch(audioUrl, {
-    headers: {
-      accept: 'audio/*,*/*',
-      'user-agent': 'Resonote transcription fetcher/1.0',
-    },
-  })
-  const body = await response.arrayBuffer()
-  if (!response.ok) throw new Error(`audio download failed: ${response.status} ${Buffer.from(body).toString('utf-8').slice(0, 200)}`)
-  writeFileSync(targetPath, Buffer.from(body))
-  return { bytes: body.byteLength, mimeType: inferAudioMimeType(audioUrl, response.headers.get('content-type')) }
-}
-
 function dataUriFromAudioFile(path: string, mimeType: string): { fileUrl: string; bytes: number } {
   const bytes = statSync(path).size
   if (bytes > DATA_URI_MAX_BYTES) {
@@ -436,41 +408,26 @@ function dataUriFromAudioFile(path: string, mimeType: string): { fileUrl: string
   }
 }
 
-async function prepareTranscriptionAudioInputs(sourceId: string, entry: PlanEntry): Promise<{ fileUrl: string; mode: 'url' | 'data_uri'; bytes?: number; chunkIndex?: number; chunkCount?: number }[]> {
+async function* prepareTranscriptionAudioInputs(sourceId: string, entry: PlanEntry): AsyncGenerator<{ fileUrl: string; mode: 'url' | 'data_uri'; bytes?: number; chunkIndex?: number; chunkCount?: number }> {
   if (!entry.audio_url) throw new Error(`No audio URL for ${entry.id}`)
-  if (!shouldUseDataUri(sourceId, entry.audio_url)) return [{ fileUrl: entry.audio_url, mode: 'url' }]
+  if (!shouldUseDataUri(sourceId, entry.audio_url)) {
+    yield { fileUrl: entry.audio_url, mode: 'url' }
+    return
+  }
 
   const workDir = mkdtempSync(join(tmpdir(), 'resonote-asr-'))
-  log.raw(`  downloading audio for local DashScope upload ${sourceId}/${entry.id}`)
+  log.raw(`  downloading audio for local transcription ${sourceId}/${entry.id}`)
   try {
     const inputPath = join(workDir, 'input')
     const download = await downloadAudio(entry.audio_url, inputPath)
-    const chunkPattern = join(workDir, 'chunk-%03d.mp3')
-    await run('ffmpeg', [
-      '-hide_banner',
-      '-loglevel', 'error',
-      '-y',
-      '-i', inputPath,
-      '-vn',
-      '-ac', '1',
-      '-ar', '16000',
-      '-b:a', '32k',
-      '-f', 'segment',
-      '-segment_time', String(DATA_URI_CHUNK_SECONDS),
-      '-reset_timestamps', '1',
-      chunkPattern,
-    ], { cwd: ROOT })
-    const chunkPaths = readdirSync(workDir)
-      .filter(file => /^chunk-\d+\.mp3$/.test(file))
-      .sort()
-      .map(file => join(workDir, file))
-    if (chunkPaths.length === 0) throw new Error('ffmpeg produced no audio chunks')
-    const inputs = chunkPaths.map((path, index) => {
-      const dataUri = dataUriFromAudioFile(path, 'audio/mpeg')
-      return { ...dataUri, mode: 'data_uri' as const, chunkIndex: index, chunkCount: chunkPaths.length }
-    })
-    log.raw(`  prepared ${inputs.length} data URI chunk(s) from ${(download.bytes / 1024 / 1024).toFixed(1)}MB audio`)
-    return inputs
+    const chunkPaths = await splitAudio(inputPath, workDir, DATA_URI_CHUNK_SECONDS, DATA_URI_MAX_BYTES)
+    log.raw(`  prepared ${chunkPaths.length} chunk(s) from ${(download.bytes / 1024 / 1024).toFixed(1)}MB audio`)
+    // Encode only the current chunk. A multi-hour episode must not keep every
+    // chunk's base64 payload in memory while waiting for the transcription API.
+    for (let index = 0; index < chunkPaths.length; index++) {
+      const dataUri = dataUriFromAudioFile(chunkPaths[index], 'audio/mpeg')
+      yield { ...dataUri, mode: 'data_uri', chunkIndex: index, chunkCount: chunkPaths.length }
+    }
   } finally {
     rmSync(workDir, { recursive: true, force: true })
   }
@@ -489,12 +446,14 @@ function selectFairTranscribeCandidates(
     plan,
     entries: plan.episodes
       .filter(entry => {
+        if (onlyEpisode && entry.id !== onlyEpisode) return false
         const retryFailed = shouldRetryFailedTranscription(source, entry)
         return (entry.status === 'needs_transcript' || retryFailed)
           && isTranscribableAudioUrl(entry.audio_url)
           && (retryFailed || !findJob(jobs, entryKey(source, entry)))
       })
-      .sort((a, b) => (b.published_sort ?? '').localeCompare(a.published_sort ?? '')),
+      .sort((a, b) => Number(a.status === 'transcribe_failed') - Number(b.status === 'transcribe_failed')
+        || (b.published_sort ?? '').localeCompare(a.published_sort ?? '')),
   })).filter(group => group.entries.length > 0)
 
   const selected: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
@@ -505,6 +464,8 @@ function selectFairTranscribeCandidates(
     activeSources.sort((a, b) => {
       const newestA = a.entries[0]!
       const newestB = b.entries[0]!
+      const byRetry = Number(newestA.status === 'transcribe_failed') - Number(newestB.status === 'transcribe_failed')
+      if (byRetry) return byRetry
       return candidateSortKey({ sourceId: b.source, entry: newestB }).localeCompare(candidateSortKey({ sourceId: a.source, entry: newestA }))
     })
     for (const group of activeSources) {
@@ -557,7 +518,10 @@ async function pollTranscriptionJobs(
   let completed = 0
   const entryByKey = new Map<string, { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }>()
   for (const { path, plan } of plans) {
-    for (const entry of plan.episodes) entryByKey.set(entryKey(plan.source, entry), { entry, sourceId: plan.source, plan, planPath: path })
+    for (const entry of plan.episodes) {
+      if (onlyEpisode && entry.id !== onlyEpisode) continue
+      entryByKey.set(entryKey(plan.source, entry), { entry, sourceId: plan.source, plan, planPath: path })
+    }
   }
 
   for (const job of jobsFile.jobs) {
@@ -571,6 +535,7 @@ async function pollTranscriptionJobs(
       job.status = 'failed'
       job.error = `transcription submit did not complete within ${STALE_SUBMITTING_MINUTES} minutes`
       job.updated_at = now
+      transcriptionFailures.add(key)
       item.entry.status = 'transcribe_failed'
       item.entry.transcript_completed_at = now
       item.entry.transcript_error = job.error
@@ -624,6 +589,7 @@ async function pollTranscriptionJobs(
             sibling.updated_at = now
           }
         }
+        transcriptionFailures.add(key)
         item.entry.status = 'transcribe_failed'
         item.entry.transcript_completed_at = now
         item.entry.transcript_error = job.error
@@ -647,6 +613,7 @@ async function pollTranscriptionJobs(
             sibling.updated_at = now
           }
         }
+        transcriptionFailures.add(key)
         item.entry.status = 'transcribe_failed'
         item.entry.transcript_completed_at = now
         item.entry.transcript_error = error.message
@@ -687,9 +654,9 @@ async function submitTranscriptionCandidates(
     savePlan(item.planPath, item.plan)
     saveTranscriptionJobs(jobsFile)
     try {
-      const inputs = await prepareTranscriptionAudioInputs(item.sourceId, entry)
+      const inputs = prepareTranscriptionAudioInputs(item.sourceId, entry)
       let firstTaskId = ''
-      for (const input of inputs) {
+      for await (const input of inputs) {
         const chunkKey = input.chunkCount ? `${attemptKey}:chunk:${input.chunkIndex}` : key
         const jobAttempt = input.chunkCount ? attemptKey : now
         const pendingJob: TranscriptionJob = {
@@ -747,6 +714,7 @@ async function submitTranscriptionCandidates(
           job.updated_at = new Date().toISOString()
         }
       }
+      transcriptionFailures.add(key)
       entry.status = 'transcribe_failed'
       entry.transcript_error = error.message
       savePlan(item.planPath, item.plan)
@@ -780,10 +748,12 @@ async function submitMiMoTranscriptionCandidates(
     savePlan(item.planPath, item.plan)
     saveTranscriptionJobs(jobsFile)
     try {
-      const inputs = await prepareTranscriptionAudioInputs(item.sourceId, entry)
+      const inputs = prepareTranscriptionAudioInputs(item.sourceId, entry)
       let finalized = false
+      let inputCount = 0
       const taskIds: string[] = []
-      for (const input of inputs) {
+      for await (const input of inputs) {
+        inputCount++
         const chunkKey = input.chunkCount ? `${attemptKey}:chunk:${input.chunkIndex}` : key
         const jobAttempt = input.chunkCount ? attemptKey : now
         const pendingJob: TranscriptionJob = {
@@ -826,10 +796,10 @@ async function submitMiMoTranscriptionCandidates(
         }
         saveTranscriptionJobs(jobsFile)
       }
-      if (inputs.length > 1 && !finalized) {
-        const text = combineChunkTranscripts(key, attemptKey, inputs.length)
+      if (inputCount > 1 && !finalized) {
+        const text = combineChunkTranscripts(key, attemptKey, inputCount)
         markEntryTranscribed(item, taskIds.join(','), new Date().toISOString(), text, 'mimo')
-        log.ok(`  transcribed ${item.sourceId}/${entry.id} with MiMo from ${inputs.length} chunks`)
+        log.ok(`  transcribed ${item.sourceId}/${entry.id} with MiMo from ${inputCount} chunks`)
       }
       entry.transcript_error = undefined
       savePlan(item.planPath, item.plan)
@@ -844,6 +814,7 @@ async function submitMiMoTranscriptionCandidates(
           job.updated_at = new Date().toISOString()
         }
       }
+      transcriptionFailures.add(key)
       entry.status = 'transcribe_failed'
       entry.transcript_error = error.message
       entry.transcript_completed_at = new Date().toISOString()
@@ -920,72 +891,45 @@ interface GenerateResult {
   isRateLimit: boolean
 }
 
-function parseTokensFromLog(logPath: string): { inputTokens: number; outputTokens: number; isRateLimit: boolean } {
-  let inputTokens = 0, outputTokens = 0, isRateLimit = false
-  try {
-    const content = readFileSync(logPath, 'utf-8').trim()
-    if (content.includes("hit your limit") || content.includes("rate limit")) {
-      isRateLimit = true
-    }
-    // Parse stream-json: each line is a JSON event, look for result type
-    for (const line of content.split('\n')) {
-      try {
-        const evt = JSON.parse(line)
-        if (evt.type === 'result' && evt.result?.usage) {
-          inputTokens = evt.result.usage.input_tokens ?? 0
-          outputTokens = evt.result.usage.output_tokens ?? 0
-        }
-      } catch {}
-    }
-  } catch {}
-  return { inputTokens, outputTokens, isRateLimit }
-}
-
 function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult> {
-  const claudeBin = resolveClaudeBin()
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
   const taskPrompt = renderTask(entry, sourceId)
   const combinedPrompt = [
+    'Use the available file and shell tools for Read/Write/Edit/Bash/Grep/Glob in the rules below. Do not invoke another generation agent.',
+    `Only edit content under episodes/${entry.id}/. Do not change scripts, configuration, dependencies, plans or other episodes.`,
     '# System Rules',
     systemRules,
     '# Task',
     taskPrompt,
   ].join('\n\n')
+  const invocation = contentCommand(combinedPrompt)
   const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
   mkdirSync(join(ROOT, 'logs'), { recursive: true })
   const fs = require('node:fs')
   const logFd = fs.openSync(logPath, 'w')
   const startTime = Date.now()
 
-  log.raw(`  spawning claude -p for ${entry.id} → logs/${entry.id}.log`)
+  log.raw(`  spawning ${invocation.provider} for ${entry.id} → logs/generate-${entry.id}.log`)
   return new Promise(resolveFn => {
-    const child = spawn(claudeBin, [
-      '-p',
-      '--model', 'haiku',
-      '--verbose',
-      '--output-format', 'stream-json',
-      '--add-dir', EPISODES_DIR,
-      '--add-dir', TRANSCRIPTS_DIR,
-      '--allowedTools', 'Read,Write,Edit,Bash,Grep,Glob',
-      ...contentEffortArgs(),
-      '--permission-mode', 'bypassPermissions',
-      combinedPrompt,
-    ], {
+    const child = spawn(invocation.command, invocation.args, {
       cwd: ROOT,
+      env: invocation.env,
       stdio: ['ignore', logFd, logFd],
       shell: false,
       windowsHide: true,
     })
-    child.on('close', code => {
+    let spawnError: Error | undefined
+    child.once('error', error => { spawnError = error })
+    child.once('close', code => {
       fs.closeSync(logFd)
+      if (spawnError) log.err(`  spawn error: ${spawnError.message}`)
       const durationMs = Date.now() - startTime
-      const { inputTokens, outputTokens, isRateLimit } = parseTokensFromLog(logPath)
-      resolveFn({ ok: code === 0, inputTokens, outputTokens, durationMs, isRateLimit })
-    })
-    child.on('error', err => {
-      log.err(`  spawn error: ${err.message}`)
-      fs.closeSync(logFd)
-      resolveFn({ ok: false, inputTokens: 0, outputTokens: 0, durationMs: Date.now() - startTime, isRateLimit: false })
+      const result = parseContentLog(readFileSync(logPath, 'utf8'))
+      resolveFn({
+        ok: !spawnError && code === 0 && result.completed && !result.isError,
+        inputTokens: result.inputTokens, outputTokens: result.outputTokens,
+        durationMs, isRateLimit: result.isRateLimit,
+      })
     })
   })
 }
@@ -1030,6 +974,7 @@ async function processEntry(
     savePlan(planPath, plan)
   } catch (e: any) {
     log.err(`  download failed: ${e.message}`)
+    stats.failed++
     entry.status = 'failed'
     savePlan(planPath, plan)
     return
@@ -1137,8 +1082,12 @@ async function main() {
   const plans = loadPlans()
   const targetPlans = onlyId ? plans.filter(p => p.source === onlyId) : plans
   if (targetPlans.length === 0) {
+    if (onlyEpisode) throw new Error(`episode ${onlyEpisode} not found in selected plans`)
     log.warn('no matching plans')
     return
+  }
+  if (onlyEpisode && !targetPlans.some(({ plan }) => plan.episodes.some(entry => entry.id === onlyEpisode))) {
+    throw new Error(`episode ${onlyEpisode} not found in selected plans`)
   }
 
   await runAutoTranscription(targetPlans)
@@ -1147,13 +1096,14 @@ async function main() {
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
   for (const { source, path, plan } of targetPlans) {
     for (const entry of plan.episodes) {
+      if (onlyEpisode && entry.id !== onlyEpisode) continue
       if (entry.status !== 'generated' && hasGeneratedEpisode(entry.id)) {
         entry.status = 'generated'
         savePlan(path, plan)
         canonicalizeEpisodeArtifacts(entry, source, 'generated')
         continue
       }
-      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
+      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (retryFailed && entry.status === 'failed') || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
         if (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed')) {
           entry.status = 'pending'
           savePlan(path, plan)
@@ -1203,6 +1153,7 @@ async function main() {
         await processEntry(item.entry, item.sourceId, item.plan, item.planPath)
       } catch (err: any) {
         log.err(`  UNHANDLED in ${item.entry.id}: ${err.stack || err.message}`)
+        stats.failed++
         item.entry.status = 'failed'
         savePlan(item.planPath, item.plan)
       }
@@ -1235,5 +1186,19 @@ async function main() {
 
 main().catch(e => {
   log.err(e.stack || e.message)
-  process.exit(1)
+  process.exitCode = 1
+}).finally(() => {
+  const failed = stats.failed > 0 || transcriptionFailures.size > 0 || stats.skippedRateLimit > 0
+  if (!dryRun && failed) process.exitCode = 1
+  const summary = [
+    '## Content generation',
+    '',
+    `- Generated and validated: ${stats.generated}`,
+    `- Generation/download failures: ${stats.failed}`,
+    `- Transcription failures this run: ${transcriptionFailures.size}`,
+    `- Skipped after rate limit: ${stats.skippedRateLimit}`,
+    `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : stats.generated ? 'generated' : 'no new content'}`,
+    '',
+  ].join('\n')
+  if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary)
 })

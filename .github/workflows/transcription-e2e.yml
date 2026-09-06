@@ -4,6 +4,14 @@ name: Transcription E2E
 # generates content, writes repository files, or deploys the site.
 on:
   workflow_dispatch:
+    inputs:
+      audio_url:
+        description: 'Optional podcast URL to verify download and size-bounded splitting'
+        required: false
+        default: ''
+
+env:
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
 
 permissions:
   contents: read
@@ -18,6 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
+      E2E_AUDIO_URL: ${{ inputs.audio_url }}
       TRANSCRIPT_PROVIDER: ${{ vars.TRANSCRIPTION_PROVIDER || 'mimo' }}
       MIMO_API_KEY: ${{ secrets.TRANSCRIPTION_API_KEY }}
       MIMO_BASE_URL: ${{ vars.TRANSCRIPTION_BASE_URL }}
@@ -39,6 +48,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Install ffmpeg for podcast regression check
+        if: inputs.audio_url != ''
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
 
       - name: Verify configured credentials
         run: |

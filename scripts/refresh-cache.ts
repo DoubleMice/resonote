@@ -10,6 +10,7 @@ import { resolve, join } from 'node:path'
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { log } from './lib/log.ts'
+import { mapConcurrent } from './lib/map-concurrent.ts'
 import { fetchText, parseRssFeed } from './lib/rss.ts'
 import type { SourcesFile } from './lib/types.ts'
 
@@ -58,18 +59,15 @@ async function main() {
     return
   }
 
-  log.info(`refreshing ${targets.length} source(s) sequentially`)
+  const concurrency = Number(process.env.RESONOTE_RSS_CONCURRENCY || 3)
+  log.info(`refreshing ${targets.length} source(s), concurrency=${concurrency}`)
 
-  for (let i = 0; i < targets.length; i++) {
-    const s = targets[i]
+  await mapConcurrent(targets, concurrency, async s => {
     const limit = limitArg ? defaultLimit : ((s as any).cache_limit ?? defaultLimit)
     await fetchOne(s, limit).catch(err => {
       log.err(`${s.id} failed: ${err.message}`)
     })
-    if (i < targets.length - 1) {
-      await new Promise(r => setTimeout(r, 5_000))
-    }
-  }
+  })
 
   log.ok('\nCache refresh complete')
 }

@@ -1,10 +1,12 @@
 import { resolve, join, basename, dirname, sep, posix } from 'node:path'
+import { createHash } from 'node:crypto'
 import {
-  existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync, readFileSync, writeFileSync,
+  existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync, readFileSync, writeFileSync, appendFileSync,
 } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
+import { mapConcurrent } from './lib/map-concurrent.ts'
 import { applyArticleTheme } from './lib/article-theme.ts'
 import type { ArticleNav } from './lib/article-theme.ts'
 import { injectDeckChrome } from './lib/deck-chrome.ts'
@@ -23,6 +25,7 @@ const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
 const BUILD_CACHE_DIR = resolve(ROOT, process.env.RESONOTE_BUILD_CACHE_DIR || '.cache/episode-builds')
 const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
+const ARTICLE_THEME = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
 let episodeCacheHits = 0
 let episodeCacheMisses = 0
 
@@ -33,8 +36,7 @@ function themedArticleHtml(
   homeHref: string,
 ): string {
   const html = readFileSync(articlePath, 'utf-8')
-  const css = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
-  return applyArticleTheme(html, css, nav, faviconHref, homeHref)
+  return applyArticleTheme(html, ARTICLE_THEME, nav, faviconHref, homeHref)
 }
 
 // Ordering for 上一篇/下一篇 navigation — newest first, mirroring the landing
@@ -236,13 +238,31 @@ async function buildLanding(): Promise<string> {
 }
 
 async function main() {
-  log.step('Build all — assembling dist/')
-
   // Site base path — matches landing/astro.config.mjs `base`.
   // Local:    RESONOTE_BASE unset → /
   // CI/prod:  RESONOTE_BASE=/ → https://resonote.doublemice.top/
   const SITE_BASE = process.env.RESONOTE_BASE || '/'
   const SITE_FAVICON = `${SITE_BASE.replace(/\/?$/, '/')}favicon.svg`
+
+  // Actions keys use the same inputs as individual cache entries. Metadata,
+  // articles and temporary audit outputs must not cause another cache upload.
+  if (process.argv.includes('--cache-key')) {
+    const hash = createHash('sha256')
+    for (const id of generatedEpisodeIds()) {
+      hash.update(id + '\0' + episodeBuildFingerprint({
+        rootDir: ROOT,
+        episodeDir: join(EPISODES_DIR, id),
+        templatesDir: TEMPLATES_DIR,
+        base: `${SITE_BASE}episodes/${id}/`,
+      }) + '\0')
+    }
+    const key = hash.digest('hex')
+    if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `key=${key}\n`)
+    else console.log(key)
+    return
+  }
+  const startedAt = performance.now()
+  log.step('Build all — assembling dist/')
 
   // Collect generated episodes from durable per-episode artifacts. Plan files
   // are an execution queue and can be refreshed independently.
@@ -281,11 +301,13 @@ async function main() {
 
   // Build all episodes
   log.step('Building episodes')
-  const episodeDists: { id: string; path: string; articlePath: string | null }[] = []
-  for (const ep of episodes) {
+  const concurrency = Number(process.env.RESONOTE_BUILD_CONCURRENCY || 2)
+  log.info(`episode build concurrency: ${concurrency}`)
+  const episodeDists = await mapConcurrent(episodes, concurrency, async ep => {
     const distPath = await buildEpisode(ep.id, ep.base)
-    if (distPath) episodeDists.push({ id: ep.id, path: distPath, articlePath: ep.articlePath })
-  }
+    if (!distPath) throw new Error(`missing episode build: ${ep.id}`)
+    return { id: ep.id, path: distPath, articlePath: ep.articlePath }
+  })
   if (episodeDists.length !== episodes.length) {
     throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
   }
@@ -370,6 +392,14 @@ async function main() {
 
   log.ok(`\nFinal dist assembled at ${DIST_DIR}`)
   log.info('serve locally with:  npx serve dist')
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    appendFileSync(process.env.GITHUB_STEP_SUMMARY, [
+      '## Static build', '',
+      `- Episodes: ${episodeDists.length}; articles: ${articles.length}`,
+      `- Cache: ${episodeCacheHits} hits, ${episodeCacheMisses} rebuilt (concurrency ${concurrency})`,
+      `- Build and assembly: ${((performance.now() - startedAt) / 1000).toFixed(1)} seconds`, '',
+    ].join('\n'))
+  }
 }
 
 main().catch(e => {

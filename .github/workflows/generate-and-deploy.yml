@@ -9,6 +9,14 @@ on:
         description: 'Source id to generate; empty means all sources'
         required: false
         default: ''
+      episode:
+        description: 'Optional exact episode id'
+        required: false
+        default: ''
+      retry_failed:
+        description: 'Retry failed generation and bypass transcription cooldown'
+        type: boolean
+        default: false
       limit:
         description: 'Maximum episodes to generate'
         required: true
@@ -27,8 +35,12 @@ on:
         default: ''
 
 env:
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
   RESONOTE_BASE: /
   RESONOTE_SITE: https://resonote.doublemice.top
+  CONTENT_PROVIDER: ${{ vars.CONTENT_PROVIDER || 'auto' }}
+  CONTENT_BASE_URL: ${{ vars.CONTENT_BASE_URL || 'https://api.xiaomimimo.com/anthropic' }}
+  CONTENT_MODEL_NAME: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ANTHROPIC_BASE_URL: ${{ vars.CONTENT_BASE_URL || 'https://api.xiaomimimo.com/anthropic' }}
   ANTHROPIC_DEFAULT_HAIKU_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
   ANTHROPIC_DEFAULT_OPUS_MODEL: ${{ vars.CONTENT_MODEL_NAME || 'mimo-v2.5' }}
@@ -77,26 +89,38 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Restore episode build cache
-        uses: actions/cache@v5
-        with:
-          path: .cache/episode-builds
-          key: resonote-episode-builds-v1-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            resonote-episode-builds-v1-${{ runner.os }}-
+      - name: Run unit tests
+        run: pnpm test
+
+      - name: Select content CLI
+        id: content-cli
+        run: pnpm exec tsx -e 'import { contentProvider } from "./scripts/lib/content-runner.ts"; import { appendFileSync } from "node:fs"; appendFileSync(process.env.GITHUB_OUTPUT!, `provider=${contentProvider()}\n`)'
+
+      - name: Install Codex CLI
+        if: steps.content-cli.outputs.provider == 'codex'
+        run: npm install -g @openai/codex@0.153.4
 
       - name: Install Claude Code CLI
+        if: steps.content-cli.outputs.provider == 'claude'
         run: npm install -g @anthropic-ai/claude-code
 
+      - name: Cache Playwright browser
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-shell-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}
+
       - name: Install playwright-chromium browser binaries
-        run: pnpm exec playwright install --with-deps chromium
+        run: pnpm exec playwright install --with-deps --only-shell chromium
 
       - name: Install ffmpeg
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
 
-      - name: Verify MiMo content generation token
+      - name: Verify content generation token
         env:
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.CONTENT_API_KEY }}
         run: |
@@ -105,9 +129,6 @@ jobs:
             exit 1
           fi
 
-      - name: Run unit tests
-        run: pnpm test
-
       - name: Refresh RSS cache
         run: pnpm run cache:refresh
 
@@ -115,7 +136,17 @@ jobs:
         run: pnpm run plan
 
       - name: Generate episodes
+        id: generation
+        continue-on-error: true
         env:
+          GENERATE_LIMIT: ${{ inputs.limit || '4' }}
+          TRANSCRIBE_LIMIT: ${{ inputs.transcribe_limit || '3' }}
+          TRANSCRIBE_WAIT_MINUTES: ${{ inputs.transcribe_wait_minutes || '2' }}
+          GENERATE_SOURCE: ${{ inputs.source }}
+          GENERATE_EPISODE: ${{ inputs.episode }}
+          RETRY_FAILED: ${{ inputs.retry_failed }}
+          CONTENT_API_KEY: ${{ secrets.CONTENT_API_KEY }}
+          GENERATE_CATEGORY: ${{ inputs.category }}
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.CONTENT_API_KEY }}
           TRANSCRIPT_PROVIDER: ${{ vars.TRANSCRIPTION_PROVIDER }}
           MIMO_API_KEY: ${{ secrets.TRANSCRIPTION_API_KEY }}
@@ -125,13 +156,19 @@ jobs:
           DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
         run: |
           set -euo pipefail
-          limit="${{ inputs.limit || '4' }}"
-          transcribe_limit="${{ inputs.transcribe_limit || '3' }}"
-          transcribe_wait_minutes="${{ inputs.transcribe_wait_minutes || '2' }}"
-          source="${{ inputs.source || '' }}"
-          category="${{ inputs.category || '' }}"
+          limit="${GENERATE_LIMIT}"
+          transcribe_limit="${TRANSCRIBE_LIMIT}"
+          transcribe_wait_minutes="${TRANSCRIBE_WAIT_MINUTES}"
+          source="${GENERATE_SOURCE}"
+          category="${GENERATE_CATEGORY}"
           provider="${TRANSCRIPT_PROVIDER:-mimo}"
           args=(--limit=${limit})
+          if [ -n "${GENERATE_EPISODE}" ]; then
+            args+=(--episode="${GENERATE_EPISODE}")
+          fi
+          if [ "${RETRY_FAILED}" = "true" ]; then
+            args+=(--retry-failed)
+          fi
           if [ "${provider}" = "mimo" ] && [ -n "${MIMO_API_KEY}" ]; then
             args+=(--auto-transcribe --transcribe-limit=${transcribe_limit} --transcribe-wait-minutes=${transcribe_wait_minutes})
           elif [ "${provider}" = "dashscope" ] && [ -n "${DASHSCOPE_API_KEY}" ]; then
@@ -147,11 +184,41 @@ jobs:
           fi
           pnpm run plan:run -- "${args[@]}"
 
+      - name: Save progress after generation failure
+        if: ${{ !cancelled() && steps.generation.outcome == 'failure' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/plans data/transcripts data/transcription-jobs.yml episodes
+          if ! git diff --staged --quiet; then
+            git commit -m "auto: save incomplete generation progress"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Require successful generation before building
+        if: ${{ !cancelled() && steps.generation.outcome == 'failure' }}
+        run: |
+          echo "::error::Content generation or transcription failed. See the generation summary; deployment stopped."
+          exit 1
+
       - name: Normalize generated metadata
         run: pnpm run normalize:meta -- --fix
 
       - name: Validate generated artifacts
         run: pnpm run validate:artifacts
+
+      - name: Compute episode build cache key
+        id: episode-cache
+        run: pnpm run build -- --cache-key
+
+      - name: Restore episode build cache
+        uses: actions/cache@v5
+        with:
+          path: .cache/episode-builds
+          key: resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-${{ steps.episode-cache.outputs.key }}
+          restore-keys: |
+            resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-
+            resonote-episode-builds-v1-${{ runner.os }}-
 
       - name: Build all
         run: pnpm run build
@@ -169,7 +236,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/plans data/transcripts data/transcription-jobs.yml episodes README.md sources.yml package.json pnpm-lock.yaml .github/workflows
+          git add data/plans data/transcripts data/transcription-jobs.yml episodes
           if git diff --staged --quiet; then
             echo "No generated changes to commit"
           else

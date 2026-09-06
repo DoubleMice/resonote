@@ -115,6 +115,42 @@ async function auditDesktop(page: Page) {
   await search.press('Escape')
   assert.ok(await page.locator('#search-results').isHidden(), 'Escape must close search results')
 
+  // Filtering must not detach/reinsert the archive on every keystroke.
+  const mutations = await page.evaluate(() => {
+    const list = document.getElementById('library-list')!
+    const input = document.getElementById('library-search') as HTMLInputElement
+    const observer = new MutationObserver(() => {})
+    observer.observe(list, { childList: true })
+    for (const query of ['AI', 'no-such-resonote-episode', '']) {
+      input.value = query
+      input.dispatchEvent(new Event('input', { bubbles: true }))
+    }
+    const count = observer.takeRecords().length
+    observer.disconnect()
+    return count
+  })
+  assert.equal(mutations, 0, 'typing must preserve archive nodes and order')
+
+  const librarySearch = page.locator('#library-search')
+  await librarySearch.fill('no-such-resonote-episode')
+  assert.equal(await archiveItems.filter({ visible: true }).count(), 0)
+  assert.ok(await page.locator('#library-empty').isVisible())
+  await page.locator('#library-reset').click()
+  await page.locator('#library-sort').selectOption('published')
+  const dates = await archiveItems.evaluateAll(items => items.map(item => Number(item.getAttribute('data-published-sort'))))
+  assert.deepEqual(dates, [...dates].sort((a, b) => b - a), 'publication sorting must reorder all entries')
+  await page.locator('#library-reset').click()
+  if (await archiveItems.count() > 36) {
+    await page.locator('#library-more').click()
+    assert.equal(await archiveItems.filter({ visible: true }).count(), Math.min(72, await archiveItems.count()))
+  }
+  const first = archiveItems.first()
+  await first.locator('[data-read-toggle]').click()
+  await page.locator('#library-unread').click()
+  assert.ok(await first.isHidden(), 'unread filtering must respond to read-state changes')
+  await page.locator('#library-reset').click()
+  await first.locator('[data-read-toggle]').click()
+
   await assertNoHorizontalOverflow(page, 'desktop')
   assert.deepEqual(runtimeErrors, [], `home page runtime errors:\n${runtimeErrors.join('\n')}`)
   await page.evaluate(() => window.scrollTo(0, 0))
