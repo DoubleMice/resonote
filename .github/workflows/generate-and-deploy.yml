@@ -107,7 +107,7 @@ jobs:
       - name: Verify Codex content sandbox
         if: steps.content-cli.outputs.provider == 'codex'
         run: |
-          codex sandbox -c 'sandbox_mode="workspace-write"' -c 'sandbox_workspace_write.network_access=true' -- \
+          codex sandbox -c 'sandbox_mode="workspace-write"' -c 'sandbox_workspace_write.network_access=true' -c 'features.use_legacy_landlock=true' -- \
             node -e 'const server = require("node:net").createServer(); server.on("error", error => { console.error(error); process.exitCode = 1 }); server.listen(0, "127.0.0.1", () => { console.log("Content sandbox can start the Slidev audit server"); server.close() })'
 
       - name: Cache Playwright browser
