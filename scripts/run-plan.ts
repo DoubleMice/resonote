@@ -1067,10 +1067,10 @@ async function processEntry(
     log.err('  ⚠ Rate limit hit — stopping queue, remaining entries stay pending')
   }
 
-  if (!result.ok && !result.isRateLimit) {
+  if (entry.status !== 'generated' && !result.isRateLimit) {
     const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
     try {
-      const tail = readFileSync(logPath, 'utf-8').trim().split('\n').slice(-20).join('\n')
+      const tail = readFileSync(logPath, 'utf-8').trim().split('\n').slice(-20).join('\n').slice(-12_000)
       log.err(`  ── log tail ──\n${tail}\n  ── end ──`)
     } catch {}
   }
