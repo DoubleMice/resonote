@@ -1,0 +1,50 @@
+episode_id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '“催发货”'
+    transcript_excerpt: '催发货'
+  - artifact: slides.md
+    artifact_excerpt: '“第一个，它是要有AI的锐度。第二个是要有行业的深度。第三个它是有数据的宽度。”'
+    transcript_excerpt: '第一个，它是要有AI的锐度。第二个是要有行业的深度。第三个它是有数据的宽度。'
+  - artifact: slides.md
+    artifact_excerpt: '“原来是交付功能，变成一个交付一个业务效果。”'
+    transcript_excerpt: '原来是交付功能，变成一个交付一个业务效果。'
+  - artifact: slides.md
+    artifact_excerpt: '“一个催发货的环节，最后客服售后这个环节大概有260多步。”'
+    transcript_excerpt: '一个催发货的环节，最后客服售后这个环节大概有260多步。'
+  - artifact: slides.md
+    artifact_excerpt: '“其实它是我们新雇一个员工。”'
+    transcript_excerpt: '其实它是我们新雇一个员工。'
+  - artifact: slides.md
+    artifact_excerpt: '“第一个是学习，就是数据采集。第二个呢就是建模。第三个呢就是执行。第四个呢就是迭代。”'
+    transcript_excerpt: '第一个是学习，就是数据采集。第二个呢就是建模。第三个呢就是执行。第四个呢就是迭代。'
+  - artifact: slides.md
+    artifact_excerpt: '“交付完一个Agent或者交付完一个系统才刚刚开始”'
+    transcript_excerpt: '交付完一个Agent或者交付完一个系统才刚刚开始'
+  - artifact: slides.md
+    artifact_excerpt: '“没看到之前我不知道我要什么，但是这个就是我想要的。”'
+    transcript_excerpt: '没看到之前我不知道我要什么，但是这个就是我想要的。'
+  - artifact: slides.md
+    artifact_excerpt: '“能不能算得过来账。”'
+    transcript_excerpt: '能不能算得过来账。'
+  - artifact: slides.md
+    artifact_excerpt: '“原来都在讲怎么用，能不能用，现在直接跳过，什么时候开始帮我用上。”'
+    transcript_excerpt: '原来都在讲怎么用，能不能用，现在直接跳过，什么时候开始帮我用上。'
+  - artifact: article.html
+    artifact_excerpt: '“第一个，它是要有AI的锐度。第二个是要有行业的深度。第三个它是有数据的宽度。”'
+    transcript_excerpt: '第一个，它是要有AI的锐度。第二个是要有行业的深度。第三个它是有数据的宽度。'
+  - artifact: article.html
+    artifact_excerpt: '“原来是交付功能，变成一个交付一个业务效果。”'
+    transcript_excerpt: '原来是交付功能，变成一个交付一个业务效果。'
+  - artifact: article.html
+    artifact_excerpt: '“一个催发货的环节，最后客服售后这个环节大概有260多步。”'
+    transcript_excerpt: '一个催发货的环节，最后客服售后这个环节大概有260多步。'
+  - artifact: article.html
+    artifact_excerpt: '“其实它是我们新雇一个员工。”'
+    transcript_excerpt: '其实它是我们新雇一个员工。'
+  - artifact: article.html
+    artifact_excerpt: '“第一个是学习，就是数据采集。第二个呢就是建模。第三个呢就是执行。第四个呢就是迭代。”'
+    transcript_excerpt: '第一个是学习，就是数据采集。第二个呢就是建模。第三个呢就是执行。第四个呢就是迭代。'
+  - artifact: article.html
+    artifact_excerpt: '“原来都在讲怎么用，能不能用，现在直接跳过，什么时候开始帮我用上。”'
+    transcript_excerpt: '原来都在讲怎么用，能不能用，现在直接跳过，什么时候开始帮我用上。'

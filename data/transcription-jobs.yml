@@ -20789,3 +20789,326 @@ jobs:
     submitted_at: 2026-09-05T18:12:55.041Z
     updated_at: 2026-09-05T18:16:14.024Z
     completed_at: 2026-09-05T18:16:14.024Z
+  - key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z:chunk:0
+    parent_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    attempt_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z
+    provider: mimo
+    id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
+    source: latepost
+    title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    task_id: 9c0b213d-47dd-461d-bdb2-8eb45e99a2cd_8c6532506db240e890833ccb1dac3988
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:10:40.017Z
+    updated_at: 2026-09-06T18:11:59.165Z
+    completed_at: 2026-09-06T18:11:59.165Z
+  - key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z:chunk:1
+    parent_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    attempt_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z
+    provider: mimo
+    id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
+    source: latepost
+    title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    task_id: 01f98f9a-04c5-44a7-9449-96826f73252b_0a07a3a9f1f34562a18f03a5f2976388
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:10:40.017Z
+    updated_at: 2026-09-06T18:13:19.996Z
+    completed_at: 2026-09-06T18:13:19.996Z
+  - key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z:chunk:2
+    parent_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    attempt_key: latepost:4b736bf1-c0ad-43c7-9b76-a83e80bdefb7:20260406:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3:mimo:2026-09-06T18:10:40.017Z
+    provider: mimo
+    id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
+    source: latepost
+    title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
+    task_id: f0a91f22-580a-405f-84fb-160a2a7c45e2_452df42469c74272a8c7666a5909b082
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:10:40.017Z
+    updated_at: 2026-09-06T18:13:25.824Z
+    completed_at: 2026-09-06T18:13:25.824Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:0
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 2c1671af-967a-4890-a8e7-c8e11a031cb2_933550ea95fc45518cc6b2f993b32e7f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:15:25.789Z
+    completed_at: 2026-09-06T18:15:25.789Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:1
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: e258dbf4-9ce5-4c25-a341-4c2147e3431f_2001a6c94c22413199442d23f6bd6180
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:16:05.885Z
+    completed_at: 2026-09-06T18:16:05.885Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:2
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 9a126c86-dbd7-4ca5-8419-f335dfcb93f7_9fb1870703f74806be90299dd3ee8859
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:17:14.304Z
+    completed_at: 2026-09-06T18:17:14.304Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:3
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 92548191-0c8a-4b27-8a2f-90d309c0d659_58812a3188374cddbcaaec17336a7105
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:17:51.599Z
+    completed_at: 2026-09-06T18:17:51.599Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:4
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 2930b3fd-80cd-4715-98db-841d67c59ab7_bfb260e126d24ec984771597114b7b74
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:18:32.862Z
+    completed_at: 2026-09-06T18:18:32.862Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:5
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 438853ae-11d1-4bf4-bfc3-058d37535783_4890499f2d68449b8bba0a39e9d62ea7
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:19:16.410Z
+    completed_at: 2026-09-06T18:19:16.410Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:6
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 34ccebaf-815e-43c9-aae6-6812973e442b_b2e61017f0b242749b6a01b151222add
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:20:35.507Z
+    completed_at: 2026-09-06T18:20:35.507Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:7
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 4e824032-783c-4532-a47a-02f0a016a67c_815a6efd05094ce4a2777cd41b84a480
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:21:17.192Z
+    completed_at: 2026-09-06T18:21:17.192Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:8
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 7756a4d1-f13f-4a9b-9c84-ae07d7d4fb36_ec5e7303885e436caa45687c5f2152e5
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:23:23.073Z
+    completed_at: 2026-09-06T18:23:23.073Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:9
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: mimo:p-6474:9:2026-09-06T18:13:26.121Z
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:23:42.563Z
+    completed_at: 2026-09-06T18:23:42.563Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:10
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 4930a2c9-4314-4ff5-bba6-29cd6751fe77_582c8105f3a9446586cb5c62ab7a0589
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:24:26.345Z
+    completed_at: 2026-09-06T18:24:26.345Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:11
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 1c4e2ca8-51e3-439e-b4f4-541bb47994ed_5ae1b92c2d604418bf9225c116fea11e
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:25:06.988Z
+    completed_at: 2026-09-06T18:25:06.988Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:12
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: 6f961e48-7275-469b-8aa3-0f497864d66f_a89bb6f731c4424ab73e6f7f7b943e15
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:26:02.546Z
+    completed_at: 2026-09-06T18:26:02.546Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:13
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: c35d4a15-d8b3-424c-aa96-3c41cc31354b_9d6345e8aa824aab8fbad468020804b1
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:26:47.411Z
+    completed_at: 2026-09-06T18:26:47.411Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:14
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: mimo:p-6474:14:2026-09-06T18:13:26.121Z
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:27:07.972Z
+    completed_at: 2026-09-06T18:27:07.972Z
+  - key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z:chunk:15
+    parent_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    attempt_key: lex-fridman:p-6474:20260728:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3:mimo:2026-09-06T18:13:26.121Z
+    provider: mimo
+    id: p-6474
+    source: lex-fridman
+    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
+    task_id: aea705ff-9353-4289-90e4-303a76a294dc_c64fcafd27764e4f97972f9fd0da0c9d
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-06T18:13:26.121Z
+    updated_at: 2026-09-06T18:27:25.681Z
+    completed_at: 2026-09-06T18:27:25.681Z

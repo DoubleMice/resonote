@@ -1,5 +1,5 @@
 source: flirting-with-models
-refreshed_at: 2026-09-06T12:41:35.665Z
+refreshed_at: 2026-09-06T18:10:38.722Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -39,9 +39,9 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-08-02T18:25:33.278Z
-    transcript_completed_at: 2026-08-02T18:25:33.614Z
-    transcript_error: "audio download failed: 404 Missing redirect URL"
+    transcript_submitted_at: 2026-09-06T18:27:26.016Z
+    transcript_completed_at: 2026-09-06T18:27:29.348Z
+    transcript_error: "audio download failed: 404 Not Found"
   - id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
     guid: e6f25431-c85a-4181-8fd8-a099eb4da7f7
     title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"

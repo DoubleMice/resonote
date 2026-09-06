@@ -1,0 +1,35 @@
+title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+guest: 黄晓煌
+guest_role: 群核科技联合创始人兼董事长
+tags:
+  - ai-products
+  - ai-research
+  - hardware
+  - chips
+  - design
+  - startup
+  - interview
+  - founder
+  - technical
+  - strategic
+summary: >
+  黄晓煌回顾群核从 2011 年把 GPU 做到云上，到用酷家乐找到设计师和装修公司的付费场景，再到大厂竞争、行业周期与多次业务转向。访谈的后半段聚焦空间智能，解释
+  SpatialLM、SpatialGen、真实与合成数据，以及群核为何选择三维模型作为连接大语言模型和物理世界的路线。
+core_ideas:
+  - 群核早期先做 GPU 渲染原型，再由用户留存和付费结果筛选出酷家乐的核心场景。
+  - 面对大厂挖人和行业周期，群核把工业软件、柔性生产与出海当作保持现金流的替代路径。
+  - 大模型时代需要同时积累模型算法、数据工程和 GPU 基础设施，单靠一层软件界面难以形成壁垒。
+  - 空间智能的底座包括物理正确渲染、SpatialLM 和 SpatialGen，上层同时服务人类产品与机器产品。
+  - 黄晓煌把三维生成与视频生成视为两条不同路线，并把尺寸、位置、遮挡和交互看作三维模型的关键价值。
+id: aedaf6bd-54e1-41d8-ab81-0184570cefc8
+source: latepost
+source_title: "160: 群核IPO后与黄晓煌聊这15年：被嫌弃的GPU、冠军酷家乐、空间智能、六小龙"
+published: 2026-04
+published_sort: "20260417"
+duration: 1h40m
+url: https://podcast.latepost.com/160
+status: generated
+article_path: episodes/aedaf6bd-54e1-41d8-ab81-0184570cefc8/article.html
+base: /episodes/aedaf6bd-54e1-41d8-ab81-0184570cefc8/
+thumbnail: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/a/aedaf6bd-54e1-41d8-ab81-0184570cefc8/cover.jpg?v=1
+generated_at: 2026-09-06T20:53:03.169Z

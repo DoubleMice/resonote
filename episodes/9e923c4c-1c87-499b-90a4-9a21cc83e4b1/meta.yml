@@ -1,0 +1,31 @@
+title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊彭新宇聊聊中国式FDE
+guest: 彭新宇
+guest_role: 阿里巴巴集团副总裁、瓴羊 CEO
+tags:
+  - ai-products
+  - productivity
+  - product-management
+  - interview
+  - technical
+  - strategic
+summary: >
+  彭新宇把 FDE 放回企业现场来讨论：一个催发货电话可能要穿过 260 多步流程，Agent 能否落地取决于业务目标、企业数据和岗位标杆是否被连起来。对话还拆解了数字员工的一周上岗流程、FDE
+  的组织分工、坐席费与效果费，以及企业如何在模型能力、数据治理和业务结果之间算清楚账。
+core_ideas:
+  - FDE 的价值来自 AI 锐度、行业深度和数据宽度的叠加，职位名称本身不会带来溢价。
+  - 企业级 Agent 要先选择耗人、耗钱或耗时且结果可度量的场景，再把系统、数据和权限接通。
+  - 数字员工的实施包含岗位学习、建模、执行和迭代，Agent 交付后还要持续评测和调教。
+  - 中国式 FDE 往往要从数据地基开始，企业内部的 BA、AI 架构师和岗位专家需要组成协作组织。
+  - 企业可以按坐席或按效果付费，但最终都要用业务结果验证投入是否值得。
+id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
+source: sv101
+source_title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
+published: 2026-08
+published_sort: "20260811"
+duration: 1h4m
+url: https://sv101.fireside.fm/261
+status: generated
+article_path: episodes/9e923c4c-1c87-499b-90a4-9a21cc83e4b1/article.html
+base: /episodes/9e923c4c-1c87-499b-90a4-9a21cc83e4b1/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+generated_at: 2026-09-06T19:00:15.547Z

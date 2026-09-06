@@ -1,0 +1,37 @@
+title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
+guest: 唐文斌
+guest_role: 原力灵机（0xrobot）联合创始人兼 CEO
+tags:
+  - ai-products
+  - robotics
+  - hardware
+  - startup
+  - ai-research
+  - product-management
+  - interview
+  - founder
+  - deep-dive
+  - technical
+  - strategic
+summary: >
+  唐文斌回顾了从信息学竞赛、旷视创立到物流机器人业务的十五年经历，解释技术团队如何从体感游戏转向
+  Face++、身份认证和仓库机器人。他也分享了原力灵机对具身原生模型、真实使用数据、场景闭环和模块化硬件的判断，并把新公司的阶段目标落在一个可持续运行的真实场景上。
+core_ideas:
+  - 竞赛训练带来的即时反馈和解题习惯，后来成为唐文斌做工程与创业的基本工作方式。
+  - 技术差异只有在真实使用形成数据飞轮后，才可能转化为长期业务门槛。
+  - To B 产品要让客户算清价值，并把非标项目拆成可配置、可复制的产品模块。
+  - 具身模型需要把互联网、自动驾驶和机器人数据放进原生训练路径，再连接 VLA 的动作能力。
+  - 机器人落地要同时满足任务闭环和经济账清楚，物流是可以用人工接管兜底的起点。
+  - 原力灵机把模型泛化和真实场景的持续使用放在同一条数据飞轮上。
+id: b573ae95-f9b3-4428-94e7-79d33418400b
+source: latepost
+source_title: "161: 原力灵机唐文斌：中国最早的 AI 创业者和他的具身新旅程"
+published: 2026-04
+published_sort: "20260423"
+duration: 2h10m
+url: https://podcast.latepost.com/161
+status: generated
+article_path: episodes/b573ae95-f9b3-4428-94e7-79d33418400b/article.html
+base: /episodes/b573ae95-f9b3-4428-94e7-79d33418400b/
+thumbnail: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/b/b573ae95-f9b3-4428-94e7-79d33418400b/cover.jpg?v=1
+generated_at: 2026-09-06T20:19:20.053Z

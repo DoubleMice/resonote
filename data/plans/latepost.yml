@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-06T12:41:35.691Z
+refreshed_at: 2026-09-06T18:10:38.758Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 14
-done: 0
-pending: 0
-needs_transcript: 11
+total_candidates: 13
+done: 2
+pending: 1
+needs_transcript: 10
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -122,7 +122,7 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 4d52dbf2-551c-4c61-969c-645c02b61c95_b2d84f1015c94d22963ec535b9eccb5a,b8cd32dd-1d24-4234-8f8e-4437c5717221_944dcebf2e0c415f91100ec3adfa9d8a,829d81fe-d2ff-4195-acb6-fa46d481ce91_c2d0ed401e7e4b3a935d03380c89c14c,e34bf438-43e2-4099-b1c7-6e69ab7ea049_19ecbf7f003645e2b1fb76755c9b265e,4f61975b-14c9-4985-81b5-67a5261ed636_e6cc9e5d2e42454fba78c2fea43b91ab,2edcb941-f1a3-4b4c-a271-cd6668aeb0cf_d02bae10214c475b8bc0bf35d4a68b95,4be7780f-9758-4e2c-ac20-5130cbbe2101_a79eafa690aa464c921d3aa098b2ff75,ab6a0887-5952-4991-ba66-0e16d759a94f_fe4f917c43f04a0380b02c23531325bc,af705965-8ec0-46fb-8765-d0ddfbeac03c_9848d9ac463042bfa481cddc324f6e2c
@@ -297,130 +297,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 5a47ecf6-f286-41c2-807b-47ccfc3ba876_189cf830ae294ed5a761294deeb77e0f,f60c279d-6299-45c7-a3d2-fa647badea42_ea9c9f9321504fa5955101a3e9791c54,0e08aa49-a20f-4ac3-97a5-165b09784860_cbcf1cd3604941c8b924403459a8a584,9cb05596-93c7-4941-80d5-4efdbe8bfe5f_5ba5793ef63d43ad961c8d2e260bda4b,7e9d22df-ac3c-402a-9eed-1e37eaa2edd9_22ff7bad5d624857902249feccb0d442,6538b579-9ac4-4c9f-9049-acb54dc61810_eb0babaec081487bbc8f2b89ac092bde,2c30fa45-c542-4208-b303-3ba8a6933fcb_26aaba6fcb0b452da426d4dde48d4ade
     transcript_submitted_at: 2026-09-04T18:14:49.361Z
     transcript_completed_at: 2026-09-04T18:22:50.966Z
-  - id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
-    guid: f0fd718b-1219-4c04-bad3-94d22b65ff7f
-    title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
-    duration: 3904
-    published: Wed, 08 Apr 2026 06:30:00 +0800
-    published_sort: "20260407"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/159
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/f0fd718b-1219-4c04-bad3-94d22b65ff7f.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      「马斯克不仅要成为太空经济参与者，也想成为规则制定方。」
-
-
-      这期节目邀请了 Fusion Fund 的创始合伙人张璐，她是 SpaceX 的投资人，而马斯克刚刚在 3 月底发布了一个大计划——Terafab，要联合特斯拉、SpaceX 和
-      xAI，自建史上最大芯片厂，掌握从设计到制造到部署应用的全栈产能。
-
-
-      其中最科幻的部分，是马斯克希望把 Terafab 80% 的算力部署到太空，建太空数据中心。
-
-
-      Terafab 的目标年产耗电量是惊人的  1TW，是目前全球 AI 算力年耗电量（40~50 GW，1 GW 是 100 万度电，即 100 万 kW）的约 20 倍。
-
-
-      从马斯克的雄心壮志出发，本期聊了太空经济的创业机会和 AI 基础设施领域的变化与机会机会，尤其是英伟达在 GTC 上展现的最新规划。
-
-
-      本期节目的图文版也已经发布:马斯克 Terafab 太空算力、英伟达重拾 CPU，与 Fusion Fund 张璐聊 AI 算力新趋势 | 晚点播客
-
-
-      本期嘉宾
-
-
-      张璐，Fusion Fund 创始合伙人
-
-
-      本期主播
-
-
-      程曼祺，晚点科技报道负责人
-
-
-      时间线：
-
-
-      Terafab：1 TW 的超级算力计划
-
-
-      02:29 Terafab 的多重驱动力： 需求、机器人原生、SpaceX 上市、更少监管
-
-
-      06:46 对地服务有延迟，但太空应用本身也需要算力
-
-
-      17:57 马斯克的带动效应： 太空算力相关创业机会
-
-
-      AI 算力层与 Infra 层新趋势
-
-
-      22:48 英伟达 GTC 发布： 统一平台，异构芯片
-
-
-      30:00 LPU 和 CPU 背后： 是推理（使用模型）和 Agent 需求提升
-
-
-      41:09 xAI 动荡： 招人诚、开人快，“马斯克是一个迷人的暴君”
-
-
-      45:13 Google TPU，足以挑战英伟达 GPU 吗？
-
-
-      企业级 AI
-
-
-      48:54 掌握预算的大企业 CIO/CTO 在想什么？
-
-
-      52:15 看好医疗行业、金融行业 AI 应用
-
-
-      55:14 大企业收购 AI 初创企业带来退出，又催生更多连续创业者
-
-
-      01:02:13 连点成线
-
-
-      剪辑：甜食
-
-
-      相关链接：
-
-
-      115 期：华为发布超节点，如何搅动 AI 算力市场？与魔形智能徐凌杰聊芯片层新变化
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 054669bf-9662-496c-b8f5-3e6591b07b2d_965b5f1ae81d485ab6e911033862896b,ff2f1c39-2244-4b05-8250-4ccb9028e542_a8f52c0f30b940e5856f34ba118a0830,07d2c00c-352a-415c-b56b-05c831e2d38d_fd79c303ede34191ac851005fd19dca5,d8eba93e-9eef-4b4f-a843-c1f475719285_a4514159ec924b06bae506397d04865d,a9548002-b8a3-4a15-9d3c-5b77a45cc09a_f261b1e773934fd5b763d082a4d2f053
-    transcript_submitted_at: 2026-09-05T18:12:55.041Z
-    transcript_completed_at: 2026-09-05T18:16:14.024Z
   - id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
     guid: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
     title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
@@ -507,8 +389,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-06T18:10:40.017Z
+    transcript_job_id: 9c0b213d-47dd-461d-bdb2-8eb45e99a2cd_8c6532506db240e890833ccb1dac3988,01f98f9a-04c5-44a7-9449-96826f73252b_0a07a3a9f1f34562a18f03a5f2976388,f0a91f22-580a-405f-84fb-160a2a7c45e2_452df42469c74272a8c7666a5909b082
+    transcript_completed_at: 2026-09-06T18:13:25.824Z
   - id: 995c307e-da5c-4981-9ff1-e4e474308354
     guid: 995c307e-da5c-4981-9ff1-e4e474308354
     title: "157: 与陈哲的「具身季报 26Q1」：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手"
