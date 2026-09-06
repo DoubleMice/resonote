@@ -105,7 +105,7 @@ CONTENT_PROVIDER=auto
 
 可选的 `CONTENT_EFFORT` 控制文稿整理时的思考强度，支持 `low`、`medium`、`high`、`xhigh` 和 `max`。它映射为 Claude Code 的 `--effort` 或 Codex 的 `model_reasoning_effort`；不设置时沿用 CLI 默认值，取值无效时在调用模型前失败。
 
-`CONTENT_PROVIDER=auto` 根据模型名称选择入口：`gpt-*`、`o数字` 和 `codex*` 使用 Codex，其余使用 Claude Code。也可显式设置 `codex` 或 `claude`。Actions 按需安装对应 CLI；本地使用 Codex 生成时需安装 `@openai/codex@0.153.4`。两种入口共用 `CONTENT_API_KEY`，旧的 `ANTHROPIC_AUTH_TOKEN` 本地配置仍可使用。
+`CONTENT_PROVIDER=auto` 根据模型名称选择入口：`gpt-*`、`o数字` 和 `codex*` 使用 Codex，其余使用 Claude Code。也可显式设置 `codex` 或 `claude`。Actions 按需安装对应 CLI；本地使用 Codex 生成时需安装 `@openai/codex@0.153.4`。两种入口共用 `CONTENT_API_KEY`，旧的 `ANTHROPIC_AUTH_TOKEN` 本地配置仍可使用。生成任务固定使用 Ubuntu 22.04，避免 Ubuntu 24.04 的用户命名空间限制阻止 Codex 沙箱启动；调用模型前会检查本地自审服务能否启动。
 
 设置 `TRANSCRIPTION_PROVIDER=dashscope` 可改用 DashScope 转写，同时需要 `DASHSCOPE_API_KEY` Secret。工作流将上述通用配置映射为客户端实际读取的 `ANTHROPIC_*`、`MIMO_*` 或 DashScope 环境变量。
 

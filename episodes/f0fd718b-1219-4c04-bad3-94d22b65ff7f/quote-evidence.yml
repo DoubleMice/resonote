@@ -1,0 +1,35 @@
+episode_id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '“我想自己有算力能力，我不想被别人去卡住我自己算力未来发展的一个延展的空间”'
+    transcript_excerpt: '我想自己有算力能力，我不想被别人去卡住我自己算力未来发展的一个延展的空间'
+  - artifact: slides.md
+    artifact_excerpt: '“我觉得不是一个好时机，我觉得还是有点太早。”'
+    transcript_excerpt: '我觉得不是一个好时机，我觉得还是有点太早。'
+  - artifact: slides.md
+    artifact_excerpt: '“它卖的并不是一张一块卡或者一个芯片，它卖的是一个完整的系统”'
+    transcript_excerpt: '它卖的并不是一张一块卡或者一个芯片，它卖的是一个完整的系统'
+  - artifact: slides.md
+    artifact_excerpt: '“他们更需要的是，希望无论是AI应用或者是Agent它可以在本地化部署，或者是在它这个私有云去部署。”'
+    transcript_excerpt: '他们更需要的是，希望无论是AI应用或者是Agent它可以在本地化部署，或者是在它这个私有云去部署。'
+  - artifact: slides.md
+    artifact_excerpt: '“有很多公司一年时间收入从0涨到2000万美金，团队可能还不到10个人。”'
+    transcript_excerpt: '有很多公司一年时间收入从0涨到2000万美金，团队可能还不到10个人。'
+  - artifact: slides.md
+    artifact_excerpt: '“改变世界的同时创造财富，但最重要的是改变世界。”'
+    transcript_excerpt: '改变世界的同时创造财富，但最重要的是改变世界。'
+  - artifact: article.html
+    artifact_excerpt: '“我想自己有算力能力，我不想被别人去卡住我自己算力未来发展的一个延展的空间”'
+    transcript_excerpt: '我想自己有算力能力，我不想被别人去卡住我自己算力未来发展的一个延展的空间'
+  - artifact: article.html
+    artifact_excerpt: '“我觉得不是一个好时机，我觉得还是有点太早。”'
+    transcript_excerpt: '我觉得不是一个好时机，我觉得还是有点太早。'
+  - artifact: article.html
+    artifact_excerpt: '“它卖的并不是一张一块卡或者一个芯片，它卖的是一个完整的系统”'
+    transcript_excerpt: '它卖的并不是一张一块卡或者一个芯片，它卖的是一个完整的系统'
+  - artifact: article.html
+    artifact_excerpt: '“他们更需要的是，希望无论是AI应用或者是Agent它可以在本地化部署，或者是在它这个私有云去部署。”'
+    transcript_excerpt: '他们更需要的是，希望无论是AI应用或者是Agent它可以在本地化部署，或者是在它这个私有云去部署。'
+  - artifact: article.html
+    artifact_excerpt: '“有很多公司一年时间收入从0涨到2000万美金，团队可能还不到10个人。”'
+    transcript_excerpt: '有很多公司一年时间收入从0涨到2000万美金，团队可能还不到10个人。'

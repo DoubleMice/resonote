@@ -1,0 +1,31 @@
+title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+guest: 张璐
+guest_role: Fusion Fund 创始合伙人
+tags:
+  - hardware
+  - chips
+  - startup
+  - interview
+  - investor
+  - strategic
+summary: >
+  张璐从 TeraFab 的 1 太瓦级算力设想出发，分析了太空数据中心在辐射、延迟、发射和维护上的现实约束，也解释了马斯克把芯片、算力、模型与物理世界放进同一生态的长期意图。谈话随后转向英伟达的 AI
+  工厂、异构计算和推理负载，以及金融、医疗等高监管行业对本地小模型的需求，最后落到 AI 基础设施创业、企业级商业化和并购退出。
+core_ideas:
+  - TeraFab 的价值在于把算力自主放进 SpaceX、Tesla 与 xAI 的全栈生态，而非只增加一座芯片工厂。
+  - 太空数据中心短期仍受辐射、延迟、发射成本和维护条件限制，创业公司更适合先做 AI 基础设施或其他太空基础设施。
+  - 英伟达把 GPU、CPU、LPU、网络、存储和软件平台组合成 AI 工厂，推理与 Agent 的持续运行让异构计算更重要。
+  - 金融、医疗等高监管行业偏好本地或私有云的小模型，数据治理和隐私层是企业落地的前置条件。
+  - To B 垂直 AI 让初创公司在企业数据边界内快速迭代，并购为 AI 基础设施团队提供了较短的退出路径。
+id: f0fd718b-1219-4c04-bad3-94d22b65ff7f
+source: latepost
+source_title: "159: 马斯克Terafab太空算力、英伟达重拾CPU|与Fusion Fund张璐聊AI算力新趋势"
+published: 2026-04
+published_sort: "20260407"
+duration: 1h5m
+url: https://podcast.latepost.com/159
+status: generated
+article_path: episodes/f0fd718b-1219-4c04-bad3-94d22b65ff7f/article.html
+base: /episodes/f0fd718b-1219-4c04-bad3-94d22b65ff7f/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: "2026-09-06T12:30:15.834Z"
