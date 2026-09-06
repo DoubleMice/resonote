@@ -25,6 +25,7 @@ test('configures the selected model and token without placing the key in process
   assert.equal(invocation.command, 'codex')
   assert.ok(invocation.args.includes('gpt-5.6-luna'))
   assert.ok(invocation.args.includes('model_reasoning_effort="max"'))
+  assert.ok(invocation.args.includes('sandbox_workspace_write.network_access=true'))
   assert.ok(invocation.args.includes('model_providers.resonote.base_url="https://gateway.example/v1"'))
   assert.ok(!invocation.args.join(' ').includes('private-token'))
   assert.equal(invocation.env.CONTENT_API_KEY, 'private-token')

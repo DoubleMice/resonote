@@ -38,6 +38,8 @@ export function contentCommand(prompt: string, env: NodeJS.ProcessEnv = process.
       'exec', '--json', '--ephemeral', '--ignore-user-config',
       '--sandbox', 'workspace-write', '--model', model,
       '-c', 'approval_policy="never"',
+      // Slidev export and browser audits need to bind a localhost server.
+      '-c', 'sandbox_workspace_write.network_access=true',
       '-c', 'model_provider="resonote"',
       '-c', 'model_providers.resonote.name="Resonote content"',
       '-c', `model_providers.resonote.base_url=${JSON.stringify(responsesBaseUrl(base))}`,
