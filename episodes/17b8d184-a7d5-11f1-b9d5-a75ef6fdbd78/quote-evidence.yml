@@ -1,0 +1,41 @@
+episode_id: 17b8d184-a7d5-11f1-b9d5-a75ef6fdbd78
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '“你不需要经历十步入门流程，只要注册就行。”'
+    transcript_excerpt: 'You don''t have, you don''t have a ten-step onboarding process, right? Like, you just, you just sign up.'
+  - artifact: slides.md
+    artifact_excerpt: '“买这些代币的用户体验，尤其是在 FOMO 应用里，非常顺畅。真的很好。”'
+    transcript_excerpt: 'The UX around buying these tokens, especially in, like, the FOMO app is like super smooth. It''s so good.'
+  - artifact: slides.md
+    artifact_excerpt: '“它们开始攻击 Hugging Face，是因为它们想了解评分者。”'
+    transcript_excerpt: 'And the reason that they actually started to really hack Hugging Face was that they wanted to learn about the scorer'
+  - artifact: slides.md
+    artifact_excerpt: '“这段经历会写进模型权重。”'
+    transcript_excerpt: 'This is gonna be in the weights'
+  - artifact: slides.md
+    artifact_excerpt: '“这些日志不是十条消息，而是数万条消息被保存和发送。”'
+    transcript_excerpt: 'And and by the way, the scale and the scope of the logs, we''re not talking about like 10 messages. Like we''re talking about like tens of thousands of like messages being saved and sent'
+  - artifact: slides.md
+    artifact_excerpt: '“我们现在用 1 美元提供两年前成本 1 万美元的东西。”'
+    transcript_excerpt: 'we''re giving you something that cost 10,000 dollars two years ago for a dollar now'
+  - artifact: slides.md
+    artifact_excerpt: '“不管它们有没有心智，它们确实会采取行动。”'
+    transcript_excerpt: 'whether they have a mind or not they they do things'
+  - artifact: article.html
+    artifact_excerpt: '“你不需要经历十步入门流程，只要注册就行。”'
+    transcript_excerpt: 'You don''t have, you don''t have a ten-step onboarding process, right? Like, you just, you just sign up.'
+  - artifact: article.html
+    artifact_excerpt: '“买这些代币的用户体验，尤其是在 FOMO 应用里，非常顺畅。真的很好。”'
+    transcript_excerpt: 'The UX around buying these tokens, especially in, like, the FOMO app is like super smooth. It''s so good.'
+  - artifact: article.html
+    artifact_excerpt: '“它们开始攻击 Hugging Face，是因为它们想了解评分者。”'
+    transcript_excerpt: 'And the reason that they actually started to really hack Hugging Face was that they wanted to learn about the scorer'
+  - artifact: article.html
+    artifact_excerpt: '“这段经历会写进模型权重。”'
+    transcript_excerpt: 'This is gonna be in the weights'
+  - artifact: article.html
+    artifact_excerpt: '“这些日志不是十条消息，而是数万条消息被保存和发送。”'
+    transcript_excerpt: 'And and by the way, the scale and the scope of the logs, we''re not talking about like 10 messages. Like we''re talking about like tens of thousands of like messages being saved and sent'
+  - artifact: article.html
+    artifact_excerpt: '“我们现在用 1 美元提供两年前成本 1 万美元的东西。”'
+    transcript_excerpt: 'we''re giving you something that cost 10,000 dollars two years ago for a dollar now'
