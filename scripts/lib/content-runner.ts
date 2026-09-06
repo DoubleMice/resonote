@@ -40,9 +40,6 @@ export function contentCommand(prompt: string, env: NodeJS.ProcessEnv = process.
       '-c', 'approval_policy="never"',
       // Slidev export and browser audits need to bind a localhost server.
       '-c', 'sandbox_workspace_write.network_access=true',
-      // Ubuntu Actions restricts bwrap user namespaces; Landlock still
-      // enforces workspace-write without requiring a user namespace.
-      '-c', 'features.use_legacy_landlock=true',
       '-c', 'model_provider="resonote"',
       '-c', 'model_providers.resonote.name="Resonote content"',
       '-c', `model_providers.resonote.base_url=${JSON.stringify(responsesBaseUrl(base))}`,
