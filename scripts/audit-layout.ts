@@ -161,7 +161,10 @@ async function auditEpisode(id: string, outDir: string, threshold: number): Prom
   }
 
   const builtSite = await startStaticServer(outDir)
-  const browser = await chromium.launch({ headless: true })
+  const browser = await chromium.launch({ headless: true }).catch(async error => {
+    await new Promise<void>(done => builtSite.server.close(() => done()))
+    throw error
+  })
   try {
     const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } })
     const indexUrl = builtSite.url
