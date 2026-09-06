@@ -1,4 +1,3 @@
-import { Buffer } from 'node:buffer'
 import { existsSync, readFileSync, mkdtempSync, rmSync, statSync } from 'node:fs'
 import { resolve, join } from 'node:path'
 import { tmpdir } from 'node:os'
@@ -12,19 +11,16 @@ const ROOT = process.cwd()
 const SAMPLE_AUDIO_URL = 'https://example-files.cnbj1.mi-fds.com/example-files/audio/audio_example.wav'
 
 async function downloadSampleAudioDataUri(): Promise<string> {
-  const response = await fetch(SAMPLE_AUDIO_URL, {
-    headers: { accept: 'audio/*,*/*' },
-  })
-  const audio = Buffer.from(await response.arrayBuffer())
-  if (!response.ok) {
-    throw new Error(`MiMo E2E sample download failed: ${response.status} ${audio.toString('utf-8').slice(0, 200)}`)
+  const directory = mkdtempSync(join(tmpdir(), 'resonote-asr-sample-'))
+  try {
+    const path = join(directory, 'sample.wav')
+    await downloadAudio(SAMPLE_AUDIO_URL, path)
+    const audio = readFileSync(path)
+    log.info(`MiMo E2E sample ready (${audio.length} bytes, audio/wav)`)
+    return `data:audio/wav;base64,${audio.toString('base64')}`
+  } finally {
+    rmSync(directory, { recursive: true, force: true })
   }
-  if (audio.length === 0) throw new Error('MiMo E2E sample download returned an empty file')
-
-  const contentType = response.headers.get('content-type')?.split(';')[0]?.trim().toLowerCase()
-  const mimeType = contentType?.startsWith('audio/') ? contentType : 'audio/wav'
-  log.info(`MiMo E2E sample ready (${audio.length} bytes, ${mimeType})`)
-  return `data:${mimeType};base64,${audio.toString('base64')}`
 }
 
 function loadEnvFile(path: string): void {
