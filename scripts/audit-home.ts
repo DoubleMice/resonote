@@ -1,63 +1,14 @@
 import assert from 'node:assert/strict'
-import { createReadStream, existsSync, mkdirSync, statSync } from 'node:fs'
-import { createServer } from 'node:http'
-import { extname, join, resolve, sep } from 'node:path'
+import { mkdirSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { chromium, type Page } from 'playwright-chromium'
+import { startStaticServer } from './lib/static-server.ts'
 
 const ROOT = process.cwd()
 const DIST_DIR = resolve(ROOT, 'dist')
 const configuredTargetUrl = process.env.RESONOTE_AUDIT_URL
 const screenshotDir = process.env.RESONOTE_AUDIT_OUTPUT
 let targetUrl = configuredTargetUrl || ''
-
-async function startBuiltSite() {
-  const rawBase = process.env.RESONOTE_BASE || '/'
-  const siteBase = `/${rawBase.replace(/^\/+|\/+$/g, '')}${rawBase === '/' ? '' : '/'}`
-  const contentTypes: Record<string, string> = {
-    '.css': 'text/css; charset=utf-8',
-    '.html': 'text/html; charset=utf-8',
-    '.js': 'text/javascript; charset=utf-8',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.svg': 'image/svg+xml',
-    '.webp': 'image/webp',
-  }
-
-  const server = createServer((request, response) => {
-    const pathname = decodeURIComponent(new URL(request.url || '/', 'http://localhost').pathname)
-    if (!pathname.startsWith(siteBase)) {
-      response.writeHead(404)
-      response.end()
-      return
-    }
-
-    const relativePath = pathname.slice(siteBase.length)
-    let filePath = resolve(DIST_DIR, relativePath)
-    if (filePath !== DIST_DIR && !filePath.startsWith(`${DIST_DIR}${sep}`)) {
-      response.writeHead(403)
-      response.end()
-      return
-    }
-    if (existsSync(filePath) && statSync(filePath).isDirectory()) filePath = join(filePath, 'index.html')
-
-    if (!existsSync(filePath) || !statSync(filePath).isFile()) {
-      response.writeHead(404)
-      response.end()
-      return
-    }
-
-    response.writeHead(200, { 'Content-Type': contentTypes[extname(filePath)] || 'application/octet-stream' })
-    createReadStream(filePath).pipe(response)
-  })
-
-  await new Promise<void>(resolveListen => server.listen(0, '127.0.0.1', resolveListen))
-  const address = server.address()
-  if (!address || typeof address === 'string') throw new Error('failed to start home audit server')
-  return {
-    server,
-    url: `http://127.0.0.1:${address.port}${siteBase}`,
-  }
-}
 
 async function assertNoHorizontalOverflow(page: Page, viewport: string) {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
@@ -157,7 +108,7 @@ async function auditDesktop(page: Page) {
 }
 
 async function main() {
-  const builtSite = configuredTargetUrl ? undefined : await startBuiltSite()
+  const builtSite = configuredTargetUrl ? undefined : await startStaticServer(DIST_DIR, process.env.RESONOTE_BASE || '/')
   targetUrl = configuredTargetUrl || builtSite!.url
   const browser = await chromium.launch({ headless: true })
   try {

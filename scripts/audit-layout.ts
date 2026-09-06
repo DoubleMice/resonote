@@ -8,13 +8,14 @@
 //   pnpm run audit:layout -- --all
 //   pnpm run audit:layout -- --all --png --keep
 
-import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
+import { existsSync, readFileSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
-import { pathToFileURL } from 'node:url'
 import { chromium } from 'playwright-chromium'
+import { parseSync as parseSlidev } from '@slidev/parser'
 import { log } from './lib/log.ts'
 import { run } from './lib/spawn.ts'
+import { startStaticServer } from './lib/static-server.ts'
 import { readYaml } from './lib/yaml-io.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 import { stageEpisodePresentation } from './lib/episode-workspace.ts'
@@ -132,6 +133,8 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
       join(episodeDir, 'slides.md'),
       '--base',
       './',
+      '--router-mode',
+      'hash',
       '--out',
       htmlDir,
     ], { cwd: ROOT, reject: false })
@@ -157,84 +160,92 @@ async function auditEpisode(id: string, outDir: string, threshold: number): Prom
     throw new Error(`${id} build did not produce index.html`)
   }
 
+  const builtSite = await startStaticServer(outDir)
   const browser = await chromium.launch({ headless: true })
-  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } })
-  const indexUrl = pathToFileURL(indexPath).href
-  const issues: Issue[] = []
+  try {
+    const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } })
+    const indexUrl = builtSite.url
+    const runtimeErrors: string[] = []
+    page.on('pageerror', error => { if (!error.message.includes('Wake Lock')) runtimeErrors.push(error.message) })
+    page.on('response', response => {
+      if (response.url().startsWith(builtSite.origin) && response.status() >= 400) runtimeErrors.push(`${response.status()} ${response.url()}`)
+    })
+    const issues: Issue[] = []
 
-  await page.goto(indexUrl, { waitUntil: 'networkidle' })
-  const slideCount = await page.evaluate(() => {
-    const pageCount = Number(document.querySelector('.slidev-page-total')?.textContent?.trim())
-    if (Number.isFinite(pageCount) && pageCount > 0) return pageCount
-    return Math.max(1, document.querySelectorAll('.slidev-page').length)
-  })
+    await page.goto(indexUrl, { waitUntil: 'networkidle' })
+    const slideCount = parseSlidev(readFileSync(join(EPISODES_DIR, id, 'slides.md'), 'utf8')).slides.length
+    if (!slideCount) throw new Error('deck contains no slides')
 
-  for (let slide = 1; slide <= slideCount; slide++) {
-    await page.goto(`${indexUrl}#/${slide}`, { waitUntil: 'networkidle' })
-    await page.waitForTimeout(500)
+    for (let slide = 1; slide <= slideCount; slide++) {
+      await page.goto(`${indexUrl}#/${slide}`, { waitUntil: 'networkidle' })
+      await page.locator(`.slidev-page[data-slidev-no="${slide}"]`).waitFor({ state: 'visible' })
+      await page.waitForTimeout(500)
 
-    const result = await page.evaluate((limit) => {
-      const root = document.querySelector<HTMLElement>('.slidev-page')
-        || document.querySelector<HTMLElement>('#slide-content')
-        || document.querySelector<HTMLElement>('.slidev-layout')
-        || document.body
+      const result = await page.evaluate(({ limit, slide }) => {
+        const root = document.querySelector<HTMLElement>(`.slidev-page[data-slidev-no="${slide}"]`)
+        if (!root || !root.innerText.trim()) throw new Error('slide content did not render')
 
-      const viewportBottom = window.innerHeight
-      const viewportRight = window.innerWidth
-      const ignored = '.resonote-back, .slidev-page-number, .slidev-page-total, .slidev-presenter, [aria-hidden="true"]'
+        const viewportBottom = window.innerHeight
+        const viewportRight = window.innerWidth
+        const ignored = '.resonote-back, .slidev-page-number, .slidev-page-total, .slidev-presenter, [aria-hidden="true"]'
 
-      const offenders = Array.from(root.querySelectorAll<HTMLElement>('*'))
-        .filter((el) => !el.matches(ignored) && !el.closest(ignored))
-        .map((el) => {
-          const rect = el.getBoundingClientRect()
-          const bottomOverflow = rect.bottom - viewportBottom
-          const rightOverflow = rect.right - viewportRight
-          const selector = el.id
-            ? `${el.tagName.toLowerCase()}#${el.id}`
-            : `${el.tagName.toLowerCase()}${el.className ? `.${String(el.className).trim().split(/\s+/).slice(0, 3).join('.')}` : ''}`
-          return {
-            selector,
-            text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 100),
-            bottomOverflow,
-            rightOverflow,
-          }
-        })
-        .filter((item) => item.bottomOverflow > limit || item.rightOverflow > limit)
-        .sort((a, b) => Math.max(b.bottomOverflow, b.rightOverflow) - Math.max(a.bottomOverflow, a.rightOverflow))
-        .slice(0, 5)
+        const offenders = Array.from(root.querySelectorAll<HTMLElement>('*'))
+          .filter((el) => !el.matches(ignored) && !el.closest(ignored))
+          .map((el) => {
+            const rect = el.getBoundingClientRect()
+            const bottomOverflow = rect.bottom - viewportBottom
+            const rightOverflow = rect.right - viewportRight
+            const selector = el.id
+              ? `${el.tagName.toLowerCase()}#${el.id}`
+              : `${el.tagName.toLowerCase()}${el.className ? `.${String(el.className).trim().split(/\s+/).slice(0, 3).join('.')}` : ''}`
+            return {
+              selector,
+              text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 100),
+              bottomOverflow,
+              rightOverflow,
+            }
+          })
+          .filter((item) => item.bottomOverflow > limit || item.rightOverflow > limit)
+          .sort((a, b) => Math.max(b.bottomOverflow, b.rightOverflow) - Math.max(a.bottomOverflow, a.rightOverflow))
+          .slice(0, 5)
 
-      return {
-        documentBottomOverflow: document.documentElement.scrollHeight - window.innerHeight,
-        documentRightOverflow: document.documentElement.scrollWidth - window.innerWidth,
-        offenders,
+        return {
+          documentBottomOverflow: document.documentElement.scrollHeight - window.innerHeight,
+          documentRightOverflow: document.documentElement.scrollWidth - window.innerWidth,
+          offenders,
+        }
+      }, { limit: threshold, slide }) as {
+        documentBottomOverflow: number
+        documentRightOverflow: number
+        offenders: Offender[]
       }
-    }, threshold) as {
-      documentBottomOverflow: number
-      documentRightOverflow: number
-      offenders: Offender[]
+
+      if (result.documentBottomOverflow > threshold || result.documentRightOverflow > threshold) {
+        issues.push({
+          episodeId: id,
+          slide,
+          type: 'slide-overflow',
+          message: `document overflow bottom=${Math.round(result.documentBottomOverflow)}px right=${Math.round(result.documentRightOverflow)}px`,
+        })
+      }
+
+      for (const offender of result.offenders) {
+        issues.push({
+          episodeId: id,
+          slide,
+          type: 'element-overflow',
+          message: `${offender.selector} overflows bottom=${Math.round(offender.bottomOverflow)}px right=${Math.round(offender.rightOverflow)}px text="${offender.text}"`,
+        })
+      }
     }
 
-    if (result.documentBottomOverflow > threshold || result.documentRightOverflow > threshold) {
-      issues.push({
-        episodeId: id,
-        slide,
-        type: 'slide-overflow',
-        message: `document overflow bottom=${Math.round(result.documentBottomOverflow)}px right=${Math.round(result.documentRightOverflow)}px`,
-      })
-    }
-
-    for (const offender of result.offenders) {
-      issues.push({
-        episodeId: id,
-        slide,
-        type: 'element-overflow',
-        message: `${offender.selector} overflows bottom=${Math.round(offender.bottomOverflow)}px right=${Math.round(offender.rightOverflow)}px text="${offender.text}"`,
-      })
-    }
+    if (runtimeErrors.length) throw new Error(`deck runtime errors: ${runtimeErrors.join('; ')}`)
+    log.info(`  inspected ${slideCount} rendered slides`)
+    return issues
+  } finally {
+    await browser.close()
+    await new Promise<void>(done => builtSite.server.close(() => done()))
   }
-
-  await browser.close()
-  return issues
 }
 
 async function main(): Promise<void> {

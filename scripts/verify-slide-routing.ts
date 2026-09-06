@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict'
-import { createReadStream, existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
-import { createServer } from 'node:http'
-import { extname, join, resolve, sep } from 'node:path'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { join, resolve } from 'node:path'
 import { chromium } from 'playwright-chromium'
 import { readYaml } from './lib/yaml-io.ts'
+import { startStaticServer } from './lib/static-server.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -90,50 +90,7 @@ async function main() {
   const siteBase = verifyBuiltVersions(episodes)
   const representatives = representativeEpisodes(episodes)
   const fallback = readFileSync(join(DIST_DIR, '404.html'))
-  const contentTypes: Record<string, string> = {
-    '.css': 'text/css; charset=utf-8',
-    '.excalidraw': 'application/json',
-    '.html': 'text/html; charset=utf-8',
-    '.js': 'text/javascript; charset=utf-8',
-    '.json': 'application/json',
-    '.png': 'image/png',
-    '.ttf': 'font/ttf',
-    '.woff': 'font/woff',
-    '.woff2': 'font/woff2',
-  }
-
-  const server = createServer((request, response) => {
-    const pathname = decodeURIComponent(new URL(request.url || '/', 'http://localhost').pathname)
-    if (!pathname.startsWith(siteBase)) {
-      response.writeHead(404)
-      response.end()
-      return
-    }
-
-    const relativePath = pathname.slice(siteBase.length)
-    let filePath = resolve(DIST_DIR, relativePath)
-    if (filePath !== DIST_DIR && !filePath.startsWith(`${DIST_DIR}${sep}`)) {
-      response.writeHead(403)
-      response.end()
-      return
-    }
-    if (existsSync(filePath) && statSync(filePath).isDirectory()) {
-      filePath = join(filePath, 'index.html')
-    }
-
-    if (existsSync(filePath) && statSync(filePath).isFile()) {
-      response.writeHead(200, { 'Content-Type': contentTypes[extname(filePath)] || 'application/octet-stream' })
-      createReadStream(filePath).pipe(response)
-      return
-    }
-
-    response.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' })
-    response.end(fallback)
-  })
-
-  await new Promise<void>(resolveListen => server.listen(0, '127.0.0.1', resolveListen))
-  const address = server.address()
-  if (!address || typeof address === 'string') throw new Error('failed to start routing test server')
+  const { server, origin } = await startStaticServer(DIST_DIR, siteBase, fallback)
 
   const browser = await chromium.launch({ headless: true })
   try {
@@ -141,7 +98,7 @@ async function main() {
     for (const episode of representatives) {
       const page = await browser.newPage()
       const episodePath = `${siteBase}episodes/${episode.id}/`
-      const episodeUrl = `http://127.0.0.1:${address.port}${episodePath}`
+      const episodeUrl = `${origin}${episodePath}`
       const runtimeErrors: string[] = []
       page.on('pageerror', error => {
         if (!error.message.includes('Wake Lock')) runtimeErrors.push(error.message)
@@ -195,7 +152,7 @@ async function main() {
     }
 
     const fallbackPage = await browser.newPage()
-    const fallbackUrl = `http://127.0.0.1:${address.port}${siteBase}missing/nested/path`
+    const fallbackUrl = `${origin}${siteBase}missing/nested/path`
     await fallbackPage.goto(fallbackUrl, { waitUntil: 'domcontentloaded' })
     const fallbackHome = await fallbackPage.locator('[data-resonote-home]').getAttribute('href')
     assert.ok(fallbackHome, '404 page must contain a canonical home link')
