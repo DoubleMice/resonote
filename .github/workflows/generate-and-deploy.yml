@@ -60,7 +60,9 @@ permissions:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    # Ubuntu 24.04's AppArmor user-namespace restriction blocks the Codex
+    # bubblewrap sandbox. 22.04 runs the same workspace sandbox unchanged.
+    runs-on: ubuntu-22.04
     timeout-minutes: 180
     steps:
       - uses: actions/checkout@v7
@@ -98,11 +100,7 @@ jobs:
 
       - name: Install Codex CLI
         if: steps.content-cli.outputs.provider == 'codex'
-        run: |
-          npm install -g @openai/codex@0.153.4
-          # Use Ubuntu's bubblewrap with its AppArmor user-namespace profile.
-          sudo apt-get update
-          sudo apt-get install -y bubblewrap
+        run: npm install -g @openai/codex@0.153.4
 
       - name: Install Claude Code CLI
         if: steps.content-cli.outputs.provider == 'claude'
