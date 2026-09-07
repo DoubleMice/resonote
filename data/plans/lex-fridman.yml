@@ -1,9 +1,9 @@
 source: lex-fridman
-refreshed_at: 2026-09-06T18:10:38.772Z
+refreshed_at: 2026-09-07T03:04:15.261Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
-done: 1
+total_candidates: 1
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -26,19 +26,3 @@ episodes:
     transcript_submitted_at: 2026-09-05T18:11:01.376Z
     transcript_completed_at: 2026-09-05T18:12:54.858Z
     transcript_error: audio chunk is 20.7MB, above DASHSCOPE_DATA_URI_MAX_MB=18
-  - id: p-6474
-    guid: https://lexfridman.com/?p=6474
-    title: "#499 – Gary Gallagher: American Civil War, Slavery, Lincoln, Grant &#038; Lee"
-    duration: 13987
-    published: Tue, 28 Jul 2026 20:06:06 +0000
-    published_sort: "20260728"
-    first_seen_at: 2026-07-29T04:08:29.206Z
-    url: https://lexfridman.com/gary-gallagher/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=gary-gallagher
-    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_gary_gallagher.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-06T18:13:26.121Z
-    transcript_completed_at: 2026-09-06T18:27:25.681Z
-    transcript_job_id: 2c1671af-967a-4890-a8e7-c8e11a031cb2_933550ea95fc45518cc6b2f993b32e7f,e258dbf4-9ce5-4c25-a341-4c2147e3431f_2001a6c94c22413199442d23f6bd6180,9a126c86-dbd7-4ca5-8419-f335dfcb93f7_9fb1870703f74806be90299dd3ee8859,92548191-0c8a-4b27-8a2f-90d309c0d659_58812a3188374cddbcaaec17336a7105,2930b3fd-80cd-4715-98db-841d67c59ab7_bfb260e126d24ec984771597114b7b74,438853ae-11d1-4bf4-bfc3-058d37535783_4890499f2d68449b8bba0a39e9d62ea7,34ccebaf-815e-43c9-aae6-6812973e442b_b2e61017f0b242749b6a01b151222add,4e824032-783c-4532-a47a-02f0a016a67c_815a6efd05094ce4a2777cd41b84a480,7756a4d1-f13f-4a9b-9c84-ae07d7d4fb36_ec5e7303885e436caa45687c5f2152e5,mimo:p-6474:9:2026-09-06T18:13:26.121Z,4930a2c9-4314-4ff5-bba6-29cd6751fe77_582c8105f3a9446586cb5c62ab7a0589,1c4e2ca8-51e3-439e-b4f4-541bb47994ed_5ae1b92c2d604418bf9225c116fea11e,6f961e48-7275-469b-8aa3-0f497864d66f_a89bb6f731c4424ab73e6f7f7b943e15,c35d4a15-d8b3-424c-aa96-3c41cc31354b_9d6345e8aa824aab8fbad468020804b1,mimo:p-6474:14:2026-09-06T18:13:26.121Z,aea705ff-9353-4289-90e4-303a76a294dc_c64fcafd27764e4f97972f9fd0da0c9d

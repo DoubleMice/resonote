@@ -1,104 +1,12 @@
 source: sv101
-refreshed_at: 2026-09-06T18:10:38.743Z
+refreshed_at: 2026-09-07T03:04:15.240Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
-    guid: 9e923c4c-1c87-499b-90a4-9a21cc83e4b1
-    title: E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE
-    duration: 3834
-    published: Mon, 10 Aug 2026 18:45:00 -0700
-    published_sort: "20260811"
-    first_seen_at: 2026-08-11T03:37:32.878Z
-    url: https://sv101.fireside.fm/261
-    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e923c4c-1c87-499b-90a4-9a21cc83e4b1.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
-    summary: |-
-      不久前，我们聊了硅谷最火的新职位FDE（前线部署工程师）。硅谷的逻辑是，AI要进企业，就要开行业最高的薪资，派一批最聪明的人驻扎进去。但这件事在中国，还是同一个剧本吗？
-
-      我们邀请到阿里巴巴集团副总裁、瓴羊CEO朋新宇。他是阿里数据中台方法论的创立者，他的团队做这件事已经5年，比“FDE”这个词流行起来还要早。在AI浪潮到来之后，他们发布企业级Agent平台：AgentOne。
-
-      他们的做法很不“硅谷”，不接定制化的大单，不做1000人天的驻场开发。他们找的是企业里最耗人、最耗钱、最耗时的环节，把预设好的agent接入企业私有数据，去解决真实的业务难题。
-
-      举例来说：一个催发货流程，客服agent需要跑通260步流程；一个顶级人类投手，90天内调价10000次，AI要学会这10000次调价背后的决策逻辑，这背后靠的是团队配合和工程化的推进。
-
-      在朋新宇讲述中，没有全能型的个人英雄，也没有对SOTA模型的迷信。“企业算得过来账，背后用什么token，老板不会在乎”。务实，算账，打地基，这就是FDE在中国的故事。
-
-      【主播】
-
-      泓君，硅谷101创始人，播客主理人
-
-      【嘉宾】
-
-      朋新宇（花名小芃），阿里巴巴集团副总裁，阿里瓴羊CEO
-
-      【你将听到】
-
-      01:48 硅谷的风向变了：AI战场从C端回到B端
-
-      06:33 一个“催发货”背后藏着260步流程
-
-      12:30 90天调价一万次，AI向最优秀的投手偷师
-
-      19:39 为什么顺利的部署都是“自上而下”
-
-      25:07 做标准化增长agent，跟Palantir反着走？
-
-      31:14 销售Agent实战：从最落后区域到销冠
-
-      36:06 部署周期：1/3熟悉岗位，1/3做建模，1/3调教AI
-
-      42:36 FDE团队画像：BA定方向、AI架构师选模型、业务首席当教练
-
-      47:00 Token成本，模型策略，“账算得过来”最重要
-
-      53:28 中美FDE对比：信息化地基、付费习惯、工作方向
-
-      58:03 人才观：懂AI、懂业务、懂数据
-
-      【延伸阅读】
-
-      E240｜OpenAI联手PE砸下40亿美元，聊聊硅谷最火新职位FDE
-
-      【监制】
-
-      泓君
-
-      【后期】
-
-      Amei
-
-      【运营】
-
-      朱婕
-
-      【BGM】
-
-      What We Discovered - Philip Ayers
-
-      Signal Containment - Out To The World
-
-      【在这里找到我们】
-
-      公众号：硅谷101
-
-      收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜荔枝FM｜网易云音乐｜QQ音乐
-
-      其他平台：YouTube｜Bilibili 搜索「硅谷101播客」
-
-      联系我们：podcast@sv101.net
-
-      Special Guest: 朋新宇.
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 9361e740-01c8-40f2-a9bd-4517e70d8d99_7f46ad295c444a46add6b1524c64ea29,83658b79-58d0-4e0f-9b4e-d483b9cabb62_951b854beaf04bd69a891b15b2eb0f9b,5405a573-ddf5-4efc-9217-3e7a5a8ffd25_867eebd7242641848cf8bbb945c815ea,985458cd-0915-44c6-b16a-d76808af66c7_3956b399a8074037836ef45314751116,d12914ad-8a0c-4927-bc90-42228c720695_2197d211c5154572bed2c01c5faba728
-    transcript_submitted_at: 2026-08-12T18:23:06.157Z
-    transcript_completed_at: 2026-08-12T18:26:50.389Z
+episodes: []
