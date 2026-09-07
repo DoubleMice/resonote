@@ -1,0 +1,36 @@
+title: 与陈哲的「具身季报 26Q1」：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手
+guest: 陈哲（Peter）
+guest_role: 投资人、Alpha Fist Partners 创始合伙人
+tags:
+  - robotics
+  - hardware
+  - ai-research
+  - chips
+  - startup
+  - interview
+  - investor
+  - deep-dive
+  - technical
+  - strategic
+summary: |
+  陈哲从宇树春晚表演和招股书出发，解释人形机器人的进展为什么首先体现为本体、运控和量产一致性，而不是一段好看的视频。对谈继续讨论高自由度灵巧手、触觉、世界模型、数据金字塔与端侧算力，比较中美公司在硬件供应链和模型资源上的不同位置。
+  这期季报没有给人形机器人下定论，而是把几个仍在变化的变量摆在一起：形态是否必要，世界模型能否超过 VLA，触觉数据如何积累，以及上市潮会如何筛选真正能交付的公司。
+core_ideas:
+  - 宇树 G1 的优势来自面向科研市场的产品定义，以及从四足机器人积累下来的量产与供应链验证。
+  - 春晚和打网球证明了新的系统能力，但固定编排、外部摄像头与专门训练仍限定了演示的外推范围。
+  - 高自由度灵巧手把触觉、末端执行器和真实操作数据推到具身研究的前沿。
+  - VLA 擅长语言与视觉到动作的映射，世界模型试图用视频预测动作造成的未来变化；两者在通用机器人中可能互补。
+  - 数据质量、视频模型算力、端侧功耗和本土供应链，会共同决定技术能否走到量产。
+  - 人形是否是通用机器人的最优解，仍是一个没有清晰答案的问题。
+id: 995c307e-da5c-4981-9ff1-e4e474308354
+source: latepost
+source_title: "157: 与陈哲的「具身季报 26Q1」：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手"
+published: 2026-04
+published_sort: "20260402"
+duration: 2h6m
+url: https://podcast.latepost.com/157
+status: generated
+article_path: episodes/995c307e-da5c-4981-9ff1-e4e474308354/article.html
+base: /episodes/995c307e-da5c-4981-9ff1-e4e474308354/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: "2026-09-07T06:39:46.879Z"

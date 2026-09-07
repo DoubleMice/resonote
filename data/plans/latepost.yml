@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-07T03:04:15.252Z
+refreshed_at: 2026-09-07T06:03:25.413Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 11
-done: 0
+done: 2
 pending: 1
-needs_transcript: 10
+needs_transcript: 8
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -96,7 +96,7 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 9c0b213d-47dd-461d-bdb2-8eb45e99a2cd_8c6532506db240e890833ccb1dac3988,01f98f9a-04c5-44a7-9449-96826f73252b_0a07a3a9f1f34562a18f03a5f2976388,f0a91f22-580a-405f-84fb-160a2a7c45e2_452df42469c74272a8c7666a5909b082
@@ -315,8 +315,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-07T06:03:26.668Z
+    transcript_job_id: 68951d73-e95b-4dc7-824d-3c6a4453d994_aeb41cd18c2a4c458a1ae2952e295114,78ae0813-47b9-4f85-8669-b5dac78a8e76_9d64d0ceee6f48f4bb7acdc6394e19fe,c2a80fb4-2711-4cc6-ba9d-397679febf9e_b2e4da6385ac4a2791af3cea83896622,25341604-d3f3-4095-8807-1fb559700150_d3d59118bfc84c73a8250327f3efb71c,3199d993-b8db-43d6-a2f4-9241e3dfa816_0d82577b1d894f9eb86f4cf2afd635a6,e14de6b8-d431-4a0b-b4d7-2d25ace46d14_cd7a1622d20841d6acaf7c1311133f90,a4689360-69c7-4efc-bab8-07d777598b54_4143ae35a42a45549499b8f6b1fadc19,0c457d71-3f8c-472f-869d-d5e64b8ab58f_fad802fe51d948b2b88801465c9ee040,73e4b65f-1168-4c0f-aaab-3a98b1b4fb7b_c70f00bc4ad74123b2f333d18155bd9a
+    transcript_completed_at: 2026-09-07T06:08:31.705Z
   - id: b19722c7-4ebd-4873-a055-332b774f15d5
     guid: b19722c7-4ebd-4873-a055-332b774f15d5
     title: "156: 与 Henry 的「AI季报 26Q1」：OpenClaw、OpenAI vs Anthropic的三重对阵、自进化"
@@ -493,8 +497,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-07T06:08:32.033Z
+    transcript_job_id: 86850edf-114e-4c52-adf2-d6a7e5a0fb18_34cadadacde645d0a24b61bcb88a5977,3bb066c9-1c5e-40a9-ae8c-babad4cd1e45_feef195dfcc54085939dbbf0bd7ede75,e67c0014-11ab-419c-927c-7d50e26cd402_bf8c4d9dbd2649c6aa084ab53c973c44,db390307-2d1b-436d-b5f8-5aceebe1a4e1_62f487cf90644c2b92b317b68f04f2c6,b2ad7ce3-b5f4-4f54-8298-8e3f0f7af3cd_fab00c9b9cf24c7da100ec221318a50e,62d7cf45-0476-4311-940f-8d761f4f59ca_dc2de3c9990b4384876eb51d3605f85a,ca96d4f6-161b-46e1-880a-322c4eb8b241_f08585ec21d54393813bbede50fc0f94,324f0044-2eec-4f35-aa1b-2721c346f903_19df9d2c79344806aa2d28f689af9da5
+    transcript_completed_at: 2026-09-07T06:13:29.319Z
   - id: 98af1760-a80b-409a-bc8f-0d258781b087
     guid: 98af1760-a80b-409a-bc8f-0d258781b087
     title: "155: 至简动力贾鹏：从英伟达到理想，具身智能的六边形战士"

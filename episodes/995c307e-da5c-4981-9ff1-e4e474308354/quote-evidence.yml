@@ -1,0 +1,56 @@
+episode_id: 995c307e-da5c-4981-9ff1-e4e474308354
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '其实我看今年春晚，我觉得最关键的是一致性。'
+    transcript_excerpt: '其实我看今年春晚，我觉得最关键的是一致性。'
+  - artifact: slides.md
+    artifact_excerpt: '宇树为什么是一家盈利的公司？是它不得不盈利。'
+    transcript_excerpt: '宇树为什么是一家盈利的公司？是它不得不盈利。'
+  - artifact: slides.md
+    artifact_excerpt: 'G1是宇树第一台真正为科研市场正向设计的机器人。'
+    transcript_excerpt: 'G1是宇树第一台真正为科研市场正向设计的机器人。'
+  - artifact: slides.md
+    artifact_excerpt: '当一个机器人真正实现某一种能力，当一个机器人真正稳定的交付某一种能力的时候，它可以做的事情，或者它可以创造的价值，会得到一个快速的释放。'
+    transcript_excerpt: '当一个机器人真正实现某一种能力，当一个机器人真正稳定的交付某一种能力的时候，它可以做的事情，或者它可以创造的价值，会得到一个快速的释放。'
+  - artifact: slides.md
+    artifact_excerpt: '人形机器人也不一定真的非要一定像人，它可以做一个超人，它可以超越人的某些结构'
+    transcript_excerpt: '人形机器人也不一定真的非要一定像人，它可以做一个超人，它可以超越人的某些结构'
+  - artifact: slides.md
+    artifact_excerpt: '你用一个不是肌肉的东西去模仿肌肉的表现，然后你预期它有同样的性能，这个本身就并不符合第一性。'
+    transcript_excerpt: '你用一个不是肌肉的东西去模仿肌肉的表现，然后你预期它有同样的性能，这个本身就并不符合第一性。'
+  - artifact: slides.md
+    artifact_excerpt: '触觉对于我们最终这个任务的实现是非常重要的。'
+    transcript_excerpt: '触觉对于我们最终这个任务的实现是非常重要的。'
+  - artifact: slides.md
+    artifact_excerpt: '我们有一个基于现在的观测，可以预测未来会发生什么事情的这样一个模型，叫做世界模型。'
+    transcript_excerpt: '我们有一个基于现在的观测，可以预测未来会发生什么事情的这样一个模型，叫做世界模型。'
+  - artifact: slides.md
+    artifact_excerpt: '最精准的、最高效的数据肯定是机器人直接的遥操作数据'
+    transcript_excerpt: '最精准的、最高效的数据肯定是机器人直接的遥操作数据'
+  - artifact: slides.md
+    artifact_excerpt: '赢家会高度收敛。'
+    transcript_excerpt: '赢家会高度收敛。'
+  - artifact: slides.md
+    artifact_excerpt: '我觉得这个到今天我还是没有特别清晰的答案。'
+    transcript_excerpt: '我觉得这个到今天我还是没有特别清晰的答案。'
+  - artifact: article.html
+    artifact_excerpt: '其实我看今年春晚，我觉得最关键的是一致性。'
+    transcript_excerpt: '其实我看今年春晚，我觉得最关键的是一致性。'
+  - artifact: article.html
+    artifact_excerpt: 'G1是宇树第一台真正为科研市场正向设计的机器人。'
+    transcript_excerpt: 'G1是宇树第一台真正为科研市场正向设计的机器人。'
+  - artifact: article.html
+    artifact_excerpt: '当一个机器人真正实现某一种能力，当一个机器人真正稳定的交付某一种能力的时候，它可以做的事情，或者它可以创造的价值，会得到一个快速的释放。'
+    transcript_excerpt: '当一个机器人真正实现某一种能力，当一个机器人真正稳定的交付某一种能力的时候，它可以做的事情，或者它可以创造的价值，会得到一个快速的释放。'
+  - artifact: article.html
+    artifact_excerpt: '触觉对于我们最终这个任务的实现是非常重要的。'
+    transcript_excerpt: '触觉对于我们最终这个任务的实现是非常重要的。'
+  - artifact: article.html
+    artifact_excerpt: '最精准的、最高效的数据肯定是机器人直接的遥操作数据'
+    transcript_excerpt: '最精准的、最高效的数据肯定是机器人直接的遥操作数据'
+  - artifact: article.html
+    artifact_excerpt: '我们有一个基于现在的观测，可以预测未来会发生什么事情的这样一个模型，叫做世界模型。'
+    transcript_excerpt: '我们有一个基于现在的观测，可以预测未来会发生什么事情的这样一个模型，叫做世界模型。'
+  - artifact: article.html
+    artifact_excerpt: '赢家会高度收敛。'
+    transcript_excerpt: '赢家会高度收敛。'
