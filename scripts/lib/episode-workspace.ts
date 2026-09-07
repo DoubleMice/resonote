@@ -2,6 +2,7 @@ import {
   cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync,
 } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
+import { withFullWidthTitles } from './slide-title-layout.ts'
 
 export function resolveEpisodeDirectory(episodesDir: string, id: string): string {
   if (!/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(id)) {
@@ -32,7 +33,11 @@ export function scaffoldEpisodeWorkspace(
 export function stageEpisodePresentation(
   episodeDir: string,
   templatesDir: string,
+  normalizeTitles = true,
 ): () => void {
+  const slidesPath = join(episodeDir, 'slides.md')
+  const originalSlides = normalizeTitles && existsSync(slidesPath) ? readFileSync(slidesPath, 'utf8') : null
+  const renderedSlides = originalSlides === null ? null : withFullWidthTitles(originalSlides)
   const stylePath = join(episodeDir, 'style.css')
   const legacyChromePath = join(episodeDir, 'global-bottom.vue')
   const templateStyle = readFileSync(join(templatesDir, 'style.css'), 'utf8')
@@ -41,6 +46,7 @@ export function stageEpisodePresentation(
   const legacyChrome = existsSync(legacyChromePath) ? readFileSync(legacyChromePath, 'utf8') : null
 
   cpSync(join(templatesDir, 'style.css'), stylePath)
+  if (renderedSlides !== null && renderedSlides !== originalSlides) writeFileSync(slidesPath, renderedSlides)
   // Navigation is injected into the assembled HTML in viewport coordinates.
   // Suppress any ignored legacy component while Slidev runs so an old local
   // file cannot reintroduce the scaled, overlapping back button.
@@ -50,6 +56,8 @@ export function stageEpisodePresentation(
   return () => {
     if (cleaned) return
     cleaned = true
+    if (originalSlides !== null && renderedSlides !== originalSlides && existsSync(slidesPath)
+      && readFileSync(slidesPath, 'utf8') === renderedSlides) writeFileSync(slidesPath, originalSlides)
     if (originalStyle === null) rmSync(stylePath, { force: true })
     else writeFileSync(stylePath, originalStyle)
     if (legacyChrome !== null) writeFileSync(legacyChromePath, legacyChrome)

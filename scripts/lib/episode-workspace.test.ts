@@ -81,3 +81,24 @@ test('rejects episode ids that could escape the episode root', () => {
   assert.throws(() => resolveEpisodeDirectory('/tmp/episodes', '../outside'), /invalid episode id/)
   assert.throws(() => resolveEpisodeDirectory('/tmp/episodes', 'nested/id'), /invalid episode id/)
 })
+
+test('stages full-width titles for rendering and restores exact editorial source', () => {
+  const { root, episodes, templates } = fixture()
+  try {
+    const directory = scaffoldEpisodeWorkspace(episodes, templates, 'title')
+    const path = join(directory, 'slides.md')
+    const original = '---\nlayout: two-cols\n---\n\n# 标题\n\n左文\n\n::right::\n\n右图\n'
+    writeFileSync(path, original)
+    const cleanup = stageEpisodePresentation(directory, templates)
+    assert.match(readFileSync(path, 'utf8'), /layout: two-cols-header/)
+    cleanup()
+    assert.equal(readFileSync(path, 'utf8'), original)
+    const generationCleanup = stageEpisodePresentation(directory, templates, false)
+    assert.equal(readFileSync(path, 'utf8'), original)
+    generationCleanup()
+    const editCleanup = stageEpisodePresentation(directory, templates)
+    writeFileSync(path, 'user edit\n')
+    editCleanup()
+    assert.equal(readFileSync(path, 'utf8'), 'user edit\n')
+  } finally { rmSync(root, { recursive: true, force: true }) }
+})

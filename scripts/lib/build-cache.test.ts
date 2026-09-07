@@ -49,6 +49,9 @@ test('episode fingerprints include the shared style and deployed base path', () 
     writeFileSync(join(templates, 'style.css'), ':root { color: green; }\n')
     assert.notEqual(episodeBuildFingerprint(options), initial)
     assert.notEqual(episodeBuildFingerprint({ ...options, base: '/other/' }), initial)
+    const styled = episodeBuildFingerprint(options)
+    writeFileSync(join(root, 'scripts/lib/slide-title-layout.ts'), 'export const revision = 2\n')
+    assert.notEqual(episodeBuildFingerprint(options), styled)
   } finally {
     rmSync(root, { recursive: true, force: true })
   }

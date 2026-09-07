@@ -65,6 +65,7 @@ export function episodeBuildFingerprint(options: FingerprintOptions): string {
     updateFile(hash, `root/${name}`, join(root, name))
   }
   updateFile(hash, 'scripts/lib/episode-workspace.ts', join(root, 'scripts/lib/episode-workspace.ts'))
+  updateFile(hash, 'scripts/lib/slide-title-layout.ts', join(root, 'scripts/lib/slide-title-layout.ts'))
   return hash.digest('hex')
 }
 

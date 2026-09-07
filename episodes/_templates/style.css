@@ -42,6 +42,18 @@
   text-wrap: balance;
 }
 
+/* Page titles sit above the columns; each column retains its own content width. */
+.slidev-layout.two-cols-header {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.slidev-layout.two-cols-header > .col-header,
+.slidev-layout.two-cols-header > .col-left,
+.slidev-layout.two-cols-header > .col-right {
+  min-width: 0;
+  min-height: 0;
+}
+
 .slidev-layout h1 {
   position: relative;
   margin-bottom: 0.55em;

@@ -149,7 +149,7 @@ Required structure (regardless of length):
 
 ## RULE 5 — Hand-drawn diagram ratio
 
-At least **20% of content pages** must use an Excalidraw diagram in a `two-cols` layout (left = text, right = diagram).
+At least **20% of content pages** must use an Excalidraw diagram in a `two-cols-header` layout (full-width page title in the default slot, `::left::` text, `::right::` diagram). A page title belongs above both columns; `two-cols` is only for independently titled columns. Do not force titles onto one line or split Chinese phrases with arbitrary line breaks.
 
 For a 20-page deck, that's **at least 4 pages with hand-drawn diagrams**.
 

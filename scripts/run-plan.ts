@@ -1026,6 +1026,7 @@ async function processEntry(
   const cleanupPresentation = stageEpisodePresentation(
     join(EPISODES_DIR, entry.id),
     TEMPLATES_DIR,
+    false,
   )
   let result: GenerateResult = {
     ok: false,

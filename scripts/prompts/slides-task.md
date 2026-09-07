@@ -36,7 +36,7 @@ Follow the structure in the system prompt (RULE 4):
 - Cover page (academic theme, text-center)
 - "Why this episode matters" overview page (4-6 topic cards)
 - Content pages covering the themes — at least 70% of the deck total per RULE 4 (e.g. ~20 for a 28-page deck; scale with transcript length)
-- At least **4 pages with Excalidraw diagrams** (two-cols layout)
+- At least **4 pages with Excalidraw diagrams** (`two-cols-header`: page title in the default slot, `::left::` before the left body, `::right::` before the diagram)
 - Core quotes page (`核心金句`) — 4-6 verified quotes with labels
 - End page (`layout: end`) with one closing quote
 
@@ -53,6 +53,7 @@ Layout capacity rules:
 - Split any page with 7+ cards, 7+ quotes, paragraph text inside 4/5-column grids, or two independent `#` headings.
 - Keep core quotes to 4-6 quotes per page. Use a second quotes page when needed.
 - Keep two-cols text concise and Excalidraw width at `w-[460px]` or `w-[480px]`.
+- Page titles must span both columns. Use `two-cols-header` for titled two-column pages; reserve `two-cols` for independently titled columns. Do not insert arbitrary `<br>` tags, shrink the title, or force `nowrap` to hide a narrow title container. Review long titles for natural phrase breaks and shorten them when necessary.
 
 Frontmatter:
 ```yaml

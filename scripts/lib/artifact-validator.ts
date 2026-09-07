@@ -285,12 +285,12 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
       })
     }
     for (const slide of diagramSlides) {
-      if (slide.frontmatter.layout !== 'two-cols') {
+      if (!['two-cols', 'two-cols-header'].includes(slide.frontmatter.layout)) {
         issues.push({
           level: 'error',
           code: 'diagram-layout',
           file,
-          message: `diagram slide ${slide.index + 1} must use layout: two-cols`,
+          message: `diagram slide ${slide.index + 1} must use layout: two-cols-header or two-cols`,
         })
       }
     }
