@@ -21,20 +21,20 @@ When the transcript is in English, **translate the ideas into Chinese** rather t
 
 ## RULE 0.5 — Chinese prose quality and comparison sanity check
 
-Before finalizing `slides.md`, `meta.yml`, or `article.html`, revise the Chinese so it reads like clear Chinese business/technology prose, not compressed English notes.
+Before finalizing `slides.md`, `meta.yml`, or `article.html`, revise the Chinese so it reads naturally and suits the episode's subject, rather than resembling compressed English notes.
 
 Mandatory checks:
-- Every sentence must have a clear Chinese subject, verb, and object. Do not stack company names, product names, numbers, and conclusions into one slogan-like fragment.
+- Make the actor, action, and reference clear in context. Chinese may omit a repeated subject and does not require an object in every sentence. Do not stack company names, product names, numbers, and conclusions into one slogan-like fragment.
 - For comparisons, state the metric and compare like with like. A comparison must answer: what is faster/cheaper/larger, compared with what, on which metric?
 - Never write malformed comparisons such as `AI 实验室比联合航空快一千倍`. If the transcript mentions United Airlines as a Natomi customer, write that as a deployment example, not as the object of an AI-lab speed comparison.
 - Keep numbers only when the transcript supports the same metric. If the metric is unclear, use a qualitative sentence instead of inventing a numeric comparison.
 - Company names and customer names are not automatic actors. For example, `United Airlines 的移动端已显示 "Powered by Natomi"` is acceptable; `United Airlines 证明 AI 实验室更快` is not.
 - Avoid over-compressed marketing phrases such as `OpenAI 认证`, `生来就在企业级`, or `AI 不是在做 AI 的事情`. Rewrite them as complete claims with attribution.
-- Keep one fixed Chinese name per entity across the whole deck. Do not rotate synonyms (主体/角色/核心人物) for variety.
+- Use established Chinese names and translations where available; introduce the original name once if needed for identification. Otherwise retain the original spelling. Keep naming consistent across slides, metadata, and article; natural pronouns are fine when their reference is clear.
 - No translationese or AI-flavored filler. Review the text for these patterns and rewrite or delete:
   - Nominalized verbs: write `分析日志` / `调整配置`, not `对日志进行分析` / `作出配置调整`.
   - Abstract business verbs used as filler: `赋能` `助力` `解锁潜力` `释放潜力` `注入活力` — state who did what and what resulted.
-  - Mechanical frames: `通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `随着……不断……，……正日益……` — keep only if both the cause and the effect actually appear in the transcript. For `不是……而是……`, state the actual claim directly instead; keep the contrast only inside verbatim quotes.
+  - Mechanical frames: `通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `随着……不断……，……正日益……` — check the actual relation: causation needs evidence, contrast needs a meaningful distinction. Keep a natural, supported contrast even in paraphrase; remove invented opposing claims and repetitive rhetorical frames.
   - Filler framing: `值得注意的是`, `在这个时间点`, `从本质上讲`, `对于……而言` — delete and state the fact directly.
   - Empty elevation and vague attribution: `标志着……新篇章`, `未来可期`, `专家认为`, `行业报告显示` — delete unless the guest said it (then RULE 1 grep applies).
   - Unidiomatic evaluatives: `一等的方案`, `上佳选择`, `颇具价值` — use an ordinary evaluation, or state the concrete evidence instead. (Fixed terms like `一等公民` stay as-is.)
@@ -268,14 +268,18 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 
 **Content requirements:**
 - Header with title, guest, source, date
-- "Why this matters" overview with 4-6 styled topic cards (reuse the color card system)
-- 8-12 themed prose sections, each with a heading and 2-4 narrative paragraphs
-- "核心金句" block with 4-6 grep-verified quotes (RULE 1 applies)
 - Footer with source episode link
-- Write in narrative prose for reading, not bullet points
-- Mark paraphrases/glosses clearly as "作者概括:" (same as RULE 3)
-- Voice: magazine-style tech prose — vary sentence length, stay restrained, no forced first person or humor; never end a section on an empty uplifting line, end on a fact, a quote, or a concrete consequence
-- Prefer `是` / `有` for simple relations instead of `作为……` / `充当……`; keep one fixed Chinese name per entity; do not rename or translate proper nouns — explain unclear terms in the adjacent sentence instead
+- Plan the article from the transcript independently of slide order. RULE 4's overview, quote pages, ending, and page counts apply only to slides. Do not expand each slide into a section.
+- Open with a specific episode detail, question, or disagreement that introduces the subject. Supply the context needed to understand it. Do not routinely begin with a `为什么值得读` card grid or a summary of every later section.
+- Choose section count and paragraph length from the material, with no fixed quota. Merge adjacent sections answering the same question; give a substantial story room to unfold. Preserve qualifications and disagreements. Do not pad to meet the file-size contract or drop important evidence to fit a template.
+- Use headings that name the actual subject or claim. Avoid a repeated `从 X 到 Y`, `X：Y`, or numbered framework across unrelated sections. A heading must not assert more than its supporting paragraphs.
+- Organize around the episode's needs: chronology for a developing story, evidence and objections for an argument, or separate threads for genuinely distinct subjects. Reordering is allowed when context and chronology remain accurate; do not invent causality to connect topics.
+- Write connected paragraphs. Each paragraph should advance the account with an explanation, example, qualification, or consequence. Avoid a repeated claim–example–grand conclusion template and recurring `这背后` / `这也说明` / `真正的……` commentary. An example can end a section without another moral.
+- Cards, comparisons, and lists are optional, only when they make parallel facts easier to compare. Do not repeat the same content in an overview, the body, and a closing summary.
+- Place verified quotes beside the discussion they support, with attribution (RULE 1 applies). No article quote quota or required `核心金句` collection; omit direct quotes when paraphrase works better. End where the account reaches its last useful point, remaining question, or constraint, without a compulsory closing slogan or summary section.
+- Distinguish attribution from editorial inference: faithful paraphrases belong in ordinary prose, with `嘉宾认为` / `他回忆` where needed. Reserve `作者概括：` for an added editorial framework, analogy, or inference under RULE 3; do not label every paraphrase, and do not use the label to excuse unsupported facts. Omit editorial glosses that merely repeat the preceding paragraph.
+- Voice: clear Chinese suited to the subject (technology, history, personal experience, etc.). Prefer concrete actions to abstract nouns, split translated modifier chains, and use natural topic continuity instead of restating a full subject in every sentence. Keep the speaker's uncertainty, scope, and tone; do not upgrade a personal view to a general fact or a company claim to a proven result.
+- Apply RULE 0.5 naming and sentence checks. Explain unfamiliar terms near first use, without inventing translations for brands or products. Read the opening, headings, and paragraph endings together to catch repeated structure, then read the full article for continuity.
 
 ## RULE 11 — Persist quote evidence
 

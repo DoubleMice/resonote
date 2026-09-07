@@ -82,12 +82,13 @@ path, and status fields after generation.
 
 Produce a complete semantic HTML article document at `episodes/{{ID}}/article.html`.
 
-**Content**: Follow the same themes and quotes you extracted in Phase 1. Write narrative prose for reading, not bullet points.
-- Header: title, guest, source, date
-- "Why this matters" overview with 4-6 styled topic cards (reuse the color card system from slides)
-- 8-12 themed sections, each with a heading and 2-4 paragraphs
-- "核心金句" block with 4-6 grep-verified quotes with context labels
-- Footer with source episode link
+**Content**: Use the transcript evidence from Phase 1 and follow RULE 10, which owns the article structure. Before drafting, outline the article's central question or narrative thread, the evidence each section adds, and the connection to the next section. Choose a structure suited to this episode; do not copy the slide outline.
+- Header: title, guest, source, date; footer: source episode link
+- Open with a concrete detail or question from the episode and enough context to follow it.
+- Let the material determine section count and paragraph length. Merge overlapping themes; preserve substantial examples, qualifications, and disagreements.
+- Use prose as the default. Overview cards, comparison blocks, and lists are optional; include them only when they serve a distinct reading need.
+- Put verified quotations near the relevant argument, when useful. There is no required article quote count or closing `核心金句` block.
+- Attribute faithful paraphrases naturally. Mark only added editorial interpretations as `作者概括：`, as specified in RULE 10.
 
 **Format**: Do not embed `<style>`, stylesheet links, inline `style` attributes,
 JavaScript, navigation, or reader chrome. `scripts/build-all.ts` injects the
@@ -109,8 +110,8 @@ Fix any sentence that has one of these problems:
 - company names, product names, and customer names piled into a slogan instead of a sentence
 - marketing shorthand that sounds good but does not say what happened
 - nominalized or abstract-verb filler (`对……进行分析`, `赋能`, `释放潜力`) where a plain verb works
-- mechanical frames and filler (`通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `值得注意的是`) — for `不是……而是……`, state the actual claim directly unless it is a verbatim quote
-- the same entity called by different names across slides — pick one fixed Chinese name
+- mechanical frames and filler (`通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `值得注意的是`) — keep meaningful, supported contrasts; remove invented oppositions and repetitive framing
+- inconsistent entity names — use an established Chinese name where available, otherwise the original spelling; keep it consistent across artifacts
 
 The translationese review checklist in RULE 0.5 of the system prompt lists more cues — run through it here as well. These are review cues, not mechanical bans; check context before rewriting.
 
@@ -123,6 +124,13 @@ rg -n '赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}�
 For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? concretize with transcript evidence? narrow or delete). Protected names, fixed terms, and grep-verified quotes stay untouched. After each rewrite, re-check subject, condition, and outcome, and confirm terminology is still consistent.
 
 For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
+
+Then review the article at three levels (word searches alone cannot verify prose quality):
+1. Read the opening and headings in sequence. Is there a coherent account, does every section add material, and are related points needlessly split? Merge or reorder where needed, checking transcript context again.
+2. Read paragraph openings and endings together. Remove repetitive summaries, formulaic transitions, vague metaphors, and repeated editorial verdicts. Keep a supported contrast or conclusion when it actually clarifies the argument.
+3. Read the full prose aloud mentally. Resolve unclear references, long translated modifier chains, unnecessary English, and unnatural collocations. Check that edits preserve who said what, time, conditions, uncertainty, and comparison metrics. Refresh quote evidence after any quote edit.
+
+Record the main structural and language revisions in the final JSON `notes`; do not insert this editorial checklist into the published article.
 
 Bad examples to fix:
 - `AI 实验室比联合航空快一千倍`
