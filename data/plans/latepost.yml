@@ -1,326 +1,15 @@
 source: latepost
-refreshed_at: 2026-09-07T06:03:25.413Z
+refreshed_at: 2026-09-07T18:11:40.211Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 11
+total_candidates: 9
 done: 2
-pending: 1
-needs_transcript: 8
+pending: 0
+needs_transcript: 7
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
-    guid: 4b736bf1-c0ad-43c7-9b76-a83e80bdefb7
-    title: "158: V4发布前的DeepSeek：人才竞争、组织特点和独特的AGI目标|Solo"
-    duration: 1844
-    published: Mon, 06 Apr 2026 23:45:00 +0800
-    published_sort: "20260406"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/158
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/4b736bf1-c0ad-43c7-9b76-a83e80bdefb7.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      这期 30 分钟的单口，聊一聊 DeepSeek 这家公司和它近期的变化。
-
-
-      上周四，《晚点 LatePost》发布了关于 DeepSeek 的报道：《V4 发布前的 DeepSeek：人才竞争、组织特点和独特的 AGI 目标》，写了 DeepSeek
-      的近况，以及这家公司过去的历史和它的一些特质，还有梁文锋对 AGI 以及如何实现 AGI 目标的独特理解。
-
-
-      如果你已经看过这篇文章，其实播客并不会有太多新增信息，而是多了一些个人感受和观察，以及文章发布后的一些反馈与补充。
-
-
-      DeepSeek 真的是一朵 AI 界的奇葩，这里是“奇葩”的原意——“阆苑仙葩”，怎落凡家？在非常追求效率、追求投入的性价比，追求“用实力说话”的市场环境中，DeepSeek
-      的目标和风格都非常独特，它的存在本身就是小概率事件。
-
-
-      这包括，梁文锋和 DeepSeek 的目标：不是仅卷模型性能，也看重生态建设和探索一些“少数派”方向。也包括工作氛围：DeepSeek 是全球都少有的、不信奉超长时间工作的核心 AI Lab。
-
-
-      梁文锋认为，一个人每天能高质量输出和工作的时间很难超过 6~8 小时，疲劳状态下的昏庸判断反而会浪费宝贵的算力，得不偿失。
-
-
-      这造就了 DeepSeek 的独特和不平凡，某种程度上，也是它如今的一些内外部变化和张力的源头之一。
-
-
-      时间线跳转：
-
-
-      01:37 3 位研究员春节至今离开，为何受关注？
-
-
-      03:43 V4 相关信息（信息有限）
-
-
-      04:27 AI 人才竞争激烈，DeepSeek 要解决公司定价问题
-
-
-      07:54 张力的底层来源：DeepSeek 的目标不是最主流的目标
-
-
-      17:48 更多人为何留下，这是一个怎样的组织
-
-
-      本期主播：程曼祺，晚点 LatePost 科技报道负责人
-
-
-      剪辑：Nick
-
-
-      相关链接：
-
-
-      《V4 发布前的 DeepSeek：人才竞争、组织特点和独特的 AGI 目标》
-
-
-      154 期：从千问变动到「AI 英雄传」，与 DINQ 高岱恒聊传奇 AI 研究员们
-
-
-      153 期：阿里Qwen人事变动：误读、近况、伏笔和未来
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 9c0b213d-47dd-461d-bdb2-8eb45e99a2cd_8c6532506db240e890833ccb1dac3988,01f98f9a-04c5-44a7-9449-96826f73252b_0a07a3a9f1f34562a18f03a5f2976388,f0a91f22-580a-405f-84fb-160a2a7c45e2_452df42469c74272a8c7666a5909b082
-    transcript_submitted_at: 2026-09-06T18:10:40.017Z
-    transcript_completed_at: 2026-09-06T18:13:25.824Z
-  - id: 995c307e-da5c-4981-9ff1-e4e474308354
-    guid: 995c307e-da5c-4981-9ff1-e4e474308354
-    title: "157: 与陈哲的「具身季报 26Q1」：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手"
-    duration: 7567
-    published: Thu, 02 Apr 2026 17:45:00 +0800
-    published_sort: "20260402"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/157
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/995c307e-da5c-4981-9ff1-e4e474308354.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      「不仅是比特，不仅是语言。」
-
-
-      这期节目是我们的第一期具身智能季报，邀请了我很喜欢的一位投资人，Alphaist Partners 创始合伙人陈哲 Peter。
-
-
-      Alphaist 也有自己的播客，就叫《The Alphaist》，这期节目之后也会在 The Alphaist  串台播出。
-
-
-      过去七年，Peter 在五源专注投资机器人和硬件科技，投资过海柔、松灵、本末、地瓜等公司。在去年创立 Alphaist 之后，他想放开手去寻找更多 Alpha
-      Founders。我对这类创始人的理解是：哪怕不被认同，他们也极其笃定自己的判断，是可以定义规则或打破规则的人。
-
-
-      在跨学科、高复杂度、需要开拓精神的具身智能领域，就有不少这样的创始人，也需要更多这样的创始人。
-
-
-      这期节目，我们从本季度的进展着手，Peter 分享了三月中旬去 GTC 与全球从业者的交流，同时也带到了过去两年具身智能的发展。
-
-
-      在讨论人形机器人的部分，我们盘点了中美几家头部公司，如宇树、银河、特斯拉 Optimus、Figure 的近期进展，以及那些在智能能力或数据上给行业带来启发的公司，如 Pi、Sunday 和 Generalist。
-
-
-      图注：银河通用人形机器人打网球 demo。
-
-
-      接着重点讨论了当前具身智能的两个前沿研究方向：灵巧手和世界模型：
-
-
-      在灵巧手部分，我们重点聊了 Sharpa 的进展，和 Optimus 绳驱方案的争议；
-
-      在世界模型上，英伟达近期连续发布 DreamZero、DreamDojo 和 EgoScale 数据框架，提出 WAM 世界动作模型，被视为比 VLA 天花板更高的方向。
-
-
-      之后的季报里，我和 Peter 会邀请更多从业者一起分享。
-
-
-      图注：Sharpa 灵巧手
-
-
-      本期节目的图文版也已经发布:具身季报 26Q1：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手 | 晚点播客
-
-
-      本期嘉宾
-
-
-      陈哲，Alphaist Partners 创始合伙人
-
-
-      本期主播：
-
-
-      程曼祺，晚点科技报道负责人
-
-
-      时间线：
-
-
-      04:48 Q1 TOP 5 进展
-
-
-      -宇树春晚表演，一致性
-
-
-      -Sharpa 灵巧手实机展示，长程任务组装风车
-
-
-      -英伟达发布 DreamZero、DreamDojo，WAM（世界动作模型）而非 VLA
-
-
-      -银河通用机器人打网球
-
-
-      -波士顿动力新版电动 Atlas
-
-
-      人形机器人丨中国
-
-
-      10:37 宇树春晚门道：25 年下半年新技术的集中展现，一致性是大亮点
-
-
-      20:13 宇树做科研市场，从来不被投资市场「喜欢」，但专注才造就 G1 的成功
-
-
-      24:20 王兴兴和汪滔：不极致，不成活；目前的智能能力不影响宇树整体竞争力
-
-
-      28:22 银河通用人形机器人打网球，Karpathy 说“这肯定是 AI 生成的”
-
-
-      34:13 双足价值再思考，波士顿动力 Stretch 机器人的启示
-
-
-      人形机器人丨美国
-
-
-      39:45 新版 Atlas：模块化设计、左右腿可互换，人形也可超人
-
-
-      42:29 Optimus Gen3 再延期，已缩水的 1 万台年产目标仍激进
-
-
-      44:58 Optimus 灵巧手，绳驱vs直驱：绳驱真符合“第一性原理吗”？
-
-
-      48:57 “浮夸”的 Figure 和它“浮夸”的创始人 Brett，顺势而为
-
-
-      52:59 美国本土供应链复兴有长期挑战
-
-
-      57:58 Pi、Sunday、Generalist；Sharpa 提出的三层架构：System2（低频、规划）、System1（高频、动作执行）、System0（触觉）
-
-
-      灵巧手创业友好，世界模型的底层属于大厂
-
-
-      01:07:06 灵巧手市场可能存在宇树在人形市场的 G1 机会
-
-
-      01:14:30 世界模型和英伟达的 WAM（DreamZero、DreamDojo）：不再以语言为底层
-
-
-      01:27:18 英伟达 EgoScale 数据框架 & 具身数据的金字塔
-
-
-      01:37:47 视频生成的底层更大厂友好，但世界模型也有创业公司：Rhoda AI 融了 4.5 亿美元
-
-
-      机器人端侧算力：越到新兴市场，英伟达统治力越弱
-
-
-      01:43:42 从云端→车载→机器人：英伟达 GPU 统治力逐步减弱，“创新者窘境”
-
-
-      01:46:26 国产芯片机会：地平线、地瓜在量产机器人市场领先
-
-
-      01:48:24 机器人终局可能高度集中
-
-
-      中国具身上市潮 & 下季度展望
-
-
-      01:53:59 宇树上市，是一家高质量公司的上市，不是泡沫
-
-
-      01:59:59 下季度展望：世界模型超越 VLA、灵巧手进展、马上举行的机器人马拉松比赛从“搞笑”走向竞技
-
-
-      02:04:20 连点成线：前几期具身访谈共性总结；触觉和语言之外
-
-
-      本期剪辑：甜食、Nick
-
-
-      相关链接：
-
-
-      《对话宇树科技王兴兴，造出 9.9 万元人形机器人的 90 后偏才》
-
-
-      155 期：贾鹏创立至简后的首次访谈：从英伟达到理想，具身智能的六边形战士
-
-
-      图文版：《至简贾鹏：最快具身独角兽半年融资 20 亿，做 “六边形战士” 才能活》
-
-
-      152 期：访谈千寻创始人韩峰涛：20 亿新融资、具身模型淘汰赛、落地非共识
-
-
-      图文版：《独家专访千寻创始人：20 亿新融资、具身模型淘汰赛、落地非共识》
-
-
-      149 期：具身模型哪家强？与范浩强、高阳聊具身模型的测评、RoboChallenge，26 年具身展望
-
-
-      148 期：访谈它石创始人陈亦伦：具身的三道曙光和第一道关卡
-
-
-      图文版：《陈亦伦和李震宇创立的具身公司它石智航，不做 VLA、不仿真，不走主流路线》
-
-
-      65 期：信仰充值的威力：与逐际动力谌骅聊聊 GTC 和人形机器人新进展 | AI 大爆炸
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-07T06:03:26.668Z
-    transcript_job_id: 68951d73-e95b-4dc7-824d-3c6a4453d994_aeb41cd18c2a4c458a1ae2952e295114,78ae0813-47b9-4f85-8669-b5dac78a8e76_9d64d0ceee6f48f4bb7acdc6394e19fe,c2a80fb4-2711-4cc6-ba9d-397679febf9e_b2e4da6385ac4a2791af3cea83896622,25341604-d3f3-4095-8807-1fb559700150_d3d59118bfc84c73a8250327f3efb71c,3199d993-b8db-43d6-a2f4-9241e3dfa816_0d82577b1d894f9eb86f4cf2afd635a6,e14de6b8-d431-4a0b-b4d7-2d25ace46d14_cd7a1622d20841d6acaf7c1311133f90,a4689360-69c7-4efc-bab8-07d777598b54_4143ae35a42a45549499b8f6b1fadc19,0c457d71-3f8c-472f-869d-d5e64b8ab58f_fad802fe51d948b2b88801465c9ee040,73e4b65f-1168-4c0f-aaab-3a98b1b4fb7b_c70f00bc4ad74123b2f333d18155bd9a
-    transcript_completed_at: 2026-09-07T06:08:31.705Z
   - id: b19722c7-4ebd-4873-a055-332b774f15d5
     guid: b19722c7-4ebd-4873-a055-332b774f15d5
     title: "156: 与 Henry 的「AI季报 26Q1」：OpenClaw、OpenAI vs Anthropic的三重对阵、自进化"
@@ -497,11 +186,11 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-07T06:08:32.033Z
     transcript_job_id: 86850edf-114e-4c52-adf2-d6a7e5a0fb18_34cadadacde645d0a24b61bcb88a5977,3bb066c9-1c5e-40a9-ae8c-babad4cd1e45_feef195dfcc54085939dbbf0bd7ede75,e67c0014-11ab-419c-927c-7d50e26cd402_bf8c4d9dbd2649c6aa084ab53c973c44,db390307-2d1b-436d-b5f8-5aceebe1a4e1_62f487cf90644c2b92b317b68f04f2c6,b2ad7ce3-b5f4-4f54-8298-8e3f0f7af3cd_fab00c9b9cf24c7da100ec221318a50e,62d7cf45-0476-4311-940f-8d761f4f59ca_dc2de3c9990b4384876eb51d3605f85a,ca96d4f6-161b-46e1-880a-322c4eb8b241_f08585ec21d54393813bbede50fc0f94,324f0044-2eec-4f35-aa1b-2721c346f903_19df9d2c79344806aa2d28f689af9da5
+    transcript_submitted_at: 2026-09-07T06:08:32.033Z
     transcript_completed_at: 2026-09-07T06:13:29.319Z
   - id: 98af1760-a80b-409a-bc8f-0d258781b087
     guid: 98af1760-a80b-409a-bc8f-0d258781b087
@@ -621,8 +310,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-07T18:14:56.770Z
+    transcript_job_id: b1e159b0-1e5c-495b-a739-b34aad75ca74_dc51034a235343dc8ae6e432986a47da,be666a96-21d4-499d-a504-b1e722b7d183_5f1d29a4b77440a9bee44ffcaf9ea39c,01baffec-c249-4118-a41b-3e122958991c_79980f200e71461b9485acc1c473e443,a396c6b7-45bc-4c17-8b3d-042a7e21a571_f695c591077e452e817cc10a85910cac,72e204fd-b231-4caf-8d2d-741dc11f321c_38cc517e1fc34ce78f8281cd04b1a27b,4acd9e28-bd6a-49b4-8823-cc9d489c45cc_532afec9d2ac40d7b02c78ac35fdb6d4,aefad08e-a711-47e4-81ad-161a43da35e3_c00fede29d3a4f18aa16a0be1155e911,1b4aa752-5972-4081-a140-0fea99e1a68f_6828a38f12b54a62b8a45eb7bf3cafd4,2fc082b5-5e0f-454d-8f7b-a9d5b2e2b0fe_4ca520d60e934f259bf43a5e93b98ac6,63a2298c-221c-405b-90a8-2c9b41d14f70_0621a644e8da4a1d99ea001094add9b1,5fa659d5-fba1-420d-b196-51d75031e327_9a02bb9fd1ad4866bf31d3c1489c2085,a7b590d2-56ed-46d2-8671-61acd7246ebc_ce8111fc120b48d79fdd94344446626b
+    transcript_completed_at: 2026-09-07T18:26:20.191Z
   - id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
     guid: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
     title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"

@@ -1,0 +1,34 @@
+title: "155: 至简动力贾鹏：从英伟达到理想，具身智能的六边形战士"
+guest: 贾鹏
+guest_role: 至简动力创始人、CEO
+tags:
+  - robotics
+  - startup
+  - hardware
+  - ai-products
+  - interview
+  - founder
+  - deep-dive
+  - technical
+  - strategic
+summary: >
+  贾鹏回顾了自己从高性能计算、NVIDIA
+  自动驾驶团队到理想汽车辅助驾驶的经历，并解释这些经验如何塑造至简动力的创业选择。对他而言，具身智能的难点不只在模型和数据，更在于可量产硬件、真实场景数据，以及把基础模型变成高可靠单一任务的完整链路。
+core_ideas:
+  - 自动驾驶的经验是：产品交付带来真实数据，真实数据决定模型能否持续迭代。
+  - 具身智能要进入面向企业的规模部署，硬件的一致性、可靠性和制造工艺仍是首要门槛。
+  - 通用基础模型需要经过场景适配与训练，才可能在单一物理任务中达到可用的可靠性。
+  - 至简动力选择全栈路径，让本体、数据、模型和商业化在同一闭环中相互校正。
+  - 早期团队以项目制推进交付与预研，但长期竞争还需要资金、组织和商业结构同时成立。
+id: 98af1760-a80b-409a-bc8f-0d258781b087
+source: latepost
+source_title: "155: 至简动力贾鹏：从英伟达到理想，具身智能的六边形战士"
+published: 2026-03
+published_sort: "20260322"
+duration: 2h48m
+url: https://podcast.latepost.com/155
+status: generated
+article_path: episodes/98af1760-a80b-409a-bc8f-0d258781b087/article.html
+base: /episodes/98af1760-a80b-409a-bc8f-0d258781b087/
+thumbnail: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/9/98af1760-a80b-409a-bc8f-0d258781b087/cover.jpg?v=1
+generated_at: "2026-09-07T19:32:53.695Z"

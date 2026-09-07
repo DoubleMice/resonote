@@ -1,0 +1,32 @@
+episode_id: 7d58c850-aabe-11f1-a89f-5fe1f0517a53
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '“我们追求的是稳定一致的答案。”'
+    transcript_excerpt: 'What you just want to get is a consistent answer.'
+  - artifact: slides.md
+    artifact_excerpt: '“互联网有管辖空间，也需要一座互联网法院。”'
+    transcript_excerpt: 'The point here is you have an internet jurisdiction and you also have an internet court, right?'
+  - artifact: slides.md
+    artifact_excerpt: '“上诉流程中，约三到五分钟就会给出一个答案。”'
+    transcript_excerpt: 'So the the appeal process really like you get an answer in something like three, five minutes.'
+  - artifact: slides.md
+    artifact_excerpt: '“有大量争议从经济上看并不值得处理。”'
+    transcript_excerpt: 'There''s a huge number of disputes that are uneconomical, right?'
+  - artifact: slides.md
+    artifact_excerpt: '“协议采用承诺—揭示机制；投票前你不知道别人会投什么。”'
+    transcript_excerpt: 'Now the protocol works in a commit and reveal system. So you don''t know what others are going to be voting.'
+  - artifact: slides.md
+    artifact_excerpt: '“若站在错误一方，就要付出资金。”'
+    transcript_excerpt: 'Point number two also, you lose money if you''re in the wrong side.'
+  - artifact: slides.md
+    artifact_excerpt: '“它未必完美，但足以让更多交易发生。”'
+    transcript_excerpt: 'Maybe it''s not perfect, but it will be good enough that it will allow for many many more trades to to happen.'
+  - artifact: article.html
+    artifact_excerpt: '“我们追求的是稳定一致的答案。”'
+    transcript_excerpt: 'What you just want to get is a consistent answer.'
+  - artifact: article.html
+    artifact_excerpt: '“互联网有管辖空间，也需要一座互联网法院。”'
+    transcript_excerpt: 'The point here is you have an internet jurisdiction and you also have an internet court, right?'
+  - artifact: article.html
+    artifact_excerpt: '“它未必完美，但足以让更多交易发生。”'
+    transcript_excerpt: 'Maybe it''s not perfect, but it will be good enough that it will allow for many many more trades to to happen.'

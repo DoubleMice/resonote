@@ -1,0 +1,32 @@
+title: 156：与 Henry 的「AI季报 26Q1」：OpenClaw、OpenAI 与 Anthropic 的三重对阵、自进化
+guest: Henry Yin
+guest_role: MOE Capital 创始合伙人
+tags:
+  - ai-products
+  - ai-research
+  - coding-agents
+  - productivity
+  - interview
+  - investor
+  - strategic
+summary: >
+  Henry Yin 从 OpenClaw 的个人助理形态出发，分析 Claude Code、Codex 与模型厂商如何把竞争推进到产品、生态和企业部署层面。节目也讨论了 Auto Research
+  所代表的自进化实验、持续学习的技术边界，以及 Agent 对推理基础设施、组织配置和劳动市场的影响。
+core_ideas:
+  - OpenClaw 的关键在于将本地权限、聊天入口、记忆与工具执行组合为个人助理体验。
+  - 编码能力正成为通用 Agent 的执行底座，模型厂商因此更重视开发者产品与真实使用数据。
+  - Auto Research 已能在明确指标下自动尝试训练代码改动，但目标与搜索空间仍由人主导。
+  - 持续学习在记忆文本和部分权重更新之间探索，规模、成本与基础设施仍是难题。
+  - Agent 的扩张把竞争带到推理成本、CPU 资源、组织效率与劳动市场。
+id: b19722c7-4ebd-4873-a055-332b774f15d5
+source: latepost
+source_title: "156: 与 Henry 的「AI季报 26Q1」：OpenClaw、OpenAI vs Anthropic的三重对阵、自进化"
+published: 2026-03
+published_sort: "20260331"
+duration: 1h52m
+url: https://podcast.latepost.com/156
+status: generated
+article_path: episodes/b19722c7-4ebd-4873-a055-332b774f15d5/article.html
+base: /episodes/b19722c7-4ebd-4873-a055-332b774f15d5/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: "2026-09-07T19:08:50.843Z"

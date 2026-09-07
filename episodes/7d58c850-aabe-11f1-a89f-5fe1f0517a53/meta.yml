@@ -1,0 +1,31 @@
+title: GenLayer 如何为 AI 代理人争议构建法院系统
+guest: Albert Castellana、Arthur Hayes
+guest_role: GenLayer Labs 联合创始人兼 CEO；Flock 创办人
+tags:
+  - ai-products
+  - startup
+  - interview
+  - founder
+  - technical
+  - strategic
+summary: >
+  Albert Castellana 解释了 GenLayer 想解决的窄问题：当 AI 代理人按自然语言条件交易并发生分歧时，如何用多名 AI
+  验证者为链上托管资金给出可重复的处理结果。对谈也厘清了它的边界：项目处理的是自执行的链上资产，而非替代国家法院、追索线下损害赔偿。
+core_ideas:
+  - GenLayer 把自然语言、网页与图像等证据带入托管合约的裁决过程，试图处理“是否合格”这类主观条件。
+  - 裁决从小规模验证者集合开始；当事方可付费上诉，最多可扩大到 1,500 名验证者。
+  - 承诺—揭示投票与错误一侧的资金损失，是项目用来压缩协调空间、约束验证者行为的机制。
+  - 项目瞄准因律师费和程序成本而被放弃的小额、跨境、高频交易，但市场需求与复杂争议下的一致性仍待验证。
+  - GenLayer 被定位为可与 Kleros、UMA 和国家法院并存的裁决层，而非唯一的法律体系。
+id: 7d58c850-aabe-11f1-a89f-5fe1f0517a53
+source: unchained
+source_title: How GenLayer Is Building a Court System for Disputes Between AI Agents
+published: 2026-09
+published_sort: "20260907"
+duration: 1h1m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4123706838.mp3
+status: generated
+article_path: episodes/7d58c850-aabe-11f1-a89f-5fe1f0517a53/article.html
+base: /episodes/7d58c850-aabe-11f1-a89f-5fe1f0517a53/
+thumbnail: https://megaphone.imgix.net/podcasts/7d58c850-aabe-11f1-a89f-5fe1f0517a53/image/43652ff8774ce00ce074df943ef6c771.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: "2026-09-07T18:50:36.048Z"
