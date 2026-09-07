@@ -35,6 +35,16 @@ test('an empty queue succeeds but explicitly reports no new content', () => {
   assert.equal(result.code, 0)
   assert.match(result.summary, /Generated and validated: 0/)
   assert.match(result.summary, /Outcome: no new content/)
+  assert.match(result.summary, /Pipeline wall time:/)
+})
+
+test('invalid concurrency and duplicate episode IDs fail before processing', () => {
+  assert.equal(execute([], ['--concurrency=0']).code, 1)
+  assert.equal(execute([], ['--concurrency=NaN']).code, 1)
+  const episode = { id: 'duplicate', title: 'duplicate', status: 'pending' }
+  const result = execute([episode, episode], ['--concurrency=2'])
+  assert.equal(result.code, 1)
+  assert.deepEqual(result.plan.episodes, [episode, episode])
 })
 
 test('a failed transcript download persists progress and fails the Action', () => {

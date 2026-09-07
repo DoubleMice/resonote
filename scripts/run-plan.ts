@@ -35,6 +35,9 @@ import { contentCommand, parseContentLog } from './lib/content-runner.ts'
 import { canonicalizeGeneratedMeta, canonicalizeSlidesFrontmatter } from './lib/generated-artifacts.ts'
 import { validateEpisodeArtifacts } from './lib/artifact-validator.ts'
 import type { PlanEntry, PlanFile, TranscriptionJob, TranscriptionJobsFile } from './lib/types.ts'
+import { processDeadline } from './lib/process-deadline.ts'
+import { PipelineTiming } from './lib/pipeline-timing.ts'
+import { mapConcurrent } from './lib/map-concurrent.ts'
 
 const ROOT = process.cwd()
 const PLANS_DIR = resolve(ROOT, 'data/plans')
@@ -52,6 +55,8 @@ const onlyEpisode = process.argv.find(a => a.startsWith('--episode='))?.split('=
 const retryFailed = process.argv.includes('--retry-failed')
 const limit = Number(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] ?? 9999)
 const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency='))?.split('=')[1] ?? 1)
+const generationTimeoutMinutes = Number(process.env.GENERATION_TIMEOUT_MINUTES || 60)
+const timing = new PipelineTiming()
 const dryRun = process.argv.includes('--dry-run')
 const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
 const autoTranscribe = process.argv.includes('--auto-transcribe')
@@ -421,8 +426,8 @@ async function* prepareTranscriptionAudioInputs(sourceId: string, entry: PlanEnt
   log.raw(`  downloading audio for local transcription ${sourceId}/${entry.id}`)
   try {
     const inputPath = join(workDir, 'input')
-    const download = await downloadAudio(entry.audio_url, inputPath)
-    const chunkPaths = await splitAudio(inputPath, workDir, DATA_URI_CHUNK_SECONDS, DATA_URI_MAX_BYTES)
+    const download = await timing.measure('audio-download', entry.id, () => downloadAudio(entry.audio_url!, inputPath))
+    const chunkPaths = await timing.measure('audio-preprocess', entry.id, () => splitAudio(inputPath, workDir, DATA_URI_CHUNK_SECONDS, DATA_URI_MAX_BYTES))
     log.raw(`  prepared ${chunkPaths.length} chunk(s) from ${(download.bytes / 1024 / 1024).toFixed(1)}MB audio`)
     // Encode only the current chunk. A multi-hour episode must not keep every
     // chunk's base64 payload in memory while waiting for the transcription API.
@@ -778,7 +783,7 @@ async function submitMiMoTranscriptionCandidates(
         }
         jobsFile.jobs.push(pendingJob)
         saveTranscriptionJobs(jobsFile)
-        const result = await client.transcribe(input.fileUrl)
+        const result = await timing.measure('transcription-request', `${entry.id}/${input.chunkIndex ?? 0}`, () => client.transcribe(input.fileUrl))
         const taskId = result.rawId || `mimo:${entry.id}:${input.chunkIndex ?? 0}:${now}`
         taskIds.push(taskId)
         pendingJob.task_id = taskId
@@ -871,12 +876,12 @@ async function runAutoTranscription(plans: { source: string; path: string; plan:
 
 async function auditGeneratedLayout(id: string): Promise<boolean> {
   log.raw(`  auditing layout for ${id}`)
-  const result = await run('pnpm', [
+  const result = await timing.measure('layout-audit', id, () => run('pnpm', [
     'exec',
     'tsx',
     'scripts/audit-layout.ts',
     `--id=${id}`,
-  ], { cwd: ROOT, reject: false })
+  ], { cwd: ROOT, reject: false }))
 
   if (result.code === 0) return true
   log.err(`  layout audit failed for ${id}`)
@@ -919,16 +924,23 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
       stdio: ['ignore', logFd, logFd],
       shell: false,
       windowsHide: true,
+      detached: process.platform !== 'win32',
     })
     let spawnError: Error | undefined
+    let timedOut = false
+    const clearDeadline = processDeadline(child, generationTimeoutMinutes * 60_000, () => {
+      timedOut = true
+      log.err(`generation timed out for ${entry.id} after ${generationTimeoutMinutes} minutes`)
+    })
     child.once('error', error => { spawnError = error })
     child.once('close', code => {
+      clearDeadline()
       fs.closeSync(logFd)
       if (spawnError) log.err(`  spawn error: ${spawnError.message}`)
       const durationMs = Date.now() - startTime
       const result = parseContentLog(readFileSync(logPath, 'utf8'))
       resolveFn({
-        ok: !spawnError && code === 0 && result.completed && !result.isError,
+        ok: !timedOut && !spawnError && code === 0 && result.completed && !result.isError,
         inputTokens: result.inputTokens, outputTokens: result.outputTokens,
         durationMs, isRateLimit: result.isRateLimit,
       })
@@ -1023,7 +1035,7 @@ async function processEntry(
     isRateLimit: false,
   }
   try {
-    result = await generateOne(entry, sourceId)
+    result = await timing.measure('content-agent', entry.id, () => generateOne(entry, sourceId))
   } catch (error: any) {
     log.err(`  generation failed before completion: ${error.message}`)
   } finally {
@@ -1079,6 +1091,8 @@ async function processEntry(
 }
 
 async function main() {
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 4) throw new Error('concurrency must be an integer from 1 to 4')
+  if (!Number.isFinite(generationTimeoutMinutes) || generationTimeoutMinutes <= 0 || generationTimeoutMinutes > 120) throw new Error('GENERATION_TIMEOUT_MINUTES must be greater than 0 and at most 120')
   log.step(`Run-plan — concurrency=${concurrency}, limit=${limit}${autoTranscribe ? ', auto-transcribe' : ''}${dryRun ? ' (DRY RUN)' : ''}`)
 
   const plans = loadPlans()
@@ -1092,7 +1106,15 @@ async function main() {
     throw new Error(`episode ${onlyEpisode} not found in selected plans`)
   }
 
-  await runAutoTranscription(targetPlans)
+  const ids = new Set<string>()
+  for (const { plan } of targetPlans) {
+    for (const entry of plan.episodes) {
+      if (onlyEpisode && entry.id !== onlyEpisode) continue
+      if (ids.has(entry.id)) throw new Error(`duplicate episode id in selected plans: ${entry.id}`)
+      ids.add(entry.id)
+    }
+  }
+  await timing.measure('transcription-stage', 'all', () => runAutoTranscription(targetPlans))
 
   // Flatten all generatable entries with their plan context, sorted by published date desc
   const allPending: { entry: PlanEntry; sourceId: string; plan: PlanFile; planPath: string }[] = []
@@ -1139,37 +1161,27 @@ async function main() {
   const toProcess = selectFairGenerationCandidates(allPending, limit)
   log.info(`${allPending.length} pending, will process ${toProcess.length}${onlyCategory ? ` (category: ${onlyCategory})` : ''}`)
 
-  // Concurrency: run N at a time
-  const queue = [...toProcess]
-  const workers: Promise<void>[] = []
-  async function worker(): Promise<void> {
-    while (queue.length > 0) {
-      if (generationRateLimited) {
-        stats.skippedRateLimit += queue.length
-        queue.length = 0
-        break
-      }
-      const item = queue.shift()
-      if (!item) break
-      try {
-        await processEntry(item.entry, item.sourceId, item.plan, item.planPath)
-      } catch (err: any) {
-        log.err(`  UNHANDLED in ${item.entry.id}: ${err.stack || err.message}`)
-        stats.failed++
-        item.entry.status = 'failed'
-        savePlan(item.planPath, item.plan)
-      }
+  await timing.measure('generation-stage', 'all', () => mapConcurrent(toProcess, concurrency, async item => {
+    if (generationRateLimited) {
+      stats.skippedRateLimit++
+      return
     }
-  }
-  for (let i = 0; i < concurrency; i++) workers.push(worker())
-  await Promise.all(workers)
+    try {
+      await processEntry(item.entry, item.sourceId, item.plan, item.planPath)
+    } catch (err: any) {
+      log.err(`  UNHANDLED in ${item.entry.id}: ${err.stack || err.message}`)
+      stats.failed++
+      item.entry.status = 'failed'
+      savePlan(item.planPath, item.plan)
+    }
+  }))
 
   // Print summary
   log.ok('\n══════════ Run-plan Summary ══════════')
   log.ok(`  ✅ Generated: ${stats.generated}`)
   if (stats.failed > 0) log.err(`  ❌ Failed: ${stats.failed}`)
   if (stats.skippedRateLimit > 0) log.warn(`  ⏭ Skipped (rate limit): ${stats.skippedRateLimit}`)
-  log.ok(`  ⏱ Total time: ${(stats.totalDurationMs / 1000 / 60).toFixed(1)} min`)
+  log.ok(`  ⏱ Content-agent time (sum, not wall time): ${(stats.totalDurationMs / 1000 / 60).toFixed(1)} min`)
   if (stats.totalInputTokens > 0) {
     log.ok(`  📊 Total tokens: ${(stats.totalInputTokens / 1000).toFixed(0)}k input / ${(stats.totalOutputTokens / 1000).toFixed(0)}k output`)
   }
@@ -1207,8 +1219,19 @@ main().catch(e => {
     `- Transcription failures this run: ${transcriptionFailures.size}`,
     ...[...transcriptionFailures].sort().map(id => `  - ${id}`),
     `- Skipped after rate limit: ${stats.skippedRateLimit}`,
+    `- Generation concurrency: ${concurrency}`,
+    `- Pipeline wall time: ${(timing.report().wallMs / 60_000).toFixed(2)} min`,
+    `- Content-agent time (sum): ${(stats.totalDurationMs / 60_000).toFixed(2)} min`,
     `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : transcriptionWarning ? 'completed with transcription warnings; publication checks required' : stats.generated ? 'generated' : 'no new content'}`,
     '',
+    '| Phase | Episode/chunk | Minutes | Measurement completed |',
+    '| --- | --- | ---: | --- |',
+    ...timing.samples.map(s => `| ${s.phase} | ${s.id.replace(/[|\r\n]/g, ' ')} | ${(s.ms / 60_000).toFixed(2)} | ${s.ok} |`),
+    '',
+    'Phase measurements overlap/nest; do not sum them. Content-agent time includes internal tools and self-audit; measurement completion is not artifact validation.',
+    '',
   ].join('\n')
+  mkdirSync(join(ROOT, 'logs'), { recursive: true })
+  writeFileSync(join(ROOT, 'logs/pipeline-timing.json'), JSON.stringify({ ...timing.report(), concurrency, generated: stats.generated, failed: stats.failed }, null, 2) + '\n')
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary)
 })

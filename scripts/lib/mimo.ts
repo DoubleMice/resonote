@@ -2,6 +2,7 @@ export interface MiMoClientOptions {
   apiKey: string
   model?: string
   baseUrl?: string
+  timeoutMs?: number
 }
 
 export interface MiMoTranscript {
@@ -87,16 +88,20 @@ export class MiMoClient {
   private apiKey: string
   private model: string
   private url: string
+  private timeoutMs: number
 
   constructor(options: MiMoClientOptions) {
     this.apiKey = options.apiKey
     this.model = options.model || DEFAULT_MIMO_MODEL
     this.url = `${(options.baseUrl || 'https://api.xiaomimimo.com/v1').replace(/\/$/, '')}/chat/completions`
+    this.timeoutMs = options.timeoutMs ?? Number(process.env.MIMO_TIMEOUT_MS || 600_000)
+    if (!Number.isSafeInteger(this.timeoutMs) || this.timeoutMs <= 0) throw new Error('MIMO_TIMEOUT_MS must be a positive integer')
   }
 
   async transcribe(audioData: string): Promise<MiMoTranscript> {
     const response = await fetch(this.url, {
       method: 'POST',
+      signal: AbortSignal.timeout(this.timeoutMs),
       headers: {
         Authorization: `Bearer ${this.apiKey}`,
         'Content-Type': 'application/json',

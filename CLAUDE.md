@@ -120,6 +120,13 @@ pnpm run e2e:transcription
 
 `Generate and Deploy` 为 `plan:run` 传入 `--allow-transcription-failures`：单集自动转写失败保留在 plan 中，并在 Actions 摘要和警告中显示，随后继续执行发布检查。内容生成失败、生成时的产物或布局审计失败、全站校验与构建失败仍阻止部署。未传该参数的命令行调用保持严格模式，转写失败仍返回非零退出码。
 
+生成性能与超时：
+- 手动 Actions 可选 `concurrency=2` 做双并发小批量验证；定时任务读取仓库变量 `GENERATE_CONCURRENCY`，未设置仍为 1。CLI 支持 `--concurrency=1..4`，重复 episode ID 会在处理前报错。
+- `GENERATION_TIMEOUT_MINUTES` 默认 60（上限 120）；生成子进程超时后发送 TERM，5 秒后强制结束。在 Linux CI 上清理整个进程组。Windows 回退为只终止直接子进程。
+- `MIMO_TIMEOUT_MS` 默认 600000，覆盖每个音频块的请求及响应体读取；超时按原有转写失败流程记录。
+- Actions 摘要与 `pipeline-timing` 产物记录整轮、转写、下载、预处理、单块请求、生成和外层审计耗时。各阶段有嵌套或重叠，不能直接相加；生成耗时包含模型内部工具调用与自审，不能当作纯 API 时间。产物保留 14 天，不上传原始生成日志或音频。
+- 先用两集做双并发验证，比较成功集数、人工抽读、耗时与限流情况，再将仓库变量设为 2；不要以失败提前结束的耗时作为性能改善。当前仍先转写、后生成。
+
 ## 自动转写
 
 - `run-plan.ts --auto-transcribe` 会提交 `needs_transcript` episode 到转写 provider，并把结果写入 `data/transcripts/<id>.txt`。

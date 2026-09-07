@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { createServer } from 'node:http'
 import {
   buildMiMoTranscriptionRequest,
   DEFAULT_MIMO_MAX_COMPLETION_TOKENS,
@@ -49,5 +50,17 @@ test('uses OpenAI-compatible Bearer authentication', async () => {
     assert.equal(authorization, 'Bearer test-key')
   } finally {
     globalThis.fetch = originalFetch
+  }
+})
+
+test('MiMo deadline covers a stalled response body', { timeout: 5000 }, async () => {
+  const server = createServer((_req, res) => { res.writeHead(200); res.write('{') })
+  await new Promise<void>(resolve => server.listen(0, '127.0.0.1', resolve))
+  const address = server.address() as import('node:net').AddressInfo
+  try {
+    await assert.rejects(new MiMoClient({ apiKey: 'test', baseUrl: `http://127.0.0.1:${address.port}`, timeoutMs: 100 }).transcribe('test'), /abort|timeout/i)
+  } finally {
+    server.closeAllConnections()
+    await new Promise<void>(resolve => server.close(() => resolve()))
   }
 })
