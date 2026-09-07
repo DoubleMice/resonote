@@ -269,17 +269,16 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 **Content requirements:**
 - Header with title, guest, source, date
 - Footer with source episode link
-- Plan the article from the transcript independently of slide order. RULE 4's overview, quote pages, ending, and page counts apply only to slides. Do not expand each slide into a section.
-- Open with a specific episode detail, question, or disagreement that introduces the subject. Supply the context needed to understand it. Do not routinely begin with a `为什么值得读` card grid or a summary of every later section.
-- Choose section count and paragraph length from the material, with no fixed quota. Merge adjacent sections answering the same question; give a substantial story room to unfold. Preserve qualifications and disagreements. Do not pad to meet the file-size contract or drop important evidence to fit a template.
-- Use headings that name the actual subject or claim. Avoid a repeated `从 X 到 Y`, `X：Y`, or numbered framework across unrelated sections. A heading must not assert more than its supporting paragraphs.
-- Organize around the episode's needs: chronology for a developing story, evidence and objections for an argument, or separate threads for genuinely distinct subjects. Reordering is allowed when context and chronology remain accurate; do not invent causality to connect topics.
-- Write connected paragraphs. Each paragraph should advance the account with an explanation, example, qualification, or consequence. Avoid a repeated claim–example–grand conclusion template and recurring `这背后` / `这也说明` / `真正的……` commentary. An example can end a section without another moral.
-- Cards, comparisons, and lists are optional, only when they make parallel facts easier to compare. Do not repeat the same content in an overview, the body, and a closing summary.
-- Place verified quotes beside the discussion they support, with attribution (RULE 1 applies). No article quote quota or required `核心金句` collection; omit direct quotes when paraphrase works better. End where the account reaches its last useful point, remaining question, or constraint, without a compulsory closing slogan or summary section.
-- Distinguish attribution from editorial inference: faithful paraphrases belong in ordinary prose, with `嘉宾认为` / `他回忆` where needed. Reserve `作者概括：` for an added editorial framework, analogy, or inference under RULE 3; do not label every paraphrase, and do not use the label to excuse unsupported facts. Omit editorial glosses that merely repeat the preceding paragraph.
-- Voice: clear Chinese suited to the subject (technology, history, personal experience, etc.). Prefer concrete actions to abstract nouns, split translated modifier chains, and use natural topic continuity instead of restating a full subject in every sentence. Keep the speaker's uncertainty, scope, and tone; do not upgrade a personal view to a general fact or a company claim to a proven result.
-- Apply RULE 0.5 naming and sentence checks. Explain unfamiliar terms near first use, without inventing translations for brands or products. Read the opening, headings, and paragraph endings together to catch repeated structure, then read the full article for continuity.
+
+**行文目标：像一篇读得顺的中文杂志文章。** 让没听过节目的人读一遍就能跟上事情的经过、观点的来由和讨论的推进。事实准确是底线；在这个前提下，优先保证叙述连贯、解释清楚、语气自然。长短句交替，保持克制，不刻意幽默，也不强加第一人称。
+
+- 先把事情讲清楚，再解释其中的机制。开头可以简短交代本期谈什么，也可以从一个具体场景切入。沿着材料中读者容易跟上的顺序展开；沿用访谈顺序本身没有问题，只有反复或跳跃妨碍理解时才重排。文章可以与幻灯片共享主题，但不要逐页扩写。
+- 每段围绕一个读者此刻需要理解的重点。通常用几句就把一层意思说清，具体案例需要时再展开。背景、名单、数字和评论多到需要回读时，拆段或取舍；不要为了合并章节，把几个问题挤进一个长段。短段落是阅读节奏，不是字数配额。
+- 后一句接住前一句已经出现的人、事或问题，再带出新信息。需要转折或因果解释时，自然使用“但”“因此”“这解释了为什么”；这些词并不天然带有 AI 味。关系必须有材料支持，不能靠一句抽象判断把无关话题硬连起来。
+- 用普通中文直接说明人物做了什么、为什么这样做、后来发生了什么。保持必要的术语和人名；少把具体动作改写成“进入价格表”“放进同一组资源”等抽象说法。小标题让读者知道下面谈什么，不承担额外的造势任务。
+- 将观点归属、时间与不确定性写进原句，例如“主持人预计当月发布”，而不是先写成事实，再补一句“这不应被当成已经兑现的事实”。关键的反例、分歧和适用条件必须保留；只有确实影响理解时才专门解释边界，不为每个事实附加通用的警示或评论。
+- 引文用于保留有表现力的原话，不必重复正文刚解释过的意思，也不必每节安排一条。忠实转述自然标明观点归属；新增的编辑框架、类比或推断才按 RULE 3 标为“作者概括”，标签不豁免证据要求。直接引文仍须按 RULE 1 核验。
+- 节数、段数、概览卡片和金句均不设配额，RULE 4 的页数与模块要求仅适用于幻灯片。列表和卡片按阅读需要使用。结尾把本期最后一个有用的意思讲完即可，不额外制造警句、升华或未解之问。文件大小契约不构成填充文字的理由。
 
 ## RULE 11 — Persist quote evidence
 

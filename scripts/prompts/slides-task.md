@@ -83,13 +83,7 @@ path, and status fields after generation.
 
 Produce a complete semantic HTML article document at `episodes/{{ID}}/article.html`.
 
-**Content**: Use the transcript evidence from Phase 1 and follow RULE 10, which owns the article structure. Before drafting, outline the article's central question or narrative thread, the evidence each section adds, and the connection to the next section. Choose a structure suited to this episode; do not copy the slide outline.
-- Header: title, guest, source, date; footer: source episode link
-- Open with a concrete detail or question from the episode and enough context to follow it.
-- Let the material determine section count and paragraph length. Merge overlapping themes; preserve substantial examples, qualifications, and disagreements.
-- Use prose as the default. Overview cards, comparison blocks, and lists are optional; include them only when they serve a distinct reading need.
-- Put verified quotations near the relevant argument, when useful. There is no required article quote count or closing `核心金句` block.
-- Attribute faithful paraphrases naturally. Mark only added editorial interpretations as `作者概括：`, as specified in RULE 10.
+**Content**: Use the transcript evidence from Phase 1 and the Chinese magazine-style prose guidance in RULE 10. Briefly plan a reading order that makes the episode easy to follow, then write connected prose. Include title, guest, source and date in the header, and a source link in the footer. RULE 10 owns the editorial requirements; there is no additional section, paragraph, card, or quote quota here.
 
 **Format**: Do not embed `<style>`, stylesheet links, inline `style` attributes,
 JavaScript, navigation, or reader chrome. `scripts/build-all.ts` injects the
@@ -126,10 +120,7 @@ For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? con
 
 For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
 
-Then review the article at three levels (word searches alone cannot verify prose quality):
-1. Read the opening and headings in sequence. Is there a coherent account, does every section add material, and are related points needlessly split? Merge or reorder where needed, checking transcript context again.
-2. Read paragraph openings and endings together. Remove repetitive summaries, formulaic transitions, vague metaphors, and repeated editorial verdicts. Keep a supported contrast or conclusion when it actually clarifies the argument.
-3. Read the full prose aloud mentally. Resolve unclear references, long translated modifier chains, unnecessary English, and unnatural collocations. Check that edits preserve who said what, time, conditions, uncertainty, and comparison metrics. Refresh quote evidence after any quote edit.
+Finally, read the article straight through as someone who has not heard the episode. Can you follow what happened and why without rereading? Fix overloaded paragraphs, unexplained jumps, awkward wording, and redundant commentary. Keep natural transitions, useful explanations, and concrete examples that already read well. Do not rewrite a fluent sentence just to avoid a search hit or make the prose sound more literary. After editing, re-check attribution, time, conditions, uncertainty, and comparison metrics; refresh evidence for any changed quote.
 
 Record the main structural and language revisions in the final JSON `notes`; do not insert this editorial checklist into the published article.
 
