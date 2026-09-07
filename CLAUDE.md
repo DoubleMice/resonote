@@ -118,6 +118,8 @@ pnpm run e2e:transcription
 
 **一键从头到尾**：`cache:refresh → plan → plan:run → normalize:meta → build → git commit → git push`。push 不触发生成部署；部署由定时或手动 workflow 触发。
 
+`Generate and Deploy` 为 `plan:run` 传入 `--allow-transcription-failures`：单集自动转写失败保留在 plan 中，并在 Actions 摘要和警告中显示，随后继续执行发布检查。内容生成失败、生成时的产物或布局审计失败、全站校验与构建失败仍阻止部署。未传该参数的命令行调用保持严格模式，转写失败仍返回非零退出码。
+
 ## 自动转写
 
 - `run-plan.ts --auto-transcribe` 会提交 `needs_transcript` episode 到转写 provider，并把结果写入 `data/transcripts/<id>.txt`。

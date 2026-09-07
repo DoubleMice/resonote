@@ -11,6 +11,7 @@
 //   pnpm run plan:run -- --limit=3                 # process at most N episodes
 //   pnpm run plan:run -- --concurrency=2           # parallel generation
 //   pnpm run plan:run -- --dry-run                 # show what would be done
+//   pnpm run plan:run -- --allow-transcription-failures # continue to publication checks after ASR failures
 //
 // Status updates are written back to data/plans/<source>.yml after each episode.
 // This means interruptions are safe — re-run picks up from where we left off.
@@ -54,6 +55,7 @@ const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency=')
 const dryRun = process.argv.includes('--dry-run')
 const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
 const autoTranscribe = process.argv.includes('--auto-transcribe')
+const allowTranscriptionFailures = process.argv.includes('--allow-transcription-failures')
 const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe-limit='))?.split('=')[1] ?? 1)
 const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
 const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
@@ -1188,16 +1190,24 @@ main().catch(e => {
   log.err(e.stack || e.message)
   process.exitCode = 1
 }).finally(() => {
-  const failed = stats.failed > 0 || transcriptionFailures.size > 0 || stats.skippedRateLimit > 0
+  const transcriptionWarning = allowTranscriptionFailures && transcriptionFailures.size > 0
+  const failed = stats.failed > 0 || (!allowTranscriptionFailures && transcriptionFailures.size > 0) || stats.skippedRateLimit > 0
   if (!dryRun && failed) process.exitCode = 1
+  if (!dryRun && transcriptionWarning) {
+    log.warn(`Transcription failed for ${transcriptionFailures.size} episode(s); failures remain recorded in plans. Publication still requires artifact validation and build checks.`)
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      console.log(`::warning::${transcriptionFailures.size} episode transcription(s) failed; see the generation summary and plan errors. Publication checks remain required.`)
+    }
+  }
   const summary = [
     '## Content generation',
     '',
     `- Generated and validated: ${stats.generated}`,
     `- Generation/download failures: ${stats.failed}`,
     `- Transcription failures this run: ${transcriptionFailures.size}`,
+    ...[...transcriptionFailures].sort().map(id => `  - ${id}`),
     `- Skipped after rate limit: ${stats.skippedRateLimit}`,
-    `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : stats.generated ? 'generated' : 'no new content'}`,
+    `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : transcriptionWarning ? 'completed with transcription warnings; publication checks required' : stats.generated ? 'generated' : 'no new content'}`,
     '',
   ].join('\n')
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary)

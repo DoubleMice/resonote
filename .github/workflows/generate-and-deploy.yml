@@ -170,7 +170,9 @@ jobs:
           source="${GENERATE_SOURCE}"
           category="${GENERATE_CATEGORY}"
           provider="${TRANSCRIPT_PROVIDER:-mimo}"
-          args=(--limit=${limit})
+          # Individual ASR failures stay in plans and the summary. Generation,
+          # artifact validation, layout, and build failures still block deployment.
+          args=(--limit=${limit} --allow-transcription-failures)
           if [ -n "${GENERATE_EPISODE}" ]; then
             args+=(--episode="${GENERATE_EPISODE}")
           fi
@@ -206,7 +208,7 @@ jobs:
       - name: Require successful generation before building
         if: ${{ !cancelled() && steps.generation.outcome == 'failure' }}
         run: |
-          echo "::error::Content generation or transcription failed. See the generation summary; deployment stopped."
+          echo "::error::Content generation, audit, or runner failed. See the generation summary; deployment stopped."
           exit 1
 
       - name: Normalize generated metadata

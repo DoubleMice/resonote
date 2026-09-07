@@ -73,6 +73,39 @@ test('recent failed transcriptions cool down, while an explicit retry can bypass
   assert.match(resubmitted.summary, /Transcription failures this run: 0/)
 })
 
+test('publication mode preserves ASR failures but allows publication checks to run', () => {
+  const result = execute([{
+    id: 'bad-audio', title: 'Bad audio', status: 'needs_transcript',
+    audio_url: 'http://127.0.0.1:1/audio.mp3',
+  }], ['--auto-transcribe', '--allow-transcription-failures'])
+  assert.equal(result.code, 0)
+  assert.equal(result.plan.episodes[0].status, 'transcribe_failed')
+  assert.ok(result.plan.episodes[0].transcript_error)
+  assert.match(result.summary, /Transcription failures this run: 1/)
+  assert.match(result.summary, /bad-audio/)
+  assert.match(result.summary, /completed with transcription warnings; publication checks required/)
+  assert.doesNotMatch(result.summary, /deployment blocked/)
+})
+
+test('publication mode still blocks generation failures alongside ASR failures', () => {
+  const result = execute([
+    { id: 'bad-audio', title: 'Bad audio', status: 'needs_transcript', audio_url: 'http://127.0.0.1:1/audio.mp3' },
+    { id: 'missing-transcript', title: 'Missing transcript', status: 'pending' },
+  ], ['--auto-transcribe', '--allow-transcription-failures'])
+  assert.equal(result.code, 1)
+  assert.equal(result.plan.episodes[0].status, 'transcribe_failed')
+  assert.equal(result.plan.episodes[1].status, 'failed')
+  assert.match(result.summary, /Transcription failures this run: 1/)
+  assert.match(result.summary, /Generation\/download failures: 1/)
+  assert.match(result.summary, /deployment blocked/)
+})
+
+test('publication mode does not mask fatal errors', () => {
+  const result = execute([], ['--episode=does-not-exist', '--allow-transcription-failures'])
+  assert.equal(result.code, 1)
+  assert.match(result.summary, /deployment blocked/)
+})
+
 test('can select and retry one failed generation without resetting other episodes', () => {
   const episodes = [
     { id: 'failed-one', title: 'Failed one', status: 'failed' },
