@@ -106,6 +106,9 @@ Fix any sentence that has one of these problems:
 - marketing shorthand that sounds good but does not say what happened
 - nominalized or abstract-verb filler (`对……进行分析`, `赋能`, `释放潜力`) where a plain verb works
 - mechanical frames and filler (`通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `值得注意的是`) — keep meaningful, supported contrasts; remove invented oppositions and repetitive framing
+- headings or transitions that narrate the editing process (`先把……说清楚`, `先别……`, `别急着……`, `先看……再谈……`) instead of naming the actual subject
+- staged insight (`真正的问题是……`, `结论不是……`, `不是起点，也不是终点`) or post-hoc disclaimers (`不应被读作……`, `节目要说明的不是……`, `更准确地说……`) where the concrete fact, attribution, or condition can be stated directly
+- abstract or mixed metaphors added by the article rather than the speaker; do not turn unrelated ideas into maps, races, ledgers, chains, foundations, or battlefields for rhetorical effect
 - inconsistent entity names — use an established Chinese name where available, otherwise the original spelling; keep it consistent across artifacts
 
 The translationese review checklist in RULE 0.5 of the system prompt lists more cues — run through it here as well. These are review cues, not mechanical bans; check context before rewriting.
@@ -113,10 +116,10 @@ The translationese review checklist in RULE 0.5 of the system prompt lists more 
 Then run a mechanical self-scan over your own output with the Grep tool (or `rg`) — hits are a review queue, not auto-replacements:
 
 ```bash
-rg -n '赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(而且|更是)|不是.{0,16}而是|通过.{0,24}从而|进行.{0,8}(分析|讨论|检查)|实现.{0,8}(提升|增长|优化)|完成.{0,8}(构建|部署)|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳' episodes/{{ID}}/slides.md episodes/{{ID}}/article.html episodes/{{ID}}/meta.yml
+rg -n '赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(而且|更是)|不是.{0,40}而是|不在于.{0,40}而在于|通过.{0,24}从而|进行.{0,8}(分析|讨论|检查)|实现.{0,8}(提升|增长|优化)|完成.{0,8}(构建|部署)|先把.{0,24}(说清楚|讲清楚|弄清楚)|先别|别急着|这(也)?解释了为什么|真正的问题是|结论不是|不是起点.{0,12}不是终点|不应被读作|不该被读作|节目要说明的不是|这里讨论的是|更准确地说|待检验的假设|待解的竞争|写成终局|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳' episodes/{{ID}}/slides.md episodes/{{ID}}/article.html episodes/{{ID}}/meta.yml
 ```
 
-For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? concretize with transcript evidence? narrow or delete). Protected names, fixed terms, and grep-verified quotes stay untouched. After each rewrite, re-check subject, condition, and outcome, and confirm terminology is still consistent.
+For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? concretize with transcript evidence? narrow or delete). Protected names, fixed terms, and grep-verified quotes stay untouched. After each rewrite, re-check subject, condition, and outcome, and confirm terminology is still consistent. Group the remaining hits by construction: the same frame must not appear in two headings or three body paragraphs unless every occurrence is a verified quote. Do not finish while an unresolved repeated frame remains.
 
 For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
 

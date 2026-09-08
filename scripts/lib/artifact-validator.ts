@@ -27,7 +27,8 @@ const STATUSES = new Set([
   'queued', 'needs_transcript', 'transcribing', 'transcribe_failed', 'downloading',
   'downloaded', 'generating', 'generated', 'audit_failed', 'failed',
 ])
-const CHINESE_REVIEW_PATTERN = /赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(?:而且|更是)|不是.{0,16}而是|通过.{0,24}从而|进行.{0,8}(?:分析|讨论|检查)|实现.{0,8}(?:提升|增长|优化)|完成.{0,8}(?:构建|部署)|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳/g
+const CHINESE_REVIEW_PATTERN = /赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(?:而且|更是)|不是[^。；<\n]{0,40}而是|不在于[^。；<\n]{0,40}而在于|通过.{0,24}从而|进行.{0,8}(?:分析|讨论|检查)|实现.{0,8}(?:提升|增长|优化)|完成.{0,8}(?:构建|部署)|先把[^。；<\n]{0,24}(?:说清楚|讲清楚|弄清楚)|(?:<h[1-6][^>]*>|^#{1,6}\s+)[^<\n]{0,24}(?:先别|别急着|先看|先找|先分|再谈)|这(?:也)?解释了为什么|真正的问题是|结论不是|不是起点.{0,12}不是终点|不应被读作|不该被读作|节目要说明的不是|这里讨论的是|更准确地说|待检验的假设|待解的竞争|写成终局|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳/g
+const REPETITIVE_EDITORIAL_FRAME_PATTERN = /先把|先别|别急着|真正(?:的|是|在于)|这(?:也)?解释了为什么|不在于[^。；<\n]{0,40}而在于|不是[^。；<\n]{0,40}而是/g
 const TRANSCRIPT_ARTIFACT_PATTERN = /\b(?:quad code|Lex Friman|Anthopic|O Pus|o-pus|Sonet|Sonnett|chat GPT)\b/gi
 
 function relativeFile(id: string, name: string): string {
@@ -418,18 +419,32 @@ function lintEditorialContent(options: ValidateArtifactOptions, issues: Artifact
     if (!existsSync(path)) continue
     const lines = readFileSync(path, 'utf8').split(/\r?\n/)
     let reported = 0
-    for (const [index, line] of lines.entries()) {
+    editorialLines: for (const [index, line] of lines.entries()) {
       CHINESE_REVIEW_PATTERN.lastIndex = 0
-      const match = CHINESE_REVIEW_PATTERN.exec(line)
-      if (!match) continue
-      issues.push({
-        level: 'warning',
-        code: 'chinese-editorial-review',
-        file,
-        message: `line ${index + 1} contains review cue: ${match[0]}`,
-      })
-      reported += 1
-      if (reported >= 20) break
+      for (const match of line.matchAll(CHINESE_REVIEW_PATTERN)) {
+        issues.push({
+          level: 'warning',
+          code: 'chinese-editorial-review',
+          file,
+          message: `line ${index + 1} contains review cue: ${match[0]}`,
+        })
+        reported += 1
+        if (reported >= 20) break editorialLines
+      }
+    }
+    if (name !== 'meta.yml') {
+      const prose = name === 'article.html'
+        ? readFileSync(path, 'utf8').replace(/<blockquote\b[\s\S]*?<\/blockquote>/gi, '')
+        : lines.filter(line => !line.trimStart().startsWith('>')).join('\n')
+      const frames = [...prose.matchAll(REPETITIVE_EDITORIAL_FRAME_PATTERN)].map(match => match[0])
+      if (frames.length >= 4) {
+        issues.push({
+          level: 'warning',
+          code: 'repetitive-editorial-frame',
+          file,
+          message: `${frames.length} formulaic editorial frames require a repetition review; examples: ${[...new Set(frames)].slice(0, 5).join(', ')}`,
+        })
+      }
     }
     for (const [index, line] of lines.entries()) {
       TRANSCRIPT_ARTIFACT_PATTERN.lastIndex = 0

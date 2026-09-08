@@ -35,12 +35,16 @@ Mandatory checks:
   - Nominalized verbs: write `分析日志` / `调整配置`, not `对日志进行分析` / `作出配置调整`.
   - Abstract business verbs used as filler: `赋能` `助力` `解锁潜力` `释放潜力` `注入活力` — state who did what and what resulted.
   - Mechanical frames: `通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `随着……不断……，……正日益……` — check the actual relation: causation needs evidence, contrast needs a meaningful distinction. Keep a natural, supported contrast even in paraphrase; remove invented opposing claims and repetitive rhetorical frames.
+  - Editor-at-work narration: do not tell the reader how to read the article with headings or transitions such as `先把……说清楚`, `先别……`, `别急着……`, `先看……再谈……`. Name the actual subject, event, or finding instead.
+  - Pseudo-revelation frames: avoid repeatedly announcing `真正的问题是……`, `关键不在……而在……`, `结论不是……`, or `不是起点，也不是终点`. State the concrete constraint or conclusion without staging a reveal or inventing an opposition.
+  - Post-hoc disclaimers: avoid standalone corrections such as `这不应被读作……`, `节目要说明的不是……`, `这里讨论的是……`, `更准确地说……`, or `这是一个待检验的假设`. Put the speaker, time, estimate, condition, or uncertainty in the factual sentence itself.
   - Filler framing: `值得注意的是`, `在这个时间点`, `从本质上讲`, `对于……而言` — delete and state the fact directly.
   - Empty elevation and vague attribution: `标志着……新篇章`, `未来可期`, `专家认为`, `行业报告显示` — delete unless the guest said it (then RULE 1 grep applies).
   - Unidiomatic evaluatives: `一等的方案`, `上佳选择`, `颇具价值` — use an ordinary evaluation, or state the concrete evidence instead. (Fixed terms like `一等公民` stay as-is.)
   - Pseudo-analysis endings: `从而确保`, `进一步彰显`, `反映了……` — keep only a real causal chain; delete the commentary tail if there is none.
   - Relation avoidance: use `是` / `有` for simple relations, not `作为……`, `充当……`, `拥有……`.
   - Forced triads and fake ranges: don't arrange points into threes or same-length clauses for rhythm; `从 X 到 Y` only when X and Y share one scale.
+  - Abstract editorial metaphors: don't say a question was `往前推`, a view was put `进同一张账`, a disagreement `落在` an abstraction, or facts were organized into a `链` merely to make the prose sound analytical. Use the specific action and consequence. Do not mix unrelated map, race, ledger, chain, foundation, or battlefield metaphors; retain a metaphor only when it comes from the transcript and improves understanding.
   - Decoration: no dash-driven suspense, no bold-label-then-colon on every list item, no emoji icons.
   - Over-hedging: keep one layer of uncertainty, not `可能潜在地或许会`.
   - Slogan endings: never close a slide or section with an empty uplifting line; end on a fact, a quote, or a concrete consequence.
@@ -51,7 +55,7 @@ Process each flagged sentence with a decision, not a reflex swap:
 3. Does the transcript provide facts to replace the evaluation with? → write the concrete action, number, or result. No evidence, no concretization (RULE 3).
 4. No safe rewrite? → narrow the claim to what the evidence supports, or delete.
 
-These are review cues, not mechanical bans. Check context before rewriting; never change a term that has an operational definition.
+These are review cues, not mechanical bans. Check context before rewriting; never change a term that has an operational definition or a grep-verified quote. However, repetition is itself a problem: if the same framing device appears in two headings or three body paragraphs, rewrite the repeated instances even when one use would be defensible.
 
 Examples:
 - Bad: `AI 实验室比联合航空快一千倍。`
@@ -270,12 +274,12 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 - Header with title, guest, source, date
 - Footer with source episode link
 
-**行文目标：像一篇读得顺的中文杂志文章。** 让没听过节目的人读一遍就能跟上事情的经过、观点的来由和讨论的推进。事实准确是底线；在这个前提下，优先保证叙述连贯、解释清楚、语气自然。长短句交替，保持克制，不刻意幽默，也不强加第一人称。
+**行文目标：像一篇读得顺的中文杂志文章。** 让没听过节目的人读一遍就能跟上事情的经过、观点的来由和讨论的推进。事实准确是底线；在这个前提下，优先保证叙述连贯、解释明白、语气自然。长短句交替，保持克制，不刻意幽默，也不强加第一人称。
 
-- 先把事情讲清楚，再解释其中的机制。开头可以简短交代本期谈什么，也可以从一个具体场景切入。沿着材料中读者容易跟上的顺序展开；沿用访谈顺序本身没有问题，只有反复或跳跃妨碍理解时才重排。文章可以与幻灯片共享主题，但不要逐页扩写。
+- 开头直接交代本期讨论的对象、事件或具体场景，随后沿事实关系解释相关机制。沿着材料中读者容易跟上的顺序展开；沿用访谈顺序本身没有问题，只有反复或跳跃妨碍理解时才重排。文章可以与幻灯片共享主题，但不要逐页扩写。
 - 每段围绕一个读者此刻需要理解的重点。通常用几句就把一层意思说清，具体案例需要时再展开。背景、名单、数字和评论多到需要回读时，拆段或取舍；不要为了合并章节，把几个问题挤进一个长段。短段落是阅读节奏，不是字数配额。
-- 后一句接住前一句已经出现的人、事或问题，再带出新信息。需要转折或因果解释时，自然使用“但”“因此”“这解释了为什么”；这些词并不天然带有 AI 味。关系必须有材料支持，不能靠一句抽象判断把无关话题硬连起来。
-- 用普通中文直接说明人物做了什么、为什么这样做、后来发生了什么。保持必要的术语和人名；少把具体动作改写成“进入价格表”“放进同一组资源”等抽象说法。小标题让读者知道下面谈什么，不承担额外的造势任务。
+- 后一句接住前一句已经出现的人、事或问题，再带出新信息。转折和因果应由相邻事实自然显现；只有材料确有因果时才使用因果连词，同一种转场不要反复出现。不要另起一句评论前文完成了何种解释，也不要用抽象判断把无关话题硬连起来。
+- 用普通中文直接说明人物做了什么、为什么这样做、后来发生了什么。保持必要的术语和人名；少把具体动作改写成“进入价格表”“放进同一组资源”等抽象说法。小标题只标明下面谈的人、事、问题或发现，不向读者发指令，不预演编辑步骤，不用假对立或“真正的……”制造深刻感。
 - 将观点归属、时间与不确定性写进原句，例如“主持人预计当月发布”，而不是先写成事实，再补一句“这不应被当成已经兑现的事实”。关键的反例、分歧和适用条件必须保留；只有确实影响理解时才专门解释边界，不为每个事实附加通用的警示或评论。
 - 引文用于保留有表现力的原话，不必重复正文刚解释过的意思，也不必每节安排一条。忠实转述自然标明观点归属；新增的编辑框架、类比或推断才按 RULE 3 标为“作者概括”，标签不豁免证据要求。直接引文仍须按 RULE 1 核验。
 - 节数、段数、概览卡片和金句均不设配额，RULE 4 的页数与模块要求仅适用于幻灯片。列表和卡片按阅读需要使用。结尾把本期最后一个有用的意思讲完即可，不额外制造警句、升华或未解之问。文件大小契约不构成填充文字的理由。
