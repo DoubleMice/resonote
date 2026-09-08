@@ -1,5 +1,5 @@
 import {
-  cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync,
+  cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync,
 } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { withFullWidthTitles } from './slide-title-layout.ts'
@@ -28,6 +28,28 @@ export function scaffoldEpisodeWorkspace(
   }
 
   return directory
+}
+
+// Failed drafts live below a reserved directory so publication readers never
+// encounter their incomplete metadata, slides or articles. Keep the whole
+// workspace for the next attempt, including assets and editorial fixes.
+export function archiveFailedEpisode(episodesDir: string, id: string): boolean {
+  const directory = resolveEpisodeDirectory(episodesDir, id)
+  const archived = resolveEpisodeDirectory(join(episodesDir, '_failed'), id)
+  if (!existsSync(directory)) return false
+  if (existsSync(archived)) throw new Error(`both active and failed workspaces exist for ${id}`)
+  mkdirSync(dirname(archived), { recursive: true })
+  renameSync(directory, archived)
+  return true
+}
+
+export function restoreFailedEpisode(episodesDir: string, id: string): boolean {
+  const directory = resolveEpisodeDirectory(episodesDir, id)
+  const archived = resolveEpisodeDirectory(join(episodesDir, '_failed'), id)
+  if (!existsSync(archived)) return false
+  if (existsSync(directory)) throw new Error(`both active and failed workspaces exist for ${id}`)
+  renameSync(archived, directory)
+  return true
 }
 
 export function stageEpisodePresentation(

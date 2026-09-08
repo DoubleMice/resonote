@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 import {
-  resolveEpisodeDirectory, scaffoldEpisodeWorkspace, stageEpisodePresentation,
+  archiveFailedEpisode, restoreFailedEpisode, resolveEpisodeDirectory, scaffoldEpisodeWorkspace, stageEpisodePresentation,
 } from './episode-workspace.ts'
 
 function fixture() {
@@ -80,6 +80,39 @@ test('cleans a canonical style left by an interrupted command', () => {
 test('rejects episode ids that could escape the episode root', () => {
   assert.throws(() => resolveEpisodeDirectory('/tmp/episodes', '../outside'), /invalid episode id/)
   assert.throws(() => resolveEpisodeDirectory('/tmp/episodes', 'nested/id'), /invalid episode id/)
+  assert.throws(() => archiveFailedEpisode('/tmp/episodes', '../outside'), /invalid episode id/)
+  assert.throws(() => restoreFailedEpisode('/tmp/episodes', '../outside'), /invalid episode id/)
+})
+
+test('isolates a malformed draft and restores its exact files for retry', () => {
+  const { root, episodes, templates } = fixture()
+  try {
+    const directory = scaffoldEpisodeWorkspace(episodes, templates, 'failed-episode')
+    writeFileSync(join(directory, 'meta.yml'), 'title: [unfinished\n')
+    writeFileSync(join(directory, 'article.html'), 'unfinished article')
+    assert.equal(archiveFailedEpisode(episodes, 'failed-episode'), true)
+    assert.equal(existsSync(directory), false)
+    assert.equal(archiveFailedEpisode(episodes, 'failed-episode'), false)
+    assert.equal(readFileSync(join(episodes, '_failed/failed-episode/meta.yml'), 'utf8'), 'title: [unfinished\n')
+    assert.equal(restoreFailedEpisode(episodes, 'failed-episode'), true)
+    assert.equal(readFileSync(join(directory, 'meta.yml'), 'utf8'), 'title: [unfinished\n')
+    assert.equal(readFileSync(join(directory, 'article.html'), 'utf8'), 'unfinished article')
+    assert.equal(readFileSync(join(directory, 'public/asset.txt'), 'utf8'), 'asset\n')
+    assert.equal(restoreFailedEpisode(episodes, 'failed-episode'), false)
+  } finally { rmSync(root, { recursive: true, force: true }) }
+})
+
+test('does not overwrite an existing failed or active workspace', () => {
+  const { root, episodes, templates } = fixture()
+  try {
+    scaffoldEpisodeWorkspace(episodes, templates, 'collision')
+    archiveFailedEpisode(episodes, 'collision')
+    const active = scaffoldEpisodeWorkspace(episodes, templates, 'collision')
+    writeFileSync(join(active, 'user-note.txt'), 'keep me')
+    assert.throws(() => archiveFailedEpisode(episodes, 'collision'), /both active and failed/)
+    assert.throws(() => restoreFailedEpisode(episodes, 'collision'), /both active and failed/)
+    assert.equal(readFileSync(join(active, 'user-note.txt'), 'utf8'), 'keep me')
+  } finally { rmSync(root, { recursive: true, force: true }) }
 })
 
 test('stages full-width titles for rendering and restores exact editorial source', () => {

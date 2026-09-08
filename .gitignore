@@ -20,6 +20,12 @@ dist/
 episodes/*/.failed
 episodes/*/global-bottom.vue
 episodes/*/style.css
+episodes/_failed/*/.failed
+episodes/_failed/*/global-bottom.vue
+episodes/_failed/*/style.css
+episodes/_failed/*/index.html
+episodes/_failed/*/package-lock.json
+episodes/_failed/*/audit.pdf
 
 # Vite caches
 **/.vite/

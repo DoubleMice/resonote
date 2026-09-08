@@ -60,6 +60,9 @@ pnpm run plan:run -- --auto-transcribe --transcribe-limit=3
 # 重试指定单集，包括此前生成失败的条目
 pnpm run plan:run -- --id=latepost --episode=<episodeId> --retry-failed --limit=1
 
+# 与每日工作流一致：扩大批次，单集失败后继续处理和发布其他节目
+pnpm run plan:run -- --auto-transcribe --transcribe-limit=12 --limit=12 --concurrency=3 --allow-episode-failures --retry-generation-failures
+
 # 校验、构建与预览
 pnpm run normalize:meta
 pnpm run build
@@ -120,11 +123,15 @@ CONTENT_PROVIDER=auto
 
 `Discover` 与 `Generate and Deploy` 共用 `content-pipeline` 并发组，避免同时修改计划和内容文件。直接推送到 `main` 不会触发部署。
 
-生成任务的摘要会分别列出通过校验的生成数量、生成或下载失败数，以及本次转写失败数。队列为空时显示 `no new content`。本次转写或生成失败时，工作流先保存处理进度，再以失败状态结束，不部署旧产物来掩盖生成失败。
+每日生成默认最多转写 12 集、生成 12 集，生成并发为 3，整项任务超时为 330 分钟。可通过手动输入或仓库 Variables `TRANSCRIBE_LIMIT`、`GENERATE_LIMIT`、`GENERATE_CONCURRENCY` 调整每日默认值；转写仍按集顺序执行。
+
+生成任务的摘要分别列出通过校验的生成数量、生成或下载失败数、失败单集，以及本次转写失败数。单集转写、生成和自审失败会产生警告，其他节目继续处理。生成失败的草稿保存在 `episodes/_failed/<id>/`，不会进入站点校验、文章发布和导航；重试时恢复原有文件。本轮新节目打包失败也会隔离并回写计划，已发布内容的构建回归、运行器错误和站点整体检查失败仍会阻止部署。工作流在生成结束后立即保存进度，完成构建后再次保存发布结果。队列为空时显示 `no new content`。
+
+工作流通过 `--allow-episode-failures` 启用上述行为；本地命令默认仍以非零状态报告单集失败。`pnpm run build -- --allow-episode-failures` 读取同次生成留下的 `logs/pipeline-timing.json`，只允许隔离其中列出的新节目，不能用于跳过已有内容的构建错误。
 
 Codex 入口需要 Responses API；例如 `CONTENT_BASE_URL=https://api.doublemice.top`、`CONTENT_MODEL_NAME=gpt-5.6-luna` 会调用该网关的 `/v1/responses`。Claude Code 入口仍需要 Anthropic Messages API。详见 [Codex 自定义提供方配置](https://learn.chatgpt.com/docs/config-file/config-advanced)。
 
-手动生成工作流支持 `episode` 和 `retry_failed`，可只重试一集。转写失败默认等待 48 小时再尝试，优先处理未尝试的节目；`--retry-failed` 可跳过等待。音频下载最多尝试 3 次，单次最多 120 秒；转码时去除封面和元数据，并根据大小上限限制分块时长。
+手动生成工作流支持 `episode` 和 `retry_failed`，可只重试一集。每日工作流启用 `--retry-generation-failures`，让生成失败的节目重新参与调度，自审失败可复用已有转写和内容。转写失败默认等待 48 小时再尝试，优先处理未尝试的节目；只有显式 `--retry-failed` 才跳过这个等待。音频下载最多尝试 3 次，单次最多 120 秒；转码时去除封面和元数据，并根据大小上限限制分块时长。
 
 ## 构建与页面性能
 

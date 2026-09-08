@@ -20,18 +20,20 @@ on:
       limit:
         description: 'Maximum episodes to generate'
         required: true
-        default: '4'
+        default: '12'
       transcribe_limit:
         description: 'Maximum missing-transcript episodes to process'
         required: true
-        default: '3'
+        default: '12'
       concurrency:
-        description: 'Generation workers (use 2 for a small-batch trial)'
+        description: 'Parallel episode generation workers'
         type: choice
         options:
           - '1'
           - '2'
-        default: '1'
+          - '3'
+          - '4'
+        default: '3'
       transcribe_wait_minutes:
         description: 'Minutes to wait for ASR completion before continuing'
         required: true
@@ -70,7 +72,7 @@ jobs:
     # Ubuntu 24.04's AppArmor user-namespace restriction blocks the Codex
     # bubblewrap sandbox. 22.04 runs the same workspace sandbox unchanged.
     runs-on: ubuntu-22.04
-    timeout-minutes: 180
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v7
         with:
@@ -154,11 +156,11 @@ jobs:
         id: generation
         continue-on-error: true
         env:
-          GENERATE_LIMIT: ${{ inputs.limit || '4' }}
-          GENERATE_CONCURRENCY: ${{ inputs.concurrency || vars.GENERATE_CONCURRENCY || '1' }}
+          GENERATE_LIMIT: ${{ inputs.limit || vars.GENERATE_LIMIT || '12' }}
+          GENERATE_CONCURRENCY: ${{ inputs.concurrency || vars.GENERATE_CONCURRENCY || '3' }}
           GENERATION_TIMEOUT_MINUTES: ${{ vars.GENERATION_TIMEOUT_MINUTES || '60' }}
           MIMO_TIMEOUT_MS: ${{ vars.MIMO_TIMEOUT_MS || '600000' }}
-          TRANSCRIBE_LIMIT: ${{ inputs.transcribe_limit || '3' }}
+          TRANSCRIBE_LIMIT: ${{ inputs.transcribe_limit || vars.TRANSCRIBE_LIMIT || '12' }}
           TRANSCRIBE_WAIT_MINUTES: ${{ inputs.transcribe_wait_minutes || '2' }}
           GENERATE_SOURCE: ${{ inputs.source }}
           GENERATE_EPISODE: ${{ inputs.episode }}
@@ -180,9 +182,9 @@ jobs:
           source="${GENERATE_SOURCE}"
           category="${GENERATE_CATEGORY}"
           provider="${TRANSCRIPT_PROVIDER:-mimo}"
-          # Individual ASR failures stay in plans and the summary. Generation,
-          # artifact validation, layout, and build failures still block deployment.
-          args=(--limit=${limit} --concurrency="${GENERATE_CONCURRENCY}" --allow-transcription-failures)
+          # Episode failures remain in plans and isolated draft workspaces.
+          # Runner errors and site-wide publication checks still block deployment.
+          args=(--limit=${limit} --concurrency="${GENERATE_CONCURRENCY}" --allow-episode-failures --retry-generation-failures)
           if [ -n "${GENERATE_EPISODE}" ]; then
             args+=(--episode="${GENERATE_EPISODE}")
           fi
@@ -213,21 +215,21 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Save progress after generation failure
-        if: ${{ !cancelled() && steps.generation.outcome == 'failure' }}
+      - name: Save generation progress
+        if: ${{ !cancelled() && steps.generation.outcome != 'skipped' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/plans data/transcripts data/transcription-jobs.yml episodes
           if ! git diff --staged --quiet; then
-            git commit -m "auto: save incomplete generation progress"
+            git commit -m "auto: save generation progress"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
       - name: Require successful generation before building
         if: ${{ !cancelled() && steps.generation.outcome == 'failure' }}
         run: |
-          echo "::error::Content generation, audit, or runner failed. See the generation summary; deployment stopped."
+          echo "::error::Pipeline runner failed. See the generation summary; deployment stopped."
           exit 1
 
       - name: Normalize generated metadata
@@ -250,7 +252,7 @@ jobs:
             resonote-episode-builds-v1-${{ runner.os }}-
 
       - name: Build all
-        run: pnpm run build
+        run: pnpm run build -- --allow-episode-failures
 
       - name: Audit independent brand identity
         run: pnpm run audit:brand
@@ -261,7 +263,10 @@ jobs:
       - name: Verify slide routing
         run: pnpm run verify:routing
 
-      - name: Commit generated content
+      - name: Save publication progress
+        # Keep isolated build failures and their retry state even when a later
+        # site-wide check fails. This does not override the failed job outcome.
+        if: ${{ !cancelled() && steps.generation.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -12,6 +12,8 @@
 //   pnpm run plan:run -- --concurrency=2           # parallel generation
 //   pnpm run plan:run -- --dry-run                 # show what would be done
 //   pnpm run plan:run -- --allow-transcription-failures # continue to publication checks after ASR failures
+//   pnpm run plan:run -- --allow-episode-failures # preserve failed drafts and publish successful episodes
+//   pnpm run plan:run -- --retry-generation-failures # retry content failures without bypassing ASR cooldown
 //
 // Status updates are written back to data/plans/<source>.yml after each episode.
 // This means interruptions are safe — re-run picks up from where we left off.
@@ -30,7 +32,7 @@ import { run } from './lib/spawn.ts'
 import { DashScopeClient, jobFromTask } from './lib/dashscope.ts'
 import { MiMoClient } from './lib/mimo.ts'
 import { downloadAudio, splitAudio } from './lib/transcription-audio.ts'
-import { scaffoldEpisodeWorkspace, stageEpisodePresentation } from './lib/episode-workspace.ts'
+import { archiveFailedEpisode, restoreFailedEpisode, scaffoldEpisodeWorkspace, stageEpisodePresentation } from './lib/episode-workspace.ts'
 import { contentCommand, parseContentLog } from './lib/content-runner.ts'
 import { canonicalizeGeneratedMeta, canonicalizeSlidesFrontmatter } from './lib/generated-artifacts.ts'
 import { validateEpisodeArtifacts } from './lib/artifact-validator.ts'
@@ -53,6 +55,7 @@ const TASK_FILE = resolve(PROMPTS_DIR, 'slides-task.md')
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 const onlyEpisode = process.argv.find(a => a.startsWith('--episode='))?.split('=')[1]
 const retryFailed = process.argv.includes('--retry-failed')
+const retryGenerationFailures = retryFailed || process.argv.includes('--retry-generation-failures')
 const limit = Number(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] ?? 9999)
 const concurrency = Number(process.argv.find(a => a.startsWith('--concurrency='))?.split('=')[1] ?? 1)
 const generationTimeoutMinutes = Number(process.env.GENERATION_TIMEOUT_MINUTES || 60)
@@ -60,7 +63,8 @@ const timing = new PipelineTiming()
 const dryRun = process.argv.includes('--dry-run')
 const onlyCategory = process.argv.find(a => a.startsWith('--category='))?.split('=')[1]
 const autoTranscribe = process.argv.includes('--auto-transcribe')
-const allowTranscriptionFailures = process.argv.includes('--allow-transcription-failures')
+const allowEpisodeFailures = process.argv.includes('--allow-episode-failures')
+const allowTranscriptionFailures = allowEpisodeFailures || process.argv.includes('--allow-transcription-failures')
 const transcribeLimit = Number(process.argv.find(a => a.startsWith('--transcribe-limit='))?.split('=')[1] ?? 1)
 const transcribeWaitMinutes = Number(process.argv.find(a => a.startsWith('--transcribe-wait-minutes='))?.split('=')[1] ?? 0)
 const dashscopeRegion = (process.argv.find(a => a.startsWith('--dashscope-region='))?.split('=')[1] ?? 'cn') as 'cn' | 'intl'
@@ -73,6 +77,7 @@ const STALE_SUBMITTING_MINUTES = Number(process.env.DASHSCOPE_STALE_SUBMITTING_M
 // Shared state for generation rate-limit detection and token tracking
 let generationRateLimited = false
 const transcriptionFailures = new Set<string>()
+const generationFailures = new Set<string>()
 const stats = {
   generated: 0,
   failed: 0,
@@ -961,6 +966,7 @@ async function processEntry(
     return
   }
 
+  restoreFailedEpisode(EPISODES_DIR, entry.id)
   const retryAuditOnly = entry.status === 'audit_failed' && hasGeneratedArtifacts(entry.id)
 
   if (entry.status === 'needs_transcript') {
@@ -1093,6 +1099,8 @@ async function processEntry(
 
 async function main() {
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 4) throw new Error('concurrency must be an integer from 1 to 4')
+  if (!Number.isSafeInteger(limit) || limit < 0) throw new Error('limit must be a non-negative integer')
+  if (!Number.isSafeInteger(transcribeLimit) || transcribeLimit < 0) throw new Error('transcribe-limit must be a non-negative integer')
   if (!Number.isFinite(generationTimeoutMinutes) || generationTimeoutMinutes <= 0 || generationTimeoutMinutes > 120) throw new Error('GENERATION_TIMEOUT_MINUTES must be greater than 0 and at most 120')
   log.step(`Run-plan — concurrency=${concurrency}, limit=${limit}${autoTranscribe ? ', auto-transcribe' : ''}${dryRun ? ' (DRY RUN)' : ''}`)
 
@@ -1115,6 +1123,14 @@ async function main() {
       ids.add(entry.id)
     }
   }
+  if (allowEpisodeFailures && !dryRun) {
+    for (const { plan } of targetPlans) {
+      for (const entry of plan.episodes) {
+        if (onlyEpisode && entry.id !== onlyEpisode) continue
+        if (entry.status === 'failed' || entry.status === 'audit_failed') archiveFailedEpisode(EPISODES_DIR, entry.id)
+      }
+    }
+  }
   await timing.measure('transcription-stage', 'all', () => runAutoTranscription(targetPlans))
 
   // Flatten all generatable entries with their plan context, sorted by published date desc
@@ -1128,7 +1144,7 @@ async function main() {
         canonicalizeEpisodeArtifacts(entry, source, 'generated')
         continue
       }
-      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (retryFailed && entry.status === 'failed') || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
+      if (entry.status === 'pending' || entry.status === 'downloaded' || entry.status === 'audit_failed' || (retryGenerationFailures && entry.status === 'failed') || (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed'))) {
         if (existsSync(join(TRANSCRIPTS_DIR, `${entry.id}.txt`)) && (entry.status === 'needs_transcript' || entry.status === 'transcribing' || entry.status === 'transcribe_failed')) {
           entry.status = 'pending'
           savePlan(path, plan)
@@ -1174,6 +1190,13 @@ async function main() {
       stats.failed++
       item.entry.status = 'failed'
       savePlan(item.planPath, item.plan)
+    } finally {
+      if (!dryRun && (item.entry.status === 'failed' || item.entry.status === 'audit_failed')) {
+        generationFailures.add(`${item.sourceId}/${item.entry.id}`)
+        // Failure to preserve a draft is a runner/storage error and must still
+        // fail the batch. Do this outside the per-episode error handler.
+        if (allowEpisodeFailures) archiveFailedEpisode(EPISODES_DIR, item.entry.id)
+      }
     }
   }))
 
@@ -1204,7 +1227,8 @@ main().catch(e => {
   process.exitCode = 1
 }).finally(() => {
   const transcriptionWarning = allowTranscriptionFailures && transcriptionFailures.size > 0
-  const failed = stats.failed > 0 || (!allowTranscriptionFailures && transcriptionFailures.size > 0) || stats.skippedRateLimit > 0
+  const episodeWarning = allowEpisodeFailures && (stats.failed > 0 || stats.skippedRateLimit > 0 || transcriptionFailures.size > 0)
+  const failed = (!allowEpisodeFailures && (stats.failed > 0 || stats.skippedRateLimit > 0)) || (!allowTranscriptionFailures && transcriptionFailures.size > 0)
   if (!dryRun && failed) process.exitCode = 1
   if (!dryRun && transcriptionWarning) {
     log.warn(`Transcription failed for ${transcriptionFailures.size} episode(s); failures remain recorded in plans. Publication still requires artifact validation and build checks.`)
@@ -1212,18 +1236,25 @@ main().catch(e => {
       console.log(`::warning::${transcriptionFailures.size} episode transcription(s) failed; see the generation summary and plan errors. Publication checks remain required.`)
     }
   }
+  if (!dryRun && episodeWarning) {
+    log.warn(`${stats.failed} episode(s) failed; ${stats.skippedRateLimit} deferred after rate limiting. Failed drafts are preserved under episodes/_failed/. Successful episodes may proceed to publication checks.`)
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      console.log(`::warning::Episode failures were isolated; see the generation summary. Site validation and build checks remain required.`)
+    }
+  }
   const summary = [
     '## Content generation',
     '',
     `- Generated and validated: ${stats.generated}`,
     `- Generation/download failures: ${stats.failed}`,
+    ...[...generationFailures].sort().map(id => `  - ${id}`),
     `- Transcription failures this run: ${transcriptionFailures.size}`,
     ...[...transcriptionFailures].sort().map(id => `  - ${id}`),
     `- Skipped after rate limit: ${stats.skippedRateLimit}`,
     `- Generation concurrency: ${concurrency}`,
     `- Pipeline wall time: ${(timing.report().wallMs / 60_000).toFixed(2)} min`,
     `- Content-agent time (sum): ${(stats.totalDurationMs / 60_000).toFixed(2)} min`,
-    `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : transcriptionWarning ? 'completed with transcription warnings; publication checks required' : stats.generated ? 'generated' : 'no new content'}`,
+    `- Outcome: ${dryRun ? 'dry run' : process.exitCode ? 'failed; progress saved, deployment blocked' : episodeWarning ? 'completed with episode warnings; publication checks required' : transcriptionWarning ? 'completed with transcription warnings; publication checks required' : stats.generated ? 'generated' : 'no new content'}`,
     '',
     '| Phase | Episode/chunk | Minutes | Measurement completed |',
     '| --- | --- | ---: | --- |',
@@ -1233,6 +1264,15 @@ main().catch(e => {
     '',
   ].join('\n')
   mkdirSync(join(ROOT, 'logs'), { recursive: true })
-  writeFileSync(join(ROOT, 'logs/pipeline-timing.json'), JSON.stringify({ ...timing.report(), concurrency, generated: stats.generated, failed: stats.failed }, null, 2) + '\n')
+  writeFileSync(join(ROOT, 'logs/pipeline-timing.json'), JSON.stringify({
+    ...timing.report(),
+    concurrency,
+    generated: stats.generated,
+    generatedEpisodes: stats.episodes.filter(episode => episode.status === 'generated').map(episode => episode.id),
+    failed: stats.failed,
+    failedEpisodes: [...generationFailures],
+    transcriptionFailures: [...transcriptionFailures],
+    skippedRateLimit: stats.skippedRateLimit,
+  }, null, 2) + '\n')
   if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary)
 })

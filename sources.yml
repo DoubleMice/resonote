@@ -115,6 +115,26 @@ sources:
     color: "#f97316"
     description: 晚点 LatePost 出品的中文科技与商业访谈，关注一线从业者和产业变化
 
+  - id: tulong-zhishu
+    name: 屠龙之术
+    rss_url: https://feed.xyzfm.space/834hyx3v9k74
+    filter_keywords: [科技, AI, 人工智能, 互联网, 风险投资, 创业, 商业]
+    min_duration: 1800
+    min_date: "20260101"
+    cache_limit: 80
+    color: "#b45309"
+    description: 庄明浩的个人播客，关注科技、互联网、风险投资与商业方法论
+
+  - id: taixian-zhihuo
+    name: 苔藓之火
+    rss_url: https://feed.xyzfm.space/c6t98368jtpv
+    filter_keywords: [科技, AI, 人工智能, 大模型, 投资, 创业, 金融, 加密]
+    min_duration: 1800
+    min_date: "20260101"
+    cache_limit: 80
+    color: "#4d7c0f"
+    description: Raymond 主理的科技与投资播客，关注 AI、资本市场、加密与宏观趋势
+
   - id: lex-fridman
     name: Lex Fridman Podcast
     rss_url: https://lexfridman.com/feed/podcast/

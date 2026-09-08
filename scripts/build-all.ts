@@ -16,6 +16,7 @@ import {
   cachedEpisodeDist, episodeBuildFingerprint, storeEpisodeDist,
 } from './lib/build-cache.ts'
 import { stageEpisodePresentation } from './lib/episode-workspace.ts'
+import { isolateNewEpisodeBuildFailure } from './lib/episode-publication.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -290,10 +291,11 @@ async function main() {
     })
   }
   log.info(`found ${episodes.length} generated episodes (base=${SITE_BASE})`)
-  const articles = articleArtifacts()
-  log.info(`found ${articles.length} readable articles`)
-
-  const { deckNav, articleNav } = buildNavMaps(navEntries)
+  const allowEpisodeFailures = process.argv.includes('--allow-episode-failures')
+  const generatedThisRun = new Set<string>(allowEpisodeFailures
+    ? JSON.parse(readFileSync(join(ROOT, 'logs/pipeline-timing.json'), 'utf8')).generatedEpisodes ?? []
+    : [])
+  const buildFailures: string[] = []
 
   // Clean dist
   if (existsSync(DIST_DIR)) rmSync(DIST_DIR, { recursive: true, force: true })
@@ -303,15 +305,30 @@ async function main() {
   log.step('Building episodes')
   const concurrency = Number(process.env.RESONOTE_BUILD_CONCURRENCY || 2)
   log.info(`episode build concurrency: ${concurrency}`)
-  const episodeDists = await mapConcurrent(episodes, concurrency, async ep => {
-    const distPath = await buildEpisode(ep.id, ep.base)
-    if (!distPath) throw new Error(`missing episode build: ${ep.id}`)
-    return { id: ep.id, path: distPath, articlePath: ep.articlePath }
-  })
-  if (episodeDists.length !== episodes.length) {
+  const episodeDists = (await mapConcurrent(episodes, concurrency, async ep => {
+    try {
+      const distPath = await buildEpisode(ep.id, ep.base)
+      if (!distPath) throw new Error(`missing episode build: ${ep.id}`)
+      return { id: ep.id, path: distPath, articlePath: ep.articlePath }
+    } catch (error) {
+      if (!allowEpisodeFailures) throw error
+      isolateNewEpisodeBuildFailure(ROOT, ep.id, generatedThisRun, error)
+      buildFailures.push(ep.id)
+      log.warn(`  ${ep.id}: build failed; draft preserved and excluded from publication: ${error}`)
+      if (process.env.GITHUB_ACTIONS === 'true') console.log(`::warning::Episode ${ep.id} could not be built; other episodes will continue.`)
+      return null
+    }
+  })).filter(result => result !== null)
+  if (episodeDists.length + buildFailures.length !== episodes.length) {
     throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
   }
   log.info(`episode build cache: ${episodeCacheHits} hit, ${episodeCacheMisses} rebuilt`)
+  const builtIds = new Set(episodeDists.map(episode => episode.id))
+  const { deckNav, articleNav } = buildNavMaps(navEntries.filter(entry => builtIds.has(entry.id)))
+  // Re-read articles after isolating failures so neither the landing page nor
+  // article assembly can publish a failed episode's draft or link to it.
+  const articles = articleArtifacts()
+  log.info(`found ${articles.length} readable articles`)
 
   // Build landing
   log.step('Building landing')
@@ -396,6 +413,8 @@ async function main() {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY, [
       '## Static build', '',
       `- Episodes: ${episodeDists.length}; articles: ${articles.length}`,
+      `- New episode build failures (drafts preserved): ${buildFailures.length}`,
+      ...buildFailures.sort().map(id => `  - ${id}`),
       `- Cache: ${episodeCacheHits} hits, ${episodeCacheMisses} rebuilt (concurrency ${concurrency})`,
       `- Build and assembly: ${((performance.now() - startedAt) / 1000).toFixed(1)} seconds`, '',
     ].join('\n'))
