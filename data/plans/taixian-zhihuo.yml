@@ -1,0 +1,304 @@
+source: taixian-zhihuo
+refreshed_at: 2026-09-08T07:39:36.857Z
+min_duration: 1800
+min_date: "20260101"
+total_candidates: 23
+done: 3
+pending: 0
+needs_transcript: 19
+transcribing: 0
+transcribe_failed: 0
+downloaded: 0
+episodes:
+  - id: 6a8fbdb4ef65145dfcc623aa
+    guid: 6a8fbdb4ef65145dfcc623aa
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    duration: 4178
+    published: Mon, 31 Aug 2026 16:00:00 GMT
+    published_sort: "20260831"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a8fbdb4ef65145dfcc623aa?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    image: https://image.xyzcdn.net/FurlzzMfqPG6D9H8lnlyaFMUBX1m.jpg
+    status: failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T07:39:37.651Z
+    transcript_job_id: 387ab6e0-ffa1-4707-9be9-5bf44d47da3d_1974f1ecf80e4472be74f6a2837bb62d,8af8aca1-6695-43e5-b25e-0039fd18f347_8c4d6c691f264485b0bbf0b173f4356e,c0761f3a-3ce4-4932-8d92-3dc358aee1e4_97d81e8ab9174302a561cfe3c36b68e7,e1872682-238b-4310-82cd-f82cee97e1f6_59b6cce30cc74e5fa9007b2b4b52f9fb,19751fac-ef8d-41ea-af4b-ba8fcd4ec204_fcfb2bb2049a4f87a2ea9e35f23436de
+    transcript_completed_at: 2026-09-08T07:44:48.231Z
+  - id: 6a8ef8881352af56ff3c88ad
+    guid: 6a8ef8881352af56ff3c88ad
+    title: 49. 谁在制造Anthropic、OpenAI？两万份简历读后感
+    duration: 2174
+    published: Wed, 26 Aug 2026 16:01:55 GMT
+    published_sort: "20260826"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a8ef8881352af56ff3c88ad?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    image: https://image.xyzcdn.net/FmOcUkmo1QGlwXvJJe86MdH6RP_D.png
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T08:11:29.456Z
+    transcript_job_id: d890a465-53a0-4873-8f34-c02881d0a702_ec324b0f47954ed895b89cee98751238,e6c26dcc-5e31-4a50-a18d-9feb35ae1e6f_336c03ab2f5146eeb49d7caa7423f188,42ef3577-2d45-4754-be14-139d2f2964bc_947b018e5c724c108dc1ebd798bead35
+    transcript_completed_at: 2026-09-08T08:13:13.737Z
+  - id: 6a7dd8a436641f136d87d294
+    guid: 6a7dd8a436641f136d87d294
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    duration: 4585
+    published: Fri, 14 Aug 2026 00:30:00 GMT
+    published_sort: "20260814"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a7dd8a436641f136d87d294?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    image: https://image.xyzcdn.net/FiSGTZC9l0pupNV9SCFkPFS-NqL5.jpeg
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T08:20:41.892Z
+    transcript_job_id: 6ab8a511-57cb-4192-b324-43947bfd663a_c76a436508d8455c9d1fe62b06700fd3,18400991-124e-47e7-9ddb-4ea110cfcb71_273f49aa669d4040b319e6125ec7f7c9,dd09c384-26bf-4cb7-b063-7d899318b678_7d04f66209194f90b02657bb6ca732f0,afed43e6-6c67-4836-bd57-09a8762c5572_faf2f53017ef447dbfdbcb8f8871f9f2,941a5b91-0d5a-40ae-8b01-b884963a3143_df64dadf5b2345649cfdaa78453b30bf,cddcb766-7559-48cc-b52f-b65c4303f9c1_101a6e55f5df4a7ba24d756428881bf1
+    transcript_completed_at: 2026-09-08T08:25:44.973Z
+  - id: 6a6b73e9b581962ce2be23e9
+    guid: 6a6b73e9b581962ce2be23e9
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    duration: 4358
+    published: Mon, 03 Aug 2026 16:00:00 GMT
+    published_sort: "20260803"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a6b73e9b581962ce2be23e9?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    image: https://image.xyzcdn.net/FrZIT1qUXdDaKAbF0wUSZ-oYfDr-.jpeg
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T08:34:58.381Z
+    transcript_job_id: b922a9e3-14f1-4990-9d54-92c414008382_e590aafba00a480aa06e7da2fbdd5ba3,67bd799d-2776-48f5-a359-3fab008320a7_e2a92bf36fcb43a3a109038beed9ee96,c938fc83-1d81-4ae6-81d1-9aa1b4064d62_4814b144053d4f0e85d11a638b19949d,2bd938d9-62ae-4324-bd94-5e0f8b64d230_a714445aee8d4b2e94b8832331dcffdc,9f2aebd1-7771-46d2-a6fb-1123764b2594_b6cc438cb5164bd88345cc1bc5150b46
+    transcript_completed_at: 2026-09-08T08:40:12.291Z
+  - id: 6a687afeb581962ce2bccdf0
+    guid: 6a687afeb581962ce2bccdf0
+    title: 44. 百大UP创业AI，流量真是护城河吗？- 图灵的猫｜王依然
+    duration: 4214
+    published: Tue, 28 Jul 2026 16:00:00 GMT
+    published_sort: "20260728"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a687afeb581962ce2bccdf0?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a687afeb581962ce2bccdf0/media.xyzcdn.net/67f40c212ac4d88190caa56a/lgEyHGVnUmWn7lVOFPcXn-Qhz53e.m4a
+    image: https://image.xyzcdn.net/FpRfkVXnzho9rEpqncoLYKfheA2-.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a5df04a6356eb2d9be57c24
+    guid: 6a5df04a6356eb2d9be57c24
+    title: 43.「26Q2」大模型半年报：RSI，Fable，5.2，混元3，龙猫，到处都是斩杀线 - 王铁震
+    duration: 4559
+    published: Tue, 21 Jul 2026 16:00:00 GMT
+    published_sort: "20260721"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a5df04a6356eb2d9be57c24?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a5df04a6356eb2d9be57c24/media.xyzcdn.net/67f40c212ac4d88190caa56a/lviIvPijtPG6Oy1-ZbojkEsmO_ru.m4a
+    image: https://image.xyzcdn.net/FnDcQ_OhlPRAVpIyoEYEbTkfm2R5.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a5af5d1a3fec224d59f6407
+    guid: 6a5af5d1a3fec224d59f6407
+    title: 42. 18个月一人公司大翻盘：负债上庭到百万博主 - 李超 | 第四种黑猩猩
+    duration: 3929
+    published: Sat, 18 Jul 2026 16:00:00 GMT
+    published_sort: "20260718"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a5af5d1a3fec224d59f6407?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a5af5d1a3fec224d59f6407/media.xyzcdn.net/67f40c212ac4d88190caa56a/lh2ImU35ijzORLDnQ_hXHy_UDIqJ.m4a
+    image: https://image.xyzcdn.net/FvFu_Wp5eHqQWf5qt02TFYnE5eRv.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a53babf1e32575f5eb55305
+    guid: 6a53babf1e32575f5eb55305
+    title: 41. AI巨头正在抢购打工人的录屏？ - Michael | Final Round / Hellyeah
+    duration: 5441
+    published: Sun, 12 Jul 2026 17:38:31 GMT
+    published_sort: "20260712"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a53babf1e32575f5eb55305?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a53babf1e32575f5eb55305/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsmjzGscuwhs8h_tvizBdrphQDPD.m4a
+    image: https://image.xyzcdn.net/FjUGd52riJpxpY8FLwmLmtj2FCvp.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a40c7c19d2f5743683f0220
+    guid: 6a40c7c19d2f5743683f0220
+    title: 40. AI应用能融下一轮吗？收购、擦边、中转站、大厂围猎 - 对话｜马克汤
+    duration: 5383
+    published: Sun, 28 Jun 2026 16:00:00 GMT
+    published_sort: "20260628"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a40c7c19d2f5743683f0220?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a40c7c19d2f5743683f0220/media.xyzcdn.net/67f40c212ac4d88190caa56a/lmehyuShoRV6Q_A5AV-0RV0GX6-j.m4a
+    image: https://image.xyzcdn.net/FpY29s2cyAdOzsdPCuXdODB8qHes.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a3aafae2e335a35a80844a9
+    guid: 6a3aafae2e335a35a80844a9
+    title: 39. 微策略卖币？说好的永动机不转了？- 串台｜Web3 101
+    duration: 4626
+    published: Tue, 23 Jun 2026 16:27:34 GMT
+    published_sort: "20260623"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a3aafae2e335a35a80844a9?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a3aafae2e335a35a80844a9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljgYWDXbUom8nX5T3uNo3jcIXRTx.m4a
+    image: https://image.xyzcdn.net/Fr42fr8IJ-XFFEe93acrbK_DB4xt.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a38262f75ba9e0c5336f0cc
+    guid: 6a38262f75ba9e0c5336f0cc
+    title: 38. “万亿富翁”马斯克是上帝还是邪教？- 串台|远行者与碎冰匠
+    duration: 4409
+    published: Sun, 21 Jun 2026 18:20:15 GMT
+    published_sort: "20260621"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a38262f75ba9e0c5336f0cc?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a38262f75ba9e0c5336f0cc/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrD9KTDxEwy01sxRg8-rz48z4v2_.m4a
+    image: https://image.xyzcdn.net/Fgwpar9NRO30hDmwRvqAg-1MmFmE.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a298bcd3eedf1f4b268a928
+    guid: 6a298bcd3eedf1f4b268a928
+    title: 37. SpaceX IPO - 全球资本市场一起刷个大火箭！- 串台｜听懂涨声
+    duration: 3459
+    published: Wed, 10 Jun 2026 16:22:14 GMT
+    published_sort: "20260610"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a298bcd3eedf1f4b268a928?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a298bcd3eedf1f4b268a928/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsV9enOxHYkxxDnnQgsUNf3RmdyO.m4a
+    image: https://image.xyzcdn.net/Fhn1r5Yqi71_CpA7ysDtK8jhfHFm.jpeg
+    status: needs_transcript
+    priority: 1
+  - id: 6a2631d3b30e1571aea26396
+    guid: 6a2631d3b30e1571aea26396
+    title: 36. AI时代的教育 - “乖”不是一个好词？- 方士心｜复旦大学「高考特辑」
+    duration: 4551
+    published: Mon, 08 Jun 2026 16:00:00 GMT
+    published_sort: "20260608"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a2631d3b30e1571aea26396?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a2631d3b30e1571aea26396/media.xyzcdn.net/67f40c212ac4d88190caa56a/lt7T4AkV3OW9IiAKtT-HRGQED-57.m4a
+    image: https://image.xyzcdn.net/FkcHaVpw8mVV1bIhfnzBOzvK5LJO.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a1f06627444b57222325a51
+    guid: 6a1f06627444b57222325a51
+    title: 35. 他又带千亿投资人来中国看MiniMax，睡亚朵，吃老乡鸡！- Robert | 百观科技
+    duration: 3763
+    published: Tue, 02 Jun 2026 17:08:40 GMT
+    published_sort: "20260602"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a1f06627444b57222325a51?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a1f06627444b57222325a51/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsGtLz-Z9p6E6up39m6sTHkRyN-z.m4a
+    image: https://image.xyzcdn.net/nsTVI79dZxNnr1oeiEiW270eGbW3.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a1322a6e59ebca93637e1b1
+    guid: 6a1322a6e59ebca93637e1b1
+    title: 34. 从美元到人民币基金 — 科技投资新范式？ | 对话苏麟
+    duration: 5268
+    published: Sun, 24 May 2026 16:18:46 GMT
+    published_sort: "20260524"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a1322a6e59ebca93637e1b1?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a1322a6e59ebca93637e1b1/media.xyzcdn.net/67f40c212ac4d88190caa56a/lgUxqYB_3cZERs6HX7_ZhxzuAzIu.m4a
+    image: https://image.xyzcdn.net/FlbGFdsUnXqvcQHup2rujOJIJrJs.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a05fb6ee1eb34a9396bc45f
+    guid: 6a05fb6ee1eb34a9396bc45f
+    title: 32. OpenAI联手私募基金做驻场外包？- 串台 | 人民公园说AI
+    duration: 2070
+    published: Thu, 14 May 2026 16:58:59 GMT
+    published_sort: "20260514"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a05fb6ee1eb34a9396bc45f?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a05fb6ee1eb34a9396bc45f/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrahng_hnm6Ds-QDYFLqC_S380L-.m4a
+    image: https://image.xyzcdn.net/no5pm3NtCKMgGbzSKbezjvf36Bgv.png
+    status: needs_transcript
+    priority: 1
+  - id: 6a02082f1b7bd50295f37702
+    guid: 6a02082f1b7bd50295f37702
+    title: 31. 「26Q1」中美大模型差距过去一年变大还是缩小？- Hugging Face | 王铁震
+    duration: 3953
+    published: Mon, 11 May 2026 17:29:26 GMT
+    published_sort: "20260511"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/6a02082f1b7bd50295f37702?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a02082f1b7bd50295f37702/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrtrE7sAMZ3oIgtkoGMD-AFJiuw4.m4a
+    image: https://image.xyzcdn.net/FpzzYGQNdaqTfn110JrGlCkzuJ6P.png
+    status: needs_transcript
+    priority: 1
+  - id: 69ef6d9f3918a089438b7662
+    guid: 69ef6d9f3918a089438b7662
+    title: 28. 今年量化指增还能上车吗？会接盘吗？ - 串台｜慧客堂
+    duration: 5555
+    published: Tue, 28 Apr 2026 16:00:00 GMT
+    published_sort: "20260428"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/69ef6d9f3918a089438b7662?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69ef6d9f3918a089438b7662/media.xyzcdn.net/67f40c212ac4d88190caa56a/lg-hzjzlHF0ofdMZf8eSLoDgmcoF.m4a
+    image: https://image.xyzcdn.net/FiYPHQrcpOwnN5ZCr4-qYlnLKozz.png
+    status: needs_transcript
+    priority: 1
+  - id: 69d4a6c0e2c8be31558fdb06
+    guid: 69d4a6c0e2c8be31558fdb06
+    title: 25. 放下中国式焦虑，孩子有自己的康波 - 两个新手爸爸聊天
+    duration: 4290
+    published: Thu, 09 Apr 2026 16:00:00 GMT
+    published_sort: "20260409"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/69d4a6c0e2c8be31558fdb06?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69d4a6c0e2c8be31558fdb06/media.xyzcdn.net/67f40c212ac4d88190caa56a/lge4NLUAMX0ANE51yAjj3L4x9Wgj.m4a
+    image: https://image.xyzcdn.net/nnYmrfDOI-6rToiU4ZEUN-Ld4A9G.png
+    status: needs_transcript
+    priority: 1
+  - id: 69ca61e7e2c8be3155e9a8fc
+    guid: 69ca61e7e2c8be3155e9a8fc
+    title: 23. 战火中的金融中心：迪拜投资人逃难记 - Bowen
+    duration: 3272
+    published: Mon, 30 Mar 2026 16:00:00 GMT
+    published_sort: "20260330"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/69ca61e7e2c8be3155e9a8fc?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69ca61e7e2c8be3155e9a8fc/media.xyzcdn.net/67f40c212ac4d88190caa56a/lojVm3pXVnv2A_Oc2T9rJ0NDKbf7.m4a
+    image: https://image.xyzcdn.net/no75p8MFBLBu7Ru0E0_i8RkIslOh.png
+    status: needs_transcript
+    priority: 1
+  - id: 69c2b52b798af9b984f09686
+    guid: 69c2b52b798af9b984f09686
+    title: 22. Token出海是赛博偷电？美国为啥电网建不好？- Ian | 电力侠
+    duration: 3748
+    published: Tue, 24 Mar 2026 17:46:43 GMT
+    published_sort: "20260324"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/69c2b52b798af9b984f09686?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69c2b52b798af9b984f09686/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpMeFJHprrJmhASZG-S9Pp3bb2io.m4a
+    image: https://image.xyzcdn.net/npY9GptaiALhacJY_tE15QLzjftC.png
+    status: needs_transcript
+    priority: 1
+  - id: 697f789c073030367ab87cf9
+    guid: 697f789c073030367ab87cf9
+    title: 21. AI时代，审美也许是VC最后的防线 - 梁杰｜Impa Ventures
+    duration: 3360
+    published: Mon, 02 Feb 2026 00:30:00 GMT
+    published_sort: "20260202"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/697f789c073030367ab87cf9?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/697f789c073030367ab87cf9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ln4CgIIcOvGCU6L1zypWBXndF0BE.m4a
+    image: https://image.xyzcdn.net/nqJ-y9lzRVsLDCp5tffBuYdf4gW0.png
+    status: needs_transcript
+    priority: 1
+  - id: 69692746109824f9e1b50cb3
+    guid: 69692746109824f9e1b50cb3
+    title: 20. 入门到精通：中国人到美国出海创业 - Richard｜出海同学会
+    duration: 4196
+    published: Thu, 15 Jan 2026 18:02:45 GMT
+    published_sort: "20260115"
+    first_seen_at: 2026-09-08T07:39:36.857Z
+    url: https://www.xiaoyuzhoufm.com/episode/69692746109824f9e1b50cb3?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69692746109824f9e1b50cb3/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljOhwGu4gmwbB1kiF2fvhOBPG5a1.m4a
+    image: https://image.xyzcdn.net/nkRZrZeIaFSQRynOEJwAYwM2YzBg.png
+    status: needs_transcript
+    priority: 1

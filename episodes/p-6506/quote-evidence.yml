@@ -1,0 +1,41 @@
+episode_id: p-6506
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '几十年一事无成，几周却能走完几十年。'
+    transcript_excerpt: 'There are decades where nothing happens, and weeks where decades happen.'
+  - artifact: slides.md
+    artifact_excerpt: '软件就是产品管理。'
+    transcript_excerpt: 'Software is product management.'
+  - artifact: slides.md
+    artifact_excerpt: '给我三个选项，我会选一个。'
+    transcript_excerpt: 'You give me three options, I pick one of them.'
+  - artifact: slides.md
+    artifact_excerpt: '眼下，我们人人都受 token 限制。'
+    transcript_excerpt: 'At this moment in time, we are all token limited.'
+  - artifact: slides.md
+    artifact_excerpt: '用智能体编程，需要一套不同的工具。'
+    transcript_excerpt: 'Programming with agents requires a different toolset.'
+  - artifact: slides.md
+    artifact_excerpt: '智能体热爱 Unix 哲学。'
+    transcript_excerpt: 'Agents love the Unix philosophy.'
+  - artifact: slides.md
+    artifact_excerpt: 'Linux 里的一切，不是配置文件，就是 CLI 工具。'
+    transcript_excerpt: 'Everything in Linux is either a config file or a CLI tool.'
+  - artifact: slides.md
+    artifact_excerpt: '追求卓越，无须解释。'
+    transcript_excerpt: 'The pursuit of excellence deserves no explanation.'
+  - artifact: slides.md
+    artifact_excerpt: '我想拥有自己的电脑。更进一步，我想让它变形。'
+    transcript_excerpt: 'I want to own my computer. Better yet, I want to mutate my computer.'
+  - artifact: slides.md
+    artifact_excerpt: '如果有一种语言比 Ruby 更美，那就是英语。'
+    transcript_excerpt: 'If there is one programming language more beautiful than Ruby, it is the English language.'
+  - artifact: slides.md
+    artifact_excerpt: '未来终会到来，无论你喜不喜欢；不如选择为它兴奋。'
+    transcript_excerpt: 'The future''s coming whether you like it or not, so you might as well choose to be excited about it.'
+  - artifact: article.html
+    artifact_excerpt: '没人会在真正拿到软件前知道自己想要什么。'
+    transcript_excerpt: 'no one knows what they want until they receive it.'
+  - artifact: article.html
+    artifact_excerpt: '把它做得更简单。'
+    transcript_excerpt: 'Make it simpler.'

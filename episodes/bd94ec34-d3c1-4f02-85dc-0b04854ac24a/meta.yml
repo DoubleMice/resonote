@@ -1,0 +1,30 @@
+title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+guest: 韩峰涛
+guest_role: 千寻智能创始人兼 CEO
+tags:
+  - robotics
+  - startup
+  - interview
+  - ceo
+  - technical
+  - strategic
+summary: |
+  韩峰涛从上一轮工业机器人创业的市场教训出发，解释千寻为何把数据与具身基模放在短期营收之前。他认为 2026 年的关键是扩大真实数据采集、提高模型基本能力，并用少量现场项目寻找可复制的落地路径。
+core_ideas:
+  - 工业机器人完成国产替代后，仍受限于市场规模和任务覆盖面；具身模型被寄望于扩大机器人能做的工作。
+  - 千寻选择视频、可穿戴设备、遥操作和强化学习结合的真实数据路线，并把数据生产速度视为竞争指标。
+  - 宁德时代的插拔检测被用来验证模型、本体和场景的配合，同时获得真实产线的反馈数据。
+  - 韩峰涛认为 2026 年先比数据和模型性能；具身机器人的大规模落地要等基本能力进一步成熟。
+  - 第一次创业的磨刀工作站证明，技术做得很强并不等于市场足够大；早期场景还需要能规模化复制。
+id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+source: latepost
+source_title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+published: 2026-02
+published_sort: "20260226"
+duration: 1h42m
+url: https://podcast.latepost.com/152
+status: generated
+article_path: episodes/bd94ec34-d3c1-4f02-85dc-0b04854ac24a/article.html
+base: /episodes/bd94ec34-d3c1-4f02-85dc-0b04854ac24a/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: 2026-09-08T09:34:05.717Z

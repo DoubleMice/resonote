@@ -1,0 +1,34 @@
+title: DHH：智能体工程、可塑操作系统与编程的下一步
+guest: David Heinemeier Hansson（DHH）
+guest_role: 37signals CTO、Ruby on Rails 创始人
+tags:
+  - coding-agents
+  - ai-products
+  - productivity
+  - design
+  - engineer
+  - interview
+  - deep-dive
+  - technical
+  - strategic
+summary: >
+  DHH 讲述自己如何在几个月内从怀疑 AI 编程，转向以智能体完成大部分实现、由人定义问题和审阅结果的工作方式。他也以 Omarchy
+  为实验场，讨论终端、Linux、并行智能体、安装速度与可塑操作系统，并没有回避生产率提升对岗位带来的不确定性。
+core_ideas:
+  - 智能体改变的重点不只在写代码速度，也在于工具调用、验证、子任务拆分与并行协作。
+  - 当实现更多交给模型，人更需要负责问题定义、优先级、产品判断和架构的整体形态。
+  - 清晰架构在 token 有限的当下仍有价值：它降低智能体理解上下文和连续修改的成本。
+  - Omarchy 试图把 Linux 的配置文件、命令行和插件能力变成可由自然语言继续改造的个人工作台。
+  - 生产率提高可能扩大软件需求，也可能减少固定任务所需的人手；具体后果取决于领域和组织。
+id: p-6506
+source: lex-fridman
+source_title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+published: 2026-08
+published_sort: "20260826"
+duration: 5h22m
+url: https://lexfridman.com/dhh-2/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dhh-2
+status: generated
+article_path: episodes/p-6506/article.html
+base: /episodes/p-6506/
+thumbnail: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+generated_at: 2026-09-08T09:08:28.247Z

@@ -1,0 +1,31 @@
+title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+guest: 陈宇森
+guest_role: MuleRun 创始人兼 CEO
+tags:
+  - ai-products
+  - coding-agents
+  - startup
+  - interview
+  - technical
+  - strategic
+summary: >
+  陈宇森解释了为什么 MuleRun 从 Agent Marketplace 进一步走向 Agent Builder：Claude Code
+  让自然语言描述、技能和运行环境能够被打包成可执行的工作流，长尾需求因此有机会成为软件。访谈也记录了他从长亭科技到游戏与数据安全创业的起伏，以及他如何把用心和快速验证重新放回创业方法中。
+core_ideas:
+  - MuleRun 把创作门槛放在首位：让没有代码背景的人用自然语言、Skills 和运行环境制作智能体。
+  - Skills 的关键是按需加载方法和工具；平台还要评测效果、审查安全并持续监控运行质量。
+  - 货架式 Marketplace 难以帮助新用户找到答案，MuleRun 因而考虑用对话入口匹配或创建智能体。
+  - 陈宇森认为，短期值得先做少数人每天使用的长尾工具；更远处的软件可能按任务生成和消失。
+  - 经历第二次创业的下坡路后，他把选择与能力匹配的方向、亲自投入和用心做事视为更可靠的原则。
+id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+source: latepost
+source_title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+published: 2026-02
+published_sort: "20260212"
+duration: 1h47m
+url: https://podcast.latepost.com/151
+status: generated
+article_path: episodes/9c1990e8-c131-4e2d-8418-bd5fe2537df3/article.html
+base: /episodes/9c1990e8-c131-4e2d-8418-bd5fe2537df3/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: 2026-09-08T10:06:03.050Z

@@ -21690,3 +21690,1295 @@ jobs:
     submitted_at: 2026-09-07T18:14:56.770Z
     updated_at: 2026-09-07T18:26:20.191Z
     completed_at: 2026-09-07T18:26:20.191Z
+  - key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z:chunk:0
+    parent_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z
+    provider: mimo
+    id: 6a8fbdb4ef65145dfcc623aa
+    source: taixian-zhihuo
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 387ab6e0-ffa1-4707-9be9-5bf44d47da3d_1974f1ecf80e4472be74f6a2837bb62d
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:39:37.651Z
+    updated_at: 2026-09-08T07:40:50.245Z
+    completed_at: 2026-09-08T07:40:50.245Z
+  - key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z:chunk:1
+    parent_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z
+    provider: mimo
+    id: 6a8fbdb4ef65145dfcc623aa
+    source: taixian-zhihuo
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 8af8aca1-6695-43e5-b25e-0039fd18f347_8c4d6c691f264485b0bbf0b173f4356e
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:39:37.651Z
+    updated_at: 2026-09-08T07:42:06.826Z
+    completed_at: 2026-09-08T07:42:06.826Z
+  - key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z:chunk:2
+    parent_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z
+    provider: mimo
+    id: 6a8fbdb4ef65145dfcc623aa
+    source: taixian-zhihuo
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: c0761f3a-3ce4-4932-8d92-3dc358aee1e4_97d81e8ab9174302a561cfe3c36b68e7
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:39:37.651Z
+    updated_at: 2026-09-08T07:43:12.872Z
+    completed_at: 2026-09-08T07:43:12.872Z
+  - key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z:chunk:3
+    parent_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z
+    provider: mimo
+    id: 6a8fbdb4ef65145dfcc623aa
+    source: taixian-zhihuo
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: e1872682-238b-4310-82cd-f82cee97e1f6_59b6cce30cc74e5fa9007b2b4b52f9fb
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:39:37.651Z
+    updated_at: 2026-09-08T07:44:12.539Z
+    completed_at: 2026-09-08T07:44:12.539Z
+  - key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z:chunk:4
+    parent_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: taixian-zhihuo:6a8fbdb4ef65145dfcc623aa:20260831:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:39:37.651Z
+    provider: mimo
+    id: 6a8fbdb4ef65145dfcc623aa
+    source: taixian-zhihuo
+    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 19751fac-ef8d-41ea-af4b-ba8fcd4ec204_fcfb2bb2049a4f87a2ea9e35f23436de
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:39:37.651Z
+    updated_at: 2026-09-08T07:44:48.231Z
+    completed_at: 2026-09-08T07:44:48.231Z
+  - key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z:chunk:0
+    parent_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z
+    provider: mimo
+    id: 6a918c15a0210c197dc9c039
+    source: tulong-zhishu
+    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 8976feab-9d09-40e5-9e04-fcacf759bffb_009cf0748b2c4ed0a13925b216fbdb93
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:44:48.425Z
+    updated_at: 2026-09-08T07:46:10.063Z
+    completed_at: 2026-09-08T07:46:10.063Z
+  - key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z:chunk:1
+    parent_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z
+    provider: mimo
+    id: 6a918c15a0210c197dc9c039
+    source: tulong-zhishu
+    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 42e73a79-bb04-4a5c-8ce4-5010e164f61f_8f8de75224e74cb9802d6230a938743b
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:44:48.425Z
+    updated_at: 2026-09-08T07:47:07.601Z
+    completed_at: 2026-09-08T07:47:07.601Z
+  - key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z:chunk:2
+    parent_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z
+    provider: mimo
+    id: 6a918c15a0210c197dc9c039
+    source: tulong-zhishu
+    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 8c863a61-81e4-4280-a9e5-670ebe596635_78bafb087b9c4552a57e602995bbf435
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:44:48.425Z
+    updated_at: 2026-09-08T07:48:04.333Z
+    completed_at: 2026-09-08T07:48:04.333Z
+  - key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z:chunk:3
+    parent_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z
+    provider: mimo
+    id: 6a918c15a0210c197dc9c039
+    source: tulong-zhishu
+    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: 77e7e83a-a21d-4b3d-b5ab-d3ad0fbc8352_b3f1c995196042919390b3a2aeeb6fa8
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:44:48.425Z
+    updated_at: 2026-09-08T07:49:09.692Z
+    completed_at: 2026-09-08T07:49:09.692Z
+  - key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z:chunk:4
+    parent_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    attempt_key: tulong-zhishu:6a918c15a0210c197dc9c039:20260904:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a:mimo:2026-09-08T07:44:48.425Z
+    provider: mimo
+    id: 6a918c15a0210c197dc9c039
+    source: tulong-zhishu
+    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
+    task_id: a65fc845-7b8c-4359-8302-07a9de4814cc_155d164c2d8843b689de62b9c455d5af
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:44:48.425Z
+    updated_at: 2026-09-08T07:49:46.583Z
+    completed_at: 2026-09-08T07:49:46.583Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:0
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: a1681c08-cbeb-4468-adc4-c38feb1a2f0e_10ca7bbc5d484acc987080211629f6f3
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:50:51.450Z
+    completed_at: 2026-09-08T07:50:51.450Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:1
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: 077f191a-ef9f-4cfe-9bf8-1798db1e053c_5f47dbe8adfe4e1ea2a2376961efd6d8
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:51:44.606Z
+    completed_at: 2026-09-08T07:51:44.606Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:2
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: 64ac0c4d-ece5-4209-aef6-4acaf6f47b0e_a4f6a25a36aa438faa9dcbe4697375e1
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:52:32.695Z
+    completed_at: 2026-09-08T07:52:32.695Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:3
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: 41b99ff5-64d5-49b3-beb2-632d472b598b_5910ea87053847cc820752517e5a6ceb
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:53:30.230Z
+    completed_at: 2026-09-08T07:53:30.230Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:4
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: f892d35d-1224-43c9-99e8-537ad120e80b_a62ec576d8b54a9fbf7711e2cbe85935
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:54:24.767Z
+    completed_at: 2026-09-08T07:54:24.767Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:5
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: e715b2a1-2fef-4ff1-99a5-f702a78149b6_58292b2fbc994252be60a1f0087a9ede
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:55:32.711Z
+    completed_at: 2026-09-08T07:55:32.711Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:6
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: 2f2fdf76-636c-4bf6-9a81-aa353b667729_afd8cae33fcc40c88313406156fda57a
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:56:29.434Z
+    completed_at: 2026-09-08T07:56:29.434Z
+  - key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z:chunk:7
+    parent_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    attempt_key: latepost:9fa9d36f-2fb3-4a03-b24c-d241b87d06e1:20260311:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3:mimo:2026-09-08T07:49:46.776Z
+    provider: mimo
+    id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
+    source: latepost
+    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
+    task_id: 97f44562-5d92-42cd-a689-1573a136a4d3_d8a5408ab9ad4adfb44aadcc88307dc2
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:49:46.776Z
+    updated_at: 2026-09-08T07:56:43.511Z
+    completed_at: 2026-09-08T07:56:43.511Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:0
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 7a059220-8e58-4e3d-b860-012225a72285_a8766d3a6fbd433988edf343de81cb46
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T07:58:12.306Z
+    completed_at: 2026-09-08T07:58:12.306Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:1
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 7872651d-913e-4489-af2b-dcc5fd37f93b_11dd78d498fb461987f84d35f7daaa32
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T07:58:46.269Z
+    completed_at: 2026-09-08T07:58:46.269Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:2
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 2c72ea55-bcde-47e3-8af5-575ad0b85a88_34f167282bdf4f459f5d154b05e0ade3
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T07:59:18.643Z
+    completed_at: 2026-09-08T07:59:18.643Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:3
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 65f4fa74-0526-4a51-92b3-8b2da5122ce9_4c6b2d3cb28348feb36de61f92293b43
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T07:59:55.357Z
+    completed_at: 2026-09-08T07:59:55.357Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:4
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 48e82e0c-cee4-42aa-94e4-7e88ce3b03a1_c42b9e0e2b124b5ca60f26ae211af1c9
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:00:38.013Z
+    completed_at: 2026-09-08T08:00:38.013Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:5
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 959c0b83-4c82-4f02-92e7-e65be5dabafd_ed2d2115c849432998d9fcd981e4b8e5
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:01:23.301Z
+    completed_at: 2026-09-08T08:01:23.301Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:6
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: e5bc76e0-efff-48ad-a135-8b0bdaafb7d8_d167501768174e10adb95d9d9973d973
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:02:05.164Z
+    completed_at: 2026-09-08T08:02:05.164Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:7
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 4255aff5-c628-4f7c-bb4e-3075b69b7af0_b3c886ab13ff4ddcad655ffb011d673d
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:02:47.172Z
+    completed_at: 2026-09-08T08:02:47.172Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:8
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: f2175e07-16cb-4575-bb35-af7c167e6132_4135f7f241f246099c436811062cec57
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:03:25.718Z
+    completed_at: 2026-09-08T08:03:25.718Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:9
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 063fefe4-c649-41fa-8fa5-81516a1d00c8_bf02e8db861942d6bbdb3e322eb98418
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:04:05.732Z
+    completed_at: 2026-09-08T08:04:05.732Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:10
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: adbc56d8-a576-4c0b-b92f-4c51288218ee_53863c5a6ea84393a0229ef5a5053403
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:04:41.218Z
+    completed_at: 2026-09-08T08:04:41.218Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:11
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 28dab774-629d-4238-888d-3369ac8c6b5a_df77081033c643d6b56cd5f6308cfbac
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:05:20.377Z
+    completed_at: 2026-09-08T08:05:20.377Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:12
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: c96d3745-b6bb-466d-8731-c592bfa278e1_9cd2321c7ef54d99a43bd62d67784915
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:05:55.582Z
+    completed_at: 2026-09-08T08:05:55.582Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:13
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 564162fe-3ff4-4438-9886-bb4a2f9293d6_b1d72b6eb4bb42cfa5f2ca7ca780b569
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:06:29.026Z
+    completed_at: 2026-09-08T08:06:29.026Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:14
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 6c2df217-38f1-4f1c-8ca9-04ace8865e6a_8beefc82f6954ec6a4965087d1b5ffbd
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:07:07.143Z
+    completed_at: 2026-09-08T08:07:07.143Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:15
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 477b82f8-827f-4bda-93a3-f3c612d10d62_ffe6471822594aed81b8a3d9ac7e8057
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:07:49.912Z
+    completed_at: 2026-09-08T08:07:49.912Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:16
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: e0201fb2-98bc-45c0-9e56-6ba7998f97a6_0b07a0b7fd0447fea1214baa7ca484c1
+    submission_mode: data_uri
+    chunk_index: 16
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:08:29.572Z
+    completed_at: 2026-09-08T08:08:29.572Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:17
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 8a40f706-d7e4-49bc-8b8d-2a5588041a4f_b311eeaad74543b0a30faf3dbe2ef8bb
+    submission_mode: data_uri
+    chunk_index: 17
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:09:13.517Z
+    completed_at: 2026-09-08T08:09:13.517Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:18
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 7cd02fd1-1696-4688-975e-384e96aaa318_9828b77f6a9f4b028a440853149a6cc8
+    submission_mode: data_uri
+    chunk_index: 18
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:09:48.517Z
+    completed_at: 2026-09-08T08:09:48.517Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:19
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 1fbd8be6-b00c-4f7c-aa16-2e01cb56f316_e5ab54b5490e401294c43c65c808cdd5
+    submission_mode: data_uri
+    chunk_index: 19
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:10:25.440Z
+    completed_at: 2026-09-08T08:10:25.440Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:20
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: 9b86b32c-3aef-41b5-8aca-cb699c9a05ab_d2f58e9cea4749faa6ae2f66b1fd697e
+    submission_mode: data_uri
+    chunk_index: 20
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:11:04.475Z
+    completed_at: 2026-09-08T08:11:04.475Z
+  - key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z:chunk:21
+    parent_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    attempt_key: lex-fridman:p-6506:20260826:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3:mimo:2026-09-08T07:56:43.702Z
+    provider: mimo
+    id: p-6506
+    source: lex-fridman
+    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
+    task_id: f4877177-c4c8-4775-800b-511557c5215d_46c9bb27ba04497ca36ea313bc6223ef
+    submission_mode: data_uri
+    chunk_index: 21
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T07:56:43.702Z
+    updated_at: 2026-09-08T08:11:25.680Z
+    completed_at: 2026-09-08T08:11:25.680Z
+  - key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z:chunk:0
+    parent_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    attempt_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z
+    provider: mimo
+    id: 6a8ef8881352af56ff3c88ad
+    source: taixian-zhihuo
+    title: 49. 谁在制造Anthropic、OpenAI？两万份简历读后感
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    task_id: d890a465-53a0-4873-8f34-c02881d0a702_ec324b0f47954ed895b89cee98751238
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:11:29.456Z
+    updated_at: 2026-09-08T08:12:16.199Z
+    completed_at: 2026-09-08T08:12:16.199Z
+  - key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z:chunk:1
+    parent_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    attempt_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z
+    provider: mimo
+    id: 6a8ef8881352af56ff3c88ad
+    source: taixian-zhihuo
+    title: 49. 谁在制造Anthropic、OpenAI？两万份简历读后感
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    task_id: e6c26dcc-5e31-4a50-a18d-9feb35ae1e6f_336c03ab2f5146eeb49d7caa7423f188
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:11:29.456Z
+    updated_at: 2026-09-08T08:12:57.844Z
+    completed_at: 2026-09-08T08:12:57.844Z
+  - key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z:chunk:2
+    parent_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    attempt_key: taixian-zhihuo:6a8ef8881352af56ff3c88ad:20260826:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a:mimo:2026-09-08T08:11:29.456Z
+    provider: mimo
+    id: 6a8ef8881352af56ff3c88ad
+    source: taixian-zhihuo
+    title: 49. 谁在制造Anthropic、OpenAI？两万份简历读后感
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8ef8881352af56ff3c88ad/media.xyzcdn.net/67f40c212ac4d88190caa56a/ls9qirygGaDithUyfqLcOYhDpVZj.m4a
+    task_id: 42ef3577-2d45-4754-be14-139d2f2964bc_947b018e5c724c108dc1ebd798bead35
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:11:29.456Z
+    updated_at: 2026-09-08T08:13:13.737Z
+    completed_at: 2026-09-08T08:13:13.737Z
+  - key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z:chunk:0
+    parent_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    attempt_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z
+    provider: mimo
+    id: 6a97d6a8f03e74ee6b03d6a6
+    source: tulong-zhishu
+    title: AI李时珍带你“尝百草”---小宇宙先声活动演讲---91页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    task_id: 93b3d928-2a5b-4423-aff7-cf978876c508_7544a2dd6c7148daa909d9df3dc3a59b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:13:13.924Z
+    updated_at: 2026-09-08T08:14:02.799Z
+    completed_at: 2026-09-08T08:14:02.799Z
+  - key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z:chunk:1
+    parent_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    attempt_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z
+    provider: mimo
+    id: 6a97d6a8f03e74ee6b03d6a6
+    source: tulong-zhishu
+    title: AI李时珍带你“尝百草”---小宇宙先声活动演讲---91页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    task_id: f2f92447-5e24-4a1c-bced-0364e5bfb9c8_a69e10aeba994939bc7c08cc010d452b
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:13:13.924Z
+    updated_at: 2026-09-08T08:14:37.597Z
+    completed_at: 2026-09-08T08:14:37.597Z
+  - key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z:chunk:2
+    parent_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    attempt_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z
+    provider: mimo
+    id: 6a97d6a8f03e74ee6b03d6a6
+    source: tulong-zhishu
+    title: AI李时珍带你“尝百草”---小宇宙先声活动演讲---91页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    task_id: 78ef8d07-7248-42e6-9b89-fe36dbe6848b_56d015040bc345f6a9b1bf4099c5db52
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:13:13.924Z
+    updated_at: 2026-09-08T08:15:15.336Z
+    completed_at: 2026-09-08T08:15:15.336Z
+  - key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z:chunk:3
+    parent_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    attempt_key: tulong-zhishu:6a97d6a8f03e74ee6b03d6a6:20260902:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a:mimo:2026-09-08T08:13:13.924Z
+    provider: mimo
+    id: 6a97d6a8f03e74ee6b03d6a6
+    source: tulong-zhishu
+    title: AI李时珍带你“尝百草”---小宇宙先声活动演讲---91页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
+    task_id: 29dfa592-72e2-458a-b0b5-683ed0c03e0f_c8935abc38e44e25932028b46fe63e23
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:13:13.924Z
+    updated_at: 2026-09-08T08:15:35.190Z
+    completed_at: 2026-09-08T08:15:35.190Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:0
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: 32fe571d-bd29-4805-a2dc-74f59fe78b1a_c32ea8d38f584b5e8177bd6618eaa61c
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:16:36.778Z
+    completed_at: 2026-09-08T08:16:36.778Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:1
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: a82db355-889e-41fd-8ab0-4509e8e8029b_154a57afcb1449008931744caf8b4498
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:17:18.021Z
+    completed_at: 2026-09-08T08:17:18.021Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:2
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: 9ec1ec46-169c-4449-9e30-03737010cfaf_edd8c03fdda94590b4b5e80a840d309a
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:18:00.549Z
+    completed_at: 2026-09-08T08:18:00.549Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:3
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: 79418c23-49a4-474e-8511-5a48a461b723_595f7a4dcb2f49a485d88f3b1504ca1e
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:18:38.705Z
+    completed_at: 2026-09-08T08:18:38.705Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:4
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: 77b01e86-5b51-4dca-9b23-ac8cc6b44bbf_da9d3b0531b544889ee7bc17af5c5a12
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:19:21.996Z
+    completed_at: 2026-09-08T08:19:21.996Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:5
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: ca649fd5-0de0-4015-a430-60da31aff7c3_c210313938674168859a844606d32d79
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:20:08.025Z
+    completed_at: 2026-09-08T08:20:08.025Z
+  - key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z:chunk:6
+    parent_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    attempt_key: latepost:bd94ec34-d3c1-4f02-85dc-0b04854ac24a:20260226:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3:mimo:2026-09-08T08:15:35.393Z
+    provider: mimo
+    id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
+    source: latepost
+    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
+    task_id: ab2dcc44-47cc-497b-9fbb-a40dbc100839_f023d259ef874ecda966ace07799bc3d
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:15:35.393Z
+    updated_at: 2026-09-08T08:20:41.643Z
+    completed_at: 2026-09-08T08:20:41.643Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:0
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: 6ab8a511-57cb-4192-b324-43947bfd663a_c76a436508d8455c9d1fe62b06700fd3
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:21:49.986Z
+    completed_at: 2026-09-08T08:21:49.986Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:1
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: 18400991-124e-47e7-9ddb-4ea110cfcb71_273f49aa669d4040b319e6125ec7f7c9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:22:42.276Z
+    completed_at: 2026-09-08T08:22:42.276Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:2
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: dd09c384-26bf-4cb7-b063-7d899318b678_7d04f66209194f90b02657bb6ca732f0
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:23:37.030Z
+    completed_at: 2026-09-08T08:23:37.030Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:3
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: afed43e6-6c67-4836-bd57-09a8762c5572_faf2f53017ef447dbfdbcb8f8871f9f2
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:24:38.410Z
+    completed_at: 2026-09-08T08:24:38.410Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:4
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: 941a5b91-0d5a-40ae-8b01-b884963a3143_df64dadf5b2345649cfdaa78453b30bf
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:25:38.391Z
+    completed_at: 2026-09-08T08:25:38.391Z
+  - key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z:chunk:5
+    parent_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    attempt_key: taixian-zhihuo:6a7dd8a436641f136d87d294:20260814:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a:mimo:2026-09-08T08:20:41.892Z
+    provider: mimo
+    id: 6a7dd8a436641f136d87d294
+    source: taixian-zhihuo
+    title: 47. 7月之后，拷打最后一个AI多头！- 唐奕波｜奔波儿r
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a7dd8a436641f136d87d294/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvaquEzt0HTrgVrraN_9pYYIIRlp.m4a
+    task_id: cddcb766-7559-48cc-b52f-b65c4303f9c1_101a6e55f5df4a7ba24d756428881bf1
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:20:41.892Z
+    updated_at: 2026-09-08T08:25:44.973Z
+    completed_at: 2026-09-08T08:25:44.973Z
+  - key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z:chunk:0
+    parent_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    attempt_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z
+    provider: mimo
+    id: 6a9281bea0210c197dca0307
+    source: tulong-zhishu
+    title: 模型到底吃不吃应用？--从 Canva、Figma 到美图， 看 AI 应用公司的两种命运
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    task_id: 05be4c9a-6c53-496c-ba55-6649da2ba2dc_9358b447df1c4547a041ccc2c7f41418
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:25:45.198Z
+    updated_at: 2026-09-08T08:26:37.670Z
+    completed_at: 2026-09-08T08:26:37.670Z
+  - key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z:chunk:1
+    parent_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    attempt_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z
+    provider: mimo
+    id: 6a9281bea0210c197dca0307
+    source: tulong-zhishu
+    title: 模型到底吃不吃应用？--从 Canva、Figma 到美图， 看 AI 应用公司的两种命运
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    task_id: f1216267-f565-40b6-b2b5-6df6c62fe1ca_ec0b69964fb24bb98efbd140e303fde1
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:25:45.198Z
+    updated_at: 2026-09-08T08:27:30.066Z
+    completed_at: 2026-09-08T08:27:30.066Z
+  - key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z:chunk:2
+    parent_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    attempt_key: tulong-zhishu:6a9281bea0210c197dca0307:20260831:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a:mimo:2026-09-08T08:25:45.198Z
+    provider: mimo
+    id: 6a9281bea0210c197dca0307
+    source: tulong-zhishu
+    title: 模型到底吃不吃应用？--从 Canva、Figma 到美图， 看 AI 应用公司的两种命运
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a9281bea0210c197dca0307/media.xyzcdn.net/6507bc165c88d2412626b401/lvWVNUcVKtw5sjMhLL2hcpjcHlrR.m4a
+    task_id: 9ac9f4d3-c42a-40fa-b0c3-0d211bab90b1_d86bbf04edc642e1b2d714e6be813373
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:25:45.198Z
+    updated_at: 2026-09-08T08:27:41.136Z
+    completed_at: 2026-09-08T08:27:41.136Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:0
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: 5fbfb943-76fc-42ff-b00f-5f82306de756_392dfcdf6ac047b8a49cb0be61ef5d51
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:28:48.654Z
+    completed_at: 2026-09-08T08:28:48.654Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:1
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: 76784c63-1aac-4187-8c80-39d010a46c9c_ed77c0c85e2b460ab6ecfd52ae71b9a9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:29:44.469Z
+    completed_at: 2026-09-08T08:29:44.469Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:2
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: ee234384-9aca-4f9a-97e0-8744de9270a5_378b5d0d0a93468ebb5680074b414543
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:30:38.183Z
+    completed_at: 2026-09-08T08:30:38.183Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:3
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: f12739a1-f203-4232-9024-b8ba9255dbd7_be10ef21a3184f1cbf79885c703776d6
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:31:41.946Z
+    completed_at: 2026-09-08T08:31:41.946Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:4
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: 2a75f700-63f5-4020-bd5c-b0071450c563_d3874f37e0694220853b90a1193cb6a3
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:32:38.590Z
+    completed_at: 2026-09-08T08:32:38.590Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:5
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: b936f7e9-19f0-47b9-92fe-41ddad008369_922ff25362bb434682289e30d1d4437a
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:33:46.789Z
+    completed_at: 2026-09-08T08:33:46.789Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:6
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: 68a023f1-e81f-424f-a25c-dea15c49ef13_42ba0de406f24114a5b9e01807f41cc3
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:34:45.311Z
+    completed_at: 2026-09-08T08:34:45.311Z
+  - key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z:chunk:7
+    parent_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    attempt_key: latepost:9c1990e8-c131-4e2d-8418-bd5fe2537df3:20260212:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3:mimo:2026-09-08T08:27:41.352Z
+    provider: mimo
+    id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+    source: latepost
+    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
+    task_id: 333f1572-8ad6-4dd2-ab60-2c8404798654_3723d2ef9b534960a4856ae83dec661c
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:27:41.352Z
+    updated_at: 2026-09-08T08:34:58.141Z
+    completed_at: 2026-09-08T08:34:58.141Z
+  - key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z:chunk:0
+    parent_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    attempt_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z
+    provider: mimo
+    id: 6a6b73e9b581962ce2be23e9
+    source: taixian-zhihuo
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    task_id: b922a9e3-14f1-4990-9d54-92c414008382_e590aafba00a480aa06e7da2fbdd5ba3
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:34:58.381Z
+    updated_at: 2026-09-08T08:36:28.325Z
+    completed_at: 2026-09-08T08:36:28.325Z
+  - key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z:chunk:1
+    parent_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    attempt_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z
+    provider: mimo
+    id: 6a6b73e9b581962ce2be23e9
+    source: taixian-zhihuo
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    task_id: 67bd799d-2776-48f5-a359-3fab008320a7_e2a92bf36fcb43a3a109038beed9ee96
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:34:58.381Z
+    updated_at: 2026-09-08T08:37:30.802Z
+    completed_at: 2026-09-08T08:37:30.802Z
+  - key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z:chunk:2
+    parent_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    attempt_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z
+    provider: mimo
+    id: 6a6b73e9b581962ce2be23e9
+    source: taixian-zhihuo
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    task_id: c938fc83-1d81-4ae6-81d1-9aa1b4064d62_4814b144053d4f0e85d11a638b19949d
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:34:58.381Z
+    updated_at: 2026-09-08T08:38:25.596Z
+    completed_at: 2026-09-08T08:38:25.596Z
+  - key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z:chunk:3
+    parent_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    attempt_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z
+    provider: mimo
+    id: 6a6b73e9b581962ce2be23e9
+    source: taixian-zhihuo
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    task_id: 2bd938d9-62ae-4324-bd94-5e0f8b64d230_a714445aee8d4b2e94b8832331dcffdc
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:34:58.381Z
+    updated_at: 2026-09-08T08:39:22.160Z
+    completed_at: 2026-09-08T08:39:22.160Z
+  - key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z:chunk:4
+    parent_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    attempt_key: taixian-zhihuo:6a6b73e9b581962ce2be23e9:20260803:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a:mimo:2026-09-08T08:34:58.381Z
+    provider: mimo
+    id: 6a6b73e9b581962ce2be23e9
+    source: taixian-zhihuo
+    title: 46. 办公Agent大战：为什么大厂做不出好AI产品？- 马克汤
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a6b73e9b581962ce2be23e9/media.xyzcdn.net/67f40c212ac4d88190caa56a/loWhWv9PFWfVj6oemlyI0ddNnBmV.m4a
+    task_id: 9f2aebd1-7771-46d2-a6fb-1123764b2594_b6cc438cb5164bd88345cc1bc5150b46
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-08T08:34:58.381Z
+    updated_at: 2026-09-08T08:40:12.291Z
+    completed_at: 2026-09-08T08:40:12.291Z

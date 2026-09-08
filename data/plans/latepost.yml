@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-08T03:04:08.286Z
+refreshed_at: 2026-09-08T07:39:36.846Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
-done: 0
+done: 3
 pending: 0
-needs_transcript: 7
+needs_transcript: 4
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -113,8 +113,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T07:49:46.776Z
+    transcript_job_id: a1681c08-cbeb-4468-adc4-c38feb1a2f0e_10ca7bbc5d484acc987080211629f6f3,077f191a-ef9f-4cfe-9bf8-1798db1e053c_5f47dbe8adfe4e1ea2a2376961efd6d8,64ac0c4d-ece5-4209-aef6-4acaf6f47b0e_a4f6a25a36aa438faa9dcbe4697375e1,41b99ff5-64d5-49b3-beb2-632d472b598b_5910ea87053847cc820752517e5a6ceb,f892d35d-1224-43c9-99e8-537ad120e80b_a62ec576d8b54a9fbf7711e2cbe85935,e715b2a1-2fef-4ff1-99a5-f702a78149b6_58292b2fbc994252be60a1f0087a9ede,2f2fdf76-636c-4bf6-9a81-aa353b667729_afd8cae33fcc40c88313406156fda57a,97f44562-5d92-42cd-a689-1573a136a4d3_d8a5408ab9ad4adfb44aadcc88307dc2
+    transcript_completed_at: 2026-09-08T07:56:43.511Z
   - id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
     guid: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
     title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
@@ -245,8 +249,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T08:15:35.393Z
+    transcript_job_id: 32fe571d-bd29-4805-a2dc-74f59fe78b1a_c32ea8d38f584b5e8177bd6618eaa61c,a82db355-889e-41fd-8ab0-4509e8e8029b_154a57afcb1449008931744caf8b4498,9ec1ec46-169c-4449-9e30-03737010cfaf_edd8c03fdda94590b4b5e80a840d309a,79418c23-49a4-474e-8511-5a48a461b723_595f7a4dcb2f49a485d88f3b1504ca1e,77b01e86-5b51-4dca-9b23-ac8cc6b44bbf_da9d3b0531b544889ee7bc17af5c5a12,ca649fd5-0de0-4015-a430-60da31aff7c3_c210313938674168859a844606d32d79,ab2dcc44-47cc-497b-9fbb-a40dbc100839_f023d259ef874ecda966ace07799bc3d
+    transcript_completed_at: 2026-09-08T08:20:41.643Z
   - id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
     guid: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
     title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
@@ -386,8 +394,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T08:27:41.352Z
+    transcript_job_id: 5fbfb943-76fc-42ff-b00f-5f82306de756_392dfcdf6ac047b8a49cb0be61ef5d51,76784c63-1aac-4187-8c80-39d010a46c9c_ed77c0c85e2b460ab6ecfd52ae71b9a9,ee234384-9aca-4f9a-97e0-8744de9270a5_378b5d0d0a93468ebb5680074b414543,f12739a1-f203-4232-9024-b8ba9255dbd7_be10ef21a3184f1cbf79885c703776d6,2a75f700-63f5-4020-bd5c-b0071450c563_d3874f37e0694220853b90a1193cb6a3,b936f7e9-19f0-47b9-92fe-41ddad008369_922ff25362bb434682289e30d1d4437a,68a023f1-e81f-424f-a25c-dea15c49ef13_42ba0de406f24114a5b9e01807f41cc3,333f1572-8ad6-4dd2-ab60-2c8404798654_3723d2ef9b534960a4856ae83dec661c
+    transcript_completed_at: 2026-09-08T08:34:58.141Z
   - id: 21aa54c5-41ec-44e2-bb1d-995535c255d5
     guid: 21aa54c5-41ec-44e2-bb1d-995535c255d5
     title: "150: 【年末AI回顾】从模型到应用、从技术到商战，拽住洪流中的意义之线|Solo"

@@ -1,0 +1,32 @@
+episode_id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '其实现在最强的general agents是Claude Code。'
+    transcript_excerpt: '其实现在最强的general agents是Claude Code。'
+  - artifact: slides.md
+    artifact_excerpt: '代码只是为了执行特定目的而完成'
+    transcript_excerpt: '代码只是为了执行特定目的而完成'
+  - artifact: slides.md
+    artifact_excerpt: '很多事情你不该让大模型做，你该让代码做。'
+    transcript_excerpt: '很多事情你不该让大模型做，你该让代码做。'
+  - artifact: slides.md
+    artifact_excerpt: '市场其实核心是该以分享为主还是交易为主。'
+    transcript_excerpt: '市场其实核心是该以分享为主还是交易为主。'
+  - artifact: slides.md
+    artifact_excerpt: '创业的机会核心是在非共识变成共识之前你把它先干出来。'
+    transcript_excerpt: '创业的机会核心是在非共识变成共识之前你把它先干出来。'
+  - artifact: slides.md
+    artifact_excerpt: '就一定要用心'
+    transcript_excerpt: '就一定要用心'
+  - artifact: slides.md
+    artifact_excerpt: '你只有不停地去逼自己才有可能有一线生机。'
+    transcript_excerpt: '你只有不停地去逼自己才有可能有一线生机。'
+  - artifact: article.html
+    artifact_excerpt: '其实现在最强的general agents是Claude Code。'
+    transcript_excerpt: '其实现在最强的general agents是Claude Code。'
+  - artifact: article.html
+    artifact_excerpt: '市场其实核心是该以分享为主还是交易为主。'
+    transcript_excerpt: '市场其实核心是该以分享为主还是交易为主。'
+  - artifact: article.html
+    artifact_excerpt: '就一定要用心'
+    transcript_excerpt: '就一定要用心'

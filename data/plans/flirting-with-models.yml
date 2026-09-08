@@ -1,5 +1,5 @@
 source: flirting-with-models
-refreshed_at: 2026-09-08T03:04:08.262Z
+refreshed_at: 2026-09-08T07:39:36.830Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -23,9 +23,9 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-05T18:16:14.292Z
-    transcript_completed_at: 2026-09-05T18:16:14.860Z
-    transcript_error: "audio download failed: 404 Missing redirect URL"
+    transcript_submitted_at: 2026-09-08T08:11:25.895Z
+    transcript_completed_at: 2026-09-08T08:11:29.367Z
+    transcript_error: "audio download failed: 404 Not Found"
   - id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
     guid: 1431fb8e-f94d-4254-8cd7-295d196a88dd
     title: Ben Wellington – Complex Feature Engineering at Two Sigma (S7E32)
