@@ -1,405 +1,15 @@
 source: latepost
-refreshed_at: 2026-09-08T07:39:36.846Z
+refreshed_at: 2026-09-08T18:12:44.954Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 7
+total_candidates: 4
 done: 3
-pending: 0
-needs_transcript: 4
+pending: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
-    guid: 9fa9d36f-2fb3-4a03-b24c-d241b87d06e1
-    title: "154: 从千问变动到「AI 英雄传」|与 DINQ 高岱恒聊传奇 AI 研究员们"
-    duration: 6401
-    published: Thu, 12 Mar 2026 06:30:00 +0800
-    published_sort: "20260311"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/154
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9fa9d36f-2fb3-4a03-b24c-d241b87d06e1.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      「美第奇和达芬奇，大公司和 AI 研究员。」
-
-
-      今天的节目分两次录制。嘉宾是高岱恒，Sam，他在 AI 技术圈和开源社区非常活跃，曾是双非土木老哥，后来以因为对 AI 开源项目的贡献进入阿里达摩院，现在自己创业，做了一个找到 AI 人才的 Agent  产品 DINQ。
-
-
-      而本期我们聊的主要话题，却是他的副业和 “消遣”：挖掘 AI 人物故事。Sam 对此非常着迷，在达摩院时，他就很喜欢搜集 AI 大牛的人生故事，那些非典型的、充满反差的经历尤其吸引他。
-
-
-      本期的第一部分，我们聊了上周刚发生的阿里千问的人事变化。Sam 分享了他作为开源模型受益者和前达摩院成员的观察。这整个过程的更具体情况，大家也可以看《晚点 LatePost》从上周到本周发布的 3 篇报道，以及我们的上一期播客。
-
-
-      本期第二部分，我们聊了 Sam 津津乐道的 AI 人物英雄传，在 Sam
-      眼里，这些不问出处、不拘一格的研究者就像文艺复兴时期的大师。他们有各自的性格、癖好、执念和技术浪漫，这对大型商业组织来说是陌生的、需要适应和理解的，我们也由此聊到了未来的研发型人才市场会如何变化。
-
-
-      本期嘉宾：
-
-
-      高岱恒 Sam DINQ 创始人
-
-
-      本期主播：
-
-
-      程曼祺 晚点 LatePost 科技报道负责人
-
-
-      时间线：
-
-
-      千问变动后续
-
-
-      02:42 千问候选人被搜索量翻了 3 倍
-
-
-      09:34 Model Scope 魔搭社区价值几何？
-
-
-      14:30 美第奇和达芬奇，大公司和 AI 研究员
-
-
-      AI 英雄传（第一次聊，春节前）
-
-
-      22:38 DINQ 的诞生，AI 研究员需要更好地展示、更好地匹配
-
-
-      28:30 他们就像文艺复兴时期的大师
-
-
-      42:26 从土木老哥到达摩院，“当你有了作品，没人在问你学校”
-
-
-      49:52 Adam 发明者、被拒的 GPT-1 一作、旅居越南的 RAG 发明者………创新来自边缘地带
-
-
-      01:10:23 他们的追求、畏惧、不屑和弱点
-
-
-      01:19:38 AI 下的人才市场：从人和公司的匹配，到人和具体任务的匹配
-
-
-      01:43:48 连点成线
-
-
-      相关链接：
-
-
-      134 期:Meta AI 人才动荡，上亿美元为何留不住人？| 与 Pokee AI 朱哲清盘点 AI 组织
-
-
-      本期剪辑：Nick
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T07:49:46.776Z
-    transcript_job_id: a1681c08-cbeb-4468-adc4-c38feb1a2f0e_10ca7bbc5d484acc987080211629f6f3,077f191a-ef9f-4cfe-9bf8-1798db1e053c_5f47dbe8adfe4e1ea2a2376961efd6d8,64ac0c4d-ece5-4209-aef6-4acaf6f47b0e_a4f6a25a36aa438faa9dcbe4697375e1,41b99ff5-64d5-49b3-beb2-632d472b598b_5910ea87053847cc820752517e5a6ceb,f892d35d-1224-43c9-99e8-537ad120e80b_a62ec576d8b54a9fbf7711e2cbe85935,e715b2a1-2fef-4ff1-99a5-f702a78149b6_58292b2fbc994252be60a1f0087a9ede,2f2fdf76-636c-4bf6-9a81-aa353b667729_afd8cae33fcc40c88313406156fda57a,97f44562-5d92-42cd-a689-1573a136a4d3_d8a5408ab9ad4adfb44aadcc88307dc2
-    transcript_completed_at: 2026-09-08T07:56:43.511Z
-  - id: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
-    guid: bd94ec34-d3c1-4f02-85dc-0b04854ac24a
-    title: "152: 千寻智能韩峰涛：具身模型淘汰赛和落地的非共识"
-    duration: 6102
-    published: Fri, 27 Feb 2026 06:30:00 +0800
-    published_sort: "20260226"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/152
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/bd94ec34-d3c1-4f02-85dc-0b04854ac24a.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      「26 年不是落地生死之年。」
-
-
-      本期嘉宾，是新近完成近 20 亿元融资，估值突破 100 亿元的具身智能公司   千寻智能的创始人和 CEO   韩峰涛。此前，千寻的联创  高阳也两次做客《晚点聊》，分别是 112 期和 149 期。
-
-
-      90 后的高阳，从伯克利回国加入清华叉院， 是典型的新锐 AI 技术力量，和他搭档的 80 后韩峰涛，则代表中国具身领域的另一条路：他是一位在 2016 年第一轮 AI
-      热潮时开始做智能机器人的创业老兵。他见证过被抢着要份额的热潮，正如现在的具身赛道；也一度背负个人连带债务，度过行业的冬天。
-
-
-      这期节目，我们回顾了过去 15 年，韩峰涛亲历的中国工业机器人、智能机器人再到具身智能的变化。也聊了近期具身领域，数笔大额融资背后的行业转折和 26 年的竞争主题。
-
-
-      我们提到了 1 次 VLA，0 次世界模型，但提到了好多次客户，这是韩峰涛的肌肉记忆。
-
-
-      但他也反复说：26 年不会是具身行业的落地生死之年，而是具身模型性能快速爆发的一年，这是一个经历过上一轮起伏的创业者，转变的决心。
-
-
-      本期嘉宾：韩峰涛 千寻智能创始人&CEO
-
-
-      本期主播：程曼祺 晚点 LatePost 科技报道负责人
-
-
-      时间线跳转：
-
-
-      -2015-2024：工业协作机器人的 10 年创业：
-
-
-      02:03 浙大、中国核电、国机：找不到工作的模式识别研究生
-
-
-      09:10 国产替代 → 2016 年 AI 热潮 → 大模型：技术变革终于来了
-
-
-      14:37 在大厂下场前成为“中厂”
-
-
-      -2024 第二次创业：千寻智能的成立
-
-
-      22:40 密集见了 100 多人，找到合伙人高阳，“靠谱的太少，骗子太多”
-
-
-      33:02 26 年的具身领域会像 23 年的大模型：模型性能淘汰赛
-
-
-      -解决数据瓶颈
-
-
-      35:55 主要靠真实数据，24 年 5 月开始开发 UMI、外骨骼等穿戴式数采设备
-
-
-      -落地应用探索
-
-
-      46:59 宁德时代在具身行业里广发需求
-
-
-      53:33 场景选择门道：当前智能能力、节拍、精度、负载、价值（用量）和容错率的综合考量
-
-
-      59:01 未来场景拓展：先工业、商业，再家庭；先 to B 再 to C
-
-
-      01:04:37 26 年不是具身落地生死之年，而是模型性能爆发的一年
-
-
-      -从 Robotics 到具身智能
-
-
-      01:15:57 第一次创业起伏：资金链 3 次紧张，背负个人连带债务
-
-
-      01:25:24 新一批年轻创业者有相似的“天真”，“真的见过客户”后会改变
-
-
-      01:28:12 从 Robotics 到 AI 思维的转变：数据，数据
-
-
-      01:33:57 建立一个信任、追求卓越的组织
-
-
-      连点成线
-
-
-      相关链接：
-
-
-      独家专访千寻创始人：20 亿新融资、具身模型淘汰赛、落地非共识
-
-
-      晚点聊 112 期：与千寻高阳聊具身：一个像机器人的人，怎么做像人的机器人
-
-
-      晚点聊 149 期：具身模型哪家强？与范浩强、高阳聊具身模型的测评、RoboChallenge，26 年具身展望
-
-
-      本期剪辑：甜食
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T08:15:35.393Z
-    transcript_job_id: 32fe571d-bd29-4805-a2dc-74f59fe78b1a_c32ea8d38f584b5e8177bd6618eaa61c,a82db355-889e-41fd-8ab0-4509e8e8029b_154a57afcb1449008931744caf8b4498,9ec1ec46-169c-4449-9e30-03737010cfaf_edd8c03fdda94590b4b5e80a840d309a,79418c23-49a4-474e-8511-5a48a461b723_595f7a4dcb2f49a485d88f3b1504ca1e,77b01e86-5b51-4dca-9b23-ac8cc6b44bbf_da9d3b0531b544889ee7bc17af5c5a12,ca649fd5-0de0-4015-a430-60da31aff7c3_c210313938674168859a844606d32d79,ab2dcc44-47cc-497b-9fbb-a40dbc100839_f023d259ef874ecda966ace07799bc3d
-    transcript_completed_at: 2026-09-08T08:20:41.643Z
-  - id: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
-    guid: 9c1990e8-c131-4e2d-8418-bd5fe2537df3
-    title: "151: MuleRun 陈宇森：Claude Code带来Agent创作新范式，未来的软件是日抛式的"
-    duration: 6404
-    published: Thu, 12 Feb 2026 12:00:00 +0800
-    published_sort: "20260212"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/151
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/9c1990e8-c131-4e2d-8418-bd5fe2537df3.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: >-
-      「软件应用也可以 “3D 打印” 了。」
-
-
-      当 Agent 构造变得越来越简单，会发生什么？Agent 交易平台 MuleRun 创始人陈宇森分享了他的观察和创业实践。
-
-
-      陈宇森是一名少年成名的连续创业者，22 岁从浙大毕业后创办网络安全公司长亭科技，5 年后卖给阿里云，现在他带着对 AI Agent 的理解重新出发。
-
-
-      MuleRun 基于这样一个核心假设，当 Vibe Coding 大幅降低了应用开发门槛，Claude Code 带来 Agent 创作新方法，大量非技术背景的人也能把自己的工作知识和流程封装成一个个勤恳的 AI
-      骡子，实现个人工作的自动化。
-
-
-      这期内容包含两次聊天，分别发生在 25 年 12 月和 26 年 1 月上旬，不到 1 个月里，随着 MuleRun AgentBuilder 开始内测，陈宇森和 MuleRun 的思路已发生了一些变化。
-
-
-      他认为，未来的 market place 不再会是过去我们熟悉的货架形态，而是在对话中触发交易。MuleRun 的调整本身，也是当前 AI 应用瞬息万变的一个缩影。
-
-
-      这期节目的后半段我们也聊了一个创业 10 年，成立过 4 家公司，经历过成败起伏的创业者，如何以「用心」避免陷入平庸和对抗自我怀疑。
-
-
-      本期节目的图文版也已经发布:访谈 MuleRun 陈宇森：Claude Code 带来 Agent 创作新范式、未来的软件是日抛式的
-
-
-      本期嘉宾：
-
-
-      陈宇森，MuleRun 创始人 & CEO
-
-
-      本期主播：
-
-
-      程曼祺，晚点 LatePost 科技报道负责人
-
-
-      时间线跳转：
-
-
-      -12 月底的访谈：寻找方向、Agent 交易平台的机会与难点
-
-
-      02:20 从 Vibe Coding 到 Agent 交易平台
-
-
-      09:20 Agent 的供给还不够丰富，但 Claude Code 带来拐点
-
-
-      16:41 MuleRun 做的两件事：好的 Runtime、清晰的 Skills、Prompt 的商业化
-
-
-      23:08 同样的技术变化，不同的做法：N8N、Dify、Coze、蚂蚁灵光、马卡龙、Youware
-
-
-      28:54 上线 3 个月：用户反馈、Agent 审核与上架、大量 SOP+少量大模型的开发方式
-
-
-      36:50 做好 Agent 的开发工具和交易平台的难点
-
-
-      40:29 如果 Agent 建造门槛大幅降低，通用 Agent 还存在吗？
-
-
-      -1月中旬的访谈：Agent Builder 内测开启、交易平台不会再是货架式
-
-
-      42:21 再聊 Claude Code：Skills 详解，MuleRun 的 Skill 评价体系（Eval）和安全工作
-
-
-      47:32 “应用的 3D 打印机”，未来的软件是日抛式的，AI 是制造业
-
-
-      52:12 Agent Builder：从套壳模型→套壳“Claude Code”
-
-
-      01:01:22 Agent 构造变简单、数量变多：未来的 Market Place 不应该是货架式的
-
-
-      01:08:32 Agent Builder 的内测效果，Agent 开发工具和交易的界限？
-
-
-      -12 月底的访谈：创立 4 家公司，成功退出过也低谷过，以「用心」对抗平庸
-
-
-      01:15:40 从长亭到同时创业做两家公司，一度觉得自己无所不能
-
-
-      01:25:24 走过下坡路，关过公司，痛苦带来的韧性
-
-
-      01:32:13 一定不要在选择题上出错，「用心」对抗平庸
-
-
-      01:40:16 26 AI 应用市场年会发生什么？跳出 Chatbot、跳过 1 亿甚至 10 亿美元 ARR
-
-
-      01:44:02 连点成线
-
-
-      往期相关节目：
-
-
-      106 期:与真格戴雨森长聊 Agent：各行业都会遭遇“李世石时刻”，Attention is not all you need|Agent#1
-
-
-      137 期:Agent 是机会，造 Agent 的工具也是|从OpenAI开发者日聊起｜Agent#6
-
-
-      150 期:年末AI回顾：从模型到应用、从技术到商战，拽住洪流中的意义之线
-
-
-      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
-
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T08:27:41.352Z
-    transcript_job_id: 5fbfb943-76fc-42ff-b00f-5f82306de756_392dfcdf6ac047b8a49cb0be61ef5d51,76784c63-1aac-4187-8c80-39d010a46c9c_ed77c0c85e2b460ab6ecfd52ae71b9a9,ee234384-9aca-4f9a-97e0-8744de9270a5_378b5d0d0a93468ebb5680074b414543,f12739a1-f203-4232-9024-b8ba9255dbd7_be10ef21a3184f1cbf79885c703776d6,2a75f700-63f5-4020-bd5c-b0071450c563_d3874f37e0694220853b90a1193cb6a3,b936f7e9-19f0-47b9-92fe-41ddad008369_922ff25362bb434682289e30d1d4437a,68a023f1-e81f-424f-a25c-dea15c49ef13_42ba0de406f24114a5b9e01807f41cc3,333f1572-8ad6-4dd2-ab60-2c8404798654_3723d2ef9b534960a4856ae83dec661c
-    transcript_completed_at: 2026-09-08T08:34:58.141Z
   - id: 21aa54c5-41ec-44e2-bb1d-995535c255d5
     guid: 21aa54c5-41ec-44e2-bb1d-995535c255d5
     title: "150: 【年末AI回顾】从模型到应用、从技术到商战，拽住洪流中的意义之线|Solo"
@@ -544,8 +154,12 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T18:22:03.282Z
+    transcript_job_id: 61ff5cf1-24ff-4020-9d45-9fd885be7ce2_db7567e1e630497989dc16faecfbadc8,d711c915-f13f-4e0a-be48-4f76b5c2a3e3_928d9df40ca140c9b1270a0229ff5ac5,ff73dfb8-1f55-4bfd-b5b5-8d344cb38b3c_124373e7d7bb48d5a94510074add2a73,33652c9b-6d2b-45cb-8b42-cb825547871b_eed64363b266447d9ef53067543a5f40,5b8a9a12-ccfb-4e23-a1ef-6c4e97dff246_39e576d614de4fdab9830300a79215a8,cb089766-c144-42a5-9f81-d590fd8c6a41_4ce2acef5179452f86a50b310445c875,51db83d7-b921-43e9-bcba-ad1f5b90002a_73e65709b2124892bf88e38b64ab476f,70305b9b-7d07-4378-bc46-a8bf01faeac3_9f493293a0f24a0d8432fe0a0e4c9f48
+    transcript_completed_at: 2026-09-08T18:28:40.869Z
   - id: 009661ed-11b1-41e4-92c2-ec289a94d122
     guid: 009661ed-11b1-41e4-92c2-ec289a94d122
     title: "149: 具身模型哪家强？|与范浩强、高阳聊具身模型的测评、RoboChallenge，26 年具身展望"
@@ -692,8 +306,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T18:36:55.239Z
+    transcript_job_id: 6038ad8a-88cc-405f-b681-f29d71d1d1a1_d364b68cb8394d24aef91d2e8fcee2e6,1f67ffad-4304-4f84-8f50-1933b9a1141f_b816205b8b434a2291714d87ad3ecda0,454a0e56-d3ea-44e0-b265-9afb2789aa90_b4ea5cf7e7ea41808777035d325e7217,3af256c1-0933-467c-a052-4d162f1a479d_b115ebcf3d8341c3afb38e86eb8ad98c,5d5db9ff-65f4-49c8-8b9b-cf992895ba5a_9ddaadce80194be083abae837a706b0f,0490a1ef-427b-4477-a124-8a6336cb743d_9b191c401c324a1495ab7e9cc0826341
+    transcript_completed_at: 2026-09-08T18:42:21.351Z
   - id: 86b56730-d176-4fc4-8b5f-a5dbb8b5e404
     guid: 86b56730-d176-4fc4-8b5f-a5dbb8b5e404
     title: "148: 它石智航陈亦伦：具身的三道曙光和第一道关卡"
@@ -821,8 +439,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T18:50:31.980Z
+    transcript_job_id: a527525c-c45a-46ef-8edb-5090cdac3659_c3a2575505484bf18bea61eefa249a8a,de0d160b-f707-4c01-9cde-17ed842a153d_97b44c8d3eb5459a8b867ddaaa921853,0f1b6c3c-fd1c-4125-8c46-84f546259729_d1924b5b60794d9d8bcd55227a556bdb,3e99dc2c-85a9-4927-8d5e-6b626af787c1_118df22ec583460ab51e3d3ec05837f9,bbce021c-5f24-4ea9-9c91-e0e75fb37b60_c3f4255babfd48bfabb058ff1b49261e,cbaa41be-817f-40da-968c-118a504dbc7d_c1be0c62eab8455ebd1e8a2e471e332a
+    transcript_completed_at: 2026-09-08T18:55:54.786Z
   - id: 2c07cff3-c795-4d33-924c-3704105f1d2b
     guid: 2c07cff3-c795-4d33-924c-3704105f1d2b
     title: "147: OiiOii闹闹：“先抖音后剪映” 不再成立，AI 时代怎么做创作工具和内容社区"
@@ -895,5 +517,9 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: audit_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-08T19:04:39.084Z
+    transcript_job_id: 1e446a2c-0ac1-47a4-a808-1c12efd261f4_5d59dad6a36c4dcc9b7e42ea501078bf,99add97d-1286-4b91-a0e3-a6f8802f192e_d11fa48efe2c40aeb60348a26a3ff6ec,6bf3422d-4226-4713-8a9c-1dcc0a84db8e_8b25c80d570c45c8b4d4821e1b2fa79b,mimo:2c07cff3-c795-4d33-924c-3704105f1d2b:3:2026-09-08T19:04:39.084Z,872f0cfe-673c-49c5-b470-f2fee2f3d7c4_ca4d86e8c9f940bd8587fe85e9d68b7b,3158f619-d345-4c49-8a96-c41ada8f4a1f_c5b7c109c11a4d439306ae001fd43496,8c3d159a-c44e-4ac3-a223-f30dfbe7f698_de7c4150674945b09bf7d2d99e41d7da
+    transcript_completed_at: 2026-09-08T19:09:59.711Z

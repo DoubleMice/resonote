@@ -1,0 +1,47 @@
+episode_id: 009661ed-11b1-41e4-92c2-ec289a94d122
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '“所以这模型分不清说它刚才扫没扫。”'
+    transcript_excerpt: '所以这模型分不清说它刚才扫没扫。'
+  - artifact: slides.md
+    artifact_excerpt: '“模型现在每，每过一帧它就忘一次。”'
+    transcript_excerpt: '模型现在每，每过一帧它就忘一次。'
+  - artifact: slides.md
+    artifact_excerpt: '“我们规则上我们是取最后一次嘛。”'
+    transcript_excerpt: '我们规则上我们是取最后一次嘛'
+  - artifact: slides.md
+    artifact_excerpt: '“最好的方法就是带着大家站在这东西面前现场看。这是个唯一的ground truth。”'
+    transcript_excerpt: '最好的方法就是带着大家站在这东西面前现场看。这是个唯一的ground truth。'
+  - artifact: slides.md
+    artifact_excerpt: '“现在真的就是scaling data可能是26年最重要的一个主题。”'
+    transcript_excerpt: '现在真的就是scaling data可能是26年最重要的一个主题。'
+  - artifact: slides.md
+    artifact_excerpt: '“无论想做什么样的东西，我希望有一个标准化的一个流程。”'
+    transcript_excerpt: '无论想做什么样的东西，我希望有一个标准化的一个流程。'
+  - artifact: slides.md
+    artifact_excerpt: '“每个task几乎你都能找出它的那个与众不同的难点是什么。”'
+    transcript_excerpt: '每个task几乎你都能找出它的那个与众不同的难点是什么。'
+  - artifact: slides.md
+    artifact_excerpt: '“所以这模型分不清说它刚才扫没扫。”'
+    transcript_excerpt: '所以这模型分不清说它刚才扫没扫。'
+  - artifact: slides.md
+    artifact_excerpt: '“无论想做什么样的东西，我希望有一个标准化的一个流程。”'
+    transcript_excerpt: '无论想做什么样的东西，我希望有一个标准化的一个流程。'
+  - artifact: slides.md
+    artifact_excerpt: '“现在真的就是scaling data可能是26年最重要的一个主题。”'
+    transcript_excerpt: '现在真的就是scaling data可能是26年最重要的一个主题。'
+  - artifact: slides.md
+    artifact_excerpt: '“第一个叫Cherry-pick，第二个叫视频剪辑，第三个叫遥操作，第四个叫AIGC。”'
+    transcript_excerpt: '第一个叫Cherry-pick，第二个叫视频剪辑，第三个叫遥操作，第四个叫AIGC。'
+  - artifact: slides.md
+    artifact_excerpt: '“最好的方法就是带着大家站在这东西面前现场看。这是个唯一的ground truth。”'
+    transcript_excerpt: '最好的方法就是带着大家站在这东西面前现场看。这是个唯一的ground truth。'
+  - artifact: slides.md
+    artifact_excerpt: '“我觉得现在是视觉的CIFAR时期。”'
+    transcript_excerpt: '我觉得现在是视觉的CIFAR时期。'
+  - artifact: slides.md
+    artifact_excerpt: '“具身的DeepSeek moment能不能到。”'
+    transcript_excerpt: '具身的DeepSeek moment能不能到。'
+  - artifact: slides.md
+    artifact_excerpt: '“我自己的判断是可能会在3到4年左右。”'
+    transcript_excerpt: '我自己的判断是可能会在3到4年左右。'

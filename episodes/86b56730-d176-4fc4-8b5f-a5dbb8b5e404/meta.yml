@@ -1,0 +1,31 @@
+title: "148: 它石智航陈亦伦：具身的三道曙光和第一道关卡"
+guest: 陈亦伦
+guest_role: 它石智航创始人
+tags:
+  - robotics
+  - ai-research
+  - startup
+  - technical
+  - strategic
+  - interview
+  - founder
+summary: |
+  陈亦伦从 2021 年自动驾驶端到端实验讲起，解释为何他把运动控制、大模型任务规划和端到端学习视为具身智能的三道曙光。访谈的重心落在数据：它石智航希望用可穿戴手套和第一视角相机，在真实工作场景中记录人类操作，再让模型学习空间、接触与力的变化。团队计划先在工业制造等已有大量人工操作的场景检验技术价值。
+core_ideas:
+  - 自动驾驶经验显示：复杂物理任务可由大量真实数据与端到端网络共同解决。
+  - 具身智能当前首先要跨过数据墙，随后才是算力扩展与对世界交互的学习。
+  - 可穿戴采集保留了真实场景和真实动作，陈亦伦认为其吞吐量远高于遥操作。
+  - AWE 试图用时间、空间、力和交互后的状态变化，表示机器人面对的物理世界。
+  - 线束等柔性立体加工工序，是检验机器人能否在工业现场创造价值的早期场景。
+id: 86b56730-d176-4fc4-8b5f-a5dbb8b5e404
+source: latepost
+source_title: "148: 它石智航陈亦伦：具身的三道曙光和第一道关卡"
+published: 2026-01
+published_sort: "20260116"
+duration: 1h25m
+url: https://podcast.latepost.com/148
+status: generated
+article_path: episodes/86b56730-d176-4fc4-8b5f-a5dbb8b5e404/article.html
+base: /episodes/86b56730-d176-4fc4-8b5f-a5dbb8b5e404/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: 2026-09-08T20:21:19.030Z

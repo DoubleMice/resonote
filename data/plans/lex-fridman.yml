@@ -1,28 +1,12 @@
 source: lex-fridman
-refreshed_at: 2026-09-08T07:39:36.862Z
+refreshed_at: 2026-09-08T18:12:45.000Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: p-6506
-    guid: https://lexfridman.com/?p=6506
-    title: "#501 – DHH: Future of Programming, AI, Agentic Engineering, Vibe Coding &#038; Linux"
-    duration: 19317
-    published: Wed, 26 Aug 2026 21:47:04 +0000
-    published_sort: "20260826"
-    first_seen_at: 2026-08-27T04:57:19.817Z
-    url: https://lexfridman.com/dhh-2/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dhh-2
-    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_dhh_2.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T07:56:43.702Z
-    transcript_completed_at: 2026-09-08T08:11:25.680Z
-    transcript_job_id: 7a059220-8e58-4e3d-b860-012225a72285_a8766d3a6fbd433988edf343de81cb46,7872651d-913e-4489-af2b-dcc5fd37f93b_11dd78d498fb461987f84d35f7daaa32,2c72ea55-bcde-47e3-8af5-575ad0b85a88_34f167282bdf4f459f5d154b05e0ade3,65f4fa74-0526-4a51-92b3-8b2da5122ce9_4c6b2d3cb28348feb36de61f92293b43,48e82e0c-cee4-42aa-94e4-7e88ce3b03a1_c42b9e0e2b124b5ca60f26ae211af1c9,959c0b83-4c82-4f02-92e7-e65be5dabafd_ed2d2115c849432998d9fcd981e4b8e5,e5bc76e0-efff-48ad-a135-8b0bdaafb7d8_d167501768174e10adb95d9d9973d973,4255aff5-c628-4f7c-bb4e-3075b69b7af0_b3c886ab13ff4ddcad655ffb011d673d,f2175e07-16cb-4575-bb35-af7c167e6132_4135f7f241f246099c436811062cec57,063fefe4-c649-41fa-8fa5-81516a1d00c8_bf02e8db861942d6bbdb3e322eb98418,adbc56d8-a576-4c0b-b92f-4c51288218ee_53863c5a6ea84393a0229ef5a5053403,28dab774-629d-4238-888d-3369ac8c6b5a_df77081033c643d6b56cd5f6308cfbac,c96d3745-b6bb-466d-8731-c592bfa278e1_9cd2321c7ef54d99a43bd62d67784915,564162fe-3ff4-4438-9886-bb4a2f9293d6_b1d72b6eb4bb42cfa5f2ca7ca780b569,6c2df217-38f1-4f1c-8ca9-04ace8865e6a_8beefc82f6954ec6a4965087d1b5ffbd,477b82f8-827f-4bda-93a3-f3c612d10d62_ffe6471822594aed81b8a3d9ac7e8057,e0201fb2-98bc-45c0-9e56-6ba7998f97a6_0b07a0b7fd0447fea1214baa7ca484c1,8a40f706-d7e4-49bc-8b8d-2a5588041a4f_b311eeaad74543b0a30faf3dbe2ef8bb,7cd02fd1-1696-4688-975e-384e96aaa318_9828b77f6a9f4b028a440853149a6cc8,1fbd8be6-b00c-4f7c-aa16-2e01cb56f316_e5ab54b5490e401294c43c65c808cdd5,9b86b32c-3aef-41b5-8aca-cb699c9a05ab_d2f58e9cea4749faa6ae2f66b1fd697e,f4877177-c4c8-4775-800b-511557c5215d_46c9bb27ba04497ca36ea313bc6223ef
+episodes: []

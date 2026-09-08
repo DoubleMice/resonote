@@ -1,0 +1,31 @@
+title: "149: 具身模型哪家强？|与范浩强、高阳聊具身模型的测评、RoboChallenge，26 年具身展望"
+guest: 范浩强、高阳
+guest_role: 原力灵机联合创始人；千寻智能联合创始人兼首席科学家
+tags:
+  - robotics
+  - ai-research
+  - technical
+  - interview
+  - founder
+  - researcher
+summary: >
+  范浩强与高阳从 RoboChallenge 的 Table30
+  出发，讨论具身模型为何难以在真实世界中公平测评，以及少样本微调与零样本评测分别回答什么问题。对谈还梳理了数据规模化、单帧模型的记忆缺口、演示可信度和机器人商业化所需的能力门槛。
+core_ideas:
+  - 真实世界评测受物体、光照、摆放和机器状态影响；当前更适合观察模型间的明显代际差和能力趋势。
+  - Table30 用碎纸、插花、扫码等桌面任务覆盖柔性物体、精确操作、物体交互和上下文记忆。
+  - RoboChallenge 测少样本微调后的任务成功率；RoboArena 通过分布式场地的零样本两两对比排序。
+  - 仿真、视频、可穿戴设备和遥操作都是具身数据来源，数据规模与真实世界覆盖是 2026 年的重要问题。
+  - 嘉宾把当前行业类比为 GPT-2 或视觉的 CIFAR 阶段，并关注基础模型与客户需求何时同时成熟。
+id: 009661ed-11b1-41e4-92c2-ec289a94d122
+source: latepost
+source_title: "149: 具身模型哪家强？|与范浩强、高阳聊具身模型的测评、RoboChallenge，26 年具身展望"
+published: 2026-01
+published_sort: "20260125"
+duration: 1h22m
+url: https://podcast.latepost.com/149
+status: generated
+article_path: episodes/009661ed-11b1-41e4-92c2-ec289a94d122/article.html
+base: /episodes/009661ed-11b1-41e4-92c2-ec289a94d122/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: 2026-09-08T19:59:52.088Z

@@ -1,0 +1,31 @@
+title: 43.「26Q2」大模型半年报：RSI，Fable，5.2，混元3，龙猫，到处都是斩杀线 - 王铁震
+guest: 王铁震
+guest_role: AI 研究者与投资者
+tags:
+  - ai-research
+  - ai-products
+  - coding-agents
+  - technical
+  - strategic
+  - interview
+summary: |
+  王铁震复盘 2026 年第二季度的大模型竞争，讨论 RSI 是否会降低人类参与、开源模型如何抬高行业基线，以及 Harness 和真实任务数据为何成为产品差异。
+  对美团龙猫 2.0 与腾讯混元 3 的讨论，把注意力放在训练工程、数据清洗、产品数据入口和隐私边界，而非一张短期榜单。
+core_ideas:
+  - RSI 更像人和模型共同参与的改进循环，目标、抽象和新信息仍需要人提供。
+  - 代码生成比例不能替代对控制权的判断，人需要定义架构、模块边界与验收标准。
+  - 开源提高了模型能力的共同基线，也让单靠模型 API 提价变得更难。
+  - Harness 的基础功能更容易复现，安全设计、交互反馈和长期体验才需要持续打磨。
+  - 美团与腾讯的案例显示，训练工程和合规使用的产品数据可能成为模型竞争的重要条件。
+id: 6a5df04a6356eb2d9be57c24
+source: taixian-zhihuo
+source_title: 43.「26Q2」大模型半年报：RSI，Fable，5.2，混元3，龙猫，到处都是斩杀线 - 王铁震
+published: 2026-07
+published_sort: "20260721"
+duration: 1h16m
+url: https://www.xiaoyuzhoufm.com/episode/6a5df04a6356eb2d9be57c24?utm_source=rss
+status: generated
+article_path: episodes/6a5df04a6356eb2d9be57c24/article.html
+base: /episodes/6a5df04a6356eb2d9be57c24/
+thumbnail: https://image.xyzcdn.net/FnDcQ_OhlPRAVpIyoEYEbTkfm2R5.jpeg
+generated_at: 2026-09-08T20:21:48.081Z

@@ -1,0 +1,35 @@
+episode_id: 21aa54c5-41ec-44e2-bb1d-995535c255d5
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: '如果你们的大模型推理引擎不开源的话，我就没有兴趣了。'
+    transcript_excerpt: '如果你们的大模型推理引擎不开源的话，我就没有兴趣了。'
+  - artifact: slides.md
+    artifact_excerpt: '过去几年是scaling的阶段，而现在是重新回到研究，回到research的阶段。'
+    transcript_excerpt: '过去几年是scaling的阶段，而现在是重新回到研究，回到research的阶段。'
+  - artifact: slides.md
+    artifact_excerpt: '接下来我们就会看到Agents的scaling。'
+    transcript_excerpt: '接下来我们就会看到Agents的scaling。'
+  - artifact: slides.md
+    artifact_excerpt: 'AI软件要从卖工具、卖席位变成卖结果。'
+    transcript_excerpt: 'AI软件要从卖工具、卖席位变成卖结果。'
+  - artifact: slides.md
+    artifact_excerpt: '不是对胜者的奖赏，而是下一轮竞赛的鼓点。'
+    transcript_excerpt: '不是对胜者的奖赏，而是下一轮竞赛的鼓点。'
+  - artifact: slides.md
+    artifact_excerpt: '把任何重复三遍的事AI化。'
+    transcript_excerpt: '把任何重复三遍的事AI化。'
+  - artifact: slides.md
+    artifact_excerpt: '毕竟，大模型不能替你活过。'
+    transcript_excerpt: '毕竟，大模型不能替你活过。'
+  - artifact: article.html
+    artifact_excerpt: '如果你们的大模型推理引擎不开源的话，我就没有兴趣了。'
+    transcript_excerpt: '如果你们的大模型推理引擎不开源的话，我就没有兴趣了。'
+  - artifact: article.html
+    artifact_excerpt: 'AI软件要从卖工具、卖席位变成卖结果。'
+    transcript_excerpt: 'AI软件要从卖工具、卖席位变成卖结果。'
+  - artifact: article.html
+    artifact_excerpt: '不是对胜者的奖赏，而是下一轮竞赛的鼓点。'
+    transcript_excerpt: '不是对胜者的奖赏，而是下一轮竞赛的鼓点。'
+  - artifact: article.html
+    artifact_excerpt: '毕竟，大模型不能替你活过。'
+    transcript_excerpt: '毕竟，大模型不能替你活过。'

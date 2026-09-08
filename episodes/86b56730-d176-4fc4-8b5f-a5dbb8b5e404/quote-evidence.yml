@@ -1,0 +1,35 @@
+episode_id: 86b56730-d176-4fc4-8b5f-a5dbb8b5e404
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: 'AI可以做planning了'
+    transcript_excerpt: 'AI可以做planning了'
+  - artifact: slides.md
+    artifact_excerpt: '越复杂的系统，越多的数据，往往它的算法结构就会越简单'
+    transcript_excerpt: '越复杂的系统，越多的数据，往往它的算法结构就会越简单'
+  - artifact: slides.md
+    artifact_excerpt: '我反而觉得GPT最伟大的事情是他们想出了next token prediction这个训练任务'
+    transcript_excerpt: '我反而觉得GPT最伟大的事情是他们想出了next token prediction这个训练任务'
+  - artifact: slides.md
+    artifact_excerpt: '每个技术是为了解决它的问题而生的'
+    transcript_excerpt: '每个技术是为了解决它的问题而生的'
+  - artifact: slides.md
+    artifact_excerpt: '具身领域的scaling law是非常明确的，它是一定可以到达的'
+    transcript_excerpt: '具身领域的scaling law是非常明确的，它是一定可以到达的'
+  - artifact: slides.md
+    artifact_excerpt: '真实场景这件事情是非常非常重要的'
+    transcript_excerpt: '真实场景这件事情是非常非常重要的'
+  - artifact: slides.md
+    artifact_excerpt: '我们其实比它要省两个数量级'
+    transcript_excerpt: '我们其实比它要省两个数量级'
+  - artifact: slides.md
+    artifact_excerpt: '26年，就这种方式就会让数据大爆发'
+    transcript_excerpt: '26年，就这种方式就会让数据大爆发'
+  - artifact: slides.md
+    artifact_excerpt: '机器人这个行业本身它值得拥有一个自己的模型'
+    transcript_excerpt: '机器人这个行业本身它值得拥有一个自己的模型'
+  - artifact: slides.md
+    artifact_excerpt: '最懂数据的公司往往是最懂AI的公司'
+    transcript_excerpt: '最懂数据的公司往往是最懂AI的公司'
+  - artifact: slides.md
+    artifact_excerpt: '从25年认认真真开始搞这件事情，到27年就一定会有效果'
+    transcript_excerpt: '从25年认认真真开始搞这件事情，到27年就一定会有效果'
