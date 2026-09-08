@@ -1,107 +1,12 @@
 source: unchained
-refreshed_at: 2026-09-07T18:11:40.164Z
+refreshed_at: 2026-09-08T03:04:08.245Z
 min_duration: 3300
-min_date: "20260817"
-total_candidates: 1
-done: 1
+min_date: "20260818"
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 7d58c850-aabe-11f1-a89f-5fe1f0517a53
-    guid: 7d58c850-aabe-11f1-a89f-5fe1f0517a53
-    title: How GenLayer Is Building a Court System for Disputes Between AI Agents
-    duration: 3641
-    published: Mon, 07 Sep 2026 14:00:00 -0000
-    published_sort: "20260907"
-    first_seen_at: 2026-09-07T18:11:40.163Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4123706838.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4123706838.mp3
-    image: https://megaphone.imgix.net/podcasts/7d58c850-aabe-11f1-a89f-5fe1f0517a53/image/43652ff8774ce00ce074df943ef6c771.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Albert Castellana and Arthur Hayes walk through how GenLayer resolves an AI agent's dispute in minutes, for cents,
-      without a single human judge involved.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠
-
-      ========================================================
-
-
-      Every legal system assumes a human sits on the other side of a dispute. Albert Castellana, CEO of GenLayer Labs,
-      is betting that assumption breaks down within the decade, once AI agents start disagreeing with each other faster
-      than any court could keep up.
-
-
-      Castellana built the idea after StakeHound, the liquid-staking company he ran before Lido existed, lost $150
-      million when a custodian misplaced two keys, and he saw how slow and costly the legal system was. He joins Arthur
-      Hayes, CEO of Flop Labs and CIO of Maelstrom, to argue agentic commerce cannot scale without its own dispute
-      layer, since agents cannot be jailed.
-
-
-      They cover how GenLayer escalates a dispute to up to 1,500 AI validators for a verdict in minutes, how it compares
-      to Kleros, UMA, and the failed Aragon Court, and why Hayes wants Flop plugged into GenLayer once both go live.
-
-
-      If agents cannot go to jail, escrowed money may be the only leverage left.
-
-
-      Host:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-      Guests:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Arthur Hayes - CEO of Flop Labs and CIO of Maelstrom
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Albert Castellana - Co-Founder and CEO of GenLayer Labs
-
-      Timestamps
-
-
-      🏛️ 01:20 Albert Castellana on the $150 million custody failure that led him to build GenLayer
-
-
-      🤖 05:20 Why Flop needs GenLayer's dispute layer to make agentic commerce work
-
-
-      ⚖️ 07:26 The kinds of disputes AI agents will actually have with each other
-
-
-      📣 13:38 1inch Aqua: See how the shared liquidity platform works at http://unchainedcrypto.com/go/1inch-yt
-
-
-      📜 14:29 How an intelligent contract escrows funds and calls in AI validators
-
-
-      🔗 18:51 Inside GenLayer's architecture: the L2 chain and 1,500 validators
-
-
-      💵 27:21 What an AI verdict actually costs: 50 cents to $100, minutes to hours
-
-
-      🔒 34:30 Why AI agents can't go to jail, so escrow is the only enforcement
-
-
-      ⚔️ 40:14 How GenLayer compares to the AAA, Kleros, UMA, and the failed Aragon Court
-
-
-      🕵️ 49:29 Can the validator network be gamed or bought off?
-
-
-      🚀 54:34 What's next for GenLayer's token launch and Flop's Q4 airdrop
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-07T18:11:41.524Z
-    transcript_job_id: b68777e2-5b29-4a54-b749-2d2ff0582aef_d96e765bff6649d6b902e7769cbe4e6a,a896c6a5-4581-49d9-aa62-810091caaa95_bcac739031604f24b91d44651311018b,3beb4185-9897-43cb-bae7-23a009c1e9fb_c67c43e92b65400e9922fa1ff04a6939,f022844e-fddb-4d0c-9bc6-dd0b7c087669_9a58d818285c4cb09225cb9ac4adbb2e,92044d08-6945-4972-93b9-940366dfe2df_3fcad659ffbe4814b331656f96bf5740
-    transcript_completed_at: 2026-09-07T18:14:56.452Z
+episodes: []
