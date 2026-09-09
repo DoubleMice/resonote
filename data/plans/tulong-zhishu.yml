@@ -1,79 +1,15 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-08T18:12:44.975Z
+refreshed_at: 2026-09-09T03:04:15.624Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 29
-done: 4
+total_candidates: 25
+done: 0
 pending: 2
 needs_transcript: 23
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a918c15a0210c197dc9c039
-    guid: 6a918c15a0210c197dc9c039
-    title: 中国一级半市场的水下江湖-续集｜串台苔藓之火
-    duration: 4178
-    published: Fri, 04 Sep 2026 01:54:18 GMT
-    published_sort: "20260904"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a918c15a0210c197dc9c039?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a918c15a0210c197dc9c039/media.xyzcdn.net/6507bc165c88d2412626b401/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
-    image: https://image.xyzcdn.net/FrzroS9DX2ALm939mLxsKNxQNg9o.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 8976feab-9d09-40e5-9e04-fcacf759bffb_009cf0748b2c4ed0a13925b216fbdb93,42e73a79-bb04-4a5c-8ce4-5010e164f61f_8f8de75224e74cb9802d6230a938743b,8c863a61-81e4-4280-a9e5-670ebe596635_78bafb087b9c4552a57e602995bbf435,77e7e83a-a21d-4b3d-b5ab-d3ad0fbc8352_b3f1c995196042919390b3a2aeeb6fa8,a65fc845-7b8c-4359-8302-07a9de4814cc_155d164c2d8843b689de62b9c455d5af
-    transcript_submitted_at: 2026-09-08T07:44:48.425Z
-    transcript_completed_at: 2026-09-08T07:49:46.583Z
-  - id: 6a97d6a8f03e74ee6b03d6a6
-    guid: 6a97d6a8f03e74ee6b03d6a6
-    title: AI李时珍带你“尝百草”---小宇宙先声活动演讲---91页PPT solo
-    duration: 3162
-    published: Wed, 02 Sep 2026 10:31:31 GMT
-    published_sort: "20260902"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a97d6a8f03e74ee6b03d6a6?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a97d6a8f03e74ee6b03d6a6/media.xyzcdn.net/6507bc165c88d2412626b401/lkrkHCmmJuj6B5P5j9wiWwtVmWHL.m4a
-    image: https://image.xyzcdn.net/Fh2yVeyPogVy9tzNSGS2Nv2yRrZT.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 93b3d928-2a5b-4423-aff7-cf978876c508_7544a2dd6c7148daa909d9df3dc3a59b,f2f92447-5e24-4a1c-bced-0364e5bfb9c8_a69e10aeba994939bc7c08cc010d452b,78ef8d07-7248-42e6-9b89-fe36dbe6848b_56d015040bc345f6a9b1bf4099c5db52,29dfa592-72e2-458a-b0b5-683ed0c03e0f_c8935abc38e44e25932028b46fe63e23
-    transcript_submitted_at: 2026-09-08T08:13:13.924Z
-    transcript_completed_at: 2026-09-08T08:15:35.190Z
-  - id: 6a89cfbe1352af56ff3a6049
-    guid: 6a89cfbe1352af56ff3a6049
-    title: 中国一级半市场的水下江湖（5年-183期-5032条交易线索）
-    duration: 2846
-    published: Mon, 24 Aug 2026 16:00:00 GMT
-    published_sort: "20260824"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a89cfbe1352af56ff3a6049?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a89cfbe1352af56ff3a6049/media.xyzcdn.net/6507bc165c88d2412626b401/lpLlWV2yu-u4hAQqydq9i0mbTzfF.m4a
-    image: https://image.xyzcdn.net/FpbgpvwXY-uilDj93EKqW2bPoHAu.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:19:24.544Z
-    transcript_job_id: 046898c9-611e-4116-9aa8-15282be096c7_64fb22f8bf6e47eabf08a62e3fe71225,eeedebac-3f98-4c99-a519-beed31834fd1_16c3635d68114d2bba6712faeecfac3a,18dfe335-815e-429c-876f-e8e5d69e891e_06785980265c455db06c02f07465f1b7,6bdd0c22-7809-4ac0-af21-940b26334e78_75a59ccffb924dfe84d8933c858a3c57
-    transcript_completed_at: 2026-09-08T18:22:02.948Z
-  - id: 6a789a5ac4079d62c57fca54
-    guid: 6a789a5ac4079d62c57fca54
-    title: AI by the numbers-23页PPT solo
-    duration: 2033
-    published: Sun, 09 Aug 2026 15:25:36 GMT
-    published_sort: "20260809"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a789a5ac4079d62c57fca54?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a789a5ac4079d62c57fca54/media.xyzcdn.net/6507bc165c88d2412626b401/lqXnaDLi8MXozJ8Mvp3bhS0iqVzt.m4a
-    image: https://image.xyzcdn.net/FmcFMDqCp3hb2yQRenaWY_e8XIu4.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:34:32.070Z
-    transcript_job_id: b10bc002-34c4-4e9e-ab64-411b42e02878_bf672ec38ec44d4292cf3c85b9a3769e,576a4b65-1f7f-4de0-a73b-48e92529cf97_46738b6d82f5433aa50d0bf1048e5427,10457aee-e670-4a36-ad56-c51edad5237c_9cf06ca231f542a8b4b7147b81e23d53
-    transcript_completed_at: 2026-09-08T18:36:54.901Z
   - id: 6a5f100a6356eb2d9be5eee3
     guid: 6a5f100a6356eb2d9be5eee3
     title: AI抢走内存，K型消费下我们还要做硬件吗？---串台开始连接 LinkStart
@@ -87,8 +23,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:48:32.108Z
     transcript_job_id: acd29fdf-d14d-4738-b9fe-65afed262551_a6ebb086f960473fa7e86fab858f070b,074f795b-d382-403c-8a7f-9f72641795ee_1c97045f6c8641e99887d968156004a6,2b0395b9-c106-435b-875e-e5cefb664cb5_b671750edd324d92b0406445abc9db07
+    transcript_submitted_at: 2026-09-08T18:48:32.108Z
     transcript_completed_at: 2026-09-08T18:50:31.650Z
   - id: 6a5ee6f76356eb2d9be5d600
     guid: 6a5ee6f76356eb2d9be5d600
@@ -103,8 +39,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T19:00:40.371Z
     transcript_job_id: 5c82e59f-3db6-436a-a13d-0e46596ab796_96c74ef803ca45d2bd1b81b6ea4a1d99,c5436ac1-9159-4306-a8b0-1ea2c1c8ec85_f93fed1d76594b3fafd60818fb3dcd8a,cf458b02-edd6-41b6-ad27-7a0c4bfedaee_e8d2b2491a024767a192fe384c6f3c8f,2a304b34-8b8e-4bc7-828b-82e2cb2d7cfa_bd5638e4941e409291e00a7852383947
+    transcript_submitted_at: 2026-09-08T19:00:40.371Z
     transcript_completed_at: 2026-09-08T19:04:38.734Z
   - id: 6a5a91e1a3fec224d59f4ddd
     guid: 6a5a91e1a3fec224d59f4ddd

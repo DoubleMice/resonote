@@ -1,79 +1,15 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-08T18:12:44.994Z
+refreshed_at: 2026-09-09T03:04:15.637Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 21
-done: 4
+total_candidates: 17
+done: 0
 pending: 1
 needs_transcript: 16
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a9edb82f03e74ee6b06a8a9
-    guid: 6a9edb82f03e74ee6b06a8a9
-    title: 51. 闲聊8月：AI 和机器人改变世界，这钱你出？ - 马克汤｜财搭子AI
-    duration: 5064
-    published: Tue, 08 Sep 2026 16:00:00 GMT
-    published_sort: "20260908"
-    first_seen_at: 2026-09-08T18:12:44.994Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a9edb82f03e74ee6b06a8a9?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a9edb82f03e74ee6b06a8a9/media.xyzcdn.net/67f40c212ac4d88190caa56a/lqCY_LlukHdsRC09sm_xyPqF-n6b.m4a
-    image: https://image.xyzcdn.net/FnurCSJpK-zYmcl-5ukWSgOhqHfQ.jpeg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:12:46.313Z
-    transcript_job_id: dd4bdb3c-8c2c-4e8c-aa81-7397f5551692_6a243b6231ee422da8f7e71c000a2252,09398afd-5090-42aa-8cf5-4c2869c133a4_ce398d3644c542b08b41334c07c098f5,e69e37eb-bb56-442b-827f-5c653c675754_4851c10df71f46b2ae4d764b30e8a8bc,1fdea442-13bf-47de-8919-08d9c6c0eeee_8f7287fcb70f42e782b56a2f6a616d67,70292714-ac11-4e9e-bd45-9e452919e596_be50acb991b24fc29c2e0e21c98e8fa7,2fb6c775-7c91-437c-903a-58f1d2e52f94_a81db492df2949489d91f06bff7354d8
-    transcript_completed_at: 2026-09-08T18:19:24.203Z
-  - id: 6a8fbdb4ef65145dfcc623aa
-    guid: 6a8fbdb4ef65145dfcc623aa
-    title: 50. 一级半市场：水下私募，字节老股，三百公司求卖身？- 庄明浩 ｜屠龙之术
-    duration: 4178
-    published: Mon, 31 Aug 2026 16:00:00 GMT
-    published_sort: "20260831"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a8fbdb4ef65145dfcc623aa?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a8fbdb4ef65145dfcc623aa/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpPEPMQIvauTH3idDE3V8XU5agst.m4a
-    image: https://image.xyzcdn.net/FurlzzMfqPG6D9H8lnlyaFMUBX1m.jpg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 387ab6e0-ffa1-4707-9be9-5bf44d47da3d_1974f1ecf80e4472be74f6a2837bb62d,8af8aca1-6695-43e5-b25e-0039fd18f347_8c4d6c691f264485b0bbf0b173f4356e,c0761f3a-3ce4-4932-8d92-3dc358aee1e4_97d81e8ab9174302a561cfe3c36b68e7,e1872682-238b-4310-82cd-f82cee97e1f6_59b6cce30cc74e5fa9007b2b4b52f9fb,19751fac-ef8d-41ea-af4b-ba8fcd4ec204_fcfb2bb2049a4f87a2ea9e35f23436de
-    transcript_submitted_at: 2026-09-08T07:39:37.651Z
-    transcript_completed_at: 2026-09-08T07:44:48.231Z
-  - id: 6a687afeb581962ce2bccdf0
-    guid: 6a687afeb581962ce2bccdf0
-    title: 44. 百大UP创业AI，流量真是护城河吗？- 图灵的猫｜王依然
-    duration: 4214
-    published: Tue, 28 Jul 2026 16:00:00 GMT
-    published_sort: "20260728"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a687afeb581962ce2bccdf0?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a687afeb581962ce2bccdf0/media.xyzcdn.net/67f40c212ac4d88190caa56a/lgEyHGVnUmWn7lVOFPcXn-Qhz53e.m4a
-    image: https://image.xyzcdn.net/FpRfkVXnzho9rEpqncoLYKfheA2-.jpeg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:28:41.217Z
-    transcript_job_id: 36c7d605-3f94-49cb-84e3-28b8700a15f9_610c0ff5600740a597256a6bbdb585f8,aa2a0a4b-1911-4c42-9ce4-8d317407065c_d7be487edcf14f389877d8f014f2cdc0,0e85b464-9fa9-45ed-a343-38c8d1bf4049_289c32b00f1b4fcf91ff6995e26a4617,ea27d42f-8b18-4615-8ebc-842569280845_6ab3a9ffa10d42ecb218ceab5c40aa59,e64145ff-6d99-4fe3-b858-2bdb5d6fae82_5f96f06ad66f4fa89dd7099f1bf652cd
-    transcript_completed_at: 2026-09-08T18:34:31.728Z
-  - id: 6a5df04a6356eb2d9be57c24
-    guid: 6a5df04a6356eb2d9be57c24
-    title: 43.「26Q2」大模型半年报：RSI，Fable，5.2，混元3，龙猫，到处都是斩杀线 - 王铁震
-    duration: 4559
-    published: Tue, 21 Jul 2026 16:00:00 GMT
-    published_sort: "20260721"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a5df04a6356eb2d9be57c24?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a5df04a6356eb2d9be57c24/media.xyzcdn.net/67f40c212ac4d88190caa56a/lviIvPijtPG6Oy1-ZbojkEsmO_ru.m4a
-    image: https://image.xyzcdn.net/FnDcQ_OhlPRAVpIyoEYEbTkfm2R5.jpeg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:42:21.696Z
-    transcript_job_id: 7e974a44-81a6-4ba3-b75a-a3eda18c7a2c_7f08c0d8789e45dabf44def360586b84,30b4a4ea-1df1-4b02-afe0-61bacd936db4_abf970bb05c8415ca51f44bb2ba21e5e,11148f99-27b3-4e55-b578-ccb7b16eaf0a_8f03f526ed284250b63b7e4b01b88467,59866fe1-8da5-4add-a989-23d3c5193e07_0115506009d54e949391b2b3c04c61db,ab5e713f-158b-4105-868f-65ffe01660ef_9c49d7b507fc413fb354413e6571164c,7b5c8482-f1b9-4d23-a565-781ff3635e30_66ae0a020a79404cbb38c9452a4857b9
-    transcript_completed_at: 2026-09-08T18:48:31.778Z
   - id: 6a5af5d1a3fec224d59f6407
     guid: 6a5af5d1a3fec224d59f6407
     title: 42. 18个月一人公司大翻盘：负债上庭到百万博主 - 李超 | 第四种黑猩猩
@@ -87,8 +23,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-08T18:55:55.129Z
     transcript_job_id: 947483e6-ef67-41f7-888d-0ffefbcd7b31_4232a8d2f93d4d9d812cc0f453b0dee1,4961f69b-2a4c-4f92-beab-72bacaf3439b_9f658ce6b48c46d2b789be87ca4a43c4,ea94a879-b548-4f1f-a0f1-9a44916d0ed7_4f4df4664de44f54bc0baa4f24d7c86a,1c222404-c6bd-4049-8ee0-64c26c3b8ae1_8af4cfe22bb447f6a8df8ad1b279eb09,024308b1-1024-448c-8644-83da87dc3aeb_732b1a3a0d25480e8ca9f56d2098ffd5
+    transcript_submitted_at: 2026-09-08T18:55:55.129Z
     transcript_completed_at: 2026-09-08T19:00:39.970Z
   - id: 6a53babf1e32575f5eb55305
     guid: 6a53babf1e32575f5eb55305
