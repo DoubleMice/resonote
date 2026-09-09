@@ -1,11 +1,11 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-09T03:04:15.624Z
+refreshed_at: 2026-09-09T18:12:20.662Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 25
-done: 0
-pending: 2
-needs_transcript: 23
+done: 6
+pending: 1
+needs_transcript: 18
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a5f100a6356eb2d9be5eee3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a5f100a6356eb2d9be5eee3/media.xyzcdn.net/6507bc165c88d2412626b401/ltcmnJJbK-hri1NlAFfM1wOQFY9A.m4a
     image: https://image.xyzcdn.net/FmjICGq_6HGf-_e1Rh11N-hjoWNI.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: acd29fdf-d14d-4738-b9fe-65afed262551_a6ebb086f960473fa7e86fab858f070b,074f795b-d382-403c-8a7f-9f72641795ee_1c97045f6c8641e99887d968156004a6,2b0395b9-c106-435b-875e-e5cefb664cb5_b671750edd324d92b0406445abc9db07
@@ -36,7 +36,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a5ee6f76356eb2d9be5d600?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a5ee6f76356eb2d9be5d600/media.xyzcdn.net/6507bc165c88d2412626b401/llgbzyL7u_JPwMNkSRukXuiVNExC.m4a
     image: https://image.xyzcdn.net/FjOLYhTkckek7PL1FQWU_HpzaR_5.jpg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 5c82e59f-3db6-436a-a13d-0e46596ab796_96c74ef803ca45d2bd1b81b6ea4a1d99,c5436ac1-9159-4306-a8b0-1ea2c1c8ec85_f93fed1d76594b3fafd60818fb3dcd8a,cf458b02-edd6-41b6-ad27-7a0c4bfedaee_e8d2b2491a024767a192fe384c6f3c8f,2a304b34-8b8e-4bc7-828b-82e2cb2d7cfa_bd5638e4941e409291e00a7852383947
@@ -52,8 +52,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a5a91e1a3fec224d59f4ddd?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a5a91e1a3fec224d59f4ddd/media.xyzcdn.net/6507bc165c88d2412626b401/lktedYhilkrrdQ1v58GOx5IkHRjM.m4a
     image: https://image.xyzcdn.net/FkX3njKf-_xOJnEP4OkoS4mYUlDR.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:19:20.267Z
+    transcript_job_id: 02b310b7-f37c-484e-b5a4-613d91a597ef_c9798fa9c73044458b4878d2c9a895cb,6132c9b5-f9a9-4972-ad56-6d98638764d3_e4ed126c35024e5d8c9894d97f03ff4e,d1e5de58-13f8-4e28-a99d-f8c39de3b00e_cdee3dc08e82419b9bea0a00657447e8,a6bc4c15-d446-490a-89aa-b0fd9072933e_b884a022fbc94117a4ae211c55e9de92
+    transcript_completed_at: 2026-09-09T18:23:00.930Z
   - id: 6a40c46d9d2f5743683f00a8
     guid: 6a40c46d9d2f5743683f00a8
     title: World Model-世界模型也有Scaling Law吗？
@@ -64,8 +68,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a40c46d9d2f5743683f00a8?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a40c46d9d2f5743683f00a8/media.xyzcdn.net/6507bc165c88d2412626b401/ls25cMyIpBSAq3EZ2_ifP5aoXPSt.m4a
     image: https://image.xyzcdn.net/Fh6WLRCGd6TkwZ7bhgIMrmNYXaZo.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:30:26.743Z
+    transcript_job_id: f7b2f7fe-f481-4305-aa5c-d5cd7f3eb8af_bc97f1b7ae7a4bd9a9ab42b8e3986ba9,47993130-3f82-4152-a84d-41632a6c95a5_2249ebd517304788858bfd050404196b,e016d28c-117d-4752-ab4d-ed67e3a3f7de_62167439ade24b70a9cb8ffe6167c30f,91146225-cd77-42f0-b0c9-5495faf48876_4984482f3ced404aa91427da7f324d9a
+    transcript_completed_at: 2026-09-09T18:34:17.437Z
   - id: 6a3b7fbb2e335a35a808904e
     guid: 6a3b7fbb2e335a35a808904e
     title: 说好的艺术家呢？--- AI时代，内容工业的三次死亡与创作者的重生
@@ -76,8 +84,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a3b7fbb2e335a35a808904e?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a3b7fbb2e335a35a808904e/media.xyzcdn.net/6507bc165c88d2412626b401/liAu3Gfjx8KNOUC-TW3bUt1ONQ8-.m4a
     image: https://image.xyzcdn.net/FiZbhGjdTT4HhsEbw7Z57EXqkm1-.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:40:27.491Z
+    transcript_job_id: 5b86a249-aba1-4156-8a97-63e49a2334e3_d2a8ec1aa6684cee81ff99e6a06502f6,mimo:6a3b7fbb2e335a35a808904e:1:2026-09-09T18:40:27.491Z,5f045814-9039-4e49-a341-016b9b7ffbeb_a70d827a9b64465da0f95fa8b25eb4e7
+    transcript_completed_at: 2026-09-09T18:42:57.271Z
   - id: 6a337d604233e62bc54bd46b
     guid: 6a337d604233e62bc54bd46b
     title: 从开源到 Agent，从组织到个体：AIEC 大会现场侧记
@@ -88,8 +100,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a337d604233e62bc54bd46b?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a337d604233e62bc54bd46b/media.xyzcdn.net/6507bc165c88d2412626b401/lmStyh-wPcZJQpj98fF4S0Dz1WB0.m4a
     image: https://image.xyzcdn.net/FjeE-8eyl40xkaxavHZEnQ3OWKpc.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:49:36.660Z
+    transcript_job_id: d72d7184-4229-4c00-a3fc-f3a8c43649aa_72b338aba58a476ebd5d5de7f0739412,79fe2144-bbeb-4657-9a02-96d07d682a7a_7899242a21dd466e8cb36cc26b9e9573,c552b396-6405-4634-a02b-4f7eb6b51d59_0daba6befae74b2d912255e5073d2498,987085f5-70fa-4fbd-ab40-ab8e27d01c4f_92eea18c49574844bd03223091beab20,89bc60ae-c9ce-4208-8c8d-65d432ab40ce_7af6bb4630f242a7a87829487a8e58f1
+    transcript_completed_at: 2026-09-09T18:54:13.115Z
   - id: 6a1ed39db30e1571ae9f85ee
     guid: 6a1ed39db30e1571ae9f85ee
     title: “悲观者正确，乐观者成功”，和好友亚婷聊聊AI行业的种种
@@ -100,8 +116,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a1ed39db30e1571ae9f85ee?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a1ed39db30e1571ae9f85ee/media.xyzcdn.net/6507bc165c88d2412626b401/lhlLbk88QXGKF7YAt0wHK4I7oeu9.m4a
     image: https://image.xyzcdn.net/ngxpFf12xTik9W8v3aiYVwn8iBC9.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:57:00.593Z
+    transcript_job_id: 3e3ea2e7-4499-4108-9c19-2ac690e14d7d_6d4846bfc3ec4cc8b1dacc5b499a423f,15d41660-094f-4457-8865-cb4217a78dab_9a8e9ae6857a4dc3b12c5163ec63b51a,b00d61e7-ce37-4f64-977a-ea0e7c158811_e102542b6c8d4f94a7ed01defb67b379,7f30a96c-fcf8-42f0-bf0f-5db34f978689_c369bb8643dc454e9aa9c83bb1bcb3c8
+    transcript_completed_at: 2026-09-09T19:00:30.850Z
   - id: 6a1aa43cac7bdb080c332624
     guid: 6a1aa43cac7bdb080c332624
     title: 一切都是Vibe的时代，小红书为什么要去买世界杯？---串台翻转体育

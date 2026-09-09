@@ -1,11 +1,11 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-09T03:04:15.637Z
+refreshed_at: 2026-09-09T18:12:20.675Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 17
-done: 0
-pending: 1
-needs_transcript: 16
+done: 4
+pending: 3
+needs_transcript: 10
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a5af5d1a3fec224d59f6407?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a5af5d1a3fec224d59f6407/media.xyzcdn.net/67f40c212ac4d88190caa56a/lh2ImU35ijzORLDnQ_hXHy_UDIqJ.m4a
     image: https://image.xyzcdn.net/FvFu_Wp5eHqQWf5qt02TFYnE5eRv.jpeg
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 947483e6-ef67-41f7-888d-0ffefbcd7b31_4232a8d2f93d4d9d812cc0f453b0dee1,4961f69b-2a4c-4f92-beab-72bacaf3439b_9f658ce6b48c46d2b789be87ca4a43c4,ea94a879-b548-4f1f-a0f1-9a44916d0ed7_4f4df4664de44f54bc0baa4f24d7c86a,1c222404-c6bd-4049-8ee0-64c26c3b8ae1_8af4cfe22bb447f6a8df8ad1b279eb09,024308b1-1024-448c-8644-83da87dc3aeb_732b1a3a0d25480e8ca9f56d2098ffd5
@@ -36,8 +36,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a53babf1e32575f5eb55305?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a53babf1e32575f5eb55305/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsmjzGscuwhs8h_tvizBdrphQDPD.m4a
     image: https://image.xyzcdn.net/FjUGd52riJpxpY8FLwmLmtj2FCvp.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:12:21.985Z
+    transcript_job_id: c092d3f0-4288-4735-9b21-94f553934a2a_286c3d38623d4ea3a6117dbe1025e83b,b7bbbc5b-3f6a-4ff8-9218-cfd7fce3c95c_64639bf810404b0cafe4f3294fc2f5b0,c8f6dc76-2a84-4c23-9198-34a950da77ad_21ff9c5c73ac42a18ce0bfe2186345fd,47288caa-52e8-4649-82a9-49b0f2367f35_cfab1933bc704d7892fda2899209f04d,86c61165-ce50-42d0-912e-f1819fca1506_9911f3eab6a94833ad2cd1eb6da76f9f,29b2ff7d-1798-490a-9007-c7276050e986_ea2afb5c484b473694985605e6061ad6,2a70c6b7-e874-44ef-bc73-bd9f94c90e85_508dda8ea8bf4c1b9606ae28173db371
+    transcript_completed_at: 2026-09-09T18:19:19.906Z
   - id: 6a40c7c19d2f5743683f0220
     guid: 6a40c7c19d2f5743683f0220
     title: 40. AI应用能融下一轮吗？收购、擦边、中转站、大厂围猎 - 对话｜马克汤
@@ -48,8 +52,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a40c7c19d2f5743683f0220?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a40c7c19d2f5743683f0220/media.xyzcdn.net/67f40c212ac4d88190caa56a/lmehyuShoRV6Q_A5AV-0RV0GX6-j.m4a
     image: https://image.xyzcdn.net/FpY29s2cyAdOzsdPCuXdODB8qHes.jpeg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:23:05.118Z
+    transcript_job_id: 069dd053-652b-42d9-9784-8f9871ea61cd_18e69f8770ff4b268b5189d876a442ea,a751c8cf-f429-4386-863d-6438a91c59cc_d7904563021d459f9abed053e78ca1b9,c4ff507f-40ab-49c6-bc51-679d1b4bed0e_8ae2faee31fe4cec9e68eb537c0ea805,737f55c2-69df-4745-b2d3-0ecd73ca1249_37d31ce1ab4a4ff1a33a00af3cb8c6bc,f9bca47c-6d4b-4b0b-a904-08403418ede6_0866cd3899c64a0d8a47b39f25e9d06b,3501c7fe-5909-48a2-a69f-54dd6199a6c3_d1ba39cff46849ffa959329dc1d9e90d
+    transcript_completed_at: 2026-09-09T18:30:26.334Z
   - id: 6a3aafae2e335a35a80844a9
     guid: 6a3aafae2e335a35a80844a9
     title: 39. 微策略卖币？说好的永动机不转了？- 串台｜Web3 101
@@ -60,8 +68,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a3aafae2e335a35a80844a9?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a3aafae2e335a35a80844a9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljgYWDXbUom8nX5T3uNo3jcIXRTx.m4a
     image: https://image.xyzcdn.net/Fr42fr8IJ-XFFEe93acrbK_DB4xt.png
-    status: needs_transcript
+    status: audit_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:34:17.785Z
+    transcript_job_id: cdd49a3f-b1f7-43a8-98d4-389cb48def8f_e3725861195841b0943a92a1d29fed6c,bd85be60-f6a1-44ba-b215-9d777f8e75dc_d87517fa68b74e9b9f235c7524272397,4e7cd945-35aa-45f2-8166-2284a6e51b74_1d5de0b5b1274e92931cd3ed1533fa55,7e6cc533-aded-456e-8470-f7b2abb16a9c_4b91587b647a4914964f9e43e2118bc1,c7859d6b-726f-4012-bd59-0227b7040259_ef1c6df4390a45c9b505b7ef89fa80ac,51530b56-5bb1-4276-b254-4c5ccee8ea18_b59c8094823b4a1f814032b2de0dc858
+    transcript_completed_at: 2026-09-09T18:40:27.081Z
   - id: 6a38262f75ba9e0c5336f0cc
     guid: 6a38262f75ba9e0c5336f0cc
     title: 38. “万亿富翁”马斯克是上帝还是邪教？- 串台|远行者与碎冰匠
@@ -72,8 +84,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a38262f75ba9e0c5336f0cc?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a38262f75ba9e0c5336f0cc/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrD9KTDxEwy01sxRg8-rz48z4v2_.m4a
     image: https://image.xyzcdn.net/Fgwpar9NRO30hDmwRvqAg-1MmFmE.jpeg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:42:57.625Z
+    transcript_job_id: 97b0f36d-7354-42a1-a464-4916d07fadb8_71c683dac8b04070b483999863139bf9,41fc5241-ba54-443f-a8a2-feb45a21160a_b0d09179ff41406897e54c82125f722b,c7905702-d650-43cd-a985-33515c4cc73e_f3ad9123c4d643faab2c59e9a765b7a0,e0a565ca-610b-4b88-a24d-ac79ed52ab4d_d7aa56a354d34ae0b70a00c4ddf5d96e,77b6661e-5776-4f39-8147-97a3461ad782_e00b2c61f60b4da997c93adeb46efd5a
+    transcript_completed_at: 2026-09-09T18:49:36.275Z
   - id: 6a298bcd3eedf1f4b268a928
     guid: 6a298bcd3eedf1f4b268a928
     title: 37. SpaceX IPO - 全球资本市场一起刷个大火箭！- 串台｜听懂涨声
@@ -84,8 +100,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a298bcd3eedf1f4b268a928?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a298bcd3eedf1f4b268a928/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsV9enOxHYkxxDnnQgsUNf3RmdyO.m4a
     image: https://image.xyzcdn.net/Fhn1r5Yqi71_CpA7ysDtK8jhfHFm.jpeg
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T18:54:13.531Z
+    transcript_job_id: a40d17de-cbb7-48fd-9f9d-34767abf9a13_528f7c26f0b44628a3df1c94ebacff73,e3126317-dc44-4973-8c5e-0dbd10e86115_1152aaeb81f448118747c9e7edabf268,655b8bac-8f0f-4ba7-ace1-c1b7c9cecb3b_bbbd4b69f5c44bb5a5ead7fb50f1ea36,mimo:6a298bcd3eedf1f4b268a928:3:2026-09-09T18:54:13.531Z
+    transcript_completed_at: 2026-09-09T18:57:00.181Z
   - id: 6a2631d3b30e1571aea26396
     guid: 6a2631d3b30e1571aea26396
     title: 36. AI时代的教育 - “乖”不是一个好词？- 方士心｜复旦大学「高考特辑」
@@ -96,8 +116,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a2631d3b30e1571aea26396?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a2631d3b30e1571aea26396/media.xyzcdn.net/67f40c212ac4d88190caa56a/lt7T4AkV3OW9IiAKtT-HRGQED-57.m4a
     image: https://image.xyzcdn.net/FkcHaVpw8mVV1bIhfnzBOzvK5LJO.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-09T19:00:31.257Z
+    transcript_job_id: 433224e6-fa2e-450e-b1bb-b9e77a1b2d0d_09de7b8c87a34b27ba99a78cad085b98,bf9636d1-ef97-4c56-82b3-5c54e17d2de9_16e47522798344cd8faf3b7e9199c389,8fb9914c-c71a-41c5-bdb3-74ac2a9f19d8_5440be7a464549e197ce3ff3d71f8d7f,9bff8bfb-fe5f-4ab6-a7a5-df2fb98b7197_48db3799be224428b8b205c556b36320,d6529721-aba5-4753-8401-9e3126f8be3f_c900a4a12631412e9932364c6f6adb9e,31acae3e-337f-468a-8711-e8ec4c8529d7_5fb6831609874fd89bdd18eb418951ac
+    transcript_completed_at: 2026-09-09T19:05:40.291Z
   - id: 6a1f06627444b57222325a51
     guid: 6a1f06627444b57222325a51
     title: 35. 他又带千亿投资人来中国看MiniMax，睡亚朵，吃老乡鸡！- Robert | 百观科技

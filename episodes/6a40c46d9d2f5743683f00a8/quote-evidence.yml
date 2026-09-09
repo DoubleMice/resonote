@@ -1,0 +1,23 @@
+episode_id: 6a40c46d9d2f5743683f00a8
+quotes:
+  - artifact: slides.md
+    artifact_excerpt: 'the world is not made of words'
+    transcript_excerpt: 'the world is not made of words'
+  - artifact: slides.md
+    artifact_excerpt: '世界模型不单纯是一个视频生成模型，不是生成一段看起来很真实的视频就结束了。'
+    transcript_excerpt: '世界模型不单纯是一个视频生成模型，不是生成一段看起来很真实的视频就结束了。'
+  - artifact: slides.md
+    artifact_excerpt: '截止到这个时间点，我觉得还没有出现涌现。'
+    transcript_excerpt: '截止到这个时间点，我觉得还没有出现涌现。'
+  - artifact: slides.md
+    artifact_excerpt: '它更像一个高摩擦版本的scaling law。'
+    transcript_excerpt: '它更像一个高摩擦版本的scaling law。'
+  - artifact: slides.md
+    artifact_excerpt: '每一个厂商都有自己的主张。'
+    transcript_excerpt: '每一个厂商都有自己的主张。'
+  - artifact: slides.md
+    artifact_excerpt: '物理世界不允许你差不多，对吧？'
+    transcript_excerpt: '物理世界不允许你差不多，对吧？'
+  - artifact: slides.md
+    artifact_excerpt: 'ChatGPT时刻没有来。'
+    transcript_excerpt: 'ChatGPT时刻没有来。'

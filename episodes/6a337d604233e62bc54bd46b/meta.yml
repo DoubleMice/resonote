@@ -1,0 +1,31 @@
+title: 从开源到 Agent，从组织到个体：AIEC 大会现场侧记
+guest: 庄明浩
+guest_role: 《屠龙之术》主播
+tags:
+  - ai-products
+  - startup
+  - productivity
+  - panel
+  - strategic
+summary: |
+  AIEC 2026 现场对谈围绕开源、Agent、组织和个体处境展开。庄明浩从制造企业的 AI 转型、应用层的工作流设计、模型竞争与开源部署谈起，也讨论了技术加速如何改变人的判断、内容生产和硬件供给。
+  节目没有预设行业的统一答案，而是呈现不同主体在数据、流程、成本、部署自主性和分工边界上的持续试探。
+core_ideas:
+  - 企业接入 AI 的前提是可用的数据、流程、权限和上下文；数字化转型中未完成的基础工作需要补上。
+  - Agent 进入企业后，需要权限、数据围栏、审查与成本管理等配套规则，不能只看模型能力。
+  - 应用产品应把通用模型能力收束为具体工作流，匹配非技术用户的任务、工具习惯与信任需求。
+  - 开源模型对制造等关键场景的价值包括可自主部署、降低服务中断风险，以及保留企业数据边界。
+  - 面对自动化带来的焦虑，节目强调人应保留情感反应、好恶判断、品味和现场体验。
+  - 软件供给加快后，电力、制造和供应链的物理限制使硬件重新成为 AI 生态的重要环节。
+id: 6a337d604233e62bc54bd46b
+source: tulong-zhishu
+source_title: 从开源到 Agent，从组织到个体：AIEC 大会现场侧记
+published: 2026-06
+published_sort: "20260618"
+duration: 1h9m
+url: https://www.xiaoyuzhoufm.com/episode/6a337d604233e62bc54bd46b?utm_source=rss
+status: generated
+article_path: episodes/6a337d604233e62bc54bd46b/article.html
+base: /episodes/6a337d604233e62bc54bd46b/
+thumbnail: https://image.xyzcdn.net/FjeE-8eyl40xkaxavHZEnQ3OWKpc.png
+generated_at: 2026-09-09T20:29:47.459Z

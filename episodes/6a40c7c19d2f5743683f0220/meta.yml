@@ -1,0 +1,32 @@
+title: 40. AI应用能融下一轮吗？收购、擦边、中转站、大厂围猎 - 对话｜马克汤
+guest: 马克汤
+guest_role: AI 应用创业者、发财搭子主播
+tags:
+  - ai-products
+  - startup
+  - product-management
+  - interview
+  - founder
+  - strategic
+summary: |
+  马克汤从 AI 应用创业者的视角，讨论模型能力提升后，垂类产品还剩下哪些位置。他把数据私有性、底层数据清洗、推理效率、用户迁移成本和毛利放在同一张判断表里，也把目光投向飞书、视频创作工具以及被 AI 改造的传统企业。
+  这场对话不把高 ARR 当成终点，而是追问应用是否能在模型成本和大厂进入的压力下，持续向用户交付愿意付费的价值。
+core_ideas:
+  - 垂类应用的壁垒更多来自私有数据、数据管线和推理效率，而不是单独训练一个小模型。
+  - 企业端的合规、审计、本地部署和驻场交付，仍给应用公司留下了模型平台暂未完全覆盖的工作。
+  - 应用公司要把模型 API 成本计入毛利；嘉宾认为 50% 至 60% 以上已是很好的水平。
+  - 飞书的文档、权限和接口体系，使智能体能在团队工作资料中读取、写入和协作。
+  - AI 改造不必从新 App 开始，持牌、有客户关系和固定 SOP 的传统企业也可能成为入口。
+  - 用户为能改善体验和效率的应用付费，这一需求决定模型、算力和硬件投入能否完成商业循环。
+id: 6a40c7c19d2f5743683f0220
+source: taixian-zhihuo
+source_title: 40. AI应用能融下一轮吗？收购、擦边、中转站、大厂围猎 - 对话｜马克汤
+published: 2026-06
+published_sort: "20260628"
+duration: 1h30m
+url: https://www.xiaoyuzhoufm.com/episode/6a40c7c19d2f5743683f0220?utm_source=rss
+status: generated
+article_path: episodes/6a40c7c19d2f5743683f0220/article.html
+base: /episodes/6a40c7c19d2f5743683f0220/
+thumbnail: https://image.xyzcdn.net/FpY29s2cyAdOzsdPCuXdODB8qHes.jpeg
+generated_at: 2026-09-09T19:53:18.989Z

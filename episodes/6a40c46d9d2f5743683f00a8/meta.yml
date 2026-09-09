@@ -1,0 +1,31 @@
+title: World Model-世界模型也有Scaling Law吗？
+guest: 明浩
+guest_role: 《同舟之树》主播
+tags:
+  - ai-research
+  - robotics
+  - startup
+  - interview
+  - quick-take
+  - technical
+  - strategic
+summary: |
+  明浩从世界模型的融资热度、视频生成的局限和自动驾驶公司的数据闭环切入，讨论物理世界是否也存在类似大语言模型的 Scaling Law。节目认为，真实数据、仿真、安全与工程部署带来的摩擦，使这条路径不会简单复刻语言模型的发展。
+core_ideas:
+  - 世界模型要预测动作之后的物理状态，不能只生成视觉上可信的画面。
+  - 真实世界数据采集昂贵且包含长尾风险，扩展速度受设备、场景、安全和合规约束。
+  - JEPA、Genie 3 与 World Labs 代表了潜在空间、多模态环境和 3D 空间表征三类不同路线。
+  - 节目把 Momenta 视为自动驾驶数据飞轮的商业样本：量产部署带来数据，数据支持模型迭代。
+  - 世界模型尚未迎来 ChatGPT 时刻，自动驾驶、互动内容与机器人会按各自条件逐步落地。
+id: 6a40c46d9d2f5743683f00a8
+source: tulong-zhishu
+source_title: World Model-世界模型也有Scaling Law吗？
+published: 2026-06
+published_sort: "20260629"
+duration: 54m
+url: https://www.xiaoyuzhoufm.com/episode/6a40c46d9d2f5743683f00a8?utm_source=rss
+status: generated
+article_path: episodes/6a40c46d9d2f5743683f00a8/article.html
+base: /episodes/6a40c46d9d2f5743683f00a8/
+thumbnail: https://image.xyzcdn.net/Fh6WLRCGd6TkwZ7bhgIMrmNYXaZo.png
+generated_at: 2026-09-09T19:55:18.200Z
