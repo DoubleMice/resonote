@@ -100,9 +100,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run unit tests
-        run: pnpm test
-
       - name: Select content CLI
         id: content-cli
         run: pnpm exec tsx -e 'import { contentProvider } from "./scripts/lib/content-runner.ts"; import { appendFileSync } from "node:fs"; appendFileSync(process.env.GITHUB_OUTPUT!, `provider=${contentProvider()}\n`)'
@@ -129,6 +126,9 @@ jobs:
 
       - name: Install playwright-chromium browser binaries
         run: pnpm exec playwright install --with-deps --only-shell chromium
+
+      - name: Run unit tests
+        run: pnpm test
 
       - name: Install ffmpeg
         run: |
@@ -238,18 +238,17 @@ jobs:
       - name: Validate generated artifacts
         run: pnpm run validate:artifacts
 
-      - name: Compute episode build cache key
+      - name: Compute shared player cache key
         id: episode-cache
         run: pnpm run build -- --cache-key
 
-      - name: Restore episode build cache
+      - name: Restore shared player cache
         uses: actions/cache@v5
         with:
-          path: .cache/episode-builds
-          key: resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-${{ steps.episode-cache.outputs.key }}
+          path: .cache/shared-player
+          key: resonote-shared-player-v1-${{ runner.os }}-${{ runner.arch }}-node22-${{ steps.episode-cache.outputs.key }}
           restore-keys: |
-            resonote-episode-builds-v2-${{ runner.os }}-${{ runner.arch }}-node22-
-            resonote-episode-builds-v1-${{ runner.os }}-
+            resonote-shared-player-v1-${{ runner.os }}-${{ runner.arch }}-node22-
 
       - name: Build all
         run: pnpm run build -- --allow-episode-failures

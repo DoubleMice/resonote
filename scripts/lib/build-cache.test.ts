@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import test from 'node:test'
 import {
-  cachedEpisodeDist, episodeBuildFingerprint, storeEpisodeDist,
+  cachedPlayerDist, episodeBuildFingerprint,
 } from './build-cache.ts'
 
 function fixture() {
@@ -57,17 +57,21 @@ test('episode fingerprints include the shared style and deployed base path', () 
   }
 })
 
-test('cached builds are reused only for an exact fingerprint', () => {
+test('shared cache requires an exact fingerprint and complete runtime assets', () => {
   const { root } = fixture()
   try {
-    const sourceDist = join(root, 'source-dist')
-    const cache = join(root, '.cache', 'episode-builds')
-    mkdirSync(sourceDist, { recursive: true })
-    writeFileSync(join(sourceDist, 'index.html'), '<!doctype html>\n')
-    const stored = storeEpisodeDist(cache, 'episode-1', 'fingerprint-a', sourceDist)
-    assert.equal(cachedEpisodeDist(cache, 'episode-1', 'fingerprint-a'), stored)
-    assert.equal(cachedEpisodeDist(cache, 'episode-1', 'fingerprint-b'), null)
-  } finally {
-    rmSync(root, { recursive: true, force: true })
-  }
+    const cache = join(root, '.cache', 'shared-player')
+    const dist = join(cache, 'dist')
+    mkdirSync(join(dist, 'player/assets'), { recursive: true })
+    mkdirSync(join(dist, 'episodes/one'), { recursive: true })
+    writeFileSync(join(cache, 'manifest.json'), JSON.stringify({ fingerprint: 'a' }))
+    writeFileSync(join(dist, 'player/manifest.json'), JSON.stringify({ files: ['index.html', 'assets/player.js'] }))
+    writeFileSync(join(dist, 'player/assets/player.js'), 'export {}')
+    writeFileSync(join(dist, 'episodes/one/index.html'), '<html></html>')
+    assert.equal(cachedPlayerDist(cache, 'a', ['one']), dist)
+    assert.equal(cachedPlayerDist(cache, 'b', ['one']), null)
+    assert.equal(cachedPlayerDist(cache, 'a', ['one', 'two']), null)
+    rmSync(join(dist, 'player/assets/player.js'))
+    assert.equal(cachedPlayerDist(cache, 'a', ['one']), null)
+  } finally { rmSync(root, { recursive: true, force: true }) }
 })

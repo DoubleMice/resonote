@@ -1,0 +1,456 @@
+{
+  "architecture": "shared-player",
+  "id": "6242033d-a14a-44e3-a622-cbfc7d3c3817",
+  "slideCount": 38,
+  "runs": 10,
+  "browser": "149.0.7827.55",
+  "platform": "darwin/arm64",
+  "sourceSha256": "d91842193406f3f88584a48182ae4da6a8d8dfb2365f9b6af431d679b55ed325",
+  "conditions": {
+    "latencyMs": 40,
+    "bandwidthMbps": 10,
+    "cpuSlowdown": 4,
+    "compression": "gzip",
+    "cache": "fresh context per trial; HAR routing disables HTTP cache; loaded module/DOM state retained for warm turns",
+    "externalDependencies": "HTTPS dependencies replayed from one HAR, excluding their network latency from comparison",
+    "firstSlide": "slide DOM + fonts + two animation frames; transition completion excluded"
+  },
+  "artifacts": {
+    "baseline": {
+      "files": 21034,
+      "jsFiles": 17824,
+      "bytes": 254214400,
+      "gzipJsBytes": 71409663,
+      "contentChunks": 38
+    },
+    "shared": {
+      "files": 2729,
+      "jsFiles": 356,
+      "bytes": 64470943,
+      "gzipJsBytes": 7121090,
+      "contentChunks": 1
+    }
+  },
+  "summary": {
+    "baseline": {
+      "firstSlideMs": {
+        "median": 577.3500000014901,
+        "min": 571.3000000044703,
+        "max": 587.3000000044703
+      },
+      "fcpMs": {
+        "median": 256,
+        "min": 192,
+        "max": 264
+      },
+      "jsRequests": {
+        "median": 22,
+        "min": 22,
+        "max": 22
+      },
+      "encodedBytes": {
+        "median": 225711,
+        "min": 225711,
+        "max": 225711
+      },
+      "nextMs": {
+        "median": 28.150000002235174,
+        "min": 23.100000001490116,
+        "max": 30
+      },
+      "jumpMs": {
+        "median": 83.6000000052154,
+        "min": 81.89999999850988,
+        "max": 92.89999999850988
+      },
+      "warmBackMs": {
+        "median": 20.75000000372529,
+        "min": 16.30000000447035,
+        "max": 26.100000001490116
+      },
+      "warmForwardMs": {
+        "median": 19.949999999254942,
+        "min": 16.600000001490116,
+        "max": 22.899999998509884
+      }
+    },
+    "shared": {
+      "firstSlideMs": {
+        "median": 501.5999999977648,
+        "min": 495.3999999985099,
+        "max": 512.0999999940395
+      },
+      "fcpMs": {
+        "median": 296,
+        "min": 288,
+        "max": 308
+      },
+      "jsRequests": {
+        "median": 8,
+        "min": 8,
+        "max": 8
+      },
+      "encodedBytes": {
+        "median": 282501,
+        "min": 282501,
+        "max": 282501
+      },
+      "nextMs": {
+        "median": 22.800000000745058,
+        "min": 22.5,
+        "max": 26.299999997019768
+      },
+      "jumpMs": {
+        "median": 26.600000001490116,
+        "min": 24.899999998509884,
+        "max": 33.29999999701977
+      },
+      "warmBackMs": {
+        "median": 23.099999997764826,
+        "min": 16,
+        "max": 26
+      },
+      "warmForwardMs": {
+        "median": 20.399999998509884,
+        "min": 16.400000005960464,
+        "max": 22.30000000447035
+      }
+    }
+  },
+  "validation": {
+    "slidesChecked": 38,
+    "screenshotDifferences": []
+  },
+  "samples": {
+    "baseline": [
+      {
+        "firstSlideMs": 576.1999999955297,
+        "fcpMs": 256,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 28.399999998509884,
+        "jumpMs": 83.30000000447035,
+        "warmBackMs": 26.100000001490116,
+        "warmForwardMs": 20.69999999552965
+      },
+      {
+        "firstSlideMs": 571.3000000044703,
+        "fcpMs": 248,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 26.799999997019768,
+        "jumpMs": 91.29999999701977,
+        "warmBackMs": 18.80000000447035,
+        "warmForwardMs": 18.100000001490116
+      },
+      {
+        "firstSlideMs": 587.3000000044703,
+        "fcpMs": 260,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 26.400000005960464,
+        "jumpMs": 83.90000000596046,
+        "warmBackMs": 22.799999997019768,
+        "warmForwardMs": 22.600000001490116
+      },
+      {
+        "firstSlideMs": 577.1000000014901,
+        "fcpMs": 260,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 23.19999999552965,
+        "jumpMs": 81.89999999850988,
+        "warmBackMs": 16.30000000447035,
+        "warmForwardMs": 18.200000002980232
+      },
+      {
+        "firstSlideMs": 585.1000000014901,
+        "fcpMs": 260,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 28.30000000447035,
+        "jumpMs": 82.69999999552965,
+        "warmBackMs": 21.899999998509884,
+        "warmForwardMs": 22.899999998509884
+      },
+      {
+        "firstSlideMs": 580,
+        "fcpMs": 252,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 29.200000002980232,
+        "jumpMs": 82.19999999552965,
+        "warmBackMs": 21.700000002980232,
+        "warmForwardMs": 22.30000000447035
+      },
+      {
+        "firstSlideMs": 585.2999999970198,
+        "fcpMs": 264,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 23.100000001490116,
+        "jumpMs": 92.29999999701977,
+        "warmBackMs": 17.700000002980232,
+        "warmForwardMs": 19.200000002980232
+      },
+      {
+        "firstSlideMs": 577.6000000014901,
+        "fcpMs": 252,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 29.899999998509884,
+        "jumpMs": 92.89999999850988,
+        "warmBackMs": 22.69999999552965,
+        "warmForwardMs": 16.600000001490116
+      },
+      {
+        "firstSlideMs": 575.7000000029802,
+        "fcpMs": 256,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 30,
+        "jumpMs": 82.70000000298023,
+        "warmBackMs": 19.80000000447035,
+        "warmForwardMs": 21.799999997019768
+      },
+      {
+        "firstSlideMs": 576.8000000044703,
+        "fcpMs": 192,
+        "jsRequests": 22,
+        "encodedBytes": 225711,
+        "nextMs": 28,
+        "jumpMs": 85.90000000596046,
+        "warmBackMs": 17.30000000447035,
+        "warmForwardMs": 18.899999998509884
+      }
+    ],
+    "shared": [
+      {
+        "firstSlideMs": 501.3999999985099,
+        "fcpMs": 292,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 23.100000001490116,
+        "jumpMs": 25.700000002980232,
+        "warmBackMs": 22.69999999552965,
+        "warmForwardMs": 16.400000005960464
+      },
+      {
+        "firstSlideMs": 508.79999999701977,
+        "fcpMs": 296,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.700000002980232,
+        "jumpMs": 24.899999998509884,
+        "warmBackMs": 23.799999997019768,
+        "warmForwardMs": 22.30000000447035
+      },
+      {
+        "firstSlideMs": 500.1000000014901,
+        "fcpMs": 288,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 23,
+        "jumpMs": 25.799999997019768,
+        "warmBackMs": 19.30000000447035,
+        "warmForwardMs": 20
+      },
+      {
+        "firstSlideMs": 499.30000000447035,
+        "fcpMs": 296,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 23.5,
+        "jumpMs": 33.29999999701977,
+        "warmBackMs": 26,
+        "warmForwardMs": 21.899999998509884
+      },
+      {
+        "firstSlideMs": 510.29999999701977,
+        "fcpMs": 308,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.5,
+        "jumpMs": 26.600000001490116,
+        "warmBackMs": 16,
+        "warmForwardMs": 18.30000000447035
+      },
+      {
+        "firstSlideMs": 501.09999999403954,
+        "fcpMs": 288,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.899999998509884,
+        "jumpMs": 28.599999994039536,
+        "warmBackMs": 21.600000001490116,
+        "warmForwardMs": 20.799999997019768
+      },
+      {
+        "firstSlideMs": 512.0999999940395,
+        "fcpMs": 296,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 26.299999997019768,
+        "jumpMs": 27.5,
+        "warmBackMs": 23.69999999552965,
+        "warmForwardMs": 21.600000001490116
+      },
+      {
+        "firstSlideMs": 501.79999999701977,
+        "fcpMs": 296,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.599999994039536,
+        "jumpMs": 31.69999999552965,
+        "warmBackMs": 25.899999998509884,
+        "warmForwardMs": 16.600000001490116
+      },
+      {
+        "firstSlideMs": 495.3999999985099,
+        "fcpMs": 288,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.5,
+        "jumpMs": 26.100000001490116,
+        "warmBackMs": 21.700000002980232,
+        "warmForwardMs": 22.100000001490116
+      },
+      {
+        "firstSlideMs": 503.70000000298023,
+        "fcpMs": 300,
+        "jsRequests": 8,
+        "encodedBytes": 282501,
+        "nextMs": 22.69999999552965,
+        "jumpMs": 26.600000001490116,
+        "warmBackMs": 23.5,
+        "warmForwardMs": 16.600000001490116
+      }
+    ]
+  },
+  "siteStats": {
+    "baseline": {
+      "files": 21034,
+      "bytes": 254214400,
+      "types": {
+        ".xml": 1,
+        ".html": 859,
+        ".svg": 1,
+        ".excalidraw": 1721,
+        "": 276,
+        ".js": 17824,
+        ".css": 292,
+        ".ttf": 20,
+        ".woff2": 19,
+        ".woff": 20,
+        ".png": 1
+      }
+    },
+    "shared": {
+      "files": 2729,
+      "bytes": 64470943,
+      "types": {
+        ".xml": 1,
+        ".html": 583,
+        ".svg": 1,
+        ".excalidraw": 1721,
+        ".css": 6,
+        ".json": 1,
+        ".woff2": 19,
+        ".js": 356,
+        ".ttf": 20,
+        ".woff": 20,
+        ".png": 1
+      }
+    }
+  },
+  "cacheVerification": {
+    "conditions": "same browser context; local gzip server max-age=3600; CDP blocks third-party HTTPS without disabling HTTP cache",
+    "observations": [
+      [
+        {
+          "url": "/player/assets/index-gGicOyWy.js",
+          "bytes": 15984,
+          "encodedBytes": 15684
+        },
+        {
+          "url": "/player/assets/rolldown-runtime-BgaNhQyE.js",
+          "bytes": 771,
+          "encodedBytes": 471
+        },
+        {
+          "url": "/player/assets/slidev/player-state-BU_6hSqg.js",
+          "bytes": 601,
+          "encodedBytes": 301
+        },
+        {
+          "url": "/player/assets/modules/shiki-CsjdLrJC.js",
+          "bytes": 79377,
+          "encodedBytes": 79077
+        },
+        {
+          "url": "/player/assets/modules/unplugin-icons-zT0rXmXo.js",
+          "bytes": 1457,
+          "encodedBytes": 1157
+        },
+        {
+          "url": "/player/assets/player-runtime-Do60WX3p.js",
+          "bytes": 92532,
+          "encodedBytes": 92232
+        },
+        {
+          "url": "/player/assets/modules/vue-CPmhxuFu.js",
+          "bytes": 32858,
+          "encodedBytes": 32558
+        },
+        {
+          "url": "/player/assets/episodes/6242033d-a14a-44e3-a622-cbfc7d3c3817-BeD2cDVU.js",
+          "bytes": 27949,
+          "encodedBytes": 27649
+        }
+      ],
+      [
+        {
+          "url": "/player/assets/index-gGicOyWy.js",
+          "bytes": 0,
+          "encodedBytes": 15684
+        },
+        {
+          "url": "/player/assets/rolldown-runtime-BgaNhQyE.js",
+          "bytes": 0,
+          "encodedBytes": 471
+        },
+        {
+          "url": "/player/assets/modules/shiki-CsjdLrJC.js",
+          "bytes": 0,
+          "encodedBytes": 79077
+        },
+        {
+          "url": "/player/assets/slidev/player-state-BU_6hSqg.js",
+          "bytes": 0,
+          "encodedBytes": 301
+        },
+        {
+          "url": "/player/assets/modules/vue-CPmhxuFu.js",
+          "bytes": 0,
+          "encodedBytes": 32558
+        },
+        {
+          "url": "/player/assets/modules/unplugin-icons-zT0rXmXo.js",
+          "bytes": 0,
+          "encodedBytes": 1157
+        },
+        {
+          "url": "/player/assets/player-runtime-Do60WX3p.js",
+          "bytes": 0,
+          "encodedBytes": 92232
+        },
+        {
+          "url": "/player/assets/episodes/86b56730-d176-4fc4-8b5f-a5dbb8b5e404-Du6dj2Wf.js",
+          "bytes": 16321,
+          "encodedBytes": 16021
+        }
+      ]
+    ],
+    "reusedJs": 7
+  }
+}

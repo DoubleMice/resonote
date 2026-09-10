@@ -37,7 +37,7 @@ function resolveCmd(cmd: string): string {
 export function run(
   cmd: string,
   args: string[],
-  opts: { cwd?: string; reject?: boolean } = { reject: true },
+  opts: { cwd?: string; reject?: boolean; env?: NodeJS.ProcessEnv } = { reject: true },
 ): Promise<SpawnResult> {
   return new Promise((resolve, rej) => {
     const resolved = resolveCmd(cmd)
@@ -50,6 +50,7 @@ export function run(
       windowsHide: true,
       env: {
         ...process.env,
+        ...opts.env,
         // Force Python subprocesses to emit UTF-8 on Windows instead of cp936/cp1252
         PYTHONIOENCODING: 'utf-8',
         PYTHONUTF8: '1',

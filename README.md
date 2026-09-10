@@ -135,13 +135,18 @@ Codex 入口需要 Responses API；例如 `CONTENT_BASE_URL=https://api.doublemi
 
 ## 构建与页面性能
 
-Slidev 默认同时构建 2 集；每集按内容指纹复用 `.cache/episode-builds`。文章样式和相邻篇目导航在组装阶段更新，因此无需重新编译未改动的幻灯片。Actions 使用相同指纹计算缓存键，内容未变时复用已有缓存，并在构建摘要中记录命中数和耗时。
+生产构建只编译一次 Slidev 播放器，公共 JS、主题和依赖放在 `dist/player/`。每集的页面、标题与讲稿合并为一个内容 JS 包，打开时只加载该集。`/episodes/<id>/#/页码` 链接、首页导航和文章地址保持兼容；本地单集开发仍使用 `pnpm run dev:episode <id>`。
+
+构建结果缓存在 `.cache/shared-player`。任何幻灯片、资源、共享样式或构建依赖变化都会重新构建播放器与内容；文章及篇目导航仍在组装时更新。Actions 使用相同指纹复用缓存。新集编译失败且能定位到源文件时，`--allow-episode-failures` 会隔离该集后重新构建；旧集回归和全局错误继续阻止发布。
+
+组装阶段清理未引用的模板图和主题示例，只删除与原模板相同的发布副本，有引用或已修改的资源保留。共享播放器、单集内容和 HTML 必须随整个 `dist/` 一起发布。此适配器针对固定的 Slidev 52.18.0；升级 Slidev 或引入不同主题、单集自定义构建扩展时，需要同步验证适配层。
+
+原单集拆包实验仍可运行 `pnpm exec tsx scripts/experiment-slide-bundling.ts`。全站共享播放器对比使用 `--shared-player`，读取 `logs/shared-player/before/` 的旧站快照与当前 `dist/`，结果写入 `logs/shared-player/experiment/<id>/`。测量方法、文件数与兼容性检查见 [共享播放器构建报告](docs/shared-player-2026-09-10.md)；前一阶段结果见 [单集打包实验](docs/slide-bundling-2026-09-10.md)。
 
 RSS 默认同时请求 3 个来源，单次请求最多等待 30 秒。资源受限时可降低并发：
 
 ```bash
 RESONOTE_RSS_CONCURRENCY=1 pnpm run cache:refresh
-RESONOTE_BUILD_CONCURRENCY=1 pnpm run build
 ```
 
 并发值必须是正整数。首页搜索首次使用时从已有内容库读取索引；筛选保留列表节点，仅在切换排序时重排。搜索、筛选和阅读状态脚本由 Astro 打包为可缓存的模块。

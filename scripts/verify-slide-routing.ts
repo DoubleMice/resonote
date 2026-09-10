@@ -18,6 +18,13 @@ interface BuiltEpisode {
 }
 
 function inferSiteBase(episodeId: string, indexHtml: string): string {
+  const bootstrap = indexHtml.match(/<script id="resonote-episode" type="application\/json">(.*?)<\/script>/)?.[1]
+  if (bootstrap) {
+    const episode = JSON.parse(bootstrap)
+    assert.equal(episode.id, episodeId)
+    assert.ok(episode.base.endsWith(`/episodes/${episodeId}/`))
+    return episode.base.slice(0, -`episodes/${episodeId}/`.length)
+  }
   const marker = `/episodes/${episodeId}/assets/`
   const markerIndex = indexHtml.indexOf(marker)
   if (markerIndex === -1) throw new Error(`cannot infer site base from episode ${episodeId}`)
@@ -88,6 +95,24 @@ function representativeEpisodes(episodes: BuiltEpisode[]): BuiltEpisode[] {
 async function main() {
   const episodes = builtEpisodes()
   const siteBase = verifyBuiltVersions(episodes)
+  const manifest = JSON.parse(readFileSync(join(DIST_DIR, 'player/manifest.json'), 'utf8'))
+  assert.deepEqual(Object.keys(manifest.episodes).sort(), episodes.map(ep => ep.id).sort())
+  const entries = new Set<string>()
+  const contentFiles = new Set<string>()
+  for (const episode of episodes) {
+    const html = readFileSync(join(DIST_DIR, 'episodes', episode.id, 'index.html'), 'utf8')
+    const entry = html.match(/<script type="module"[^>]*src="([^"]+)"/)?.[1]
+    assert.ok(entry?.startsWith(`${siteBase}player/assets/`), `missing shared player entry: ${episode.id}`)
+    entries.add(entry!)
+    const content = manifest.episodes[episode.id]
+    const preloaded = [...html.matchAll(/href="([^"]*\/assets\/episodes\/[^" ]+\.js)"/g)].map(match => match[1])
+    assert.deepEqual(preloaded, [`${siteBase}player/${content.file}`], 'only the selected content bundle should preload')
+    assert.ok(content.slides > 0)
+    assert.ok(existsSync(join(DIST_DIR, 'player', content.file)))
+    contentFiles.add(content.file)
+  }
+  assert.equal(entries.size, 1, 'all episodes must use one player entry')
+  assert.equal(contentFiles.size, episodes.length, 'each episode must have one independent content bundle')
   const representatives = representativeEpisodes(episodes)
   const fallback = readFileSync(join(DIST_DIR, '404.html'))
   const { server, origin } = await startStaticServer(DIST_DIR, siteBase, fallback)
@@ -100,6 +125,11 @@ async function main() {
       const episodePath = `${siteBase}episodes/${episode.id}/`
       const episodeUrl = `${origin}${episodePath}`
       const runtimeErrors: string[] = []
+      const requestedContent = new Set<string>()
+      page.on('request', request => {
+        const path = new URL(request.url()).pathname
+        if (path.includes('/assets/episodes/') && path.endsWith('.js')) requestedContent.add(path)
+      })
       page.on('pageerror', error => {
         if (!error.message.includes('Wake Lock')) runtimeErrors.push(error.message)
       })
@@ -112,6 +142,7 @@ async function main() {
 
       await page.goto(episodeUrl, { waitUntil: 'domcontentloaded' })
       await page.waitForURL(url => url.hash === '#/1')
+      await page.locator('.slidev-page[data-slidev-no="1"] .slidev-layout').waitFor({ state: 'visible' })
 
       const nav = page.locator('[data-resonote-nav]')
       assert.equal(await nav.count(), 1, 'deck must contain exactly one canonical navigation')
@@ -146,6 +177,12 @@ async function main() {
       const body = await page.locator('body').innerText()
       assert.ok(body.trim().length > 0)
       assert.doesNotMatch(body, /Page .* not found/)
+      await page.locator('.slidev-page[data-slidev-no="2"] .slidev-layout').waitFor({ state: 'visible' })
+      await page.goto(`${episodeUrl}#/presenter/2`)
+      await page.locator('.slidev-page[data-slidev-no="2"] .slidev-layout').first().waitFor({ state: 'visible' })
+      await page.goto(`${episodeUrl}#/overview`)
+      await page.locator('.slidev-layout').first().waitFor({ state: 'visible' })
+      assert.deepEqual([...requestedContent], [`${siteBase}player/${manifest.episodes[episode.id].file}`], 'only the selected episode content may load, including overview/presenter')
       assert.deepEqual(runtimeErrors, [])
       console.log(`slide routing verified: ${episodePath}#/2 (${episode.published})`)
       await page.close()

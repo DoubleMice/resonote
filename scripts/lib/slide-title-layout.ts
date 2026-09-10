@@ -4,7 +4,7 @@ import { parseSync } from '@slidev/parser'
 // Only a leading page title is promoted. Column-specific or custom slot layouts stay intact.
 export function withFullWidthTitles(source: string): string {
   let result = source
-  for (const slide of parseSync(source).slides) {
+  for (const slide of parseSync(source, 'slides.md').slides) {
     if (slide.frontmatter.layout !== 'two-cols' || !slide.frontmatterRaw) continue
     if (!/^# [^\n]+\n/.test(slide.content)) continue
     if (!/^::right::\s*$/m.test(slide.content) || /^::(?:left|default|bottom)::/m.test(slide.content)) continue

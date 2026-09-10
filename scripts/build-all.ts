@@ -1,34 +1,34 @@
 import { resolve, join, basename, dirname, sep, posix } from 'node:path'
 import { createHash } from 'node:crypto'
+import { fileURLToPath } from 'node:url'
 import {
   existsSync, mkdirSync, cpSync, rmSync, readdirSync, statSync, readFileSync, writeFileSync, appendFileSync,
 } from 'node:fs'
 import { readYaml } from './lib/yaml-io.ts'
 import { run } from './lib/spawn.ts'
 import { log } from './lib/log.ts'
-import { mapConcurrent } from './lib/map-concurrent.ts'
 import { applyArticleTheme } from './lib/article-theme.ts'
 import type { ArticleNav } from './lib/article-theme.ts'
 import { injectDeckChrome } from './lib/deck-chrome.ts'
 import { applySiteFavicon } from './lib/site-favicon.ts'
 import type { DeckNav } from './lib/deck-chrome.ts'
 import {
-  cachedEpisodeDist, episodeBuildFingerprint, storeEpisodeDist,
+  episodeBuildFingerprint, cachedPlayerDist,
 } from './lib/build-cache.ts'
-import { stageEpisodePresentation } from './lib/episode-workspace.ts'
 import { isolateNewEpisodeBuildFailure } from './lib/episode-publication.ts'
+import { pruneUnusedBoilerplate, shareEpisodeAssets } from './lib/shared-assets.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
+const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url))
 const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = join(EPISODES_DIR, '_templates')
 const LANDING_DIR = resolve(ROOT, 'landing')
 const DIST_DIR = resolve(ROOT, 'dist')
-const BUILD_CACHE_DIR = resolve(ROOT, process.env.RESONOTE_BUILD_CACHE_DIR || '.cache/episode-builds')
+const BUILD_CACHE_DIR = resolve(ROOT, process.env.RESONOTE_BUILD_CACHE_DIR || '.cache/shared-player')
 const ARTICLE_THEME_PATH = join(TEMPLATES_DIR, 'article-theme.css')
 const ARTICLE_THEME = readFileSync(ARTICLE_THEME_PATH, 'utf-8')
-let episodeCacheHits = 0
-let episodeCacheMisses = 0
+let playerCacheHit = false
 
 function themedArticleHtml(
   articlePath: string,
@@ -176,53 +176,43 @@ function articleArtifacts(): { sourcePath: string; outputRelative: string; episo
   return artifacts.sort((a, b) => a.outputRelative.localeCompare(b.outputRelative))
 }
 
-async function buildEpisode(id: string, base: string): Promise<string | null> {
-  const dir = join(EPISODES_DIR, id)
-  const metaPath = join(dir, 'meta.yml')
-  if (!existsSync(metaPath)) {
-    log.warn(`  skip ${id} — no meta.yml`)
-    return null
-  }
-  const meta = readYaml<EpisodeMeta>(metaPath)
+function playerFingerprint(ids: string[], base: string): string {
+  const hash = createHash('sha256').update('resonote-shared-player-v1\0' + base)
+  for (const id of ids) hash.update(id + '\0' + episodeBuildFingerprint({
+    rootDir: ROOT, episodeDir: join(EPISODES_DIR, id), templatesDir: TEMPLATES_DIR, base,
+  }))
+  for (const name of ['scripts/build-player.ts', 'scripts/lib/shared-player.ts', 'scripts/lib/build-cache.ts'])
+    hash.update(readFileSync(resolve(SCRIPT_DIR, '..', name)))
+  return hash.digest('hex')
+}
 
-  const fingerprint = episodeBuildFingerprint({
-    rootDir: ROOT,
-    episodeDir: dir,
-    templatesDir: TEMPLATES_DIR,
-    base,
+async function buildPlayer(ids: string[], base: string): Promise<string> {
+  const fingerprint = playerFingerprint(ids, base)
+  const output = join(BUILD_CACHE_DIR, 'dist')
+  const manifestPath = join(BUILD_CACHE_DIR, 'manifest.json')
+  const cached = cachedPlayerDist(BUILD_CACHE_DIR, fingerprint, ids)
+  if (cached) {
+    playerCacheHit = true
+    return cached
+  }
+  mkdirSync(BUILD_CACHE_DIR, { recursive: true })
+  rmSync(manifestPath, { force: true })
+  rmSync(output, { recursive: true, force: true })
+  const request = join(BUILD_CACHE_DIR, 'request.json')
+  writeFileSync(request, JSON.stringify({ ids, output, base }))
+  rmSync(request + '.error.json', { force: true })
+  const result = await run('pnpm', ['exec', 'tsx', resolve(SCRIPT_DIR, 'build-player.ts'), '--request', request], {
+    cwd: ROOT, reject: false,
+    env: { ...process.env, NODE_OPTIONS: process.env.NODE_OPTIONS || '--max-old-space-size=2048' },
   })
-  const cachedDist = cachedEpisodeDist(BUILD_CACHE_DIR, id, fingerprint)
-  if (cachedDist) {
-    episodeCacheHits++
-    log.info(`building ${id} — cache hit`)
-    return cachedDist
+  if (result.code !== 0) {
+    const detail = existsSync(request + '.error.json') ? JSON.parse(readFileSync(request + '.error.json', 'utf8')) : {}
+    throw Object.assign(new Error(detail.message || result.stderr || 'Shared player build failed'), { episodeIds: detail.episodeIds })
   }
-  episodeCacheMisses++
-
-  log.info(`building ${id}`)
-
-  // Shared presentation chrome is staged for the command and removed again so
-  // every deck uses one canonical implementation without copying it per episode.
-  const cleanupPresentation = stageEpisodePresentation(dir, TEMPLATES_DIR)
-
-  try {
-    rmSync(join(dir, 'dist'), { recursive: true, force: true })
-    // slidev build needs the base path for correct asset URLs in final bundle
-    const { code, stderr } = await run('pnpm', [
-      'exec', 'slidev', 'build', join(dir, 'slides.md'),
-      '--base', base,
-      '--router-mode', 'hash',
-      '--out', join(dir, 'dist'),
-    ], { cwd: ROOT, reject: false })
-
-    if (code !== 0) {
-      throw new Error(`${id} build failed: ${stderr.slice(0, 800)}`)
-    }
-  } finally {
-    cleanupPresentation()
-  }
-  log.ok(`  ${id} built`)
-  return storeEpisodeDist(BUILD_CACHE_DIR, id, fingerprint, join(dir, 'dist'))
+  if (!existsSync(join(output, 'player/manifest.json')) || !ids.every(id => existsSync(join(output, 'episodes', id, 'index.html'))))
+    throw new Error('Incomplete shared player build')
+  writeFileSync(manifestPath, JSON.stringify({ fingerprint }))
+  return output
 }
 
 async function buildLanding(): Promise<string> {
@@ -245,19 +235,10 @@ async function main() {
   const SITE_BASE = process.env.RESONOTE_BASE || '/'
   const SITE_FAVICON = `${SITE_BASE.replace(/\/?$/, '/')}favicon.svg`
 
-  // Actions keys use the same inputs as individual cache entries. Metadata,
+  // Actions keys use the same inputs as the shared player cache. Metadata,
   // articles and temporary audit outputs must not cause another cache upload.
   if (process.argv.includes('--cache-key')) {
-    const hash = createHash('sha256')
-    for (const id of generatedEpisodeIds()) {
-      hash.update(id + '\0' + episodeBuildFingerprint({
-        rootDir: ROOT,
-        episodeDir: join(EPISODES_DIR, id),
-        templatesDir: TEMPLATES_DIR,
-        base: `${SITE_BASE}episodes/${id}/`,
-      }) + '\0')
-    }
-    const key = hash.digest('hex')
+    const key = playerFingerprint(generatedEpisodeIds(), SITE_BASE)
     if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `key=${key}\n`)
     else console.log(key)
     return
@@ -301,28 +282,27 @@ async function main() {
   if (existsSync(DIST_DIR)) rmSync(DIST_DIR, { recursive: true, force: true })
   mkdirSync(DIST_DIR, { recursive: true })
 
-  // Build all episodes
-  log.step('Building episodes')
-  const concurrency = Number(process.env.RESONOTE_BUILD_CONCURRENCY || 2)
-  log.info(`episode build concurrency: ${concurrency}`)
-  const episodeDists = (await mapConcurrent(episodes, concurrency, async ep => {
+  log.step('Building shared player and episode content')
+  let included = [...episodes]
+  let playerDist: string
+  while (true) {
     try {
-      const distPath = await buildEpisode(ep.id, ep.base)
-      if (!distPath) throw new Error(`missing episode build: ${ep.id}`)
-      return { id: ep.id, path: distPath, articlePath: ep.articlePath }
+      playerDist = await buildPlayer(included.map(ep => ep.id), SITE_BASE)
+      break
     } catch (error) {
-      if (!allowEpisodeFailures) throw error
-      isolateNewEpisodeBuildFailure(ROOT, ep.id, generatedThisRun, error)
-      buildFailures.push(ep.id)
-      log.warn(`  ${ep.id}: build failed; draft preserved and excluded from publication: ${error}`)
-      if (process.env.GITHUB_ACTIONS === 'true') console.log(`::warning::Episode ${ep.id} could not be built; other episodes will continue.`)
-      return null
+      const ids = (error as Error & { episodeIds?: string[] }).episodeIds
+      if (!allowEpisodeFailures || !ids?.length || ids.some(id => !generatedThisRun.has(id) || !included.some(ep => ep.id === id))) throw error
+      for (const id of ids) {
+        isolateNewEpisodeBuildFailure(ROOT, id, generatedThisRun, error)
+        buildFailures.push(id)
+        included = included.filter(ep => ep.id !== id)
+        log.warn(`  ${id}: build failed; draft preserved and excluded from publication`)
+        if (process.env.GITHUB_ACTIONS === 'true') console.log(`::warning::Episode ${id} could not be built; other episodes will continue.`)
+      }
     }
-  })).filter(result => result !== null)
-  if (episodeDists.length + buildFailures.length !== episodes.length) {
-    throw new Error(`only built ${episodeDists.length}/${episodes.length} generated episodes`)
   }
-  log.info(`episode build cache: ${episodeCacheHits} hit, ${episodeCacheMisses} rebuilt`)
+  const episodeDists = included.map(ep => ({ ...ep, path: join(playerDist, 'episodes', ep.id) }))
+  log.info(`shared player cache: ${playerCacheHit ? 'hit' : 'rebuilt'}`)
   const builtIds = new Set(episodeDists.map(episode => episode.id))
   const { deckNav, articleNav } = buildNavMaps(navEntries.filter(entry => builtIds.has(entry.id)))
   // Re-read articles after isolating failures so neither the landing page nor
@@ -345,8 +325,16 @@ async function main() {
     writeFileSync(fallbackPath, fallbackHtml, 'utf-8')
   }
 
+  cpSync(join(playerDist, 'player'), join(DIST_DIR, 'player'), { recursive: true })
   const epOut = join(DIST_DIR, 'episodes')
   mkdirSync(epOut, { recursive: true })
+  const templatePublic = join(TEMPLATES_DIR, 'public')
+  const boilerplate = new Map([
+    ...(existsSync(templatePublic) ? readdirSync(templatePublic) : []).filter(name => name.endsWith('.excalidraw')).map(name => join(templatePublic, name)),
+    ...['presentation.jpg', 'box.svg'].map(name => join(ROOT, 'node_modules/slidev-theme-academic/public', name)),
+  ].filter(path => existsSync(path)).map(path => [basename(path), readFileSync(path)]))
+  let prunedFiles = 0
+  let prunedBytes = 0
   for (const ep of episodeDists) {
     const dst = join(epOut, ep.id)
     log.raw(`copying ${ep.path} → ${dst}`)
@@ -384,7 +372,14 @@ async function main() {
         'utf-8',
       )
     }
+    const pruned = pruneUnusedBoilerplate(dst, boilerplate, readFileSync(join(EPISODES_DIR, ep.id, 'slides.md'), 'utf8'))
+    prunedFiles += pruned.removedFiles
+    prunedBytes += pruned.removedBytes
   }
+
+  const playerPruned = pruneUnusedBoilerplate(join(DIST_DIR, 'player'), boilerplate)
+  prunedFiles += playerPruned.removedFiles
+  prunedBytes += playerPruned.removedBytes
 
   for (const article of articles) {
     const articleDst = resolve(DIST_DIR, article.outputRelative)
@@ -407,6 +402,11 @@ async function main() {
     )
   }
 
+  const assets = shareEpisodeAssets(DIST_DIR, SITE_BASE)
+  const assetSummary = `Static files: ${assets.beforeFiles + prunedFiles} → ${assets.afterFiles}; `
+    + `${((assets.beforeBytes + prunedBytes) / 1024 ** 2).toFixed(1)} → ${(assets.afterBytes / 1024 ** 2).toFixed(1)} MiB `
+    + `(${assets.sharedFiles} shared assets; ${prunedFiles} unused boilerplate files removed)`
+  log.info(assetSummary)
   log.ok(`\nFinal dist assembled at ${DIST_DIR}`)
   log.info('serve locally with:  npx serve dist')
   if (process.env.GITHUB_STEP_SUMMARY) {
@@ -415,7 +415,8 @@ async function main() {
       `- Episodes: ${episodeDists.length}; articles: ${articles.length}`,
       `- New episode build failures (drafts preserved): ${buildFailures.length}`,
       ...buildFailures.sort().map(id => `  - ${id}`),
-      `- Cache: ${episodeCacheHits} hits, ${episodeCacheMisses} rebuilt (concurrency ${concurrency})`,
+      `- Shared player cache: ${playerCacheHit ? 'hit' : 'rebuilt'}`,
+      `- ${assetSummary}`,
       `- Build and assembly: ${((performance.now() - startedAt) / 1000).toFixed(1)} seconds`, '',
     ].join('\n'))
   }

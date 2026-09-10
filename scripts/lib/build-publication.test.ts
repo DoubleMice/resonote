@@ -8,7 +8,7 @@ import { artifactFixture } from './test-support/artifact-fixture.ts'
 
 const repository = process.cwd()
 
-function executeBuild(generatedEpisodes: string[], inspect: (root: string, code: number | null, output: string) => void, failLanding = false) {
+function executeBuild(generatedEpisodes: string[], inspect: (root: string, code: number | null, output: string) => void, failLanding = false, reportedFailures = ['bad-build']) {
   const { root } = artifactFixture(undefined, 'good')
   try {
     artifactFixture(root, 'bad-build')
@@ -19,15 +19,24 @@ function executeBuild(generatedEpisodes: string[], inspect: (root: string, code:
       { id: 'good', status: 'generated' }, { id: 'bad-build', status: 'generated' },
     ] }))
     writeFileSync(join(root, 'logs/pipeline-timing.json'), JSON.stringify({ generatedEpisodes }))
-    // Exercise the real build orchestration, caching and HTML assembly without
-    // invoking compilers. One compiler fails, the other emits a minimal bundle.
+    // Exercise the real build orchestration, retry isolation and HTML assembly without
+    // invoking the compiler. The shared compiler attributes a bad source episode.
     writeFileSync(join(root, 'bin/pnpm'), `#!${process.execPath}
 const fs = require('node:fs'), path = require('node:path');
-if (process.argv.includes('slidev')) {
-  const output = process.argv[process.argv.indexOf('--out') + 1];
-  if (output.includes('bad-build')) { console.error('fixture compilation failed'); process.exit(1); }
-  fs.mkdirSync(output, {recursive:true});
-  fs.writeFileSync(path.join(output,'index.html'), '<html><head></head><body>deck</body></html>');
+if (process.argv.some(arg => arg.endsWith('/build-player.ts'))) {
+  const requestPath = process.argv[process.argv.indexOf('--request') + 1];
+  const request = JSON.parse(fs.readFileSync(requestPath, 'utf8'));
+  if (request.ids.includes('bad-build')) {
+    fs.writeFileSync(requestPath+'.error.json', JSON.stringify({episodeIds:${JSON.stringify(reportedFailures)},message:'fixture compilation failed'}));
+    process.exit(1);
+  }
+  fs.mkdirSync(path.join(request.output,'player'), {recursive:true});
+  fs.writeFileSync(path.join(request.output,'player/manifest.json'), '{}');
+  for (const id of request.ids) {
+    const output = path.join(request.output,'episodes',id);
+    fs.mkdirSync(output, {recursive:true});
+    fs.writeFileSync(path.join(output,'index.html'), '<html><head></head><body>deck</body></html>');
+  }
 } else {
   if (${failLanding}) process.exit(1);
   fs.mkdirSync('dist',{recursive:true});
@@ -37,7 +46,7 @@ if (process.argv.includes('slidev')) {
     const result = spawnSync(process.execPath, [
       resolve(repository, 'node_modules/tsx/dist/cli.mjs'), resolve(repository, 'scripts/build-all.ts'), '--allow-episode-failures',
     ], { cwd: root, encoding: 'utf8', timeout: 15_000, env: {
-      ...process.env, PATH: `${join(root, 'bin')}${delimiter}${process.env.PATH}`, RESONOTE_BUILD_CACHE_DIR: join(root, 'cache'), RESONOTE_BUILD_CONCURRENCY: '2', GITHUB_STEP_SUMMARY: join(root, 'summary.md'),
+      ...process.env, PATH: `${join(root, 'bin')}${delimiter}${process.env.PATH}`, RESONOTE_BUILD_CACHE_DIR: join(root, 'cache'), GITHUB_STEP_SUMMARY: join(root, 'summary.md'),
     } })
     assert.equal(result.error, undefined)
     inspect(root, result.status, result.stdout + result.stderr)
@@ -72,4 +81,21 @@ test('publication mode still fails on a site build error', () => {
     assert.equal(code, 1, output)
     assert.match(output, /landing build failed/)
   }, true)
+})
+
+test('multiple new compiler failures are isolated together before retrying the shared build', () => {
+  executeBuild(['good', 'bad-build'], (root, code, output) => {
+    assert.equal(code, 0, output)
+    for (const id of ['good', 'bad-build']) {
+      assert.ok(existsSync(join(root, 'episodes/_failed', id, 'article.html')))
+      assert.equal(existsSync(join(root, 'dist/episodes', id)), false)
+    }
+  }, false, ['good', 'bad-build'])
+})
+
+test('mixed new and existing compiler failures block publication before archiving either episode', () => {
+  executeBuild(['bad-build'], (root, code, output) => {
+    assert.equal(code, 1, output)
+    for (const id of ['good', 'bad-build']) assert.ok(existsSync(join(root, 'episodes', id, 'article.html')))
+  }, false, ['good', 'bad-build'])
 })

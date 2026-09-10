@@ -1,8 +1,8 @@
 import { createHash } from 'node:crypto'
 import {
-  cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync,
+  existsSync, readFileSync, readdirSync, statSync,
 } from 'node:fs'
-import { dirname, join, relative, resolve, sep } from 'node:path'
+import { join, relative, resolve, sep } from 'node:path'
 
 // Bump when the Slidev build command or fingerprint rules change.
 const CACHE_VERSION = 1
@@ -18,11 +18,6 @@ interface FingerprintOptions {
   episodeDir: string
   templatesDir: string
   base: string
-}
-
-interface CacheManifest {
-  version: number
-  fingerprint: string
 }
 
 function collectFiles(directory: string, files: string[] = []): string[] {
@@ -69,42 +64,15 @@ export function episodeBuildFingerprint(options: FingerprintOptions): string {
   return hash.digest('hex')
 }
 
-function cacheEpisodeDirectory(cacheRoot: string, id: string): string {
-  const root = resolve(cacheRoot)
-  const directory = resolve(root, id)
-  if (dirname(directory) !== root) throw new Error(`episode cache path escapes root: ${id}`)
-  return directory
-}
-
-export function cachedEpisodeDist(cacheRoot: string, id: string, fingerprint: string): string | null {
-  const directory = cacheEpisodeDirectory(cacheRoot, id)
-  const manifestPath = join(directory, 'manifest.json')
-  const distPath = join(directory, 'dist')
-  if (!existsSync(manifestPath) || !existsSync(join(distPath, 'index.html'))) return null
+/** A cache hit must contain the shared runtime and every selected episode. */
+export function cachedPlayerDist(cacheRoot: string, fingerprint: string, ids: string[]): string | null {
+  const dist = join(cacheRoot, 'dist')
   try {
-    const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as CacheManifest
-    return manifest.version === CACHE_VERSION && manifest.fingerprint === fingerprint ? distPath : null
-  } catch {
-    return null
-  }
-}
-
-export function storeEpisodeDist(
-  cacheRoot: string,
-  id: string,
-  fingerprint: string,
-  sourceDist: string,
-): string {
-  if (!existsSync(join(sourceDist, 'index.html'))) {
-    throw new Error(`cannot cache incomplete episode build: ${id}`)
-  }
-  const directory = cacheEpisodeDirectory(cacheRoot, id)
-  rmSync(directory, { recursive: true, force: true })
-  mkdirSync(directory, { recursive: true })
-  cpSync(sourceDist, join(directory, 'dist'), { recursive: true })
-  writeFileSync(join(directory, 'manifest.json'), `${JSON.stringify({
-    version: CACHE_VERSION,
-    fingerprint,
-  }, null, 2)}\n`)
-  return join(directory, 'dist')
+    if (JSON.parse(readFileSync(join(cacheRoot, 'manifest.json'), 'utf8')).fingerprint !== fingerprint) return null
+    const manifest = JSON.parse(readFileSync(join(dist, 'player/manifest.json'), 'utf8'))
+    if (!Array.isArray(manifest.files) || !manifest.files.length) return null
+    if (!manifest.files.filter((file: string) => file !== 'index.html').every((file: string) => existsSync(join(dist, 'player', file)))) return null
+    if (!ids.every(id => existsSync(join(dist, 'episodes', id, 'index.html')))) return null
+    return dist
+  } catch { return null }
 }
