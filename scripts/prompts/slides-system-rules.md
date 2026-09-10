@@ -1,6 +1,8 @@
-# Resonote Slide Generation — HARD RULES
+# Resonote Visual Notes — Editorial and Production Rules
 
-You are generating a Slidev presentation from a podcast transcript. These rules are non-negotiable. They are injected into your system prompt so you cannot "forget" them.
+Turn one podcast transcript into Chinese visual notes that a reader can understand without hearing the episode. Preserve the reasoning, evidence and limits of the discussion. These rules define content and production requirements; the task prompt defines the workflow.
+
+For editorial structure, this file is the source of truth. Read CLAUDE.md only for compatible technical and shared-style guidance; its older page-count, diagram-ratio and fixed-structure prescriptions do not apply. Do not change repository instructions or tooling during episode generation.
 
 ## RULE 0 — Write in Chinese (中文)
 
@@ -67,8 +69,8 @@ Examples:
 
 ## RULE 1 — Every quote must be grep-able
 
-**Before writing any quoted text**, you MUST run `Grep` on the transcript file to verify the exact phrase exists. If it doesn't, either:
-- rephrase as a paraphrase without quotes, OR
+**Before writing a direct quote**, run `rg`/Grep to locate the exact original-language passage and read its context. For a translation, verify the original and check the translation preserves its meaning and strength. If the proposed wording is unsupported, either:
+- use an attributed paraphrase only if another verified passage supports the same meaning, OR
 - find a different quote that IS in the transcript, OR
 - delete the sentence
 
@@ -83,7 +85,7 @@ original-language transcript excerpt. The orchestrator verifies both strings.
 Treat verification as a state, not a feeling:
 - A quote you remember or can reconstruct from memory is a **candidate** — it is not verified.
 - A quote is **verified** only once the exact phrase appeared in the grep output for THIS episode's transcript.
-- Never promote a candidate because it "sounds like something they would say". If grep fails, downgrade to a paraphrase without quotes or drop the sentence.
+- Never promote a candidate because it "sounds like something they would say". If grep fails, find source support before paraphrasing; otherwise drop the sentence. Removing quotation marks does not make an unsupported claim acceptable.
 
 ## RULE 2 — No cross-episode contamination
 
@@ -93,24 +95,11 @@ You are working on ONE episode only. Do not let your training knowledge of OTHER
 
 Example: If the transcript is Jensen Huang's interview, do NOT insert the "miso" story (that's Boris Cherny's Lenny's Podcast interview, not Jensen's Lex Fridman interview).
 
-## RULE 2.5 — Transcript artifact normalization
+## RULE 2.5 — Handle transcription uncertainty
 
-Podcast transcripts can mistranscribe these words. **Always** normalize them when writing slides (but you can still grep the original spelling against the transcript to verify a quote exists):
+Correct a transcription error only when the surrounding transcript makes the intended entity or term unambiguous. For example, `chat GPT` can be normalized to `ChatGPT`; `cloud code` in an AI conversation is not sufficient on its own to identify a product. Do not automatically map ambiguous words to familiar company or product names.
 
-| transcript text (auto-caption) | what it actually means |
-|---|---|
-| `quad code` / `Quad Code` / `quad` | **Claude Code** / **Claude** |
-| `cloud code` (when context = AI) | **Claude Code** |
-| `co-work` / `coworker` (when context = AI agent) | likely a product name like **Claude Code** or **OpenClaw** — check context |
-| `Lex Friman` / `Friedman` | **Lex Fridman** |
-| `entropic` / `Anthopic` | **Anthropic** |
-| `O Pus` / `o-pus` | **Opus** |
-| `Sonet` / `Sonnett` | **Sonnet** |
-| `chat GPT` / `chat gpt` | **ChatGPT** / **GPT** |
-
-For example, if the transcript says "100% of my code is written by quad code", the slide should say "100% of my code is written by **Claude Code**" — and you should still grep "quad code" in the transcript to verify the quote exists.
-
----
+Keep exact source excerpts unchanged in quote evidence. A normalized or translated displayed quote must preserve meaning; mark a material correction or translation when needed. If the intended wording remains unclear, omit the uncertain detail or state the uncertainty. Never invent a number, name or timestamp to repair a transcript.
 
 ## RULE 3 — No fabricated specifics
 
@@ -118,48 +107,53 @@ For example, if the transcript says "100% of my code is written by quad code", t
 - If the guest said "about 3 years ago", do NOT invent "2016-2018"
 - If the guest said "space is big", do NOT invent "Not this decade, but someone will do it"
 
-**You are a transcriber, not a ghostwriter.**
+You may condense and reorganize the discussion, but must preserve who said what, when, under which conditions, and with what evidence. A claim made in the transcript is not automatically an independently established fact.
 
 When you need a generic framing that isn't in the transcript, mark it clearly as your gloss:
-- Good: "**作者概括**: 这其实是 scaling laws 的一个应用"
+- Label a new editorial grouping or inference as “作者概括” and support it with transcript passages; the label does not permit adding outside facts.
 - Bad: Writing it in quotes as if the guest said it
 
-## RULE 4 — Minimum length and structure (深度优先)
+## RULE 4 — Organize explanations before allocating pages
 
-The deck length must scale with transcript length. Use the **transcript word count** to decide:
+Choose scope and length from the distinct questions, reasoning and useful examples in the episode. There is no minimum page count, theme count, content percentage or quote quota. Transcript length and speaking time are context, not page budgets. Concision must not remove major arguments, relevant counterexamples or conditions.
 
-| transcript size | minimum slides | target | notes |
-|---|---|---|---|
-| < 60k chars (~30 min) | 22 | 25-28 | quick interview |
-| 60-150k chars (~1-1.5h) | **28** | **30-35** | typical Lenny / Dwarkesh |
-| 150-250k chars (~2-3h) | **35** | **38-45** | long-form Lex |
-| > 250k chars (~3+h) | **42** | **45-55** | epic 5h interviews like Dario |
+Build a reading order suited to the material:
+- Multi-topic discussion: group related passages into independent topics; do not invent a single thesis connecting unrelated subjects.
+- Personal history: preserve events, decisions and consequences in their meaningful order.
+- Technical explanation: introduce the problem and terms before mechanisms, examples and limits.
+- Debate: place competing claims and their evidence together; preserve unresolved disagreement.
+- Industry analysis: connect observed changes to the speakers' explanations and implications, retaining uncertainty.
+These are options, not templates to fill. Mix them when the episode requires it.
 
-A 22-page deck for a 1.5h interview is **insufficient**. The reader should feel they got the meat of a long conversation, not a CliffsNotes summary.
+An explanation unit answers one reader question. Keep its claim, necessary context, supporting example or mechanism, and relevant limits close together. Not every unit needs all of these elements. Do not turn this checklist into four mandatory boxes. Keep a complete explanation on one page when readable; split only when the material requires it, with specific titles that make the continuation clear.
 
-Required structure (regardless of length):
-1. Cover (1 page, `class: text-center`)
-2. "Why this episode matters" overview (1 page with 4-6 topic cards)
-3. **A LOT of** content pages — at least 70% of the total budget covering main themes
-4. **Core quotes pages** (right before the end page, **4-6 verified quotes per page** with context labels; use two quote pages for 7+ quotes)
-5. End page (`layout: end`, 1 closing quote)
+Deck structure:
+1. One cover identifying the episode.
+2. A concise topic overview when it helps navigation, especially for multi-topic episodes. Use meaningful labels in the actual reading order; no fixed card count or mandatory “为什么这期值得听” heading. Do not invent navigation controls or links.
+3. Explanation units carrying the substance. Introduce unfamiliar terms before relying on them. Merge repeated passages while preserving changes of opinion, time and speaker.
+4. The last page uses `layout: end` for player compatibility. It may finish the final useful point or briefly collect the episode's supported conclusions. Do not add a second ending, closing quote, generic lesson or invented open question.
 
-### How to actually write more content (not padding)
+Do not generate standalone quote collections or “核心金句” chapters. Optional quotes belong next to the point they explain, with attribution and verified evidence.
 
-- **Don't compress 3 ideas into 1 slide**. Split them into 3 slides.
-- For each major theme, dedicate **2-3 slides**: one for the claim, one for the example/story, one for the implication
-- Use specific transcript stories — most interviews have 8-15 standalone stories that each deserve a slide
-- Don't be afraid to spend 2 slides on a single sub-topic if the transcript spends 5 minutes on it
+Every page must add information. Remove a page if it merely restates the previous one; do not delete a needed example or qualification merely to shorten the deck. Greetings, ads and repeated filler can be omitted. Record consequential omissions and unresolved source ambiguity in the final report, not as published editorial commentary.
 
-## RULE 5 — Visual diagrams
+## RULE 5 — Choose visuals for the relationship they explain
 
-At least **20% of content pages** must use a shared HTML diagram or Mermaid graph in a `two-cols-header` layout (full-width page title in the default slot, `::left::` text, `::right::` diagram). A page title belongs above both columns; `two-cols` is only for independently titled columns. Do not force titles onto one line or split Chinese phrases with arbitrary line breaks.
+There is no required number or percentage of diagrams. Choose the clearest form after establishing the content:
 
-For a 20-page deck, that's **at least 4 pages with diagrams**.
+| Information relationship | Preferred form |
+|---|---|
+| Parallel items | Short list or shared HTML cards |
+| Comparison on common dimensions | Table or shared HTML comparison |
+| Supported sequence or stages | Steps or timeline |
+| Conditional choice, causation or interaction | Mermaid with meaningful edges |
+| Explanation requiring connected sentences | Short paragraphs |
 
-If the episode doesn't have obvious diagram material, create simple conceptual diagrams (stacks, flows, 2×2 grids, arrows between labeled boxes). Don't skip this just because it's hard.
+A visual must make a relationship easier to understand. If the diagram repeats the adjacent prose, merge them or use the prose only for evidence, an example or a necessary qualification. Do not add decorative nodes, numbering or arrows. Label branches with their selection conditions; distinguish a prediction from an observed sequence, and a possible causal link from an established one. Parallel categories must not look like a ranking. Use color consistently for meaning, not one arbitrary color per sentence.
 
-Use HTML for cards, comparisons, tiers and steps; use Mermaid only when edges carry meaning. Do not manufacture a timeline or causal relationship to meet the visual ratio. Reuse these shared classes; do not add components, CSS, or JSON drawing files per episode.
+Use `layout: default` for a diagram-led page when adjacent prose adds no value. Use `two-cols-header` only when the two columns provide complementary information: full-width title, `::left::` body, `::right::` diagram. Reserve `two-cols` for independently titled columns. Do not force all diagrams into two columns.
+
+Use shared HTML for cards, comparisons, tiers and steps; use Mermaid when edges carry meaning. Reuse existing classes. Do not add per-episode components, CSS or JSON drawing files.
 
 Native diagrams need a Chinese accessible label, a meaningful `data-note-diagram` name and at least two `rn-note-card` items. Use `rn-note-cards` for parallel concepts, `rn-note-steps` for ordered steps/stages, `rn-note-tiers` for service layers, or `rn-note-compare` for two sides. Maximum four items, short labels and one short explanatory line per item. Arrows in steps imply order; parallel cards must not imply a sequence.
 
@@ -188,7 +182,7 @@ flowchart TB
 </div>
 ````
 
-## RULE 6 — Follow the Slidev layout/style patterns in CLAUDE.md
+## RULE 6 — Shared presentation contract
 
 Read the project's `CLAUDE.md` for:
 - Theme: `academic` + `colorSchema: light`
@@ -219,16 +213,16 @@ auditing, developing, and building a deck. Treat it as read-only shared state:
 Slidev renders to a fixed 16:9 canvas. Treat each slide as a poster with a hard capacity budget, not a scrollable page.
 
 Mandatory capacity limits:
-- Overview pages with 4-6 topic cards: use `mt-4`, `gap-3`, `p-3`, `text-sm`, `leading-relaxed`; each card gets one short claim plus one short explanation.
-- If a card needs more than 2 sentences, split the topic into its own slide.
+- Dense overview/card pages: use `mt-4`, `gap-3`, `p-3`, `text-sm`, `leading-relaxed`; each card gets one short claim plus one short explanation.
+- Keep cards to short labels and explanations. If a card needs a paragraph, use prose or reconsider the grouping before adding a page.
 - 3-column grids are for labels, numbers, or single-sentence cards only.
 - 4-column and 5-column grids are for numbers/keywords only; never put paragraph text in those cards.
-- Core quotes pages contain at most 6 quotes. For 7+ quotes, create `核心金句（一）` and `核心金句（二）`.
-- Two-cols pages: right-side diagrams should use `rn-note` (maximum width 440px); left side should stay under 4 bullets/cards or about 500 Chinese characters.
+- Keep any contextual quote next to the point it supports; do not collect quotes into separate pages.
+- Diagrams use `rn-note` (shared maximum width 440px). Keep any adjacent text short; this width is not a guarantee that every graph will be readable. Inspect the rendered result.
 - Avoid `mt-8`, `gap-6`, `p-5`, and large quote blocks on dense pages. Use smaller spacing or split the slide.
 - A slide should not contain multiple `#` headings.
 
-When in doubt, split content across more slides. More pages with clean layout are better than one clipped dense page.
+Resolve overflow by removing duplication, simplifying the presentation or splitting a complete explanation at a meaningful boundary. Do not shrink text to fit or add pages merely to meet a quantity target.
 
 ## RULE 7 — Site navigation
 
@@ -236,23 +230,22 @@ The build orchestrator injects the site home and adjacent-episode navigation
 after Slidev produces HTML. Do not create, copy, or edit `global-bottom.vue`
 inside an episode directory.
 
-## RULE 8 — Self-audit before declaring done
+## RULE 8 — Review structure, evidence and rendered pages
 
-After writing `slides.md`:
+Before rendering, review the whole reading sequence against the transcript:
+- Coverage: major questions, supporting examples, disagreements and conditions are retained.
+- Coherence: terms and background precede dependent claims; each page contributes to its topic.
+- Economy: adjacent pages and text/diagram pairs do not duplicate each other.
+- Attribution: facts reported by a speaker, opinions, estimates and editorial inferences remain distinguishable.
+- Relationships: ordering, grouping, branches and arrows are supported by the source.
+- Independence: titles and necessary context make a deep-linked page understandable without repeating background on every page.
 
-1. From the repo root, run `pnpm run audit:layout -- --id=<episodeId> --png --keep`; this checks the same static diagrams as publication.
-2. Inspect the exported images in `episodes/<id>/audit-layout/png`
-3. Read **every** PNG one by one
-4. For each page, ask:
-   - Is the information density adequate?
-   - Does the page have visual structure (cards/borders/colors/diagrams)?
-   - Can a reader understand this page in isolation?
-   - Is every quote on this page verified against the transcript?
-   - Does the Chinese read natively (no RULE 0.5 translationese patterns)?
-   - Are there layout overflows or broken diagrams?
-5. Fix every issue you find. Then rebuild and re-audit.
+After editing, run the shared layout audit from the repository root:
+`pnpm run audit:layout -- --id=<episodeId> --png --keep`
 
-**Do not claim the episode is done until you have visually audited every page and found no fabrications.**
+Inspect every PNG in `episodes/<id>/audit-layout/png`. Check readable text, natural title wrapping, Chinese glyphs, overflow, diagram relationships and navigation overlap. Whitespace is acceptable; do not fill it with repetitive cards. Fix affected content, regenerate the audit and inspect the updated pages. If source evidence is insufficient or an audit fails, report the actual problem rather than declaring completion.
+
+Mechanical validation checks artifact contracts and evidence strings; it does not prove semantic completeness, quote translation fidelity or the truth of a speaker's claims. Those require the editorial review above.
 
 ## RULE 9 — Write only editorial fields in `meta.yml`
 
@@ -311,7 +304,7 @@ After slides.md and meta.yml are complete, generate a standalone HTML article at
 - 用普通中文直接说明人物做了什么、为什么这样做、后来发生了什么。保持必要的术语和人名；少把具体动作改写成“进入价格表”“放进同一组资源”等抽象说法。小标题只标明下面谈的人、事、问题或发现，不向读者发指令，不预演编辑步骤，不用假对立或“真正的……”制造深刻感。
 - 将观点归属、时间与不确定性写进原句，例如“主持人预计当月发布”，而不是先写成事实，再补一句“这不应被当成已经兑现的事实”。关键的反例、分歧和适用条件必须保留；只有确实影响理解时才专门解释边界，不为每个事实附加通用的警示或评论。
 - 引文用于保留有表现力的原话，不必重复正文刚解释过的意思，也不必每节安排一条。忠实转述自然标明观点归属；新增的编辑框架、类比或推断才按 RULE 3 标为“作者概括”，标签不豁免证据要求。直接引文仍须按 RULE 1 核验。
-- 节数、段数、概览卡片和金句均不设配额，RULE 4 的页数与模块要求仅适用于幻灯片。列表和卡片按阅读需要使用。结尾把本期最后一个有用的意思讲完即可，不额外制造警句、升华或未解之问。文件大小契约不构成填充文字的理由。
+- 节数、段数、概览卡片和金句均不设配额，RULE 4 的幻灯片组织建议不规定文章结构。列表和卡片按阅读需要使用。结尾把本期最后一个有用的意思讲完即可，不额外制造警句、升华或未解之问。文件大小契约不构成填充文字的理由。
 
 ## RULE 11 — Persist quote evidence
 
@@ -328,6 +321,8 @@ quotes:
     transcript_excerpt: '<exact substring copied from the transcript>'
 ```
 
+If neither artifact contains direct quotes, write `quotes: []`; do not invent a quote to populate evidence.
+
 Use one entry per quote occurrence. Both excerpts are checked with exact string
 matching, so do not normalize the transcript excerpt or omit markup that occurs
 inside the artifact excerpt.
@@ -339,7 +334,7 @@ inside the artifact excerpt.
 If you output a quote without grep-verifying it, you have violated Rule 1.
 If you mix content from other episodes, you have violated Rule 2.
 If you invent company names or dates, you have violated Rule 3.
-If you produce fewer slides than the RULE 4 table minimum for the transcript size (e.g. < 28 for 60-150k chars, < 35 for 150-250k), you have violated Rule 4.
+Do not satisfy page or diagram counts by repeating content or inventing relationships. Apply the coverage and structural review in RULES 4 and 8.
 If you skip visual audit, you have violated Rule 8.
 
 **All rules apply. All the time.**

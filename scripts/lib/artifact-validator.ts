@@ -285,20 +285,6 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
     const transcriptPath = join(rootDir, 'data', 'transcripts', `${id}.txt`)
     if (!existsSync(transcriptPath)) {
       issues.push({ level: 'error', code: 'missing-transcript', file, message: `missing data/transcripts/${id}.txt` })
-    } else {
-      const transcriptSize = readFileSync(transcriptPath, 'utf8').length
-      const minimumSlides = transcriptSize < 60_000 ? 22
-        : transcriptSize < 150_000 ? 28
-          : transcriptSize < 250_000 ? 35
-            : 42
-      if (contentSlides.length < minimumSlides) {
-        issues.push({
-          level: 'error',
-          code: 'too-few-slides',
-          file,
-          message: `${contentSlides.length} content slides; transcript size requires at least ${minimumSlides}`,
-        })
-      }
     }
 
     for (const slide of contentSlides) {
@@ -309,32 +295,6 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
           code: 'multiple-slide-headings',
           file,
           message: `slide ${slide.index + 1} contains ${headings.length} level-one headings`,
-        })
-      }
-    }
-
-    const diagramSlides = contentSlides.filter(slide => {
-      if (/<Excalidraw\b/.test(slide.content) || mermaidFences(slide.content, frontmatter?.diagramMode === 'static').length > 0) return true
-      const labeled = /<div\b(?=[^>]*class="[^"]*\brn-note\b)(?=[^>]*data-note-diagram="[^"]+")(?=[^>]*aria-label="[^"]+")/.test(slide.content)
-      const cards = slide.content.match(/class="[^"]*\brn-note-card\b/g) || []
-      return labeled && cards.length >= 2
-    })
-    const expectedDiagrams = Math.ceil(Math.max(0, contentSlides.length - 4) * 0.2)
-    if (diagramSlides.length < expectedDiagrams) {
-      issues.push({
-        level: 'error',
-        code: 'too-few-diagrams',
-        file,
-        message: `${diagramSlides.length} diagram slides; ${contentSlides.length} slides require at least ${expectedDiagrams}`,
-      })
-    }
-    for (const slide of diagramSlides) {
-      if (!['two-cols', 'two-cols-header'].includes(slide.frontmatter.layout)) {
-        issues.push({
-          level: 'error',
-          code: 'diagram-layout',
-          file,
-          message: `diagram slide ${slide.index + 1} must use layout: two-cols-header or two-cols`,
         })
       }
     }
@@ -419,8 +379,8 @@ function validateQuoteEvidence(options: ValidateArtifactOptions, issues: Artifac
   if (evidence.episode_id !== id) {
     issues.push({ level: 'error', code: 'quote-evidence-id', file, message: `episode_id must be ${id}` })
   }
-  if (!Array.isArray(evidence.quotes) || evidence.quotes.length === 0) {
-    issues.push({ level: 'error', code: 'empty-quote-evidence', file, message: 'quotes must be a non-empty list' })
+  if (!Array.isArray(evidence.quotes)) {
+    issues.push({ level: 'error', code: 'empty-quote-evidence', file, message: 'quotes must be a list (empty when no direct quotes are used)' })
     return
   }
 

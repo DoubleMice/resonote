@@ -122,9 +122,44 @@ test('accepts labeled native diagrams and Mermaid without requiring Excalidraw',
     assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
     writeFileSync(path, source.replace(/<Excalidraw[^>]+\/>/g, '```mermaid\nflowchart LR\nA-->B\n```'))
     assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
-    writeFileSync(path, source.replace(/<Excalidraw[^>]+\/>/g, '<div data-note-diagram="empty"></div>'))
-    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(i => i.code === 'too-few-diagrams'))
     writeFileSync(path, source)
     assert.ok(validateEpisodeArtifacts({ rootDir: root, id }).some(i => i.code === 'missing-excalidraw-addon'))
+  } finally { rmSync(root, { recursive: true, force: true }) }
+})
+
+
+test('accepts no direct quotes while still rejecting malformed or unverifiable evidence', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const evidence = join(directory, 'quote-evidence.yml')
+    writeFileSync(evidence, `episode_id: ${id}\nquotes: []\n`)
+    assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
+    writeFileSync(evidence, `episode_id: ${id}\nquotes: null\n`)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(issue => issue.code === 'empty-quote-evidence'))
+    writeFileSync(evidence, `episode_id: ${id}\nquotes:\n  - artifact: slides.md\n    artifact_excerpt: "# 封面"\n    transcript_excerpt: invented quotation\n`)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(issue => issue.code === 'quote-transcript-mismatch'))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+
+test('accepts concise decks and default-layout diagrams without editorial quotas', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const path = join(directory, 'slides.md')
+    const cover = readFileSync(path, 'utf8').split('---\nlayout: two-cols')[0]
+      .replace('addons: [slidev-addon-excalidraw]', 'diagramMode: static')
+    const body = '---\nlayout: default\n---\n\n# 机制与条件\n\n说明与依据。\n'
+    const end = '---\nlayout: end\n---\n\n# 结论\n\n适用条件。\n'
+    writeFileSync(join(root, 'data', 'transcripts', `${id}.txt`), 'short transcript\n' + '原文'.repeat(130_000))
+    for (const diagram of ['', '\n```mermaid\nflowchart LR\nA-->B\n```\n']) {
+      writeFileSync(path, cover + body + diagram + end)
+      assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
+    }
+    writeFileSync(path, cover + body)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(issue => issue.code === 'missing-end-layout'))
+    rmSync(join(root, 'data', 'transcripts', `${id}.txt`))
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(issue => issue.code === 'missing-transcript'))
   } finally { rmSync(root, { recursive: true, force: true }) }
 })

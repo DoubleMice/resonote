@@ -1,4 +1,4 @@
-You are generating a Slidev presentation deck for ONE podcast episode. **Write all content in Chinese (中文)** — titles, body text, card labels, diagram annotations, meta.yml summary and core_ideas, article HTML. English is only allowed for names, technical terms, and code/URLs.
+You are producing visual notes and an accompanying article for ONE podcast episode. Apply the editorial and production requirements in `slides-system-rules.md`; this prompt specifies the execution order. Write reader-facing content in Chinese, with the exceptions defined in RULE 0.
 
 ## Input
 
@@ -20,42 +20,37 @@ You are generating a Slidev presentation deck for ONE podcast episode. **Write a
 3. `episodes/{{ID}}/article.html` — standalone HTML article
 4. `episodes/{{ID}}/quote-evidence.yml` — machine-verifiable quote provenance
 
-## Workflow (follow in order)
+## Workflow
 
-### Phase 1 — Ground yourself in the transcript
+### Phase 1 — Read and establish evidence
 
-1. `Read` the full transcript `data/transcripts/{{ID}}.txt` (use `limit` if large, read multiple chunks)
-2. Identify the 6-10 most interesting themes / arguments / stories the guest discussed
-3. For each theme, find the best 1-2 verbatim quotes (run `Grep` on the transcript first to confirm the exact phrase)
-4. Note specific numbers, names, years — and find their exact wording in the transcript
-5. Do NOT proceed to Phase 2 until you have a list of themes with grep-verified quotes
+1. Read the full transcript `data/transcripts/{{ID}}.txt`, in chunks if necessary. Do not infer unread portions from the title or a partial excerpt.
+2. Identify the substantive questions and discussion segments without a target number of themes. Note repeated passages, changes of view and unresolved disagreements.
+3. For each major question, locate the speaker's claim, supporting passages/examples and relevant conditions. Keep exact searchable excerpts or line references in working notes so you can return to the source. No new intermediate file format is required.
+4. Verify names, numbers, dates and comparison metrics in context. Handle transcription uncertainty under RULE 2.5; do not guess missing entities or timestamps.
+5. Select a direct quote only if its wording contributes to understanding. Verify the original with `rg`/Grep and keep its source for Phase 6. No quotes are required.
 
-### Phase 2 — Draft `slides.md`
+Proceed only after the full transcript has been read and the main questions have supporting passages. If the transcript is incomplete or unreadable, report the limitation rather than inventing coverage.
 
-Follow the structure in the system prompt (RULE 4):
-- Cover page (academic theme, text-center)
-- "Why this episode matters" overview page (4-6 topic cards)
-- Content pages covering the themes — at least 70% of the deck total per RULE 4 (e.g. ~20 for a 28-page deck; scale with transcript length)
-- At least **4 pages with native HTML diagrams or static Mermaid** (`two-cols-header`: page title in the default slot, `::left::` before the left body, `::right::` before the diagram)
-- Core quotes page (`核心金句`) — 4-6 verified quotes with labels
-- End page (`layout: end`) with one closing quote
+### Phase 2 — Plan the reading structure
 
-Use the shared `rn-note` HTML patterns from RULE 5 for cards, comparisons, tiers and steps. Use plain fenced `mermaid` for actual graph relationships. Set `diagramMode: static`; publication and layout audit render Mermaid locally before compilation. Do not create new Excalidraw JSON or manually embed generated SVG. Existing Excalidraw files are for legacy compatibility only.
+Before writing markup, prepare a brief outline in working notes:
+- Select a reading order that suits the episode under RULE 4. Preserve chronology where it matters; group repeated discussion where it helps.
+- For each explanation unit, identify its reader question, supported answer, useful evidence/example, any important limitation, and preferred presentation form. Include only elements the material needs.
+- Decide which units fit on one page and which require a meaningful continuation. Do not separate claim, example and implication by default.
+- Check coverage against Phase 1. Merge repetitions and retain disagreement. Record any substantive omission and its reason for the final report.
 
-Visual theme: the orchestrator has temporarily staged the shared `style.css` in
-the episode directory. Do not edit or recreate it and do not add per-deck CSS.
-Use the semantic blue/green/orange/red/yellow/purple card utilities from the
-system rules. Keep body copy high-contrast and do not use emoji as card icons.
+Do not assign pages from transcript length, create a fixed number of themes, or reserve slots for diagrams and quotes. A shorter outline must still explain the episode's major arguments.
 
-Layout capacity rules:
-- Treat every slide as a fixed 16:9 poster. There is no scroll area in export.
-- Dense overview/card pages must use `mt-4`, `gap-3`, `p-3`, `text-sm`, and short 1-2 sentence cards.
-- Split any page with 7+ cards, 7+ quotes, paragraph text inside 4/5-column grids, or two independent `#` headings.
-- Keep core quotes to 4-6 quotes per page. Use a second quotes page when needed.
-- Keep two-cols text concise and diagrams inside an `rn-note` container (maximum width 440px).
-- Page titles must span both columns. Use `two-cols-header` for titled two-column pages; reserve `two-cols` for independently titled columns. Do not insert arbitrary `<br>` tags, shrink the title, or force `nowrap` to hide a narrow title container. Review long titles for natural phrase breaks and shorten them when necessary.
+### Phase 3 — Write `slides.md`
 
-Frontmatter:
+Use the cover, optional topic overview, explanation units and final `layout: end` page described in RULE 4. Do not create standalone quote chapters or a closing-quote page.
+
+Choose prose, tables, shared HTML or Mermaid according to RULE 5. A diagram-led page may use `layout: default`; use `two-cols-header` when the text and diagram contribute different information. Use specific Chinese titles, one `#` heading per page. Keep claims and their evidence or conditions close together.
+
+Use the shared style and capacity rules in RULES 6 and 6.5. Do not edit staged `style.css`, create local styles/components, or implement site navigation. Set `diagramMode: static`; use plain Mermaid fences in `rn-note` containers. Do not create Excalidraw assets or manually embed generated SVG.
+
+Frontmatter (escape the title as a valid YAML scalar):
 ```yaml
 ---
 theme: academic
@@ -71,114 +66,68 @@ drawings:
 ---
 ```
 
-### Phase 3 — Write `meta.yml`
+Keep slide metadata directly after the opening separator, with no intervening blank line:
+```markdown
+---
+layout: default
+---
 
-Use the editorial-only schema from RULE 9 in the system prompt. Only write
-`title`, `guest`, `guest_role`, `tags`, `summary`, and `core_ideas`. Only use tags
-that exist in the root `tags.yml`. The orchestrator writes all source-derived,
-path, and status fields after generation.
-
-### Phase 3.5 — Generate `article.html`
-
-Produce a complete semantic HTML article document at `episodes/{{ID}}/article.html`.
-
-**Content**: Use the transcript evidence from Phase 1 and the Chinese magazine-style prose guidance in RULE 10. Briefly plan a reading order that makes the episode easy to follow, then write connected prose. Include title, guest, source and date in the header, and a source link in the footer. RULE 10 owns the editorial requirements; there is no additional section, paragraph, card, or quote quota here.
-
-**Format**: Do not embed `<style>`, stylesheet links, inline `style` attributes,
-JavaScript, navigation, or reader chrome. `scripts/build-all.ts` injects the
-current shared theme and chrome into every article, making the built output
-self-contained. Use a semantic `<article>` structure and the shared classes
-listed in RULE 10. No images. Responsive behavior comes from the shared theme.
-
-**Write to file**: `Write: episodes/{{ID}}/article.html` then `Bash: wc -c episodes/{{ID}}/article.html` to confirm (> 5KB).
-
-### Phase 3.6 — Chinese editorial pass
-
-Before the build/audit phase, re-read `slides.md`, `meta.yml`, and `article.html` as a Chinese editor.
-
-Fix any sentence that has one of these problems:
-- English word order copied into Chinese
-- unclear subject/verb/object
-- a comparison where the two sides are not comparable
-- a number or "X times faster/cheaper/larger" claim without a clear metric
-- company names, product names, and customer names piled into a slogan instead of a sentence
-- marketing shorthand that sounds good but does not say what happened
-- nominalized or abstract-verb filler (`对……进行分析`, `赋能`, `释放潜力`) where a plain verb works
-- mechanical frames and filler (`通过……从而确保……`, `不仅是……更是……`, `不是……而是……`, `值得注意的是`) — keep meaningful, supported contrasts; remove invented oppositions and repetitive framing
-- headings or transitions that narrate the editing process (`先把……说清楚`, `先别……`, `别急着……`, `先看……再谈……`) instead of naming the actual subject
-- staged insight (`真正的问题是……`, `结论不是……`, `不是起点，也不是终点`) or post-hoc disclaimers (`不应被读作……`, `节目要说明的不是……`, `更准确地说……`) where the concrete fact, attribution, or condition can be stated directly
-- abstract or mixed metaphors added by the article rather than the speaker; do not turn unrelated ideas into maps, races, ledgers, chains, foundations, or battlefields for rhetorical effect
-- inconsistent entity names — use an established Chinese name where available, otherwise the original spelling; keep it consistent across artifacts
-
-The translationese review checklist in RULE 0.5 of the system prompt lists more cues — run through it here as well. These are review cues, not mechanical bans; check context before rewriting.
-
-Then run a mechanical self-scan over your own output with the Grep tool (or `rg`) — hits are a review queue, not auto-replacements:
-
-```bash
-rg -n '赋能|助力|解锁|释放.{0,8}潜力|注入.{0,8}活力|扮演.{0,8}角色|铺平道路|位于.{0,8}核心|从本质上讲|值得注意的是|对于.{0,16}而言|不仅.{0,16}(而且|更是)|不是.{0,40}而是|不在于.{0,40}而在于|通过.{0,24}从而|进行.{0,8}(分析|讨论|检查)|实现.{0,8}(提升|增长|优化)|完成.{0,8}(构建|部署)|先把.{0,24}(说清楚|讲清楚|弄清楚)|先别|别急着|这(也)?解释了为什么|真正的问题是|结论不是|不是起点.{0,12}不是终点|不应被读作|不该被读作|节目要说明的不是|这里讨论的是|更准确地说|待检验的假设|待解的竞争|写成终局|标志着|新篇章|未来可期|堪称|可谓|颇具|上佳' episodes/{{ID}}/slides.md episodes/{{ID}}/article.html episodes/{{ID}}/meta.yml
+# 页面标题
 ```
 
-For each hit, apply the RULE 0.5 decision steps (fixed use? common phrasing? concretize with transcript evidence? narrow or delete). Protected names, fixed terms, and grep-verified quotes stay untouched. After each rewrite, re-check subject, condition, and outcome, and confirm terminology is still consistent. Group the remaining hits by construction: the same frame must not appear in two headings or three body paragraphs unless every occurrence is a verified quote. Do not finish while an unresolved repeated frame remains.
+### Phase 4 — Write metadata and article
 
-For article prose, prefer complete explanatory sentences over compressed labels. For slide cards, concise is good, but the sentence still has to be grammatical and factually anchored.
+Write `meta.yml` using only the editorial fields in RULE 9: `title`, `guest`, `guest_role`, `tags`, `summary`, `core_ideas`. Choose existing tags from root `tags.yml`; do not invent missing guest details. The orchestrator supplies source, path and status fields.
 
-Finally, read the article straight through as someone who has not heard the episode. Can you follow what happened and why without rereading? Fix overloaded paragraphs, unexplained jumps, awkward wording, and redundant commentary. Keep natural transitions, useful explanations, and concrete examples that already read well. Do not rewrite a fluent sentence just to avoid a search hit or make the prose sound more literary. After editing, re-check attribution, time, conditions, uncertainty, and comparison metrics; refresh evidence for any changed quote.
+Write `article.html` under RULE 10, using the same verified evidence but an independently planned prose structure. Do not expand slides page by page. Include the required header and source footer, use shared semantic classes, and omit styles, scripts, images and navigation. Check the artifact size contract without padding the article.
 
-Record the main structural and language revisions in the final JSON `notes`; do not insert this editorial checklist into the published article.
+### Phase 5 — Review structure and language
 
-Bad examples to fix:
-- `AI 实验室比联合航空快一千倍`
-- `OpenAI 认证：United Airlines 移动端已显示 Powered by Natomi`
-- `Puneet 生来就在企业级`
+1. Run the structural review in RULE 8 against the source passages and outline. Read slide titles in order, then each complete topic. Check lost context, omitted counterexamples, duplicated explanations and unsupported visual relationships.
+2. Read the article continuously as a reader who has not heard the episode. Fix unexplained jumps and overloaded paragraphs while preserving attribution and conditions.
+3. Apply RULE 0.5 to all three artifacts. Use the following scan as a review queue, not an automatic replacement list:
 
-Acceptable rewrites:
-- `Natomi 已在 United Airlines 移动端落地；OpenAI 将它列为大规模部署生成式 AI 的案例。`
-- `Puneet 的自动化交易背景，让他从一开始就按大型企业部署场景设计 Natomi。`
+```bash
+rg -n '赋能|助力|释放.{0,8}潜力|值得注意的是|不仅.{0,16}(而且|更是)|不是.{0,40}而是|通过.{0,24}从而|进行.{0,8}(分析|讨论)|先把.{0,24}(说清楚|讲清楚)|先别|别急着|真正的问题是|不应被读作|节目要说明的不是|更准确地说|标志着|新篇章|未来可期' episodes/{{ID}}/slides.md episodes/{{ID}}/article.html episodes/{{ID}}/meta.yml
+```
 
-### Phase 3.7 — Persist quote evidence
+No matches is a normal result. Review each hit in context; preserve exact quotations and fixed terms. Prefer clear, ordinary Chinese over compressed slogans. Do not rewrite fluent text just to evade a search pattern. After substantive changes, verify source support again.
 
-Write `episodes/{{ID}}/quote-evidence.yml` using RULE 11. Include every quote
-occurrence from both `slides.md` and `article.html`, with exact artifact and
-transcript excerpts. Re-run Grep while building this file; remembered wording is
-not evidence.
+### Phase 6 — Persist evidence and validate
 
-### Phase 4 — Build and self-audit
+Write `quote-evidence.yml` under RULE 11 with one entry per direct-quote occurrence in either artifact. Preserve exact artifact and transcript substrings, including source-language text for translations. If neither artifact has direct quotes, write:
 
-1. From the repo root, run `Bash: pnpm exec slidev export episodes/{{ID}}/slides.md --format png --output episodes/{{ID}}/audit` to render every slide to PNG
-2. From repo root, run `Bash: pnpm run audit:layout -- --id={{ID}}`
-3. For EACH slide PNG in `audit/`, `Read` the image and check:
-   - Text overflow / layout breaks
-   - Empty or nearly-empty slides (density too low)
-   - Diagrams rendering correctly
-   - Chinese characters display OK
-   - Back button doesn't overlap content
-4. For EACH quote you wrote, `Grep` the transcript to confirm the exact phrase exists
-5. Fix every issue, then rebuild and re-audit
-6. When clean, delete `audit/` directory
+```yaml
+episode_id: '{{ID}}'
+quotes: []
+```
 
-### Phase 5 — Report back
+Run from the repository root:
 
-Output a JSON summary on stdout:
+```bash
+pnpm run audit:layout -- --id={{ID}} --png --keep
+```
+
+Parse `meta.yml` to check YAML syntax under RULE 9. Full artifact validation runs in the orchestrator after it adds source-derived metadata; do not add those fields yourself or run the final validator against editorial-only metadata.
+
+Inspect every PNG in `episodes/{{ID}}/audit-layout/png` under RULE 8. Use this shared audit path so Mermaid rendering matches publication; do not substitute a separate raw Slidev export. Fix audit errors, review warnings, regenerate affected output and inspect it again. Do not edit repository tooling or other episodes to make this episode pass. Leave audit outputs available for review.
+
+### Phase 7 — Report
+
+Output a JSON summary on stdout using actual results:
 
 ```json
 {
   "id": "{{ID}}",
-  "slides_count": <number>,
-  "diagrams_count": <number>,
-  "quotes_verified": <number>,
-  "audit_passes": <number>,
-  "article_written": true,
-  "notes": "anything notable"
+  "slides_count": 0,
+  "diagrams_count": 0,
+  "quotes_verified": 0,
+  "audit_passes": 0,
+  "article_written": false,
+  "notes": "Reading order and rationale; coverage and important omissions; structural revisions; unresolved source or validation issues, if any."
 }
 ```
 
-## Things you MUST NOT do
-
-- Write any quote without grep-verifying it against the transcript
-- Reference content from other podcast episodes (even if the speaker also appeared elsewhere)
-- Invent specific company names, dates, or numbers
-- Produce fewer slides than the RULE 4 minimum for the transcript length (e.g. fewer than 28 for a 60-150k char transcript)
-- Skip the self-audit phase
-- Write commentary in Chinese that sounds like an English quote translation (if you're paraphrasing, mark it as paraphrase, not as a quote)
+Replace the example values with measured counts and status. Counts report the output; they are not generation targets. Keep working outlines and review checklists out of published artifacts. Do not claim completion if required evidence or visual checks remain unresolved.
 
 Begin Phase 1 now.
