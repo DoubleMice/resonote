@@ -8,7 +8,7 @@ You are generating a Slidev presentation from a podcast transcript. These rules 
 - Slide titles, headings, and body text
 - Topic card labels and descriptions
 - Quote translations and context labels
-- Diagram labels and annotations inside Excalidraw JSON
+- Diagram labels and annotations in shared HTML cards and Mermaid
 - Summary and core_ideas in `meta.yml`
 - Article HTML body content
 
@@ -151,19 +151,48 @@ Required structure (regardless of length):
 - Use specific transcript stories — most interviews have 8-15 standalone stories that each deserve a slide
 - Don't be afraid to spend 2 slides on a single sub-topic if the transcript spends 5 minutes on it
 
-## RULE 5 — Hand-drawn diagram ratio
+## RULE 5 — Visual diagrams
 
-At least **20% of content pages** must use an Excalidraw diagram in a `two-cols-header` layout (full-width page title in the default slot, `::left::` text, `::right::` diagram). A page title belongs above both columns; `two-cols` is only for independently titled columns. Do not force titles onto one line or split Chinese phrases with arbitrary line breaks.
+At least **20% of content pages** must use a shared HTML diagram or Mermaid graph in a `two-cols-header` layout (full-width page title in the default slot, `::left::` text, `::right::` diagram). A page title belongs above both columns; `two-cols` is only for independently titled columns. Do not force titles onto one line or split Chinese phrases with arbitrary line breaks.
 
-For a 20-page deck, that's **at least 4 pages with hand-drawn diagrams**.
+For a 20-page deck, that's **at least 4 pages with diagrams**.
 
 If the episode doesn't have obvious diagram material, create simple conceptual diagrams (stacks, flows, 2×2 grids, arrows between labeled boxes). Don't skip this just because it's hard.
+
+Use HTML for cards, comparisons, tiers and steps; use Mermaid only when edges carry meaning. Do not manufacture a timeline or causal relationship to meet the visual ratio. Reuse these shared classes; do not add components, CSS, or JSON drawing files per episode.
+
+Native diagrams need a Chinese accessible label, a meaningful `data-note-diagram` name and at least two `rn-note-card` items. Use `rn-note-cards` for parallel concepts, `rn-note-steps` for ordered steps/stages, `rn-note-tiers` for service layers, or `rn-note-compare` for two sides. Maximum four items, short labels and one short explanatory line per item. Arrows in steps imply order; parallel cards must not imply a sequence.
+
+```html
+<div class="rn-note" data-note-diagram="process" role="group" aria-label="两个工作阶段">
+<div class="rn-note-steps">
+<div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>准备</strong><p>具体说明</p></div></div>
+<div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>交付</strong><p>具体说明</p></div></div>
+</div>
+<p class="rn-note-caption">说明关系的含义或适用条件。</p>
+</div>
+```
+
+Mermaid uses a plain fence (no `{scale: ...}`, frontmatter or `%%{init}%%` overrides), within the same `rn-note` container. Keep labels short, avoid external images/icons/fonts, and split a large graph instead of shrinking its text. The build produces a self-contained SVG data image in the episode module, not a new diagram file or client renderer.
+
+````markdown
+<div class="rn-note" data-note-diagram="routing" role="group" aria-label="任务路由">
+
+```mermaid
+flowchart TB
+  task["任务"] --> small["简单任务"]
+  task --> large["复杂任务"]
+```
+
+<p class="rn-note-caption">根据任务需要选择路径。</p>
+</div>
+````
 
 ## RULE 6 — Follow the Slidev layout/style patterns in CLAUDE.md
 
 Read the project's `CLAUDE.md` for:
 - Theme: `academic` + `colorSchema: light`
-- Addon: `slidev-addon-excalidraw`
+- New decks: `diagramMode: static`; the Excalidraw addon is only required for legacy `<Excalidraw>` references
 - Color card system (blue/green/orange/red/yellow/purple)
 - Two-cols template
 - No `v-click` animations (everything shows at once)
@@ -195,7 +224,7 @@ Mandatory capacity limits:
 - 3-column grids are for labels, numbers, or single-sentence cards only.
 - 4-column and 5-column grids are for numbers/keywords only; never put paragraph text in those cards.
 - Core quotes pages contain at most 6 quotes. For 7+ quotes, create `核心金句（一）` and `核心金句（二）`.
-- Two-cols pages: right-side Excalidraw width should stay within `w-[460px]` to `w-[480px]`; left side should stay under 4 bullets/cards or about 500 Chinese characters.
+- Two-cols pages: right-side diagrams should use `rn-note` (maximum width 440px); left side should stay under 4 bullets/cards or about 500 Chinese characters.
 - Avoid `mt-8`, `gap-6`, `p-5`, and large quote blocks on dense pages. Use smaller spacing or split the slide.
 - A slide should not contain multiple `#` headings.
 
@@ -211,8 +240,8 @@ inside an episode directory.
 
 After writing `slides.md`:
 
-1. From the repo root, run `pnpm exec slidev export episodes/<id>/slides.md --format png --output episodes/<id>/audit`
-2. Run `pnpm run audit:layout -- --id=<episodeId>` from the repo root
+1. From the repo root, run `pnpm run audit:layout -- --id=<episodeId> --png --keep`; this checks the same static diagrams as publication.
+2. Inspect the exported images in `episodes/<id>/audit-layout/png`
 3. Read **every** PNG one by one
 4. For each page, ask:
    - Is the information density adequate?

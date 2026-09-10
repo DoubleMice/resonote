@@ -2,6 +2,7 @@ import { existsSync, readFileSync, statSync } from 'node:fs'
 import { basename, join, resolve } from 'node:path'
 import { parseSync as parseSlidev } from '@slidev/parser'
 import { parse } from 'yaml'
+import { mermaidFences } from './static-diagrams.ts'
 
 export type ArtifactIssueLevel = 'error' | 'warning'
 
@@ -196,8 +197,8 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
       || (drawings as Record<string, unknown>).persist !== false) {
       issues.push({ level: 'error', code: 'invalid-drawings', file, message: 'drawings.persist must be false' })
     }
-    if (!Array.isArray(frontmatter.addons) || !frontmatter.addons.includes('slidev-addon-excalidraw')) {
-      issues.push({ level: 'error', code: 'missing-excalidraw-addon', file, message: 'Excalidraw addon is required' })
+    if (/<Excalidraw\b/.test(text) && (!Array.isArray(frontmatter.addons) || !frontmatter.addons.includes('slidev-addon-excalidraw'))) {
+      issues.push({ level: 'error', code: 'missing-excalidraw-addon', file, message: 'Excalidraw references require the legacy addon' })
     }
   }
 
@@ -219,20 +220,57 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
       join(rootDir, 'episodes', id, 'public', reference),
       join(rootDir, 'episodes', id, reference),
     ]
-    if (!candidates.some(existsSync)) {
+    const diagramPath = candidates.find(path => existsSync(path) && statSync(path).isFile())
+    if (!diagramPath) {
       issues.push({
         level: 'error',
         code: 'missing-excalidraw-file',
         file,
         message: `missing Excalidraw file: ${match[1]}`,
       })
+      continue
+    }
+    try {
+      const scene = JSON.parse(readFileSync(diagramPath, 'utf8'))
+      const object = (value: unknown) => value !== null && typeof value === 'object' && !Array.isArray(value)
+      if (!object(scene) || !Array.isArray(scene.elements) || !scene.elements.every(object)
+        || (scene.appState !== undefined && !object(scene.appState))
+        || (scene.files != null && !object(scene.files))) {
+        throw new Error('expected an elements array of objects, with optional appState/files objects')
+      }
+      for (const element of scene.elements) {
+        if (['arrow', 'line'].includes(element.type) && (!Array.isArray(element.points) || element.points.length < 2
+          || !element.points.every((point: unknown) => Array.isArray(point) && point.length === 2 && point.every(Number.isFinite)))) {
+          throw new Error(`element ${element.id || '(no id)'} requires at least two finite [x, y] points`)
+        }
+      }
+    } catch (error) {
+      issues.push({
+        level: 'error',
+        code: 'invalid-excalidraw-file',
+        file,
+        message: `invalid Excalidraw file ${match[1]}: ${(error as Error).message}`,
+      })
     }
   }
 
+  if (frontmatter?.diagramMode !== undefined && frontmatter.diagramMode !== 'static') {
+    issues.push({ level: 'error', code: 'invalid-diagram-mode', file, message: 'diagramMode must be static when specified' })
+  }
+  if (frontmatter?.diagramMode === 'static') {
+    try { mermaidFences(text) }
+    catch (error) { issues.push({ level: 'error', code: 'invalid-static-diagram', file, message: (error as Error).message }) }
+  }
   if (!strict) return
 
   try {
     const deck = parseSlidev(text, slidesPath)
+    for (const slide of deck.slides) {
+      if (/^layout:\s*[\w-]+\s*$/.test(slide.content.trim())) {
+        issues.push({ level: 'error', code: 'detached-slide-layout', file,
+          message: `slide ${slide.index + 1} contains only layout metadata; remove the blank line after the opening ---` })
+      }
+    }
     const contentSlides = deck.slides.filter(slide => slide.content.trim())
     const emptySlides = deck.slides.filter(slide => !slide.content.trim())
     for (const slide of emptySlides) {
@@ -275,7 +313,12 @@ function validateSlides(options: ValidateArtifactOptions, issues: ArtifactIssue[
       }
     }
 
-    const diagramSlides = contentSlides.filter(slide => /<Excalidraw\b/.test(slide.content))
+    const diagramSlides = contentSlides.filter(slide => {
+      if (/<Excalidraw\b/.test(slide.content) || mermaidFences(slide.content, frontmatter?.diagramMode === 'static').length > 0) return true
+      const labeled = /<div\b(?=[^>]*class="[^"]*\brn-note\b)(?=[^>]*data-note-diagram="[^"]+")(?=[^>]*aria-label="[^"]+")/.test(slide.content)
+      const cards = slide.content.match(/class="[^"]*\brn-note-card\b/g) || []
+      return labeled && cards.length >= 2
+    })
     const expectedDiagrams = Math.ceil(Math.max(0, contentSlides.length - 4) * 0.2)
     if (diagramSlides.length < expectedDiagrams) {
       issues.push({

@@ -24,7 +24,7 @@ export function scaffoldEpisodeWorkspace(
 
   const publicPath = join(directory, 'public')
   if (!existsSync(publicPath)) {
-    cpSync(join(templatesDir, 'public'), publicPath, { recursive: true })
+    mkdirSync(publicPath, { recursive: true })
   }
 
   return directory

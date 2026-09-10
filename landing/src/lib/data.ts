@@ -2,6 +2,7 @@
 // Returns structured data for landing page consumption.
 
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 import { resolve, join } from 'node:path'
 import { parse } from 'yaml'
 
@@ -141,6 +142,12 @@ export type CategoryId = typeof CATEGORIES[number]['id']
 
 export interface EpisodeWithSource extends EpisodeMeta {
   sourceRef: Source
+}
+
+export function libraryRevision(episodes: EpisodeWithSource[]): string {
+  return createHash('sha256')
+    .update(readFileSync(resolve(PROJECT_ROOT, 'landing/src/components/EpisodeRow.astro')))
+    .update(JSON.stringify(episodes)).digest('hex').slice(0, 16)
 }
 
 let episodeCache: EpisodeWithSource[] | undefined

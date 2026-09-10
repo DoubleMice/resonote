@@ -72,3 +72,17 @@ test('normalizes missing and existing slide frontmatter from one template', () =
     rmSync(directory, { recursive: true, force: true })
   }
 })
+
+test('new generations use static diagrams while legacy Excalidraw stays compatible', () => {
+  const directory = mkdtempSync(join(tmpdir(), 'resonote-diagram-mode-'))
+  const path = join(directory, 'slides.md')
+  try {
+    writeFileSync(path, '# 新笔记\n')
+    canonicalizeSlidesFrontmatter(path, '新笔记')
+    assert.match(readFileSync(path, 'utf8'), /diagramMode: static/)
+    assert.doesNotMatch(readFileSync(path, 'utf8'), /slidev-addon-excalidraw/)
+    writeFileSync(path, '# 旧笔记\n<Excalidraw drawFilePath="./a.excalidraw" />\n')
+    canonicalizeSlidesFrontmatter(path, '旧笔记')
+    assert.match(readFileSync(path, 'utf8'), /slidev-addon-excalidraw/)
+  } finally { rmSync(directory, { recursive: true, force: true }) }
+})

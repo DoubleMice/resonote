@@ -86,11 +86,11 @@ function slideBody(text: string): string {
   return normalized
 }
 
-export function canonicalSlideFrontmatter(title: string): string {
+export function canonicalSlideFrontmatter(title: string, legacyExcalidraw = false): string {
   return stringify({
     theme: 'academic',
     colorSchema: 'light',
-    addons: ['slidev-addon-excalidraw'],
+    ...(legacyExcalidraw ? { addons: ['slidev-addon-excalidraw'] } : { diagramMode: 'static' }),
     title,
     coverDate: '',
     class: 'text-center',
@@ -105,7 +105,7 @@ export function canonicalizeSlidesFrontmatter(slidesPath: string, title: string)
   const body = slideBody(readFileSync(slidesPath, 'utf8')).trimStart()
   writeFileSync(
     slidesPath,
-    `---\n${canonicalSlideFrontmatter(title)}\n---\n\n${body.replace(/\s*$/, '')}\n`,
+    `---\n${canonicalSlideFrontmatter(title, /<Excalidraw\b/.test(body))}\n---\n\n${body.replace(/\s*$/, '')}\n`,
     'utf8',
   )
 }

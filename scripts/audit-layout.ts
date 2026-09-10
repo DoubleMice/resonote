@@ -8,7 +8,7 @@
 //   pnpm run audit:layout -- --all
 //   pnpm run audit:layout -- --all --png --keep
 
-import { existsSync, readFileSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs'
+import { existsSync, readFileSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { chromium } from 'playwright-chromium'
@@ -18,6 +18,7 @@ import { run } from './lib/spawn.ts'
 import { startStaticServer } from './lib/static-server.ts'
 import { readYaml } from './lib/yaml-io.ts'
 import type { EpisodeMeta } from './lib/types.ts'
+import { createStaticDiagramRenderer } from './lib/static-diagrams.ts'
 import { stageEpisodePresentation } from './lib/episode-workspace.ts'
 
 interface Args {
@@ -106,8 +107,14 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
   const htmlDir = join(outDir, 'html')
 
   const cleanupPresentation = stageEpisodePresentation(episodeDir, TEMPLATES_DIR)
+  const slidesPath = join(episodeDir, 'slides.md')
+  const authored = readFileSync(slidesPath, 'utf8')
+  let rendered = authored
+  const diagrams = createStaticDiagramRenderer()
 
   try {
+    rendered = await diagrams.transform(authored, slidesPath)
+    if (rendered !== authored) writeFileSync(slidesPath, rendered)
     if (png) {
       const pngDir = join(outDir, 'png')
       const exportResult = await run('pnpm', [
@@ -143,7 +150,10 @@ async function renderEpisode(id: string, outDir: string, png: boolean): Promise<
       throw new Error(`${id} build failed\n${buildResult.stderr.slice(0, 1000)}`)
     }
   } finally {
-    cleanupPresentation()
+    try { await diagrams.close() } finally {
+      if (rendered !== authored && readFileSync(slidesPath, 'utf8') === rendered) writeFileSync(slidesPath, authored)
+      cleanupPresentation()
+    }
   }
 
   return htmlDir
@@ -176,7 +186,7 @@ async function auditEpisode(id: string, outDir: string, threshold: number): Prom
     const issues: Issue[] = []
 
     await page.goto(indexUrl, { waitUntil: 'networkidle' })
-    const slideCount = parseSlidev(readFileSync(join(EPISODES_DIR, id, 'slides.md'), 'utf8')).slides.length
+    const slideCount = parseSlidev(readFileSync(join(EPISODES_DIR, id, 'slides.md'), 'utf8'), join(EPISODES_DIR, id, 'slides.md')).slides.length
     if (!slideCount) throw new Error('deck contains no slides')
 
     for (let slide = 1; slide <= slideCount; slide++) {

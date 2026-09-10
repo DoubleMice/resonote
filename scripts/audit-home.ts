@@ -17,6 +17,8 @@ async function assertNoHorizontalOverflow(page: Page, viewport: string) {
 
 async function auditDesktop(page: Page) {
   const runtimeErrors: string[] = []
+  const archiveRequests: string[] = []
+  page.on('request', request => { if (request.url().includes('/library-rows/')) archiveRequests.push(request.url()) })
   const targetOrigin = new URL(targetUrl).origin
 
   page.on('pageerror', error => runtimeErrors.push(error.message))
@@ -43,7 +45,9 @@ async function auditDesktop(page: Page) {
   assert.equal(await page.locator('.featured-note').count(), 1, 'home page must contain one featured note')
   assert.equal(await page.locator('.episode-card').count(), 6, 'home page must contain six recent note cards')
   const archiveItems = page.locator('.home-library-list [data-library-item]')
-  assert.ok(await archiveItems.count() > 6, 'home page must retain the complete progressively loaded archive')
+  const total = Number(await page.locator('#library-list').getAttribute('data-total-count'))
+  assert.equal(await archiveItems.count(), Math.min(36, total), 'home HTML should contain only the first batch')
+  assert.equal(archiveRequests.length, 0, 'archive rows must not download before interaction')
   assert.equal(await archiveItems.filter({ visible: true }).count(), Math.min(36, await archiveItems.count()), 'home archive must initially reveal 36 items')
   assert.equal(await page.locator('.hero-deck, .category-stack, .theme-index, .theme-card').count(), 0, 'legacy home sections must be removed')
   const skipLinkBottom = await page.locator('.skip-link').evaluate(element => element.getBoundingClientRect().bottom)
@@ -61,8 +65,10 @@ async function auditDesktop(page: Page) {
 
   const search = page.locator('#search-input')
   await search.fill('AI')
-  await page.locator('#search-results').waitFor({ state: 'visible' })
+  await page.locator('#search-results [role="option"]').first().waitFor({ state: 'visible' })
   assert.ok(await page.locator('#search-results [role="option"]').count() > 0, 'search must return matching content')
+  assert.equal(await archiveItems.count(), total, 'search must include the full archive')
+  assert.equal(archiveRequests.length, total > 36 ? 1 : 0, 'archive should load only once')
   await search.press('Escape')
   assert.ok(await page.locator('#search-results').isHidden(), 'Escape must close search results')
 
@@ -107,6 +113,28 @@ async function auditDesktop(page: Page) {
   await page.evaluate(() => window.scrollTo(0, 0))
 }
 
+async function auditDeferredArchive(page: Page) {
+  await page.goto(targetUrl, { waitUntil: 'networkidle' })
+  const rowsUrl = await page.locator('#library-list').getAttribute('data-rows-url')
+  if (!rowsUrl) return
+  const requestUrl = new URL(rowsUrl, targetUrl).href
+  await page.route(requestUrl, route => route.fulfill({ status: 503, body: 'Unavailable' }))
+  await page.locator('#library-search').fill('AI')
+  await page.getByText('内容加载失败，请重试或刷新页面。', { exact: true }).waitFor()
+  assert.equal(await page.locator('[data-library-item]').count(), 36, 'a failed request must preserve the first batch')
+  await page.unroute(requestUrl)
+  await page.locator('#library-search').fill('')
+  await page.waitForFunction(() => !document.getElementById('library-list')?.dataset.rowsUrl)
+  const last = page.locator('[data-library-item]').last()
+  const title = (await last.locator('.row-title').innerText()).trim()
+  await page.locator('#search-input').fill(title)
+  await page.locator('#search-results [role="option"]').first().waitFor()
+  assert.ok((await page.locator('#search-results').innerText()).includes(title), 'search must find entries outside the first batch')
+  await page.goto(`${targetUrl}?q=no-such-resonote-episode`, { waitUntil: 'networkidle' })
+  await page.locator('#library-empty').waitFor({ state: 'visible' })
+  assert.equal(await page.locator('[data-library-item]:visible').count(), 0, 'deep-link filtering must await the full archive')
+}
+
 async function main() {
   const builtSite = configuredTargetUrl ? undefined : await startStaticServer(DIST_DIR, process.env.RESONOTE_BASE || '/')
   targetUrl = configuredTargetUrl || builtSite!.url
@@ -114,6 +142,13 @@ async function main() {
   try {
     const desktop = await browser.newPage({ viewport: { width: 1440, height: 1000 } })
     await auditDesktop(desktop)
+    const deferred = await browser.newPage()
+    await auditDeferredArchive(deferred)
+    await deferred.close()
+    const noScript = await browser.newPage({ javaScriptEnabled: false })
+    await noScript.goto(new URL('library/', targetUrl).href, { waitUntil: 'domcontentloaded' })
+    assert.equal(await noScript.locator('[data-library-item]:visible').count(), Number(await desktop.locator('#library-list').getAttribute('data-total-count')), 'the full archive must remain accessible without JavaScript')
+    await noScript.close()
 
     const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true })
     await mobile.goto(targetUrl, { waitUntil: 'domcontentloaded' })

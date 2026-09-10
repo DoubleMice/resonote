@@ -1,8 +1,7 @@
 ---
 theme: academic
 colorSchema: light
-addons:
-  - slidev-addon-excalidraw
+diagramMode: static
 title: 51. 闲聊8月：AI 和机器人改变世界，这钱你出？ - 马克汤｜财搭子AI
 coverDate: ""
 class: text-center
@@ -145,12 +144,7 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./capital-demand.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="capital-demand" role="group" aria-label="资本扩张必须穿透到链外需求"><div class="rn-note-steps"><div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>融资与担保</strong><p>支撑建设投入</p></div></div><div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>数据中心</strong><p>形成基础设施</p></div></div><div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>算力供给</strong><p>转为可用服务</p></div></div><div class="rn-note-card"><span class="rn-note-index">04</span><div><strong>链外真实用户付费</strong><p>检验扩张是否有真实需求</p></div></div></div><p class="rn-note-caption">供给扩张能否穿透到真实需求？</p></div>
 </div>
 
 ---
@@ -206,12 +200,7 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./a100-ladder-cn.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="a100-ladder-cn" role="group" aria-label="A100 的价值，来自算力服务的分层"><div class="rn-note-tiers"><div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>顶级训练与高难推理</strong><p>追求性能与吞吐</p></div></div><div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>延迟敏感推理</strong><p>按服务速度分层定价</p></div></div><div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>成本敏感任务</strong><p>旧卡也可能继续被使用</p></div></div></div><p class="rn-note-caption">一代算力可以服务不同任务；仍需观察周期风险。</p></div>
 </div>
 
 ---
@@ -385,12 +374,7 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./robot-wedge.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="robot-wedge" role="group" aria-label="先把一个场景做透，再讨论泛化"><div class="rn-note-steps"><div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>特定任务先做稳定</strong><p>从一个具体使用场景开始</p></div></div><div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>效果可以被用户感知</strong><p>检验交付的实际价值</p></div></div><div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>再扩展到更多任务</strong><p>由相邻场景支撑能力泛化</p></div></div></div><p class="rn-note-caption">机器人从单点任务走向更多能力。</p></div>
 </div>
 
 ---
@@ -500,12 +484,19 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./task-routing.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="task-routing" role="group" aria-label="应用公司把任务路由给不同模型">
+
+```mermaid
+flowchart TB
+    task["任务与约束"] --> small["快速小模型"]
+    task --> large["顶级大模型"]
+    small --> cost["芯片、网络与电费成本"]
+    large --> cost
+    classDef choice fill:#edf3ef,stroke:#557461,color:#26322f
+    class small,large choice
+```
+
+<p class="rn-note-caption">应用公司关心的是任务效果与总拥有成本。</p></div>
 </div>
 
 ---
@@ -615,12 +606,7 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./model-iteration.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="model-iteration" role="group" aria-label="嘉宾把模型优化拆成三部分"><div class="rn-note-cards"><div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>架构优化</strong><p>改变模型如何计算</p></div></div><div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>数据优化</strong><p>决定模型看见和学到什么</p></div></div><div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>蒸馏优化</strong><p>把能力迁移到更轻的模型</p></div></div></div><p class="rn-note-caption">模型迭代的三个方向；蒸馏是其中一类方法。</p></div>
 </div>
 
 ---
@@ -730,12 +716,7 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./office-stages.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="office-stages" role="group" aria-label="办公 AI 的下一步，会触及组织方式"><div class="rn-note-steps"><div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>辅助 · 人完成工作</strong><p>当前主要阶段</p></div></div><div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>替代 · 部分流程</strong><p>重新界定审核与结果责任</p></div></div><div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>数字员工 · 承担角色</strong><p>购买决策涉及组织和预算</p></div></div></div><p class="rn-note-caption">这是阶段推演，不代表后两阶段已经普遍实现。</p></div>
 </div>
 
 ---
@@ -849,12 +830,19 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./rates-scenarios.excalidraw"
-  class="w-[480px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="rates-scenarios" role="group" aria-label="两种 AI 结局，指向一场利率推演">
+
+```mermaid
+flowchart TB
+    success["AI 高度成功<br/>生产力与通缩压力"] --> rates["嘉宾推演<br/>长端利率可能下行"]
+    bubble["AI 泡沫破裂<br/>资金转向国债"] --> rates
+    classDef good fill:#edf3ef,stroke:#557461,color:#26322f
+    classDef risk fill:#faeee8,stroke:#aa5143,color:#26322f
+    class success good
+    class bubble risk
+```
+
+<p class="rn-note-caption">财政与通胀压力，是访谈所说的短期反向力量。</p></div>
 </div>
 
 ---

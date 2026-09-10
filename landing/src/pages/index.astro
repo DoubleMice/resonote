@@ -8,7 +8,7 @@ import DiscoveryTabs from '../components/DiscoveryTabs.astro'
 import LibraryFilters from '../components/LibraryFilters.astro'
 import {
   loadEpisodes, loadSourcesWithFallbacks, collectTags,
-  sortEpisodesByPublishedDesc, sortEpisodesForLibrary,
+  sortEpisodesByPublishedDesc, sortEpisodesForLibrary, libraryRevision,
 } from '../lib/data'
 import { url } from '../lib/url'
 
@@ -92,8 +92,9 @@ const sourcesWithCount = sources
     </div>
 
     <LibraryFilters />
-    <div class="home-library-list" id="library-list">
-      {libraryEpisodes.map((episode, index) => <EpisodeRow episode={episode} initialHidden={index >= 36} />)}
+    <noscript><p>这里展示最近整理的 36 集；<a href={url('/library/')}>前往内容库查看全部节目</a>。</p></noscript>
+    <div class="home-library-list" id="library-list" data-total-count={libraryEpisodes.length} data-rows-url={libraryEpisodes.length > 36 ? url(`/library-rows/${libraryRevision(libraryEpisodes)}/`) : undefined}>
+      {libraryEpisodes.slice(0, 36).map(episode => <EpisodeRow episode={episode} />)}
     </div>
   </section>
 

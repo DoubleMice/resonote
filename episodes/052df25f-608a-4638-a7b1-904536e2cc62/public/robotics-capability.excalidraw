@@ -54,13 +54,13 @@
     },
     {
       "id": "arrow-up",
-      "type": "arrow",
+      "type": "arrow", "points": [[0,0],[0,-20]],
       "x": 220, "y": 130, "width": 0, "height": -20,
       "strokeColor": "#a855f7", "strokeWidth": 3, "roughness": 1, "seed": 5, "version": 1
     },
     {
       "id": "arrow-up-2",
-      "type": "arrow",
+      "type": "arrow", "points": [[0,0],[0,-20]],
       "x": 220, "y": 220, "width": 0, "height": -20,
       "strokeColor": "#3b82f6", "strokeWidth": 3, "roughness": 1, "seed": 6, "version": 1
     },

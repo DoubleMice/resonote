@@ -45,7 +45,7 @@
     },
     {
       "id": "arrow-lr",
-      "type": "arrow",
+      "type": "arrow", "points": [[0,0],[65,0]],
       "x": 215, "y": 100, "width": 65, "height": 0,
       "strokeColor": "#a855f7", "strokeWidth": 2,
       "roughness": 1, "opacity": 100, "seed": 3, "version": 1

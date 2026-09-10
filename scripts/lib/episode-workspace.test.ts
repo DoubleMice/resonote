@@ -21,7 +21,8 @@ test('scaffolds only durable episode assets', () => {
   const { root, episodes, templates } = fixture()
   try {
     const directory = scaffoldEpisodeWorkspace(episodes, templates, 'episode-1')
-    assert.ok(existsSync(join(directory, 'public', 'asset.txt')))
+    assert.ok(existsSync(join(directory, 'public')))
+    assert.equal(existsSync(join(directory, 'public', 'asset.txt')), false)
     assert.equal(existsSync(join(directory, 'package.json')), false)
     assert.equal(existsSync(join(directory, 'style.css')), false)
     assert.equal(existsSync(join(directory, 'global-bottom.vue')), false)
@@ -88,6 +89,7 @@ test('isolates a malformed draft and restores its exact files for retry', () => 
   const { root, episodes, templates } = fixture()
   try {
     const directory = scaffoldEpisodeWorkspace(episodes, templates, 'failed-episode')
+    writeFileSync(join(directory, 'public/asset.txt'), 'asset\n')
     writeFileSync(join(directory, 'meta.yml'), 'title: [unfinished\n')
     writeFileSync(join(directory, 'article.html'), 'unfinished article')
     assert.equal(archiveFailedEpisode(episodes, 'failed-episode'), true)

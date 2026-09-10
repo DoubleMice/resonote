@@ -16,7 +16,7 @@ import {
   episodeBuildFingerprint, cachedPlayerDist,
 } from './lib/build-cache.ts'
 import { isolateNewEpisodeBuildFailure } from './lib/episode-publication.ts'
-import { pruneUnusedBoilerplate, shareEpisodeAssets } from './lib/shared-assets.ts'
+import { pruneUnusedBoilerplate, staticAssetStats } from './lib/shared-assets.ts'
 import type { EpisodeMeta } from './lib/types.ts'
 
 const ROOT = process.cwd()
@@ -181,7 +181,7 @@ function playerFingerprint(ids: string[], base: string): string {
   for (const id of ids) hash.update(id + '\0' + episodeBuildFingerprint({
     rootDir: ROOT, episodeDir: join(EPISODES_DIR, id), templatesDir: TEMPLATES_DIR, base,
   }))
-  for (const name of ['scripts/build-player.ts', 'scripts/lib/shared-player.ts', 'scripts/lib/build-cache.ts'])
+  for (const name of ['scripts/build-player.ts', 'scripts/lib/shared-player.ts', 'scripts/lib/static-diagrams.ts', 'scripts/lib/build-cache.ts'])
     hash.update(readFileSync(resolve(SCRIPT_DIR, '..', name)))
   return hash.digest('hex')
 }
@@ -402,10 +402,10 @@ async function main() {
     )
   }
 
-  const assets = shareEpisodeAssets(DIST_DIR, SITE_BASE)
-  const assetSummary = `Static files: ${assets.beforeFiles + prunedFiles} → ${assets.afterFiles}; `
-    + `${((assets.beforeBytes + prunedBytes) / 1024 ** 2).toFixed(1)} → ${(assets.afterBytes / 1024 ** 2).toFixed(1)} MiB `
-    + `(${assets.sharedFiles} shared assets; ${prunedFiles} unused boilerplate files removed)`
+  const assets = staticAssetStats(DIST_DIR)
+  const assetSummary = `Static files: ${assets.files + prunedFiles} → ${assets.files}; `
+    + `${((assets.bytes + prunedBytes) / 1024 ** 2).toFixed(1)} → ${(assets.bytes / 1024 ** 2).toFixed(1)} MiB `
+    + `(${prunedFiles} unused boilerplate files removed)`
   log.info(assetSummary)
   log.ok(`\nFinal dist assembled at ${DIST_DIR}`)
   log.info('serve locally with:  npx serve dist')

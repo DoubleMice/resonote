@@ -1,6 +1,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { Plugin } from 'vite'
+import { createStaticDiagramRenderer } from './static-diagrams.ts'
 import { withFullWidthTitles } from './slide-title-layout.ts'
 
 // The virtual-module adapter is intentionally tied to the pinned Slidev version.
@@ -19,6 +20,8 @@ export async function buildSharedPlayer(root: string, ids: string[], output: str
   const allSlides: typeof options.data.slides = []
   const episodes: { id: string; start: number; count: number; config: any; html: string; titles: string }[] = []
   const owners: string[] = []
+  const diagrams = createStaticDiagramRenderer()
+  try {
   for (const id of ids) {
     const directory = join(root, 'episodes', id)
     try {
@@ -26,13 +29,13 @@ export async function buildSharedPlayer(root: string, ids: string[], output: str
       const custom = readdirSync(directory).filter(name => /^(?:vite\.config\.|uno(?:css)?\.config\.|setup$|components$|layouts$)/.test(name))
       if (custom.length) throw new Error(`${id}: unsupported episode build extensions: ${custom.join(', ')}`)
       const entry = join(directory, 'slides.md')
-      const source = withFullWidthTitles(readFileSync(entry, 'utf8')).replace(/(drawFilePath=["'])\.\/public\/([^"']+)(["'])/g,
+      const source = (await diagrams.transform(withFullWidthTitles(readFileSync(entry, 'utf8')), entry)).replace(/(drawFilePath=["'])\.\/public\/([^"']+)(["'])/g,
         (match, before, name, after) => existsSync(join(directory, 'public', name)) ? `${before}./${name}${after}` : match)
       const loaded = await parser.load({ roots: options.roots, userRoot: directory, allowedRoots: [root, ...options.roots] }, entry,
         { [entry]: source }, 'build')
       const config = parser.resolveConfig(loaded.headmatter, options.data.themeMeta, entry)
-      if (config.theme !== 'academic' || JSON.stringify(config.addons) !== JSON.stringify(options.data.config.addons))
-        throw new Error(`${id}: shared player requires the site's academic theme and Excalidraw addon`)
+      if (config.theme !== 'academic' || config.addons?.length && JSON.stringify(config.addons) !== JSON.stringify(options.data.config.addons))
+        throw new Error(`${id}: shared player requires the site's academic theme; only the legacy Excalidraw addon is supported`)
       config.routerMode = 'hash'
       const utils = await createDataUtils({ ...options, entry, userRoot: directory, base: `${siteBase}episodes/${id}/`, data: { ...loaded, config, themeMeta: options.data.themeMeta } })
       const html = utils.indexHtml
@@ -63,6 +66,7 @@ export async function buildSharedPlayer(root: string, ids: string[], output: str
       throw new Error(`${directory}/slides.md: ${(error as Error).message}`, { cause: error })
     }
   }
+  } finally { await diagrams.close() }
   options.data.slides = allSlides
   options.data.headmatter.defaults = {}
   // Keep font utility rules shared while preserving each episode's font selection.

@@ -131,7 +131,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "AUSTRALIA"
     },
     {
-      "id": "arr-iran-china", "type": "arrow",
+      "id": "arr-iran-china", "type": "arrow", "points": [[0,0],[100,0]],
       "x": 190, "y": 120, "width": 100, "height": 0,
       "angle": 0, "strokeColor": "#e8590c", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "dashed",
@@ -175,7 +175,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "RUSSIA"
     },
     {
-      "id": "arr-strait", "type": "arrow",
+      "id": "arr-strait", "type": "arrow", "points": [[0,0],[0,28]],
       "x": 240, "y": 70, "width": 0, "height": 28,
       "angle": 0, "strokeColor": "#c92a2a", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",

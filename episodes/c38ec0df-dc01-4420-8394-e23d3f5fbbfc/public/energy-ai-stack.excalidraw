@@ -27,7 +27,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "Natural Gas\n$3/MBTU → Abundant"
     },
     {
-      "id": "arr1", "type": "arrow",
+      "id": "arr1", "type": "arrow", "points": [[0,0],[60,0]],
       "x": 330, "y": 90, "width": 60, "height": 0,
       "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
@@ -61,7 +61,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "Gas Turbines\nSold Out → Bottleneck"
     },
     {
-      "id": "arr2", "type": "arrow",
+      "id": "arr2", "type": "arrow", "points": [[0,0],[60,0]],
       "x": 550, "y": 90, "width": 60, "height": 0,
       "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
@@ -117,7 +117,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "Grid Connection\nBackup Only"
     },
     {
-      "id": "arr3", "type": "arrow",
+      "id": "arr3", "type": "arrow", "points": [[0,0],[60,0]],
       "x": 330, "y": 190, "width": 60, "height": 0,
       "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
@@ -129,7 +129,7 @@
       "startArrowhead": null, "endArrowhead": "arrow"
     },
     {
-      "id": "output-arrow", "type": "arrow",
+      "id": "output-arrow", "type": "arrow", "points": [[0,0],[0,60]],
       "x": 240, "y": 220, "width": 0, "height": 60,
       "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "solid",
@@ -169,7 +169,7 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 15, "version": 1, "versionNonce": 1,
       "isDeleted": false, "boundElements": null, "updated": 1, "link": null,
-      "locked": false, "text": "Co-Production\nOil drilling →\n"waste" NG",
+      "locked": false, "text": "Co-Production\nOil drilling →\n\"waste\" NG",
       "fontSize": 11, "fontFamily": 2, "textAlign": "center",
       "verticalAlign": "top", "containerId": null, "originalText": "Co-Production"
     }

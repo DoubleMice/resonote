@@ -1,0 +1,11 @@
+---
+import EpisodeRow from '../../components/EpisodeRow.astro'
+import { loadEpisodes, sortEpisodesForLibrary, libraryRevision } from '../../lib/data'
+export const partial = true
+export function getStaticPaths() {
+  const all = sortEpisodesForLibrary(loadEpisodes())
+  return [{ params: { revision: libraryRevision(all) }, props: { episodes: all.slice(36) } }]
+}
+const { episodes } = Astro.props
+---
+{episodes.map(episode => <EpisodeRow episode={episode} initialHidden />)}

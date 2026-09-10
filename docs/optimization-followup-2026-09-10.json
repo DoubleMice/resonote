@@ -1,0 +1,955 @@
+{
+  "date": "2026-09-10",
+  "home": {
+    "conditions": "8 alternating pairs; local gzip; 40ms/10Mbps; CPU 4x; external thumbnails blocked identically; readiness waits for directory count and two animation frames; fresh browser contexts",
+    "samples": {
+      "before": [
+        {
+          "readyMs": 510.19999999552965,
+          "fcp": 256,
+          "domContentLoaded": 453.8999999985099,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 498.6000000014901,
+          "fcp": 240,
+          "domContentLoaded": 438,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 489.19999999552965,
+          "fcp": 244,
+          "domContentLoaded": 431.69999999552965,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 540.5,
+          "fcp": 268,
+          "domContentLoaded": 479.8999999985099,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 498.8999999985099,
+          "fcp": 244,
+          "domContentLoaded": 437.6000000014901,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 483.19999999552965,
+          "fcp": 240,
+          "domContentLoaded": 427.19999999552965,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 490.1000000014901,
+          "fcp": 240,
+          "domContentLoaded": 434,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        },
+        {
+          "readyMs": 490.5,
+          "fcp": 244,
+          "domContentLoaded": 437.8999999985099,
+          "domElements": 8289,
+          "rows": 320,
+          "encodedHtmlBytes": 104687
+        }
+      ],
+      "after": [
+        {
+          "readyMs": 455.20000000298023,
+          "fcp": 268,
+          "domContentLoaded": 395.1000000014901,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 466.79999999701977,
+          "fcp": 380,
+          "domContentLoaded": 414.8999999985099,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 465.6000000014901,
+          "fcp": 248,
+          "domContentLoaded": 415.80000000447035,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 432.20000000298023,
+          "fcp": 248,
+          "domContentLoaded": 385.90000000596046,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 458.59999999403954,
+          "fcp": 264,
+          "domContentLoaded": 398.3999999985099,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 428.1000000014901,
+          "fcp": 244,
+          "domContentLoaded": 376,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 465.90000000596046,
+          "fcp": 236,
+          "domContentLoaded": 415.80000000447035,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        },
+        {
+          "readyMs": 433.20000000298023,
+          "fcp": 248,
+          "domContentLoaded": 380.80000000447035,
+          "domElements": 1439,
+          "rows": 36,
+          "encodedHtmlBytes": 23301
+        }
+      ]
+    },
+    "summary": {
+      "before": {
+        "readyMs": 494.55000000074506,
+        "fcp": 244.0,
+        "domContentLoaded": 437.75,
+        "domElements": 8289.0,
+        "rows": 320.0,
+        "encodedHtmlBytes": 104687.0,
+        "htmlBytes": 951618,
+        "htmlSha256": "2ee909614b13a575cfcfaa861d052969c54b5bc291dd729400ef7c0c5a7cafc2"
+      },
+      "after": {
+        "readyMs": 456.8999999985099,
+        "fcp": 248.0,
+        "domContentLoaded": 396.75,
+        "domElements": 1439.0,
+        "rows": 36.0,
+        "encodedHtmlBytes": 23301.0,
+        "htmlBytes": 157895,
+        "htmlSha256": "6f3e320a238ff0ab10f2276e4c108124a7d075ba34fd1d68bb567fa11ffc0463"
+      }
+    }
+  },
+  "svgExperiment": {
+    "id": "6242033d-a14a-44e3-a622-cbfc7d3c3817",
+    "runs": 6,
+    "sourceSha256": "d91842193406f3f88584a48182ae4da6a8d8dfb2365f9b6af431d679b55ed325",
+    "browser": "149.0.7827.55",
+    "conditions": "Real Excalidraw HTTPS requests; shared Google fonts replayed from HAR (their latency excluded); fresh contexts; local gzip HTTP; 40ms/10Mbps and 4x CPU via CDP. HAR routing disables browser HTTP cache. CDN/OS caches may be warm. Medians include successful trials only; failures are recorded separately.",
+    "diagrams": [
+      {
+        "file": "agent-journey.excalidraw",
+        "jsonBytes": 13111,
+        "svgBytes": 33975,
+        "svgGzipBytes": 13775
+      },
+      {
+        "file": "inbox-funnel.excalidraw",
+        "jsonBytes": 13684,
+        "svgBytes": 28105,
+        "svgGzipBytes": 12150
+      },
+      {
+        "file": "swarm-review.excalidraw",
+        "jsonBytes": 16050,
+        "svgBytes": 32531,
+        "svgGzipBytes": 13381
+      },
+      {
+        "file": "local-cloud.excalidraw",
+        "jsonBytes": 14090,
+        "svgBytes": 31877,
+        "svgGzipBytes": 14748
+      },
+      {
+        "file": "broadband.excalidraw",
+        "jsonBytes": 10785,
+        "svgBytes": 20189,
+        "svgGzipBytes": 7303
+      },
+      {
+        "file": "agentic-loop.excalidraw",
+        "jsonBytes": 11583,
+        "svgBytes": 24817,
+        "svgGzipBytes": 9920
+      },
+      {
+        "file": "invest-map.excalidraw",
+        "jsonBytes": 16692,
+        "svgBytes": 43261,
+        "svgGzipBytes": 16084
+      }
+    ],
+    "slidesChecked": 38,
+    "screenshotDifferences": [
+      8,
+      14,
+      17,
+      21,
+      23,
+      25,
+      27
+    ],
+    "summary": {
+      "runtime": {
+        "firstMs": 529.5,
+        "diagramMs": 10031.5,
+        "sameOriginGzipBytes": 263602,
+        "externalRequests": 16
+      },
+      "svg": {
+        "firstMs": 611.3999999985099,
+        "diagramMs": 98.05000000074506,
+        "sameOriginGzipBytes": 353992,
+        "externalRequests": 2
+      }
+    },
+    "samples": {
+      "runtime": [
+        {
+          "firstMs": 532.6000000014901,
+          "diagramMs": 13348.40000000596,
+          "sameOriginGzipBytes": 263602,
+          "externalRequests": 16,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&exports=exportToSvg",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/es2022/excalidraw.bundle.mjs?exports=exportToSvg",
+            "https://esm.sh/node/process.mjs",
+            "https://esm.sh/node/buffer.mjs",
+            "https://esm.sh/react@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@%5E19.2.0/jsx-runtime?target=es2022",
+            "https://esm.sh/react-dom@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@19.3.0/es2022/react.mjs",
+            "https://esm.sh/react-dom@19.3.0/es2022/react-dom.mjs",
+            "https://esm.sh/react@19.3.0/es2022/jsx-runtime.mjs",
+            "https://esm.sh/node/events.mjs",
+            "https://esm.sh/node/tty.mjs",
+            "https://esm.sh/node/async_hooks.mjs",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/fonts/Virgil/Virgil-Regular.woff2"
+          ]
+        },
+        {
+          "firstMs": 516.2000000029802,
+          "diagramMs": 10031.5,
+          "sameOriginGzipBytes": 263602,
+          "externalRequests": 16,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&exports=exportToSvg",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/es2022/excalidraw.bundle.mjs?exports=exportToSvg",
+            "https://esm.sh/node/process.mjs",
+            "https://esm.sh/node/buffer.mjs",
+            "https://esm.sh/react@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@%5E19.2.0/jsx-runtime?target=es2022",
+            "https://esm.sh/react-dom@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@19.3.0/es2022/react.mjs",
+            "https://esm.sh/react@19.3.0/es2022/jsx-runtime.mjs",
+            "https://esm.sh/react-dom@19.3.0/es2022/react-dom.mjs",
+            "https://esm.sh/node/events.mjs",
+            "https://esm.sh/node/tty.mjs",
+            "https://esm.sh/node/async_hooks.mjs",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/fonts/Virgil/Virgil-Regular.woff2"
+          ]
+        },
+        {
+          "firstMs": 529.5,
+          "diagramMs": 11066,
+          "sameOriginGzipBytes": 263602,
+          "externalRequests": 16,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&exports=exportToSvg",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/es2022/excalidraw.bundle.mjs?exports=exportToSvg",
+            "https://esm.sh/node/process.mjs",
+            "https://esm.sh/node/buffer.mjs",
+            "https://esm.sh/react@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@%5E19.2.0/jsx-runtime?target=es2022",
+            "https://esm.sh/react-dom@%5E19.2.0?target=es2022",
+            "https://esm.sh/node/events.mjs",
+            "https://esm.sh/node/tty.mjs",
+            "https://esm.sh/react@19.3.0/es2022/jsx-runtime.mjs",
+            "https://esm.sh/react@19.3.0/es2022/react.mjs",
+            "https://esm.sh/react-dom@19.3.0/es2022/react-dom.mjs",
+            "https://esm.sh/node/async_hooks.mjs",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/fonts/Virgil/Virgil-Regular.woff2"
+          ]
+        },
+        {
+          "firstMs": 533,
+          "diagramMs": 10025.5,
+          "sameOriginGzipBytes": 263602,
+          "externalRequests": 16,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&exports=exportToSvg",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/es2022/excalidraw.bundle.mjs?exports=exportToSvg",
+            "https://esm.sh/node/process.mjs",
+            "https://esm.sh/node/buffer.mjs",
+            "https://esm.sh/react@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@%5E19.2.0/jsx-runtime?target=es2022",
+            "https://esm.sh/react-dom@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@19.3.0/es2022/jsx-runtime.mjs",
+            "https://esm.sh/react@19.3.0/es2022/react.mjs",
+            "https://esm.sh/react-dom@19.3.0/es2022/react-dom.mjs",
+            "https://esm.sh/node/events.mjs",
+            "https://esm.sh/node/tty.mjs",
+            "https://esm.sh/node/async_hooks.mjs",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/fonts/Virgil/Virgil-Regular.woff2"
+          ]
+        },
+        {
+          "firstMs": 522.0999999940395,
+          "diagramMs": 9582.10000000149,
+          "sameOriginGzipBytes": 263602,
+          "externalRequests": 16,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0?bundle&exports=exportToSvg",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/es2022/excalidraw.bundle.mjs?exports=exportToSvg",
+            "https://esm.sh/node/process.mjs",
+            "https://esm.sh/node/buffer.mjs",
+            "https://esm.sh/react@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@%5E19.2.0/jsx-runtime?target=es2022",
+            "https://esm.sh/react-dom@%5E19.2.0?target=es2022",
+            "https://esm.sh/react@19.3.0/es2022/react.mjs",
+            "https://esm.sh/react@19.3.0/es2022/jsx-runtime.mjs",
+            "https://esm.sh/node/events.mjs",
+            "https://esm.sh/node/tty.mjs",
+            "https://esm.sh/react-dom@19.3.0/es2022/react-dom.mjs",
+            "https://esm.sh/node/async_hooks.mjs",
+            "https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/prod/fonts/Virgil/Virgil-Regular.woff2"
+          ]
+        }
+      ],
+      "svg": [
+        {
+          "firstMs": 611.3999999985099,
+          "diagramMs": 98.10000000149012,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        },
+        {
+          "firstMs": 590,
+          "diagramMs": 106.69999999552965,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        },
+        {
+          "firstMs": 595.6000000014901,
+          "diagramMs": 97.10000000149012,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        },
+        {
+          "firstMs": 615.6999999955297,
+          "diagramMs": 98.70000000298023,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        },
+        {
+          "firstMs": 611.3999999985099,
+          "diagramMs": 97.89999999850988,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        },
+        {
+          "firstMs": 614.3999999985099,
+          "diagramMs": 98,
+          "sameOriginGzipBytes": 353992,
+          "externalRequests": 2,
+          "externalUrls": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto+Slab:wght@200;400;600&family=Roboto+Mono:wght@200;400;600&display=swap",
+            "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+          ]
+        }
+      ]
+    },
+    "failures": [
+      {
+        "run": 4,
+        "variant": "runtime",
+        "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.slidev-page[data-slidev-no=\"8\"] .slidev-layout').locator('svg').first() to be visible\u001b[22m\n"
+      }
+    ]
+  },
+  "renderedRepairedScenes": [
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/ai-cold-war-stack.excalidraw",
+      "svg": 27790,
+      "text": 11
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/ai-narratives.excalidraw",
+      "svg": 17018,
+      "text": 12
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/gpu-forward-curve.excalidraw",
+      "svg": 18410,
+      "text": 8
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/robotics-capability.excalidraw",
+      "svg": 25449,
+      "text": 11
+    },
+    {
+      "file": "episodes/5fd236d7-9a72-4b15-9e84-e83ceadd1b41/public/distil-explained.excalidraw",
+      "svg": 22627,
+      "text": 14
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/coke-can-order-of-magnitude.excalidraw",
+      "svg": 15995,
+      "text": 18
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/nasa-transformation.excalidraw",
+      "svg": 17634,
+      "text": 12
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/rocket-precision.excalidraw",
+      "svg": 9121,
+      "text": 7
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/spacex-three-acts.excalidraw",
+      "svg": 24447,
+      "text": 16
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/starlink-first-principles.excalidraw",
+      "svg": 10841,
+      "text": 7
+    },
+    {
+      "file": "episodes/a2296f82-8bc3-11f1-88ac-430f4be441ef/public/vault-supply-chain.excalidraw",
+      "svg": 20972,
+      "text": 16
+    },
+    {
+      "file": "episodes/a98864e0-6b8e-11f1-9816-531add510c23/public/belief-system.excalidraw",
+      "svg": 19287,
+      "text": 9
+    },
+    {
+      "file": "episodes/a98864e0-6b8e-11f1-9816-531add510c23/public/communication-gap.excalidraw",
+      "svg": 20280,
+      "text": 13
+    },
+    {
+      "file": "episodes/a98864e0-6b8e-11f1-9816-531add510c23/public/fable-timeline.excalidraw",
+      "svg": 25377,
+      "text": 14
+    },
+    {
+      "file": "episodes/a98864e0-6b8e-11f1-9816-531add510c23/public/what-is-real.excalidraw",
+      "svg": 25253,
+      "text": 16
+    },
+    {
+      "file": "episodes/abf0c8d0-7098-4c1c-b046-0fc1996b37d8/public/worlds-fair-timeline.excalidraw",
+      "svg": 16200,
+      "text": 23
+    },
+    {
+      "file": "episodes/bffb080a-7aab-457e-bd09-a436fd35174e/public/journalism-moat.excalidraw",
+      "svg": 36509,
+      "text": 11
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/agent-ecosystem.excalidraw",
+      "svg": 15181,
+      "text": 11
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/energy-ai-stack.excalidraw",
+      "svg": 19475,
+      "text": 12
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/energy-geopolitics.excalidraw",
+      "svg": 21209,
+      "text": 18
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/media-barbell.excalidraw",
+      "svg": 16295,
+      "text": 15
+    },
+    {
+      "file": "episodes/db2c3288-723c-11f1-b77e-fff4f8089c1f/public/tech-fear-cycle.excalidraw",
+      "svg": 23435,
+      "text": 14
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/confidential-ipo-timeline.excalidraw",
+      "svg": 20528,
+      "text": 9
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/helios-architecture.excalidraw",
+      "svg": 22131,
+      "text": 11
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/investment-flow.excalidraw",
+      "svg": 24098,
+      "text": 10
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/partiful-flywheel.excalidraw",
+      "svg": 27110,
+      "text": 10
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/systems-stitch.excalidraw",
+      "svg": 22261,
+      "text": 1
+    },
+    {
+      "file": "episodes/fe13fbd2-763d-11f1-8ec3-27a0eaebf3c5/public/access-vs-code.excalidraw",
+      "svg": 17050,
+      "text": 11
+    }
+  ],
+  "pointRepairs": [
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/gpu-forward-curve.excalidraw",
+      "arrows": 3
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/ai-cold-war-stack.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/ai-narratives.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/052df25f-608a-4638-a7b1-904536e2cc62/public/robotics-capability.excalidraw",
+      "arrows": 2
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/coke-can-order-of-magnitude.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/starlink-first-principles.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/spacex-three-acts.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/rocket-precision.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/6a2be5da43a22a695582ad20/public/nasa-transformation.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/media-barbell.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/energy-ai-stack.excalidraw",
+      "arrows": 4
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/agent-ecosystem.excalidraw",
+      "arrows": 2
+    },
+    {
+      "file": "episodes/c38ec0df-dc01-4420-8394-e23d3f5fbbfc/public/energy-geopolitics.excalidraw",
+      "arrows": 2
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/confidential-ipo-timeline.excalidraw",
+      "arrows": 1
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/helios-architecture.excalidraw",
+      "arrows": 2
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/investment-flow.excalidraw",
+      "arrows": 2
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/systems-stitch.excalidraw",
+      "arrows": 5
+    },
+    {
+      "file": "episodes/edc93462-0875-451f-a106-5cab3da94e8b/public/partiful-flywheel.excalidraw",
+      "arrows": 4
+    }
+  ],
+  "remainingDetachedLayouts": [
+    {
+      "id": "0111384e-4014-4e7a-ae34-d30a91b2f2b1",
+      "pages": [
+        9,
+        14,
+        18,
+        28,
+        39
+      ]
+    },
+    {
+      "id": "052df25f-608a-4638-a7b1-904536e2cc62",
+      "pages": [
+        5,
+        12,
+        22,
+        27
+      ]
+    },
+    {
+      "id": "16591e6b-9565-4ee8-8636-ae0dfd3794b2",
+      "pages": [
+        5,
+        10,
+        14,
+        19,
+        23,
+        28,
+        31,
+        39
+      ]
+    },
+    {
+      "id": "1df0bccc-bda8-446e-9376-74076e3e936a",
+      "pages": [
+        6,
+        27,
+        34
+      ]
+    },
+    {
+      "id": "268089a0-4f38-11f1-9a58-ff1b070f08af",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "id": "5ae0ff7e-4f35-4cd6-9195-e1ca36940542",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "id": "5fd236d7-9a72-4b15-9e84-e83ceadd1b41",
+      "pages": [
+        7,
+        11,
+        15,
+        18,
+        22,
+        30
+      ]
+    },
+    {
+      "id": "66a7e1f2-360c-440b-a889-65d1651720e1",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "id": "695f008dc1e012a7abf0be09",
+      "pages": [
+        47
+      ]
+    },
+    {
+      "id": "69d8bbdfe2c8be3155dcc2fe",
+      "pages": [
+        7,
+        10,
+        16,
+        19,
+        22,
+        32
+      ]
+    },
+    {
+      "id": "69eae15a1e94ae692107cc50",
+      "pages": [
+        4,
+        7,
+        15,
+        24,
+        37,
+        46
+      ]
+    },
+    {
+      "id": "6a5f79b3a3fec224d5a128cd",
+      "pages": [
+        6,
+        10,
+        27,
+        35
+      ]
+    },
+    {
+      "id": "7abda28b-99c6-4ebc-8c0d-37bcc77f6a73",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "8f62f27e-6f30-11f1-8a92-fbcae9c72ba7",
+      "pages": [
+        5,
+        8,
+        16,
+        20,
+        28
+      ]
+    },
+    {
+      "id": "94dbf581-80c8-4b90-aff2-fa649cd90edd",
+      "pages": [
+        9,
+        19,
+        25,
+        32,
+        36,
+        47
+      ]
+    },
+    {
+      "id": "95b52c22-5591-11f1-92f6-fb1f1333f4f9",
+      "pages": [
+        4,
+        6,
+        11,
+        17,
+        22,
+        29
+      ]
+    },
+    {
+      "id": "99f64648-4fd0-11f1-9e5e-dbb8b251b138",
+      "pages": [
+        4,
+        9,
+        14,
+        19,
+        27
+      ]
+    },
+    {
+      "id": "SNAKEOILERS23PT1",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "SNAKEOILERS23PT2",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "id": "SOAPBOX109",
+      "pages": [
+        6,
+        8,
+        11,
+        15,
+        27
+      ]
+    },
+    {
+      "id": "a2296f82-8bc3-11f1-88ac-430f4be441ef",
+      "pages": [
+        6,
+        10,
+        14,
+        22,
+        32
+      ]
+    },
+    {
+      "id": "a3db99dd-ae7e-4934-9902-73782ecf9053",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "id": "a98864e0-6b8e-11f1-9816-531add510c23",
+      "pages": [
+        6,
+        12,
+        16,
+        20,
+        23,
+        30,
+        33
+      ]
+    },
+    {
+      "id": "af528e6a-3f2c-47ab-a27e-9462002d0e24",
+      "pages": [
+        6,
+        11,
+        15,
+        17,
+        22,
+        25,
+        33
+      ]
+    },
+    {
+      "id": "b5100a0b-4106-414d-9b22-79cb137301dd",
+      "pages": [
+        4,
+        10,
+        13,
+        19,
+        23,
+        30
+      ]
+    },
+    {
+      "id": "c3607c08-6eb6-48bd-8250-b41b5b8272e6",
+      "pages": [
+        5,
+        8,
+        14,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "d46e86ac-704e-11f1-bfb5-e3961a99f48b",
+      "pages": [
+        4,
+        10,
+        15,
+        20,
+        26
+      ]
+    },
+    {
+      "id": "d65f1b49-9e97-4892-bc64-55f5f0b39906",
+      "pages": [
+        5,
+        9,
+        11,
+        16,
+        22,
+        25,
+        30,
+        38
+      ]
+    },
+    {
+      "id": "dd38eb8e-7714-11f1-aad5-cf7a7b8320ba",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "id": "e0f90034-4e3c-11f1-ade0-67e121e14947",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "id": "e9aa61b2-5a50-11f1-8538-87c4f29199be",
+      "pages": [
+        4,
+        7,
+        13,
+        19,
+        26
+      ]
+    },
+    {
+      "id": "f137f4f6-79b5-11f1-b5af-830bf6a3b379",
+      "pages": [
+        4,
+        9,
+        13,
+        17
+      ]
+    },
+    {
+      "id": "p-6457",
+      "pages": [
+        6,
+        10,
+        14,
+        21,
+        24,
+        27,
+        33,
+        39,
+        43,
+        47,
+        52
+      ]
+    }
+  ]
+}

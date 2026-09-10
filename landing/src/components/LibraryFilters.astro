@@ -215,6 +215,7 @@ import { CATEGORIES } from '../lib/data'
 </style>
 
 <script>
+  import { loadLibraryRows } from '../lib/library-loader'
   (() => {
     const init = () => {
     const list = document.getElementById('library-list')
@@ -233,9 +234,8 @@ import { CATEGORIES } from '../lib/data'
     // belongs after the result list.
     if (more.parentElement) list.after(more.parentElement)
 
-    const items = [...list.querySelectorAll('[data-library-item]')]
     const pageSize = 36
-    items.forEach(item => item.removeAttribute('data-initial-hidden'))
+    list.querySelectorAll('[data-library-item]').forEach(item => item.removeAttribute('data-initial-hidden'))
     let limit = pageSize
     let format = 'all'
     // Server output already uses this order. Sorting is independent of filters.
@@ -275,8 +275,22 @@ import { CATEGORIES } from '../lib/data'
       })
     }
 
-    const applyFilters = (resetLimit = false, updateUrl = true) => {
+    const applyFilters = async (resetLimit = false, updateUrl = true, loadAll = true) => {
       if (resetLimit) limit = pageSize
+      if (!loadAll && list.hasAttribute('aria-busy') && list.dataset.rowsUrl) return
+      if (loadAll && list.dataset.rowsUrl) {
+        count.textContent = '正在加载内容…'
+        try { await loadLibraryRows() }
+        catch {
+          count.textContent = '内容加载失败，请重试或刷新页面。'
+          more.classList.remove('hidden')
+          more.textContent = '重新加载内容'
+          return
+        }
+        // Read-state synchronization may have applied the current filters while loading.
+        // Always finish the explicit action, including its URL update.
+      }
+      const items = [...list.querySelectorAll<HTMLElement>('[data-library-item]')]
       if (appliedSort !== sortSelect.value) {
         const primarySortAttribute = sortSelect.value === 'published' ? 'data-published-sort' : 'data-generated-sort'
         items.sort((a, b) => {
@@ -309,10 +323,11 @@ import { CATEGORIES } from '../lib/data'
         const hidden = !visible.has(item)
         if (item.hidden !== hidden) item.hidden = hidden
       })
-      count.textContent = `${matches.length} 集内容`
+      const total = list.dataset.rowsUrl ? Number(list.dataset.totalCount) : matches.length
+      count.textContent = `${total} 集内容`
       empty.classList.toggle('hidden', matches.length > 0)
 
-      const remaining = Math.max(matches.length - limit, 0)
+      const remaining = Math.max(total - limit, 0)
       more.classList.toggle('hidden', remaining === 0)
       more.textContent = remaining ? `再显示 ${Math.min(pageSize, remaining)} 集 · 还剩 ${remaining} 集` : ''
       syncTabs()
@@ -349,14 +364,14 @@ import { CATEGORIES } from '../lib/data'
     }
     reset.addEventListener('click', resetAll)
     empty.querySelector('[data-library-reset]')?.addEventListener('click', resetAll)
-    document.addEventListener('resonote:read-state-change', () => applyFilters(false, false))
+    document.addEventListener('resonote:read-state-change', () => applyFilters(false, false, false))
     window.addEventListener('popstate', () => {
       readParams()
       applyFilters(true, false)
     })
 
     readParams()
-    applyFilters(true, false)
+    applyFilters(true, false, ['q', 'category', 'format', 'sort', 'unread'].some(key => new URLSearchParams(location.search).has(key)))
     }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true })

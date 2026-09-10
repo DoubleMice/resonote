@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { rmSync, writeFileSync } from 'node:fs'
+import { readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import test from 'node:test'
 import { validateEpisodeArtifacts } from './artifact-validator.ts'
@@ -10,6 +10,26 @@ test('accepts a strict generated artifact set', () => {
   const { root, id } = fixture()
   try {
     assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('validates referenced diagram JSON and scene structure even outside strict mode', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const diagram = join(directory, 'public/diagram-1.excalidraw')
+    for (const invalid of ['{"elements":[{"text":"unescaped "quote""}]}', 'null', '{}', '{"elements":{}}', '{"elements":[null]}', '{"elements":[],"appState":[]}', '{"elements":[{"type":"arrow"}]}', '{"elements":[{"type":"line","points":[[0,0],[1,null]]}]}']) {
+      writeFileSync(diagram, invalid)
+      const issues = validateEpisodeArtifacts({ rootDir: root, id })
+      assert.ok(issues.some(issue => issue.code === 'invalid-excalidraw-file' && issue.message.includes('diagram-1.excalidraw')), invalid)
+    }
+    writeFileSync(diagram, JSON.stringify({ elements: [{ type: 'text', text: 'quoted "text"' }], files: null }))
+    const slides = join(directory, 'slides.md')
+    writeFileSync(slides, readFileSync(slides, 'utf8').replace('./diagram-1.excalidraw', './public/diagram-1.excalidraw'))
+    assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id }), [])
+    rmSync(diagram)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id }).some(issue => issue.code === 'missing-excalidraw-file'))
   } finally {
     rmSync(root, { recursive: true, force: true })
   }
@@ -79,4 +99,32 @@ test('flags AI-flavored editorial narration and repeated framing', () => {
   } finally {
     rmSync(root, { recursive: true, force: true })
   }
+})
+
+test('rejects layout metadata parsed as a separate slide during generation', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const path = join(directory, 'slides.md')
+    writeFileSync(path, readFileSync(path, 'utf8').replace('---\nlayout: two-cols', '---\n\nlayout: two-cols'))
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(issue => issue.code === 'detached-slide-layout'))
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
+test('accepts labeled native diagrams and Mermaid without requiring Excalidraw', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const path = join(directory, 'slides.md')
+    const source = readFileSync(path, 'utf8').replace('addons: [slidev-addon-excalidraw]', 'diagramMode: static')
+    const native = '<div class="rn-note" data-note-diagram="steps" aria-label="两个阶段"><div class="rn-note-card">准备</div><div class="rn-note-card">完成</div></div>'
+    writeFileSync(path, source.replace(/<Excalidraw[^>]+\/>/g, native))
+    assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
+    writeFileSync(path, source.replace(/<Excalidraw[^>]+\/>/g, '```mermaid\nflowchart LR\nA-->B\n```'))
+    assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict: true }), [])
+    writeFileSync(path, source.replace(/<Excalidraw[^>]+\/>/g, '<div data-note-diagram="empty"></div>'))
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id, strict: true }).some(i => i.code === 'too-few-diagrams'))
+    writeFileSync(path, source)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id }).some(i => i.code === 'missing-excalidraw-addon'))
+  } finally { rmSync(root, { recursive: true, force: true }) }
 })

@@ -4,7 +4,7 @@
 
 ## 技术栈
 
-- **Slidev** `slidev-theme-academic` + `colorSchema: light` + `slidev-addon-excalidraw`
+- **Slidev** `slidev-theme-academic` + `colorSchema: light`；新笔记使用共享 HTML 图示与 `diagramMode: static`，旧 Excalidraw 保持兼容
 - **Landing**: Astro + Tailwind（env-driven base path）
 - **自动化**: `claude -p --model opus` 跑无人值守 subprocess；DeepSeek Anthropic-compatible 下系统规则拼进 user prompt，避免 `system` role 兼容问题
 - **转写**: 默认 MiMo `mimo-v2.5`；可用 `TRANSCRIPT_PROVIDER=dashscope` 回退 DashScope；受限音频走 `ffmpeg` 切片 + data URI
@@ -237,30 +237,24 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<Excalidraw
-  drawFilePath="./diagram.excalidraw"
-  class="w-[460px]"
-  :darkMode="false"
-  :background="false"
-/>
+<div class="rn-note" data-note-diagram="steps" role="group" aria-label="两个步骤">
+<div class="rn-note-steps">
+<div class="rn-note-card"><strong>准备</strong></div>
+<div class="rn-note-card"><strong>交付</strong></div>
+</div>
+</div>
 </div>
 ```
 
 **关键**：右侧必须用 `flex justify-center items-center h-full pl-4` 包装，否则图会贴边。
 
-### Excalidraw 手绘图 vs Mermaid 流程图
+### 图示选择
 
-| 场景 | 用什么 |
-|------|--------|
-| 概念示意、有机的形状、类比、hero image | **Excalidraw** |
-| 流程步骤、状态机、有向无环图 | **Mermaid**（但要注意 scale） |
-| 多于 5 个节点的步骤图 | **不要用 Mermaid TD**，改用卡片网格 |
-
-### Mermaid 的坑
-
-- `scale: 0.7` 对简短 LR 流程图 OK
-- TD 流程图 5+ 节点会超出 slide 底部被裁掉
-- 解决方案：把流程改写成 `grid grid-cols-2` 的彩色卡片（每步一张卡）+ 最后一步 `col-span-2` 作总结。这样更可控、更美观、不会被裁。
+- 卡片、对照、步骤、阶段和分层：使用 `rn-note` 共享样式，具体模式见系统规则 RULE 5。
+- 有分支、汇合等关系的图：用普通 Mermaid 代码围栏，设置 `diagramMode: static`。发布构建和 `audit:layout` 本地导出 SVG 并内嵌到该集内容模块，不发送绘图 CDN 请求。
+- 不使用 Mermaid 围栏参数、init 指令、外部图标或字体。缩小图不会解决中文可读性问题，复杂图应拆页。
+- `dev:episode` 保留 Slidev 原生 Mermaid 热更新预览；交付前必须运行静态管线的 `audit:layout --png --keep`。
+- 新笔记不创建 Excalidraw JSON。旧笔记有 `<Excalidraw>` 时仍需声明 `slidev-addon-excalidraw`。
 
 ### v-mark 的坑
 
@@ -345,8 +339,7 @@ pnpm exec slidev export episodes/<id>/slides.md --format png --output episodes/<
 ---
 theme: academic
 colorSchema: light
-addons:
-  - slidev-addon-excalidraw
+diagramMode: static
 title: '演示标题'
 info: |
   简短说明
@@ -424,8 +417,9 @@ drawings:
 
 ---
 
-## Excalidraw 手绘图提示
+## 旧 Excalidraw 图兼容
 
+- 以下仅适用于维护已有图，不用于新笔记生成。
 - 文件放在 `public/*.excalidraw`，引用用 `./name.excalidraw`
 - 手写 JSON 的话用 `fillStyle: "hachure"` + `roughness: 1.5` 才像手绘
 - 最简方案：去 https://excalidraw.com 画好后导出 `.excalidraw` 到 `public/`
@@ -493,7 +487,7 @@ Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在�
 - ❌ 没导出 PNG 验证就声称"做好了"
 - ❌ 写完 slides.md 就收工，不逐页审查
 - ❌ 10-15 页就算一个 episode（不够深度，对不起 2 小时的访谈）
-- ❌ 整个 deck 只有 0-1 张手绘图（视觉密度不够）
+- ❌ 整个 deck 只有 0-1 张图示（视觉密度不够）
 - ❌ 没有核心金句总结页（读者记不住东西）
 - ❌ episode 没有返回 landing 的入口（用户迷路）
 
@@ -504,7 +498,7 @@ Slidev 52.16.0 存在非根 `--base` 导航回归，会把 base 拼两次并在�
 ### 结构要求（硬指标）
 
 1. **长度**：至少 **18-24 页**。2+ 小时的访谈至少值得 20 页。
-2. **手绘图比例**：**至少 20%** 的页面用 Excalidraw（5 页里有 1 页）。一个 20 页 deck 至少 4 张手绘图。
+2. **图示比例**：**至少 20%** 的页面用共享 HTML 图示或静态 Mermaid。一个 20 页 deck 至少 4 张图示。
 3. **核心金句页**：倒数第二页必须是"核心金句"——4-6 条精选引言，每条配简短 context。
 4. **内容导航**：`build-all.ts` 在组装最终 HTML 时统一注入返回首页、上一篇和下一篇；不要在单集目录创建 `global-bottom.vue`。
 5. **开场**：前 2 页讲清楚"为什么这期特别"——不只是标题，要让读者 10 秒内理解要讲什么。

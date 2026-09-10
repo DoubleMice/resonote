@@ -11,7 +11,7 @@ You are generating a Slidev presentation deck for ONE podcast episode. **Write a
 - **Duration**: `{{DURATION}}`
 - **Thumbnail**: `{{THUMBNAIL}}`
 - **Transcript file**: `data/transcripts/{{ID}}.txt`
-- **Episode directory** (already scaffolded with reusable `public/` diagram templates; shared style and chrome are staged temporarily): `episodes/{{ID}}/`
+- **Episode directory** (already scaffolded; shared style and chrome are staged temporarily): `episodes/{{ID}}/`
 
 ## What to produce
 
@@ -36,11 +36,11 @@ Follow the structure in the system prompt (RULE 4):
 - Cover page (academic theme, text-center)
 - "Why this episode matters" overview page (4-6 topic cards)
 - Content pages covering the themes — at least 70% of the deck total per RULE 4 (e.g. ~20 for a 28-page deck; scale with transcript length)
-- At least **4 pages with Excalidraw diagrams** (`two-cols-header`: page title in the default slot, `::left::` before the left body, `::right::` before the diagram)
+- At least **4 pages with native HTML diagrams or static Mermaid** (`two-cols-header`: page title in the default slot, `::left::` before the left body, `::right::` before the diagram)
 - Core quotes page (`核心金句`) — 4-6 verified quotes with labels
 - End page (`layout: end`) with one closing quote
 
-Excalidraw diagrams: first check `episodes/{{ID}}/public/` for reusable templates that fit your themes. If you need a new diagram, write minimal JSON following the pattern in the existing templates.
+Use the shared `rn-note` HTML patterns from RULE 5 for cards, comparisons, tiers and steps. Use plain fenced `mermaid` for actual graph relationships. Set `diagramMode: static`; publication and layout audit render Mermaid locally before compilation. Do not create new Excalidraw JSON or manually embed generated SVG. Existing Excalidraw files are for legacy compatibility only.
 
 Visual theme: the orchestrator has temporarily staged the shared `style.css` in
 the episode directory. Do not edit or recreate it and do not add per-deck CSS.
@@ -52,7 +52,7 @@ Layout capacity rules:
 - Dense overview/card pages must use `mt-4`, `gap-3`, `p-3`, `text-sm`, and short 1-2 sentence cards.
 - Split any page with 7+ cards, 7+ quotes, paragraph text inside 4/5-column grids, or two independent `#` headings.
 - Keep core quotes to 4-6 quotes per page. Use a second quotes page when needed.
-- Keep two-cols text concise and Excalidraw width at `w-[460px]` or `w-[480px]`.
+- Keep two-cols text concise and diagrams inside an `rn-note` container (maximum width 440px).
 - Page titles must span both columns. Use `two-cols-header` for titled two-column pages; reserve `two-cols` for independently titled columns. Do not insert arbitrary `<br>` tags, shrink the title, or force `nowrap` to hide a narrow title container. Review long titles for natural phrase breaks and shorten them when necessary.
 
 Frontmatter:
@@ -60,8 +60,7 @@ Frontmatter:
 ---
 theme: academic
 colorSchema: light
-addons:
-  - slidev-addon-excalidraw
+diagramMode: static
 title: '{{TITLE}}'
 coverDate: ''
 class: text-center

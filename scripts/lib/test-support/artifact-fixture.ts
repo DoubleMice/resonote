@@ -48,7 +48,7 @@ export function artifactFixture(root = mkdtempSync(join(tmpdir(), 'resonote-arti
   for (let index = 1; index <= 20; index += 1) {
     if (index <= 4) {
       slides.push('---', 'layout: two-cols', '---', '', `# 图示 ${index}`, '', `<Excalidraw drawFilePath="./diagram-${index}.excalidraw" />`, '')
-      writeFileSync(join(directory, 'public', `diagram-${index}.excalidraw`), '{}\n')
+      writeFileSync(join(directory, 'public', `diagram-${index}.excalidraw`), '{"elements":[]}\n')
     } else {
       slides.push('---', '', `# 正文 ${index}`, '')
     }
@@ -70,4 +70,3 @@ export function artifactFixture(root = mkdtempSync(join(tmpdir(), 'resonote-arti
   ].join('\n'))
   return { root, id, directory }
 }
-

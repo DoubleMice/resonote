@@ -57,7 +57,7 @@
     },
     {
       "id": "concern-arrow",
-      "type": "arrow",
+      "type": "arrow", "points": [[0,0],[0,80]],
       "x": 420, "y": 140, "width": 0, "height": 80,
       "strokeColor": "#a855f7", "strokeWidth": 2, "strokeStyle": "dashed",
       "roughness": 1, "seed": 5, "version": 1

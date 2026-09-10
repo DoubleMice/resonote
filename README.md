@@ -143,6 +143,13 @@ Codex 入口需要 Responses API；例如 `CONTENT_BASE_URL=https://api.doublemi
 
 原单集拆包实验仍可运行 `pnpm exec tsx scripts/experiment-slide-bundling.ts`。全站共享播放器对比使用 `--shared-player`，读取 `logs/shared-player/before/` 的旧站快照与当前 `dist/`，结果写入 `logs/shared-player/experiment/<id>/`。测量方法、文件数与兼容性检查见 [共享播放器构建报告](docs/shared-player-2026-09-10.md)；前一阶段结果见 [单集打包实验](docs/slide-bundling-2026-09-10.md)。
 
+首页先输出 36 条目录，搜索、筛选或显示更多时再加载其余条目；独立内容库仍提供完整静态目录。图示校验现在覆盖 JSON、基本场景结构和线条端点。构建后的资源统计只读取文件，不再执行旧的跨集 URL 改写。
+
+新笔记默认使用 `diagramMode: static`：卡片、对照、步骤和分层复用 `rn-note` 样式，关系图保留普通 Mermaid 代码围栏。发布构建和 `audit:layout --png --keep` 会用本地 Chromium 导出 SVG，内嵌到每集内容模块，浏览器不需要绘图库。`dev:episode` 仍使用 Slidev 原生 Mermaid 热更新预览。旧 Excalidraw 笔记继续兼容，新工作区不再复制通用图文件。
+
+最新一集已迁移，接入过程与试验数据见[视觉笔记记录](docs/visual-notes-pilot-2026-09-10.md)。旧 Excalidraw 直接导出 SVG 的路线仍只是历史实验；首页优化、图示修复和已知分页问题见[后续优化记录](docs/optimization-followup-2026-09-10.md)。
+
+
 RSS 默认同时请求 3 个来源，单次请求最多等待 30 秒。资源受限时可降低并发：
 
 ```bash

@@ -67,7 +67,7 @@
       "verticalAlign": "middle", "containerId": null, "originalText": "Application Layer"
     },
     {
-      "id": "vline1", "type": "line",
+      "id": "vline1", "type": "line", "points": [[0,0],[0,30]],
       "x": 240, "y": 70, "width": 0, "height": 30,
       "angle": 0, "strokeColor": "#495057", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "dashed",
@@ -76,7 +76,7 @@
       "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false
     },
     {
-      "id": "vline2", "type": "line",
+      "id": "vline2", "type": "line", "points": [[0,0],[0,30]],
       "x": 240, "y": 150, "width": 0, "height": 30,
       "angle": 0, "strokeColor": "#495057", "backgroundColor": "transparent",
       "fillStyle": "hachure", "strokeWidth": 2, "strokeStyle": "dashed",
