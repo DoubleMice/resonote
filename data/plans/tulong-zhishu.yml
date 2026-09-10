@@ -1,11 +1,11 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-10T03:04:15.198Z
+refreshed_at: 2026-09-10T18:11:50.873Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 19
-done: 0
+done: 5
 pending: 1
-needs_transcript: 18
+needs_transcript: 13
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a1ed39db30e1571ae9f85ee?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a1ed39db30e1571ae9f85ee/media.xyzcdn.net/6507bc165c88d2412626b401/lhlLbk88QXGKF7YAt0wHK4I7oeu9.m4a
     image: https://image.xyzcdn.net/ngxpFf12xTik9W8v3aiYVwn8iBC9.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 3e3ea2e7-4499-4108-9c19-2ac690e14d7d_6d4846bfc3ec4cc8b1dacc5b499a423f,15d41660-094f-4457-8865-cb4217a78dab_9a8e9ae6857a4dc3b12c5163ec63b51a,b00d61e7-ce37-4f64-977a-ea0e7c158811_e102542b6c8d4f94a7ed01defb67b379,7f30a96c-fcf8-42f0-bf0f-5db34f978689_c369bb8643dc454e9aa9c83bb1bcb3c8
@@ -36,8 +36,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a1aa43cac7bdb080c332624?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a1aa43cac7bdb080c332624/media.xyzcdn.net/6507bc165c88d2412626b401/liYhmRfMTZBuMfNmh0JivPkq2noG.m4a
     image: https://image.xyzcdn.net/Ftkry_rgYDTGmY8ExxBcBp6tbIs9.jpeg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-10T18:15:26.659Z
+    transcript_job_id: 14b178a7-799e-450b-a6b0-c00e0d3898a2_224ca10dbd9f410385c9bafdd3d1a4aa,c2492d8e-6e4f-4021-bf29-2579613285f4_339886ef1c0f430a82b81201d75f3d4a,a6ffedaf-4b83-49d9-a3e7-4832b94bc33d_ac29902cb3b3465080f9d41ba357da57,0f87f0df-199d-49c8-a4db-74f2077a0966_1886d8e7069645278b1f2058c5b82f59
+    transcript_completed_at: 2026-09-10T18:18:33.300Z
   - id: 6a169508c6d2b9e2f8808c13
     guid: 6a169508c6d2b9e2f8808c13
     title: AI行业的收钱、花钱与赚钱---串台赛博对话
@@ -48,8 +52,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a169508c6d2b9e2f8808c13?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6a169508c6d2b9e2f8808c13/media.xyzcdn.net/6507bc165c88d2412626b401/lrR-h60uwqWiaRfkgjLq855i2cvF.m4a
     image: https://image.xyzcdn.net/Fk_BiT4hYPlINHDfoeMFktbDgYU1.jpg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-10T18:23:02.084Z
+    transcript_job_id: 5a2c79c8-e81a-491b-a690-8af004ed281c_0b8dd86d6e2c409998bd571f9e2a7f56,8e305f37-fa78-408b-8bb8-6b4a41be3896_4e72113eb036473e9008d8e8e0dfae0f,d13d4edb-b288-4ef4-83e1-5ce6db2cc757_0cd3e2bc81854148bbe17d8b4c54f838,523be845-555e-4522-b787-7ee1200be393_d24c4b098587487c8900a59e5396232e
+    transcript_completed_at: 2026-09-10T18:25:55.934Z
   - id: 69fd6ce61b7bd50295b5a3ad
     guid: 69fd6ce61b7bd50295b5a3ad
     title: 没有中间地带：大国AI博弈、效率碾压和白领的“恩格斯暂停”---串台大内
@@ -60,8 +68,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69fd6ce61b7bd50295b5a3ad?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69fd6ce61b7bd50295b5a3ad/media.xyzcdn.net/6507bc165c88d2412626b401/ll8o2rJ650yPTnLDCe_6JI-r31EA.m4a
     image: https://image.xyzcdn.net/noC5XPibZPdXRzwEdKTexIIZqDeI.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-10T18:28:35.866Z
+    transcript_job_id: mimo:69fd6ce61b7bd50295b5a3ad:0:2026-09-10T18:28:35.866Z,deed8742-aa4c-4eae-8cb0-c483619409cb_e470fe2439f948bb80aada40ff28292a,714743fc-5b59-4b0f-aea1-653160429d86_772142bfcd96438e88532fb1ff7e7541,2dabe744-1cd9-4fb6-a493-b3f151ac6fc3_35f46062c1fe4decbc55a7d5250f90f9,560ec31c-8375-4a07-a745-8c37d75e79c8_ff2d49dde7e54c8cb11c3ca637cd748f,2852c29a-8942-4509-bc93-dd17cd1a392f_f6e566215be3469b82a1de16c09e2bf6,b6f8dff7-8fa8-4211-93d6-17bad756e22b_5635fb79b9cf4d409b25b1b761a1cfe1,1692906b-967f-426b-8fa4-99d76ca55a06_a3618842bfde46c385cd3504d056f3d3
+    transcript_completed_at: 2026-09-10T18:33:34.243Z
   - id: 69f2c01ffbed7ba94126a402
     guid: 69f2c01ffbed7ba94126a402
     title: 语言、coding、多模态，到底谁坐AI的主桌？---狂喜98页PPT-solo
@@ -72,8 +84,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69f2c01ffbed7ba94126a402?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69f2c01ffbed7ba94126a402/media.xyzcdn.net/6507bc165c88d2412626b401/lnX58yRsG0Y5QCSEpkFQqfUzvaFY.m4a
     image: https://image.xyzcdn.net/FlEi0Sobt64LEdqoHXdZlEB2qEn4.jpg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-10T18:36:31.856Z
+    transcript_job_id: 178efa35-98c6-4115-be92-066e3636da81_db774a01f8cd4a59a75b0a21dfde3de5,2e547f9d-4ca7-4283-8c4b-e94ce1da3426_2140e30dfeef4314b43c3a4cc01afff3,66179746-0803-4c06-a7b7-10214e23ff0c_28fe9b1cfbea43248434a1b86f8c7b7e,804eb665-c9f2-4cfc-8661-72c16bbaafbb_9b223d1dd32342c38c4b7c18500d63ed,12cd7426-396b-474f-a3bd-3639670f8ef3_b011887ca44f44c1a904834b79f5a3d6,151f8ce0-aec2-4d5c-b8bd-45e2c2d354c5_b867ac6d65484aefb9c5e38ca05fc1e5
+    transcript_completed_at: 2026-09-10T18:39:41.303Z
   - id: 69e9b86a1e94ae6921f519d1
     guid: 69e9b86a1e94ae6921f519d1
     title: Agent\TPU\生态\安全\开放，Google Cloud到底在bet什么？-Google Cloud Next速记
@@ -84,8 +100,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69e9b86a1e94ae6921f519d1?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69e9b86a1e94ae6921f519d1/media.xyzcdn.net/6507bc165c88d2412626b401/lrvDMZkfyCGCm6A3gLiv2su9Oq8O.m4a
     image: https://image.xyzcdn.net/Fv6DAUCUV-no-R8hfxyCQbXThDBN.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-10T18:43:11.881Z
+    transcript_job_id: 7b78c1a4-a346-4789-967f-1010d18dd4bf_a9abbd85d3814b888948059c5f9c4dbf,6db51890-556e-4cc4-8185-b6b1026d737b_7282c6fb0f4748aaba37aaa9a906df90,aaa4580a-b8a6-4546-ba4a-7ce4bf29d124_9587e8dcd14842e9b2d433590313b45f
+    transcript_completed_at: 2026-09-10T18:44:34.870Z
   - id: 69e224c91d989496e7db5b12
     guid: 69e224c91d989496e7db5b12
     title: Vol.95 视频模型内卷、Agent爆发与大厂的焦虑---串台进击波财经

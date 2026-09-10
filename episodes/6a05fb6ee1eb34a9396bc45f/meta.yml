@@ -1,0 +1,29 @@
+title: 32. OpenAI联手私募基金做驻场外包？- 串台 | 人民公园说AI
+guest: Raymond
+guest_role: 苔藓之火主理人
+tags:
+  - ai-products
+  - strategic
+  - quick-take
+  - panel
+summary: >
+  Raymond 与人民公园说 AI 的主持人讨论 OpenAI、Anthropic
+  被报道的企业合作设想：私募基金把被投企业连接给模型公司，驻场工程师再把模型服务带入具体流程。节目认可这种安排可能降低企业获客与交付成本，也从驻场经验出发讨论了管理授权、数据边界、人员能力和多模型协作带来的现实阻力。
+core_ideas:
+  - PE 的控制权和企业组合，可能让模型公司更容易进入传统企业；这仍不能替代现场团队对改造目标的认同。
+  - 节目将模型使用费与驻场服务费视为合作的两类潜在收入，并讨论了 OpenAI 一侧的保底安排。
+  - 驻场工程师需要处理生产环境中的模型失误、理解业务上下文，并协调部门之间的权限和信任。
+  - 一位主持人的项目经历显示，数据与架构边界的协商可持续三四个月，而具体开发约一两个月。
+  - 讨论双方认可 AI 工具会继续进步，但对企业 To B 改造能否在一年内跨过组织与数据障碍存在分歧。
+id: 6a05fb6ee1eb34a9396bc45f
+source: taixian-zhihuo
+source_title: 32. OpenAI联手私募基金做驻场外包？- 串台 | 人民公园说AI
+published: 2026-05
+published_sort: "20260514"
+duration: 35m
+url: https://www.xiaoyuzhoufm.com/episode/6a05fb6ee1eb34a9396bc45f?utm_source=rss
+status: generated
+article_path: episodes/6a05fb6ee1eb34a9396bc45f/article.html
+base: /episodes/6a05fb6ee1eb34a9396bc45f/
+thumbnail: https://image.xyzcdn.net/no5pm3NtCKMgGbzSKbezjvf36Bgv.png
+generated_at: 2026-09-10T19:25:44.464Z
