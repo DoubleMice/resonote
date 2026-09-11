@@ -21,7 +21,7 @@ test('shared player isolates content, local numbering and config under a deploym
       writeFileSync(join(root, 'episodes', id, 'slides.md'), `---
 theme: academic
 ${id === 'static' ? 'diagramMode: static' : 'addons: [slidev-addon-excalidraw]'}
-title: "${id} & title"
+title: "${id} --- & title"
 aspectRatio: ${ratio}
 transition: none
 fonts:
@@ -64,8 +64,9 @@ ${diagram}
         const first = page.locator('.slidev-page[data-slidev-no="1"] .slidev-layout')
         await first.waitFor({ state: 'visible' })
         assert.match(await first.innerText(), new RegExp(`Cover ${id}[\\s\\S]*Local 1 / 2`))
+        assert.doesNotMatch(await first.innerText(), /aspectRatio:|transition:|provider:/)
         assert.ok((await first.getAttribute('class'))?.includes('cover'), 'each episode starts with its own cover')
-        assert.equal(await page.title(), `${id} & title - Slidev`)
+        assert.equal(await page.title(), `${id} --- & title - Slidev`)
         const box = await first.boundingBox()
         assert.ok(box && Math.abs(box.width / box.height - (id === 'one' ? 4 / 3 : 16 / 9)) < 0.01)
         await page.keyboard.press('ArrowRight')

@@ -66,11 +66,11 @@ layout: two-cols-header
 
 <div class="space-y-3 text-sm leading-relaxed">
 
-<div class="p-3 rounded bg-blue-50 border-l-4 border-blue-500">方士心把专注力、自控力和内驱力连在一起：孩子对一件事感兴趣，往往更愿意持续投入，不必总靠外部监督。</div>
+<h3>把识字与拼音放进玩耍</h3>
 
-<div class="p-3 rounded bg-green-50 border-l-4 border-green-500">她举识字和拼音为例：家长可以把材料改造成孩子喜欢的故事、游戏或由孩子当裁判的情境，让学习进入玩耍。</div>
+<p>方士心举例：把识字和拼音材料改造成孩子喜欢的故事、游戏，或让孩子当裁判。学习任务还在，但参与的理由从“被催促”变成“想投入”。</p>
 
-<div class="p-3 rounded bg-orange-50 border-l-4 border-orange-500">这不等于替孩子清除一切困难。学校有自己的进度和要求；家长要判断的是，迎合要求是否已经耗掉了学习兴趣。</div>
+<p class="mt-5 text-sm"><strong>边界：</strong>学校仍有进度和要求，家长也不必替孩子清除一切困难。需要判断的是，迎合要求是否已经耗掉学习兴趣。</p>
 
 </div>
 
@@ -171,9 +171,9 @@ layout: two-cols-header
 <div class="flex justify-center items-center h-full pl-4">
 <div class="rn-note" data-note-diagram="gaokao-conditions" role="group" aria-label="方士心概括的高考三项条件">
 <div class="rn-note-cards">
-<div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>大规模</strong><p>参与者多，影响范围广。</p></div></div>
-<div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>标准化</strong><p>以统一规则提供可比较的结果。</p></div></div>
-<div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>高利害</strong><p>一次考试关系到重要机会与成本。</p></div></div>
+<div class="rn-note-card"><div><strong>大规模</strong><p>参与者多，影响范围广。</p></div></div>
+<div class="rn-note-card"><div><strong>标准化</strong><p>以统一规则提供可比较的结果。</p></div></div>
+<div class="rn-note-card"><div><strong>高利害</strong><p>一次考试关系到重要机会与成本。</p></div></div>
 </div>
 <p class="rn-note-caption">方士心认为，这三项条件叠加，使高考成为格外难以替换的选拔机制。</p>
 </div>

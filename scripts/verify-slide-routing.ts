@@ -87,6 +87,10 @@ function representativeEpisodes(episodes: BuiltEpisode[]): BuiltEpisode[] {
     a.published.localeCompare(b.published) || a.id.localeCompare(b.id),
   )
   const representatives = [sorted[0], sorted.at(-1)!]
+  for (const episode of episodes) {
+    const source = readFileSync(join(EPISODES_DIR, episode.id, 'slides.md'), 'utf8')
+    if (/^title:.*---/m.test(source)) representatives.length < 5 && representatives.push(episode)
+  }
   return representatives.filter((episode, index) =>
     representatives.findIndex(candidate => candidate.id === episode.id) === index,
   )
@@ -144,6 +148,8 @@ async function main() {
       await page.waitForURL(url => url.hash === '#/1')
       await page.locator('.slidev-page[data-slidev-no="1"] .slidev-layout').waitFor({ state: 'visible' })
 
+      assert.doesNotMatch(await page.locator('.slidev-page[data-slidev-no="1"] .slidev-layout').innerText(),
+        /coverDate:|transition:|colorSchema:|persist: false/, 'frontmatter must not leak into the rendered cover')
       const nav = page.locator('[data-resonote-nav]')
       assert.equal(await nav.count(), 1, 'deck must contain exactly one canonical navigation')
       assert.equal(await page.locator('a.resonote-back').count(), 0, 'legacy scaled home link must be absent')
@@ -183,6 +189,31 @@ async function main() {
       await page.goto(`${episodeUrl}#/overview`)
       await page.locator('.slidev-layout').first().waitFor({ state: 'visible' })
       assert.deepEqual([...requestedContent], [`${siteBase}player/${manifest.episodes[episode.id].file}`], 'only the selected episode content may load, including overview/presenter')
+      await page.setViewportSize({ width: 375, height: 812 })
+      await page.goto(`${episodeUrl}#/2`)
+      const mobileSlide = page.locator('.slidev-page[data-slidev-no="2"] .slidev-layout')
+      await mobileSlide.waitFor({ state: 'visible' })
+      const geometry = await mobileSlide.evaluate(el => {
+        const box = el.getBoundingClientRect()
+        const navBox = document.querySelector('[data-resonote-nav]')!.getBoundingClientRect()
+        return { width: box.width, top: box.top, navBottom: navBox.bottom,
+          fontSize: parseFloat(getComputedStyle(el).fontSize), scrollWidth: document.documentElement.scrollWidth }
+      })
+      assert.ok(geometry.width <= 375 && geometry.fontSize >= 16, 'phone notes must render at readable size')
+      assert.ok(geometry.top >= geometry.navBottom, 'phone navigation must not cover the note')
+      assert.ok(geometry.scrollWidth <= 375, 'phone viewport must not scroll horizontally')
+      const nextSlide = page.getByTitle('Go to next slide', { exact: true })
+      const controlBox = await nextSlide.boundingBox()
+      assert.ok(controlBox && controlBox.width >= 44 && controlBox.height >= 44 && controlBox.y + controlBox.height <= 812,
+        'phone paging must stay visible with a touch-sized target')
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
+      await nextSlide.click()
+      await page.waitForURL(url => url.hash.startsWith('#/3'))
+      await page.waitForFunction(() => window.scrollY === 0)
+      const article = nav.locator('.rn-deck-article')
+      if (await article.count()) {
+        assert.equal((await page.request.get(new URL((await article.getAttribute('href'))!, page.url()).href)).status(), 200)
+      }
       assert.deepEqual(runtimeErrors, [])
       console.log(`slide routing verified: ${episodePath}#/2 (${episode.published})`)
       await page.close()

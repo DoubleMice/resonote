@@ -202,3 +202,9 @@ tags.yml                 标签词表
 ## 技术栈
 
 项目使用 [Slidev](https://sli.dev)、[Astro](https://astro.build/)、[Codex](https://developers.openai.com/codex/) 和 [Claude Code](https://claude.com/claude-code)。
+
+### 视觉笔记阅读
+
+手机宽度下，当前页按原字号纵向排列，底部保留翻页和总览；顶部可进入同集文章。桌面仍使用演示布局。手机翻页后回到页首，横向比较表可在表内滚动。
+
+Slidev 52.18.0 的 frontmatter 解析器会把标题中的 `---` 误判为结束标记。仓库通过 `patches/@slidev__parser@52.18.0.patch` 将结束标记限定为独立一行；升级 Slidev 时应复核该补丁及真实构建测试。发布路由检查同时验证封面没有配置字段、手机导航不遮挡内容、触控翻页可用。

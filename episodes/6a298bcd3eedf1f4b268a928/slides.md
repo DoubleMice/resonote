@@ -135,67 +135,34 @@ layout: default
 
 # 分部估值能解释底盘，解释不了全部溢价
 
-<div class="grid grid-cols-3 gap-3 mt-4 text-sm leading-relaxed">
+<table class="mt-5 text-sm">
+<thead><tr><th>业务</th><th>节目转述的估值依据</th><th>判断的边界</th></tr></thead>
+<tbody>
+<tr><td><strong>星链</strong></td><td>约 <strong>6000 亿美元</strong>；市销率 30 多倍</td><td>Verizon 等传统电信公司约 7—8 倍；比较的是收入倍数，溢价仍需增长兑现。</td></tr>
+<tr><td><strong>xAI</strong></td><td>约 <strong>2500 亿美元</strong>；沿用并入时的估值</td><td>嘉宾认为这是一种方便但偏负面的估法。</td></tr>
+<tr><td><strong>发射与远期项目</strong></td><td>星舰、天基计算等难以按当期收入定价</td><td>Raymond 认为，市场也在为马斯克把项目做成的可能性付费。</td></tr>
+</tbody>
+</table>
 
-<div class="p-3 rounded bg-green-50 border-l-4 border-green-500">
-<strong>星链：增长溢价</strong><br>
-节目转述 Adam Jonas 的框架：星链约值 6000 亿美元；其市销率为 30 多倍，而 Verizon 等传统电信公司约为 7—8 倍。比较的是收入倍数，不是业务规模。
-</div>
-
-<div class="p-3 rounded bg-purple-50 border-l-4 border-purple-500">
-<strong>xAI：沿用并购锚点</strong><br>
-该框架把 xAI 记为约 2500 亿美元，理由是此前并入时使用过这个估值。嘉宾认为这是一种方便但偏负面的估法。
-</div>
-
-<div class="p-3 rounded bg-orange-50 border-l-4 border-orange-500">
-<strong>发射与远期期权</strong><br>
-星舰、天基计算和编程工具等远期项目难以按当期收入定价。Raymond 认为，市场还在为马斯克把项目做成的可能性付费。
-</div>
-
-</div>
-
-<div class="mt-4 p-3 rounded bg-yellow-50 border-l-4 border-yellow-500 text-sm leading-relaxed">
-传统做法会把业务分部相加后打折；节目观察到，当前市场反而可能给这组业务溢价。这个判断取决于未来增长能否兑现，并非估值已经得到验证。
-</div>
+<p class="mt-5 text-sm">传统分部估值相加后可能打折；节目观察到的市场定价反而包含溢价。未来增长能否兑现，决定了这部分判断能否成立。</p>
+<p class="text-xs opacity-70">来源：节目转述 Adam Jonas 的框架及 Raymond 的解读；金额、倍数均未经本笔记独立核验。</p>
 
 ---
-layout: two-cols-header
+layout: default
 ---
 
-# 天基数据中心是一组相互依赖的前提
+# 天基计算，需要四项工程条件同时成立
 
-::left::
+<p class="text-sm">节目从美国数据中心的电力约束谈起，设想利用轨道太阳能。以下条件都仍待工程验证，不能把方案当成已实现的结果。</p>
 
-<div class="text-sm leading-relaxed space-y-3">
-
-<p>节目认为，美国建设数据中心的突出约束是电力。设想中的太空方案依靠轨道上的太阳能，并试图减轻散热和地面供电压力。</p>
-
-<div class="p-3 rounded bg-blue-50 border-l-4 border-blue-500">
-<strong>运力是前置条件</strong><br>
-嘉宾转述的预期是：若星舰成功并实现复用，发射成本或可从约 1500—2000 美元/公斤降至约 200 美元/公斤。这个下降说的是单位运力成本。
+<div class="rn-note rn-note-wide mt-5" data-note-diagram="orbital-data-center-conditions" role="group" aria-label="天基计算需要同时满足的四项工程条件">
+<div class="rn-note-cards">
+<div class="rn-note-card"><strong>可靠且可复用的星舰</strong><p>先具备大规模运送设备的能力。</p></div>
+<div class="rn-note-card"><strong>足够低的单位运力成本</strong><p>嘉宾预期约 1500—2000 美元/公斤降至约 200 美元/公斤，前提是星舰成功并实现复用。</p></div>
+<div class="rn-note-card"><strong>持续供电与散热</strong><p>设备在轨道上需要稳定运行。</p></div>
+<div class="rn-note-card"><strong>有效回传算力结果</strong><p>太空计算仍需服务地球上的使用场景。</p></div>
 </div>
-
-<div class="p-3 rounded bg-red-50 border-l-4 border-red-500">
-星舰能否大规模商用、设备能否稳定供电散热、算力能否高效回传地球，节目都没有把它们当作已解决的问题。
-</div>
-
-</div>
-
-::right::
-
-<div class="flex justify-center items-center h-full pl-4">
-<div class="rn-note" data-note-diagram="orbital-data-center-conditions" role="group" aria-label="天基数据中心需要同时满足的条件">
-
-```mermaid
-flowchart TB
-  goal[天基计算设想] --> lift[星舰可靠且可复用]
-  goal --> cost[单位运力成本显著下降]
-  goal --> energy[供电与散热可持续]
-  goal --> link[算力结果能有效回传]
-```
-
-<p class="rn-note-caption">节目将这些看作需要同时成立的工程条件，而不是已经实现的结果。</p>
-</div>
+<p class="rn-note-caption">四项是共同前提，不代表先后步骤；其中任何一项未成立，都影响整体可行性。</p>
 </div>
 
 ---

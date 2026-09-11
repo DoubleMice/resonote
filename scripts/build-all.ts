@@ -351,6 +351,7 @@ async function main() {
             readFileSync(deckIndex, 'utf-8'),
             deckNav.get(ep.id) || { prev: null, next: null },
             SITE_BASE,
+            ep.articlePath ? `./${basename(ep.articlePath)}` : undefined,
           ),
           SITE_FAVICON,
         ),

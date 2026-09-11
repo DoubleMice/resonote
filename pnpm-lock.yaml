@@ -7,6 +7,11 @@ settings:
 overrides:
   '@slidev/cli': 52.18.0
 
+patchedDependencies:
+  '@slidev/parser@52.18.0':
+    hash: zln7xagahahdtwpo33vilzexqa
+    path: patches/@slidev__parser@52.18.0.patch
+
 importers:
 
   .:
@@ -16,7 +21,7 @@ importers:
         version: 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@types/markdown-it@14.1.2)(@types/node@22.19.17)(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(lightningcss@1.32.0)(magicast@0.5.2)(markdown-it@14.2.0)(playwright-chromium@1.61.0)(postcss@8.5.21)(rolldown@1.1.5)(rollup@4.60.1)(tsx@4.21.0)
       '@slidev/parser':
         specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
+        version: 52.18.0(patch_hash=zln7xagahahdtwpo33vilzexqa)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
       slidev-addon-excalidraw:
         specifier: ^1.1.1
         version: 1.1.1
@@ -6533,7 +6538,7 @@ snapshots:
       '@shikijs/twoslash': 4.3.1(typescript@6.0.3)
       '@shikijs/vitepress-twoslash': 4.3.1(@nuxt/kit@3.21.2(magicast@0.5.2))(typescript@6.0.3)
       '@slidev/client': 52.18.0(@modelcontextprotocol/sdk@1.29.0(zod@3.25.76))(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(lightningcss@1.32.0)(magicast@0.5.2)(rolldown@1.1.5)(rollup@4.60.1)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
-      '@slidev/parser': 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
+      '@slidev/parser': 52.18.0(patch_hash=zln7xagahahdtwpo33vilzexqa)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
       '@slidev/types': 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
       '@unocss/extractor-mdc': 66.7.5
       '@unocss/reset': 66.7.5
@@ -6650,7 +6655,7 @@ snapshots:
       '@shikijs/magic-move': 4.3.1(shiki@4.3.1)(vue@3.5.40(typescript@6.0.3))
       '@shikijs/monaco': 4.3.1
       '@shikijs/vitepress-twoslash': 4.3.1(@nuxt/kit@3.21.2(magicast@0.5.2))(typescript@6.0.3)
-      '@slidev/parser': 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
+      '@slidev/parser': 52.18.0(patch_hash=zln7xagahahdtwpo33vilzexqa)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
       '@slidev/rough-notation': 0.1.0
       '@slidev/types': 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))
       '@typescript/ata': 0.9.8(typescript@6.0.3)
@@ -6712,7 +6717,7 @@ snapshots:
       - vite
       - webpack
 
-  '@slidev/parser@52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))':
+  '@slidev/parser@52.18.0(patch_hash=zln7xagahahdtwpo33vilzexqa)(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))':
     dependencies:
       '@antfu/utils': 9.3.0
       '@slidev/types': 52.18.0(@nuxt/kit@3.21.2(magicast@0.5.2))(@vue/compiler-sfc@3.5.40)(esbuild@0.23.1)(rolldown@1.1.5)(rollup@4.60.1)(typescript@6.0.3)(vite@8.1.5(@types/node@22.19.17)(esbuild@0.23.1)(jiti@2.7.0)(tsx@4.21.0)(yaml@2.8.3))

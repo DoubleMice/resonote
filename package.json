@@ -48,6 +48,9 @@
   "pnpm": {
     "overrides": {
       "@slidev/cli": "52.18.0"
+    },
+    "patchedDependencies": {
+      "@slidev/parser@52.18.0": "patches/@slidev__parser@52.18.0.patch"
     }
   }
 }

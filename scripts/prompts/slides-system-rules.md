@@ -153,7 +153,7 @@ A visual must make a relationship easier to understand. If the diagram repeats t
 
 Use `layout: default` for a diagram-led page when adjacent prose adds no value. Use `two-cols-header` only when the two columns provide complementary information: full-width title, `::left::` body, `::right::` diagram. Reserve `two-cols` for independently titled columns. Do not force all diagrams into two columns.
 
-Use shared HTML for cards, comparisons, tiers and steps; use Mermaid when edges carry meaning. Reuse existing classes. Do not add per-episode components, CSS or JSON drawing files.
+Use shared HTML for cards, comparisons, tiers and steps; use Mermaid when edges carry meaning. Reuse existing classes. Use `rn-note rn-note-wide` on a diagram-led default-layout page when a sidebar would make labels too small. A comparison table should separate amounts, multiples and qualifications into named columns. Do not add per-episode components, CSS or JSON drawing files.
 
 Native diagrams need a Chinese accessible label, a meaningful `data-note-diagram` name and at least two `rn-note-card` items. Use `rn-note-cards` for parallel concepts, `rn-note-steps` for ordered steps/stages, `rn-note-tiers` for service layers, or `rn-note-compare` for two sides. Maximum four items, short labels and one short explanatory line per item. Arrows in steps imply order; parallel cards must not imply a sequence.
 

@@ -72,6 +72,8 @@ const deckChromeCss = `
 .rn-deck-btn:hover { color: #355f58; background: rgba(255, 253, 248, 0.98); border-color: rgba(53, 95, 88, 0.36); }
 .rn-deck-btn:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.28); outline-offset: 2px; }
 @media (max-width: 700px) {
+  .rn-deck-nav { top: max(8px, env(safe-area-inset-top)); left: 8px; right: 8px; padding: 4px; background: #fbf8f1; border-radius: 12px; }
+  .rn-deck-btn { min-height: 44px; min-width: 44px; justify-content: center; box-sizing: border-box; font-size: 14px; }
   .rn-deck-label { display: none; }
   .rn-deck-btn { padding: 5px 8px; }
 }
@@ -80,12 +82,13 @@ const deckChromeCss = `
 const chevronLeft = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5" /></svg>'
 const chevronRight = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5" /></svg>'
 
-export function injectDeckChrome(html: string, nav: DeckNav, homeHref = '../../'): string {
+export function injectDeckChrome(html: string, nav: DeckNav, homeHref = '../../', articleHref?: string): string {
   if (!/<\/body>/i.test(html)) return html
 
   const buttons: string[] = [
     `<a class="rn-deck-btn rn-deck-home" href="${escapeHtml(homeHref)}" aria-label="返回声笺 Resonote 首页">${chevronLeft}<span class="rn-deck-wordmark">声笺</span></a>`,
   ]
+  if (articleHref) buttons.push(`<a class="rn-deck-btn rn-deck-article" href="${escapeHtml(articleHref)}">阅读文章</a>`)
   if (nav.prev) {
     const title = escapeHtml(nav.prev.title)
     buttons.push(
@@ -104,5 +107,11 @@ export function injectDeckChrome(html: string, nav: DeckNav, homeHref = '../../'
   ]
   parts.push(`<nav class="rn-deck-nav" data-resonote-nav aria-label="内容导航">${buttons.join('')}</nav>`)
 
+  parts.push(`<script>
+window.addEventListener('hashchange', () => {
+  if (matchMedia('(max-width: 700px)').matches && /^#\\/\\d+(?:$|[?\\/])/.test(location.hash))
+    requestAnimationFrame(() => window.scrollTo(0, 0));
+});
+</script>`)
   return html.replace(/<\/body>/i, `${parts.join('\n')}\n</body>`)
 }

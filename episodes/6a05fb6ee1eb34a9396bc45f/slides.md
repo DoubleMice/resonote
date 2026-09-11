@@ -72,13 +72,13 @@ layout: two-cols-header
 ::right::
 
 <div class="flex justify-center items-center h-full pl-4">
-<div class="rn-note" data-note-diagram="pe-deployment-path" role="group" aria-label="节目转述的私募基金驻场 AI 合作路径">
-<div class="rn-note-steps">
-<div class="rn-note-card"><span class="rn-note-index">01</span><div><strong>PE 的被投企业</strong><p>提供可触达的企业组合。</p></div></div>
-<div class="rn-note-card"><span class="rn-note-index">02</span><div><strong>合资平台</strong><p>组织模型服务与驻场人员。</p></div></div>
-<div class="rn-note-card"><span class="rn-note-index">03</span><div><strong>现场改造流程</strong><p>在企业内部推进具体应用。</p></div></div>
+<div class="rn-note" data-note-diagram="pe-deployment-path" role="group" aria-label="节目转述的私募基金驻场 AI 合作分工">
+<div class="rn-note-cards">
+<div class="rn-note-card"><div><strong>PE 的被投企业</strong><p>提供可触达的企业组合。</p></div></div>
+<div class="rn-note-card"><div><strong>合资平台</strong><p>组织模型服务与驻场人员。</p></div></div>
+<div class="rn-note-card"><div><strong>驻场工程师</strong><p>在企业内部推进具体应用。</p></div></div>
 </div>
-<p class="rn-note-caption">图中是 Raymond 对节目所涉合作模式的转述。</p>
+<p class="rn-note-caption">这是 Raymond 转述的合作分工：平台组织服务与人员，在被投企业内推进改造；卡片不表示先后步骤。</p>
 </div>
 </div>
 

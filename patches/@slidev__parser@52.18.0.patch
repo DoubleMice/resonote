@@ -1,0 +1,13 @@
+diff --git a/dist/core.mjs b/dist/core.mjs
+index 3f91f217bb6e946d11ea225c159f2641f36e3410..ad1368592b4b3fe7a2ebe4e7d1b173410fdc4869 100644
+--- a/dist/core.mjs
++++ b/dist/core.mjs
+@@ -195,7 +195,7 @@ function resolveDrawings(options = {}, filepath) {
+ }
+ //#endregion
+ //#region src/core.ts
+-const RE_FRONTMATTER = /^---.*\r?\n([\s\S]*?)---/;
++const RE_FRONTMATTER = /^---.*\r?\n([\s\S]*?)(?<=\n)---[ \t]*(?=\r?\n|$)/;
+ const RE_YAML_CODEBLOCK = /^\s*```ya?ml([\s\S]*?)```/;
+ const RE_DOLLAR_INLINE = /\$.*?\$/;
+ const RE_DOLLAR_BLOCK = /\$\$/;

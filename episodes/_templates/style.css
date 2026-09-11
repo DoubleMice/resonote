@@ -310,3 +310,59 @@
 
 .rn-note-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .rn-note-compare .rn-note-card { align-items: flex-start; flex-direction: column; }
+
+/* Read the current note at native phone size while retaining Slidev paging.
+   Presenter/overview have their own canvases and are intentionally excluded. */
+@media (max-width: 700px) {
+  html:has(#page-root #slideshow), body:has(#page-root #slideshow) {
+    overflow: auto !important; background: var(--resonote-paper);
+  }
+  #app:has(#page-root #slideshow), #page-root:has(#slideshow) {
+    overflow: visible !important; height: auto !important; min-height: 100dvh;
+  }
+  #page-root:has(#slideshow) { display: block; }
+  #page-root #slide-container { height: auto !important; overflow: visible !important; background: var(--resonote-paper) !important; }
+  #page-root #slide-content {
+    position: relative !important; top: auto !important; left: auto !important;
+    width: 100% !important; height: auto !important; transform: none !important;
+    overflow: visible !important; padding: 72px 0 76px;
+  }
+  #page-root #slideshow > .slidev-page { position: relative !important; width: 100% !important; height: auto !important; user-select: text !important; }
+  #page-root #slideshow .slidev-layout {
+    height: auto !important; min-height: calc(100dvh - 148px); padding: 24px 20px;
+    overflow: visible; font-size: 17px; text-align: left;
+  }
+  #page-root #slideshow .slidev-layout.two-cols-header,
+  #page-root #slideshow .slidev-layout.two-cols { display: flex; flex-direction: column; gap: 24px; }
+  #page-root #slideshow .slidev-layout h1 { font-size: 28px; line-height: 1.3; letter-spacing: -.02em; }
+  #page-root #slideshow .slidev-layout h2 { font-size: 22px; line-height: 1.4; }
+  #page-root #slideshow .slidev-layout h3 { font-size: 19px; }
+  #page-root #slideshow .slidev-layout .text-sm { font-size: 16px; }
+  #page-root #slideshow .slidev-layout .text-xs { font-size: 14px; }
+  #page-root #slideshow .slidev-layout .grid { grid-template-columns: minmax(0, 1fr) !important; }
+  #page-root #slideshow .slidev-layout .h-full { height: auto; }
+  #page-root #slideshow .slidev-layout .col-right > div { padding-left: 0; }
+  #page-root #slideshow .slidev-layout img, #page-root #slideshow .slidev-layout svg { max-width: 100%; }
+  #page-root #slideshow .rn-note { max-width: none; }
+  #page-root #slideshow .rn-note-compare { grid-template-columns: minmax(0, 1fr); }
+  #page-root #slideshow .rn-note img[data-static-diagram] { max-height: none; }
+  #page-root #slideshow .slidev-layout table { display: block; overflow-x: auto; font-size: 16px; }
+  #page-root #slideshow .slidev-layout th { font-size: 14px; }
+}
+
+/* A diagram-led explanation uses the page width instead of a narrow sidebar. */
+.rn-note-wide { max-width: none; }
+.rn-note-wide .rn-note-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rn-note-wide .rn-note-card { align-items: flex-start; flex-direction: column; gap: 4px; }
+@media (max-width: 700px) {
+  #page-root #slideshow .rn-note-wide .rn-note-cards { grid-template-columns: minmax(0, 1fr); }
+  #page-root #slide-container > div:has(> nav) {
+    position: fixed !important; inset: auto 0 0 !important; z-index: 1001;
+    opacity: 1 !important; padding: 4px 8px max(4px, env(safe-area-inset-bottom));
+    background: var(--resonote-paper); border-top: 1px solid var(--resonote-line);
+    --slidev-controls-foreground: var(--resonote-ink);
+  }
+  #page-root #slide-container > div > nav .slidev-icon-btn { min-width: 44px; min-height: 44px; }
+  #page-root #slide-container > div > nav .slidev-icon-btn:not([title="Go to previous slide"]):not([title="Go to next slide"]):not([title="Show slide overview"]):not([title="Enter fullscreen"]):not([title="Close fullscreen"]),
+  #page-root #slide-container > div > nav > div > :not(.slidev-icon-btn):not(.px2) { display: none; }
+}
