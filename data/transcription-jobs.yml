@@ -25906,3 +25906,88 @@ jobs:
     submitted_at: 2026-09-11T01:18:09.736Z
     updated_at: 2026-09-11T01:19:23.660Z
     completed_at: 2026-09-11T01:19:23.660Z
+  - key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z:chunk:0
+    parent_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    attempt_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z
+    provider: mimo
+    id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
+    source: flirting-with-models
+    title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"
+    audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    task_id: 130c5252-addf-4b3a-a626-05079af9bb34_f83984860a1d47cdae563e76854cbb4b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:23:25.519Z
+    updated_at: 2026-09-11T01:24:02.658Z
+    completed_at: 2026-09-11T01:24:02.658Z
+  - key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z:chunk:1
+    parent_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    attempt_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z
+    provider: mimo
+    id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
+    source: flirting-with-models
+    title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"
+    audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    task_id: e627f376-e866-41b2-ae13-498320431677_0e7121d006214cdf920f8b845f4f2398
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:23:25.519Z
+    updated_at: 2026-09-11T01:24:25.047Z
+    completed_at: 2026-09-11T01:24:25.047Z
+  - key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z:chunk:2
+    parent_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    attempt_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z
+    provider: mimo
+    id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
+    source: flirting-with-models
+    title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"
+    audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    task_id: 5935d73b-402b-4259-8179-76bdf4406978_bb5ea1fdec4b4786a0a9cd915174da4f
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:23:25.519Z
+    updated_at: 2026-09-11T01:24:45.478Z
+    completed_at: 2026-09-11T01:24:45.478Z
+  - key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z:chunk:3
+    parent_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    attempt_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z
+    provider: mimo
+    id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
+    source: flirting-with-models
+    title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"
+    audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    task_id: 7164f7a9-6db1-4690-9211-237bcec18f16_17a1f8ad446d44f5a5f1ed92afb5196d
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:23:25.519Z
+    updated_at: 2026-09-11T01:25:04.909Z
+    completed_at: 2026-09-11T01:25:04.909Z
+  - key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z:chunk:4
+    parent_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    attempt_key: flirting-with-models:e6f25431-c85a-4181-8fd8-a099eb4da7f7:20260629:https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3:mimo:2026-09-11T01:23:25.519Z
+    provider: mimo
+    id: e6f25431-c85a-4181-8fd8-a099eb4da7f7
+    source: flirting-with-models
+    title: "Peter Hecht – Portable Alpha: Solving the Funding Problem of Alternatives (S7E31)"
+    audio_url: https://episodes.captivate.fm/episode/e6f25431-c85a-4181-8fd8-a099eb4da7f7.mp3
+    task_id: a44b30a9-51e8-4a01-8891-3335889f269c_059891a9da254fe19aef9c460f5e069a
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:23:25.519Z
+    updated_at: 2026-09-11T01:25:16.707Z
+    completed_at: 2026-09-11T01:25:16.707Z
