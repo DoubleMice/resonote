@@ -1,12 +1,108 @@
 source: unchained
-refreshed_at: 2026-09-10T18:11:50.817Z
+refreshed_at: 2026-09-11T01:18:08.695Z
 min_duration: 3300
-min_date: "20260820"
-total_candidates: 0
+min_date: "20260821"
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    guid: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    duration: 4917
+    published: Thu, 10 Sep 2026 22:29:00 -0000
+    published_sort: "20260910"
+    first_seen_at: 2026-09-11T01:18:08.694Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    image: https://megaphone.imgix.net/podcasts/2844ab58-ad67-11f1-8aa0-9b69f5f7f790/image/c64b1905bc697061da2da3e4ec4d7620.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Alex Thorn and Jon join Kain and Taylor to unpack a Bitcoin hack, two new frontier models, and why nobody trusts
+      their AI chats anymore.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠
+
+
+      ========================================================
+
+
+      A Bitcoin sidechain lost $300 million to a consensus bug this week, and the hackers who returned 85% of it are
+      trying to extort a "bug bounty" out of Blockstream for the rest.
+
+
+      Alex Thorn, Head of Firmwide Research at Galaxy, and Jon, Head of Strategy at Venice and co-founder of ShapeShift,
+      join Kain Warwick and Taylor Monahan to unpack how AI models are now finding exploits faster than the humans who
+      wrote the code, and to push back on the idea that returning stolen funds makes anyone a white hat.
+
+
+      They also dig into Astra and Fable 5.1, two frontier models that landed days after a mathematician working inside
+      OpenAI's Codex clashed publicly with OpenAI over who actually solved a Millennium Prize-adjacent proof.&nbsp;
+
+
+      Jon and Alex explain why the "don't train on my data" toggle may not mean much, and why identity is becoming the
+      real privacy battleground.
+
+
+      The conversation closes on whether an Anthropic researcher quitting this week is a warning the industry is
+      choosing to ignore.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guests:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Alex Thorn - Head of Firmwide Research at Galaxy
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jon - Head of Strategy at Venice and Co-founder of ShapeShift
+
+      Timestamps
+
+
+      🔓 01:15 How a consensus bug let hackers mint $300M in fake Bitcoin
+
+
+      📜 7:50 Why the Liquid hackers are no white hats
+
+
+      🤖 17:16 Did an AI agent find the Liquid exploit?
+
+
+      ⚖️ 28:10 Taylor on why there’s no excuse for the hackers’ actions
+
+
+      💧 32:08 1inch Aqua: See how the shared liquidity layer works at http://unchainedcrypto.com/go/1inch-sn
+
+
+      🧠 32:54 Astra and Fable 5.1 land, and one is writing eerily compressed code
+
+
+      📐 35:19 The Millennium Prize proof fight between OpenAI and an Anthropic researcher
+
+
+      🧬 44:48 Kain on fast takeoff, recursive self-improvement, and paperclipped kids
+
+
+      🕵️ 55:18 How to keep your novel research out of an AI's training data
+
+
+      ⚰️ 01:07:03 Why an Anthropic researcher's resignation has Kain and Taylor spooked
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1

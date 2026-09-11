@@ -1,90 +1,12 @@
 source: latepost
-refreshed_at: 2026-09-10T18:11:50.860Z
+refreshed_at: 2026-09-11T01:18:08.732Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 2c07cff3-c795-4d33-924c-3704105f1d2b
-    guid: 2c07cff3-c795-4d33-924c-3704105f1d2b
-    title: "147: OiiOii闹闹：“先抖音后剪映” 不再成立，AI 时代怎么做创作工具和内容社区"
-    duration: 6087
-    published: Wed, 07 Jan 2026 06:30:00 +0800
-    published_sort: "20260106"
-    first_seen_at: 2026-08-13T02:34:13.092Z
-    url: https://podcast.latepost.com/147
-    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/2c07cff3-c795-4d33-924c-3704105f1d2b.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
-    summary: |-
-      「Agent 的工具可以以终为始。」
-
-      今天这期节目，是晚点的作者祝颖丽对 OiiOii 创始人闹闹的访谈。本次访谈的文字版今天也会发布在《晚点科技》公众号上。
-
-      OiiOii 是一款动画创作 Agent。刚刚在 25 年 11 月开启内测。闹闹自己是一名动画爱好者，2014年，在微信工作 3 年后，她辞职学了半年动画。但当时她发现，做动画太难了，行业环境也很糟。
-
-      时隔10年，在自己创过业，去字节做过剪映，在大模型公司阶跃星辰做过二次元社区产品“狸谱”之后，她找到了用 AI 延续动画梦想的方法。
-
-      这期，闹闹分享了她和团队是如何构思和做出 OiiOii 的，以及她过去的创业和大厂经历。
-
-      图：OiiOii 官网页面。地址：https://www.oiioii.ai/home）
-
-      本期嘉宾：闹闹，OiiOii 创始人
-
-      本期主播：祝颖丽，《晚点 LatePost》 作者
-
-      时间线跳转：
-
-      05:06 先做好工具，再去做内容的社区：因为大家不再能忍受内容的单调了
-
-      11:40   市场现状：现在动画的产能和消费非常不对等
-
-      16:46  OiiOii为什么是这个形态？
-
-      31:04  如果做AI漫剧，商业模式、审美都不一样
-
-      41:30 怎么利用和理解不同的模型
-
-      51:50 现在的团队分工
-
-      53:50 第一次创业做极限运动社区，发现其实喜欢做内容
-
-      01:06:17 第一次创业留下的最宝贵的东西：抗体
-
-      01:18:15 在字节：对剪映和抖音特效最大贡献是…
-
-      01:27:17 去了B站：看到产能被憋着了
-
-      01:28:45 OiiOii 后面大致的节奏：填充垂类内容，去海外，做内容社区
-
-      往期「AI 应用/AI Agent」创始人访谈：
-
-      晚点聊 136：Sora新世界 & Lovart 4个月复盘 | 与陈冕聊怎么做垂类
-
-      晚点聊 125：用AI复刻一个「我」，与心识宇宙陶芳波聊身份模型
-
-      晚点聊 111：Pokee.ai 朱哲清的 Agent 造法：强化学习作后端，语言模型作前端
-
-      《晚点对话明超平：他们不信 AI coding 会是新的创作方式，我很开心》
-
-      剪辑制作：Nick
-
-      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
-
-      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
-
-      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
-
-      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
-
-      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 1e446a2c-0ac1-47a4-a808-1c12efd261f4_5d59dad6a36c4dcc9b7e42ea501078bf,99add97d-1286-4b91-a0e3-a6f8802f192e_d11fa48efe2c40aeb60348a26a3ff6ec,6bf3422d-4226-4713-8a9c-1dcc0a84db8e_8b25c80d570c45c8b4d4821e1b2fa79b,mimo:2c07cff3-c795-4d33-924c-3704105f1d2b:3:2026-09-08T19:04:39.084Z,872f0cfe-673c-49c5-b470-f2fee2f3d7c4_ca4d86e8c9f940bd8587fe85e9d68b7b,3158f619-d345-4c49-8a96-c41ada8f4a1f_c5b7c109c11a4d439306ae001fd43496,8c3d159a-c44e-4ac3-a223-f30dfbe7f698_de7c4150674945b09bf7d2d99e41d7da
-    transcript_submitted_at: 2026-09-08T19:04:39.084Z
-    transcript_completed_at: 2026-09-08T19:09:59.711Z
+episodes: []

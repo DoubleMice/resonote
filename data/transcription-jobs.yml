@@ -25838,3 +25838,71 @@ jobs:
     submitted_at: 2026-09-10T18:43:11.881Z
     updated_at: 2026-09-10T18:44:34.870Z
     completed_at: 2026-09-10T18:44:34.870Z
+  - key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z:chunk:0
+    parent_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    attempt_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z
+    provider: mimo
+    id: 9f77c183-6628-4b52-92cb-35891275bc02
+    source: flirting-with-models
+    title: Stacie Mintz – Turning Qualitative Fundamentals into Quantitative Factors (S7E33)
+    audio_url: https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    task_id: 82d5b367-4754-40cd-9a93-7029b23e1082_81e102235eda4763a617d932cd91287c
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:18:09.736Z
+    updated_at: 2026-09-11T01:18:40.329Z
+    completed_at: 2026-09-11T01:18:40.329Z
+  - key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z:chunk:1
+    parent_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    attempt_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z
+    provider: mimo
+    id: 9f77c183-6628-4b52-92cb-35891275bc02
+    source: flirting-with-models
+    title: Stacie Mintz – Turning Qualitative Fundamentals into Quantitative Factors (S7E33)
+    audio_url: https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    task_id: 221f9bfe-6fbf-485f-8a03-6fa2ce638360_7f08e9aa1a7940d2a9d026442f53f31a
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:18:09.736Z
+    updated_at: 2026-09-11T01:19:01.341Z
+    completed_at: 2026-09-11T01:19:01.341Z
+  - key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z:chunk:2
+    parent_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    attempt_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z
+    provider: mimo
+    id: 9f77c183-6628-4b52-92cb-35891275bc02
+    source: flirting-with-models
+    title: Stacie Mintz – Turning Qualitative Fundamentals into Quantitative Factors (S7E33)
+    audio_url: https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    task_id: d7db212b-4799-4971-9b3c-3cc95dcef0f9_4e92c50bc3874f029692ef096b28bca4
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:18:09.736Z
+    updated_at: 2026-09-11T01:19:18.813Z
+    completed_at: 2026-09-11T01:19:18.813Z
+  - key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z:chunk:3
+    parent_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    attempt_key: flirting-with-models:9f77c183-6628-4b52-92cb-35891275bc02:20260803:https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3:mimo:2026-09-11T01:18:09.736Z
+    provider: mimo
+    id: 9f77c183-6628-4b52-92cb-35891275bc02
+    source: flirting-with-models
+    title: Stacie Mintz – Turning Qualitative Fundamentals into Quantitative Factors (S7E33)
+    audio_url: https://episodes.captivate.fm/episode/9f77c183-6628-4b52-92cb-35891275bc02.mp3
+    task_id: e04e7d31-1532-4e06-b498-22a1c5b1fecf_0e6074f32da344968d838fe415cb40df
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-11T01:18:09.736Z
+    updated_at: 2026-09-11T01:19:23.660Z
+    completed_at: 2026-09-11T01:19:23.660Z

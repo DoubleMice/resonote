@@ -1,111 +1,15 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-10T18:11:50.886Z
+refreshed_at: 2026-09-11T01:18:08.748Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 13
-done: 6
+total_candidates: 7
+done: 0
 pending: 2
 needs_transcript: 5
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a3aafae2e335a35a80844a9
-    guid: 6a3aafae2e335a35a80844a9
-    title: 39. 微策略卖币？说好的永动机不转了？- 串台｜Web3 101
-    duration: 4626
-    published: Tue, 23 Jun 2026 16:27:34 GMT
-    published_sort: "20260623"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a3aafae2e335a35a80844a9?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a3aafae2e335a35a80844a9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljgYWDXbUom8nX5T3uNo3jcIXRTx.m4a
-    image: https://image.xyzcdn.net/Fr42fr8IJ-XFFEe93acrbK_DB4xt.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: cdd49a3f-b1f7-43a8-98d4-389cb48def8f_e3725861195841b0943a92a1d29fed6c,bd85be60-f6a1-44ba-b215-9d777f8e75dc_d87517fa68b74e9b9f235c7524272397,4e7cd945-35aa-45f2-8166-2284a6e51b74_1d5de0b5b1274e92931cd3ed1533fa55,7e6cc533-aded-456e-8470-f7b2abb16a9c_4b91587b647a4914964f9e43e2118bc1,c7859d6b-726f-4012-bd59-0227b7040259_ef1c6df4390a45c9b505b7ef89fa80ac,51530b56-5bb1-4276-b254-4c5ccee8ea18_b59c8094823b4a1f814032b2de0dc858
-    transcript_submitted_at: 2026-09-09T18:34:17.785Z
-    transcript_completed_at: 2026-09-09T18:40:27.081Z
-  - id: 6a298bcd3eedf1f4b268a928
-    guid: 6a298bcd3eedf1f4b268a928
-    title: 37. SpaceX IPO - 全球资本市场一起刷个大火箭！- 串台｜听懂涨声
-    duration: 3459
-    published: Wed, 10 Jun 2026 16:22:14 GMT
-    published_sort: "20260610"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a298bcd3eedf1f4b268a928?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a298bcd3eedf1f4b268a928/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsV9enOxHYkxxDnnQgsUNf3RmdyO.m4a
-    image: https://image.xyzcdn.net/Fhn1r5Yqi71_CpA7ysDtK8jhfHFm.jpeg
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: a40d17de-cbb7-48fd-9f9d-34767abf9a13_528f7c26f0b44628a3df1c94ebacff73,e3126317-dc44-4973-8c5e-0dbd10e86115_1152aaeb81f448118747c9e7edabf268,655b8bac-8f0f-4ba7-ace1-c1b7c9cecb3b_bbbd4b69f5c44bb5a5ead7fb50f1ea36,mimo:6a298bcd3eedf1f4b268a928:3:2026-09-09T18:54:13.531Z
-    transcript_submitted_at: 2026-09-09T18:54:13.531Z
-    transcript_completed_at: 2026-09-09T18:57:00.181Z
-  - id: 6a2631d3b30e1571aea26396
-    guid: 6a2631d3b30e1571aea26396
-    title: 36. AI时代的教育 - “乖”不是一个好词？- 方士心｜复旦大学「高考特辑」
-    duration: 4551
-    published: Mon, 08 Jun 2026 16:00:00 GMT
-    published_sort: "20260608"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a2631d3b30e1571aea26396?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a2631d3b30e1571aea26396/media.xyzcdn.net/67f40c212ac4d88190caa56a/lt7T4AkV3OW9IiAKtT-HRGQED-57.m4a
-    image: https://image.xyzcdn.net/FkcHaVpw8mVV1bIhfnzBOzvK5LJO.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 433224e6-fa2e-450e-b1bb-b9e77a1b2d0d_09de7b8c87a34b27ba99a78cad085b98,bf9636d1-ef97-4c56-82b3-5c54e17d2de9_16e47522798344cd8faf3b7e9199c389,8fb9914c-c71a-41c5-bdb3-74ac2a9f19d8_5440be7a464549e197ce3ff3d71f8d7f,9bff8bfb-fe5f-4ab6-a7a5-df2fb98b7197_48db3799be224428b8b205c556b36320,d6529721-aba5-4753-8401-9e3126f8be3f_c900a4a12631412e9932364c6f6adb9e,31acae3e-337f-468a-8711-e8ec4c8529d7_5fb6831609874fd89bdd18eb418951ac
-    transcript_submitted_at: 2026-09-09T19:00:31.257Z
-    transcript_completed_at: 2026-09-09T19:05:40.291Z
-  - id: 6a1f06627444b57222325a51
-    guid: 6a1f06627444b57222325a51
-    title: 35. 他又带千亿投资人来中国看MiniMax，睡亚朵，吃老乡鸡！- Robert | 百观科技
-    duration: 3763
-    published: Tue, 02 Jun 2026 17:08:40 GMT
-    published_sort: "20260602"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a1f06627444b57222325a51?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a1f06627444b57222325a51/media.xyzcdn.net/67f40c212ac4d88190caa56a/lsGtLz-Z9p6E6up39m6sTHkRyN-z.m4a
-    image: https://image.xyzcdn.net/nsTVI79dZxNnr1oeiEiW270eGbW3.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-10T18:11:52.227Z
-    transcript_job_id: 3cd1cd2b-dff6-4766-87a3-5f3870104b84_21421c3de96d4461bf272bbea6252f39,57829400-7c39-489e-8eee-68d3c39631a9_423667de997a430cac995d78f7f1e65a,f11d2983-6de9-4022-9ab2-f713c87d2f12_934f86ffa988419583f7446e591cafab,9ad6de10-a55f-4ec7-b2ae-8491d16c7c70_e61c47a4486e40c6815287c4a32bf8e2,2d43124f-e178-4e5c-b3b9-aac56a3ef6b0_6ee9235360b54b51aed7171ce1aa55e2
-    transcript_completed_at: 2026-09-10T18:15:26.296Z
-  - id: 6a1322a6e59ebca93637e1b1
-    guid: 6a1322a6e59ebca93637e1b1
-    title: 34. 从美元到人民币基金 — 科技投资新范式？ | 对话苏麟
-    duration: 5268
-    published: Sun, 24 May 2026 16:18:46 GMT
-    published_sort: "20260524"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a1322a6e59ebca93637e1b1?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a1322a6e59ebca93637e1b1/media.xyzcdn.net/67f40c212ac4d88190caa56a/lgUxqYB_3cZERs6HX7_ZhxzuAzIu.m4a
-    image: https://image.xyzcdn.net/FlbGFdsUnXqvcQHup2rujOJIJrJs.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-10T18:18:37.423Z
-    transcript_job_id: e1dda667-8e29-4c91-9057-118370cbe6bc_f25f8b4032384ce3a895165a8825404c,78ee089e-6e9e-4a3a-81da-c52727123bb3_70973a817c8a4243b90fe81073326995,783bc9a1-ad6c-4e91-bdb1-d11caa8a913a_d85238dd970b4b5b9344f7d87f9b9749,bae0a0bc-f0bf-46d4-bcef-e4966353861b_d504619d47bf46d984218e12238124dd,6b52a065-2cc1-4eb5-84ba-ed596fee1633_5ed84f70917c4931bf04d34e1fb17d5b,bb833220-b1e6-4c2a-8be3-4a48a729b814_08bb31596568416393187c0bec9e46de
-    transcript_completed_at: 2026-09-10T18:23:01.719Z
-  - id: 6a05fb6ee1eb34a9396bc45f
-    guid: 6a05fb6ee1eb34a9396bc45f
-    title: 32. OpenAI联手私募基金做驻场外包？- 串台 | 人民公园说AI
-    duration: 2070
-    published: Thu, 14 May 2026 16:58:59 GMT
-    published_sort: "20260514"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a05fb6ee1eb34a9396bc45f?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a05fb6ee1eb34a9396bc45f/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrahng_hnm6Ds-QDYFLqC_S380L-.m4a
-    image: https://image.xyzcdn.net/no5pm3NtCKMgGbzSKbezjvf36Bgv.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-10T18:26:00.326Z
-    transcript_job_id: f2d9bdbc-d2f9-4b2b-b460-3a52b6af5860_ad804cc518554c24abf88e8b9648e51b,3f59b0a6-2ee6-402b-b136-b157ca1dc568_61a1e4f3a8a34bf5b375eac8529cff6a,54514ac4-c2fc-4ef2-b2ab-5baba9390d6c_cdd813cf5b8e40758dc8cf153be4f1fa
-    transcript_completed_at: 2026-09-10T18:28:35.520Z
   - id: 6a02082f1b7bd50295f37702
     guid: 6a02082f1b7bd50295f37702
     title: 31. 「26Q1」中美大模型差距过去一年变大还是缩小？- Hugging Face | 王铁震
@@ -119,8 +23,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-10T18:33:34.623Z
     transcript_job_id: e14a31ea-0902-48cb-8e06-c326b3713866_4befa0432e6745be9529ace3e7ba350d,ede82069-27e1-4cfe-9412-c347cda243a4_cf021743f3f94bbf92303204794c14f3,4a6001ab-7077-4b4e-a022-79920c7edf05_96b1fa1e862b4bf98a95f6801ea9e3b8,f2c8bd01-c626-401e-847c-0397565a8135_6def590e0dd741978fe640f4144a563e,26e8cacb-fd07-4e52-8e4a-3124abfc375c_e4896de7e9c442f99a9a9ef0af6d5ef9
+    transcript_submitted_at: 2026-09-10T18:33:34.623Z
     transcript_completed_at: 2026-09-10T18:36:31.492Z
   - id: 69ef6d9f3918a089438b7662
     guid: 69ef6d9f3918a089438b7662
@@ -135,8 +39,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-10T18:39:41.684Z
     transcript_job_id: 8fc506a0-706c-4ec4-bffa-d232de223294_0ba9ac5052ad41389a8594844f177862,27b8229b-afb3-4228-aca5-4a46949ef228_a9108266145546b18d138718684afcb1,d495c3be-b1c3-440d-a7cb-909d647c9ef3_9e04a325db0b4f168d9b6d4749da7b0b,9347a501-00e8-4df2-9d5a-3a0de13d58dc_7966d859826d4cb18c705c1ccab65054,8d46a352-7194-418d-8cc0-fd36cd01fca5_e0a66281b17342eca5ff91433642a70a,492ffd51-daa9-44f4-a3df-df273ce940c5_9a1e265f5c224874a3551323fcf5248a,1769a364-7964-4dff-88e0-ff35925337e4_a74829db37f84235bf6be994fc3b8356
+    transcript_submitted_at: 2026-09-10T18:39:41.684Z
     transcript_completed_at: 2026-09-10T18:43:11.507Z
   - id: 69d4a6c0e2c8be31558fdb06
     guid: 69d4a6c0e2c8be31558fdb06
