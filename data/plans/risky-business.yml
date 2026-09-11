@@ -1,12 +1,32 @@
 source: risky-business
-refreshed_at: 2026-09-11T01:23:24.136Z
+refreshed_at: 2026-09-11T03:04:04.185Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: SNAKEOILERS24PT1
+    guid: https://risky.biz/SNAKEOILERS24PT1/
+    title: "Snake Oilers: watchTowr, XBOW and CoreView"
+    duration: 2520
+    published: Fri, 11 Sep 2026 11:33:50 +1000
+    published_sort: "20260911"
+    first_seen_at: 2026-09-11T03:04:04.185Z
+    url: https://risky.biz/SNAKEOILERS24PT1/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT1.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: |-
+      In this edition of the Snake Oilers podcast three vendors stop by to pitch the audience on their products:
+
+        watchTowr: We’re all familiar with watchTowr’s research, but what do they actually do?
+        XBOW: The AI pentesting company pitches its approach
+        CoreView: Your M365 tenant is probably a security disaster. Tame it with CoreView!
+
+      This episode is also available on YouTube.
+    status: needs_transcript
+    priority: 1
