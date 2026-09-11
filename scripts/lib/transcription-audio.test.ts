@@ -29,6 +29,31 @@ test('retries a temporary podcast redirect 404 and replaces incomplete downloads
   }
 })
 
+test('downloads through podcast redirects that reject wildcard Accept-Language', async () => {
+  const directory = mkdtempSync(join(tmpdir(), 'resonote-language-'))
+  const server = createServer((request, response) => {
+    if (request.headers['accept-language'] === '*') {
+      response.writeHead(404); response.end('Missing redirect URL')
+    } else if (request.url === '/episode.mp3') {
+      response.writeHead(302, { location: '/audio.mp3' }); response.end()
+    } else response.end('complete audio')
+  })
+  await new Promise<void>(done => server.listen(0, '127.0.0.1', done))
+  try {
+    const address = server.address() as { port: number }
+    const url = `http://127.0.0.1:${address.port}/episode.mp3`
+    const baseline = await fetch(url)
+    assert.equal(baseline.status, 404)
+    await baseline.body?.cancel()
+    const path = join(directory, 'audio')
+    assert.equal((await downloadAudio(url, path, { attempts: 1 })).bytes, 14)
+    assert.equal(readFileSync(path, 'utf8'), 'complete audio')
+  } finally {
+    await new Promise<void>(done => server.close(() => done()))
+    rmSync(directory, { recursive: true, force: true })
+  }
+})
+
 test('caps chunk duration to the configured byte budget', () => {
   assert.equal(audioChunkSeconds(900, 18 * 1024 * 1024), 900)
   assert.ok(audioChunkSeconds(90_000, 1024 * 1024) < 240)

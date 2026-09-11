@@ -15,7 +15,8 @@ export async function downloadAudio(
     try {
       const response = await fetch(url, {
         signal: AbortSignal.timeout(options.timeoutMs ?? 120_000),
-        headers: { accept: 'audio/*,*/*', 'user-agent': 'Resonote transcription fetcher/1.0' },
+        // Captivate returns 404 for Node fetch's default Accept-Language: *.
+        headers: { accept: 'audio/*,*/*', 'accept-language': 'en-US', 'user-agent': 'Resonote transcription fetcher/1.0' },
       })
       if (!response.ok) {
         // Podcast redirect services can briefly return 404 without a CDN URL.

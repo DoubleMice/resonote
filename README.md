@@ -131,7 +131,7 @@ CONTENT_PROVIDER=auto
 
 Codex 入口需要 Responses API；例如 `CONTENT_BASE_URL=https://api.doublemice.top`、`CONTENT_MODEL_NAME=gpt-5.6-luna` 会调用该网关的 `/v1/responses`。Claude Code 入口仍需要 Anthropic Messages API。详见 [Codex 自定义提供方配置](https://learn.chatgpt.com/docs/config-file/config-advanced)。
 
-手动生成工作流支持 `episode` 和 `retry_failed`，可只重试一集。每日工作流启用 `--retry-generation-failures`，让生成失败的节目重新参与调度，自审失败可复用已有转写和内容。转写失败默认等待 48 小时再尝试，优先处理未尝试的节目；只有显式 `--retry-failed` 才跳过这个等待。音频下载最多尝试 3 次，单次最多 120 秒；转码时去除封面和元数据，并根据大小上限限制分块时长。
+手动生成工作流支持 `episode` 和 `retry_failed`，可只重试一集。每日工作流启用 `--retry-generation-failures`，让生成失败的节目重新参与调度。自审失败的节目先复查已有内容；仍未通过时，调用一次内容生成器修复，再执行静态和版式校验。未启用生成重试时只复查，不调用模型。转写失败默认等待 48 小时再尝试，优先处理未尝试的节目；只有显式 `--retry-failed` 才跳过这个等待。音频下载显式发送 `Accept-Language: en-US`，避免 Captivate 对 Node 默认的通配语言头返回 404。下载最多尝试 3 次，单次最多 120 秒；转码时去除封面和元数据，并根据大小上限限制分块时长。
 
 ## 构建与页面性能
 

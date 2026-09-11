@@ -225,3 +225,33 @@ test('can select and retry one failed generation without resetting other episode
   assert.deepEqual(result.plan.episodes, episodes)
   assert.equal(execute(episodes, ['--episode=does-not-exist']).code, 1)
 })
+
+for (const repaired of [true, false]) {
+  test(`generation retry attempts one repair of an invalid archived draft (repair succeeds: ${repaired})`, () => {
+    const id = 'repair-audit'
+    const result = execute([
+      { id, title: 'Repair', status: 'audit_failed', duration: 3600, published_sort: '20260908', url: 'https://example.com/repair' },
+    ], ['--retry-generation-failures', '--allow-episode-failures'], directory => {
+      artifactFixture(directory, id)
+      writeFileSync(join(directory, 'sources.yml'), 'sources:\n  - id: test\n')
+      setupPublicationFixture(directory)
+      const slidesPath = join(directory, 'episodes', id, 'slides.md')
+      writeFileSync(slidesPath, readFileSync(slidesPath, 'utf8').replace('# 封面', '# 封面\n# Duplicate'))
+      writeFileSync(join(directory, 'bin/claude'), `#!${process.execPath}
+const fs = require('node:fs');
+fs.appendFileSync('repair-calls', 'call\\n');
+const path = 'episodes/${id}/slides.md';
+if (${repaired}) fs.writeFileSync(path, fs.readFileSync(path, 'utf8').replace('\\n# Duplicate', ''));
+console.log(JSON.stringify({type:'result',is_error:false}));
+`, { mode: 0o755 })
+      archiveFailedEpisode(join(directory, 'episodes'), id)
+    }, directory => ({
+      calls: readFileSync(join(directory, 'repair-calls'), 'utf8'),
+      archived: existsSync(join(directory, 'episodes/_failed', id)),
+    }))
+    assert.equal(result.code, 0, result.stdout)
+    assert.equal(result.plan.episodes[0].status, repaired ? 'generated' : 'audit_failed')
+    assert.deepEqual(result.inspection, { calls: 'call\n', archived: !repaired })
+    assert.match(result.summary, repaired ? /Generated and validated: 1/ : /Generation\/download failures: 1/)
+  })
+}

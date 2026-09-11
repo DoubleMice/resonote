@@ -3,8 +3,8 @@ refreshed_at: 2026-09-10T18:11:50.886Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 13
-done: 5
-pending: 3
+done: 6
+pending: 2
 needs_transcript: 5
 transcribing: 0
 transcribe_failed: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6a3aafae2e335a35a80844a9?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a3aafae2e335a35a80844a9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljgYWDXbUom8nX5T3uNo3jcIXRTx.m4a
     image: https://image.xyzcdn.net/Fr42fr8IJ-XFFEe93acrbK_DB4xt.png
-    status: audit_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: cdd49a3f-b1f7-43a8-98d4-389cb48def8f_e3725861195841b0943a92a1d29fed6c,bd85be60-f6a1-44ba-b215-9d777f8e75dc_d87517fa68b74e9b9f235c7524272397,4e7cd945-35aa-45f2-8166-2284a6e51b74_1d5de0b5b1274e92931cd3ed1533fa55,7e6cc533-aded-456e-8470-f7b2abb16a9c_4b91587b647a4914964f9e43e2118bc1,c7859d6b-726f-4012-bd59-0227b7040259_ef1c6df4390a45c9b505b7ef89fa80ac,51530b56-5bb1-4276-b254-4c5ccee8ea18_b59c8094823b4a1f814032b2de0dc858

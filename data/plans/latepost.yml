@@ -3,8 +3,8 @@ refreshed_at: 2026-09-10T18:11:50.860Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -82,7 +82,7 @@ episodes:
       请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: audit_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 1e446a2c-0ac1-47a4-a808-1c12efd261f4_5d59dad6a36c4dcc9b7e42ea501078bf,99add97d-1286-4b91-a0e3-a6f8802f192e_d11fa48efe2c40aeb60348a26a3ff6ec,6bf3422d-4226-4713-8a9c-1dcc0a84db8e_8b25c80d570c45c8b4d4821e1b2fa79b,mimo:2c07cff3-c795-4d33-924c-3704105f1d2b:3:2026-09-08T19:04:39.084Z,872f0cfe-673c-49c5-b470-f2fee2f3d7c4_ca4d86e8c9f940bd8587fe85e9d68b7b,3158f619-d345-4c49-8a96-c41ada8f4a1f_c5b7c109c11a4d439306ae001fd43496,8c3d159a-c44e-4ac3-a223-f30dfbe7f698_de7c4150674945b09bf7d2d99e41d7da

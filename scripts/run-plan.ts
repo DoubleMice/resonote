@@ -903,7 +903,7 @@ interface GenerateResult {
   isRateLimit: boolean
 }
 
-function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult> {
+function generateOne(entry: PlanEntry, sourceId: string, repairExisting = false): Promise<GenerateResult> {
   const systemRules = readFileSync(RULES_FILE, 'utf-8')
   const taskPrompt = renderTask(entry, sourceId)
   const combinedPrompt = [
@@ -913,6 +913,9 @@ function generateOne(entry: PlanEntry, sourceId: string): Promise<GenerateResult
     systemRules,
     '# Task',
     taskPrompt,
+    ...(repairExisting ? [
+      'This episode already has a draft that failed artifact or layout validation. Repair the existing content instead of replacing it wholesale. Run the artifact validator with --strict and the layout audit for this episode, fix the reported errors, and preserve accurate content and transcript-backed quotes.',
+    ] : []),
   ].join('\n\n')
   const invocation = contentCommand(combinedPrompt)
   const logPath = join(ROOT, 'logs', `generate-${entry.id}.log`)
@@ -1009,17 +1012,20 @@ async function processEntry(
     entry.status = staticOk && layoutOk ? 'generated' : 'audit_failed'
     savePlan(planPath, plan)
     canonicalizeEpisodeArtifacts(entry, sourceId, entry.status)
-    log.ok(`  → status=${entry.status}`)
-    stats.episodes.push({
-      id: entry.id,
-      inputTokens: 0,
-      outputTokens: 0,
-      durationMs: 0,
-      status: entry.status,
-    })
-    if (entry.status === 'generated') stats.generated++
-    else stats.failed++
-    return
+    if (entry.status === 'generated' || !retryGenerationFailures) {
+      log.ok(`  → status=${entry.status}`)
+      stats.episodes.push({
+        id: entry.id,
+        inputTokens: 0,
+        outputTokens: 0,
+        durationMs: 0,
+        status: entry.status,
+      })
+      if (entry.status === 'generated') stats.generated++
+      else stats.failed++
+      return
+    }
+    log.warn('  existing draft still fails validation; attempting one content repair')
   }
 
   if (generationRateLimited) {
@@ -1042,7 +1048,7 @@ async function processEntry(
     isRateLimit: false,
   }
   try {
-    result = await timing.measure('content-agent', entry.id, () => generateOne(entry, sourceId))
+    result = await timing.measure('content-agent', entry.id, () => generateOne(entry, sourceId, retryAuditOnly))
   } catch (error: any) {
     log.err(`  generation failed before completion: ${error.message}`)
   } finally {

@@ -12,8 +12,7 @@ drawings:
   persist: false
 ---
 
-# 微策略卖币后
-# 那台永动机还转得动吗？
+# 微策略卖币后<br>那台永动机还转得动吗？
 
 <div class="mt-8 text-lg opacity-80">台显之火星 × Web3 101｜围绕比特币、STRC 与现金储备的一次压力测试</div>
 
