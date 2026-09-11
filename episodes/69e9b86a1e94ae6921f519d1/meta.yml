@@ -1,0 +1,30 @@
+title: Agent\TPU\生态\安全\开放，Google Cloud到底在bet什么？-Google Cloud Next速记
+guest: 明浩
+guest_role: Google Cloud Next 现场观察者
+tags:
+  - ai-products
+  - hardware
+  - chips
+  - strategic
+  - quick-take
+summary: >
+  明浩从 Google Cloud Next 的主 Keynote 和四场分论坛出发，梳理 Google Cloud 如何把 TPU、数据、安全、模型和任务层组织为企业 AI 服务。节目也记录了垂直 Agent
+  的交付与收费限制、Anthropic 对下一代软件的判断，以及互操作、投资和并购在生态竞争中的位置。
+core_ideas:
+  - 主 Keynote 的五层服务依次覆盖基础设施、数据、安全、平台与模型、任务。
+  - TPU v5p 面向训练，v5e 面向推理；主播用推理需求上升解释这项分工。
+  - 垂直 Agent 的从业者把模型路由、数据与权限治理视为复杂行业客户的交付内容。
+  - Anthropic 演讲者认为，AI 编程会提高问题定义与目标选择在软件工作中的比重。
+  - 主播把长期 TPU 路线、互操作和资本关系一起看作生态层面的竞争能力。
+id: 69e9b86a1e94ae6921f519d1
+source: tulong-zhishu
+source_title: Agent\TPU\生态\安全\开放，Google Cloud到底在bet什么？-Google Cloud Next速记
+published: 2026-04
+published_sort: "20260423"
+duration: 34m
+url: https://www.xiaoyuzhoufm.com/episode/69e9b86a1e94ae6921f519d1?utm_source=rss
+status: generated
+article_path: episodes/69e9b86a1e94ae6921f519d1/article.html
+base: /episodes/69e9b86a1e94ae6921f519d1/
+thumbnail: https://image.xyzcdn.net/Fv6DAUCUV-no-R8hfxyCQbXThDBN.png
+generated_at: 2026-09-11T20:20:50.003Z

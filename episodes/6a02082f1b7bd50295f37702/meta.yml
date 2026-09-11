@@ -1,0 +1,30 @@
+title: 31. 「26Q1」中美大模型差距过去一年变大还是缩小？- Hugging Face | 王铁震
+guest: 王铁震
+guest_role: Hugging Face 前亚太区生态负责人
+tags:
+  - ai-research
+  - ai-products
+  - interview
+  - strategic
+  - technical
+summary: |
+  王铁震认为，美国前沿模型在复杂任务的使用体验上仍明显领先；但若以国产模型是否跨过实际可用和付费门槛衡量，中国模型正在进步。讨论从 KV cache、国产卡适配和训练资源，延伸到开源生态、真实任务的数据循环，以及能力扩散后的社会影响。
+core_ideas:
+  - 比较中美模型时，应区分前沿复杂任务的体验和面向普通用户的实际可用门槛。
+  - KV cache 缩小并可在 SSD 中保存，能提高缓存命中率，降低部分推理成本。
+  - 国产卡适配涉及算子、工具链、训练和量化，目标是让推理结果接近训练预期。
+  - 嘉宾认为，持续使用和付费是中国模型获得真实任务与反馈、形成数据循环的前提。
+  - 开源有助于技术扩散、招聘和品牌建设，但需要商业收入支撑长期投入。
+  - 模型进入更多工作和陪伴场景后，注意力、心理健康和工作强度也成为需要讨论的影响。
+id: 6a02082f1b7bd50295f37702
+source: taixian-zhihuo
+source_title: 31. 「26Q1」中美大模型差距过去一年变大还是缩小？- Hugging Face | 王铁震
+published: 2026-05
+published_sort: "20260511"
+duration: 1h6m
+url: https://www.xiaoyuzhoufm.com/episode/6a02082f1b7bd50295f37702?utm_source=rss
+status: generated
+article_path: episodes/6a02082f1b7bd50295f37702/article.html
+base: /episodes/6a02082f1b7bd50295f37702/
+thumbnail: https://image.xyzcdn.net/FpzzYGQNdaqTfn110JrGlCkzuJ6P.png
+generated_at: 2026-09-11T20:08:58.620Z

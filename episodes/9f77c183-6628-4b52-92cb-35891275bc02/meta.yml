@@ -1,0 +1,29 @@
+title: Stacie Mintz：把质性基本面转成量化因子
+guest: Stacie Mintz
+guest_role: PGIM Quantitative Solutions 量化股票主管、董事总经理
+tags:
+  - interview
+  - investor
+  - technical
+  - strategic
+summary: >
+  Stacie Mintz 回顾 PGIM 量化股票团队如何从行为偏差研究、自建风险模型和因子设计中建立一套强调基本面逻辑的投资过程。她也说明了如何把董事会联结等文本信息转为可比信号，以及使用 LLM
+  时如何控制前视偏差、记忆化与不稳定输出。
+core_ideas:
+  - 风险模型会影响组合中哪些 alpha 观点得以保留，因此 PGIM 选择自建并持续调整风险模型。
+  - 基本面量化因子除了历史表现，还要能解释其经济逻辑、适用环境与和既有因子的关系。
+  - 成长、联结、质量和估值因子按公司所处阶段动态加权，而不是全市场统一配置。
+  - 新因子的数据历史缩短后，团队会加强理论审查，并可能先以较低权重使用。
+  - LLM 研究需要控制测试数据、比较模型回答，并把结果与公司的销售或盈利联系起来。
+id: 9f77c183-6628-4b52-92cb-35891275bc02
+source: flirting-with-models
+source_title: Stacie Mintz – Turning Qualitative Fundamentals into Quantitative Factors (S7E33)
+published: 2026-08
+published_sort: "20260803"
+duration: 47m
+url: http://www.flirtingwithmodels.com/
+status: generated
+article_path: episodes/9f77c183-6628-4b52-92cb-35891275bc02/article.html
+base: /episodes/9f77c183-6628-4b52-92cb-35891275bc02/
+thumbnail: https://artwork.captivate.fm/f640e688-8b78-4e64-a83e-b34dce5368d0/S3-FlirtingWithModels-with-Stacie-Mintz.jpeg
+generated_at: 2026-09-11T20:10:08.920Z

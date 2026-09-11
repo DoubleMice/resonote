@@ -1,11 +1,11 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-11T03:04:04.223Z
+refreshed_at: 2026-09-11T18:11:46.334Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 14
-done: 0
+done: 5
 pending: 1
-needs_transcript: 13
+needs_transcript: 8
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69e9b86a1e94ae6921f519d1?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69e9b86a1e94ae6921f519d1/media.xyzcdn.net/6507bc165c88d2412626b401/lrvDMZkfyCGCm6A3gLiv2su9Oq8O.m4a
     image: https://image.xyzcdn.net/Fv6DAUCUV-no-R8hfxyCQbXThDBN.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 7b78c1a4-a346-4789-967f-1010d18dd4bf_a9abbd85d3814b888948059c5f9c4dbf,6db51890-556e-4cc4-8185-b6b1026d737b_7282c6fb0f4748aaba37aaa9a906df90,aaa4580a-b8a6-4546-ba4a-7ce4bf29d124_9587e8dcd14842e9b2d433590313b45f
@@ -36,8 +36,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69e224c91d989496e7db5b12?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69e224c91d989496e7db5b12/media.xyzcdn.net/6507bc165c88d2412626b401/lhhgKyAxAgN2tvoeHO6pX7gtheYP.m4a
     image: https://image.xyzcdn.net/FvzrKKT5Q3zQq8aiEJeKhL4YCnpp.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T18:45:46.391Z
+    transcript_job_id: 6749b153-f7fe-4da8-b8a4-cc01fd6a24fb_7da6d0c0811a4e7f9e68844b61f86a1b,809e40f7-a355-419b-9747-c47e479f140a_a78da14c70c04a358b650654a79909f0,b2af0940-14f0-4e1c-b3ce-a83de4e5c715_0a511acd54d34f31a3ae3cfed7b31ae8,60c618a0-fff5-4c3c-841b-2ecd24ca94f9_b8b2a3e9ea0c44a69763fe6bebb572f8,87130fd7-e680-4472-a685-a8a0b717bdc8_2f8a516261dd465daa34b2c820eb2602
+    transcript_completed_at: 2026-09-11T18:53:37.003Z
   - id: 69e0d423b977fb2c471ea30c
     guid: 69e0d423b977fb2c471ea30c
     title: Vol.94 再不聊聊openclaw可能就不需要聊了---串台知本论
@@ -48,8 +52,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69e0d423b977fb2c471ea30c?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69e0d423b977fb2c471ea30c/media.xyzcdn.net/6507bc165c88d2412626b401/lsk7qaq_m0XT-I7PNuGgyfXs6ny4.m4a
     image: https://image.xyzcdn.net/Fm21fc2ZGkNH98zNTbVGD3F1Y9Mj.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T18:58:48.609Z
+    transcript_job_id: ee0c2906-78ec-451b-af62-1092eb2a3e5c_6679fd8fcb804e62b2b1fd0581c1b047,a4e6858f-7d15-4437-beb2-810ae004e71e_67749b2296534952ab39dab388a380b4,360ba8b6-4980-46d9-8de3-db6b2df50bb9_af21a2271b0148e8b103e571628cc579,7ca5a573-4a26-4474-9222-0a9f0af688f0_aede554e0aa64eac9f4352d8ef5653f9,cb53ecd7-a045-483f-8e52-76f2f0c9d628_069110cbb3a044e391842d7701c976c3
+    transcript_completed_at: 2026-09-11T19:08:54.339Z
   - id: 69cb6c97e2c8be3155fc4859
     guid: 69cb6c97e2c8be3155fc4859
     title: Vol.93 AI面前，互联网其实也是传统行业---串台难得正经
@@ -60,8 +68,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69cb6c97e2c8be3155fc4859?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69cb6c97e2c8be3155fc4859/media.xyzcdn.net/6507bc165c88d2412626b401/lkVduMib4BaD1MS5fDbLmdQ5FMRp.m4a
     image: https://image.xyzcdn.net/FmjICGq_6HGf-_e1Rh11N-hjoWNI.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T19:17:01.921Z
+    transcript_job_id: 1339a289-1482-4eea-afae-104661aa28f7_28b275f00a9f4d3689d32fbbce3bdd9d,bb84c60f-0dee-4234-bc86-0707c4c84f47_bbd87baa48284e0bb3681b8fed916285,mimo:69cb6c97e2c8be3155fc4859:2:2026-09-11T19:17:01.921Z,9c3a1d1e-0d06-4770-ae10-79280eeb37b2_3d98ad6dbf824ef3b982328cfbdacc69
+    transcript_completed_at: 2026-09-11T19:23:53.454Z
   - id: 69cb42fee2c8be3155f7d2b8
     guid: 69cb42fee2c8be3155f7d2b8
     title: Vol.92 回头听3月初的播客，感觉有点恍如隔世---串台藏金阁
@@ -72,8 +84,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69cb42fee2c8be3155f7d2b8?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69cb42fee2c8be3155f7d2b8/media.xyzcdn.net/6507bc165c88d2412626b401/luiHCdycyxzuXMWsXIZAAa5X4d1m.m4a
     image: https://image.xyzcdn.net/FmjICGq_6HGf-_e1Rh11N-hjoWNI.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T19:30:16.230Z
+    transcript_job_id: db7ebe65-b31b-4c27-ad75-a2db262288f8_759b889297b54049b4d28354608e0e4e,0682cd4b-1beb-481f-808e-c8e93eea84b8_a20eb9738bb34917b683fc08ea888a34,c3468a2d-82de-4f1c-be1d-bacb63022328_ea9e2ac13b2b477f9e56e9a6b5c32599,a6b662a9-56f3-4c67-aa61-acd14d745708_2563f1617ea045fcaed3f92dcbcfb23c,cd4371e8-d809-4001-a309-1002e5c782f6_b639ad1b0d834b368a89d8795c449cab,ac609d55-7a8c-4437-b7f1-721b761ffb42_a042a92dd7a3451a896d5259f098ba35
+    transcript_completed_at: 2026-09-11T19:41:53.177Z
   - id: 69c67ffde2c8be3155a8420a
     guid: 69c67ffde2c8be3155a8420a
     title: Vol.91 数据角度看OpenClaw的企业落地---对谈Oceanbase
@@ -84,8 +100,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69c67ffde2c8be3155a8420a?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69c67ffde2c8be3155a8420a/media.xyzcdn.net/6507bc165c88d2412626b401/lgIgMZdXdDo2aYuQ23woBbDNAoJZ.m4a
     image: https://image.xyzcdn.net/FgrgsuLQ88kaqbLeiJJpCL3slS_K.png
-    status: needs_transcript
+    status: pending
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T19:52:18.527Z
+    transcript_job_id: 8ae57faa-1fd8-4d9d-b058-3d178372e32b_4881ab4ac5aa4fc8b50bf10f06899098,4c062aa7-ba0e-4388-8288-3e8dbd463b63_a0ab25cd9337476197b56261417e0d64,80bf4317-3b39-437e-b7b8-a0cf81561d75_5548d2b14c7445a2a2a0896b7675d1cb,4743e047-4cbb-4f55-8145-6dd8b81f3645_fd49d81f527b47c2a68e03b5c1a1a7e8
+    transcript_completed_at: 2026-09-11T20:00:22.369Z
   - id: 69c138b25058f5000cdcf5af
     guid: 69c138b25058f5000cdcf5af
     title: Vol.90 AI加速爆发的2026，我们该如何自处？---对谈潘乱+Koji

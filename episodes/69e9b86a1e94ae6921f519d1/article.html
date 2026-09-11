@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent、TPU、生态、安全、开放：Google Cloud 到底在 bet 什么？</title>
+</head>
+<body>
+  <article>
+    <header>
+      <h1>Agent、TPU、生态、安全、开放：Google Cloud 到底在 bet 什么？</h1>
+      <p class="meta">屠龙之术 · 讲述者：明浩，Google Cloud Next 现场观察者 · 发布于 2026 年 4 月</p>
+      <p class="meta">来源：屠龙之术《Agent\TPU\生态\安全\开放，Google Cloud到底在bet什么？-Google Cloud Next速记》</p>
+      <p><span class="tag">AI 产品</span> <span class="tag">硬件</span> <span class="tag">芯片</span> <span class="tag">战略</span></p>
+    </header>
+
+    <p>明浩在拉斯维加斯参加 Google Cloud Next 的第一天，上午听完主 Keynote，下午又挑了四场分论坛。他没有把这场大会理解成一次单点模型发布，而是沿着 Agent、TPU、安全、开放和资本关系，试着辨认 Google Cloud 面向企业 AI 的整套安排。会场的规模、芯片登台时的掌声和技术播客现场录制的长队，构成了这份速记的背景；内容本身则集中在云业务如何把模型能力接进企业。</p>
+
+    <p>节目开头，明浩把 Google Cloud 描述为 Google 面向企业的业务出口，模型、TPU、安全和数据服务都要在这里交付。按照他对主 Keynote 的复述，企业讨论的重点已从是否尝试 AI，转向 Agent 如何构建、扩展、治理和优化。Gemini Enterprise 被介绍为面向企业的 Agent 平台，这也为当天随后出现的硬件、安全和生态议题定下了范围。</p>
+
+    <section>
+      <h2>五层服务把企业 AI 放进同一套产品结构</h2>
+
+      <p>明浩按演讲的顺序，整理出五层服务。底部是以 TPU 和定制 GPU 为主的 AI Hypercomputer；其上是 Agentic Data Cloud；第三层是 Agentic Defense；第四层才是 Agentic Platform and Models；最上面是 Agentic Task Force。节目并未展开这些层的具体技术调用；明浩从这套排列读到的，是一整套企业 AI 服务，而非孤立的模型接口。</p>
+
+      <p>安全的位置尤其醒目。它夹在数据与模型之间，成为独立的一层。明浩反复提到主 Keynote 中安全内容的比重，也注意到 Wiz 的联合创始人兼产品负责人登台讲 AI 安全和 Agent 安全评估。节目没有细述评估方法，不过它保留了一个清楚的产品判断：企业部署 Agent 时，安全是平台组织方式的一部分。</p>
+
+      <div class="cards">
+        <div class="card c-blue">
+          <strong>基础设施</strong>
+          AI Hypercomputer 承接 TPU、定制 GPU 等算力资源。
+        </div>
+        <div class="card c-green">
+          <strong>数据与安全</strong>
+          Agentic Data Cloud 与 Agentic Defense 分别成为独立服务层。
+        </div>
+        <div class="card c-purple">
+          <strong>模型与任务</strong>
+          平台、模型和任务层把底层资源接到企业的实际工作中。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>内部使用数据与 TPU 分工</h2>
+
+      <p>节目还转述了 Google CEO 在现场视频中披露的两组内部数字。第一方 API Token 的调用量，据称从 2024 年第三季度的每分钟 70 亿，增长到上一个季度的每分钟 100 亿，再到当期的每分钟 160 亿。Google 内部新代码中由 AI 生成的比例，则从上季度的 50% 升到当期的 75%。这些都是企业内部披露，节目没有补充 Token 的产品范围、调用方构成或代码生成比例的审核口径；它们在这份现场笔记里的作用，是呈现采用速度。</p>
+
+      <p>算力的安排紧接着出现。Amin 在舞台上公布 TPU v5p 与 v5e，明浩记录，前者面向模型训练，后者面向模型推理，两款芯片由不同代工厂商制造。他又援引一个未具名的第三方预测：未来数年，推理需求可能超过总需求的一半。这是他理解 TPU 分工的背景，而不是对两款产品性能的比较。</p>
+
+      <p>主 Keynote 给出过一个使用案例：Thinking Machines 称使用 TPU 后，训练效率提升到原来的两倍。节目没有提供任务、集群规模或基准测试，因而不能把这个案例扩展成普遍的性能结论。明浩更在意的是，发布会把训练和推理的需求差异摆到产品命名与硬件展示上，现场也实际展示了搭载 TPU 和 Google GPU 的机柜。</p>
+
+      <div class="compare">
+        <div>
+          <h3>TPU v5p</h3>
+          <p>节目转述其面向模型训练。训练是主播讨论硬件路线时的一端。</p>
+        </div>
+        <div>
+          <h3>TPU v5e</h3>
+          <p>节目转述其面向模型推理。主播把它放进推理需求可能上升的背景中。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>开放性体现为具体的连接关系</h2>
+
+      <p>明浩在超过一个半小时的主 Keynote 里看到了 Apple、Microsoft 365、NVIDIA Blackwell 的标识，也听到 AWS 被提及。他因此把开放性视为当天的一条暗线。节目列举的关系并不相同：他转述 Google Cloud 将为下一代 Apple AI 模型提供能力，并可能出现在新 Siri 中；Gemini Enterprise 支持与 Microsoft 365 对接；Google Cloud Infra 被介绍为较早提供 Blackwell 服务的厂商之一；新的数据库服务则可以对接 AWS 和微软云。</p>
+
+      <p>把这些事放在一起，明浩看到的是一个云平台的现实处境。它需要销售自己的模型和基础设施，也需要与办公软件、芯片供应商和其他云服务协作。节目没有把这些合作写成一条统一协议，更没有认为它们消除了竞争；开放在这里指向的是跨产品、跨公司交付企业服务的能力。</p>
+
+      <div class="info-box">
+        <p><strong>明浩的观察：</strong>Apple、Microsoft、NVIDIA 与 AWS 在主 Keynote 中出现的场景各不相同，但共同让他注意到 Google Cloud 同时经营合作和竞争关系。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>垂直 Agent 仍要处理模型之外的工作</h2>
+
+      <p>明浩在 Agents in Action 分论坛听到三家垂直 Agent 公司讲自己的交付。Harvey 服务法律场景，Rogo 面向金融分析师，第三家公司则帮助银行、政府等大型机构改造难以上云的遗留大型机系统。节目还提到，三家公司都获得过 Google Ventures 投资。它们面对的并非同一行业，但给出的理由有相当多重合。</p>
+
+      <p>第一层理由是模型选择。分论坛嘉宾认为，复杂行业任务往往难由一家模型厂商完全满足，因此垂直公司在中间管理模型选择与路由仍有价值。第二层理由是治理。金融、法律、银行和保险客户对数据安全、权限、隐私和流程都有严格要求，模型能否回答问题，只是交付的一部分。节目没有比较三家公司的效果，却把这两类工作保留下来，说明垂直 Agent 的角色并不止于调用模型。</p>
+
+      <p>收费方式也没有走到理想化的按结果付费。三位嘉宾的共同判断是，这种方式目前还难大规模实现；更常见的组合是基础订阅、扩展包，以及少量与结果挂钩的尝试。另一个共同的难题是人：既理解垂直业务，又知道 AI 能力边界的人很少。分论坛把这类人放在 Agent、后训练和强化学习环境建设的交汇处，需求因而更集中。</p>
+
+      <div class="cards">
+        <div class="card c-blue">
+          <strong>任务路由</strong>
+          复杂任务可能需要在多个模型与工具之间选择和编排。
+        </div>
+        <div class="card c-red">
+          <strong>治理交付</strong>
+          数据、权限、隐私和流程要求决定了模型输出能否进入业务。
+        </div>
+        <div class="card c-yellow">
+          <strong>当前收费</strong>
+          基础订阅与扩展包仍是收入底座，按结果付费处在试探阶段。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Anthropic 把企业机会与软件工作重新拆开</h2>
+
+      <p>After Software 分论坛由 Anthropic 的一位技术负责人讲述下一代企业软件。演讲将企业收益分为三类：让员工更聪明，例如搜索内部信息、自动化研究、分析数据并创建文件；让流程更快，例如加速开发、提高软件质量、自动化部分流程；以及构建以 AI 为中心的新产品，借此解决客户问题并带来新增收入。这三类并非时间顺序，而是企业采用 AI 的不同落点。</p>
+
+      <p>演讲者还给出一个内部估计：AI 能力大约每七个月翻一倍。他将这个判断归因于三项变化，分别是问题变得更复杂、单次运行时间变长，以及 Agent 框架更复杂。节目没有提供统一评测或外部模型对照，因此这个速度只能理解为 Anthropic 演讲者的内部观察。</p>
+
+      <p>更深的一层是对软件工作的判断。演讲者认为，过去的工作量大量集中在实施、验证、部署和维护；AI 编程能力提高后，识别问题、界定问题、设定目标以及决定是否解决它，会占据更大的位置。他用 Claude Code 说明一种软件形态：模型在流程中调用工具，围绕目标反复调整。演讲把焦点放在企业会投入更多精力选择正确的问题，没有给出实施与维护将减少到何种程度的数字。</p>
+
+      <div class="compare">
+        <div>
+          <h3>过去的工作量</h3>
+          <p>实施、验证、部署和维护被视为较重的部分。</p>
+        </div>
+        <div>
+          <h3>演讲者的预期</h3>
+          <p>问题定义、目标设定和取舍判断的重要性会提高。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>TPU 的长期路线与生态里的资本关系</h2>
+
+      <p>Acquired 的现场录制把镜头拉回 TPU 的长期路径。Amin、DeepMind 的首席科学家 Jeff 和两位播客主播谈到十多年的发展、其中的失败以及持续投入的原因。讨论没有停在芯片指标上，还推演了进一步扩张会遇到的物理约束：电力、数据中心建设、先进封装和代工。明浩听完后更关心组织层面的条件，他认为 Google 的文化与战略选择帮助 TPU 路线穿过了早期困难。</p>
+
+      <p>资本关系是他在会场看到的另一条线。节目提到 DeepMind 的收购、Wiz 对云安全产品线的补充、Google 对 Anthropic 的早期资金联系，以及 Google Ventures 所投的几家垂直 Agent 公司。明浩把这些关系归为生态线索：收购和投资既可能补足产品与研究能力，也让 Google Cloud 更早接触模型训练、垂直行业和企业客户。节目没有量化这些关系各自的财务回报，重点在于它们如何与产品路线同时出现。</p>
+    </section>
+
+    <section>
+      <h2>一场没有单一大招的大会</h2>
+
+      <p>明浩在会前期待看到新的大招，结束后却认为大会没有给出一项可以单独改变判断的发布。他也解释了这个落差：大型会议的内容往往要提前数月确定，很难完全跟随以月为节奏的模型竞争。这个判断没有削弱他的兴趣，反而让他把注意力从一项发布转向整套能力如何协作。</p>
+
+      <p>在这份速记里，TPU 和数据中心提供基础，安全和任务平台承接企业部署，互操作把服务接进现有软件与云环境，投资和伙伴关系把路线延伸到模型公司和垂直场景。明浩对 Google Cloud 的回答因此没有落在单一产品上：他看到的是一场围绕基础设施、交付和生态的较量。</p>
+    </section>
+
+    <footer>
+      <p>来源：<a href="https://www.xiaoyuzhoufm.com/episode/69e9b86a1e94ae6921f519d1?utm_source=rss">屠龙之术《Agent\TPU\生态\安全\开放，Google Cloud到底在bet什么？-Google Cloud Next速记》</a></p>
+    </footer>
+  </article>
+</body>
+</html>

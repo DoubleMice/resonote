@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-09-11T03:04:04.182Z
+refreshed_at: 2026-09-11T18:11:46.283Z
 min_duration: 3300
 min_date: "20260821"
 total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
@@ -104,5 +104,9 @@ episodes:
       ⚰️ 01:07:03 Why an Anthropic researcher's resignation has Kain and Taylor spooked
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T18:15:40.478Z
+    transcript_error: terminated
+    transcript_completed_at: 2026-09-11T18:33:37.293Z

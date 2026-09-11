@@ -1,0 +1,30 @@
+title: Snake Oilers：watchTowr、XBOW 与 CoreView
+guest: Ben Harris、Fede Kirschbaum、Andrew McAllister
+guest_role: watchTowr 创始人；XBOW 安全实验室负责人；CoreView 澳大利亚团队成员
+tags:
+  - ai-products
+  - startup
+  - quick-take
+  - technical
+summary: >
+  这期付费赞助节目依次介绍 watchTowr、XBOW 和 CoreView。watchTowr 关注漏洞披露后、补丁完成前的暴露确认与边界缓解；XBOW 说明如何以多模型和专项代理验证应用漏洞的实际影响；CoreView 则讨论
+  Microsoft 365 配置、第三方 Entra 应用和权限漂移的持续治理。
+
+  三段访谈都围绕一个实际问题展开：风险已经出现时，团队需要多快拿到足以处置的证据。
+core_ideas:
+  - watchTowr：用蜜罐遥测确认设备利用痕迹，并把漏洞复现结果转成既有 WAF、IDS 或 IPS 的规则，为补丁流程争取时间。
+  - XBOW：以运行时黑盒测试发现自定义应用的问题，再由协调器与专项求解器验证是否能形成实际利用。
+  - CoreView：集中 Microsoft 365 的配置和使用信息，主张以配置备份、漂移检测、应用盘点和自动修复减少遗留风险。
+  - CoreView 的案例包括过多全局管理员、带邮箱的高权限账号，以及长期未关闭的 SharePoint 外部共享。
+id: SNAKEOILERS24PT1
+source: risky-business
+source_title: "Snake Oilers: watchTowr, XBOW and CoreView"
+published: 2026-09
+published_sort: "20260911"
+duration: 42m
+url: https://risky.biz/SNAKEOILERS24PT1/
+status: generated
+article_path: episodes/SNAKEOILERS24PT1/article.html
+base: /episodes/SNAKEOILERS24PT1/
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+generated_at: 2026-09-11T20:14:12.089Z

@@ -1,11 +1,11 @@
 source: risky-business
-refreshed_at: 2026-09-11T03:04:04.185Z
+refreshed_at: 2026-09-11T18:11:46.288Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -28,5 +28,9 @@ episodes:
         CoreView: Your M365 tenant is probably a security disaster. Tame it with CoreView!
 
       This episode is also available on YouTube.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-11T18:11:47.690Z
+    transcript_job_id: e54e498e-2683-4537-9607-ba7939b16c14_a4cde208eeda4f36b60d94a2b55de731,2b91190c-5542-4c9d-8436-d947bc199f63_4e70b297865449db979701e2e929e302,90a2f0a2-23f2-460b-9b0d-70c6ad47ab34_4ae1e938a90a403fbc2141419cb311d0
+    transcript_completed_at: 2026-09-11T18:15:40.052Z
