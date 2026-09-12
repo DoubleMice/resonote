@@ -1,0 +1,29 @@
+title: 22. Token出海是赛博偷电？美国为啥电网建不好？- Ian | 电力侠
+guest: Ian（电力侠）
+guest_role: 北美输电公司电力系统工程从业者
+tags:
+  - ai-products
+  - hardware
+  - interview
+  - technical
+  - strategic
+summary: |
+  Ian 从北美输电系统的工程视角讨论 Token 价格、AI 数据中心接电与美国电网扩建。节目区分了局部供电风险和全国性停摆，也解释了跨州许可、峰值负荷、负载波动与能源结构为何会同时影响数据中心的发展。
+core_ideas:
+  - Token 的低价不能只归因于电力；设施、冷却、芯片、模型开发和服务定价也会影响成本。
+  - 美国电网的难点不只在设备年限，还在跨州许可、区域规则与输电投资的成本分配。
+  - 数据中心并网后会带来容量、峰值和稳定性问题；完全离网也仍受环境审批约束。
+  - 储能可以利用电价时段差，但 Ian 不认为它是美国风电、光伏扩张较慢的主要瓶颈。
+  - 核电适合放在长期能源安全中讨论，数据中心近期供电则常依赖既有设施、天然气或更快的并网安排。
+id: 69c2b52b798af9b984f09686
+source: taixian-zhihuo
+source_title: 22. Token出海是赛博偷电？美国为啥电网建不好？- Ian | 电力侠
+published: 2026-03
+published_sort: "20260324"
+duration: 1h2m
+url: https://www.xiaoyuzhoufm.com/episode/69c2b52b798af9b984f09686?utm_source=rss
+status: generated
+article_path: episodes/69c2b52b798af9b984f09686/article.html
+base: /episodes/69c2b52b798af9b984f09686/
+thumbnail: https://image.xyzcdn.net/npY9GptaiALhacJY_tE15QLzjftC.png
+generated_at: 2026-09-12T19:06:54.677Z

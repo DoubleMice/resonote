@@ -1,10 +1,10 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-12T03:03:59.966Z
+refreshed_at: 2026-09-12T18:10:58.293Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
-done: 0
-pending: 3
+done: 3
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69c2b52b798af9b984f09686?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69c2b52b798af9b984f09686/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpMeFJHprrJmhASZG-S9Pp3bb2io.m4a
     image: https://image.xyzcdn.net/npY9GptaiALhacJY_tE15QLzjftC.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 32f71826-8f4e-46a2-8962-1c1afdecd598_bf0e7c03e8d24d4c993f487ec50e85a3,e2dbb6e8-f8fe-44df-af90-08c97f14a891_23e017ce664442e0a0b153c5004b35ff,0981f689-8356-4b79-9d57-eefdee92c87d_5f033b3555834ff3a2cc096e3100b2d7,76f11e07-77ca-4059-a40b-0bc686ea78b5_9cb621121d7e4d99946ddaf456eca82c,accec9b8-79ec-47f7-a08f-dd3e0b7fa1b3_5586698b6a164cea805e60decc509da8
@@ -36,7 +36,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/697f789c073030367ab87cf9?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/697f789c073030367ab87cf9/media.xyzcdn.net/67f40c212ac4d88190caa56a/ln4CgIIcOvGCU6L1zypWBXndF0BE.m4a
     image: https://image.xyzcdn.net/nqJ-y9lzRVsLDCp5tffBuYdf4gW0.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: b2aa87c1-95df-4d3e-8231-61549d1284b8_9a3317af414841d3bcd813581761fdef,9abca299-b785-4fac-b182-a9a8e6e3222e_e7cc26335eb84d9abfa770a5540bdd31,da43166f-0a23-499c-86fb-ab8ca82e8147_3517fd313a2d4e5f92d7ee787b4d6136,b532535e-17fb-44fd-b0a6-fd775f448939_2a0debd1db8f4f4e80830d782abcd7bf
@@ -52,7 +52,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69692746109824f9e1b50cb3?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69692746109824f9e1b50cb3/media.xyzcdn.net/67f40c212ac4d88190caa56a/ljOhwGu4gmwbB1kiF2fvhOBPG5a1.m4a
     image: https://image.xyzcdn.net/nkRZrZeIaFSQRynOEJwAYwM2YzBg.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: a9e25346-1bc8-40a1-9881-fe3ea52a21fb_f329e83a067b4ac48ba539131574deaa,c7695d44-64f7-48dc-9eea-a370d92a48bd_91387e23bd2340c09901b1a4a515cb37,319bb6b7-1223-4226-82f0-eee09bfad4a8_db1d8b7054bd48188abb13102fc49462,64376af8-6ca7-42d7-af34-176dc105cb3f_ea5c99ad98604e93acd1742fd7140903,cd2cb0dd-a56c-4096-bc11-b75db02c925b_510314c1393944b69d006801f0427d36

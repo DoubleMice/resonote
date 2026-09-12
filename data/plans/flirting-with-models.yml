@@ -1,13 +1,13 @@
 source: flirting-with-models
-refreshed_at: 2026-09-12T03:03:59.918Z
+refreshed_at: 2026-09-12T18:10:58.252Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
@@ -20,9 +20,9 @@ episodes:
     url: http://www.flirtingwithmodels.com/
     audio_url: https://episodes.captivate.fm/episode/1431fb8e-f94d-4254-8cd7-295d196a88dd.mp3
     image: https://artwork.captivate.fm/f814eb93-aa54-4047-96d8-f8a05efbfd60/S3-FlirtingWithModels-with-Ben-Wellington-copy.jpg
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-09T18:23:01.281Z
-    transcript_completed_at: 2026-09-09T18:23:04.955Z
-    transcript_error: "audio download failed: 404 Not Found"
+    transcript_submitted_at: 2026-09-12T18:16:38.145Z
+    transcript_completed_at: 2026-09-12T18:19:40.195Z
+    transcript_job_id: a34ec2fd-975a-4a78-9641-c883c4c6de23_89387addad9e4d8e81792e99dca7c5ab,f921de44-4275-4b7c-a3a0-1b1b41ca2fd0_5460b0dfbdbf4cc38ac2591e813ee4a6,a4bd041e-93cb-408a-af56-63d6fa035417_393fcc6aeed345baab1afad8f79a67fa,eacc4f62-0443-441e-8cfd-54143e0d8504_c1c23dc60967498aacec2333faad210d

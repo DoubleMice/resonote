@@ -1,0 +1,30 @@
+title: Ben Wellington：Two Sigma 的复杂特征工程
+guest: Ben Wellington
+guest_role: Two Sigma 复杂特征引擎负责人
+tags:
+  - interview
+  - engineer
+  - technical
+  - strategic
+  - quick-take
+summary: >
+  Ben Wellington 介绍了 Two Sigma 如何把原始市场和文本数据转成可检验的特征，并用正交性、统计检验和持续监测控制重复信号与过拟合。访谈也讨论了 LLM
+  如何压低探索成本、扩大公司特异性研究的规模，同时给模型生命周期、前视偏差和研究工具同质化带来新的约束。
+core_ideas:
+  - 特征是具有经济意义、可被检验的观察；人的假设先帮助研究收窄搜索空间。
+  - 数据获取仍有价值，但数据更普及后，提出独特特征和使用方法的重要性上升。
+  - LLM 能把结构化材料转成可研究的文本，也让原先成本过高的想法更容易进入实验清单。
+  - 自动化若让所有研究者得到相同输出，会削弱组合需要的低相关性；工具应保留不同人的上下文与判断。
+  - 更快的实验要求同步扩大统计检验、稳健性检查和模型生命周期控制。
+id: 1431fb8e-f94d-4254-8cd7-295d196a88dd
+source: flirting-with-models
+source_title: Ben Wellington – Complex Feature Engineering at Two Sigma (S7E32)
+published: 2026-07
+published_sort: "20260706"
+duration: 57m
+url: http://www.flirtingwithmodels.com/
+status: generated
+article_path: episodes/1431fb8e-f94d-4254-8cd7-295d196a88dd/article.html
+base: /episodes/1431fb8e-f94d-4254-8cd7-295d196a88dd/
+thumbnail: https://artwork.captivate.fm/f814eb93-aa54-4047-96d8-f8a05efbfd60/S3-FlirtingWithModels-with-Ben-Wellington-copy.jpg
+generated_at: 2026-09-12T19:05:54.112Z

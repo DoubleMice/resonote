@@ -1,0 +1,29 @@
+title: Vol.85 写在DeepSeek发布一年之后，也写在元宝要发10亿红包之后---串台厚雪长坡
+guest: 庄明浩
+guest_role: 屠龙之术主理人、投资人
+tags:
+  - ai-products
+  - ai-research
+  - interview
+  - investor
+  - strategic
+summary: |
+  庄明浩回顾 DeepSeek-R1 发布后的一年：开源推理模型改变了竞争叙事，Agent 与多模态把能力从聊天带向执行和内容生成。对谈也把持续学习、世界模型、平台化和巨额资本开支放在一起，讨论技术进展为何尚未消除商业化与估值的分歧。
+core_ideas:
+  - R1 的影响来自推理能力、开源方法与成本叙事的叠加；训练成本和长期资本计划不能直接按同一口径比较。
+  - Agent 要进入真实环境，还要解决浏览器、数据访问、身份、权限、协议和责任安排，基础设施因此成为重点。
+  - 预训练、强化学习与持续学习并行推进；持续学习和世界模型仍是尚待验证的研究方向。
+  - 市场为远期平台位置定价，但模型、云和数据中心的资本开支会先构成现金流压力。
+  - 阿里、字节和腾讯的人工智能路径受其云、模型、消费端产品与既有业务结构影响，并无单一最优节奏。
+id: 6977580d109824f9e1aa7167
+source: tulong-zhishu
+source_title: Vol.85 写在DeepSeek发布一年之后，也写在元宝要发10亿红包之后---串台厚雪长坡
+published: 2026-01
+published_sort: "20260126"
+duration: 1h40m
+url: https://www.xiaoyuzhoufm.com/episode/6977580d109824f9e1aa7167?utm_source=rss
+status: generated
+article_path: episodes/6977580d109824f9e1aa7167/article.html
+base: /episodes/6977580d109824f9e1aa7167/
+thumbnail: https://image.xyzcdn.net/Fth3SOAoHJZmaBiDutROyBtjACkN.png
+generated_at: 2026-09-12T19:34:33.030Z

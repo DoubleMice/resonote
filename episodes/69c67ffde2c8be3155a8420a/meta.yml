@@ -1,0 +1,30 @@
+title: Vol.91 数据角度看OpenClaw的企业落地---对谈Oceanbase
+guest: 刘华阳、戴涛
+guest_role: 企业数据库架构师；OceanBase AI 解决方案负责人
+tags:
+  - ai-products
+  - technical
+  - strategic
+  - panel
+  - engineer
+summary: |
+  刘华阳与 OceanBase 的戴涛从数据库和数据治理的角度讨论 OpenClaw 在企业中的落地难题。个人助手可在用户自行授权的环境中工作，企业智能体却必须处理多系统权限、敏感数据、审计记录和长期记忆。
+  对谈认为，企业可以先在局部场景试用 AI，再逐步处理混合搜索、外置记忆、统一数据底座与治理问题；这些基础能力决定了智能体能否扩大部署范围。
+core_ideas:
+  - OpenClaw 的个人助手定位与企业数字员工的需求不同，后者需要受角色、流程和审计约束。
+  - 多套 Agent、RAG 与数据库会重新制造数据孤岛，企业需要降低技术栈的分裂程度。
+  - 向量检索解决语义相似性，但企业查询还会结合结构化条件和多模态数据。
+  - RAG、对话记忆与 Skill 分别保存知识、交互记录和 SOP；长期记忆还需要新增、检索、更新与淘汰机制。
+  - 企业可以先在局部业务域试点，再扩大场景并建设统一的数据与治理能力。
+id: 69c67ffde2c8be3155a8420a
+source: tulong-zhishu
+source_title: Vol.91 数据角度看OpenClaw的企业落地---对谈Oceanbase
+published: 2026-03
+published_sort: "20260327"
+duration: 1h0m
+url: https://www.xiaoyuzhoufm.com/episode/69c67ffde2c8be3155a8420a?utm_source=rss
+status: generated
+article_path: episodes/69c67ffde2c8be3155a8420a/article.html
+base: /episodes/69c67ffde2c8be3155a8420a/
+thumbnail: https://image.xyzcdn.net/FgrgsuLQ88kaqbLeiJJpCL3slS_K.png
+generated_at: 2026-09-12T19:01:44.923Z

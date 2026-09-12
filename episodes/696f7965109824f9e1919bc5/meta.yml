@@ -1,0 +1,31 @@
+title: Vol.84 数据不再是“后台的沉默基石”：OceanBase 与 00 后开发者眼中的 AI 变局
+guest: 日昭（OceanBase CTO）、杨同学（华东师范大学）、吴洪涛（北京邮电大学）
+guest_role: OceanBase CTO、数据库大赛参赛学生
+tags:
+  - ai-products
+  - coding-agents
+  - engineer
+  - interview
+  - technical
+  - strategic
+summary: >
+  OceanBase CTO 日昭与两位数据库比赛参赛学生讨论了一个企业 AI 的具体难题：模型如何使用私有数据，并让检索结果可以回到原始资料。节目从混合检索、AI 编程和数据库人才培养谈到持续学习与
+  Agent，反复强调模型能力进入业务流程还需要数据、权限和人工审查共同配合。
+core_ideas:
+  - 企业私有数据通常不在通用模型的预训练中；如何管理、检索并接入业务流程，仍是企业 AI 的早期工程问题。
+  - 混合检索把向量、全文等方法放在一起使用；答案正确还不够，文档与页码的来源也要稳定。
+  - AI 编程可加快阅读代码和生成实现，但严谨代码仍需要人理解需求、审查结果并组织测试。
+  - 日昭把持续学习分为模型内部更新和数据库加上下文两条路径，并认为前者的自动化效果仍难预测。
+  - 嘉宾预计通用 Agent 会继续快速发展，而企业 Agent 的节奏受私有数据、权限和业务系统接入约束。
+id: 696f7965109824f9e1919bc5
+source: tulong-zhishu
+source_title: Vol.84 数据不再是“后台的沉默基石”：OceanBase 与 00 后开发者眼中的 AI 变局
+published: 2026-01
+published_sort: "20260120"
+duration: 1h14m
+url: https://www.xiaoyuzhoufm.com/episode/696f7965109824f9e1919bc5?utm_source=rss
+status: generated
+article_path: episodes/696f7965109824f9e1919bc5/article.html
+base: /episodes/696f7965109824f9e1919bc5/
+thumbnail: https://image.xyzcdn.net/FoyTW0jHTBET68ATorc95txbIQnW.png
+generated_at: 2026-09-12T19:42:46.436Z
