@@ -1,79 +1,15 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-11T18:11:46.345Z
+refreshed_at: 2026-09-12T03:03:59.966Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 7
-done: 4
+total_candidates: 3
+done: 0
 pending: 3
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 6a02082f1b7bd50295f37702
-    guid: 6a02082f1b7bd50295f37702
-    title: 31. 「26Q1」中美大模型差距过去一年变大还是缩小？- Hugging Face | 王铁震
-    duration: 3953
-    published: Mon, 11 May 2026 17:29:26 GMT
-    published_sort: "20260511"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/6a02082f1b7bd50295f37702?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6a02082f1b7bd50295f37702/media.xyzcdn.net/67f40c212ac4d88190caa56a/lrtrE7sAMZ3oIgtkoGMD-AFJiuw4.m4a
-    image: https://image.xyzcdn.net/FpzzYGQNdaqTfn110JrGlCkzuJ6P.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: e14a31ea-0902-48cb-8e06-c326b3713866_4befa0432e6745be9529ace3e7ba350d,ede82069-27e1-4cfe-9412-c347cda243a4_cf021743f3f94bbf92303204794c14f3,4a6001ab-7077-4b4e-a022-79920c7edf05_96b1fa1e862b4bf98a95f6801ea9e3b8,f2c8bd01-c626-401e-847c-0397565a8135_6def590e0dd741978fe640f4144a563e,26e8cacb-fd07-4e52-8e4a-3124abfc375c_e4896de7e9c442f99a9a9ef0af6d5ef9
-    transcript_submitted_at: 2026-09-10T18:33:34.623Z
-    transcript_completed_at: 2026-09-10T18:36:31.492Z
-  - id: 69ef6d9f3918a089438b7662
-    guid: 69ef6d9f3918a089438b7662
-    title: 28. 今年量化指增还能上车吗？会接盘吗？ - 串台｜慧客堂
-    duration: 5555
-    published: Tue, 28 Apr 2026 16:00:00 GMT
-    published_sort: "20260428"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/69ef6d9f3918a089438b7662?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69ef6d9f3918a089438b7662/media.xyzcdn.net/67f40c212ac4d88190caa56a/lg-hzjzlHF0ofdMZf8eSLoDgmcoF.m4a
-    image: https://image.xyzcdn.net/FiYPHQrcpOwnN5ZCr4-qYlnLKozz.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 8fc506a0-706c-4ec4-bffa-d232de223294_0ba9ac5052ad41389a8594844f177862,27b8229b-afb3-4228-aca5-4a46949ef228_a9108266145546b18d138718684afcb1,d495c3be-b1c3-440d-a7cb-909d647c9ef3_9e04a325db0b4f168d9b6d4749da7b0b,9347a501-00e8-4df2-9d5a-3a0de13d58dc_7966d859826d4cb18c705c1ccab65054,8d46a352-7194-418d-8cc0-fd36cd01fca5_e0a66281b17342eca5ff91433642a70a,492ffd51-daa9-44f4-a3df-df273ce940c5_9a1e265f5c224874a3551323fcf5248a,1769a364-7964-4dff-88e0-ff35925337e4_a74829db37f84235bf6be994fc3b8356
-    transcript_submitted_at: 2026-09-10T18:39:41.684Z
-    transcript_completed_at: 2026-09-10T18:43:11.507Z
-  - id: 69d4a6c0e2c8be31558fdb06
-    guid: 69d4a6c0e2c8be31558fdb06
-    title: 25. 放下中国式焦虑，孩子有自己的康波 - 两个新手爸爸聊天
-    duration: 4290
-    published: Thu, 09 Apr 2026 16:00:00 GMT
-    published_sort: "20260409"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/69d4a6c0e2c8be31558fdb06?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69d4a6c0e2c8be31558fdb06/media.xyzcdn.net/67f40c212ac4d88190caa56a/lge4NLUAMX0ANE51yAjj3L4x9Wgj.m4a
-    image: https://image.xyzcdn.net/nnYmrfDOI-6rToiU4ZEUN-Ld4A9G.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-11T18:33:37.531Z
-    transcript_job_id: 3870efe4-b932-41ca-b4b4-1fc2b7a46139_98f5642b5689463f80b7f842c85afb53,842817e7-b422-46e0-8466-20f0a48ee188_898a219865384b9db4c39fc81b72367e,fd651019-6a57-42da-90f9-c399be600f5f_d12cea8e8c6f4120a0a92469a1152405,a2525741-5152-42bb-a431-0943e63a47b9_7fcfb3f520c846c49f9d409e633ba78d,c42e20db-1d9d-4608-85e2-33c06a729103_7f81544a953d4ea8a4c723539faa320d
-    transcript_completed_at: 2026-09-11T18:45:45.960Z
-  - id: 69ca61e7e2c8be3155e9a8fc
-    guid: 69ca61e7e2c8be3155e9a8fc
-    title: 23. 战火中的金融中心：迪拜投资人逃难记 - Bowen
-    duration: 3272
-    published: Mon, 30 Mar 2026 16:00:00 GMT
-    published_sort: "20260330"
-    first_seen_at: 2026-09-08T07:39:36.857Z
-    url: https://www.xiaoyuzhoufm.com/episode/69ca61e7e2c8be3155e9a8fc?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/69ca61e7e2c8be3155e9a8fc/media.xyzcdn.net/67f40c212ac4d88190caa56a/lojVm3pXVnv2A_Oc2T9rJ0NDKbf7.m4a
-    image: https://image.xyzcdn.net/no75p8MFBLBu7Ru0E0_i8RkIslOh.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-11T18:53:37.440Z
-    transcript_job_id: 3a48361b-6d9e-433b-999f-4e9cad5d2cdc_6c5a63248fc34c74b34e2367a7a32f69,68fe0842-0d33-4925-ba1c-4c415f07fa1c_1713926e126c44d18ed9a35fc5336577,mimo:69ca61e7e2c8be3155e9a8fc:2:2026-09-11T18:53:37.440Z,58a78920-24ce-48a6-babd-b232540c21a7_dbf1f005a977429f89cf05510f81c9fd
-    transcript_completed_at: 2026-09-11T18:58:48.173Z
   - id: 69c2b52b798af9b984f09686
     guid: 69c2b52b798af9b984f09686
     title: 22. Token出海是赛博偷电？美国为啥电网建不好？- Ian | 电力侠
@@ -87,8 +23,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-11T19:08:54.777Z
     transcript_job_id: 32f71826-8f4e-46a2-8962-1c1afdecd598_bf0e7c03e8d24d4c993f487ec50e85a3,e2dbb6e8-f8fe-44df-af90-08c97f14a891_23e017ce664442e0a0b153c5004b35ff,0981f689-8356-4b79-9d57-eefdee92c87d_5f033b3555834ff3a2cc096e3100b2d7,76f11e07-77ca-4059-a40b-0bc686ea78b5_9cb621121d7e4d99946ddaf456eca82c,accec9b8-79ec-47f7-a08f-dd3e0b7fa1b3_5586698b6a164cea805e60decc509da8
+    transcript_submitted_at: 2026-09-11T19:08:54.777Z
     transcript_completed_at: 2026-09-11T19:17:01.479Z
   - id: 697f789c073030367ab87cf9
     guid: 697f789c073030367ab87cf9
@@ -103,8 +39,8 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-11T19:23:53.895Z
     transcript_job_id: b2aa87c1-95df-4d3e-8231-61549d1284b8_9a3317af414841d3bcd813581761fdef,9abca299-b785-4fac-b182-a9a8e6e3222e_e7cc26335eb84d9abfa770a5540bdd31,da43166f-0a23-499c-86fb-ab8ca82e8147_3517fd313a2d4e5f92d7ee787b4d6136,b532535e-17fb-44fd-b0a6-fd775f448939_2a0debd1db8f4f4e80830d782abcd7bf
+    transcript_submitted_at: 2026-09-11T19:23:53.895Z
     transcript_completed_at: 2026-09-11T19:30:15.794Z
   - id: 69692746109824f9e1b50cb3
     guid: 69692746109824f9e1b50cb3
@@ -119,6 +55,6 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-11T19:41:53.626Z
     transcript_job_id: a9e25346-1bc8-40a1-9881-fe3ea52a21fb_f329e83a067b4ac48ba539131574deaa,c7695d44-64f7-48dc-9eea-a370d92a48bd_91387e23bd2340c09901b1a4a515cb37,319bb6b7-1223-4226-82f0-eee09bfad4a8_db1d8b7054bd48188abb13102fc49462,64376af8-6ca7-42d7-af34-176dc105cb3f_ea5c99ad98604e93acd1742fd7140903,cd2cb0dd-a56c-4096-bc11-b75db02c925b_510314c1393944b69d006801f0427d36
+    transcript_submitted_at: 2026-09-11T19:41:53.626Z
     transcript_completed_at: 2026-09-11T19:52:18.130Z

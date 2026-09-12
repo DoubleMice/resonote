@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-09-11T18:11:46.283Z
+refreshed_at: 2026-09-12T03:03:59.905Z
 min_duration: 3300
-min_date: "20260821"
+min_date: "20260822"
 total_candidates: 1
 done: 0
 pending: 0
@@ -108,5 +108,5 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-09-11T18:15:40.478Z
-    transcript_error: terminated
     transcript_completed_at: 2026-09-11T18:33:37.293Z
+    transcript_error: terminated
