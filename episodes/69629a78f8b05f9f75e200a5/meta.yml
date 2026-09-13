@@ -1,0 +1,32 @@
+title: Vol.83 25页PPT记录一场中国AI“全明星赛”
+guest: 明昊
+guest_role: 讲述者
+tags:
+  - ai-research
+  - ai-products
+  - monologue
+  - technical
+  - strategic
+  - quick-take
+summary: >
+  明昊复盘 AGI Next 现场的三场演讲与一场论坛：模型公司正把注意力放在 Token 效率、长上下文、多模态、持续学习和 Agent 上。围绕 To B 与 To C 的分化、下一代学习范式、Agent
+  的企业价值及中美竞争，与会者给出了不同判断，也明确了算力、成本、市场和治理等约束。
+core_ideas:
+  - 唐杰、杨植麟与林俊阳的演讲分别强调持续学习、Token 效率与长上下文、真实需求中的全模态能力。
+  - 姚顺雨以 To B 和 To C 划分模型应用：消费者侧重上下文和记忆，企业侧仍有更强模型部署的空间。
+  - 自主学习被多位发言者视为重要方向，但它是否构成独立范式、如何定义和如何控制仍有分歧。
+  - Agent 的实际采用需要同时考虑任务价值、运行成本和迭代速度；现有企业部署的增长空间是姚顺雨的估计。
+  - 中国能否出现全球第一的 AI 公司没有共识：资源跟进带来乐观依据，前沿算力投入与市场条件也构成压力。
+  - 张钹提出可检验 AGI 的能力要求，并把对齐与治理的重点放在研究者和使用者身上。
+id: 69629a78f8b05f9f75e200a5
+source: tulong-zhishu
+source_title: Vol.83 25页PPT记录一场中国AI“全明星赛”
+published: 2026-01
+published_sort: "20260110"
+duration: 43m
+url: https://www.xiaoyuzhoufm.com/episode/69629a78f8b05f9f75e200a5?utm_source=rss
+status: generated
+article_path: episodes/69629a78f8b05f9f75e200a5/article.html
+base: /episodes/69629a78f8b05f9f75e200a5/
+thumbnail: https://image.xyzcdn.net/FgU7tQouOU3aH2GX2zOcq9TdtSWV.png
+generated_at: 2026-09-13T18:19:37.535Z

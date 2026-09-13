@@ -1,10 +1,10 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-13T03:04:02.797Z
+refreshed_at: 2026-09-13T18:11:28.353Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -20,7 +20,7 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/69629a78f8b05f9f75e200a5?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69629a78f8b05f9f75e200a5/media.xyzcdn.net/6507bc165c88d2412626b401/lh-CVf5tFCgywyS8Eabq3D-zB5_i.m4a
     image: https://image.xyzcdn.net/FgU7tQouOU3aH2GX2zOcq9TdtSWV.png
-    status: pending
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 814ecf59-6e35-44f9-8fc7-387d511e34c3_1917467027874e62aac4950c49993688,e22cfc39-c913-4902-bbf5-fc3650b89bc4_8eb79f19ac1b4475a60f73b373dfa5f2,33aa5f57-5d0d-461f-af56-adab19ef2ff3_52c477334ec24ebd84ecf7359df3bd8d
