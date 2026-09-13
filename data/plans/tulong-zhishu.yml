@@ -1,143 +1,15 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-12T18:10:58.287Z
+refreshed_at: 2026-09-13T03:04:02.797Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 9
-done: 8
+total_candidates: 1
+done: 0
 pending: 1
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
-  - id: 69c67ffde2c8be3155a8420a
-    guid: 69c67ffde2c8be3155a8420a
-    title: Vol.91 数据角度看OpenClaw的企业落地---对谈Oceanbase
-    duration: 3571
-    published: Fri, 27 Mar 2026 16:15:10 GMT
-    published_sort: "20260327"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69c67ffde2c8be3155a8420a?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69c67ffde2c8be3155a8420a/media.xyzcdn.net/6507bc165c88d2412626b401/lgIgMZdXdDo2aYuQ23woBbDNAoJZ.m4a
-    image: https://image.xyzcdn.net/FgrgsuLQ88kaqbLeiJJpCL3slS_K.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 8ae57faa-1fd8-4d9d-b058-3d178372e32b_4881ab4ac5aa4fc8b50bf10f06899098,4c062aa7-ba0e-4388-8288-3e8dbd463b63_a0ab25cd9337476197b56261417e0d64,80bf4317-3b39-437e-b7b8-a0cf81561d75_5548d2b14c7445a2a2a0896b7675d1cb,4743e047-4cbb-4f55-8145-6dd8b81f3645_fd49d81f527b47c2a68e03b5c1a1a7e8
-    transcript_submitted_at: 2026-09-11T19:52:18.527Z
-    transcript_completed_at: 2026-09-11T20:00:22.369Z
-  - id: 69c138b25058f5000cdcf5af
-    guid: 69c138b25058f5000cdcf5af
-    title: Vol.90 AI加速爆发的2026，我们该如何自处？---对谈潘乱+Koji
-    duration: 5758
-    published: Tue, 24 Mar 2026 16:00:00 GMT
-    published_sort: "20260324"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69c138b25058f5000cdcf5af?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69c138b25058f5000cdcf5af/media.xyzcdn.net/6507bc165c88d2412626b401/ltuAwbGbA7jwc-GKs4Fhuxu2ED4O.m4a
-    image: https://image.xyzcdn.net/FmjICGq_6HGf-_e1Rh11N-hjoWNI.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:10:59.635Z
-    transcript_job_id: e2a11984-6f8b-4e4a-9844-1a7baaa901c4_33a130fbb93e4c149539685685e457fd,0fdfd929-bcc9-40f6-8d75-b56ee1c7a392_ef2f5f6a38694b13bd27bb029adadc80,3072d5b9-3c47-47a0-9590-143bd16982a8_8a74e145adb54de4bded13c48384d63f,346f73a3-585f-48e5-b850-8811e455c73b_dafb2f5cb2f94c47bf3bf4c2b43a9ba7,48ba4ec0-0e3e-4e8e-bf3a-0caf8bfc779f_3a29885ea46a44a3b8aaef41d6ecb1e1,5cad88e0-974c-4834-9414-4593202ab56f_ed12e7302110460eb37d85104aeac6cd,79eed9fb-7457-4976-84fd-0698a44d016a_1717fba645fc430abb34412b5c6ae0a3
-    transcript_completed_at: 2026-09-12T18:16:37.694Z
-  - id: 69adf2bdc8cdeb38c28a1a81
-    guid: 69adf2bdc8cdeb38c28a1a81
-    title: Vol.89 AI行业2025年度总结补充篇（V4不等了版）---70页PPT solo
-    duration: 6026
-    published: Mon, 09 Mar 2026 00:25:25 GMT
-    published_sort: "20260309"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69adf2bdc8cdeb38c28a1a81?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69adf2bdc8cdeb38c28a1a81/media.xyzcdn.net/6507bc165c88d2412626b401/lhFOB8WKZ_bXcBe2bjIfcoxyfz6N.m4a
-    image: https://image.xyzcdn.net/FiQmjc4vi2tvy7z2D9dGSCSKbezU.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:19:40.592Z
-    transcript_job_id: 80fd1755-0b45-437a-bfc4-978750336726_9dbe52f01a604a7a945f1c6bd50d7fa6,e42a08a1-1644-4dc3-af79-469b510e538d_c5b08e5b99fd460e98bac1ac99cc884b,c1830ed1-611e-4304-8505-d1d475427fb8_3cdf001d62b54802b162cde6d71383dd,ef7cf060-52f1-42ef-8404-0fa975e5046f_3fc00815c7cb473d99a47578b202939c,91ffbfa9-1744-4a92-9d7f-c29c1cfef4db_0610db46390540d5b0e01ec99483971e,fd3125a5-6b61-4160-8184-a2d8317ff76d_305f747ff3fb45aa9b5499756673cd7c,49d68612-4b56-4672-bc58-44157afade30_0e6176e89e8b400b9317769f060472c4
-    transcript_completed_at: 2026-09-12T18:25:05.190Z
-  - id: 69855de670aae7e967d34b63
-    guid: 69855de670aae7e967d34b63
-    title: Vol.88 AI如何解锁2026内容消费的深水区---再次对谈快手磁力引擎郑迅
-    duration: 5124
-    published: Mon, 09 Feb 2026 09:00:04 GMT
-    published_sort: "20260209"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69855de670aae7e967d34b63?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69855de670aae7e967d34b63/media.xyzcdn.net/6507bc165c88d2412626b401/lm0paUntpRxcktGJxwTVnxduaf3I.m4a
-    image: https://image.xyzcdn.net/FmjICGq_6HGf-_e1Rh11N-hjoWNI.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:25:05.652Z
-    transcript_job_id: 755bbb19-0bb8-403c-aeca-60ad47499afa_35b4dab3087349b1886cc23dda6e82d8,8c480216-cac0-4332-bde0-7b9438eaa364_650ceeae89ad4062a3a755f69c0fa529,9c1fced1-dce7-4217-9e37-ecc2363724db_dafd5edf4d7a49179dcb4455b2a48636,1ccf45b7-0eb8-4c40-b1fd-a6b1f2978482_d7a60eda86bb4b93afd9d27e6e1fd5df,d0ff52a4-ce75-4f17-b304-547695d7f319_1a1793b4f6df4385abe2e462bf7b3034,53cc66c1-01bd-4221-abdc-0a2b82255e53_000438071dcc4bcca207d00825ac4ef6
-    transcript_completed_at: 2026-09-12T18:30:42.303Z
-  - id: 69855b8fc78b823892e62849
-    guid: 69855b8fc78b823892e62849
-    title: Vol.87 闲侃春节AI红包大战-从元宝红包被微信屏蔽聊起-百岁山组合（潘乱\阑夕\明浩）+一泽
-    duration: 5924
-    published: Fri, 06 Feb 2026 03:19:03 GMT
-    published_sort: "20260206"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69855b8fc78b823892e62849?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69855b8fc78b823892e62849/media.xyzcdn.net/6507bc165c88d2412626b401/lp4M9pH0IAUQGf5wYFAkngVa9m6d.m4a
-    image: https://image.xyzcdn.net/FpkmYlbFFZZm2Pwf5WpVz1EQk8ur.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:30:42.758Z
-    transcript_job_id: a34e7d39-2909-48b6-9678-c43392af6a07_8d560bdf458747dfad6fdda616ed5aba,ff771e1b-3879-49f1-8e4c-e32bb333b3d7_4ee8d76f1ec4468f9c6e5676e0f9aa94,072a5a57-8e33-436f-80d5-1da4bd96f7f0_743526db015f492eb00a8cd7ceee0d60,0d8436f4-ed51-461f-bd13-24a721fbe874_c85e4bc5e2f341aeb160179993d9b77d,e58c82db-6a20-47b3-a0b0-6b555c4332ea_4adb56b1720d4739b2904e3658f82fbc,1d1384a8-5f20-42df-9bab-59bb7c6b8c00_56673f34ce3e4c839d1025669006375e,03437405-be87-41ea-9c12-87070e57a144_ed0e59c903fb4a51a1259580b6a96a1e
-    transcript_completed_at: 2026-09-12T18:36:58.156Z
-  - id: 697cbc24b4be4c149b4b6931
-    guid: 697cbc24b4be4c149b4b6931
-    title: Vol.86 同一代技术，两个系统，181页PPT全记录AI行业的2025
-    duration: 7293
-    published: Fri, 30 Jan 2026 14:56:05 GMT
-    published_sort: "20260130"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/697cbc24b4be4c149b4b6931/media.xyzcdn.net/6507bc165c88d2412626b401/lqc4OBp5bN-oWvoyvgkPi31WlU4E.m4a
-    image: https://image.xyzcdn.net/FiNPt9jT3XA7iw9trokfeNMgCPOg.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:36:58.619Z
-    transcript_job_id: a3e2fa05-6020-45ec-a967-0f42c0612127_066780561120428db76416b7dad494e0,e54a86fa-1763-41d6-9376-fcd5710d0181_54e9ae19d6ea4380a33f1aa705862016,91435636-70ef-4897-95fc-43958f0449ee_3cc4cc9aff144764b831d614cb9b34e0,27bc979a-728f-4cba-b586-33cdfdcb1f27_cd7acd8a54d74f61baa2b13b3cdba728,2a752b0d-5241-4270-854a-fbdc2d1504b0_1150801f6815468a934bafdfac533285,f8c01497-daab-4557-9271-47e72e441bf1_0196bd7afcb042f398119920a7820bd6,a38a5b3d-31e9-49b7-80d6-a9674411d11d_328314d1d0a941ee995d8b5a3546cca1,880edbcd-f0e5-4a52-9484-81216443f944_c06456676cf44c019f1863c394eb4558,08d498e9-b9b4-428b-9229-f6e2e02abea8_71cd6efdf07e45b0b3ba3c48d348b8c1
-    transcript_completed_at: 2026-09-12T18:42:30.175Z
-  - id: 6977580d109824f9e1aa7167
-    guid: 6977580d109824f9e1aa7167
-    title: Vol.85 写在DeepSeek发布一年之后，也写在元宝要发10亿红包之后---串台厚雪长坡
-    duration: 6003
-    published: Mon, 26 Jan 2026 12:14:59 GMT
-    published_sort: "20260126"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/6977580d109824f9e1aa7167?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6977580d109824f9e1aa7167/media.xyzcdn.net/6507bc165c88d2412626b401/lgsy0UmRVCba5BCCieUA7Sjli-OF.m4a
-    image: https://image.xyzcdn.net/Fth3SOAoHJZmaBiDutROyBtjACkN.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:42:30.571Z
-    transcript_job_id: 3a30c3ff-5e2e-43f9-9a36-4591f5639193_9f243db18ac24cb59901bf4abb827e31,e8f0a984-1e9c-4da9-97de-8d5eb7385122_9ebbfde57ed24d8c81cbe244f42d1f48,4e08068f-9f49-41a3-ba08-3375458f3da2_2024dd4b8b8e4b7d9a280694ad2eab3d,c800c964-4a66-429b-af97-cf2fbe9eec3c_9c3d9e92bc0a405e8edacd3050b6bed7,43939d7b-7bcc-4855-a254-19df1b3fe156_0112120b1d244b999751cbde95f2d5e8,ca5b00c2-a3cd-4886-b5ad-2b4e6f023ff0_184f0066db654cf9a5f820db98c75df8,mimo:6977580d109824f9e1aa7167:6:2026-09-12T18:42:30.571Z
-    transcript_completed_at: 2026-09-12T18:47:45.531Z
-  - id: 696f7965109824f9e1919bc5
-    guid: 696f7965109824f9e1919bc5
-    title: Vol.84 数据不再是“后台的沉默基石”：OceanBase 与 00 后开发者眼中的 AI 变局
-    duration: 4457
-    published: Tue, 20 Jan 2026 16:14:38 GMT
-    published_sort: "20260120"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/696f7965109824f9e1919bc5?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/696f7965109824f9e1919bc5/media.xyzcdn.net/6507bc165c88d2412626b401/lq7su_2nKZhiTvyT-0igaYRlvxjK.m4a
-    image: https://image.xyzcdn.net/FoyTW0jHTBET68ATorc95txbIQnW.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:47:45.941Z
-    transcript_job_id: 58e41914-6de6-457b-9fe6-a56095928207_165534fc70e1417a9a97e59a2f31bb04,11f95938-ec57-4af3-a677-3cdd4399f0d2_a494ab701f9742bdabcbd177f7ef45c9,130b3ab5-4e69-41bf-bb50-708550778909_f78c0bb4ac5148f190decff1495229b9,175c4acb-c626-40b3-987c-63141151eab6_560488e49a3147f5a45dfd2eff8301dc,bdbf921b-df5f-47b9-85b8-9dd3f4c0b408_ea437ae66c6046f4b702b6121800ffcd
-    transcript_completed_at: 2026-09-12T18:51:42.429Z
   - id: 69629a78f8b05f9f75e200a5
     guid: 69629a78f8b05f9f75e200a5
     title: Vol.83 25页PPT记录一场中国AI“全明星赛”
@@ -151,6 +23,6 @@ episodes:
     status: pending
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-12T18:51:42.824Z
     transcript_job_id: 814ecf59-6e35-44f9-8fc7-387d511e34c3_1917467027874e62aac4950c49993688,e22cfc39-c913-4902-bbf5-fc3650b89bc4_8eb79f19ac1b4475a60f73b373dfa5f2,33aa5f57-5d0d-461f-af56-adab19ef2ff3_52c477334ec24ebd84ecf7359df3bd8d
+    transcript_submitted_at: 2026-09-12T18:51:42.824Z
     transcript_completed_at: 2026-09-12T18:54:39.151Z
