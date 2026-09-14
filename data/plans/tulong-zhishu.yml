@@ -1,28 +1,12 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-13T18:11:28.353Z
+refreshed_at: 2026-09-14T03:05:14.991Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 69629a78f8b05f9f75e200a5
-    guid: 69629a78f8b05f9f75e200a5
-    title: Vol.83 25页PPT记录一场中国AI“全明星赛”
-    duration: 2591
-    published: Sat, 10 Jan 2026 21:31:52 GMT
-    published_sort: "20260110"
-    first_seen_at: 2026-09-08T07:39:36.851Z
-    url: https://www.xiaoyuzhoufm.com/episode/69629a78f8b05f9f75e200a5?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/69629a78f8b05f9f75e200a5/media.xyzcdn.net/6507bc165c88d2412626b401/lh-CVf5tFCgywyS8Eabq3D-zB5_i.m4a
-    image: https://image.xyzcdn.net/FgU7tQouOU3aH2GX2zOcq9TdtSWV.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 814ecf59-6e35-44f9-8fc7-387d511e34c3_1917467027874e62aac4950c49993688,e22cfc39-c913-4902-bbf5-fc3650b89bc4_8eb79f19ac1b4475a60f73b373dfa5f2,33aa5f57-5d0d-461f-af56-adab19ef2ff3_52c477334ec24ebd84ecf7359df3bd8d
-    transcript_submitted_at: 2026-09-12T18:51:42.824Z
-    transcript_completed_at: 2026-09-12T18:54:39.151Z
+episodes: []
