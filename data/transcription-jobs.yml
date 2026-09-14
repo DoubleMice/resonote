@@ -27878,3 +27878,292 @@ jobs:
     submitted_at: 2026-09-12T18:51:42.824Z
     updated_at: 2026-09-12T18:54:39.151Z
     completed_at: 2026-09-12T18:54:39.151Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:0
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: 68add835-1cd0-4d47-a051-d131da3edb9d_5c08b211337f4c5f8f411c9f345a61ff
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:15:01.495Z
+    completed_at: 2026-09-14T18:15:01.495Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:1
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: d124905d-17cc-4171-b555-3e15dcf380b2_3e1fb9ef5b494d5fb0316333c62848b0
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:18:22.607Z
+    completed_at: 2026-09-14T18:18:22.607Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:2
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: e5ed2219-6138-445b-bbad-411d77c61f55_df9448a21caf4f26951e5831bed5cd44
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:21:28.978Z
+    completed_at: 2026-09-14T18:21:28.978Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:3
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: 034936fb-5d1d-4ea5-8f94-a3b4df273663_0f4f34b65fbe47e4852281c5beddebf7
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:22:25.807Z
+    completed_at: 2026-09-14T18:22:25.807Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:4
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: 91230520-0eee-4218-bf86-ff2d319bb34c_1c5df2456b2e43c6aa6966d1e379518b
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:24:08.311Z
+    completed_at: 2026-09-14T18:24:08.311Z
+  - key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z:chunk:5
+    parent_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    attempt_key: taixian-zhihuo:6aa6c84d9d326477816883d3:20260914:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a:mimo:2026-09-14T18:11:46.246Z
+    provider: mimo
+    id: 6aa6c84d9d326477816883d3
+    source: taixian-zhihuo
+    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
+    task_id: 746bbfd3-c35a-4315-a1bf-12c3c16226ef_a7e00a6d65ee4310b445ed0ee484cc63
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:11:46.246Z
+    updated_at: 2026-09-14T18:25:19.139Z
+    completed_at: 2026-09-14T18:25:19.139Z
+  - key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z:chunk:0
+    parent_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    attempt_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z
+    provider: mimo
+    id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    source: flirting-with-models
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    task_id: 249c674e-4e71-4bec-a13a-355df9a1a964_d592e1605bfa4108bfb7a3160a54bb6e
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:25:19.548Z
+    updated_at: 2026-09-14T18:26:21.271Z
+    completed_at: 2026-09-14T18:26:21.271Z
+  - key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z:chunk:1
+    parent_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    attempt_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z
+    provider: mimo
+    id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    source: flirting-with-models
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    task_id: 041f6492-77a2-4d2d-9fed-73d089546bff_01b3ba8a654e4b62a7a9932648a6df5e
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:25:19.548Z
+    updated_at: 2026-09-14T18:28:51.222Z
+    completed_at: 2026-09-14T18:28:51.222Z
+  - key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z:chunk:2
+    parent_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    attempt_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z
+    provider: mimo
+    id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    source: flirting-with-models
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    task_id: f449ce43-1565-4f66-8b64-549ec34b5c62_50ca8339c57742b186ad0ab8ce648e3a
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:25:19.548Z
+    updated_at: 2026-09-14T18:29:30.183Z
+    completed_at: 2026-09-14T18:29:30.183Z
+  - key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z:chunk:3
+    parent_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    attempt_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z
+    provider: mimo
+    id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    source: flirting-with-models
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    task_id: 8136887f-bbbb-4dec-80cd-56b63dd2f5bb_f5b9f2e935c44ea49023f99140c8d41f
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:25:19.548Z
+    updated_at: 2026-09-14T18:30:24.108Z
+    completed_at: 2026-09-14T18:30:24.108Z
+  - key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z:chunk:4
+    parent_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    attempt_key: flirting-with-models:4a276c86-30f8-41ad-afce-5c3cafab293c:20260914:https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3:mimo:2026-09-14T18:25:19.548Z
+    provider: mimo
+    id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    source: flirting-with-models
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    task_id: 9c4def7e-e1ca-44a6-8b9f-f0348cfd7cff_d218952898644f8f85028e7298dc6f2e
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:25:19.548Z
+    updated_at: 2026-09-14T18:32:24.717Z
+    completed_at: 2026-09-14T18:32:24.717Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:0
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: 4eec1968-5801-425d-ad23-3a77354777d6_b2c7368a971f4d198f9f44f874f2734b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:33:46.698Z
+    completed_at: 2026-09-14T18:33:46.698Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:1
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: 5dba5186-d86a-401b-a36e-c90ecfcb92d4_9e812459b1144aed9c21839d867bfcf8
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:35:23.987Z
+    completed_at: 2026-09-14T18:35:23.987Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:2
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: ef7a97f4-1ac2-48e8-b793-1d7741ab904b_12df591e9c864e908721e5ee2e4c11bc
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:36:22.671Z
+    completed_at: 2026-09-14T18:36:22.671Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:3
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: bf33c3e4-33eb-4e7c-b7c7-b42d085ccd7c_fded54cc21a947fe9b75363e023d215b
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:38:20.062Z
+    completed_at: 2026-09-14T18:38:20.062Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:4
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: 38804c90-991e-4a0f-9f77-db0b63865cac_1b7f0fd056eb48a7bb7d8b69e60f759b
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:38:59.240Z
+    completed_at: 2026-09-14T18:38:59.240Z
+  - key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z:chunk:5
+    parent_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    attempt_key: unchained:2844ab58-ad67-11f1-8aa0-9b69f5f7f790:20260910:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3:mimo:2026-09-14T18:32:25.096Z
+    provider: mimo
+    id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+    source: unchained
+    title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+    task_id: fcc62400-d1a4-4aa1-bd92-c9fb5c242b5c_92c35ca893c742e9a83b8b3a42033a5a
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-14T18:32:25.096Z
+    updated_at: 2026-09-14T18:39:52.294Z
+    completed_at: 2026-09-14T18:39:52.294Z

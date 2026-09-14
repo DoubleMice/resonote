@@ -1,0 +1,32 @@
+title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+guest: 高岱恒（Sam）
+guest_role: Dinq 创始人，前达摩院与通义实验室算法研究员
+tags:
+  - ai-research
+  - startup
+  - interview
+  - founder
+  - technical
+  - strategic
+summary: >
+  高岱恒回顾自己从土木工程转向 AI 的经历，并把公开作品、开源记录和实际训练经验视为识别人才的重要线索。节目讨论前沿研究员薪酬为何飙升、哪些技术方向正在改变人才需求，以及 Dinq
+  如何用智能体聚合分散的人才搜索渠道。两位也保留了方向快速变化、保密限制与产品化边界带来的不确定性。
+core_ideas:
+  - 公开写作与开源贡献能留下可核验的作品记录，让非传统背景的人获得被看见的机会。
+  - 前沿研究员的高薪与代表作、大规模训练经验、算力和数据资源受限有关，不等同于论文数量。
+  - 高岱恒认为，多模态算法人才的溢价正在走低；数据、后训练和推理基础设施的需求则在上升。
+  - OPD 通过学习更强模型的输出，减少为每项任务手工设计奖励信号的成本。
+  - 闭源限制论文发表后，论文、开源代码、访谈和社交平台仍能提供人才追踪的公开线索。
+  - Dinq 希望把多个人才数据库接入自然语言搜索与智能体工作流，但其产品化范围仍取决于使用习惯和数据时效。
+id: 6aa6c84d9d326477816883d3
+source: taixian-zhihuo
+source_title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
+published: 2026-09
+published_sort: "20260914"
+duration: 1h21m
+url: https://www.xiaoyuzhoufm.com/episode/6aa6c84d9d326477816883d3?utm_source=rss
+status: generated
+article_path: episodes/6aa6c84d9d326477816883d3/article.html
+base: /episodes/6aa6c84d9d326477816883d3/
+thumbnail: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
+generated_at: 2026-09-14T18:51:26.760Z

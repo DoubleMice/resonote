@@ -1,0 +1,31 @@
+title: Lucas Schuermann：用掉期替换永续合约
+guest: Lucas Schuermann
+guest_role: Variational 联合创始人
+tags:
+  - startup
+  - interview
+  - technical
+  - strategic
+summary: >
+  Lucas Schuermann 介绍 Variational 如何通过 Omni 的 RFQ 模式，将零售交易流与外部对冲连接起来，并讨论链上 RWA
+  面临的流动性、指数和资金费率问题。访谈的重点是把总回报掉期式的产品带到链上：以价格回报配合 SOFR 加点差的融资腿，减少长期持有永续合约时的不确定性。
+
+  这条路线仍受传统市场时段、交易商容量、OLP 资本和风险限额约束；Pro 则计划把多交易商的场外期权与结构化产品流程搬到链上。
+core_ideas:
+  - Omni 由单一 OLP 对用户 RFQ 报价，先内部抵销头寸，再将净风险对冲到外部市场。
+  - 嘉宾认为，RWA 的链上交易应直接接入传统交易商的深度，而不是在订单簿上重建所有流动性。
+  - 掉期把标的价格回报与融资腿分开，目标是以更可预测的持有成本取代永续合约的可变资金费率。
+  - 近期掉期仍受传统市场时段限制；永续合约保留 24 小时交易与基差策略等用途。
+  - 嘉宾称，超过 10 亿美元的交易商容量只是起点，资本、连接和风险限额决定扩张速度。
+id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+source: flirting-with-models
+source_title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+published: 2026-09
+published_sort: "20260914"
+duration: 1h14m
+url: http://www.flirtingwithmodels.com/
+status: generated
+article_path: episodes/4a276c86-30f8-41ad-afce-5c3cafab293c/article.html
+base: /episodes/4a276c86-30f8-41ad-afce-5c3cafab293c/
+thumbnail: https://artwork.captivate.fm/1211e8ad-85ac-49fa-9e06-4cbffce6f11d/S3-FlirtingWithModels-with-Lucas-Schuermann-2-copy.jpg
+generated_at: 2026-09-14T18:50:32.992Z

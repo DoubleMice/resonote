@@ -1,12 +1,28 @@
 source: flirting-with-models
-refreshed_at: 2026-09-14T03:05:14.970Z
+refreshed_at: 2026-09-14T18:11:45.165Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 0
-done: 0
+total_candidates: 1
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    guid: 4a276c86-30f8-41ad-afce-5c3cafab293c
+    title: Lucas Schuermann – Swapping Out Perpetual Futures (S7E34)
+    duration: 4441
+    published: Mon, 14 Sep 2026 00:00:00 -0400
+    published_sort: "20260914"
+    first_seen_at: 2026-09-14T18:11:45.165Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/4a276c86-30f8-41ad-afce-5c3cafab293c.mp3
+    image: https://artwork.captivate.fm/1211e8ad-85ac-49fa-9e06-4cbffce6f11d/S3-FlirtingWithModels-with-Lucas-Schuermann-2-copy.jpg
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-14T18:25:19.548Z
+    transcript_job_id: 249c674e-4e71-4bec-a13a-355df9a1a964_d592e1605bfa4108bfb7a3160a54bb6e,041f6492-77a2-4d2d-9fed-73d089546bff_01b3ba8a654e4b62a7a9932648a6df5e,f449ce43-1565-4f66-8b64-549ec34b5c62_50ca8339c57742b186ad0ab8ce648e3a,8136887f-bbbb-4dec-80cd-56b63dd2f5bb_f5b9f2e935c44ea49023f99140c8d41f,9c4def7e-e1ca-44a6-8b9f-f0348cfd7cff_d218952898644f8f85028e7298dc6f2e
+    transcript_completed_at: 2026-09-14T18:32:24.717Z

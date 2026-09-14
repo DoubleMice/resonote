@@ -1,0 +1,30 @@
+title: 不安的钱：OpenAI 会用私密聊天训练模型来赢得 AI 竞赛吗？
+guest: Taylor Monahan、Alex Thorn、John
+guest_role: 安全专家；Galaxy Digital 全公司研究主管；Venice 战略主管、ShapeShift 联合创始人
+tags:
+  - ai-safety
+  - ai-research
+  - panel
+  - technical
+  - strategic
+summary: >
+  Unchained 的圆桌从 Liquid 侧链遭到攻击谈起，解释了证明缓存碰撞如何让不应存在的 LBTC
+  被兑换为真实比特币，并讨论先取走资金再谈返还为何会扭曲漏洞披露的激励。后半段以一场数学证明争议为线索，审视闭源模型对私密输入的可追溯性、开放权重与私密推理的取舍，以及 AI 实验室竞赛下的治理压力。
+core_ideas:
+  - Liquid 的攻击利用了证明缓存键碰撞；嘉宾认为，先铸造并兑换资金后再谈条件不等同于负责任披露。
+  - 嘉宾没有确认 Liquid 攻击由 AI 发现，但认为公开补丁与代码差异会成为自动化红队回溯旧漏洞的线索。
+  - 数学证明争议没有证明 OpenAI 使用了私密内容；它暴露出用户难以核验闭源模型的训练数据与独立推导来源。
+  - 开放权重加私密推理可能减少输入被训练使用的风险，却可能牺牲一部分前沿模型能力；任务专用编排仍是待验证的方向。
+  - 嘉宾把实验室竞赛看作可能促使安全承诺让位于速度的激励循环，并主张用更分散的权力与外部制衡回应。
+id: 2844ab58-ad67-11f1-8aa0-9b69f5f7f790
+source: unchained
+source_title: "Uneasy Money: Is OpenAI Training on Your Private Chats to Win the AI Race?"
+published: 2026-09
+published_sort: "20260910"
+duration: 1h22m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3377335210.mp3
+status: generated
+article_path: episodes/2844ab58-ad67-11f1-8aa0-9b69f5f7f790/article.html
+base: /episodes/2844ab58-ad67-11f1-8aa0-9b69f5f7f790/
+thumbnail: https://megaphone.imgix.net/podcasts/2844ab58-ad67-11f1-8aa0-9b69f5f7f790/image/c64b1905bc697061da2da3e4ec4d7620.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-09-14T19:01:17.400Z
