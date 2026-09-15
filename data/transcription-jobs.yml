@@ -28167,3 +28167,71 @@ jobs:
     submitted_at: 2026-09-14T18:32:25.096Z
     updated_at: 2026-09-14T18:39:52.294Z
     completed_at: 2026-09-14T18:39:52.294Z
+  - key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z:chunk:0
+    parent_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    attempt_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z
+    provider: mimo
+    id: 6aa82d11129fe965d33288ca
+    source: tulong-zhishu
+    title: 智能的下一幕，让人兴奋---73页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    task_id: 969ec301-f4d0-4481-8990-076a2d98c431_d21a1f90f2fa41aba7fa961c1cfe402a
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-15T18:11:16.850Z
+    updated_at: 2026-09-15T18:12:15.977Z
+    completed_at: 2026-09-15T18:12:15.977Z
+  - key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z:chunk:1
+    parent_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    attempt_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z
+    provider: mimo
+    id: 6aa82d11129fe965d33288ca
+    source: tulong-zhishu
+    title: 智能的下一幕，让人兴奋---73页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    task_id: e1ebb7b9-a593-4312-81ff-9db2e863eb79_8558d727238c4e1fbba66dc85342c1f5
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-15T18:11:16.850Z
+    updated_at: 2026-09-15T18:12:58.454Z
+    completed_at: 2026-09-15T18:12:58.454Z
+  - key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z:chunk:2
+    parent_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    attempt_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z
+    provider: mimo
+    id: 6aa82d11129fe965d33288ca
+    source: tulong-zhishu
+    title: 智能的下一幕，让人兴奋---73页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    task_id: 6128a52c-8fcf-44ff-82f8-b1bedb1e6d0b_8807f789c44d4c2081d2b88af5f4bb0e
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-15T18:11:16.850Z
+    updated_at: 2026-09-15T18:13:44.692Z
+    completed_at: 2026-09-15T18:13:44.692Z
+  - key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z:chunk:3
+    parent_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    attempt_key: tulong-zhishu:6aa82d11129fe965d33288ca:20260915:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a:mimo:2026-09-15T18:11:16.850Z
+    provider: mimo
+    id: 6aa82d11129fe965d33288ca
+    source: tulong-zhishu
+    title: 智能的下一幕，让人兴奋---73页PPT solo
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
+    task_id: 0b2e7609-66c9-4658-90c4-3093a52abde8_77cabfb00ba64e4eb0e5ced87ad7a0c8
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-15T18:11:16.850Z
+    updated_at: 2026-09-15T18:14:14.204Z
+    completed_at: 2026-09-15T18:14:14.204Z
