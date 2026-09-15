@@ -1,102 +1,12 @@
 source: acquired
-refreshed_at: 2026-09-14T18:11:45.163Z
+refreshed_at: 2026-09-15T03:04:08.520Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 68b66323-6e74-4c90-8157-ef3f1ed0d042
-    guid: 68b66323-6e74-4c90-8157-ef3f1ed0d042
-    title: Home Depot
-    duration: 12902
-    published: Sun, 13 Sep 2026 20:35:03 -0700
-    published_sort: "20260914"
-    first_seen_at: 2026-09-14T18:11:45.163Z
-    url: https://www.acquired.fm/episodes/home-depot
-    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/8ecb4ed4/568b6b7a.mp3
-    image: https://img.transistorcdn.com/DpYRwLVYbt09NDhOfdtKg4KNCH0yCkhX7PeHyOBbH14/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MDNm/MDk2YTNmOTBkNmFk/MzJkZmYzZTQ4OWMz/MjdhOS5qcGc.jpg
-    transcript_url: https://share.transistor.fm/s/8ecb4ed4/transcript.txt
-    transcript_type: text/plain
-    summary: >-
-      Home Depot's founding story is like an Avengers movie… if the Avengers got fired, went broke, and stacked empty
-      paint cans ten feet high to look legitimate. After being unceremoniously fired from their previous hardware chain
-      at ages 48 and 35, Bernie Marcus and Arthur Blank took the words of their New York banker Ken Langone (who had
-      also just accidentally caused their firings) to heart: they'd just been "kicked in the ass with a golden
-      horseshoe.” They proceeded to author the greatest compounding story in American retail history, helped by some
-      legendary cameos along the way from Sol Price, Jamie Dimon, and Ross Perot (to name a few). And the ending is as
-      good as any superhero film: from its 1981 IPO to today, Home Depot has been the single highest-returning equity in
-      the entire US stock market — higher than Apple, Microsoft, Berkshire Hathaway, and everything else!
-
-
-      Sponsors:
-
-
-      Many thanks to our fantastic Fall '26 Season partners:
-
-
-      SierraWorkOSAnthropicSentryLinks:
-
-
-      Sign up for email updates, get our takeaways and research photos from each episode, and vote on future topics!The
-      Official Acquired Meetup on Sept 17th with our friends at Sentry. Join us!The Acquired Home Depot Companion PDFOur
-      Visual Artifacts page for Home DepotBuilt from Scratch by Bernie Marcus and Arthur BlankKick Up Some Dust by
-      Bernie MarcusThe Board Wore Chicken Suits by Joe Nocera, The New York TimesFrank Blake on Invest Like the BestKen
-      Langone's interview with Arvind NavaratnamWorldly Partners' Multi-Decade Home Depot StudyAll episode sourcesCarve
-      Outs:
-
-
-      Silo Season 3Tires Season 3Ratio 8 Coffee MakerTrade CoffeeQuarterbackComedianMore Acquired:
-
-
-      Get email updates and vote on future episodes!Join the SlackCheck out the latest swag in the ACQ Merch
-      Store!00:00:00 Start
-
-      00:00:43 Intro
-
-      00:05:32 Bernie Marcus's Early Career and meeting Arthur Blank (1972)
-
-      00:15:58 Ken Langone & Handy Dan (1970s)
-
-      00:33:08 Ken Buys Handy Dan, Bernie & Arthur Fired
-
-      00:43:55 Ross Perot Almost Buys Home Depot
-
-      00:51:20 Pat Farrah & The HomeCo Interlude
-
-      01:05:03 First Stores & Early Model (1979)
-
-      01:14:16 Home Depot Goes Public & Expands (1981)
-
-      01:24:35 Home Depot's Unique Operating System
-
-      01:46:01 Arthur Blank Takes CEO & Early Cracks (1997)
-
-      01:56:07 The Bob Nardelli Era (2000-2007)
-
-      02:12:09 Nardelli's Public Downfall & Firing (2006-2007)
-
-      02:24:24 Frank Blake's Turnaround: Crisis & Culture (2007)
-
-      02:42:30 E-commerce & Distribution Revolution
-
-      02:59:57 Home Depot Today: Pro & DIY (2024)
-
-      03:12:04 Analysis: The Paradox of Specialness
-
-      03:16:18 7 Powers: Home Depot's Competitive Advantages
-
-      03:19:17 Quintessence: Why It Got So Big
-
-      03:26:27 Carve-Outs + Outro
-
-
-      ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
-      and is intended for informational and entertainment purposes only. You should do your own research and make your
-      own independent decisions when considering any financial transactions.
-    status: generated
-    priority: 1
+episodes: []

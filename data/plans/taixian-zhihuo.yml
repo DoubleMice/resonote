@@ -1,28 +1,12 @@
 source: taixian-zhihuo
-refreshed_at: 2026-09-14T18:11:45.186Z
+refreshed_at: 2026-09-15T03:04:08.551Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 6aa6c84d9d326477816883d3
-    guid: 6aa6c84d9d326477816883d3
-    title: 52. 智力的价格：AI 研究员凭什么比 NBA 球星贵？- 高岱恒｜Dinq
-    duration: 4861
-    published: Mon, 14 Sep 2026 16:00:00 GMT
-    published_sort: "20260914"
-    first_seen_at: 2026-09-14T18:11:45.185Z
-    url: https://www.xiaoyuzhoufm.com/episode/6aa6c84d9d326477816883d3?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aa6c84d9d326477816883d3/media.xyzcdn.net/67f40c212ac4d88190caa56a/loV8p3ZviDILPCMAFkZgWr8raaK6.m4a
-    image: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-14T18:11:46.246Z
-    transcript_job_id: 68add835-1cd0-4d47-a051-d131da3edb9d_5c08b211337f4c5f8f411c9f345a61ff,d124905d-17cc-4171-b555-3e15dcf380b2_3e1fb9ef5b494d5fb0316333c62848b0,e5ed2219-6138-445b-bbad-411d77c61f55_df9448a21caf4f26951e5831bed5cd44,034936fb-5d1d-4ea5-8f94-a3b4df273663_0f4f34b65fbe47e4852281c5beddebf7,91230520-0eee-4218-bf86-ff2d319bb34c_1c5df2456b2e43c6aa6966d1e379518b,746bbfd3-c35a-4315-a1bf-12c3c16226ef_a7e00a6d65ee4310b445ed0ee484cc63
-    transcript_completed_at: 2026-09-14T18:25:19.139Z
+episodes: []
