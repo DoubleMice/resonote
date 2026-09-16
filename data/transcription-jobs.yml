@@ -28235,3 +28235,122 @@ jobs:
     submitted_at: 2026-09-15T18:11:16.850Z
     updated_at: 2026-09-15T18:14:14.204Z
     completed_at: 2026-09-15T18:14:14.204Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:0
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: 311ff458-13be-4877-b4fe-0bd748cc782c_8186a72444aa441fbe6ea464efeaee0e
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:13:27.660Z
+    completed_at: 2026-09-16T18:13:27.660Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:1
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: fc28d8cf-fc90-43d6-ab64-bbf75ed5aabe_e1e34f7ed6f34db0ad52f69a49ae4f08
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:14:11.817Z
+    completed_at: 2026-09-16T18:14:11.817Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:2
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: eda23706-3c5f-406b-8dac-f7eed7e09b78_12c2bd83fedc451da09e85d0aa475afc
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:14:58.990Z
+    completed_at: 2026-09-16T18:14:58.990Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:3
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: 67f18e8f-ebd3-41a7-94fb-0bf9765da0b0_834cb634cc5f4e75b9eb28064910b1ab
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:15:45.069Z
+    completed_at: 2026-09-16T18:15:45.069Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:4
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: 7e1d6bd6-cc9d-4813-83ef-026b33590c63_0c06f89dcf5448efa5e82aa327611582
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:16:30.603Z
+    completed_at: 2026-09-16T18:16:30.603Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:5
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: f3cbe638-c05f-4263-bbd3-044891e869cc_1d81b2d1139b4ee4bfa34f413cc57e4c
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:17:09.153Z
+    completed_at: 2026-09-16T18:17:09.153Z
+  - key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z:chunk:6
+    parent_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    attempt_key: sv101:786d63c4-d46c-4ff3-80f8-fc895b2a57f0:20260916:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3:mimo:2026-09-16T18:12:13.405Z
+    provider: mimo
+    id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+    source: sv101
+    title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/786d63c4-d46c-4ff3-80f8-fc895b2a57f0.mp3
+    task_id: 05b9fe3a-bc22-485d-8e72-814eeed5172e_b996ac739cf24da495d8b03909984918
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-16T18:12:13.405Z
+    updated_at: 2026-09-16T18:17:14.833Z
+    completed_at: 2026-09-16T18:17:14.833Z
