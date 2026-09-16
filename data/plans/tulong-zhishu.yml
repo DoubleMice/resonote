@@ -1,28 +1,12 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-15T18:11:15.471Z
+refreshed_at: 2026-09-16T03:04:12.677Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 0
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes:
-  - id: 6aa82d11129fe965d33288ca
-    guid: 6aa82d11129fe965d33288ca
-    title: 智能的下一幕，让人兴奋---73页PPT solo
-    duration: 3321
-    published: Tue, 15 Sep 2026 16:00:00 GMT
-    published_sort: "20260915"
-    first_seen_at: 2026-09-15T18:11:15.471Z
-    url: https://www.xiaoyuzhoufm.com/episode/6aa82d11129fe965d33288ca?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6aa82d11129fe965d33288ca/media.xyzcdn.net/6507bc165c88d2412626b401/lqgbvxwkY0OmEI_qoaO57w-NPwjl.m4a
-    image: https://image.xyzcdn.net/FqI3bFKX8PlcOzPuQ6Zfk2poURFX.png
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-09-15T18:11:16.850Z
-    transcript_job_id: 969ec301-f4d0-4481-8990-076a2d98c431_d21a1f90f2fa41aba7fa961c1cfe402a,e1ebb7b9-a593-4312-81ff-9db2e863eb79_8558d727238c4e1fbba66dc85342c1f5,6128a52c-8fcf-44ff-82f8-b1bedb1e6d0b_8807f789c44d4c2081d2b88af5f4bb0e,0b2e7609-66c9-4658-90c4-3093a52abde8_77cabfb00ba64e4eb0e5ced87ad7a0c8
-    transcript_completed_at: 2026-09-15T18:14:14.204Z
+episodes: []
