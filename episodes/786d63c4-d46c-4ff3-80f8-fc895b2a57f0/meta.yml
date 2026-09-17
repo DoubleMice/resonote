@@ -1,0 +1,29 @@
+title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+guest: Mark、子阳
+guest_role: Mark：硬件与系统架构；子阳：软件与编译器
+tags:
+  - chips
+  - hardware
+  - startup
+  - technical
+  - panel
+summary: >
+  Mark 与子阳从大模型 decode 阶段的带宽瓶颈出发，比较 Groq 的静态调度、Cerebras 的晶圆级设计，以及 OpenAI Teren
+  偏向通用性和能效的取舍。讨论也把芯片指标放回系统成本、模型变化、软件栈和供应链中，并通过 Bill Dally 的局部性原则说明架构设计如何寻找真正的限制。
+core_ideas:
+  - 云端推理的核心结果是每个 token 的成本与单用户生成速度，纸面算力和带宽需要放在系统中衡量。
+  - SRAM 把存储移近计算单元，带来高带宽，却要求用大量芯片和高速互联解决模型容量。
+  - Groq、Cerebras 与 OpenAI 的路线分别把取舍放在静态调度、晶圆级制造和芯片内异构的能效上。
+  - Bill Dally 强调局部性和系统级取舍；创业还必须完成供电、散热、封装与量产等工程工作。
+id: 786d63c4-d46c-4ff3-80f8-fc895b2a57f0
+source: sv101
+source_title: E251｜推理芯片之战：聊聊Groq、Cerebras与OpenAI三大路径与Bill Dally的设计哲学
+published: 2026-09
+published_sort: "20260916"
+duration: 1h32m
+url: https://sv101.fireside.fm/264
+status: generated
+article_path: episodes/786d63c4-d46c-4ff3-80f8-fc895b2a57f0/article.html
+base: /episodes/786d63c4-d46c-4ff3-80f8-fc895b2a57f0/
+thumbnail: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+generated_at: 2026-09-17T18:28:58.446Z

@@ -1,9 +1,9 @@
 source: sv101
-refreshed_at: 2026-09-17T03:04:08.123Z
+refreshed_at: 2026-09-17T18:12:14.953Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -158,7 +158,7 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Mark and 徐子扬.
-    status: failed
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 311ff458-13be-4877-b4fe-0bd748cc782c_8186a72444aa441fbe6ea464efeaee0e,fc28d8cf-fc90-43d6-ab64-bbf75ed5aabe_e1e34f7ed6f34db0ad52f69a49ae4f08,eda23706-3c5f-406b-8dac-f7eed7e09b78_12c2bd83fedc451da09e85d0aa475afc,67f18e8f-ebd3-41a7-94fb-0bf9765da0b0_834cb634cc5f4e75b9eb28064910b1ab,7e1d6bd6-cc9d-4813-83ef-026b33590c63_0c06f89dcf5448efa5e82aa327611582,f3cbe638-c05f-4263-bbd3-044891e869cc_1d81b2d1139b4ee4bfa34f413cc57e4c,05b9fe3a-bc22-485d-8e72-814eeed5172e_b996ac739cf24da495d8b03909984918
