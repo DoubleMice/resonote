@@ -1,12 +1,104 @@
 source: unchained
-refreshed_at: 2026-09-17T18:12:14.941Z
+refreshed_at: 2026-09-18T03:03:53.987Z
 min_duration: 3300
-min_date: "20260827"
-total_candidates: 0
+min_date: "20260828"
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
+    guid: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
+    title: "Uneasy Money: What Crypto's Gensler Years Say About the AI Slowdown Debate"
+    duration: 4462
+    published: Thu, 17 Sep 2026 22:49:00 -0000
+    published_sort: "20260917"
+    first_seen_at: 2026-09-18T03:03:53.987Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3548678004.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3548678004.mp3
+    image: https://megaphone.imgix.net/podcasts/18488322-b2ea-11f1-8bd9-23e1fa2386e7/image/2fb462957ff3089b3b7e906a8510373a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Delphi Ventures founding partner Tommy Shaughnessy tells Kain and Taylor the AI slowdown talk is a moat against
+      cheap Chinese models. Plus, why the Clarity Act died.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠
+
+
+      ========================================================
+
+
+      The Clarity Act failed a Senate cloture vote 49 to 50, and Kain Warwick and Taylor Monahan open by asking what
+      crypto did wrong. Taylor thinks the Trump family's memecoins and World Liberty sank it. Kain worries the industry
+      squandered its best shot at actual laws and is now counting on friendly SEC rulemaking instead.
+
+
+      Guest Tommy Shaughnessy, founding partner of Delphi Ventures, argues that OpenAI and Anthropic's calls to slow AI
+      down are a play for a regulatory moat, because Chinese open source models like DeepSeek are getting good and
+      cheap. He also explains why he runs Delphi Ventures on its own AI agent instead of handing its data to Claude or
+      ChatGPT. Kain says the fear inside the labs is genuine, and that the idea of simply shutting down the data center
+      won't hold forever.
+
+
+      They also cover Anthropic's report on a Chinese surveillance operation that surfaced in its logs, an $8M exploit
+      of a Safe wallet that a 4-year-old yoink bot frontran, the SDNY charges against Robinhood engineers accused of
+      trading tokens on Hyperliquid ahead of Robinhood listings, and why Wyoming's stable token dropped LayerZero for
+      Chainlink.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Tommy Shaughnessy - Founding Partner of Delphi Ventures and Co-Founder of Delphi Digital
+
+      Timestamps
+
+
+      🏛️ 02:35 Why Clarity died without 50 votes and what SEC/CFTC rules might replace it
+
+
+      🇺🇸 19:06 Why crypto's all-in bet on Trump has Taylor uneasy about the partisan trade
+
+
+      💧 23:20 1inch: Back multiple liquidity positions and keep your tokens in your wallet until a swap fills at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🤖 24:08 Why OpenAI and Anthropic's own founders are calling to slow AI down
+
+
+      🐉 31:12 Tommy on why AI safety talk is regulatory capture against Chinese open source
+
+
+      🕵️ 38:17 Anthropic's own report: how a CCP surveillance job showed up in its logs
+
+
+      💰 51:42 Would you bet on AI safety or acceleration? Tommy makes the hosts pick a side
+
+
+      🔓 56:56 How an $8M Safe exploit got frontrun by a 4-year-old yoink bot
+
+
+      📈 01:01:46 Why the SDNY charged Robinhood engineers with trading on Hyperliquid ahead of listings
+
+
+      ⚔️ 01:05:27 Why Wyoming dropping LayerZero for Chainlink reignited the Link Marines
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
