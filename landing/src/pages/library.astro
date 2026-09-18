@@ -2,10 +2,10 @@
 import Base from '../layouts/Base.astro'
 import EpisodeRow from '../components/EpisodeRow.astro'
 import LibraryFilters from '../components/LibraryFilters.astro'
-import { loadEpisodes, sortEpisodesForLibrary } from '../lib/data'
+import { getAvailableFormats, loadEpisodes, sortEpisodesForLibrary } from '../lib/data'
 
 const episodes = sortEpisodesForLibrary(loadEpisodes())
-const generated = episodes.filter(episode => episode.status === 'generated').length
+const generated = episodes.filter(episode => getAvailableFormats(episode).includes('slides')).length
 const articles = episodes.filter(episode => episode.article_path).length
 ---
 

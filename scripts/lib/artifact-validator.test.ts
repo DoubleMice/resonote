@@ -5,6 +5,33 @@ import test from 'node:test'
 import { validateEpisodeArtifacts } from './artifact-validator.ts'
 import { artifactFixture as fixture } from './test-support/artifact-fixture.ts'
 
+test('article-only artifacts require article and evidence but no slides in either validation mode', () => {
+  const { root, id, directory } = fixture()
+  try {
+    const metaPath = join(directory, 'meta.yml')
+    const meta = readFileSync(metaPath, 'utf8')
+    rmSync(join(directory, 'slides.md'))
+    writeFileSync(metaPath, meta + '\nvisual_notes: false\n')
+    writeFileSync(join(directory, 'quote-evidence.yml'), `episode_id: ${id}\nquotes: []\n`)
+    for (const strict of [true, false]) {
+      assert.deepEqual(validateEpisodeArtifacts({ rootDir: root, id, strict }), [])
+    }
+    writeFileSync(metaPath, meta)
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id }).some(issue => issue.code === 'missing-slides'))
+    writeFileSync(metaPath, meta + '\nvisual_notes: "false"\n')
+    assert.ok(validateEpisodeArtifacts({ rootDir: root, id }).some(issue => issue.code === 'invalid-visual-notes'))
+    writeFileSync(metaPath, meta + '\nvisual_notes: false\n')
+    rmSync(join(directory, 'article.html'))
+    rmSync(join(directory, 'quote-evidence.yml'))
+    for (const strict of [true, false]) {
+      const issues = validateEpisodeArtifacts({ rootDir: root, id, strict })
+      assert.ok(issues.some(issue => issue.code === 'missing-article'))
+      assert.ok(issues.some(issue => issue.code === 'missing-quote-evidence'))
+      assert.ok(!issues.some(issue => issue.code === 'missing-slides'))
+    }
+  } finally { rmSync(root, { recursive: true, force: true }) }
+})
+
 
 test('accepts a strict generated artifact set', () => {
   const { root, id } = fixture()

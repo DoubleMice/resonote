@@ -15,6 +15,7 @@ export interface CanonicalMetaInput {
   thumbnail?: string
   category?: string
   status: string
+  visualNotes?: boolean
 }
 
 function parseGeneratedMeta(metaPath: string): Record<string, unknown> {
@@ -43,6 +44,7 @@ export function canonicalizeGeneratedMeta(metaPath: string, input: CanonicalMeta
     status: input.status,
     article_path: `episodes/${input.id}/article.html`,
     base: `/episodes/${input.id}/`,
+    ...(input.visualNotes === undefined ? {} : { visual_notes: input.visualNotes }),
   }
 
   if (input.thumbnail) next.thumbnail = input.thumbnail

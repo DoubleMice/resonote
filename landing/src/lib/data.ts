@@ -41,13 +41,14 @@ export interface EpisodeMeta {
   article_path?: string
   generated_at?: string
   generated_sort?: number
+  visual_notes?: boolean
 }
 
 export type ContentFormat = 'slides' | 'article'
 
 export function getAvailableFormats(ep: EpisodeWithSource): ContentFormat[] {
   const formats: ContentFormat[] = []
-  if (ep.status === 'generated') formats.push('slides')
+  if (ep.status === 'generated' && ep.visual_notes !== false) formats.push('slides')
   if (ep.article_path) formats.push('article')
   return formats
 }
@@ -124,9 +125,10 @@ function resolveArticlePath(meta: EpisodeMeta): string | undefined {
   return existsSync(resolve(PROJECT_ROOT, articlePath)) ? articlePath : undefined
 }
 
-function resolveEpisodeStatus(id: string, status: EpisodeMeta['status']): EpisodeMeta['status'] {
-  if (status !== 'generated') return status
-  return existsSync(resolve(PROJECT_ROOT, 'episodes', id, 'slides.md')) ? status : 'downloaded'
+function resolveEpisodeStatus(meta: Pick<EpisodeMeta, 'id' | 'status' | 'visual_notes'>): EpisodeMeta['status'] {
+  if (meta.status !== 'generated') return meta.status
+  const artifact = meta.visual_notes === false ? 'article.html' : 'slides.md'
+  return existsSync(resolve(PROJECT_ROOT, 'episodes', meta.id, artifact)) ? meta.status : 'downloaded'
 }
 
 // Category definitions with display order
@@ -263,7 +265,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
       meta.published_sort = meta.published_sort || cacheMeta?.published_sort
       meta.published = meta.published || cacheMeta?.published
       meta.article_path = resolveArticlePath(meta)
-      meta.status = resolveEpisodeStatus(meta.id, meta.status)
+      meta.status = resolveEpisodeStatus(meta)
       if (meta.status === 'generated') meta.generated_sort = episodeGeneratedTime(meta)
       const sourceRef = sourceMap[meta.source] || fallbackSource(meta.source)
       results.push({ ...meta, sourceRef })
@@ -298,7 +300,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
           duration: ep.duration ? `${Math.round(ep.duration / 60)}m` : undefined,
           url: ep.url,
           thumbnail: ep.image,
-          status: resolveEpisodeStatus(ep.id, ep.status),
+          status: resolveEpisodeStatus(ep),
           summary: ep.summary,
           category: ep.category,
           base: `/episodes/${ep.id}/`,
@@ -319,7 +321,7 @@ export function loadEpisodes(): EpisodeWithSource[] {
     const sourceRef = sourceMap[ep.source] || fallbackSource(ep.source)
     results.push({
       ...ep,
-      status: resolveEpisodeStatus(ep.id, ep.status),
+      status: resolveEpisodeStatus(ep),
       base: ep.base || `/episodes/${ep.id}/`,
       article_path: resolveArticlePath(ep),
       sourceRef,

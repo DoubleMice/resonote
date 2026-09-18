@@ -141,6 +141,7 @@ function setupPublicationFixture(directory: string) {
   mkdirSync(join(directory, 'scripts/prompts'), { recursive: true })
   writeFileSync(join(directory, 'scripts/prompts/slides-system-rules.md'), 'Test rules')
   writeFileSync(join(directory, 'scripts/prompts/slides-task.md'), '{{EPISODE_ID}}')
+  writeFileSync(join(directory, 'scripts/prompts/article-task.md'), '{{ID}} article only')
   mkdirSync(join(directory, 'bin'), { recursive: true })
   writeFileSync(join(directory, 'bin/pnpm'), `#!${process.execPath}\nprocess.exit(process.argv.includes('--id=bad-layout') ? 1 : 0)\n`, { mode: 0o755 })
   writeFileSync(join(directory, 'bin/claude'), `#!${process.execPath}
@@ -157,7 +158,7 @@ test('parallel mixed batch preserves the successful episode and quarantines gene
     { id: 'bad-layout', title: 'Bad layout', status: 'audit_failed', duration: 3600, published_sort: '20260908', url: 'https://example.com/bad' },
     { id: 'bad-meta', title: 'Bad metadata', status: 'pending' },
   ]
-  const result = execute(episodes, ['--allow-episode-failures', '--concurrency=3'], directory => {
+  const result = execute(episodes, ['--with-visual-notes', '--allow-episode-failures', '--concurrency=3'], directory => {
     for (const id of ['good', 'bad-layout']) artifactFixture(directory, id)
     writeFileSync(join(directory, 'sources.yml'), 'sources:\n  - id: test\n')
     writeFileSync(join(directory, 'data/transcripts/bad-meta.txt'), 'Transcript')
@@ -192,7 +193,7 @@ test('parallel mixed batch preserves the successful episode and quarantines gene
 test('an isolated layout failure resumes from its existing transcript and artifacts', () => {
   const result = execute([
     { id: 'retry-audit', title: 'Retry', status: 'audit_failed', duration: 3600, published_sort: '20260908', url: 'https://example.com/retry' },
-  ], ['--allow-episode-failures'], directory => {
+  ], ['--with-visual-notes', '--allow-episode-failures'], directory => {
     artifactFixture(directory, 'retry-audit')
     writeFileSync(join(directory, 'sources.yml'), 'sources:\n  - id: test\n')
     setupPublicationFixture(directory)
@@ -231,7 +232,7 @@ for (const repaired of [true, false]) {
     const id = 'repair-audit'
     const result = execute([
       { id, title: 'Repair', status: 'audit_failed', duration: 3600, published_sort: '20260908', url: 'https://example.com/repair' },
-    ], ['--retry-generation-failures', '--allow-episode-failures'], directory => {
+    ], ['--with-visual-notes', '--retry-generation-failures', '--allow-episode-failures'], directory => {
       artifactFixture(directory, id)
       writeFileSync(join(directory, 'sources.yml'), 'sources:\n  - id: test\n')
       setupPublicationFixture(directory)
@@ -255,3 +256,61 @@ console.log(JSON.stringify({type:'result',is_error:false}));
     assert.match(result.summary, repaired ? /Generated and validated: 1/ : /Generation\/download failures: 1/)
   })
 }
+
+test('default generation publishes an article without staging or auditing visual notes', () => {
+  const id = 'article-only'
+  const result = execute([
+    { id, title: 'Article', status: 'pending', duration: 3600, published_sort: '20260918', url: 'https://example.com/article' },
+  ], [], directory => {
+    const fixture = artifactFixture(directory, id)
+    const article = readFileSync(join(fixture.directory, 'article.html'), 'utf8')
+    rmSync(fixture.directory, { recursive: true })
+    writeFileSync(join(directory, 'sources.yml'), 'sources:\n  - id: test\n')
+    mkdirSync(join(directory, 'scripts/prompts'), { recursive: true })
+    for (const name of ['slides-system-rules.md', 'article-task.md']) {
+      writeFileSync(join(directory, 'scripts/prompts', name), readFileSync(join(root, 'scripts/prompts', name)))
+    }
+    mkdirSync(join(directory, 'bin'), { recursive: true })
+    writeFileSync(join(directory, 'bin/pnpm'), `#!${process.execPath}\nrequire('node:fs').writeFileSync('unexpected-audit', 'called'); process.exit(1)\n`, { mode: 0o755 })
+    writeFileSync(join(directory, 'bin/claude'), `#!${process.execPath}
+const fs = require('node:fs');
+fs.writeFileSync('generation-prompt.txt', process.argv.at(-1));
+fs.writeFileSync('episodes/${id}/article.html', ${JSON.stringify(article)});
+fs.writeFileSync('episodes/${id}/meta.yml', ${JSON.stringify('title: 中文文章\nguest: Ada\nguest_role: Researcher\ntags: [ai-research]\nsummary: 摘要\ncore_ideas: [观点]\n')});
+fs.writeFileSync('episodes/${id}/quote-evidence.yml', JSON.stringify({episode_id:'${id}', quotes:[]}));
+console.log(JSON.stringify({type:'result',is_error:false}));
+`, { mode: 0o755 })
+  }, directory => ({
+    meta: parse(readFileSync(join(directory, 'episodes', id, 'meta.yml'), 'utf8')),
+    slides: existsSync(join(directory, 'episodes', id, 'slides.md')),
+    style: existsSync(join(directory, 'episodes', id, 'style.css')),
+    audit: existsSync(join(directory, 'unexpected-audit')),
+    prompt: readFileSync(join(directory, 'generation-prompt.txt'), 'utf8'),
+  }))
+  assert.equal(result.code, 0, result.stdout)
+  assert.equal(result.plan.episodes[0].status, 'generated')
+  const inspection = result.inspection as any
+  assert.equal(inspection.meta.visual_notes, false)
+  assert.equal(inspection.meta.status, 'generated')
+  assert.ok(inspection.meta.generated_at)
+  assert.equal(inspection.slides, false)
+  assert.equal(inspection.style, false)
+  assert.equal(inspection.audit, false)
+  assert.match(inspection.prompt, /Visual note generation is paused/)
+  assert.match(inspection.prompt, /paragraph openings in sequence/)
+  assert.doesNotMatch(inspection.prompt, /\{\{ID\}\}/)
+})
+
+test('an already generated article reconciles a stale plan without regenerating it', () => {
+  const id = 'existing-article'
+  const result = execute([{ id, title: 'Existing article', status: 'pending' }], [], directory => {
+    const fixture = artifactFixture(directory, id)
+    rmSync(join(fixture.directory, 'slides.md'))
+    const path = join(fixture.directory, 'meta.yml')
+    writeFileSync(path, readFileSync(path, 'utf8') + '\nvisual_notes: false\n')
+  }, directory => parse(readFileSync(join(directory, 'episodes', id, 'meta.yml'), 'utf8')))
+  assert.equal(result.code, 0, result.stdout)
+  assert.equal(result.plan.episodes[0].status, 'generated')
+  assert.equal((result.inspection as any).visual_notes, false)
+  assert.match(result.stdout, /No pending entries/)
+})

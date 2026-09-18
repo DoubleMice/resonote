@@ -1,5 +1,6 @@
 ---
 import type { EpisodeWithSource } from '../lib/data'
+import { getAvailableFormats } from '../lib/data'
 import { url } from '../lib/url'
 
 interface Props {
@@ -23,7 +24,8 @@ function displayDate(value?: string): string {
 
 const publishedValue = episode.published_sort || episode.published
 const published = displayDate(publishedValue)
-const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
+const hasSlides = getAvailableFormats(episode).includes('slides')
+const noteUrl = url(hasSlides ? episode.base || `/episodes/${episode.id}/` : episode.article_path!)
 ---
 
 <article class="featured-note" data-episode-card data-episode-id={episode.id}>
@@ -66,10 +68,10 @@ const noteUrl = url(episode.base || `/episodes/${episode.id}/`)
 
     <div class="featured-actions">
       <a class="featured-primary" href={noteUrl} data-mark-read-link>
-        阅读视觉笔记
+        {hasSlides ? '阅读视觉笔记' : '阅读文章'}
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" /></svg>
       </a>
-      {episode.article_path && (
+      {hasSlides && episode.article_path && (
         <a class="featured-secondary" href={url(episode.article_path)} data-mark-read-link>
           阅读文章
         </a>

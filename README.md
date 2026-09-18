@@ -8,14 +8,14 @@
 
 - 从 RSS 发现节目并维护处理队列。
 - 优先读取 RSS 自带文稿；仅有音频时可调用 MiMo 或 DashScope 转写。
-- 通过 Codex 或 Claude Code 调用模型，生成 Slidev 视觉笔记、HTML 文章和元数据。
+- 通过 Codex 或 Claude Code 调用模型，生成 HTML 文章和元数据。视觉笔记暂停生成，已有笔记仍可阅读。
 - 使用 Astro 构建内容站，支持全文搜索、来源与标签筛选、未读筛选和本地阅读记录。
 - 通过 GitHub Actions 定时发现、生成、检查并部署到 GitHub Pages。
 
 ## 处理流程
 
 ```text
-RSS → scan cache → plan → transcript → slides/article → build → GitHub Pages
+RSS → scan cache → plan → transcript → article → build → GitHub Pages
 ```
 
 主要产物：
@@ -23,7 +23,7 @@ RSS → scan cache → plan → transcript → slides/article → build → GitH
 ```text
 data/transcripts/<id>.txt   转写稿
 data/plans/<source>.yml     处理状态
-episodes/<id>/slides.md     视觉笔记
+episodes/<id>/slides.md     视觉笔记（暂停新增）
 episodes/<id>/article.html  长读文章
 episodes/<id>/meta.yml      内容元数据
 ```
@@ -53,7 +53,7 @@ pnpm run dev:episode <episodeId>
 pnpm run cache:refresh
 pnpm run plan
 
-# 执行计划；可限制来源、数量或启用自动转写
+# 执行计划，默认只生成文章；可限制来源、数量或启用自动转写
 pnpm run plan:run -- --id=tbpn --limit=1
 pnpm run plan:run -- --auto-transcribe --transcribe-limit=3
 
@@ -76,6 +76,8 @@ pnpm run verify:routing
 ```
 
 `audit:brand`、`audit:home` 和 `verify:routing` 检查 `dist/`，运行前需先执行 `pnpm run build`。
+
+本地命令和每日工作流默认只生成文章、元数据与引文证据，不运行新笔记的 Slidev 生成和布局审计。已有视觉笔记继续参与构建和站点检查。需要为待处理节目同时生成视觉笔记时，显式运行 `pnpm run plan:run -- --with-visual-notes`。文章模式由程序在 `meta.yml` 中记录为 `visual_notes: false`，首页和 RSS 据此显示可用的阅读形式。
 
 ## 配置
 

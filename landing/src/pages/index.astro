@@ -8,7 +8,7 @@ import DiscoveryTabs from '../components/DiscoveryTabs.astro'
 import LibraryFilters from '../components/LibraryFilters.astro'
 import {
   loadEpisodes, loadSourcesWithFallbacks, collectTags,
-  sortEpisodesByPublishedDesc, sortEpisodesForLibrary, libraryRevision,
+  sortEpisodesByPublishedDesc, sortEpisodesForLibrary, libraryRevision, getAvailableFormats,
 } from '../lib/data'
 import { url } from '../lib/url'
 
@@ -16,6 +16,7 @@ const episodes = loadEpisodes()
 const sources = loadSourcesWithFallbacks(episodes)
 const tags = collectTags(episodes)
 const generated = episodes.filter(episode => episode.status === 'generated')
+const visualNotes = episodes.filter(episode => getAvailableFormats(episode).includes('slides'))
 const articles = episodes.filter(episode => episode.article_path)
 const sortedGenerated = sortEpisodesByPublishedDesc(generated)
 const libraryEpisodes = sortEpisodesForLibrary(episodes)
@@ -49,7 +50,7 @@ const sourcesWithCount = sources
 
       <div class="hero-foot">
         <dl class="hero-stats" aria-label="内容统计">
-          <div><dt>{generated.length}</dt><dd>份视觉笔记</dd></div>
+          <div><dt>{visualNotes.length}</dt><dd>份视觉笔记</dd></div>
           <div><dt>{articles.length}</dt><dd>篇长读文章</dd></div>
           <div><dt>{sources.length}</dt><dd>档播客来源</dd></div>
         </dl>

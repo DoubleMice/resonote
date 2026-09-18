@@ -1,7 +1,7 @@
 // Execute pending entries in data/plans/*.yml:
 //   1. download RSS transcript → data/transcripts/<id>.txt
 //   2. scaffold durable episode assets from _templates
-//   3. invoke claude -p to generate slides.md + editorial meta.yml + article.html
+//   3. generate article.html + editorial meta.yml (visual notes are opt-in)
 //   4. canonicalize deterministic fields and validate generated artifacts
 //   5. update plan entry status (pending → generated | audit_failed | failed)
 //
@@ -11,6 +11,7 @@
 //   pnpm run plan:run -- --limit=3                 # process at most N episodes
 //   pnpm run plan:run -- --concurrency=2           # parallel generation
 //   pnpm run plan:run -- --dry-run                 # show what would be done
+//   pnpm run plan:run -- --with-visual-notes       # also generate and audit slides
 //   pnpm run plan:run -- --allow-transcription-failures # continue to publication checks after ASR failures
 //   pnpm run plan:run -- --allow-episode-failures # preserve failed drafts and publish successful episodes
 //   pnpm run plan:run -- --retry-generation-failures # retry content failures without bypassing ASR cooldown
@@ -50,7 +51,8 @@ const EPISODES_DIR = resolve(ROOT, 'episodes')
 const TEMPLATES_DIR = resolve(EPISODES_DIR, '_templates')
 const PROMPTS_DIR = resolve(ROOT, 'scripts/prompts')
 const RULES_FILE = resolve(PROMPTS_DIR, 'slides-system-rules.md')
-const TASK_FILE = resolve(PROMPTS_DIR, 'slides-task.md')
+const generateVisualNotes = process.argv.includes('--with-visual-notes')
+const TASK_FILE = resolve(PROMPTS_DIR, generateVisualNotes ? 'slides-task.md' : 'article-task.md')
 
 const onlyId = process.argv.find(a => a.startsWith('--id='))?.split('=')[1]
 const onlyEpisode = process.argv.find(a => a.startsWith('--episode='))?.split('=')[1]
@@ -169,17 +171,18 @@ function formatDuration(seconds: number): string {
 
 function hasGeneratedArtifacts(id: string): boolean {
   const dir = join(EPISODES_DIR, id)
-  return existsSync(join(dir, 'slides.md'))
+  return existsSync(join(dir, generateVisualNotes ? 'slides.md' : 'article.html'))
     && existsSync(join(dir, 'meta.yml'))
 }
 
 function hasGeneratedEpisode(id: string): boolean {
   const dir = join(EPISODES_DIR, id)
   const metaPath = join(dir, 'meta.yml')
-  if (!existsSync(join(dir, 'slides.md')) || !existsSync(metaPath)) return false
+  if (!existsSync(metaPath)) return false
   try {
     const meta = readYaml<Record<string, unknown>>(metaPath)
     return meta.status === 'generated'
+      && existsSync(join(dir, meta.visual_notes === false ? 'article.html' : 'slides.md'))
   } catch {
     return false
   }
@@ -189,6 +192,7 @@ function canonicalizeEpisodeArtifacts(
   entry: PlanEntry,
   sourceId: string,
   status: PlanEntry['status'],
+  visualNotes?: boolean,
 ): boolean {
   const metaPath = join(EPISODES_DIR, entry.id, 'meta.yml')
   const slidesPath = join(EPISODES_DIR, entry.id, 'slides.md')
@@ -205,9 +209,10 @@ function canonicalizeEpisodeArtifacts(
       thumbnail: entry.image,
       category: entry.category,
       status,
+      visualNotes,
     })
-    if (existsSync(slidesPath)) {
-      const meta = readYaml<Record<string, unknown>>(metaPath)
+    const meta = readYaml<Record<string, unknown>>(metaPath)
+    if (meta.visual_notes !== false && existsSync(slidesPath)) {
       canonicalizeSlidesFrontmatter(slidesPath, String(meta.title || entry.title))
     }
     return true
@@ -880,6 +885,7 @@ async function runAutoTranscription(plans: { source: string; path: string; plan:
 }
 
 async function auditGeneratedLayout(id: string): Promise<boolean> {
+  if (!generateVisualNotes) return true
   log.raw(`  auditing layout for ${id}`)
   const result = await timing.measure('layout-audit', id, () => run('pnpm', [
     'exec',
@@ -914,7 +920,7 @@ function generateOne(entry: PlanEntry, sourceId: string, repairExisting = false)
     '# Task',
     taskPrompt,
     ...(repairExisting ? [
-      'This episode already has a draft that failed artifact or layout validation. Repair the existing content instead of replacing it wholesale. Run the artifact validator with --strict and the layout audit for this episode, fix the reported errors, and preserve accurate content and transcript-backed quotes.',
+      'This episode already has a draft that failed validation. Repair the artifacts requested by the current task, preserving accurate content and transcript-backed quotes. Follow the current task for validation; do not generate or repair visual notes in article-only mode.',
     ] : []),
   ].join('\n\n')
   const invocation = contentCommand(combinedPrompt)
@@ -965,7 +971,7 @@ async function processEntry(
   log.step(`[${sourceId}] ${entry.id} — ${entry.title.slice(0, 70)}`)
 
   if (dryRun) {
-    log.info('  (dry-run) would download + generate')
+    log.info(`  (dry-run) would download + generate ${generateVisualNotes ? 'article and visual notes' : 'article only'}`)
     return
   }
 
@@ -1006,12 +1012,12 @@ async function processEntry(
   scaffoldEpisodeWorkspace(EPISODES_DIR, TEMPLATES_DIR, entry.id)
 
   if (retryAuditOnly) {
-    const artifactsOk = canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded')
+    const artifactsOk = canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded', generateVisualNotes)
     const staticOk = artifactsOk && validateGeneratedArtifacts(entry.id)
     const layoutOk = staticOk && await auditGeneratedLayout(entry.id)
     entry.status = staticOk && layoutOk ? 'generated' : 'audit_failed'
     savePlan(planPath, plan)
-    canonicalizeEpisodeArtifacts(entry, sourceId, entry.status)
+    canonicalizeEpisodeArtifacts(entry, sourceId, entry.status, generateVisualNotes)
     if (entry.status === 'generated' || !retryGenerationFailures) {
       log.ok(`  → status=${entry.status}`)
       stats.episodes.push({
@@ -1035,11 +1041,11 @@ async function processEntry(
     return
   }
 
-  const cleanupPresentation = stageEpisodePresentation(
+  const cleanupPresentation = generateVisualNotes ? stageEpisodePresentation(
     join(EPISODES_DIR, entry.id),
     TEMPLATES_DIR,
     false,
-  )
+  ) : () => {}
   let result: GenerateResult = {
     ok: false,
     inputTokens: 0,
@@ -1056,7 +1062,7 @@ async function processEntry(
   }
   const generatedFilesExist = hasGeneratedArtifacts(entry.id)
   const artifactsOk = generatedFilesExist
-    && canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded')
+    && canonicalizeEpisodeArtifacts(entry, sourceId, 'downloaded', generateVisualNotes)
   const staticOk = result.ok && artifactsOk && validateGeneratedArtifacts(entry.id)
   const layoutOk = staticOk
     ? await auditGeneratedLayout(entry.id)
@@ -1067,7 +1073,7 @@ async function processEntry(
       ? 'audit_failed'
       : 'failed'
   savePlan(planPath, plan)
-  canonicalizeEpisodeArtifacts(entry, sourceId, entry.status)
+  canonicalizeEpisodeArtifacts(entry, sourceId, entry.status, generateVisualNotes)
 
   const durationStr = (result.durationMs / 1000 / 60).toFixed(1) + 'min'
   const tokenStr = result.inputTokens > 0
@@ -1109,6 +1115,7 @@ async function main() {
   if (!Number.isSafeInteger(transcribeLimit) || transcribeLimit < 0) throw new Error('transcribe-limit must be a non-negative integer')
   if (!Number.isFinite(generationTimeoutMinutes) || generationTimeoutMinutes <= 0 || generationTimeoutMinutes > 120) throw new Error('GENERATION_TIMEOUT_MINUTES must be greater than 0 and at most 120')
   log.step(`Run-plan — concurrency=${concurrency}, limit=${limit}${autoTranscribe ? ', auto-transcribe' : ''}${dryRun ? ' (DRY RUN)' : ''}`)
+  log.info(`Content: ${generateVisualNotes ? 'article and visual notes' : 'article only (visual note generation paused)'}`)
 
   const plans = loadPlans()
   const targetPlans = onlyId ? plans.filter(p => p.source === onlyId) : plans

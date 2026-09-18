@@ -8,7 +8,7 @@ import { artifactFixture } from './test-support/artifact-fixture.ts'
 
 const repository = process.cwd()
 
-function executeBuild(generatedEpisodes: string[], inspect: (root: string, code: number | null, output: string) => void, failLanding = false, reportedFailures = ['bad-build']) {
+function executeBuild(generatedEpisodes: string[], inspect: (root: string, code: number | null, output: string) => void, failLanding = false, reportedFailures = ['bad-build'], setup?: (root: string) => void) {
   const { root } = artifactFixture(undefined, 'good')
   try {
     artifactFixture(root, 'bad-build')
@@ -43,6 +43,7 @@ if (process.argv.some(arg => arg.endsWith('/build-player.ts'))) {
   fs.writeFileSync('dist/index.html','<html><head></head><body>library</body></html>');
 }
 `, { mode: 0o755 })
+    setup?.(root)
     const result = spawnSync(process.execPath, [
       resolve(repository, 'node_modules/tsx/dist/cli.mjs'), resolve(repository, 'scripts/build-all.ts'), '--allow-episode-failures',
     ], { cwd: root, encoding: 'utf8', timeout: 15_000, env: {
@@ -73,6 +74,25 @@ test('publication mode still fails on an existing episode build regression', () 
     assert.equal(code, 1, output)
     assert.ok(existsSync(join(root, 'episodes/bad-build/article.html')))
     assert.equal(existsSync(join(root, 'episodes/_failed/bad-build')), false)
+  })
+})
+
+test('publishes article-only content with article navigation but no player entry or deck links', () => {
+  executeBuild(['bad-build', 'article-only'], (root, code, output) => {
+    assert.equal(code, 0, output)
+    const article = readFileSync(join(root, 'dist/episodes/article-only/article.html'), 'utf8')
+    assert.match(article, /data-resonote-theme/)
+    assert.match(article, /href="\.\.\/good\/article.html"/)
+    assert.match(readFileSync(join(root, 'dist/episodes/good/article.html'), 'utf8'), /href="\.\.\/article-only\/article.html"/)
+    assert.equal(existsSync(join(root, 'dist/episodes/article-only/index.html')), false)
+    assert.doesNotMatch(readFileSync(join(root, 'dist/episodes/good/index.html'), 'utf8'), /article-only/)
+  }, false, ['bad-build'], root => {
+    const { directory } = artifactFixture(root, 'article-only')
+    const metaPath = join(directory, 'meta.yml')
+    writeFileSync(metaPath, readFileSync(metaPath, 'utf8') + '\nvisual_notes: false\n')
+    // A preserved old draft must not be compiled or linked in article-only mode.
+    writeFileSync(join(directory, 'slides.md'), 'unfinished draft')
+    writeFileSync(join(directory, 'quote-evidence.yml'), 'episode_id: article-only\nquotes: []\n')
   })
 })
 

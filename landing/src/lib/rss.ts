@@ -1,4 +1,4 @@
-import { episodePublishedTime, sortEpisodesByPublishedDesc } from './data'
+import { episodePublishedTime, getAvailableFormats, sortEpisodesByPublishedDesc } from './data'
 import type { EpisodeWithSource } from './data'
 
 export const FEED_TITLE = '声笺 Resonote'
@@ -22,7 +22,7 @@ export function absoluteUrl(site: string, base: string, path: string): string {
 }
 
 function isReadable(ep: EpisodeWithSource): boolean {
-  return ep.status === 'generated' || Boolean(ep.article_path)
+  return getAvailableFormats(ep).length > 0
 }
 
 function episodeDeckPath(ep: Pick<EpisodeWithSource, 'id'>): string {
@@ -51,7 +51,7 @@ function itemDescription(ep: EpisodeWithSource, deckUrl: string, articleUrl: str
   }
   if (ep.summary) parts.push(`<p>${escapeXml(ep.summary)}</p>`)
   const links: string[] = []
-  if (ep.status === 'generated') links.push(`<a href="${escapeXml(deckUrl)}">幻灯片笔记</a>`)
+  if (getAvailableFormats(ep).includes('slides')) links.push(`<a href="${escapeXml(deckUrl)}">幻灯片笔记</a>`)
   if (articleUrl) links.push(`<a href="${escapeXml(articleUrl)}">长读文章</a>`)
   if (links.length > 1) parts.push(`<p>阅读格式：${links.join(' · ')}</p>`)
   return parts.join('')

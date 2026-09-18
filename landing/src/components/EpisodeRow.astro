@@ -1,6 +1,6 @@
 ---
 import type { EpisodeWithSource } from '../lib/data'
-import { CATEGORIES, episodeGeneratedTime, episodePublishedTime } from '../lib/data'
+import { CATEGORIES, episodeGeneratedTime, episodePublishedTime, getAvailableFormats } from '../lib/data'
 import { url } from '../lib/url'
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { episode, initialHidden = false } = Astro.props
-const hasSlides = episode.status === 'generated'
+const hasSlides = getAvailableFormats(episode).includes('slides')
 const hasArticle = Boolean(episode.article_path)
 const category = CATEGORIES.find(item => item.id === episode.category)
 const searchText = [

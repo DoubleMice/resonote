@@ -24,6 +24,16 @@ test('escapeXml escapes XML special characters', () => {
   )
 })
 
+test('generated article-only feed entries link to the article without advertising slides', () => {
+  const xml = buildRssFeed({
+    episodes: [episode({ visual_notes: false, article_path: 'episodes/ep-1/article.html' })],
+    site: 'https://example.com', base: '/',
+  })
+  assert.match(xml, /<link>https:\/\/example.com\/episodes\/ep-1\/article.html<\/link>/)
+  assert.doesNotMatch(xml, /幻灯片笔记/)
+  assert.doesNotMatch(xml, /<link>https:\/\/example.com\/episodes\/ep-1\/<\/link>/)
+})
+
 test('absoluteUrl joins origin, base path and path', () => {
   assert.equal(absoluteUrl('https://doublemice.github.io/', '/resonate/', 'episodes/e1/'), 'https://doublemice.github.io/resonate/episodes/e1/')
   assert.equal(absoluteUrl('http://localhost:4173', '/', 'rss.xml'), 'http://localhost:4173/rss.xml')

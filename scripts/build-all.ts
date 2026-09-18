@@ -71,6 +71,7 @@ interface NavEntry {
   published?: string
   published_sort?: string
   articleBasename: string | null
+  hasSlides: boolean
 }
 
 // prev = 上一篇（更早一期，列表中 index+1），next = 下一篇（更新一期，index-1）
@@ -78,7 +79,7 @@ function buildNavMaps(entries: NavEntry[]): {
   deckNav: Map<string, DeckNav>
   articleNav: Map<string, ArticleNav>
 } {
-  const deckOrder = entries
+  const deckOrder = entries.filter(entry => entry.hasSlides)
   const deckSorted = [...deckOrder].sort(newestFirst)
   const articleSorted = entries.filter(entry => entry.articleBasename).sort(newestFirst)
 
@@ -143,6 +144,7 @@ function generatedEpisodeIds(): string[] {
     if (!existsSync(metaPath)) continue
     const meta = readYaml<EpisodeMeta>(metaPath)
     if (meta.status !== 'generated') continue
+    if (meta.visual_notes === false) continue
     if (!existsSync(join(dir, 'slides.md'))) {
       log.warn(`  skip ${entry} — generated meta.yml but no slides.md`)
       continue
@@ -269,6 +271,7 @@ async function main() {
       published: meta.published,
       published_sort: meta.published_sort,
       articleBasename: articlePath ? basename(articlePath) : null,
+      hasSlides: true,
     })
   }
   log.info(`found ${episodes.length} generated episodes (base=${SITE_BASE})`)
@@ -304,10 +307,23 @@ async function main() {
   const episodeDists = included.map(ep => ({ ...ep, path: join(playerDist, 'episodes', ep.id) }))
   log.info(`shared player cache: ${playerCacheHit ? 'hit' : 'rebuilt'}`)
   const builtIds = new Set(episodeDists.map(episode => episode.id))
-  const { deckNav, articleNav } = buildNavMaps(navEntries.filter(entry => builtIds.has(entry.id)))
   // Re-read articles after isolating failures so neither the landing page nor
   // article assembly can publish a failed episode's draft or link to it.
   const articles = articleArtifacts()
+  const publishedNavEntries = navEntries.filter(entry => builtIds.has(entry.id))
+  for (const article of articles) {
+    if (builtIds.has(article.episodeId)) continue
+    const meta = readYaml<EpisodeMeta>(join(EPISODES_DIR, article.episodeId, 'meta.yml'))
+    publishedNavEntries.push({
+      id: article.episodeId,
+      title: meta.title || article.episodeId,
+      published: meta.published,
+      published_sort: meta.published_sort,
+      articleBasename: basename(article.sourcePath),
+      hasSlides: false,
+    })
+  }
+  const { deckNav, articleNav } = buildNavMaps(publishedNavEntries)
   log.info(`found ${articles.length} readable articles`)
 
   // Build landing

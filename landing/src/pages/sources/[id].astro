@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro'
 import EpisodeCard from '../../components/EpisodeCard.astro'
 import FormatTabs from '../../components/FormatTabs.astro'
-import { loadEpisodes, loadSourcesWithFallbacks, sortEpisodesByPublishedDesc } from '../../lib/data'
+import { getAvailableFormats, loadEpisodes, loadSourcesWithFallbacks, sortEpisodesByPublishedDesc } from '../../lib/data'
 import { url } from '../../lib/url'
 
 export async function getStaticPaths() {
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { source } = Astro.props
 const episodes = sortEpisodesByPublishedDesc(loadEpisodes().filter(e => e.source === source.id))
-const generated = episodes.filter(e => e.status === 'generated')
+const generated = episodes.filter(e => getAvailableFormats(e).includes('slides'))
 ---
 
 <Base title={`${source.name} · 声笺 Resonote`} description={`浏览声笺收录的 ${source.name} 节目。`}>

@@ -106,6 +106,9 @@ function validateMeta(
   if (meta.status === 'generated' && Number.isNaN(Date.parse(String(meta.generated_at || '')))) {
     issues.push({ level: 'error', code: 'invalid-generated-at', file, message: 'generated status requires generated_at' })
   }
+  if (meta.visual_notes !== undefined && typeof meta.visual_notes !== 'boolean') {
+    issues.push({ level: 'error', code: 'invalid-visual-notes', file, message: 'visual_notes must be a boolean' })
+  }
 
   if (!Array.isArray(meta.tags)) {
     issues.push({ level: 'error', code: 'invalid-tags', file, message: 'tags must be a non-empty list' })
@@ -478,10 +481,10 @@ export function validateEpisodeArtifacts(options: ValidateArtifactOptions): Arti
     }]
   }
 
-  validateMeta({ ...options, rootDir }, issues, allowed)
-  validateSlides({ ...options, rootDir }, issues)
-  validateArticle({ ...options, rootDir }, issues)
-  validateQuoteEvidence({ ...options, rootDir }, issues)
+  const meta = validateMeta({ ...options, rootDir }, issues, allowed)
+  if (meta?.visual_notes !== false) validateSlides({ ...options, rootDir }, issues)
+  validateArticle({ ...options, rootDir, strict: options.strict || meta?.visual_notes === false }, issues)
+  validateQuoteEvidence({ ...options, rootDir, strict: options.strict || meta?.visual_notes === false }, issues)
   lintEditorialContent({ ...options, rootDir }, issues)
 
   for (const name of ['package.json', 'style.css', 'global-bottom.vue']) {

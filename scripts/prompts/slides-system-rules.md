@@ -1,12 +1,12 @@
-# Resonote Visual Notes — Editorial and Production Rules
+# Resonote — Editorial and Production Rules
 
-Turn one podcast transcript into Chinese visual notes that a reader can understand without hearing the episode. Preserve the reasoning, evidence and limits of the discussion. These rules define content and production requirements; the task prompt defines the workflow.
+Turn one podcast transcript into Chinese reading material that a reader can understand without hearing the episode. Preserve the reasoning, evidence and limits of the discussion. These rules define content and production requirements; the task prompt selects the artifacts and defines the workflow. In article-only tasks, apply RULES 0–3 and 9–11 to the article and metadata; slide production, diagrams, slide counts, layout audits and slide screenshots are out of scope. Do not generate or modify slides or diagram assets in article-only mode.
 
 For editorial structure, this file is the source of truth. Read CLAUDE.md only for compatible technical and shared-style guidance; its older page-count, diagram-ratio and fixed-structure prescriptions do not apply. Do not change repository instructions or tooling during episode generation.
 
 ## RULE 0 — Write in Chinese (中文)
 
-**All slide content must be written in Chinese (中文)**, including:
+**All reader-facing content must be written in Chinese (中文)**, including:
 - Slide titles, headings, and body text
 - Topic card labels and descriptions
 - Quote translations and context labels
@@ -262,8 +262,8 @@ core_ideas:
 
 The orchestrator owns and overwrites `id`, `source`, `source_title`, `published`,
 `published_sort`, `duration`, `url`, `thumbnail`, `category`, `status`,
-`generated_at`, `article_path`, and `base`. Do not infer or write those fields.
-It adds `generated_at` only after the deck passes static and layout audits.
+`generated_at`, `article_path`, `visual_notes`, and `base`. Do not infer or write those fields.
+It adds `generated_at` only after the requested artifacts pass validation; slide layout audits apply only when generating visual notes.
 
 The `tags` field MUST only contain values from `tags.yml`. Do not invent tags.
 
@@ -276,7 +276,7 @@ YAML safety for `core_ideas`:
 
 ## RULE 10 — Article HTML generation
 
-After slides.md and meta.yml are complete, generate a standalone HTML article at `episodes/<id>/article.html`.
+Generate a standalone HTML article at `episodes/<id>/article.html`. Article-only tasks do not require slides.md.
 
 **Format requirements:**
 - Complete semantic HTML document; the build makes the published output self-contained.

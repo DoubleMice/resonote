@@ -1,5 +1,6 @@
 ---
 import type { EpisodeWithSource } from '../lib/data'
+import { getAvailableFormats } from '../lib/data'
 import { url } from '../lib/url'
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 }
 
 const { episode } = Astro.props
-const isGenerated = episode.status === 'generated'
+const hasSlides = getAvailableFormats(episode).includes('slides')
 const hasArticle = !!episode.article_path
 const thumbnail = episode.thumbnail
 const pendingLabel = episode.status === 'failed'
@@ -15,13 +16,13 @@ const pendingLabel = episode.status === 'failed'
   : episode.status === 'needs_transcript'
     ? '等待转写'
     : '文字稿已就绪 · 正在整理'
-const primaryUrl = isGenerated
+const primaryUrl = hasSlides
   ? url(episode.base || `/episodes/${episode.id}/`)
   : hasArticle
     ? url(episode.article_path!)
     : episode.url
-const primaryLabel = isGenerated ? '查看视觉笔记' : hasArticle ? '阅读文章' : '打开原文'
-const primaryExternal = !isGenerated && !hasArticle
+const primaryLabel = hasSlides ? '查看视觉笔记' : hasArticle ? '阅读文章' : '打开原文'
+const primaryExternal = !hasSlides && !hasArticle
 
 function displayDate(value?: string): string {
   if (!value) return ''
@@ -43,7 +44,7 @@ const published = displayDate(episode.published_sort || episode.published)
   class="episode-card overflow-hidden flex flex-col"
   data-episode-card
   data-episode-id={episode.id}
-  data-has-slides={String(isGenerated)}
+  data-has-slides={String(hasSlides)}
   data-has-article={String(hasArticle)}
 >
   <div class="episode-cover relative aspect-video bg-stone-100">
@@ -59,7 +60,7 @@ const published = displayDate(episode.published_sort || episode.published)
         RSS Episode
       </div>
     )}
-    {!isGenerated && (
+    {!hasSlides && !hasArticle && (
       <div class="pending-overlay absolute inset-0 flex items-center justify-center">
           <span class="text-white text-xs bg-stone-800 px-3 py-1 rounded-full">
           {pendingLabel}
@@ -137,7 +138,7 @@ const published = displayDate(episode.published_sort || episode.published)
 
     <div class="card-footer mt-auto pt-3">
       <div class="primary-actions">
-        {isGenerated ? (
+        {hasSlides ? (
           <a
             href={url(episode.base || `/episodes/${episode.id}/`)}
             data-mark-read-link
@@ -145,7 +146,7 @@ const published = displayDate(episode.published_sort || episode.published)
           >
             视觉笔记 <span aria-hidden="true">→</span>
           </a>
-        ) : (
+        ) : !hasArticle && (
           <span class="text-xs text-stone-400">{episode.status === 'failed' ? '生成失败' : episode.status === 'needs_transcript' ? '等待转写' : '视觉笔记未生成'}</span>
         )}
         {hasArticle && (
