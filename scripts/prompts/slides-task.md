@@ -84,7 +84,7 @@ Write `article.html` under RULE 10, using the same verified evidence but an inde
 ### Phase 5 — Review structure and language
 
 1. Run the structural review in RULE 8 against the source passages and outline. Read slide titles in order, then each complete topic. Check lost context, omitted counterexamples, duplicated explanations and unsupported visual relationships.
-2. Read the article continuously as a reader who has not heard the episode. Fix unexplained jumps and overloaded paragraphs while preserving attribution and conditions.
+2. Read the article continuously as a reader who has not heard the episode. Fix unexplained jumps and overloaded paragraphs while preserving attribution and conditions. Then read paragraph openings in sequence and check them against the following sentences for a repeated pattern of a verdict or short assertion followed by explanation or evidence. Apply RULE 10 to revise the repeated structure in context; keep useful topic sentences and short sentences. Do not judge by sentence length alone, merely change punctuation, or move every verdict to the paragraph ending.
 3. Apply RULE 0.5 to all three artifacts. Use the following scan as a review queue, not an automatic replacement list:
 
 ```bash
