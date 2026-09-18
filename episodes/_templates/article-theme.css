@@ -226,11 +226,34 @@ a:focus-visible { outline: 3px solid rgba(53, 95, 88, 0.25); outline-offset: 3px
 .card-grid,
 .overview,
 .stat-grid,
-.compare {
+.compare:not(table):not(:has(> table)) {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 14px !important;
   margin: 24px 0 38px !important;
+}
+
+/* Comparison tables (including wrapped tables) keep native column alignment. */
+.resonote-article table {
+  width: 100%;
+  margin: 24px 0 38px;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+.resonote-article th,
+.resonote-article td {
+  padding: 12px 14px;
+  border: 1px solid var(--resonote-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.resonote-article th {
+  background: #eef3ef;
+  font-weight: 700;
 }
 
 .card,
@@ -478,7 +501,9 @@ footer {
     border-radius: 18px;
   }
   .resonote-article > header { margin-bottom: 38px !important; }
-  .cards, .topic-cards, .card-grid, .overview, .stat-grid, .compare { grid-template-columns: 1fr !important; }
+  .cards, .topic-cards, .card-grid, .overview, .stat-grid,
+  .compare:not(table):not(:has(> table)) { grid-template-columns: 1fr !important; }
+  .resonote-article th, .resonote-article td { padding: 10px 8px; }
   h2 { margin-top: 46px !important; }
   blockquote, .quote, .quote-block, .quote-card, .quote-item, .q { padding: 20px 18px 18px 22px !important; }
   .resonote-pager { grid-template-columns: 1fr; }
