@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-09-18T03:03:53.987Z
+refreshed_at: 2026-09-18T18:12:08.544Z
 min_duration: 3300
 min_date: "20260828"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -100,5 +100,9 @@ episodes:
       ⚔️ 01:05:27 Why Wyoming dropping LayerZero for Chainlink reignited the Link Marines
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-18T18:12:09.317Z
+    transcript_job_id: bdb4a1a8-b3f5-43e9-bce5-5bcaf7b58697_011b36c889774fe3a3db91b88ab1972c,a1dc1be5-7eaf-49f3-82ae-7b77567457e6_388436e13d4c468abd9f70a526713512,5a26eac0-0597-4eee-a549-1492af030a6f_4954cfe7d2604c1bb4dbd987255be17a,a38f2485-7d9b-4687-8302-1766243dd0fc_db8cfcd2aae846c69da2a538ff0fe359,1d3d0e34-ba11-4549-a75f-cde3a592e275_7dce954011fb4756ab32582cc771fb16
+    transcript_completed_at: 2026-09-18T18:15:47.001Z
