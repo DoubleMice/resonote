@@ -1,12 +1,28 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-22T03:04:12.881Z
+refreshed_at: 2026-09-22T18:13:27.620Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 6ab2b85df04646b3a955a1de
+    guid: 6ab2b85df04646b3a955a1de
+    title: AI进入生产阶段之后， 智能、算力、芯片 会走向哪里？
+    duration: 2468
+    published: Tue, 22 Sep 2026 17:24:22 GMT
+    published_sort: "20260922"
+    first_seen_at: 2026-09-22T18:13:27.619Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ab2b85df04646b3a955a1de?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    image: https://image.xyzcdn.net/FpRvXCm6OUxKV4ahtH40k8CVS20R.png
+    status: failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-22T18:13:28.965Z
+    transcript_job_id: 3fb66f98-2ef6-4fc7-bbb4-a59eba9ad458_cb1a2ca5b85f4fd787099c907ebff406,d737ba19-4005-40bd-b01b-87ba5b299d4a_6f9dcb0793894b2cbdde46c21d0ecea5,a8739d43-8e60-461f-bf8b-14ff8b1aba34_0ce2042d5da64c73a96bbe0fb52b7f4f
+    transcript_completed_at: 2026-09-22T18:14:33.030Z

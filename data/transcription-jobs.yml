@@ -28439,3 +28439,54 @@ jobs:
     submitted_at: 2026-09-18T18:12:09.317Z
     updated_at: 2026-09-18T18:15:47.001Z
     completed_at: 2026-09-18T18:15:47.001Z
+  - key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z:chunk:0
+    parent_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    attempt_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z
+    provider: mimo
+    id: 6ab2b85df04646b3a955a1de
+    source: tulong-zhishu
+    title: AI进入生产阶段之后， 智能、算力、芯片 会走向哪里？
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    task_id: 3fb66f98-2ef6-4fc7-bbb4-a59eba9ad458_cb1a2ca5b85f4fd787099c907ebff406
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-22T18:13:28.965Z
+    updated_at: 2026-09-22T18:13:58.672Z
+    completed_at: 2026-09-22T18:13:58.672Z
+  - key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z:chunk:1
+    parent_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    attempt_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z
+    provider: mimo
+    id: 6ab2b85df04646b3a955a1de
+    source: tulong-zhishu
+    title: AI进入生产阶段之后， 智能、算力、芯片 会走向哪里？
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    task_id: d737ba19-4005-40bd-b01b-87ba5b299d4a_6f9dcb0793894b2cbdde46c21d0ecea5
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-22T18:13:28.965Z
+    updated_at: 2026-09-22T18:14:15.274Z
+    completed_at: 2026-09-22T18:14:15.274Z
+  - key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z:chunk:2
+    parent_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    attempt_key: tulong-zhishu:6ab2b85df04646b3a955a1de:20260922:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a:mimo:2026-09-22T18:13:28.965Z
+    provider: mimo
+    id: 6ab2b85df04646b3a955a1de
+    source: tulong-zhishu
+    title: AI进入生产阶段之后， 智能、算力、芯片 会走向哪里？
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab2b85df04646b3a955a1de/media.xyzcdn.net/6507bc165c88d2412626b401/lmiekkQAwGIkd4WGtzCDhcEB3X5H.m4a
+    task_id: a8739d43-8e60-461f-bf8b-14ff8b1aba34_0ce2042d5da64c73a96bbe0fb52b7f4f
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-22T18:13:28.965Z
+    updated_at: 2026-09-22T18:14:33.030Z
+    completed_at: 2026-09-22T18:14:33.030Z
