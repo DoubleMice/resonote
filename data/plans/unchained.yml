@@ -1,8 +1,8 @@
 source: unchained
-refreshed_at: 2026-09-23T03:03:59.120Z
+refreshed_at: 2026-09-23T18:14:15.554Z
 min_duration: 3300
 min_date: "20260902"
-total_candidates: 1
+total_candidates: 2
 done: 1
 pending: 0
 needs_transcript: 0
@@ -10,6 +10,117 @@ transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: af12c3f4-b712-11f1-ab0e-533d71db6ce3
+    guid: af12c3f4-b712-11f1-ab0e-533d71db6ce3
+    title: How Zcash and NEAR Are Driving This Crypto Bull Run
+    duration: 3366
+    published: Wed, 23 Sep 2026 05:50:00 -0000
+    published_sort: "20260923"
+    first_seen_at: 2026-09-23T18:14:15.546Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3840692425.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3840692425.mp3
+    image: https://megaphone.imgix.net/podcasts/af12c3f4-b712-11f1-ab0e-533d71db6ce3/image/fdcd9ce33b25107a967bd1d1a75953d2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Zcash and NEAR are both ripping this week, and Illia Polosukhin and Mert Mumtaz say privacy is the reason why. Is
+      this how the “Bitcoin DeFi” vision comes true?
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for. Our
+      listener survey takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who takes it
+      can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Zcash just cracked the top 10 on CoinGecko, up 32% in a week and near an all-time high. NEAR is up 69% over the
+      same stretch, and both rallies trace back to the same catalyst: transactions nobody else can see.
+
+
+      Illia Polosukhin, co-founder of NEAR Protocol, and Mert Mumtaz, co-founder and CEO of Helius, join Laura Shin to
+      unpack why confidential transactions, not speculation, are driving the rally, and why the two networks now
+      function as one privacy-preserving liquidity layer for real businesses and institutions, not just traders.
+
+
+      They cover NEAR Intents' $260 million in TVL, the multi-party computation and secure enclaves behind NEAR's
+      confidential balances versus Zcash's zero-knowledge shielded pool, the counterfeiting bug that forced Zcash's
+      Ironwood migration, and NEAR's Shield system, which halted transactions mid-hack during a Litecoin exploit.
+      Zcash's next upgrade, Project Tachyon, aims to make the network quantum-proof and scale it 100x, and Mert argues
+      privacy will not stay a competitive edge for long.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠Illia Polosukhin - Co-Founder of NEAR Protocol
+
+        ⁠Mert Mumtaz - Cofounder and CEO of Helius
+
+      Timestamps
+
+
+      🚀 01:39 Guest intros, plus why ZEC (+32%) and NEAR (+69%) are ripping this week
+
+
+      🌐 03:13 Illia and Mert on why NEAR and ZEC's price action is turning heads
+
+
+      🟠 08:34 Is Zcash and NEAR the Bitcoin DeFi dream, minus Bitcoin?
+
+
+      🕵️ 11:54 Why coffee-shop-level balance visibility is a real business risk
+
+
+      ✈️ 15:06 Mert's travel hack: booking flights and hotels privately via NEAR Intents
+
+
+      🧠 18:12 Why privacy is a retention tool first, not just an onboarding one
+
+
+      📣 25:11 1inch Aqua: back multiple liquidity positions with one wallet balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🔐 26:23 Privacy vs confidentiality: ZK proofs versus NEAR's MPC-and-enclave model
+
+
+      🛡️ 29:26 Inside NEAR's secure enclaves, and why store-of-value needs real privacy
+
+
+      🔄 33:59 How a NEAR Intents swap settles across chains, and its $206 million in TVL
+
+
+      🐛 39:09 The Zcash counterfeit bug, the Ironwood migration, and formal verification
+
+
+      🤖 45:49 How NEAR's Shield AI system and MPC guardrails manage solver risk
+
+
+      ⚡ 51:33 Zcash's NU7 upgrade: faster blocks, quantum-proofing, and private voting
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-23T18:14:16.949Z
+    transcript_job_id: 0eba7a80-5b95-4317-93e1-e83e912de692_b5323684eb2647feb2d7b231dec5c753,89fa7587-7448-465f-ae59-a06c1eace689_1fb48f7def9942c2b3d6a285346939b9,aee0bbcd-19ea-4d07-8dde-c9c5990408a1_82add4f5a3344f06a2f3aa1e7d8a5612,2164ba4d-4215-4d07-969a-f5aa154c25cc_135f5481eb8a41a18a9810d13ab05258
+    transcript_completed_at: 2026-09-23T18:15:39.811Z
   - id: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
     guid: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
     title: "Uneasy Money: What Crypto's Gensler Years Say About the AI Slowdown Debate"
