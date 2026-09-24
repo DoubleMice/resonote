@@ -1,9 +1,9 @@
 source: unchained
-refreshed_at: 2026-09-24T03:03:58.332Z
+refreshed_at: 2026-09-24T18:12:36.821Z
 min_duration: 3300
 min_date: "20260903"
 total_candidates: 2
-done: 1
+done: 2
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -115,7 +115,7 @@ episodes:
       ⚡ 51:33 Zcash's NU7 upgrade: faster blocks, quantum-proofing, and private voting
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: failed
+    status: generated
     priority: 1
     transcript_provider: mimo
     transcript_job_id: 0eba7a80-5b95-4317-93e1-e83e912de692_b5323684eb2647feb2d7b231dec5c753,89fa7587-7448-465f-ae59-a06c1eace689_1fb48f7def9942c2b3d6a285346939b9,aee0bbcd-19ea-4d07-8dde-c9c5990408a1_82add4f5a3344f06a2f3aa1e7d8a5612,2164ba4d-4215-4d07-969a-f5aa154c25cc_135f5481eb8a41a18a9810d13ab05258

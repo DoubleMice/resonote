@@ -1,0 +1,31 @@
+title: Zcash 与 NEAR 如何推动这轮加密货币牛市？
+guest: Ilya Polosukhin、Murt Mumtaz
+guest_role: NEAR Protocol 联合创始人；Helios 联合创始人兼 CEO
+tags:
+  - interview
+  - founder
+  - ceo
+  - quick-take
+  - strategic
+summary: >
+  Ilya Polosukhin 与 Murt Mumtaz 讨论 Zcash 和 NEAR
+  在市场上涨中的角色：前者被视为兼具隐私、储值和抗量子叙事的资产，后者试图用跨链结算让私密资产可以实际使用。对谈同时梳理了极端匿名与可编程保密计算的架构差异，以及伪币漏洞、可升级合约和多方计算网络带来的安全取舍。
+core_ideas:
+  - 市场普涨之外，两位嘉宾把 Zcash 与 NEAR 的相对强势联系到私密资产的可用性和跨链流动性。
+  - Zcash 的用户生成零知识证明强调高度匿名；NEAR 的保密计算允许私密共享状态，却引入更多系统组件。
+  - NEAR Intents 以用户意图、求解者报价和跨链结算构成兑换路径；持续使用保密余额会承担 MPC 与合约升级风险。
+  - Zcash 的潜在伪币漏洞说明匿名池难以监测供应量；嘉宾称迁移与形式化验证已处理该问题，但节目未提供独立审计材料。
+  - Mumtaz 所述的区块时间缩短、Project Tachyon 和私密投票仍有不同时间表，不能视为已完成的功能。
+id: af12c3f4-b712-11f1-ab0e-533d71db6ce3
+source: unchained
+source_title: How Zcash and NEAR Are Driving This Crypto Bull Run
+published: 2026-09
+published_sort: "20260923"
+duration: 56m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3840692425.mp3
+status: generated
+article_path: episodes/af12c3f4-b712-11f1-ab0e-533d71db6ce3/article.html
+base: /episodes/af12c3f4-b712-11f1-ab0e-533d71db6ce3/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/af12c3f4-b712-11f1-ab0e-533d71db6ce3/image/fdcd9ce33b25107a967bd1d1a75953d2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-09-24T18:26:12.599Z

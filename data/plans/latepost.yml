@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-09-24T03:03:58.366Z
+refreshed_at: 2026-09-24T18:12:36.838Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -180,5 +180,9 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-24T18:12:37.609Z
+    transcript_job_id: ec15c82c-4989-45f5-bac8-dd0ca335cc76_fc660da0a35845e890413e74798f6130,4984af72-145d-477b-a2d7-7ac746475f94_75725467beed4a109443c23bdaccf29d,b7fc301f-0563-47e0-8d5d-ecabefc57947_7cf184d140894062a492b5cf9420b802,4bf7f12d-2e4b-4fd3-bc6a-7755c1b819ec_3376688e27ac4a8c865560f64cce57d9,33444c9c-029b-4aed-99d1-cb34556fc1b0_d7978a5cb4a04cf1a2d6811ac57306af,8aa97e45-cc7f-4b69-9041-b1677c24515a_7582dfab0d914f5dbf9748f4fa46e027,540e2c6b-ace9-492d-baa9-2409ccf0f72c_e582689111214386a6eb56fcb60ebe24,87840d64-1a3b-4f83-b3d4-16d9c421f923_1806b40905c64d97846488e2d9856404,c4945889-5876-479d-b9f4-f7ee1748edba_66e20272b2924b7fac5f03489a017d5d,dd7a2f9d-aade-4dad-92a4-505dfa2a1599_549124e6b31d4b0998f4ca160fd35d45,9b312972-12cc-471a-b524-671b1c91d35a_9c0acd8dae1d42f29102ff58864bdb86,bdb59905-7719-40b3-a9f2-89c2b19b63e8_13de0ad1e7b24dd0ad5d039d7f63387e,0d164c70-f2e0-446c-a7bd-0ce52b9c03b3_86d5ec6476274bed979755fd49fd79a7,89481751-d428-4a81-b14d-b677aca5f199_96676bc4e5c4419bbfc5526334d16e14
+    transcript_completed_at: 2026-09-24T18:21:12.310Z
