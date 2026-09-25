@@ -1,15 +1,120 @@
 source: unchained
-refreshed_at: 2026-09-24T18:12:36.821Z
+refreshed_at: 2026-09-25T03:04:24.450Z
 min_duration: 3300
-min_date: "20260903"
-total_candidates: 2
+min_date: "20260904"
+total_candidates: 3
 done: 2
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    guid: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    duration: 4197
+    published: Thu, 24 Sep 2026 21:09:00 -0000
+    published_sort: "20260924"
+    first_seen_at: 2026-09-25T03:04:24.443Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    image: https://megaphone.imgix.net/podcasts/438855d6-b85c-11f1-b582-d7bc5f83182a/image/fa453b03f2441a9bc9be07be30d4695a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Kalshi's ETH perp did half a billion in volume on $3 million in open interest. Kain and Taylor lay out why that
+      isn't necessarily wash trading. Plus, Austin joins as co-host.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who takes
+      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
+      18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Kalshi's ETH perpetual futures market logged half a billion dollars in 24-hour volume on just $3 million in open
+      interest, and after its crypto hires picked a fight on the timeline, an analyst pulled the public data and alleged
+      wash trading.
+
+
+      Kain Warwick and Taylor Monahan argue that paid market makers are a likelier explanation than a back room of bots.
+      Austin Griffith, in his first episode as a regular co-host, asks whether all that liquidity actually helps a
+      prediction market find the truth.
+
+
+      The hosts also cover Treasury Secretary Scott Bessent's warning that AI labs answer for their agents, Taylor's
+      Tornado Cash parallel, Anthropic's new wet lab, Amazon blocking Meta's Muse assistant, and Jev, a classifier model
+      that decides in 200 milliseconds.
+
+
+      Plus, Zcash around $1,500 and why NEAR suddenly has people paying attention. As Kain puts it, a new model is
+      dropping nearly every day, and keeping up now takes agents of its own.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎲 02:32 How Kalshi's crypto hires started a timeline war over its perp volume
+
+
+      🤝 07:28 Why Kain suspects paid market makers, not wash trading, are behind the volume
+
+
+      🔎 09:59 Austin asks whether any of this liquidity helps markets find the truth
+
+
+      📚 21:41 What the price of Google teaches about liquidity and trusting a market
+
+
+      💧 28:14 1inch Aqua: Back multiple liquidity positions with one wallet balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🏛️ 30:59 Scott Bessent told AI labs they're responsible for what their agents do
+
+
+      ⚖️ 34:20 Taylor on the Tornado Cash parallel: which humans answer for autonomous code?
+
+
+      🛒 42:48 Why Amazon blocked Meta's Muse assistant from shopping on its site
+
+
+      ⚡ 47:29 Jev: the model that makes decisions in 200 milliseconds without talking
+
+
+      🔒 1:00:33 Zcash around $1,500 and why NEAR has people paying attention again
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: af12c3f4-b712-11f1-ab0e-533d71db6ce3
     guid: af12c3f4-b712-11f1-ab0e-533d71db6ce3
     title: How Zcash and NEAR Are Driving This Crypto Bull Run
