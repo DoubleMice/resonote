@@ -28796,3 +28796,88 @@ jobs:
     submitted_at: 2026-09-24T18:12:37.609Z
     updated_at: 2026-09-24T18:21:12.310Z
     completed_at: 2026-09-24T18:21:12.310Z
+  - key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z:chunk:0
+    parent_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    attempt_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z
+    provider: mimo
+    id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    source: unchained
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    task_id: 42ec8e09-a784-496a-bdbf-d42b703a0ce3_ea1924114ef8459885dd54f23ba850d6
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-25T18:12:47.231Z
+    updated_at: 2026-09-25T18:14:12.967Z
+    completed_at: 2026-09-25T18:14:12.967Z
+  - key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z:chunk:1
+    parent_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    attempt_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z
+    provider: mimo
+    id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    source: unchained
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    task_id: fd449429-e813-4c51-9f80-316f4fc8d598_6f52d5513c344ae0b8267674a03c53a3
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-25T18:12:47.231Z
+    updated_at: 2026-09-25T18:15:38.561Z
+    completed_at: 2026-09-25T18:15:38.561Z
+  - key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z:chunk:2
+    parent_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    attempt_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z
+    provider: mimo
+    id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    source: unchained
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    task_id: 22d24a55-5216-4ae5-a75c-76cb6bb0a339_c8d2f9f5e81542f1920bb4fae5c37d7c
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-25T18:12:47.231Z
+    updated_at: 2026-09-25T18:16:54.503Z
+    completed_at: 2026-09-25T18:16:54.503Z
+  - key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z:chunk:3
+    parent_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    attempt_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z
+    provider: mimo
+    id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    source: unchained
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    task_id: e9def961-559e-41a5-b228-394e31486dea_f8d04f5910414ba9b2e03de97687d6e6
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-25T18:12:47.231Z
+    updated_at: 2026-09-25T18:18:08.125Z
+    completed_at: 2026-09-25T18:18:08.125Z
+  - key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z:chunk:4
+    parent_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    attempt_key: unchained:438855d6-b85c-11f1-b582-d7bc5f83182a:20260924:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3:mimo:2026-09-25T18:12:47.231Z
+    provider: mimo
+    id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+    source: unchained
+    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+    task_id: 221ed407-f104-4991-ad58-76454986b1ac_0ebe751c8999476d98ca8609a44c34b8
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-25T18:12:47.231Z
+    updated_at: 2026-09-25T18:18:58.265Z
+    completed_at: 2026-09-25T18:18:58.265Z

@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-09-25T03:04:24.450Z
+refreshed_at: 2026-09-25T18:12:46.151Z
 min_duration: 3300
 min_date: "20260904"
 total_candidates: 3
-done: 2
+done: 3
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -113,8 +113,12 @@ episodes:
       🔒 1:00:33 Zcash around $1,500 and why NEAR has people paying attention again
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-25T18:12:47.231Z
+    transcript_job_id: 42ec8e09-a784-496a-bdbf-d42b703a0ce3_ea1924114ef8459885dd54f23ba850d6,fd449429-e813-4c51-9f80-316f4fc8d598_6f52d5513c344ae0b8267674a03c53a3,22d24a55-5216-4ae5-a75c-76cb6bb0a339_c8d2f9f5e81542f1920bb4fae5c37d7c,e9def961-559e-41a5-b228-394e31486dea_f8d04f5910414ba9b2e03de97687d6e6,221ed407-f104-4991-ad58-76454986b1ac_0ebe751c8999476d98ca8609a44c34b8
+    transcript_completed_at: 2026-09-25T18:18:58.265Z
   - id: af12c3f4-b712-11f1-ab0e-533d71db6ce3
     guid: af12c3f4-b712-11f1-ab0e-533d71db6ce3
     title: How Zcash and NEAR Are Driving This Crypto Bull Run

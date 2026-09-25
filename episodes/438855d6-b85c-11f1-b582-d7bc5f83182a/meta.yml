@@ -1,0 +1,34 @@
+title: Kalshi 的社交媒体争执，为何让其 ETH 永续合约成交量受到审视｜Uneasy Money
+guest: Kain Warwick、Taylor Monahan、Austin Griffith
+guest_role: Uneasy Money 主持与联席主持人
+tags:
+  - ai-products
+  - panel
+  - founder
+  - engineer
+  - technical
+  - strategic
+summary: >
+  Uneasy Money 围绕 Kalshi ETH 永续合约未平仓量与成交量之间的悬殊差距，区分了刷量、受激励做市和外部用户实际可得的流动性。节目也讨论了 AI 实验室部署代理时的责任边界、购物代理与平台广告激励的冲突，以及 Jev
+  这类快速决策模型在浏览器和邮件工作流中的用途。
+
+  最后，参与者从 Zcash 的市场表现谈到 NEAR Intents 和私密推理，但相关市场判断都只是节目参与者当时的看法。
+core_ideas:
+  - 约 300 万美元未平仓量对应约 5 亿美元的 24 小时成交量，值得审查，但单凭这一比例不能证明 Kalshi 或其用户在刷量。
+  - 受激励做市是否有价值，要看普通用户能否得到有竞争力的成交，而不是只看累计成交量。
+  - 更深的市场会抬高推动价格所需的资金，也可能过滤弱信号；最佳深度取决于成交便利和价格发现之间的取舍。
+  - 代理造成损害时，代码作者、模型提供者、部署者和实际操作人员的责任需要按具体控制权和运行关系区分。
+  - Jev 被描述为以约 200 毫秒输出带权重决策的分类器式模型，节目认为它适合并行处理浏览器与邮件中的小决策。
+id: 438855d6-b85c-11f1-b582-d7bc5f83182a
+source: unchained
+source_title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
+published: 2026-09
+published_sort: "20260924"
+duration: 1h10m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
+status: generated
+article_path: episodes/438855d6-b85c-11f1-b582-d7bc5f83182a/article.html
+base: /episodes/438855d6-b85c-11f1-b582-d7bc5f83182a/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/438855d6-b85c-11f1-b582-d7bc5f83182a/image/fa453b03f2441a9bc9be07be30d4695a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-09-25T18:25:08.632Z
