@@ -28881,3 +28881,71 @@ jobs:
     submitted_at: 2026-09-25T18:12:47.231Z
     updated_at: 2026-09-25T18:18:58.265Z
     completed_at: 2026-09-25T18:18:58.265Z
+  - key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z:chunk:0
+    parent_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    attempt_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z
+    provider: mimo
+    id: 6ab9f026e742e36efcbc0d88
+    source: tulong-zhishu
+    title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    task_id: b29fb96a-6eed-4465-95a0-8520f300fb1f_2b2da6dd17be43d18c4ecf44309ac2ed
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-28T18:14:06.044Z
+    updated_at: 2026-09-28T18:15:19.060Z
+    completed_at: 2026-09-28T18:15:19.060Z
+  - key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z:chunk:1
+    parent_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    attempt_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z
+    provider: mimo
+    id: 6ab9f026e742e36efcbc0d88
+    source: tulong-zhishu
+    title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    task_id: d2c5e36e-a2f6-41f5-a85a-1f4264eb9ea9_a46b536d5c8d4bec8adefcbfc1551ae9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-28T18:14:06.044Z
+    updated_at: 2026-09-28T18:16:09.834Z
+    completed_at: 2026-09-28T18:16:09.834Z
+  - key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z:chunk:2
+    parent_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    attempt_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z
+    provider: mimo
+    id: 6ab9f026e742e36efcbc0d88
+    source: tulong-zhishu
+    title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    task_id: f0bd7273-b458-4903-8bb6-d6ef8cfd94d6_8c3a17a68e5c45c7a6228ef8515f37ef
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-28T18:14:06.044Z
+    updated_at: 2026-09-28T18:17:17.136Z
+    completed_at: 2026-09-28T18:17:17.136Z
+  - key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z:chunk:3
+    parent_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    attempt_key: tulong-zhishu:6ab9f026e742e36efcbc0d88:20260928:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a:mimo:2026-09-28T18:14:06.044Z
+    provider: mimo
+    id: 6ab9f026e742e36efcbc0d88
+    source: tulong-zhishu
+    title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    task_id: 6f2b00ef-fdba-45a7-b0be-0bc81a7bd26e_e3b65d2c8c5e4577a186618004771527
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-28T18:14:06.044Z
+    updated_at: 2026-09-28T18:18:17.538Z
+    completed_at: 2026-09-28T18:18:17.538Z

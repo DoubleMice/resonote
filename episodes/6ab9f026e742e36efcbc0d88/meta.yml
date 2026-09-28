@@ -1,0 +1,33 @@
+title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+guest: 颜华
+guest_role: 新思科技 EDA 从业者
+tags:
+  - chips
+  - hardware
+  - ai-products
+  - interview
+  - engineer
+  - technical
+summary: >
+  新思科技的颜华从 EDA 在芯片设计中的角色谈起，解释系统厂商为何在成本、功耗和算法适配的压力下考虑自研芯片，以及成熟 IP 和设计工具如何缩短高风险项目的周期。访谈也检视了 AI 参与芯片设计的现实进度：Agent
+  可以在约束下搜索和执行部分任务，但验证、流片与签核责任仍不能被跳过。
+core_ideas:
+  - EDA 的市场规模远小于半导体市场，却贯穿设计、验证和版图生成；芯片在流片前必须反复接受工具约束。
+  - 自研芯片取决于采购规模、训练与推理的差异、电力和散热成本，以及算法能否从专用硬件中获益。
+  - PPA 的性能、功耗和面积彼此牵制，AI 能帮助搜索方案，却不能自行决定工程取舍或承担制造结果。
+  - 从单颗裸片到堆叠封装，芯片设计正在与冷却、网络和系统级仿真更紧密地结合。
+  - 已有 AI 参与设计和自动化流片的尝试，但是否完成真实制造、比较口径为何，决定了它们能说明多大程度的自动化。
+  - 工具和 IP 可能减少简单芯片所需的人力；跨领域理解、清楚表达需求和最终签核责任仍由人承担。
+id: 6ab9f026e742e36efcbc0d88
+source: tulong-zhishu
+source_title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+published: 2026-09
+published_sort: "20260928"
+duration: 58m
+url: https://www.xiaoyuzhoufm.com/episode/6ab9f026e742e36efcbc0d88?utm_source=rss
+status: generated
+article_path: episodes/6ab9f026e742e36efcbc0d88/article.html
+base: /episodes/6ab9f026e742e36efcbc0d88/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/FjbslO-2TSTli-btgsmI8CZe-DfX.png
+generated_at: 2026-09-28T18:23:24.109Z

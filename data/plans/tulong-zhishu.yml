@@ -1,15 +1,31 @@
 source: tulong-zhishu
-refreshed_at: 2026-09-28T03:07:12.757Z
+refreshed_at: 2026-09-28T18:14:05.150Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
-done: 1
+total_candidates: 2
+done: 2
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6ab9f026e742e36efcbc0d88
+    guid: 6ab9f026e742e36efcbc0d88
+    title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计
+    duration: 3490
+    published: Mon, 28 Sep 2026 16:00:00 GMT
+    published_sort: "20260928"
+    first_seen_at: 2026-09-28T18:14:05.150Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ab9f026e742e36efcbc0d88?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ab9f026e742e36efcbc0d88/media.xyzcdn.net/6507bc165c88d2412626b401/lrhW9aNpML4jmHFQgw6PYzIFx3-Q.m4a
+    image: https://image.xyzcdn.net/FjbslO-2TSTli-btgsmI8CZe-DfX.png
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-28T18:14:06.044Z
+    transcript_job_id: b29fb96a-6eed-4465-95a0-8520f300fb1f_2b2da6dd17be43d18c4ecf44309ac2ed,d2c5e36e-a2f6-41f5-a85a-1f4264eb9ea9_a46b536d5c8d4bec8adefcbfc1551ae9,f0bd7273-b458-4903-8bb6-d6ef8cfd94d6_8c3a17a68e5c45c7a6228ef8515f37ef,6f2b00ef-fdba-45a7-b0be-0bc81a7bd26e_e3b65d2c8c5e4577a186618004771527
+    transcript_completed_at: 2026-09-28T18:18:17.538Z
   - id: 6ab2b85df04646b3a955a1de
     guid: 6ab2b85df04646b3a955a1de
     title: AI进入生产阶段之后， 智能、算力、芯片 会走向哪里？
