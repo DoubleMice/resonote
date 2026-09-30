@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-09-30T03:05:00.450Z
+refreshed_at: 2026-09-30T18:13:27.779Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
-done: 0
+done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -231,5 +231,9 @@ episodes:
 
 
       Special Guest: 张思齐.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-30T18:18:20.340Z
+    transcript_job_id: 26e5b0c8-0e99-429a-b0b0-3e22ffa814d8_22b142cc1c28455d8686fb6a90f2da43,6935089f-eca1-43f2-9184-8e6d6c59565c_cadbef88fe434a9dba9bc1c409113c06,e82ccd73-52ac-438f-b7c9-e65b78f57e6b_edffbb10d9d64544a7f1a09fab9589a2,e8b9a948-f41a-4877-9e6a-3996bb14a666_ffeb89b7e02f43b8935ded92915167ce,6544adcf-0e82-49de-b1fb-224ac4da6bd1_87f0310ac38e4aa1980007fd453ec030
+    transcript_completed_at: 2026-09-30T18:22:43.196Z

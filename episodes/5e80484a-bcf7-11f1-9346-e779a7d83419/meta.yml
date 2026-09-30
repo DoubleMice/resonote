@@ -1,0 +1,30 @@
+title: Bitget 如何追索被盗的 3.88 亿美元
+guest: Gracie Chen
+guest_role: Bitget 首席执行官
+tags:
+  - interview
+  - ceo
+  - technical
+  - strategic
+summary: |
+  Bitget 首席执行官 Gracie Chen 复盘一场被主持人概述为 3.88 亿美元的资产被盗事件：攻击者通过第三方零日漏洞伪造后端提现指令，常规用户提现风控因此未能直接阻断资金流出。
+  访谈梳理了冻结与追回的差别、不同协议的处置能力、保护基金的作用，以及事故后仍需防范的社交工程风险。
+core_ideas:
+  - 攻击者先用低于阈值的小额转账测试，再通过内部后端伪造提现指令；七分钟后的用户提现拦截未能覆盖这条路径。
+  - 冻结被盗资产通常快于追回；陈在访谈时称，追踪面板上已冻结的金额只有约 63.2 万美元。
+  - NEAR Intents 的风险筛查做法引出一个问题：开放协议能否在保持无需许可的同时拒绝已知洗钱资金。
+  - Bitget 将保护基金用于应对用户资产和提现需求，但陈认为第三方审查、凭据管理和多重审批仍需重做。
+  - 事故后的对外沟通也可能成为社交工程入口，独立核验合作方身份是必要的日常防线。
+id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+source: unchained
+source_title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+published: 2026-09
+published_sort: "20260930"
+duration: 1h6m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+status: generated
+article_path: episodes/5e80484a-bcf7-11f1-9346-e779a7d83419/article.html
+base: /episodes/5e80484a-bcf7-11f1-9346-e779a7d83419/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/5e80484a-bcf7-11f1-9346-e779a7d83419/image/1596e77c88d3303b80702eccbcd34b7e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-09-30T18:32:17.001Z

@@ -1,15 +1,115 @@
 source: unchained
-refreshed_at: 2026-09-30T03:05:00.421Z
+refreshed_at: 2026-09-30T18:13:27.754Z
 min_duration: 3300
 min_date: "20260909"
-total_candidates: 3
-done: 3
+total_candidates: 4
+done: 4
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    guid: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    duration: 3972
+    published: Wed, 30 Sep 2026 17:50:00 -0000
+    published_sort: "20260930"
+    first_seen_at: 2026-09-30T18:13:27.746Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    image: https://megaphone.imgix.net/podcasts/5e80484a-bcf7-11f1-9346-e779a7d83419/image/1596e77c88d3303b80702eccbcd34b7e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Bitget lost $388 million —&nbsp;and days later, CEO Gracy Chen says scammers posing as a major investment team
+      targeted her.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠ Our
+      listener survey⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who takes
+      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
+      18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      On September 24, attackers used a zero-day in a third-party security product to slip fraudulent withdrawal
+      commands into Bitget's wallet system, pulling out about $388 million across chains from Ethereum and XRP to Zcash.
+
+
+      Bitget CEO Gracy Chen joins Laura Shin to reconstruct the attack, from test transfers that stayed under risk
+      thresholds to her team's call to switch wallets back on mid-attack and sweep hot and warm funds into cold storage.
+      She lays out how the exchange's protection fund covered users and why reopened withdrawals showed an early net
+      inflow.
+
+
+      Then comes the industry response. Tether, Circle, and NEAR Intents froze funds, THORChain declined her request,
+      and only $632K is frozen so far. Chen also describes scammers impersonating an investment firm to target her after
+      the hack. Her case that "permissionless doesn't mean neutral" puts a hard question to DeFi.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠Gracy Chen - CEO of Bitget
+
+      Timestamps
+
+
+      🚨 01:50 How attackers used a third-party zero-day to fake withdrawal commands
+
+
+      ❄️ 07:15 Why Bitget switched wallets back on mid-attack to sweep funds to cold storage
+
+
+      💧 14:30 1inch Aqua: See how LPs back multiple positions with the same token balance at
+      http://unchainedcrypto.com/go/1inch-sn
+
+
+      ⛓️ 15:37 Why the hackers were able to transact even after withdrawals were paused
+
+
+      🧊 19:04 How Tether, Circle, and NEAR Intents froze funds, and why recovery is harder
+
+
+      🕵️ 24:05 ZachXBT's shift on the Bitget hack and his earlier pump-and-dump claims
+
+
+      🛡️ 30:01 NEAR Intents vs. THORChain: does permissionless mean neutral?
+
+
+      💰 41:55 Why Bitget built its protection fund in 2022 and how it covered the loss
+
+
+      🎭 48:17 How scammers posed as an investment team to target Gracy after the hack
+
+
+      📈 01:01:32 A net ETH inflow after withdrawals reopened, and whether the IPO is still on
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-09-30T18:13:29.153Z
+    transcript_job_id: 7ee15897-16c2-4dc1-80ed-c5d72c7575ad_ff2ae005e3f94874a103adfe66bd278f,1b3516ba-2120-4599-b531-8fc5999358e3_695f608c761d4d5a893542f56b8b4cf8,6f5561f0-9d37-4b09-a87a-89b06de83443_ccece5ffbffa4e99a0cdf52330b7a7ba,e91720ca-a8a2-4ae0-b9e8-018ea117555a_e4fb539eaf564bea99d8de1cd6a2d9d4,347e40c7-d975-4535-9360-afc699e7f0de_5b3b2c2d2028438abcf7fcbaf505f0e4
+    transcript_completed_at: 2026-09-30T18:18:19.903Z
   - id: 438855d6-b85c-11f1-b582-d7bc5f83182a
     guid: 438855d6-b85c-11f1-b582-d7bc5f83182a
     title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"

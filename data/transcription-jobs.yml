@@ -28949,3 +28949,224 @@ jobs:
     submitted_at: 2026-09-28T18:14:06.044Z
     updated_at: 2026-09-28T18:18:17.538Z
     completed_at: 2026-09-28T18:18:17.538Z
+  - key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z:chunk:0
+    parent_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    attempt_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z
+    provider: mimo
+    id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    source: unchained
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    task_id: 7ee15897-16c2-4dc1-80ed-c5d72c7575ad_ff2ae005e3f94874a103adfe66bd278f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:13:29.153Z
+    updated_at: 2026-09-30T18:14:44.568Z
+    completed_at: 2026-09-30T18:14:44.568Z
+  - key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z:chunk:1
+    parent_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    attempt_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z
+    provider: mimo
+    id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    source: unchained
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    task_id: 1b3516ba-2120-4599-b531-8fc5999358e3_695f608c761d4d5a893542f56b8b4cf8
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:13:29.153Z
+    updated_at: 2026-09-30T18:15:35.500Z
+    completed_at: 2026-09-30T18:15:35.500Z
+  - key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z:chunk:2
+    parent_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    attempt_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z
+    provider: mimo
+    id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    source: unchained
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    task_id: 6f5561f0-9d37-4b09-a87a-89b06de83443_ccece5ffbffa4e99a0cdf52330b7a7ba
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:13:29.153Z
+    updated_at: 2026-09-30T18:16:41.633Z
+    completed_at: 2026-09-30T18:16:41.633Z
+  - key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z:chunk:3
+    parent_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    attempt_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z
+    provider: mimo
+    id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    source: unchained
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    task_id: e91720ca-a8a2-4ae0-b9e8-018ea117555a_e4fb539eaf564bea99d8de1cd6a2d9d4
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:13:29.153Z
+    updated_at: 2026-09-30T18:18:03.422Z
+    completed_at: 2026-09-30T18:18:03.422Z
+  - key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z:chunk:4
+    parent_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    attempt_key: unchained:5e80484a-bcf7-11f1-9346-e779a7d83419:20260930:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3:mimo:2026-09-30T18:13:29.153Z
+    provider: mimo
+    id: 5e80484a-bcf7-11f1-9346-e779a7d83419
+    source: unchained
+    title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML7419062796.mp3
+    task_id: 347e40c7-d975-4535-9360-afc699e7f0de_5b3b2c2d2028438abcf7fcbaf505f0e4
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:13:29.153Z
+    updated_at: 2026-09-30T18:18:19.903Z
+    completed_at: 2026-09-30T18:18:19.903Z
+  - key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z:chunk:0
+    parent_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    attempt_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z
+    provider: mimo
+    id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    source: sv101
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    task_id: 26e5b0c8-0e99-429a-b0b0-3e22ffa814d8_22b142cc1c28455d8686fb6a90f2da43
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:18:20.340Z
+    updated_at: 2026-09-30T18:19:37.137Z
+    completed_at: 2026-09-30T18:19:37.137Z
+  - key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z:chunk:1
+    parent_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    attempt_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z
+    provider: mimo
+    id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    source: sv101
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    task_id: 6935089f-eca1-43f2-9184-8e6d6c59565c_cadbef88fe434a9dba9bc1c409113c06
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:18:20.340Z
+    updated_at: 2026-09-30T18:20:34.761Z
+    completed_at: 2026-09-30T18:20:34.761Z
+  - key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z:chunk:2
+    parent_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    attempt_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z
+    provider: mimo
+    id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    source: sv101
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    task_id: e82ccd73-52ac-438f-b7c9-e65b78f57e6b_edffbb10d9d64544a7f1a09fab9589a2
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:18:20.340Z
+    updated_at: 2026-09-30T18:21:33.001Z
+    completed_at: 2026-09-30T18:21:33.001Z
+  - key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z:chunk:3
+    parent_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    attempt_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z
+    provider: mimo
+    id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    source: sv101
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    task_id: e8b9a948-f41a-4877-9e6a-3996bb14a666_ffeb89b7e02f43b8935ded92915167ce
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:18:20.340Z
+    updated_at: 2026-09-30T18:22:35.448Z
+    completed_at: 2026-09-30T18:22:35.448Z
+  - key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z:chunk:4
+    parent_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    attempt_key: sv101:0b644f51-461c-4ddb-b707-d2a39b9a7d80:20260929:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3:mimo:2026-09-30T18:18:20.340Z
+    provider: mimo
+    id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    source: sv101
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    task_id: 6544adcf-0e82-49de-b1fb-224ac4da6bd1_87f0310ac38e4aa1980007fd453ec030
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:18:20.340Z
+    updated_at: 2026-09-30T18:22:43.196Z
+    completed_at: 2026-09-30T18:22:43.196Z
+  - key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z:chunk:0
+    parent_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    attempt_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z
+    provider: mimo
+    id: SOAPBOX111
+    source: risky-business
+    title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    task_id: f0e1fb32-fa8e-4a5d-b49a-863f64870bee_852fb33520ff446e902792d12de48b8b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:22:43.620Z
+    updated_at: 2026-09-30T18:24:09.183Z
+    completed_at: 2026-09-30T18:24:09.183Z
+  - key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z:chunk:1
+    parent_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    attempt_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z
+    provider: mimo
+    id: SOAPBOX111
+    source: risky-business
+    title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    task_id: 28d9c726-df7b-467f-b8a0-54d62b41fff3_ecb52ea71cf641dfa0b4efac2eaccb7a
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:22:43.620Z
+    updated_at: 2026-09-30T18:25:35.180Z
+    completed_at: 2026-09-30T18:25:35.180Z
+  - key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z:chunk:2
+    parent_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    attempt_key: risky-business:SOAPBOX111:20260929:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3:mimo:2026-09-30T18:22:43.620Z
+    provider: mimo
+    id: SOAPBOX111
+    source: risky-business
+    title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX111.mp3
+    task_id: 8ce07174-2f8e-49f2-b8f8-cc75e37181e4_60aefa59712a435c882530600757ed32
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-09-30T18:22:43.620Z
+    updated_at: 2026-09-30T18:26:10.803Z
+    completed_at: 2026-09-30T18:26:10.803Z

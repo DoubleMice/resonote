@@ -1,0 +1,35 @@
+title: H.D. Moore：OT 资产发现、漏洞洪流与 AI 安全恐慌
+guest: H.D. Moore
+guest_role: RunZero 联合创始人兼首席执行官
+tags:
+  - ai-products
+  - interview
+  - founder
+  - ceo
+  - quick-take
+  - technical
+  - strategic
+summary: >
+  RunZero 联合创始人 H.D. Moore 讨论了 OT 与楼宇网络中未受管理设备带来的盲区，以及为何漏洞管理不能只追逐 CVE 和补丁。他把当下的 AI 攻击工具与 Metasploit
+  早年的争议相比较，主张把防御重心放在资产发现、入口控制、监测和蜜罐等可执行措施上。
+
+  访谈也介绍了 RunZero 的 OT 协议发现、AI 集成生成器、BYOK 后端和 MCP 权限重构，并讨论了代理式操作与有判断的仪表板为何需要并存。
+core_ideas:
+  - OT 和楼宇系统常有未受管理的设备；发现工作需要还原网关后方设备、连接关系与入口。
+  - Moore 认为 CVE 往往晚于实际利用，组织应先掌握资产、可达路径、依赖关系和潜在影响范围。
+  - 面对 AI 降低攻击门槛的变化，Moore 倾向于加强隔离、监测、蜜罐和事后追查，而非把减速视为主要答案。
+  - RunZero 的 AI 集成以预先设计的执行引擎、客户自带密钥和可观察的后端为基础。
+  - MCP 要可用，需要限制上下文与用量、细分权限，并用仪表板呈现用户提示词可能遗漏的反证。
+id: SOAPBOX111
+source: risky-business
+source_title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"
+published: 2026-09
+published_sort: "20260929"
+duration: 34m
+url: https://risky.biz/SOAPBOX111/
+status: generated
+article_path: episodes/SOAPBOX111/article.html
+base: /episodes/SOAPBOX111/
+visual_notes: false
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+generated_at: 2026-09-30T18:32:03.323Z
