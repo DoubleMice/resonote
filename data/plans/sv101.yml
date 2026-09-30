@@ -1,12 +1,235 @@
 source: sv101
-refreshed_at: 2026-09-29T18:13:34.290Z
+refreshed_at: 2026-09-30T03:05:00.450Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 1
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    guid: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
+    title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？
+    duration: 3723
+    published: Tue, 29 Sep 2026 16:00:00 -0700
+    published_sort: "20260929"
+    first_seen_at: 2026-09-30T03:05:00.450Z
+    url: https://sv101.fireside.fm/268
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
+    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+    summary: >-
+      这个夏天，来自全球各地的多个气象机构都拉响了同一个的警报，一场史无前例的超级厄尔尼诺正在上演。
+
+
+      来自摩根大通的经济学家预计，全球的食品通胀将在2027年的上半年上升到5%，明显高于今年同期的2.8% 。这其中有来自霍尔木兹海峡封锁和黑海冲突的因素，也部分归因于我们正深处的这场、50年来颇为罕见的超级厄尔尼诺。
+
+
+      它究竟会通过什么方式影响到全球供给？它所带来的危害是否真的像媒体报道的那么大？在一次次与极端气候变化的对抗中，人们又为应对厄尔尼诺做了怎样的准备？
+
+
+      【主播】
+
+
+      麻花，硅谷101特约研究员
+
+
+      【嘉宾】
+
+
+      张思齐，资深大宗商品期货交易员
+
+
+      【你将听到】
+
+
+      超级厄尔尼诺，如何影响农业生产
+
+
+      03:17 农业几多产，起决定因素的不只是气候
+
+
+      08:56 超级厄尔尼诺，以及它的影响边界
+
+
+      16:03 厄尔尼诺如何影响棕榈油、天然橡胶和咖啡豆
+
+
+      19:26 哪些终端商品，价格可能受到大波动
+
+
+      22:20 秘鲁禁捕鳀鱼，受波及的除了日料水产，还有宠物食品
+
+
+      25:10 都说厄尔尼诺导致减产，但也有产区因它收益
+
+
+      极端气候之外，生产资料的供应紧张和农民的应对之策
+
+
+      27:53 作物减产是否影响终端价格，还要看产区和出口集中度
+
+
+      29:52 推高全球粮食价格的，还有供应紧缺的氮肥
+
+
+      32:27 大宗商品期货交易员会有哪些工具关注气候变化
+
+
+      35:25 不确定性对于期货交易，究竟是好是坏
+
+
+      40:08 与不确定性对抗多年，农民如何应对极端气候变化
+
+
+      42:07 上有厄尔尼诺，下游农民活用期货
+
+
+      45:22 气候变化引起的出口限制，可能进一步加剧供给危机
+
+
+      巴拿马运河和全球铜矿的减产，厄尔尼诺要背多大的锅
+
+
+      47:02 极端气候带来的干旱，让巴拿马运河的运力更紧张了
+
+
+      50:23 全球铜矿产量下降的锅，厄尔尼诺背不了太多
+
+
+      56:25 做服装的人，也在厄尔尼诺面前为难了
+
+
+      57:41 被极端气候影响的电力、加工食品和保险行业
+
+
+      59:48 大宗商品交易门外汉，可以怎么观察这个行业
+
+
+      【延伸阅读】
+
+
+      •   《纽约时报：This Year’s Record-Breaking El Niño in 3 Charts》
+
+
+      • NOAA: 美国国家海洋和大气管理局，隶属美国商务部。它负责监测海洋、大气和气象变化，提供天气预报、气候预测和海洋资源管理服务。
+
+
+      • El Niño set to become very strong, raising risks of extreme weather into 2027
+
+
+      • 澳洲小麦升贴水（Basis）：澳洲本地小麦现货价格与国际小麦期货价格之间的差价，主要反映澳洲当地的供需、物流及汇率等因素。
+
+
+      • IFPRI: Will extreme weather lead to multiple breadbasket failures and threaten global food security?
+
+
+      • Forbes: 巴拿马运河运力使用经济体Top20
+
+
+      • USDA:U.S. Department of Agriculture
+
+
+      【硅谷AI视频黑客松招募】
+
+
+      最懂内容的影视团队，与最懂AI的一群科学家，在硅谷相遇，会碰撞出如何的火花？
+
+
+      今年，硅谷101把一次现场创作实验带到 Alignment 2026：STORY101 LAB — AI Storytelling Challenge。我们邀请你用AI，完成一部不超过三分钟的视频作品。
+
+
+      比赛设【探索组】与【专业组】双赛道，资深AI影片团队与零基础新手皆可参与。我们提供免费workshop培训，优胜者更可获丰厚奖金与千人线下展映机会。
+
+
+      时间：2026年10月10–11日
+
+
+      地点：Sunnyvale, California
+
+
+      报名入口
+
+
+      【硅谷101年会来了，线下见】
+
+
+      10月10日—11日，我们将在【硅谷】举办Alignment 2026年度大会，从大模型、Agent、机器人到AI
+      Infra，从实验室里的突破，到真实世界的商业化，我们直击AI变化最剧烈的前沿。来自OpenAI、Anthropic、NVIDIA、Meta、Google
+      DeepMind、SemiAnalysis、Cerebras等公司的研究者、创业者与投资人将齐聚现场，分享正在发生的机遇和挑战。
+
+
+      点击报名入口 ，使用折扣码【FANS15】注册，还可以获得15%折扣。
+
+
+      听友福利：在评论区说出你对Alignment大会的期待，我们将在小宇宙、B站、YouTube各抽取3位幸运听众，赠送Alignment 2026现场门票，参与截止时间：10月2日24:00。
+
+
+      【硅谷101听友群】
+
+
+      在这里，和同好一起深聊科技、商业与未来，期待你的声音，也期待更多有趣的讨论。
+
+
+      扫码加入，即刻相遇！
+
+
+      【监制】
+
+
+      泓君
+
+
+      【后期】
+
+
+      Amei
+
+
+      【运营】
+
+
+      朱婕
+
+
+      【BGM】
+
+
+      Sucker (Instrumental Version) - Gamma Skies
+
+
+      Mindscape - Lennon Hutton
+
+
+      Flickering Torches - Christian Andersen
+
+
+      Kablaam - Ealot
+
+
+      Spring Dance - Forever Sunset
+
+
+      Seashore - Adriel Fair
+
+
+      【在这里找到我们】
+
+
+      公众号：硅谷101
+
+
+      收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜荔枝FM｜网易云音乐｜QQ音乐
+
+
+      其他平台：YouTube｜Bilibili 搜索「硅谷101播客」
+
+
+      联系我们：podcast@sv101.net
+
+
+      Special Guest: 张思齐.
+    status: needs_transcript
+    priority: 1
