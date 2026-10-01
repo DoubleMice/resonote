@@ -1,0 +1,32 @@
+title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+guest: Lewis
+guest_role: 微软产品经理；前 Gemini 创始产品经理
+tags:
+  - ai-products
+  - product-management
+  - interview
+  - product-lead
+  - strategic
+summary: |
+  Lewis 从参与 Google 早期大模型产品化、转到微软做企业智能体记忆与知识的经历出发，讨论了 Google 以外的公司为何率先推出个人代理。访谈把焦点放在产品入口、企业权限与隐私、消费端留存和定价，以及端侧模型能否成为日常体验。
+  他认为 Google 的技术基础仍在，但把模型、用户授权、合规边界和具体任务体验同时做顺，才决定个人代理能否真正被采用。
+core_ideas:
+  - PaLM 2 的早期产品化包括后训练、API、定价和开发者使用场景。
+  - 企业智能体的记忆要区分个人、对话和团队层级，知识共享需要权限控制和当事人确认。
+  - Muse 将邮件与日历权限转化为具体任务提示，降低了普通用户使用个人代理的门槛。
+  - 消费端个人代理适合先以免费和按量使用进入市场；企业工作流则更容易按节省工时衡量投资回报（ROI）。
+  - 端侧小模型的普及需要硬件性能，也需要简单的安装、授权和维护体验。
+  - Lewis 将 Google 的挑战归因于产品迭代、组织反应速度和模型能力的共同作用。
+id: 6abe04f9e742e36efcbd6d52
+source: taixian-zhihuo
+source_title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+published: 2026-10
+published_sort: "20261001"
+duration: 1h4m
+url: https://www.xiaoyuzhoufm.com/episode/6abe04f9e742e36efcbd6d52?utm_source=rss
+status: generated
+article_path: episodes/6abe04f9e742e36efcbd6d52/article.html
+base: /episodes/6abe04f9e742e36efcbd6d52/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/Fl7JsXj1AsDvxxMAzGyc8FqRHZjW.jpeg
+generated_at: 2026-10-01T18:28:39.580Z

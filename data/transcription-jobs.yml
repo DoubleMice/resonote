@@ -29170,3 +29170,88 @@ jobs:
     submitted_at: 2026-09-30T18:22:43.620Z
     updated_at: 2026-09-30T18:26:10.803Z
     completed_at: 2026-09-30T18:26:10.803Z
+  - key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z:chunk:0
+    parent_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    attempt_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z
+    provider: mimo
+    id: 6abe04f9e742e36efcbd6d52
+    source: taixian-zhihuo
+    title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    task_id: c8096242-0c33-4879-93ea-dec595b62a3e_284bdef8630d44d387e20ab95131c94d
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-01T18:14:18.317Z
+    updated_at: 2026-10-01T18:15:52.983Z
+    completed_at: 2026-10-01T18:15:52.983Z
+  - key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z:chunk:1
+    parent_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    attempt_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z
+    provider: mimo
+    id: 6abe04f9e742e36efcbd6d52
+    source: taixian-zhihuo
+    title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    task_id: 8591d4c6-bf06-4388-8d98-d5d1b4a65274_3e971a95cfe44d0facc0fb3db740ed31
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-01T18:14:18.317Z
+    updated_at: 2026-10-01T18:17:12.786Z
+    completed_at: 2026-10-01T18:17:12.786Z
+  - key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z:chunk:2
+    parent_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    attempt_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z
+    provider: mimo
+    id: 6abe04f9e742e36efcbd6d52
+    source: taixian-zhihuo
+    title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    task_id: 6123d0c2-55bb-4671-abd6-3ab304f3ba8d_822c6750a8b14adbafbf6f995e847373
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-01T18:14:18.317Z
+    updated_at: 2026-10-01T18:18:24.979Z
+    completed_at: 2026-10-01T18:18:24.979Z
+  - key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z:chunk:3
+    parent_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    attempt_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z
+    provider: mimo
+    id: 6abe04f9e742e36efcbd6d52
+    source: taixian-zhihuo
+    title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    task_id: 41de0830-1e3f-4815-98ce-2d39c9d05271_05053271ee83426681362dd34658359e
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-01T18:14:18.317Z
+    updated_at: 2026-10-01T18:19:33.138Z
+    completed_at: 2026-10-01T18:19:33.138Z
+  - key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z:chunk:4
+    parent_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    attempt_key: taixian-zhihuo:6abe04f9e742e36efcbd6d52:20261001:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a:mimo:2026-10-01T18:14:18.317Z
+    provider: mimo
+    id: 6abe04f9e742e36efcbd6d52
+    source: taixian-zhihuo
+    title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6abe04f9e742e36efcbd6d52/media.xyzcdn.net/67f40c212ac4d88190caa56a/llWccDasle1oNDC4k79LrgbqZIia.m4a
+    task_id: e3ba6ab3-90f6-4c27-9ede-6defcfde7559_95ca4a41c6f446ebadf0412334285cff
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-01T18:14:18.317Z
+    updated_at: 2026-10-01T18:19:57.368Z
+    completed_at: 2026-10-01T18:19:57.368Z
