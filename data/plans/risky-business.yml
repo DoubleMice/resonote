@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-09-30T18:13:27.762Z
+refreshed_at: 2026-10-01T03:08:54.486Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 1
@@ -33,6 +33,6 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-09-30T18:22:43.620Z
     transcript_job_id: f0e1fb32-fa8e-4a5d-b49a-863f64870bee_852fb33520ff446e902792d12de48b8b,28d9c726-df7b-467f-b8a0-54d62b41fff3_ecb52ea71cf641dfa0b4efac2eaccb7a,8ce07174-2f8e-49f2-b8f8-cc75e37181e4_60aefa59712a435c882530600757ed32
+    transcript_submitted_at: 2026-09-30T18:22:43.620Z
     transcript_completed_at: 2026-09-30T18:26:10.803Z
