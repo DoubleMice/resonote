@@ -1,15 +1,251 @@
 source: latepost
-refreshed_at: 2026-10-01T18:14:16.953Z
+refreshed_at: 2026-10-02T03:04:55.536Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 1
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 47e78c2f-c36f-4894-9124-dad5dcffc972
+    guid: 47e78c2f-c36f-4894-9124-dad5dcffc972
+    title: "183: 与Henry的「AI季报26Q3」：Muse引爆个人助理、Astra进入机器人、OpenAI收入猛增"
+    duration: 7627
+    published: Fri, 02 Oct 2026 09:00:00 +0800
+    published_sort: "20261002"
+    first_seen_at: 2026-10-02T03:04:55.536Z
+    url: https://podcast.latepost.com/183
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/47e78c2f-c36f-4894-9124-dad5dcffc972.mp3
+    image: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/4/47e78c2f-c36f-4894-9124-dad5dcffc972/cover.jpg?v=1
+    summary: >-
+      「这个秋天并不冷。」
+
+
+      AI 本身的进展速度已经超过了对它的理解和讨论的速度。最近几天，OpenAI Dev Day、Google 的 Gemini 4 连番登场。而我们第一次录节目还是在 DevDay 之前。
+
+
+      所以本期的内容由两次录制构成：前面一部分，我们单独放了对个人助理的讨论，包含 OpenAI DevDay 之后的新信息，和第一次录时，对 Muse、Instinct
+      等产品的讨论。后面是我们第一次录制的其他讨论。我自己觉得很有意思的部分有：
+
+
+      多智能体的一体两面：OpenAI 用多智能体协作解决了千禧年难题，而不受控制的协作又带来了 Hugging Face 攻击事件。
+
+
+      GPT-6 Astra 发布之后，具身智能领域的兴奋和害怕。我们会在 11 之后的「具身季报」里，更充分地讨论这个问题。
+
+
+      本期季报的嘉宾是 MoE Capital 的创始合伙人 Henry Yin。这是一家位于硅谷的早期基金，主要投资 AI 基础设施、数据、 Agent 和机器人。取名“MoE (Mixture of
+      Experts)”是因为他们有多位来自前沿 AI 实验室的研究员做个人 LP 和顾问。我们的讨论会更偏研究视角和一级市场视角。
+
+
+      从 2023 年到 2025 年，大模型热潮以来，每年秋天前后都会有点儿“悲观气息”，但今年不一样，这个秋天不冷，各公司更新密集，比如刚刚发的 Gemini 4 我们这期就来不及讨论了（正好这个模型是北京时间 10 月 1
+      日发布的）。我们上季与这季都讨论的 RSI，可能正在带来加速度的量变。
+
+
+      祝各位《晚点聊》听友国庆快乐！
+
+
+      本期嘉宾：Henry Yin，MoE Capital 创始合伙人
+
+
+      本期主播：程曼祺，晚点 LatePost 科技报道负责人
+
+
+      本期剪辑：甜食
+
+
+      时间线跳转：
+
+
+      OpenAI DevDay 后的补充讨论
+
+
+      -个人 AI 助理的又一轮尝试：能力成熟，也碰上生态高墙
+
+
+      01:44 OpenAI Dots：常驻云端的个人助理，为什么从 100 美元起步
+
+
+      08:25 “眼里有活”的 Instinct，但数据条款让人退缩
+
+
+      11:27 个人助理为何此刻爆发：Computer Use 成熟、推理成本下降
+
+
+      16:11 App 会接受被个人助理 over the top 吗？
+
+
+      22:02 下一步：能力、生态、个性化与安全
+
+
+      第一次讨论：智能前沿与扩散
+
+
+      1.模型、科学与物理世界
+
+
+      31:11 Astra 与 Opus 5.5：新旗舰强在哪里，从“Put That There”到操作 Blender
+
+
+      1979 年，MIT 的研究 "Put-that-there": Voice and gesture at the graphics interface
+
+
+      开发者用 GPT-6 Astra 调用 Blender 软件，给Zillow上了一栋豪宅，做了 3D 导览图
+
+
+      开发者用 Opus 5.5 的 coding能力，结合一些工具调用制作的 Claude 的“生平”。
+
+
+      42:57 蒸馏与反蒸馏：Astra 为什么更难蒸？
+
+
+      45:50 一万个 Agent、88 小时：OpenAI 如何挑战 Navier–Stokes
+
+
+      53:43 通用模型进入机器人：大语言模型直接成为策略模型
+
+
+      01:02:30 前沿模型进入生物科技：蛋白质设计、新酶与 GPT-Rosalind
+
+
+      2.两家前沿厂商的增速对比：增长能否撑住算力豪赌
+
+
+      01:06:18 OpenAI ARR 猛增，Anthropic 增速是否已被反超
+
+
+      01:12:52 Anthropic 上市材料：大客户、云渠道与 5180 亿美元承诺
+
+
+      01:15:10 招股书该看什么：用户画像、收入分布与 Coding 渗透率
+
+
+      3.多智能体的一体两面：攻克难题，也冲破隔离
+
+
+      01:16:49 1200 个 Agent 冲破隔离：“我的天，我找到了其他 Agent” 01:26:45 We Must Pace the Frontier：第三方评估能做什么
+
+
+      01:28:29 RSI 的两条路线，以及为什么 Infra 成为第一站
+
+
+      -智能扩散：更便宜、更快、更会交互
+
+
+      01:33:05 便宜和快为何变得更重要：同等智能的成本暴跌
+
+
+      01:40:08 从亏本到盈利：低价模型怎样改变开发者行为
+
+
+      01:43:20 Jev 爆火：把自然语言变成编程里的 if
+
+
+      01:49:06 GPT-Live-1 与 Interaction Models：实时交互走到哪一步
+
+
+      01:54:08 Grok 强势反弹：独特数据与预训练门槛
+
+
+      02:00:37 Q3 的两条主线与 Q4 悬念
+
+
+      02:03:41 连点成线：延伸推荐
+
+
+      附录：人物、机构与术语
+
+
+      -Noah Shinn：Instinct 创始人，曾任 Sierra 研究科学家。Instinct 在 2026 年以邀请制个人 AI 助手迅速走红硅谷科技圈。
+
+
+      -METR：一家独立研究前沿 AI 能力与重大风险的非营利机构，为模型公司开展能力评估、红队测试和事故调查。本期引用了它对 OpenAI / Hugging Face 智能体入侵事件的独立调查。
+
+
+      -Tristan Buckmaster、Levent Alpöge：长期研究 Navier–Stokes 方程的数学家。两人曾合作推进相关问题，并对 OpenAI 公布的成果与未公开研究之间的关系提出质疑。
+
+
+      -Artifactory：用于集中存放和分发软件包、构件的仓库系统。多智能体失控攻击 Hugging Face 事件中的 Agent 利用共享 Artifactory 目录名建立了未获授权的通信渠道。
+
+
+      -RoboDojo：包含 42 项机器人操作任务的仿真评测环境。《An Unexpected Robot Policy》用它测试通用大模型能否在未经专门策略训练时，直接依据观察输出机器人动作。
+
+
+      相关链接：
+
+
+      AI & 具身季报系列：
+
+
+      《晚点 AI 季报：Muse 引爆个人助理，Astra 走进机器人，OpenAI 收入猛增》
+
+
+      171 期：与 Henry 的「AI 季报 26Q2」：从 coding 到 RSI，强者愈强的未来？
+
+
+      156 期：与 Henry 的「AI 季报 26Q1」：OpenClaw、OpenAI vs Anthropic 的三重对阵、自进化
+
+
+      170 期：与陈哲的「具身季报 26Q2」：世界模型大风不停，和不想被贴标签的人
+
+
+      157 期：与陈哲的「具身季报 26Q1」：宇树招股书、人形再思考、英伟达世界模型、高自由度灵巧手
+
+
+      其它相关节目：
+
+
+      179 期：蒸馏风暴：一场无人公开谈论的技术竞赛
+
+
+      178 期：与田渊栋聊 RSI：模型自进化如何到来？
+
+
+      177 期：详解 Kimi K3：强到冲击 Anthropic 估值的模型什么样？
+
+
+      83 期：《智人之上》：没有 AI，寻找意义也是每个人的必解题｜串台《知本论》
+
+
+      本期提及的一些文章、论文：
+
+
+      Dario Amodei：We Must Pace the Frontier
+
+
+      OpenAI：On the Navier–Stokes Millennium Prize Problem
+
+
+      测评 Astra Robotics 任务表现的文章：An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond
+
+
+      METR：对 OpenAI / Hugging Face 智能体入侵事件的独立调查
+
+
+      智谱：Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure
+
+
+      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
+
+
+      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
+
+
+      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
+
+
+      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
+
+
+      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
+
+
+      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
+    status: needs_transcript
+    priority: 1
   - id: 63e76d1a-c5bb-4103-8ef4-e235917367c6
     guid: 63e76d1a-c5bb-4103-8ef4-e235917367c6
     title: "182: 对话梁琛奇：抖音、猫箱、创业，「他们都搞生产力，我想用 AI 创造开心」"

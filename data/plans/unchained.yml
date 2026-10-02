@@ -1,15 +1,222 @@
 source: unchained
-refreshed_at: 2026-10-01T18:14:16.909Z
+refreshed_at: 2026-10-02T03:04:55.490Z
 min_duration: 3300
-min_date: "20260910"
-total_candidates: 4
+min_date: "20260911"
+total_candidates: 6
 done: 4
 pending: 0
-needs_transcript: 0
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 768e729a-bdd8-11f1-84fe-776dead69d3a
+    guid: 768e729a-bdd8-11f1-84fe-776dead69d3a
+    title: "Uneasy Money: The $388M Bitget Hack Started With a Security Vendor"
+    duration: 4985
+    published: Thu, 01 Oct 2026 20:41:00 -0000
+    published_sort: "20261001"
+    first_seen_at: 2026-10-02T03:04:55.482Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8558616734.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8558616734.mp3
+    image: https://megaphone.imgix.net/podcasts/768e729a-bdd8-11f1-84fe-776dead69d3a/image/8c888643035ca79d97b4e54b5a7dd7d2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Taylor Monahan ties the Bitget hack to North Korea and the crew asks why THORChain still avoids the scrutiny
+      Tornado Cash got.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠⁠
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      ⁠Our listener survey⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Attackers took $388 million from Bitget without ever getting its private keys. Opsek founder Pablo Sabbatella
+      explains that the way in was a zero-day in a third-party security product the exchange relied on.
+
+
+      Sabbatella, who now sits on Arbitrum's Security Council, joins Kain Warwick, Taylor Monahan, and Austin Griffith
+      to trace the hack. Monahan attributes it to North Korea's TraderTraitor group and flags how fast the funds left
+      Arbitrum, while the hosts ask why THORChain, which has halted its chain and reallocated balances before, still
+      handles stolen funds.
+
+
+      They also cover NEAR's SHIELD anomaly detection, reports of rogue AI agents hacking outside systems, whether
+      retail should get the upside of a $2 trillion Anthropic IPO, and Vitalik Buterin's 2030 roadmap for Ethereum.
+
+
+      Warwick's case: the harder the problem, the more superintelligence helps, and Ethereum is one of the hardest
+      problems there is.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Guest:
+
+        Pablo Sabbatella - Founder at Opsek
+
+      Timestamps
+
+
+      🚨 02:32 How Bitget got hit for $388M and covered the losses
+
+
+      🛡️ 08:24 Why Pablo says a third-party security product was the way into Bitget
+
+
+      🕵️ 11:22 Taylor ties the hack to North Korea and highlights their rush to exit Arbitrum
+
+
+      ❄️ 13:34 Pablo on why security councils restart the freeze debate every time
+
+
+      ⛓️ 14:17 Why Kain says THORChain can't claim it's like Bitcoin and Ethereum
+
+
+      🧭 30:24 How NEAR's Shield blocks funds using behavioral anomaly detection
+
+
+      📣 34:51 1inch: See how 1inch Aqua lets LPs back multiple positions with one token balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🤖 36:16 Rogue AI agents are hacking outside systems as the labs eye IPOs
+
+
+      🔓 39:11 Why Pablo thinks the AI labs want to regulate open-source models
+
+
+      📈 48:55 Kain's case for letting retail take the risk on a $2T Anthropic IPO
+
+
+      🧱 01:05:47 Why Kain calls Vitalik's 2030 roadmap the most bullish Ethereum read in years
+
+
+      🏪 01:19:18 Pablo asks whether Ethereum's real challenge is commercial, not technical
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
+  - id: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
+    guid: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
+    title: Is Hunter Biden's $LAPTOP Coin a Scam? He Says the Wallets Prove It Isn't
+    duration: 3308
+    published: Thu, 01 Oct 2026 18:24:00 -0000
+    published_sort: "20261001"
+    first_seen_at: 2026-10-02T03:04:55.482Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5345673055.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5345673055.mp3
+    image: https://megaphone.imgix.net/podcasts/4908b17c-bdc5-11f1-b5b1-9fed10733b27/image/38f3fc830e93124925d62850da2a5fa8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Hunter Biden walks through the $LAPTOP launch, when thin liquidity sent the token to a $317 billion market cap in
+      a minute, and why he says it isn't a scam.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠ Our
+      listener survey⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who takes
+      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
+      18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      In June, Hunter Biden replied to a small account on X that "fiat is a sham" and the banking class is corrupt. His
+      next move was $LAPTOP, a memecoin he says has the opposite tokenomics of the $TRUMP token.
+
+
+      Hunter joins Laura Shin to trace his path into crypto, from the UN World Food Programme’s digital wallets for
+      refugees (originally covered on Unchained in 2018) to The Internet of Money. He walks through $LAPTOP's first
+      minutes, when a market maker seeded about $5,000 of liquidity and the token briefly showed a $317 billion market
+      cap, and answers critics who call it a scam.
+
+
+      He also lays out the token's prediction market burn mechanism, argues the Clarity Act died because the
+      administration wouldn't bend on ethics rules covering the Trump family, and challenges Elizabeth Warren for siding
+      with the banks.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠⁠⁠⁠Hunter Biden - Artist, Author, and Recovery Advocate
+
+      Timestamps
+
+
+      🎨 01:26 How a blockchain-related initiative at the UN World Food Programme led Hunter to crypto
+
+
+      🏛️ 07:34 Why Hunter says most Democrats only know crypto through Trump's 'grift'
+
+
+      💧 12:47 1inch Aqua: See how LPs back multiple positions with one balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      💻 13:46 Why Hunter launched $LAPTOP and what he says went wrong at its debut
+
+
+      🔍 21:14 Hunter answers critics who call $LAPTOP the scam he accuses Trump of
+
+
+      🎲 23:52 How $LAPTOP's built-in prediction market burns tokens or funds charity
+
+
+      ⚖️ 33:35 Hunter's case against World Liberty Financial and the Trump family business
+
+
+      🗳️ 46:47 Can Democrats revive the Clarity Act if they take back Congress?
+
+
+      🏦 50:01 Why Hunter can't understand Elizabeth Warren siding with the banks
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 5e80484a-bcf7-11f1-9346-e779a7d83419
     guid: 5e80484a-bcf7-11f1-9346-e779a7d83419
     title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
