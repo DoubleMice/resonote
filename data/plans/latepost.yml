@@ -1,11 +1,11 @@
 source: latepost
-refreshed_at: 2026-10-02T03:04:55.536Z
+refreshed_at: 2026-10-02T18:13:54.735Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
-done: 1
+done: 2
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -244,8 +244,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-02T18:13:56.126Z
+    transcript_job_id: 607ea318-157e-46aa-ae32-6425f4382ed7_13a10af840c74a42bb0a733ca54f0d37,ecb2e73b-00f8-45cf-a9a5-b23a70ad1d93_ab01254a77c944a9ab5ecb789eed728b,mimo:47e78c2f-c36f-4894-9124-dad5dcffc972:2:2026-10-02T18:13:56.126Z,e1c978e9-002f-4d40-896a-53658904c4d2_427a581f14fe46e0b99f53b6e9441ac3,295d0898-7ad5-4786-acce-4087e08d02f6_0f1327151a7346a1aeade060b8468c11,80ceb791-dae9-43ec-a38a-b3527f26b513_9f2231959215470187cef9c95db8b544,e50995c4-076f-4d39-a264-781f15f256a4_7c3a6effeccc43b1949b3b6fc619a0cf,f2a3ab81-d7ca-4c8d-ac66-16e94ae10f75_00ea6bb4605e47a191ae6a58c6636103,4ee87ca0-28db-4e24-932a-50eeb1fbeb21_a53d288112484ae183b0561a11fe4431
+    transcript_completed_at: 2026-10-02T18:22:35.926Z
   - id: 63e76d1a-c5bb-4103-8ef4-e235917367c6
     guid: 63e76d1a-c5bb-4103-8ef4-e235917367c6
     title: "182: 对话梁琛奇：抖音、猫箱、创业，「他们都搞生产力，我想用 AI 创造开心」"

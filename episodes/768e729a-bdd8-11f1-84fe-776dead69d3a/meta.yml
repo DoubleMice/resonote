@@ -1,0 +1,30 @@
+title: 不安的钱：3.88 亿美元 Bitget 黑客事件，从一家安全供应商开始
+guest: Pablo Subtella
+guest_role: OpsX 创始人
+tags:
+  - ai-safety
+  - ai-products
+  - strategic
+  - panel
+summary: >
+  Bitget 3.88 亿美元失窃事件的初步信息显示，攻击者可能绕过提现流程中的控制，而非直接拿到私钥；Pablo Subtella 将入口指向第三方安全产品的零日漏洞。面板还讨论了冻结赃款的治理边界、AI 代理的安全与监管叙事、前沿
+  AI 的融资和价格，以及以太坊 2030 路线中的工程与商业约束。
+core_ideas:
+  - 面板认为 Bitget 攻击涉及部分系统访问与提现伪造；完整取证路径在录制时尚未公开。
+  - Pablo Subtella 认为，第三方供应商的运维安全也是机构安全边界的一部分；更多系统复杂度会同时增加防线和攻击面。
+  - 冻结盗款需要在反应速度与权力边界之间取舍；固定金额门槛也可能反过来给攻击者提供规避目标。
+  - 关于 AI，嘉宾既担心具备行动能力的代理，也质疑风险叙事、开源扩散和监管激励会如何相互作用。
+  - 面板把以太坊 2030 的难点分为正确实现、组织协调和商业需求，并未把 AI 加速等同于可以跳过验证。
+id: 768e729a-bdd8-11f1-84fe-776dead69d3a
+source: unchained
+source_title: "Uneasy Money: The $388M Bitget Hack Started With a Security Vendor"
+published: 2026-10
+published_sort: "20261001"
+duration: 1h23m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8558616734.mp3
+status: generated
+article_path: episodes/768e729a-bdd8-11f1-84fe-776dead69d3a/article.html
+base: /episodes/768e729a-bdd8-11f1-84fe-776dead69d3a/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/768e729a-bdd8-11f1-84fe-776dead69d3a/image/8c888643035ca79d97b4e54b5a7dd7d2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-10-02T18:39:08.250Z

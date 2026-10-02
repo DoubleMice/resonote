@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-10-02T03:04:55.490Z
+refreshed_at: 2026-10-02T18:13:54.692Z
 min_duration: 3300
 min_date: "20260911"
 total_candidates: 6
-done: 4
+done: 6
 pending: 0
-needs_transcript: 2
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -122,8 +122,12 @@ episodes:
       🏪 01:19:18 Pablo asks whether Ethereum's real challenge is commercial, not technical
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-02T18:22:36.440Z
+    transcript_job_id: ba21a76e-da19-4875-9014-fb66b00f69ca_6ca4a5354a834bda8aaed1dbd5f81181,47dcb585-2978-430d-91b9-248c52e771e6_bc81eb8371744dba9342ad9e5b6d13f6,3c4488de-487b-41dd-9c2d-e4813f267360_c553c3ac1f814d23a19d3793d298b8ef,e7cbf9e8-f0e2-4b4e-b20f-59b86d8877b5_00368f2454354d6ba36c0e56e0981e2f,5668179b-d85b-4ae6-aa5d-485a28ad5366_6b56a29eaad041439357363c46ccb91a,87fc67e0-b157-4979-8fc9-c1217fe7ec2d_e365acc705e04a1eb1a50573ff92f2f8
+    transcript_completed_at: 2026-10-02T18:29:18.568Z
   - id: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
     guid: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
     title: Is Hunter Biden's $LAPTOP Coin a Scam? He Says the Wallets Prove It Isn't
@@ -215,8 +219,12 @@ episodes:
       🏦 50:01 Why Hunter can't understand Elizabeth Warren siding with the banks
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-02T18:29:19.115Z
+    transcript_job_id: 3ef76f52-7a43-48cf-a5c1-d9edd3dbaf51_319f2a99ab36486ea5e4201c128d8ee7,0505af7c-0138-4a51-a435-a5ceb130adb4_ae1e55dbbf074c278de687cda9cc52d3,50e98f27-f739-4942-90d0-9129dfe0c3fe_419a4de856e942a8b1e5ffd12e93420f,7aa9715b-2bb6-43f7-94c0-e51018e30df5_e0ea169ac62f40e2bafff4eebce1da52
+    transcript_completed_at: 2026-10-02T18:32:53.269Z
   - id: 5e80484a-bcf7-11f1-9346-e779a7d83419
     guid: 5e80484a-bcf7-11f1-9346-e779a7d83419
     title: How Bitget Is Chasing $388 Million in Stolen Funds After a Zero-Day Hack
