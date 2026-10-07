@@ -1,15 +1,124 @@
 source: unchained
-refreshed_at: 2026-10-07T03:08:09.634Z
+refreshed_at: 2026-10-07T18:14:28.710Z
 min_duration: 3300
 min_date: "20260916"
-total_candidates: 6
-done: 6
+total_candidates: 7
+done: 7
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: c514e2cc-c202-11f1-848d-076a9db863c7
+    guid: c514e2cc-c202-11f1-848d-076a9db863c7
+    title: THORChain Says It Can't Block North Korean Laundering. Is That True?
+    duration: 4303
+    published: Wed, 07 Oct 2026 03:54:00 -0000
+    published_sort: "20261007"
+    first_seen_at: 2026-10-07T18:14:28.702Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1427857485.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1427857485.mp3
+    image: https://megaphone.imgix.net/podcasts/c514e2cc-c202-11f1-848d-076a9db863c7/image/102f2b12f31788e34a890299fd3d506d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      In this spicypost-Bitget hack debate, THORChain co-founder Chad Barraford says the protocol can't block
+      laundering. Taylor Monahan points to the halts it has used before.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠ Our
+      listener survey⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who takes
+      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
+      18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      The Bitget hack reignited a fight on crypto Twitter: should chains that can stop North Korea from laundering
+      stolen funds actually do it? THORChain, which DPRK hackers keep using to reach Bitcoin, landed at the center of
+      it.
+
+
+      Chad Barraford, co-founder of THORChain, argues the protocol cannot respond fast enough without redesigning it to
+      be more centralized. Security expert Taylor Monahan counters that THORChain has acted before when its own protocol
+      was at risk, and that routes made up almost entirely of stolen funds could simply be switched off.
+
+
+      Laura Shin presses on the closed-source signing library, four operators running 39 nodes, why validators left
+      after Bybit, ZachXBT's undercover look at a launderer pitching THORChain, Tornado Cash-style legal risk, and fee
+      spikes after the KelpDAO and Bitget hacks.
+
+
+      Barraford's answer to the biggest hypothetical is simple: if enough node operators want to block laundering, it
+      gets blocked.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guests:
+
+        Taylor Monahan - Security Expert and Co-host of Uneasy Money
+
+        Chad Barraford - Co-founder of THORChain
+
+      Timestamps
+
+
+      ⚖️ 01:56 The Bitget debate: should chains that can block laundering do it?
+
+
+      🧱 04:10 Why Taylor says THORChain has been 'making this excuse' for years
+
+
+      ⏸️ 10:48 THORChain paused for 5 weeks for itself. Why not for stolen funds?
+
+
+      🪙 19:15 1inch Aqua: See how LPs can back multiple positions with one token balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🏦 20:15 Is THORChain an intermediary? The custody critique of its TSS vaults
+
+
+      🚪 24:32 Why did validators leave after Bybit? Chad and Taylor disagree
+
+
+      🧪 39:36 Does THORChain pass Chad's own decentralization litmus test?
+
+
+      🕵️ 47:59 ZachXBT's undercover probe: a launderer's 'Thor cross-chain' pitch
+
+
+      🏛️ 57:24 Could THORChain face a Tornado Cash-style case? Chad's legal defense
+
+
+      🛡️ 01:05:05 NEAR's Shield stopped $50M in laundering. Could THORChain copy it?
+
+
+      💸 01:05:57 Does THORChain profit from stolen funds? The fee spike debate
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-07T18:14:30.150Z
+    transcript_job_id: 7df6f63b-6b26-4546-b682-e5b3f3dc928f_bb4c9cea32f24d16a2bfe3f7d18c00a1,018ace65-43e1-43c3-8334-ec19738cf6ae_c7e3f0b0903842fb8b0ce75cc86f4d9f,02deb7c2-0d1c-45ee-86c1-145df69713a8_57e2a6fb6971449fa2cc1891a7de8ddc,718f4332-d0cb-4a13-af5a-37b3da5df744_20ecaf2182504d91b5e0023889375598,2c7971e5-3838-4ae9-88e0-dd0ca580e1ae_2d503d2a71d249019279f1c68618cbb2
+    transcript_completed_at: 2026-10-07T18:22:26.610Z
   - id: 768e729a-bdd8-11f1-84fe-776dead69d3a
     guid: 768e729a-bdd8-11f1-84fe-776dead69d3a
     title: "Uneasy Money: The $388M Bitget Hack Started With a Security Vendor"

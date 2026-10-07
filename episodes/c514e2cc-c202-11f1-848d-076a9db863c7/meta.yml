@@ -1,0 +1,29 @@
+title: THORChain 称自己无法阻止朝鲜洗钱，是真的吗？
+guest: Chad Barraford、Taylor Monahan
+guest_role: THORChain 联合创始人；安全专家
+tags:
+  - panel
+  - technical
+  - strategic
+summary: |
+  本期围绕经 THORChain 兑换的被盗资金展开：Chad Barraford 认为，按地址即时阻断与去中心化的共识流程不相容；Taylor Monahan 则主张，暂停高风险路径也能提高洗钱成本，不能因无法完全拦截而放弃行动。
+  讨论进一步涉及验证者集中度、共同签名金库的控制权、协议费用和监管风险，呈现了技术能力、社区意愿与责任归属如何彼此牵连。
+core_ideas:
+  - Barraford 认为，针对单笔交易的审查既不在现有代码中，也赶不上三分之二共识形成的速度。
+  - Monahan 认为，暂停高风险兑换路径或短暂停摆不能根除洗钱，但能提高转移和套现的难度。
+  - 双方对节点数量、运营者集中度和退出者的顾虑有不同解释，争点是实际协调能力而非单一指标。
+  - 前端可以筛查地址，协议层却主张保持无许可；TSS 金库的共同控制使这条边界更受关注。
+  - 被盗资金带来的费用、开发基金的去向和返还受害者的可能性，使协议设计同时成为激励选择。
+id: c514e2cc-c202-11f1-848d-076a9db863c7
+source: unchained
+source_title: THORChain Says It Can't Block North Korean Laundering. Is That True?
+published: 2026-10
+published_sort: "20261007"
+duration: 1h12m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1427857485.mp3
+status: generated
+article_path: episodes/c514e2cc-c202-11f1-848d-076a9db863c7/article.html
+base: /episodes/c514e2cc-c202-11f1-848d-076a9db863c7/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/c514e2cc-c202-11f1-848d-076a9db863c7/image/102f2b12f31788e34a890299fd3d506d.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-10-07T18:30:39.400Z
