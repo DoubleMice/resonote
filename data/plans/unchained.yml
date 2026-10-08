@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-10-07T18:14:28.710Z
+refreshed_at: 2026-10-08T03:07:19.100Z
 min_duration: 3300
-min_date: "20260916"
+min_date: "20260917"
 total_candidates: 7
 done: 7
 pending: 0
@@ -116,8 +116,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-07T18:14:30.150Z
     transcript_job_id: 7df6f63b-6b26-4546-b682-e5b3f3dc928f_bb4c9cea32f24d16a2bfe3f7d18c00a1,018ace65-43e1-43c3-8334-ec19738cf6ae_c7e3f0b0903842fb8b0ce75cc86f4d9f,02deb7c2-0d1c-45ee-86c1-145df69713a8_57e2a6fb6971449fa2cc1891a7de8ddc,718f4332-d0cb-4a13-af5a-37b3da5df744_20ecaf2182504d91b5e0023889375598,2c7971e5-3838-4ae9-88e0-dd0ca580e1ae_2d503d2a71d249019279f1c68618cbb2
+    transcript_submitted_at: 2026-10-07T18:14:30.150Z
     transcript_completed_at: 2026-10-07T18:22:26.610Z
   - id: 768e729a-bdd8-11f1-84fe-776dead69d3a
     guid: 768e729a-bdd8-11f1-84fe-776dead69d3a
