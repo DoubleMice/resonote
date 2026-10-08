@@ -29663,3 +29663,105 @@ jobs:
     submitted_at: 2026-10-07T18:14:30.150Z
     updated_at: 2026-10-07T18:22:26.610Z
     completed_at: 2026-10-07T18:22:26.610Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:0
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: d8a754ed-b8b3-43c7-a990-cec635538d73_07c2f61df58b49afad39a81257b8b3f1
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:13:36.693Z
+    completed_at: 2026-10-08T18:13:36.693Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:1
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: a1d0f4c2-6917-4556-9751-c63ec1a3ab39_41b84cb3c1734b2ba16c26eecd5b5e1b
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:14:46.678Z
+    completed_at: 2026-10-08T18:14:46.678Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:2
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: aa7495b9-e8ab-4ab2-8322-3ac073f52032_97ee17de6e5948ffa5866584e36d803c
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:15:53.019Z
+    completed_at: 2026-10-08T18:15:53.019Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:3
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: 943491a3-aeb9-4a9f-818d-1e28c0b6f9aa_8b126ca5dab6416bb661b9f6815deb0a
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:17:28.297Z
+    completed_at: 2026-10-08T18:17:28.297Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:4
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: 2a573def-2629-4873-8cae-e017bd5187f1_b0810387b4524f47abb343b7dcf4cbb6
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:19:06.533Z
+    completed_at: 2026-10-08T18:19:06.533Z
+  - key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z:chunk:5
+    parent_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    attempt_key: unchained:6c448732-c33e-11f1-96c4-73b11195b3f5:20261008:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3:mimo:2026-10-08T18:12:28.263Z
+    provider: mimo
+    id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    source: unchained
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    task_id: 677031b9-18a0-4b3c-baae-cae46334dad4_bdf9f643b6f34ec5b1e95492bd0de139
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-08T18:12:28.263Z
+    updated_at: 2026-10-08T18:19:27.710Z
+    completed_at: 2026-10-08T18:19:27.710Z

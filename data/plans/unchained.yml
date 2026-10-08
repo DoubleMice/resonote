@@ -1,15 +1,134 @@
 source: unchained
-refreshed_at: 2026-10-08T03:07:19.100Z
+refreshed_at: 2026-10-08T18:12:27.467Z
 min_duration: 3300
 min_date: "20260917"
-total_candidates: 7
-done: 7
+total_candidates: 8
+done: 8
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    guid: 6c448732-c33e-11f1-96c4-73b11195b3f5
+    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+    duration: 4780
+    published: Thu, 08 Oct 2026 17:33:00 -0000
+    published_sort: "20261008"
+    first_seen_at: 2026-10-08T18:12:27.463Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+    image: https://megaphone.imgix.net/podcasts/6c448732-c33e-11f1-96c4-73b11195b3f5/image/9f51b4291ede29dc2e78899201d961b6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Justin Drake told holders not to panic. Ben DiFrancesco says if AI weakens elliptic curves, the clock is how fast
+      Chinese models catch up.
+
+
+      ========================================================
+
+
+      Thank you to our sponsors!
+
+
+      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
+      buying - swap it at ⁠⁠⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠⁠⁠
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      ⁠⁠Our listener survey⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      OpenAI released 722 math papers, and Justin Drake followed with a "don't panic" tweet suggesting large holders
+      consider moving funds, setting off a wave of speculation that elliptic curve keys might soon be easier to brute
+      force.
+
+
+      Ben DiFrancesco, Founder and CEO of ScopeLift, joins Kain Warwick, Taylor Monahan, and Austin Griffith to separate
+      rumor from risk. DiFrancesco puts low odds on the rumors but argues crypto would get hit first, patch fastest, and
+      could leave traditional finance as the worse place to hold money, with Chinese open-weight models setting the
+      clock. Monahan untangles the 0.36 ETH MetaMask staking incident that got pulled into the speculation.
+
+
+      They also cover ZachXBT's undercover investigation of a DPRK money launderer, the NEAR Intents hacker sending
+      funds back, and a push for Swiss authorities to intervene at Safe. DiFrancesco closes with a warning for token
+      teams: the regulatory excuse for skipping value return is going away.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Guest:
+
+        ⁠Ben DiFrancesco - Founder and CEO of ScopeLift
+
+      Timestamps
+
+
+      🔐 01:57 Why Justin Drake’s ‘don’t panic’ tweet has crypto eyeing its cryptography
+
+
+      🦊 06:12 Taylor on the MetaMask staking incident and the 0.36 ETH that tipped it off
+
+
+      🧮 14:03 Ben on why even a worst-case ECC break wouldn’t mean instant theft
+
+
+      🏦 20:04 Why Ben thinks TradFi, not crypto, could be the worse place to hold money
+
+
+      🤖 25:02 How AI models went from flubbing 2+2 to formalizing hard math
+
+
+      💧 30:45 1inch: See how LPs can back multiple positions with one token balance at
+      http://unchainedcrypto.com/go/1inch-yt
+
+
+      🔙 31:49 How the NEAR Intents hacker ended up sending the money back
+
+
+      🕵️ 37:07 ZachXBT went undercover with a DPRK money launderer: what he found
+
+
+      😤 51:25 Why instant outrage is the tell for launderers and Sybil farmers
+
+
+      🏗️ 56:11 From Gnosis’s 2017 ICO to Safe, the multisig securing $100B+
+
+
+      ⚖️ 01:02:23 The push for Swiss intervention at Safe and what it actually claims
+
+
+      🗳️ 01:08:12 Ben on how regulatory fear warped DAOs and why value return matters now
+
+
+      🧱 01:17:12 Blast and Abstract shut down: too many L2s, and never build a wallet
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-08T18:12:28.263Z
+    transcript_job_id: d8a754ed-b8b3-43c7-a990-cec635538d73_07c2f61df58b49afad39a81257b8b3f1,a1d0f4c2-6917-4556-9751-c63ec1a3ab39_41b84cb3c1734b2ba16c26eecd5b5e1b,aa7495b9-e8ab-4ab2-8322-3ac073f52032_97ee17de6e5948ffa5866584e36d803c,943491a3-aeb9-4a9f-818d-1e28c0b6f9aa_8b126ca5dab6416bb661b9f6815deb0a,2a573def-2629-4873-8cae-e017bd5187f1_b0810387b4524f47abb343b7dcf4cbb6,677031b9-18a0-4b3c-baae-cae46334dad4_bdf9f643b6f34ec5b1e95492bd0de139
+    transcript_completed_at: 2026-10-08T18:19:27.710Z
   - id: c514e2cc-c202-11f1-848d-076a9db863c7
     guid: c514e2cc-c202-11f1-848d-076a9db863c7
     title: THORChain Says It Can't Block North Korean Laundering. Is That True?

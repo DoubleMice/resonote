@@ -1,0 +1,31 @@
+title: OpenAI 的数学成果为何让加密圈重新审视密码学
+guest: Ben Di Francesco
+guest_role: Scopelift 创始人兼 CEO
+tags:
+  - panel
+  - founder
+  - ceo
+  - technical
+  - strategic
+summary: |
+  Uneasy Money 围绕 OpenAI 集中发布数学成果后出现的密码学传闻展开，区分了椭圆曲线已被攻破的说法与攻击成本可能下降的条件性担忧，也解释了 MetaMask 质押服务变动为何不能充当旁证。
+  圆桌还讨论了公开追踪洗钱网络的实际作用、Safe 与 Gnosis 面临的基金会治理争议，以及治理代币如何同时承载价值回流和协议经济安全。
+core_ideas:
+  - OpenAI 的数学成果尚不足以证明椭圆曲线密码学已失效；攻击是否可行仍取决于漏洞、计算成本和目标资产价值。
+  - MetaMask 质押服务的配置和密钥轮换有更直接的基础设施解释，不能从中推出密码学出现突破。
+  - 公开调查朝鲜相关洗钱路径能帮助交易所理解中间人的角色，但封锁和风控仍必须处理真实的误报与申诉。
+  - Safe 的产品价值、收费难题和代币表现不能混为一谈；多签安全服务的商业模式存在实际约束。
+  - 代币若承担治理职责，就需要与协议保护的经济价值相匹配；DAO 的分歧本身是治理要处理的对象。
+id: 6c448732-c33e-11f1-96c4-73b11195b3f5
+source: unchained
+source_title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
+published: 2026-10
+published_sort: "20261008"
+duration: 1h20m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
+status: generated
+article_path: episodes/6c448732-c33e-11f1-96c4-73b11195b3f5/article.html
+base: /episodes/6c448732-c33e-11f1-96c4-73b11195b3f5/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/6c448732-c33e-11f1-96c4-73b11195b3f5/image/9f51b4291ede29dc2e78899201d961b6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-10-08T18:28:47.432Z
