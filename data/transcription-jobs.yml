@@ -29765,3 +29765,122 @@ jobs:
     submitted_at: 2026-10-08T18:12:28.263Z
     updated_at: 2026-10-08T18:19:27.710Z
     completed_at: 2026-10-08T18:19:27.710Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:0
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: 84f7c29e-9159-443b-aa9a-5b87f853d442_1fcd5f987e744b7d87236b2eda9995a9
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:15:37.126Z
+    completed_at: 2026-10-09T18:15:37.126Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:1
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: f798edb7-98ef-44e2-b5e3-7d9cc7848844_bd3c70af9e7441d5a7030f8e40a83508
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:17:19.763Z
+    completed_at: 2026-10-09T18:17:19.763Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:2
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: 8791256d-b8e1-4f2c-81be-3cda6591104f_16b716330e0f487f8bd9ecf566e5e8cd
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:19:21.550Z
+    completed_at: 2026-10-09T18:19:21.550Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:3
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: d81d2f1d-a498-431f-9ae0-e807cf407083_58cd24e19de04c5097d6314ea41f13ef
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:21:22.788Z
+    completed_at: 2026-10-09T18:21:22.788Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:4
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: e8adb88d-734a-450a-998d-2a54f8427148_7595100b38654bcf963b94538d26753a
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:22:41.975Z
+    completed_at: 2026-10-09T18:22:41.975Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:5
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: 4162487a-d140-4d15-8f51-c599f7d1e6dc_d22821457b8c489e9f58e903ced99ec3
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:24:36.362Z
+    completed_at: 2026-10-09T18:24:36.362Z
+  - key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z:chunk:6
+    parent_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    attempt_key: taixian-zhihuo:6ac81150e742e36efcc0088e:20261008:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a:mimo:2026-10-09T18:12:55.223Z
+    provider: mimo
+    id: 6ac81150e742e36efcc0088e
+    source: taixian-zhihuo
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    task_id: fd9e3a1b-ec5d-4333-bcb0-3d3803ea76fb_e9aebfbcf43e4c189647e842e767118f
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 7
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-09T18:12:55.223Z
+    updated_at: 2026-10-09T18:25:56.447Z
+    completed_at: 2026-10-09T18:25:56.447Z

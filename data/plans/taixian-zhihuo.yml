@@ -1,11 +1,11 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-09T03:08:15.468Z
+refreshed_at: 2026-10-09T18:12:53.862Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
-done: 1
+done: 2
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -20,8 +20,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6ac81150e742e36efcc0088e?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
     image: https://image.xyzcdn.net/FgeOBc1miPnXNUUFLKfG-KJ3QcT6.jpeg
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-09T18:12:55.223Z
+    transcript_job_id: 84f7c29e-9159-443b-aa9a-5b87f853d442_1fcd5f987e744b7d87236b2eda9995a9,f798edb7-98ef-44e2-b5e3-7d9cc7848844_bd3c70af9e7441d5a7030f8e40a83508,8791256d-b8e1-4f2c-81be-3cda6591104f_16b716330e0f487f8bd9ecf566e5e8cd,d81d2f1d-a498-431f-9ae0-e807cf407083_58cd24e19de04c5097d6314ea41f13ef,e8adb88d-734a-450a-998d-2a54f8427148_7595100b38654bcf963b94538d26753a,4162487a-d140-4d15-8f51-c599f7d1e6dc_d22821457b8c489e9f58e903ced99ec3,fd9e3a1b-ec5d-4333-bcb0-3d3803ea76fb_e9aebfbcf43e4c189647e842e767118f
+    transcript_completed_at: 2026-10-09T18:25:56.447Z
   - id: 6abe04f9e742e36efcbd6d52
     guid: 6abe04f9e742e36efcbd6d52
     title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini
