@@ -1,15 +1,27 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-08T18:12:27.497Z
+refreshed_at: 2026-10-09T03:08:15.468Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 1
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6ac81150e742e36efcc0088e
+    guid: 6ac81150e742e36efcc0088e
+    title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
+    duration: 6102
+    published: Thu, 08 Oct 2026 22:02:55 GMT
+    published_sort: "20261008"
+    first_seen_at: 2026-10-09T03:08:15.467Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ac81150e742e36efcc0088e?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac81150e742e36efcc0088e/media.xyzcdn.net/67f40c212ac4d88190caa56a/lvM89s5ActE23tvlhHCB2SDXebFo.m4a
+    image: https://image.xyzcdn.net/FgeOBc1miPnXNUUFLKfG-KJ3QcT6.jpeg
+    status: needs_transcript
+    priority: 1
   - id: 6abe04f9e742e36efcbd6d52
     guid: 6abe04f9e742e36efcbd6d52
     title: 53. 为什么不是谷歌做出了Muse？- Lewis｜微软 / ex-Gemini

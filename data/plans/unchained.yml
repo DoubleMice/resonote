@@ -1,9 +1,9 @@
 source: unchained
-refreshed_at: 2026-10-08T18:12:27.467Z
+refreshed_at: 2026-10-09T03:08:15.417Z
 min_duration: 3300
-min_date: "20260917"
-total_candidates: 8
-done: 8
+min_date: "20260918"
+total_candidates: 7
+done: 7
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -126,8 +126,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-08T18:12:28.263Z
     transcript_job_id: d8a754ed-b8b3-43c7-a990-cec635538d73_07c2f61df58b49afad39a81257b8b3f1,a1d0f4c2-6917-4556-9751-c63ec1a3ab39_41b84cb3c1734b2ba16c26eecd5b5e1b,aa7495b9-e8ab-4ab2-8322-3ac073f52032_97ee17de6e5948ffa5866584e36d803c,943491a3-aeb9-4a9f-818d-1e28c0b6f9aa_8b126ca5dab6416bb661b9f6815deb0a,2a573def-2629-4873-8cae-e017bd5187f1_b0810387b4524f47abb343b7dcf4cbb6,677031b9-18a0-4b3c-baae-cae46334dad4_bdf9f643b6f34ec5b1e95492bd0de139
+    transcript_submitted_at: 2026-10-08T18:12:28.263Z
     transcript_completed_at: 2026-10-08T18:19:27.710Z
   - id: c514e2cc-c202-11f1-848d-076a9db863c7
     guid: c514e2cc-c202-11f1-848d-076a9db863c7
@@ -773,99 +773,3 @@ episodes:
     transcript_job_id: 0eba7a80-5b95-4317-93e1-e83e912de692_b5323684eb2647feb2d7b231dec5c753,89fa7587-7448-465f-ae59-a06c1eace689_1fb48f7def9942c2b3d6a285346939b9,aee0bbcd-19ea-4d07-8dde-c9c5990408a1_82add4f5a3344f06a2f3aa1e7d8a5612,2164ba4d-4215-4d07-969a-f5aa154c25cc_135f5481eb8a41a18a9810d13ab05258
     transcript_submitted_at: 2026-09-23T18:14:16.949Z
     transcript_completed_at: 2026-09-23T18:15:39.811Z
-  - id: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
-    guid: 18488322-b2ea-11f1-8bd9-23e1fa2386e7
-    title: "Uneasy Money: What Crypto's Gensler Years Say About the AI Slowdown Debate"
-    duration: 4462
-    published: Thu, 17 Sep 2026 22:49:00 -0000
-    published_sort: "20260917"
-    first_seen_at: 2026-09-18T03:03:53.987Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3548678004.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3548678004.mp3
-    image: https://megaphone.imgix.net/podcasts/18488322-b2ea-11f1-8bd9-23e1fa2386e7/image/2fb462957ff3089b3b7e906a8510373a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Delphi Ventures founding partner Tommy Shaughnessy tells Kain and Taylor the AI slowdown talk is a moat against
-      cheap Chinese models. Plus, why the Clarity Act died.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
-      buying - swap it at ⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠
-
-
-      ========================================================
-
-
-      The Clarity Act failed a Senate cloture vote 49 to 50, and Kain Warwick and Taylor Monahan open by asking what
-      crypto did wrong. Taylor thinks the Trump family's memecoins and World Liberty sank it. Kain worries the industry
-      squandered its best shot at actual laws and is now counting on friendly SEC rulemaking instead.
-
-
-      Guest Tommy Shaughnessy, founding partner of Delphi Ventures, argues that OpenAI and Anthropic's calls to slow AI
-      down are a play for a regulatory moat, because Chinese open source models like DeepSeek are getting good and
-      cheap. He also explains why he runs Delphi Ventures on its own AI agent instead of handing its data to Claude or
-      ChatGPT. Kain says the fear inside the labs is genuine, and that the idea of simply shutting down the data center
-      won't hold forever.
-
-
-      They also cover Anthropic's report on a Chinese surveillance operation that surfaced in its logs, an $8M exploit
-      of a Safe wallet that a 4-year-old yoink bot frontran, the SDNY charges against Robinhood engineers accused of
-      trading tokens on Hyperliquid ahead of Robinhood listings, and why Wyoming's stable token dropped LayerZero for
-      Chainlink.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-      Guest:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Tommy Shaughnessy - Founding Partner of Delphi Ventures and Co-Founder of Delphi Digital
-
-      Timestamps
-
-
-      🏛️ 02:35 Why Clarity died without 50 votes and what SEC/CFTC rules might replace it
-
-
-      🇺🇸 19:06 Why crypto's all-in bet on Trump has Taylor uneasy about the partisan trade
-
-
-      💧 23:20 1inch: Back multiple liquidity positions and keep your tokens in your wallet until a swap fills at
-      http://unchainedcrypto.com/go/1inch-yt
-
-
-      🤖 24:08 Why OpenAI and Anthropic's own founders are calling to slow AI down
-
-
-      🐉 31:12 Tommy on why AI safety talk is regulatory capture against Chinese open source
-
-
-      🕵️ 38:17 Anthropic's own report: how a CCP surveillance job showed up in its logs
-
-
-      💰 51:42 Would you bet on AI safety or acceleration? Tommy makes the hosts pick a side
-
-
-      🔓 56:56 How an $8M Safe exploit got frontrun by a 4-year-old yoink bot
-
-
-      📈 01:01:46 Why the SDNY charged Robinhood engineers with trading on Hyperliquid ahead of listings
-
-
-      ⚔️ 01:05:27 Why Wyoming dropping LayerZero for Chainlink reignited the Link Marines
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: bdb4a1a8-b3f5-43e9-bce5-5bcaf7b58697_011b36c889774fe3a3db91b88ab1972c,a1dc1be5-7eaf-49f3-82ae-7b77567457e6_388436e13d4c468abd9f70a526713512,5a26eac0-0597-4eee-a549-1492af030a6f_4954cfe7d2604c1bb4dbd987255be17a,a38f2485-7d9b-4687-8302-1766243dd0fc_db8cfcd2aae846c69da2a538ff0fe359,1d3d0e34-ba11-4549-a75f-cde3a592e275_7dce954011fb4756ab32582cc771fb16
-    transcript_submitted_at: 2026-09-18T18:12:09.317Z
-    transcript_completed_at: 2026-09-18T18:15:47.001Z
