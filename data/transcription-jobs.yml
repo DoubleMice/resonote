@@ -29884,3 +29884,88 @@ jobs:
     submitted_at: 2026-10-09T18:12:55.223Z
     updated_at: 2026-10-09T18:25:56.447Z
     completed_at: 2026-10-09T18:25:56.447Z
+  - key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z:chunk:0
+    parent_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    attempt_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z
+    provider: mimo
+    id: 89c095f2-656e-4be2-a667-b919352b0002
+    source: flirting-with-models
+    title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+    audio_url: https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    task_id: e2ad1a2d-4750-4cae-bc3d-98a7d7f58cee_697a806f42da4bc4ae22bbd7e0c2686b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-12T18:12:39.098Z
+    updated_at: 2026-10-12T18:14:32.436Z
+    completed_at: 2026-10-12T18:14:32.436Z
+  - key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z:chunk:1
+    parent_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    attempt_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z
+    provider: mimo
+    id: 89c095f2-656e-4be2-a667-b919352b0002
+    source: flirting-with-models
+    title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+    audio_url: https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    task_id: c83897b6-01d5-41f9-9026-960372101a83_0c9ece7be5ae4c0eac1e9e20a21dc8e2
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-12T18:12:39.098Z
+    updated_at: 2026-10-12T18:16:08.075Z
+    completed_at: 2026-10-12T18:16:08.075Z
+  - key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z:chunk:2
+    parent_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    attempt_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z
+    provider: mimo
+    id: 89c095f2-656e-4be2-a667-b919352b0002
+    source: flirting-with-models
+    title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+    audio_url: https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    task_id: 646f4f08-be2e-4429-971c-99d35e3e77a4_d546095d3760429488b47c5aa6277596
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-12T18:12:39.098Z
+    updated_at: 2026-10-12T18:17:43.883Z
+    completed_at: 2026-10-12T18:17:43.883Z
+  - key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z:chunk:3
+    parent_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    attempt_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z
+    provider: mimo
+    id: 89c095f2-656e-4be2-a667-b919352b0002
+    source: flirting-with-models
+    title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+    audio_url: https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    task_id: 9817bd6f-9b2a-47cc-81c7-9f1687130993_3c99e426d932438d95eb716fe637b48a
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-12T18:12:39.098Z
+    updated_at: 2026-10-12T18:19:09.205Z
+    completed_at: 2026-10-12T18:19:09.205Z
+  - key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z:chunk:4
+    parent_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    attempt_key: flirting-with-models:89c095f2-656e-4be2-a667-b919352b0002:20261012:https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3:mimo:2026-10-12T18:12:39.098Z
+    provider: mimo
+    id: 89c095f2-656e-4be2-a667-b919352b0002
+    source: flirting-with-models
+    title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+    audio_url: https://episodes.captivate.fm/episode/89c095f2-656e-4be2-a667-b919352b0002.mp3
+    task_id: 9cb270e6-c3ac-4448-85f7-475c7ac366f8_d91914bcae074211830183c874d7337a
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-12T18:12:39.098Z
+    updated_at: 2026-10-12T18:19:45.480Z
+    completed_at: 2026-10-12T18:19:45.480Z

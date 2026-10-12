@@ -1,0 +1,30 @@
+title: Philip 与 Allan Maymin：以动态风险管理守住复利
+guest: Philip Maymin、Allan Maymin
+guest_role: Janus Henderson 全球资产配置团队联席主管
+tags:
+  - interview
+  - investor
+  - technical
+  - strategic
+summary: >
+  Philip Maymin 与 Allan Maymin
+  讨论如何从平均回报转向关注可实现的复利，并把客户可承受的回撤和税后目标放进资产配置过程。他们以期权价格估计上行与下行尾部风险，再用两步配置、简化的尾部相关性判断和预先制定的规则动态调整风险暴露。
+core_ideas:
+  - 平均回报没有呈现路径依赖；较大的回撤会损害长期复利并提高恢复难度。
+  - 团队把风险定义为未能达到客户目标的概率，先明确回撤预算，再决定总体风险规模。
+  - 期权价格及其变化被用作上行与下行尾部风险的前瞻性信号；风险中性测度与现实结果的差异仍是模型限制。
+  - 组合先处理股票相对现金的总体暴露，再在资产类别、地区或个股中调整风险投向。
+  - 低信噪比环境下，经济理由和足够简单的模型有助于控制过拟合，并支持压力时期的规则化执行。
+id: 89c095f2-656e-4be2-a667-b919352b0002
+source: flirting-with-models
+source_title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
+published: 2026-10
+published_sort: "20261012"
+duration: 1h5m
+url: http://www.flirtingwithmodels.com/
+status: generated
+article_path: episodes/89c095f2-656e-4be2-a667-b919352b0002/article.html
+base: /episodes/89c095f2-656e-4be2-a667-b919352b0002/
+visual_notes: false
+thumbnail: https://artwork.captivate.fm/5ee88f70-71c0-4845-b7e5-c1769753c8f9/Philip-Allan-Maymin.jpg
+generated_at: 2026-10-12T18:26:53.910Z
