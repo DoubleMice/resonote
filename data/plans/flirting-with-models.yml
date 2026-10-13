@@ -1,5 +1,5 @@
 source: flirting-with-models
-refreshed_at: 2026-10-12T18:12:37.671Z
+refreshed_at: 2026-10-13T03:09:47.753Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 1
@@ -23,6 +23,6 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-12T18:12:39.098Z
     transcript_job_id: e2ad1a2d-4750-4cae-bc3d-98a7d7f58cee_697a806f42da4bc4ae22bbd7e0c2686b,c83897b6-01d5-41f9-9026-960372101a83_0c9ece7be5ae4c0eac1e9e20a21dc8e2,646f4f08-be2e-4429-971c-99d35e3e77a4_d546095d3760429488b47c5aa6277596,9817bd6f-9b2a-47cc-81c7-9f1687130993_3c99e426d932438d95eb716fe637b48a,9cb270e6-c3ac-4448-85f7-475c7ac366f8_d91914bcae074211830183c874d7337a
+    transcript_submitted_at: 2026-10-12T18:12:39.098Z
     transcript_completed_at: 2026-10-12T18:19:45.480Z
