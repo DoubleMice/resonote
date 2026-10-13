@@ -1,0 +1,30 @@
+title: 从中国缺电到美国缺电：AI 的能源瓶颈？
+guest: 唐奕波
+guest_role: 新能源与电力研究者
+tags:
+  - ai-products
+  - hardware
+  - strategic
+  - interview
+summary: |
+  唐奕波从中国 2021 年的限电谈起，区分全年电量与高峰时刻可调用容量，解释风光装机、储能和可调度电源之间的关系。访谈继而梳理美国在制造业回流与 AI 数据中心扩张下的燃机供给瓶颈，以及欧洲接网容量和区域选址带来的下一层约束。
+core_ideas:
+  - 电力系统可能全年电量充足，却在特定时点缺少可调度容量；千瓦时与千瓦负荷不能混为一谈。
+  - 唐奕波将中国 2021 年的限电归因于新能源增长快于稳定电源，并认为后续煤电、核电和气电建设降低了同类风险。
+  - 两小时储能主要解决日内移峰；若要把光伏变成更稳定的电源，跨日储能会显著提高成本。
+  - 美国新增电力需求先受制造业投资拉动，AI 再加剧设备、部件、项目和电网接入之间的时间错配。
+  - 数据中心能否落地不仅取决于发电设备，还取决于地方监管、接网排队和现有输电设施。
+  - 欧洲目前更多呈现时段和接网层面的结构性约束，接网申请量仍需与实际建设区分开看。
+id: 6ac8d704195d838e2aef570d
+source: taixian-zhihuo
+source_title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+published: 2026-10
+published_sort: "20261013"
+duration: 1h3m
+url: https://www.xiaoyuzhoufm.com/episode/6ac8d704195d838e2aef570d?utm_source=rss
+status: generated
+article_path: episodes/6ac8d704195d838e2aef570d/article.html
+base: /episodes/6ac8d704195d838e2aef570d/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/Fk5FWXAzAOGwtEEmTDmyztJfLFRq.jpeg
+generated_at: 2026-10-13T18:32:23.067Z

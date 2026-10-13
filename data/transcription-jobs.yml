@@ -29969,3 +29969,88 @@ jobs:
     submitted_at: 2026-10-12T18:12:39.098Z
     updated_at: 2026-10-12T18:19:45.480Z
     completed_at: 2026-10-12T18:19:45.480Z
+  - key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z:chunk:0
+    parent_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    attempt_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z
+    provider: mimo
+    id: 6ac8d704195d838e2aef570d
+    source: taixian-zhihuo
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    task_id: d878a30d-3e31-4c1f-adb3-fa573b6a0794_9085d8ca17834095a43230cd2b9dc95d
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-13T18:14:40.377Z
+    updated_at: 2026-10-13T18:18:37.718Z
+    completed_at: 2026-10-13T18:18:37.718Z
+  - key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z:chunk:1
+    parent_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    attempt_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z
+    provider: mimo
+    id: 6ac8d704195d838e2aef570d
+    source: taixian-zhihuo
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    task_id: 4995158a-871e-4875-a0da-24a4a929e2fe_41a52f619caf46519c8e09e1e9d0a5c0
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-13T18:14:40.377Z
+    updated_at: 2026-10-13T18:19:59.598Z
+    completed_at: 2026-10-13T18:19:59.598Z
+  - key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z:chunk:2
+    parent_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    attempt_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z
+    provider: mimo
+    id: 6ac8d704195d838e2aef570d
+    source: taixian-zhihuo
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    task_id: d4c754a4-542c-4b56-a9ce-122e3c399fee_3e031df082504959bd76a234872c8560
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-13T18:14:40.377Z
+    updated_at: 2026-10-13T18:21:56.410Z
+    completed_at: 2026-10-13T18:21:56.410Z
+  - key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z:chunk:3
+    parent_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    attempt_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z
+    provider: mimo
+    id: 6ac8d704195d838e2aef570d
+    source: taixian-zhihuo
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    task_id: f05844d4-af98-41f9-80dd-7143320bca7b_fc2f181e8b9d4e8fa01cf1350d39b4d9
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-13T18:14:40.377Z
+    updated_at: 2026-10-13T18:24:17.217Z
+    completed_at: 2026-10-13T18:24:17.217Z
+  - key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z:chunk:4
+    parent_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    attempt_key: taixian-zhihuo:6ac8d704195d838e2aef570d:20261013:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a:mimo:2026-10-13T18:14:40.377Z
+    provider: mimo
+    id: 6ac8d704195d838e2aef570d
+    source: taixian-zhihuo
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    task_id: 226d1eaa-4a11-4c13-b2c3-f7cd84896353_355f693297594cf9861264d015cb4239
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-13T18:14:40.377Z
+    updated_at: 2026-10-13T18:24:30.126Z
+    completed_at: 2026-10-13T18:24:30.126Z

@@ -1,15 +1,31 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-13T03:09:47.774Z
+refreshed_at: 2026-10-13T18:14:39.271Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 2
-done: 2
+total_candidates: 3
+done: 3
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6ac8d704195d838e2aef570d
+    guid: 6ac8d704195d838e2aef570d
+    title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波
+    duration: 3773
+    published: Tue, 13 Oct 2026 16:00:00 GMT
+    published_sort: "20261013"
+    first_seen_at: 2026-10-13T18:14:39.271Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ac8d704195d838e2aef570d?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ac8d704195d838e2aef570d/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpVx_Q8OW47wJmDz0MNcZIBp5bbO.m4a
+    image: https://image.xyzcdn.net/Fk5FWXAzAOGwtEEmTDmyztJfLFRq.jpeg
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-13T18:14:40.377Z
+    transcript_job_id: d878a30d-3e31-4c1f-adb3-fa573b6a0794_9085d8ca17834095a43230cd2b9dc95d,4995158a-871e-4875-a0da-24a4a929e2fe_41a52f619caf46519c8e09e1e9d0a5c0,d4c754a4-542c-4b56-a9ce-122e3c399fee_3e031df082504959bd76a234872c8560,f05844d4-af98-41f9-80dd-7143320bca7b_fc2f181e8b9d4e8fa01cf1350d39b4d9,226d1eaa-4a11-4c13-b2c3-f7cd84896353_355f693297594cf9861264d015cb4239
+    transcript_completed_at: 2026-10-13T18:24:30.126Z
   - id: 6ac81150e742e36efcc0088e
     guid: 6ac81150e742e36efcc0088e
     title: 54. 搜索，推荐，聊天：AI时代广告的第三次跃迁 - Jaggie | Meta GenAI广告
