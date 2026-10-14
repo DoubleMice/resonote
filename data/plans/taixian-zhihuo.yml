@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-13T18:14:39.271Z
+refreshed_at: 2026-10-14T03:04:07.214Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -23,8 +23,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-13T18:14:40.377Z
     transcript_job_id: d878a30d-3e31-4c1f-adb3-fa573b6a0794_9085d8ca17834095a43230cd2b9dc95d,4995158a-871e-4875-a0da-24a4a929e2fe_41a52f619caf46519c8e09e1e9d0a5c0,d4c754a4-542c-4b56-a9ce-122e3c399fee_3e031df082504959bd76a234872c8560,f05844d4-af98-41f9-80dd-7143320bca7b_fc2f181e8b9d4e8fa01cf1350d39b4d9,226d1eaa-4a11-4c13-b2c3-f7cd84896353_355f693297594cf9861264d015cb4239
+    transcript_submitted_at: 2026-10-13T18:14:40.377Z
     transcript_completed_at: 2026-10-13T18:24:30.126Z
   - id: 6ac81150e742e36efcc0088e
     guid: 6ac81150e742e36efcc0088e
