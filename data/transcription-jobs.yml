@@ -30054,3 +30054,71 @@ jobs:
     submitted_at: 2026-10-13T18:14:40.377Z
     updated_at: 2026-10-13T18:24:30.126Z
     completed_at: 2026-10-13T18:24:30.126Z
+  - key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z:chunk:0
+    parent_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    attempt_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z
+    provider: mimo
+    id: 534387ec-c78f-11f1-9efe-c37a7a073351
+    source: unchained
+    title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    task_id: 4eb8292d-85c2-4253-9c69-910c0878deab_f6d8181b59324aae818472817235c973
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-14T18:12:44.033Z
+    updated_at: 2026-10-14T18:15:41.605Z
+    completed_at: 2026-10-14T18:15:41.605Z
+  - key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z:chunk:1
+    parent_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    attempt_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z
+    provider: mimo
+    id: 534387ec-c78f-11f1-9efe-c37a7a073351
+    source: unchained
+    title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    task_id: 639c7f56-a0a9-400f-9175-185c3d0f86d0_07cea630ae204b4c810ca564f1713288
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-14T18:12:44.033Z
+    updated_at: 2026-10-14T18:17:44.844Z
+    completed_at: 2026-10-14T18:17:44.844Z
+  - key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z:chunk:2
+    parent_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    attempt_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z
+    provider: mimo
+    id: 534387ec-c78f-11f1-9efe-c37a7a073351
+    source: unchained
+    title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    task_id: b81fdbdb-b1cc-48ac-a22f-124c59d39147_9317ff51041042adb97e86e9508e3ab3
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-14T18:12:44.033Z
+    updated_at: 2026-10-14T18:19:33.349Z
+    completed_at: 2026-10-14T18:19:33.349Z
+  - key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z:chunk:3
+    parent_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    attempt_key: unchained:534387ec-c78f-11f1-9efe-c37a7a073351:20261014:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3:mimo:2026-10-14T18:12:44.033Z
+    provider: mimo
+    id: 534387ec-c78f-11f1-9efe-c37a7a073351
+    source: unchained
+    title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
+    task_id: 24cb281b-6116-4442-a7bf-b240d1375bbc_3189e60ea61d405daef6d013082d5d3f
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 4
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-14T18:12:44.033Z
+    updated_at: 2026-10-14T18:21:39.009Z
+    completed_at: 2026-10-14T18:21:39.009Z
