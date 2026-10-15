@@ -1,0 +1,35 @@
+title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+guest: Lindon
+guest_role: Dyna 创始人兼 CEO
+tags:
+  - robotics
+  - startup
+  - ai-research
+  - interview
+  - founder
+  - deep-dive
+  - technical
+  - strategic
+summary: |
+  Dyna 创始人 Lindon 以洗衣房机器人为例，说明公司如何从折叠餐巾的单项任务走向取料、操作和收纳连贯完成的工作流，并用客户现场的异常反推预训练、后训练、硬件和运维的优先级。
+  他也回顾了无人零售创业的融资与产品教训，以及在研究和部署之间失去方向后，如何通过重建战略判断和调整个人心态把团队重新收敛起来。
+core_ideas:
+  - 单项任务做成不等于产品成立；机器人需要完成整个工作流，才能减少人工看护并验证商业闭环。
+  - 折叠场景允许重做且能检验软体操作、泛化和速度，但客户现场暴露了双张抓取、收纳和上料等系统问题。
+  - Dyna 用产品研究约束研发方向，借部署反馈区分预训练、后训练、硬件和运维分别需要解决的问题。
+  - Lindon 认为预训练带来多数鲁棒性，后训练用于打通具体工作流；数据组合应服务于模型的训练目标。
+  - 他将智能视为机器人能否完成任务的基础，将本体和运动控制视为速度、精度与量产质量的限制条件。
+  - 2025 年末的战略迷失使团队从任务部署转向完整工作流，也促使 Lindon 放下必须永远正确的自我要求。
+id: 6acf81f0195d838e2af1e281
+source: xiaojun
+source_title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+published: 2026-10
+published_sort: "20261015"
+duration: 2h51m
+url: https://www.xiaoyuzhoufm.com/episode/6acf81f0195d838e2af1e281?utm_source=rss
+status: generated
+article_path: episodes/6acf81f0195d838e2af1e281/article.html
+base: /episodes/6acf81f0195d838e2af1e281/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/FvGVAbzyMtir_oSGBEi6zLuOTn8J.png
+generated_at: 2026-10-15T18:57:29.777Z

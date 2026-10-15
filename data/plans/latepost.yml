@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-10-15T03:03:39.760Z
+refreshed_at: 2026-10-15T18:12:36.791Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
 done: 2
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
@@ -50,6 +50,9 @@ episodes:
 
 
       对一些人来说，Astra 的变化已经撼动了独立的具身智能公司的发展叙事和估值逻辑。至少，现在到了重新思考物理 AI 与通用 AI 边界的时刻。
+
+
+      本期节目已发布图文版，# 晚点具身季报：Astra 冲击后，通用模型会吃掉 Robotics 吗？
 
 
       本期嘉宾：
@@ -248,8 +251,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-15T18:12:38.202Z
+    transcript_error: terminated
+    transcript_completed_at: 2026-10-15T18:25:17.270Z
   - id: 47e78c2f-c36f-4894-9124-dad5dcffc972
     guid: 47e78c2f-c36f-4894-9124-dad5dcffc972
     title: "183: 与Henry的「AI季报26Q3」：Muse引爆个人助理、Astra进入机器人、OpenAI收入猛增"
@@ -286,6 +293,9 @@ episodes:
 
 
       祝各位《晚点聊》听友国庆快乐！
+
+
+      本期节目已发布图文版，晚点 AI 季报：Muse 引爆个人助理，Astra 走进机器人，OpenAI 收入猛增
 
 
       本期嘉宾：Henry Yin，MoE Capital 创始合伙人
@@ -522,6 +532,9 @@ episodes:
 
 
       图注：「松果时刻」的一位用户在给病人打点滴时发现，输液管被折成了一只蝴蝶。她用这个瞬间制作了一个小故事。
+
+
+      本期节目已发布图文版，# 对话动念引线梁琛奇：非典型字节创业者的 “娱乐至上”
 
 
       本期嘉宾：

@@ -30122,3 +30122,326 @@ jobs:
     submitted_at: 2026-10-14T18:12:44.033Z
     updated_at: 2026-10-14T18:21:39.009Z
     completed_at: 2026-10-14T18:21:39.009Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:0
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: 80b04130-025c-486c-abdc-7b95cd5ff894_ecec478e6ad04c8a8dd62a219fd592b0
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:15:00.306Z
+    completed_at: 2026-10-15T18:15:00.306Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:1
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: b1703970-d115-4ac0-b9b3-14e4dfa06be7_39c225048e4d40198a2e28a10f83e1b0
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:16:52.257Z
+    completed_at: 2026-10-15T18:16:52.257Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:2
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: 8c0d2f6c-6308-46d4-b2b3-a8f174ba5b5c_e8f7ebc27d2d4c89842fce2c1821aac2
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:18:32.849Z
+    completed_at: 2026-10-15T18:18:32.849Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:3
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: 8754cbab-0ac3-4c23-a37c-de9943b8f8b9_6d38f48e1ddb4d06aa2174c3ec4db626
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:20:44.646Z
+    completed_at: 2026-10-15T18:20:44.646Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:4
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: 23bbb367-60e8-4877-9b93-6fd0f2ca2aa4_cf452c142ec144f3ad4d72c12995d296
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:22:25.334Z
+    completed_at: 2026-10-15T18:22:25.334Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:5
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: cbabc3e7-58b8-41b4-8c10-349e2091a1d3_a19a4f1819d141669c117381469bfacb
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:23:42.458Z
+    completed_at: 2026-10-15T18:23:42.458Z
+  - key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z:chunk:6
+    parent_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    attempt_key: latepost:1ba74c4b-43e4-416c-aafe-f191fcb44898:20261015:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3:mimo:2026-10-15T18:12:38.202Z
+    provider: mimo
+    id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+    source: latepost
+    title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-15T18:12:38.202Z
+    updated_at: 2026-10-15T18:25:17.270Z
+    error: terminated
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:0
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: b20c218b-b515-4ed5-b65f-a3ef9900439d_11ed6e4ce6c74675b27e4422c0034502
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:27:57.888Z
+    completed_at: 2026-10-15T18:27:57.888Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:1
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: d796f822-2250-4257-8d09-7bb49885b5e1_1aea47a73e904b1fb3449df3a4c2f9fa
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:30:03.983Z
+    completed_at: 2026-10-15T18:30:03.983Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:2
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: bcc4d10b-9661-405b-91e1-6213559ff7aa_8ab40a8e20204f6fbb28fe0ef348b5a4
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:32:02.956Z
+    completed_at: 2026-10-15T18:32:02.956Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:3
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: ed60b0aa-4780-416c-b0a0-c6b0dfb3792b_253b72a7f6374992b1a807d869024f15
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:34:03.653Z
+    completed_at: 2026-10-15T18:34:03.653Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:4
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 468bb574-d3bd-4f6c-b384-d130772dc650_724f08acf44a42ed8aeef811a31a893a
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:35:57.085Z
+    completed_at: 2026-10-15T18:35:57.085Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:5
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 80354732-287e-42eb-9607-35466b289a45_e489620ca3014ccdbb67bf099ab69741
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:38:12.413Z
+    completed_at: 2026-10-15T18:38:12.413Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:6
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 01bfefce-1384-49d6-8fc9-6705e8c0310d_4b98187d7ddd49c1b32020899db4a9be
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:40:07.038Z
+    completed_at: 2026-10-15T18:40:07.038Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:7
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: f3d88a6b-ed86-4df5-859a-75b6f8df4bd4_ddbd458bfdd8490b91c7175c87cbf93b
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:41:53.342Z
+    completed_at: 2026-10-15T18:41:53.342Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:8
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 2441d8b5-bdf3-43ea-9734-b7ec3dc99133_8ad465cf7bbb4592bc4e93d26bc0025c
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:43:47.108Z
+    completed_at: 2026-10-15T18:43:47.108Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:9
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 65254f1d-8941-4835-ac34-458549b81641_ab3be81c32084b90aed581f87b0efd65
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:44:52.915Z
+    completed_at: 2026-10-15T18:44:52.915Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:10
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 587f906f-52b8-446d-beac-e5ee3ab86a7f_0fb58a17e7e24a9ebcfc9b897c016e89
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:46:41.162Z
+    completed_at: 2026-10-15T18:46:41.162Z
+  - key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z:chunk:11
+    parent_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    attempt_key: xiaojun:6acf81f0195d838e2af1e281:20261015:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a:mimo:2026-10-15T18:25:17.550Z
+    provider: mimo
+    id: 6acf81f0195d838e2af1e281
+    source: xiaojun
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    task_id: 7bdbfe1e-f03c-4099-80cf-ec80db2cfc55_ebfb427c482d4a0c847e9a8a6efd4559
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 12
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-15T18:25:17.550Z
+    updated_at: 2026-10-15T18:47:47.704Z
+    completed_at: 2026-10-15T18:47:47.704Z
