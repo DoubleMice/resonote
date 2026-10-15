@@ -1,15 +1,27 @@
 source: xiaojun
-refreshed_at: 2026-10-14T18:12:42.550Z
+refreshed_at: 2026-10-15T03:03:39.747Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6acf81f0195d838e2af1e281
+    guid: 6acf81f0195d838e2af1e281
+    title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
+    duration: 10278
+    published: Thu, 15 Oct 2026 00:00:00 GMT
+    published_sort: "20261015"
+    first_seen_at: 2026-10-15T03:03:39.747Z
+    url: https://www.xiaoyuzhoufm.com/episode/6acf81f0195d838e2af1e281?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6acf81f0195d838e2af1e281/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lssO9j-p6L7ZGWAwhIB14zJXksFQ.m4a
+    image: https://image.xyzcdn.net/FvGVAbzyMtir_oSGBEi6zLuOTn8J.png
+    status: needs_transcript
+    priority: 1
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
     title: 140. 对姚顺宇的4小时访谈：请允许我小疯一下！在Anthropic和Gemini训模型、技术预测、英雄主义已过去
