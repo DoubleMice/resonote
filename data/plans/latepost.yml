@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-10-15T18:12:36.791Z
+refreshed_at: 2026-10-16T03:04:05.999Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -255,8 +255,8 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-15T18:12:38.202Z
-    transcript_error: terminated
     transcript_completed_at: 2026-10-15T18:25:17.270Z
+    transcript_error: terminated
   - id: 47e78c2f-c36f-4894-9124-dad5dcffc972
     guid: 47e78c2f-c36f-4894-9124-dad5dcffc972
     title: "183: 与Henry的「AI季报26Q3」：Muse引爆个人助理、Astra进入机器人、OpenAI收入猛增"

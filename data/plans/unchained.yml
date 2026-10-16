@@ -1,15 +1,134 @@
 source: unchained
-refreshed_at: 2026-10-15T18:12:36.749Z
+refreshed_at: 2026-10-16T03:04:05.956Z
 min_duration: 3300
-min_date: "20260924"
+min_date: "20260925"
 total_candidates: 7
-done: 7
+done: 6
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    guid: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    duration: 4719
+    published: Thu, 15 Oct 2026 19:40:00 -0000
+    published_sort: "20261015"
+    first_seen_at: 2026-10-16T03:04:05.948Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    image: https://megaphone.imgix.net/podcasts/3928fcec-c8d0-11f1-981c-7b09ade47b6d/image/45f260131939298c74f431d407381957.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      A Ledger reseller's devices shipped with a hidden LTE modem inside. Taylor Monahan lays out how it passed the
+      genuine check and why panicking now costs more.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at Nexo.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      ⁠⁠⁠Our listener survey⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Genuine Ledger devices sold through the reseller CryptoBilis shipped with an LTE chip and eSIM wired inside,
+      intercepting seed phrases on their way to the screen. The losses are estimated at $70 million to $100 million over
+      roughly four months.
+
+
+      Kain Warwick, Taylor Monahan, and Austin Griffith trace how the implant passed Ledger's genuine check, why
+      panicked users are now losing money to phishing and fake apps, and whether an iPhone or a DIY build makes a better
+      hardware wallet.
+
+
+      They also cover the recording device planted in OpenAI's office, the decade-old XRP infinite mint bug that earned
+      a $250K bounty, and why Taylor finds Google's Chrome payouts and $40K compute bills the more interesting math.
+
+
+      Then StarkNet's talk of becoming an L1 turns into a debate over whether Ethereum will need L2s at all. Kain's
+      answer: the most Ethereum-equivalent chain is Ethereum itself.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎬 00:00 Intro&nbsp;
+
+
+      🔐 01:32 Why a Ledger reseller became the entry point for a supply chain attack
+
+
+      📡 09:15 Taylor on how the CryptoBilis attack moved past fake devices and scratchers
+
+
+      🧯 19:01 Why Taylor says panicked Ledger owners now face the bigger risk
+
+
+      💸 20:17 Why Austin sees DIY hardware wallets as the future
+
+
+      🕵️ 30:34 How Taylor “demixed” Zcash by following the gas trail
+
+
+      📣 34:52 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt&nbsp;
+
+
+      🎙️ 35:37 What the bug planted in OpenAI's office says about AI espionage
+
+
+      🛠️ 41:42 Austin's homemade Alexa, blood wallet, and AI-run electronics bench
+
+
+      🪙 48:04 Why a decade-old XRP infinite mint bug points to AI-assisted hunting
+
+
+      🧮 51:04 Is $250K enough? Taylor compares the XRP bounty to Google's Chrome payout
+
+
+      ⛓️ 01:00:30 StarkNet wants to become an L1: why Kain thinks that's where L2s end up
+
+
+      🏚️ 01:11:03 How MegaETH shows why L2 ecosystems struggle to keep their apps
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 534387ec-c78f-11f1-9efe-c37a7a073351
     guid: 534387ec-c78f-11f1-9efe-c37a7a073351
     title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
@@ -662,112 +781,3 @@ episodes:
     transcript_job_id: 7ee15897-16c2-4dc1-80ed-c5d72c7575ad_ff2ae005e3f94874a103adfe66bd278f,1b3516ba-2120-4599-b531-8fc5999358e3_695f608c761d4d5a893542f56b8b4cf8,6f5561f0-9d37-4b09-a87a-89b06de83443_ccece5ffbffa4e99a0cdf52330b7a7ba,e91720ca-a8a2-4ae0-b9e8-018ea117555a_e4fb539eaf564bea99d8de1cd6a2d9d4,347e40c7-d975-4535-9360-afc699e7f0de_5b3b2c2d2028438abcf7fcbaf505f0e4
     transcript_submitted_at: 2026-09-30T18:13:29.153Z
     transcript_completed_at: 2026-09-30T18:18:19.903Z
-  - id: 438855d6-b85c-11f1-b582-d7bc5f83182a
-    guid: 438855d6-b85c-11f1-b582-d7bc5f83182a
-    title: "Why Kalshi's Timeline Fight Put Its ETH Perp Volume Under a Microscope: Uneasy Money"
-    duration: 4197
-    published: Thu, 24 Sep 2026 21:09:00 -0000
-    published_sort: "20260924"
-    first_seen_at: 2026-09-25T03:04:24.443Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3520472900.mp3
-    image: https://megaphone.imgix.net/podcasts/438855d6-b85c-11f1-b582-d7bc5f83182a/image/fa453b03f2441a9bc9be07be30d4695a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Kalshi's ETH perp did half a billion in volume on $3 million in open interest. Kain and Taylor lay out why that
-      isn't necessarily wash trading. Plus, Austin joins as co-host.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
-      buying - swap it at ⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who takes
-      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
-      18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      Kalshi's ETH perpetual futures market logged half a billion dollars in 24-hour volume on just $3 million in open
-      interest, and after its crypto hires picked a fight on the timeline, an analyst pulled the public data and alleged
-      wash trading.
-
-
-      Kain Warwick and Taylor Monahan argue that paid market makers are a likelier explanation than a back room of bots.
-      Austin Griffith, in his first episode as a regular co-host, asks whether all that liquidity actually helps a
-      prediction market find the truth.
-
-
-      The hosts also cover Treasury Secretary Scott Bessent's warning that AI labs answer for their agents, Taylor's
-      Tornado Cash parallel, Anthropic's new wet lab, Amazon blocking Meta's Muse assistant, and Jev, a classifier model
-      that decides in 200 milliseconds.
-
-
-      Plus, Zcash around $1,500 and why NEAR suddenly has people paying attention. As Kain puts it, a new model is
-      dropping nearly every day, and keeping up now takes agents of its own.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Timestamps
-
-
-      🎲 02:32 How Kalshi's crypto hires started a timeline war over its perp volume
-
-
-      🤝 07:28 Why Kain suspects paid market makers, not wash trading, are behind the volume
-
-
-      🔎 09:59 Austin asks whether any of this liquidity helps markets find the truth
-
-
-      📚 21:41 What the price of Google teaches about liquidity and trusting a market
-
-
-      💧 28:14 1inch Aqua: Back multiple liquidity positions with one wallet balance at
-      http://unchainedcrypto.com/go/1inch-yt
-
-
-      🏛️ 30:59 Scott Bessent told AI labs they're responsible for what their agents do
-
-
-      ⚖️ 34:20 Taylor on the Tornado Cash parallel: which humans answer for autonomous code?
-
-
-      🛒 42:48 Why Amazon blocked Meta's Muse assistant from shopping on its site
-
-
-      ⚡ 47:29 Jev: the model that makes decisions in 200 milliseconds without talking
-
-
-      🔒 1:00:33 Zcash around $1,500 and why NEAR has people paying attention again
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 42ec8e09-a784-496a-bdbf-d42b703a0ce3_ea1924114ef8459885dd54f23ba850d6,fd449429-e813-4c51-9f80-316f4fc8d598_6f52d5513c344ae0b8267674a03c53a3,22d24a55-5216-4ae5-a75c-76cb6bb0a339_c8d2f9f5e81542f1920bb4fae5c37d7c,e9def961-559e-41a5-b228-394e31486dea_f8d04f5910414ba9b2e03de97687d6e6,221ed407-f104-4991-ad58-76454986b1ac_0ebe751c8999476d98ca8609a44c34b8
-    transcript_submitted_at: 2026-09-25T18:12:47.231Z
-    transcript_completed_at: 2026-09-25T18:18:58.265Z

@@ -1,5 +1,5 @@
 source: xiaojun
-refreshed_at: 2026-10-15T18:12:36.774Z
+refreshed_at: 2026-10-16T03:04:05.982Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
@@ -23,8 +23,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-15T18:25:17.550Z
     transcript_job_id: b20c218b-b515-4ed5-b65f-a3ef9900439d_11ed6e4ce6c74675b27e4422c0034502,d796f822-2250-4257-8d09-7bb49885b5e1_1aea47a73e904b1fb3449df3a4c2f9fa,bcc4d10b-9661-405b-91e1-6213559ff7aa_8ab40a8e20204f6fbb28fe0ef348b5a4,ed60b0aa-4780-416c-b0a0-c6b0dfb3792b_253b72a7f6374992b1a807d869024f15,468bb574-d3bd-4f6c-b384-d130772dc650_724f08acf44a42ed8aeef811a31a893a,80354732-287e-42eb-9607-35466b289a45_e489620ca3014ccdbb67bf099ab69741,01bfefce-1384-49d6-8fc9-6705e8c0310d_4b98187d7ddd49c1b32020899db4a9be,f3d88a6b-ed86-4df5-859a-75b6f8df4bd4_ddbd458bfdd8490b91c7175c87cbf93b,2441d8b5-bdf3-43ea-9734-b7ec3dc99133_8ad465cf7bbb4592bc4e93d26bc0025c,65254f1d-8941-4835-ac34-458549b81641_ab3be81c32084b90aed581f87b0efd65,587f906f-52b8-446d-beac-e5ee3ab86a7f_0fb58a17e7e24a9ebcfc9b897c016e89,7bdbfe1e-f03c-4099-80cf-ec80db2cfc55_ebfb427c482d4a0c847e9a8a6efd4559
+    transcript_submitted_at: 2026-10-15T18:25:17.550Z
     transcript_completed_at: 2026-10-15T18:47:47.704Z
   - id: 6a00aa051b7bd50295dfe41d
     guid: 6a00aa051b7bd50295dfe41d
