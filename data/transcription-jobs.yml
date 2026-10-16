@@ -30445,3 +30445,105 @@ jobs:
     submitted_at: 2026-10-15T18:25:17.550Z
     updated_at: 2026-10-15T18:47:47.704Z
     completed_at: 2026-10-15T18:47:47.704Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:0
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: b8d38762-208c-473c-afdb-6628a811ffc5_994cd8e704904504abf9ca238cb1cdeb
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:14:31.248Z
+    completed_at: 2026-10-16T18:14:31.248Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:1
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: 771ea1cb-dd25-48c3-a8f9-ea17bcf5aa32_ea7a8ecc93f646f68fe7b6de92a08239
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:16:34.567Z
+    completed_at: 2026-10-16T18:16:34.567Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:2
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: 048e7a0e-0dbd-4f94-ba78-b0df5f5314e1_43cd361836a6405087c7c738416dbf6a
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:20:51.772Z
+    completed_at: 2026-10-16T18:20:51.772Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:3
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: fc46c494-d49b-4ab7-b2e0-ec6b3a76dc7d_b6cd7be85c1f46049ce55786b4461172
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:23:45.594Z
+    completed_at: 2026-10-16T18:23:45.594Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:4
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: ede6a778-d9b4-429d-bf17-dd7bd1f07ba2_22b8290e4db54e6d97675967ef0e921e
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:25:25.390Z
+    completed_at: 2026-10-16T18:25:25.390Z
+  - key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z:chunk:5
+    parent_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    attempt_key: unchained:3928fcec-c8d0-11f1-981c-7b09ade47b6d:20261015:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3:mimo:2026-10-16T18:12:02.635Z
+    provider: mimo
+    id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+    source: unchained
+    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+    task_id: 85357866-e1a6-4398-b469-5fe9f6c7e54c_08246b3ecc6e4d848e46ea4b5adb211d
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-16T18:12:02.635Z
+    updated_at: 2026-10-16T18:26:00.188Z
+    completed_at: 2026-10-16T18:26:00.188Z

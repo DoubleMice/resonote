@@ -1,0 +1,460 @@
+0.00-5.58 | SPEAKER_00: And you know what? If you're moving fast, you're trying to launder this money, you've got a hundred million dollars to get through, okay?
+5.58-8.30 | SPEAKER_01: Jay's guide to laundering money, part one.
+8.30-9.60 | SPEAKER_00: Let me tell you.
+11.49-14.08 | SPEAKER_00: The gospel team up every time, kids.
+18.40-27.58 | SPEAKER_01: Hey everyone, I'm Dan Wahr, and welcome to UnEasy Money, because what happens on chain never stays on chain. Before we begin, here's a word from the sponsors that make this show possible.
+28.03-54.46 | SPEAKER_02: This episode is brought to you by Nexo, the premier digital assets wealth platform. Earn daily interest on your crypto or borrow funds, all through one platform trusted by more than ten million clients. Find out more at nexo.com. Geo-restrictions, eligibility, and terms apply. Not listening to Bits and Bips yet? It's our weekly crypto and macro market show with Ram Alawalia, Austin Campbell, and Chris Perkins. Search Bits and Bips and subscribe.
+59.01-87.27 | SPEAKER_01: All right, hey guys, we are back. I'm here with my co-host, Taylor Lonan, security expert, and Austin Griffith, builder enablement at the Ethereum Foundation. Hey guys, it's been a fun week. I just got back from Token in Singapore, which was good. Felt like early bullish vibes. Like, bad things were still happening, but like people were partying. So.
+87.27-101.21 | SPEAKER_01: That little like dip as we come out of the bottom. Hopefully, we'll see. All right, our first story this week is Ledger, man, Ledger, like Ledger, Ledger, Ledger. I get that.
+101.53-112.26 | SPEAKER_01: Look, I've been a Trezor maxi for a long time, and so, you know, I feel kind of contractually obligated to break these guys over the coals. But like, you have to feel for them, right? Like.
+112.83-135.22 | SPEAKER_01: It's a little bit like running a DeFi protocol, you know, everything that you do is scrutinized. You have people that are attacking you constantly. Every possible vector or, you know, mistake that you make is like massively exploited. And some of those mistakes are unforced errors for sure, right? Like, you know.
+135.22-135.98 | SPEAKER_00: Hundred percent.
+135.98-138.84 | SPEAKER_01: Like their company, right? Um, they...
+138.84-141.16 | SPEAKER_00: And they're French. They're so.
+141.16-155.55 | SPEAKER_01: And, uh, like, I don't know, like, I mean, you know, uh, so, so I think like the, the, um, yeah, so the background is like Ledger has probably been.
+156.13-159.87 | SPEAKER_01: One of the most like problematic attacked.
+160.29-168.29 | SPEAKER_01: Entities in the space, right? And part of that is because, you know, your job as a hardware wallet, right, is to secure a lot of money.
+168.70-191.31 | SPEAKER_01: Like that's kind of the purpose, right? You don't need a hardware wallet for your fifty-dollar shit slinging account, right? You do need it if you're like the signer on the Uniswap fucking multisig or whatever the hell you might be up to, right? Or like the Ethereum Foundation's, you know, ETH trove, right? Like you want that shit to be...
+191.31-221.28 | SPEAKER_01: Secured by hardware wallet. Ideally, you want the hardware wallet to be connected to a machine that's air-gapped. Ideally, you want to be in like a clean room with a fucking Faraday cage or whatever the hell that you're doing. And yet here we are, right? So this week's Ledger debacle, I guess, was that one of their resellers. And like, correct me if I'm wrong, but like, there was a period of time where you didn't buy hardware wallets from resellers.
+221.91-223.90 | SPEAKER_01: Yes, it just wasn't done right, like.
+223.90-233.92 | SPEAKER_00: But also, if you lived anywhere outside of basically the U.S. or EU, you couldn't buy a hardware wallet either, right? Like, where did you get yours from, Kain?
+233.92-241.12 | SPEAKER_01: Like fucking fly to the country. Yeah, you're securing millions of dollars, man. It's like a two-dollar...
+241.12-242.46 | SPEAKER_00: Ledger has to.
+242.91-253.31 | SPEAKER_00: It's a business, bro. They have to sell their shit. And this is, I mean, it's painful. It is painful. I think one of the reasons why Ledger keeps getting...
+254.05-263.55 | SPEAKER_00: There keep being situations with Ledger, but also with Trezor. Like none of this is, you know, is unique to just them. Partially, it's because they...
+264.03-268.46 | SPEAKER_00: have built a successful business that is still alive after nearly a decade.
+268.56-272.14 | SPEAKER_00: For both Ledger and Trezor, and I have mad respect for both of them for...
+272.14-274.37 | SPEAKER_01: And hardware is fucking hard, man. Like, you know,
+274.37-281.41 | SPEAKER_00: So hard. I tell people, don't build a freaking software wallet. These motherfuckers out here.
+281.76-306.66 | SPEAKER_01: We're building a hardware wallet. And, you know, the funny thing is for me, though, as well, is like, you know, hardware is the hardest thing you can do, right? Coder can't even really help you that much at this point, right? Like, they can do software stuff. So, you know, the degree of difficulty of what these guys are doing is very high. And one consequence we understand deeply now, I think, in this space, but in startups generally, of doing hard things is...
+307.14-310.53 | SPEAKER_01: You have to find some easy things to fuck up.
+310.94-325.57 | SPEAKER_01: Right, like when you do hard things, you will inevitably focus on the things that are hard and not focus on the things that are easy, like vetting the fucking people that are selling your hardware. Imagine you spend your whole life like...
+325.57-341.02 | SPEAKER_01: You think about all of the effort and pain and suffering that went in, and then you just like send a pile of these fucking things to some like crackhead who starts opening them up and putting fucking modems in, right? So okay, so the story is, right? Oh yeah.
+341.02-358.17 | SPEAKER_00: Let's do the full story because it's a wild tale. This is not like we've normally seen. We've seen their mailing list get breached, which, by the way, everyone's mailing list gets breached and then emails are sent out. But we've also seen, for I think all the hardware, right, the physical letters.
+359.33-364.10 | SPEAKER_00: So it's not just like a phishing email. It's a phishing letter, which hits different.
+364.50-378.27 | SPEAKER_00: And then we've also seen, historically we've seen, you have to buy them off of a sketchy shop, though. Like a really, like Amazon, you know, fakeledger.com or whatever. But usually...
+378.82-400.62 | SPEAKER_00: There's been these ones where basically, like, they'll either—it's a sketchy seller, super sketchy marketplace seller situation—or it's like a return to a place that doesn't have good diligence. Originally, the first one I ever saw back in the day was, I thought it was the most creative shit. They didn't get that many victims, though, but I thought it was so creative. They would open up the box really carefully.
+400.62-413.86 | SPEAKER_00: And they'd put a little, they'd pre-initialize the device with the twenty-four-word phrase, and then they would print that twenty-four-word phrase on a piece of paper. And so if you weren't super familiar with the flow, people would think it's Apple stuff.
+413.86-415.30 | SPEAKER_01: How convenient.
+415.30-425.66 | SPEAKER_00: And then the second, yeah, the second iteration of this was they did it on this fancy card, and the card was a scratcher. So you scratched off your twenty-four words.
+426.59-432.54 | SPEAKER_03: They already knew about it and had painted it, and they just put scratchy stuff on there for you. Fucking genius. So you felt like you were, yeah.
+432.93-434.79 | SPEAKER_03: Give them some credit. Some good human psychology, yeah.
+434.86-437.70 | SPEAKER_00: I mean, I thought that was like the most creative shit.
+438.37-442.49 | SPEAKER_00: I still think it is, actually. Like, the scratcher, like, are you crazy?
+442.49-448.00 | SPEAKER_01: People love scratchers. Like, how would someone know what's underneath it? How could they know?
+448.90-461.15 | SPEAKER_00: So those were like the ones, but again, these were like, they were like one-offs. They were not mass operations, and the solution was like, don't buy it from a random person on Amazon.
+461.17-463.01 | SPEAKER_00: Literally. Like, you know, the box.
+463.01-470.23 | SPEAKER_01: Like, go to a conference. Like, dude, go to a conference, and they will get, they will give you them for free.
+470.36-491.16 | SPEAKER_01: Yeah, like literally, just go to a conference. They'll give them to you for free. I remember when, when we, when we launched, I bought Trezors for, yeah, everyone in the team, all of our, all of our investors, and I got like fifty people into a room together, right? And we went through the whole setup process.
+492.16-493.89 | SPEAKER_00: I did the same thing with my team.
+493.89-505.09 | SPEAKER_01: Yeah, like you got it, like, and it was so funny, man, because like we had a range of people in that room, as you can imagine, right? And one guy who was my friend, the only guy, the only fucking guy, forgets his password.
+505.79-532.43 | SPEAKER_01: So we, we put, we put like the twenty-fifth seed word on there as well. Yeah. On the Trezor. You can add, you can add, you know, I think you can do it with Ledgers, but back then you could, you could do it with Trezors. So I said, like, it's not sufficient that you write this down, these twenty-four words. You write the twenty-four words, you put them in a safe or something. You need one other word. That extra word. Yeah. This motherfucker forgot it like three years later. Anyway, that's a different story. So.
+532.43-533.65 | SPEAKER_00: Been there, done that.
+533.65-538.11 | SPEAKER_01: Yeah, so, so, so back to the major.
+538.11-543.39 | SPEAKER_00: Yeah. So basically, major evolution from those types of attacks.
+544.16-553.09 | SPEAKER_00: To what's happening today. And the biggest, the biggest evolution, well, it's twofold. So one, it seems like they have.
+553.76-557.95 | SPEAKER_00: Gained access to a distribution channel, a legitimate one, or a partially legitimate one.
+557.95-563.86 | SPEAKER_01: Dude, man, it's fucking crazy. Like the changing of vectors here is genius.
+563.86-589.82 | SPEAKER_00: Insane. So that's evolution number one. And that's probably why this, we're talking, by the way, we're talking about somewhere between like seventy million and one hundred million dollars stolen for what's basically like a three, four month operation, right? All of the Ledgers were, seeing all the reports that we have seem to be bought in June, July, August, September, October, very beginning of October, right? So we're talking about four months, I guess, five months maybe.
+590.46-592.70 | SPEAKER_00: Nearly a hundred million dollars stolen.
+594.24-622.98 | SPEAKER_00: So yeah, distribution, like they basically got these malicious devices onto a distribution channel. They got into the distribution channel, into the supply chain, probably something with this CryptoBillis company, which we'll dive into in a minute. Then the other evolution though, which is like, this is what's wild to me, because we've seen the letters, we've seen the scratchers, right? We've seen fake devices. And what this means is like, we've seen where Trezor has these as well.
+623.42-632.00 | SPEAKER_00: The whole, the fucking device is fake. It's a glorified USB. Plug it in your computer, and then your computer's like, load up your D drive, the Ledger D drive.
+632.45-647.15 | SPEAKER_00: And then you click it, and it's like a little fake Ledger Live or like Trezor application. And then the application is literally just a malicious app, right? It's just malware. It's just like, it's almost the same as phishing. It just, the delivery mechanism is like this fancy.
+647.15-648.56 | SPEAKER_01: Hardware wallet. Yeah.
+648.56-669.31 | SPEAKER_00: But they also like, they feel cheap. Like the devices feel cheap. They feel different. Again, you have to buy it off a sketchy seller. Like it's, yeah. And then again, these are not real devices. So it's a USB. You plug it in, and it looks like a USB. It has a fake app. And then you, whatever. You have malware on your computer, or it steals your seed, or whatever. Okay, these ones.
+670.11-672.45 | SPEAKER_00: First off, it's in a legit sort of like.
+673.02-685.06 | SPEAKER_00: In the distribution channel, that's legit. It's not Ledger, literally, but it's these authorized resellers. CryptoBillis has been working with Ledger and other people in the space since like 2021.
+685.47-694.97 | SPEAKER_00: They go to conferences. They're known. Like, it's wild. And then the other thing is that it's a genuine Ledger that actually fucking works.
+694.97-696.66 | SPEAKER_03: And inside.
+697.95-705.48 | SPEAKER_00: By the way, I wish I had my Ledger in front of me so I could like show you how tiny these things are. Like inside the little tiny ledger. It's crazy.
+707.23-712.74 | SPEAKER_00: They managed to put an LTE chip, a little CPU.
+713.28-719.89 | SPEAKER_00: An eSIM, so that's like where your data plan is, right? It used to be you had like a SIM card.
+719.94-729.22 | SPEAKER_00: Now it's like, it's this little eSIM chip, and they've connected that to the legitimate Ledger board. And basically what happens is that.
+729.92-734.72 | SPEAKER_00: They're intercepting the data as it's.
+735.33-755.93 | SPEAKER_00: Shown as it goes from the secure Ledger element stuff to the screen, they're sort of intercepting it and sending it to their own little CPU module, and then that CPU basically will, we assume, send the seed phrase to their C2 server somewhere via these LTE data plans.
+755.93-764.76 | SPEAKER_03: You need a Faraday cage. You said Faraday cage earlier. This is the only way to say that would be otherwise taking it apart and looking would be to be in a Faraday cage. Or like.
+764.76-768.63 | SPEAKER_01: Underground, deep underground, where there's no signal or whatever, right?
+768.63-780.36 | SPEAKER_00: If you remember when I think when Zcash was doing their, they had to do like a big trusted setup or whatever to kick it off or whatever, right? You remember the guys were like out in the middle of the.
+780.36-787.27 | SPEAKER_03: Like drive around with like laptops and and CPUs and like smashing them once they had it done. Yeah.
+787.27-797.82 | SPEAKER_00: Yes. Okay. So this is why, because they're like, okay, someone you could have a man in the middle in my network. So they got rid of a network. So any network could be, right? Like.
+797.82-798.73 | SPEAKER_01: Yeah. Yeah.
+798.73-807.04 | SPEAKER_00: To go out in the middle of the desert where there's no connectivity, but also like smash a Wi-Fi card out. Like, you know, they did all of these separate things. This is like.
+808.48-815.39 | SPEAKER_00: It's this level of like paranoia for this level of attack, right? Yeah.
+815.39-817.86 | SPEAKER_01: They should have encrypted the screen.
+819.07-826.48 | SPEAKER_01: They should have given you some like encrypted glasses that like decrypted or something to send them through to different packages.
+826.48-836.26 | SPEAKER_00: My dad has done hardware his whole life. So I like grew up in factories and stuff. He does a lot more in the U.S. than in China, but I'm familiar with China supply chains, Mexico supply chains.
+837.02-846.40 | SPEAKER_00: I asked him, and I asked some of his friends, and they're like, "Why would you the screen? You want the screen encrypted? Like the display encrypted? Like, what is that?"
+846.88-848.93 | SPEAKER_00: I was like, okay, so.
+849.34-862.46 | SPEAKER_00: You do not, you have, there are encrypted channels and there's a lot of different encrypted components and stuff, but the screen is deliberately made to show the end user information.
+863.20-871.46 | SPEAKER_01: No, like clankers wouldn't care. Just fucking point it at a clanker and let it look at the screen. Just Joe random.
+872.53-873.58 | SPEAKER_00: By the way, my dad.
+873.58-882.71 | SPEAKER_01: He always figures it out. Like, like a weird cipher and like just hold, you go hold it up in front of the clanker for like eight hours, and it eventually like decrypts the cipher and goes, "Oh, I know what it is." Yeah.
+882.71-897.45 | SPEAKER_00: My dad and his friends have like a lot of respect for me over the years, although they've like lost it a few times as well, obviously. But like generally they have. But this question was the one where they're like, "Oh shit, she's lost it." She's retarded.
+897.53-900.05 | SPEAKER_03: Where is the screen encryption even coming from?
+
+0.00-6.48 | SPEAKER_00: It doesn't even—I'm kind of joking. Like, just making sure. I was like, I'm not following this. But here.
+6.48-23.01 | SPEAKER_01: This is the thing is that the way that they get the ledger, so ledger and trezor have a thing called a genuine check, meaning that if the CPU is tampered with, if the secure element is tampered with, if any of these components are tampered with, if the firmware is tampered with, right, when you plug the device into your computer.
+23.94-27.39 | SPEAKER_01: It's gonna fail the genuine check. Anything is like, you know.
+27.96-41.39 | SPEAKER_01: Yeah, and by the way, the way that the previous like malicious ledger devices got around this was that they weren't even a ledger; they were just a USB. That's how they got around the genuine track was like we're not even in the same world, right? Yeah.
+41.39-46.37 | SPEAKER_00: Yeah. Okay. So this is completely different. Like it's just there's nothing involved in this.
+46.37-54.42 | SPEAKER_01: Yeah, like if I hit your ledger live up, doesn't it tell you that like your random USB stick isn't genuine? Like it's just not relevant at all, right?
+54.72-84.31 | SPEAKER_01: And so, but now what's happening is that there it is a genuine ledger. It's a real ledger, and it passes the genuine test or the genuine check because it doesn't actually tamper with anything. So it doesn't it doesn't replace the CPU. It doesn't fuck with the CPU. It doesn't try to replace the firmware. Like it just completely bypasses all that. And my understanding, this might be like oversimplified, but my understanding is that because data has to go from one place to the other.
+84.31-93.45 | SPEAKER_00: They have to show you the fucking words on the screen. Words, right? Like at some point, they need to show you a thing. It makes that because you generate.
+93.45-95.90 | SPEAKER_01: You generate the seed securely.
+96.70-99.16 | SPEAKER_01: But in order to have the backup, you have to, yeah.
+99.16-117.13 | SPEAKER_00: And so basically, what it's doing is, so if the person, the words, right, like they copy the crypto. That was like I was sort of semi-joking, right? But like, if you encrypt that part, like I don't even know. Like, what are you giving the person? Like the complexity just gets crazy, right? Like at some point, you wouldn't have to.
+117.13-119.68 | SPEAKER_01: You wouldn't have a. We'd have to get rid of the.
+120.22-124.77 | SPEAKER_01: You basically couldn't have a backup, or like your backup would have to be.
+125.66-128.70 | SPEAKER_01: Like some, I don't know, something, right?
+128.70-129.66 | SPEAKER_00: Yeah.
+129.66-130.54 | SPEAKER_01: Like, yeah.
+130.54-147.98 | SPEAKER_00: Genuinely, like the whole thing can't be secured. Like there has to be some vector at some point where you have plain text that you show to the user, or the user has to be able to read the plain text to know what the seed is. Like.
+148.25-157.24 | SPEAKER_00: There, there, there will always be some door if a user is involved, so that they can physically write down the seed phrase, right? Like that's right, and have.
+157.24-158.42 | SPEAKER_01: Have that backup.
+158.60-162.53 | SPEAKER_01: Otherwise, you you're gonna end up relying on servers and.
+163.55-171.42 | SPEAKER_00: I mean, you like, you could just to be clear, right? Like, you shouldn't do this, but you absolutely can not write the seed phrase down.
+171.42-173.22 | SPEAKER_01: Oh yeah, people do this all the time.
+173.22-201.67 | SPEAKER_00: Yeah, you can just like put the pin in. You just put the pin in and not care, right? Now, if you did that and the ledger and you were like, "Eh, I don't believe that you don't have an LTE modem inside of your ledger. Do not show me." If you put it in that mode, like, don't show me the seed phrase mode. Like, I'm gonna protect this device with my life or whatever, right? Then yeah, that'll be fine. Then you wouldn't need to show the seed phrase, and this would not be an attack vector.
+201.67-212.52 | SPEAKER_01: But do you know how much? I'll say this: the amount of loss from people not correctly backing up their seed phrases or not backing them up at all is like probably in the billions of dollars at this point.
+212.52-224.43 | SPEAKER_00: It's like Justin Drake being, move all your crypto now. Like, like, like, worse things will happen if people stop moving their crypto around randomly. So.
+224.43-249.79 | SPEAKER_01: By the way, I do want to just say that if you're, if you have a ledger, like, please don't freak out, don't panic. I really want to emphasize this because all week we've been doing the ledger incident, like, dear pros. We're working with Ledger, obviously. Trezor's actually been really helpful as well. Like, their guys are so good. Like, you know, everyone has to compete and like, hate each other or whatever. But like, Trezor and Ledger are, are, you know.
+250.53-257.07 | SPEAKER_01: They're they're all just like fantastic people who have survived this long and are super fucking serious about this stuff.
+257.17-278.71 | SPEAKER_01: I will say that in the past couple days, though, the reports that we've been dealing with are not actually ledger drains due to rogue LTE modems in the devices. It's people who panicked and then did something terrifically stupid, and so we're seeing yeah, like you guys like the Google ads. If you try and install Ledger Live, there's like a chance you'll click a bad ad.
+278.71-297.54 | SPEAKER_01: There's also just like fake applications. There's also phishing sites that are trying to scare you. There's emails trying to scare you, and then there's also people that will call you on the phone and try to scare you. And all of these are going to create loss in addition to like the original thing, just from people panicking. So.
+298.14-300.06 | SPEAKER_02: Don't panic. There's so much asymmetric.
+301.22-324.77 | SPEAKER_02: Loss here. Like we we went back to talking about a hardware wallet costing you a hundred dollars, but then you store twenty million dollars on it. Like you're saying, travel somewhere and get the thing from a certain place. You understand the business. They need to run a business. They need to have distribution worldwide. They need to have the hardware cost as little as possible, so they can make a margin on top of it.
+324.77-341.53 | SPEAKER_02: But in the in the long run, it's like why are we paying a hundred dollars for a device that we store twenty million on? Like, isn't that worth maybe like five grand? And then like, if the device is worth five grand, what can we do here with a five grand margin in terms of like, you know?
+341.53-347.54 | SPEAKER_00: Fly to the person's house and set it up for them. Like literally, like that would be a better solution, right? Like.
+347.54-376.13 | SPEAKER_02: But then if someone shows up in Ledger gear, do I know them? Literally, there's so many. Just yeah. I think that just the fact that you're making a hardware wallet makes you an asymmetric target. Also, so I'm I'm I'm gonna push back on the people don't want to fuck around with hardware because I think that with AI we're gonna have a a whole blooming a whole renaissance of like people doing hardware people running Linux things that normies didn't do before. You can now just ask AI about, and you can give AI
+376.13-398.96 | SPEAKER_02: observability into your hardware, and it'll be like, oh, that wire is wrong or whatever. Yeah. So I do think that we will have a resurgence of hardware and DIY Linux, and I think that DIY hardware wallets are the next step here, where you're just ordering parts off of Amazon that, dude, like an iPhone don't have Ledger names. Yeah. Best hardware wallet is an iPhone, or like a Chromebook.
+398.96-403.52 | SPEAKER_01: We're getting pretty close. People talk shit about the iPhone, but like we're getting pretty dang close.
+404.26-414.08 | SPEAKER_01: To having that be like an actual really secure thing that you can actually use, right? Because this is the other thing that people forget is like the reason that we recommend hardware wallets so much is that.
+414.66-437.31 | SPEAKER_01: It narrows the the points of like compromise, the points of attack. It really does narrow them a lot. Like you can get malware on your computer, and you're gonna be basically safe with a hardware wallet, right? That's like that just cuts out a huge amount of loss. But you can also like use it. You can use your hardware wallet if you really want like the most secure thing. Just go back to paper, but realize that you're not gonna be.
+437.57-440.63 | SPEAKER_00: You can't do transactions, right? You're not going to be sending anything with paper.
+441.29-461.01 | SPEAKER_00: Yeah, I mean, you know, the thing about an iPhone, right? Like talking about like spend five thousand dollars, right? Like the newest, cheapest iPhone is like seven hundred bucks, right? So it's like three times the cheapest Ledger or whatever, right? There is zero chance today, right? That if you buy an iPhone, it's going to be compromised.
+461.01-475.67 | SPEAKER_00: In the supply chain, because it's just security through obscurity. You're like one person out of a billion buying an iPhone. You go into an Apple Store. Like there's no way that someone has set up a fake Apple Store that they bought on eBay, and you know what.
+475.67-478.74 | SPEAKER_02: Like Tim Apple just allowed them.
+478.98-482.85 | SPEAKER_00: You know, now if you go into a random Apple reseller.
+483.39-512.29 | SPEAKER_00: And that Apple reseller has become known for selling Apple devices as hardware. Well, then obviously the asymmetry flips, right? But if you go into like your town's Apple Store, I don't know where the fuck you live, right? But like you go, there's an Apple Store near you. There just is. It's like an official Apple Store, and you buy a fucking hardware device, a phone, and you go and tell your clanker, "Hey, help me to set this up as a hardware wallet."
+512.29-533.47 | SPEAKER_00: It can do that for you, and it will be more secure. It might not be like quite as ergonomic because you might not have old software, but like it probably is. It probably will be fine, right? You just never connect it to the internet. You only connect it via USB, whatever. There's just a bunch of different things you can do. Yeah, I mean, the proximal cause of all of this stuff is crypto is too valuable.
+533.73-535.36 | SPEAKER_01: It's exactly what was.
+535.36-552.00 | SPEAKER_00: Like Bitcoin should not be worth fucking eighty thousand dollars if it wasn't for that. If Bitcoin was worth eight dollars, none of this would be a problem. Okay, this is that's the fundamental issue here: is that crypto has just simply gotten too valuable.
+552.38-566.78 | SPEAKER_01: Yeah, and if you spend all this energy and resources and time to do this attack on a thing where literally one hundred percent of the user base, right, one hundred percent of the people that buy a Ledger have serious money to protect.
+567.39-568.46 | SPEAKER_01: Right.
+568.65-574.56 | SPEAKER_01: Suddenly, the supply chain becomes worthwhile. Whereas, if you look at the Apple supply chain, okay.
+575.33-580.29 | SPEAKER_01: The vast majority of people buying iPhones don't have anything that you want.
+580.93-606.20 | SPEAKER_01: Quite the opposite, right? However, if there's a custom iPhone that's made for like government officials, you're going to see that be targeted for espionage instantly, right? And so it's yeah, it's a whole, it's a whole game. I I don't know. I still, by the way, I'm still using my Ledgers. I'm still using my Trezors. I'm going to continue to do so. I'm going to be way more careful about where I buy them from. I'm going to be way more aware.
+606.20-616.38 | SPEAKER_01: I'm gonna keep my strategy for the longest time because I live this life of like terror all the time. Is never have all of my eggs in one basket, so I've.
+616.38-626.76 | SPEAKER_02: And it makes you like the multisig also. Like having a multisig where the Ledger or the Trezor is just one signer and it can be replaced if you lose it or it leaks. So yeah, at this point, like.
+626.76-643.41 | SPEAKER_00: Gnosis Safe, right? Yeah. If if you, this was a signer on like a one of two, even right, and the other signer, sorry, a two of three in this case, right, because the seed phrase is compromised, right, a two of three, like the other signer could be a hot wallet, and it would be fine.
+643.81-646.31 | SPEAKER_00: Um, you would actually have been fine.
+646.31-651.14 | SPEAKER_02: And Martin said it the other day: If you Google Gnosis Safe, the top thing is someone trying to fish.
+651.14-664.26 | SPEAKER_01: I was like, I was about to say, just be careful what you're doing with your safe because they're just... I mean, the attackers are just crazy. But yeah, my my basic strategy at this point, and it has been for years, is that.
+664.96-682.43 | SPEAKER_01: There's not, there's not a single thing that will completely wipe me out. Like I have so many Ledgers, I have so many Trezors that are in different places. I still have paper. Like because I just like, you can't, you can't live, you can't use crypto, you can't live if, if like, you, you know.
+684.29-689.03 | SPEAKER_01: Like I wouldn't do anything. I just hide in a bunker, like literally, if I put myself in one.
+690.93-709.47 | SPEAKER_02: We had on two weeks ago on Slop Computer told me about basically Shamir secret sharing, but with your twenty-four word, where you take the twenty-four word and you split it into three, and then you put it into sealed bags, and you even store that in three different places, and you have to have two out of three.
+709.47-713.88 | SPEAKER_00: Where we did that four on this, it's like it's fucking wild. Yeah.
+714.40-731.68 | SPEAKER_01: Yeah, and I do. I have seeds, seeds that are split and stuff. Although, again, it's like the risk goes back and forth because in my... what is it? I've been answering support tickets for a decade now, right? I would say that there's probably still.
+732.51-752.53 | SPEAKER_01: More loss from people who got like super paranoid and created these big elaborate schemes to store their money, especially long-term storage. Like you know, Kadeen was saying earlier, the the twenty-fifth word will fuck people up. Twenty-fifth word, dude, even writing down the twenty-four words. Some people don't write them down. They write them down in the wrong order.
+752.53-753.57 | SPEAKER_02: Sure, and tweet.
+753.70-780.19 | SPEAKER_01: The picture on the device is a big one. So the Ledger cards, I talked to Ledger about this forever ago, but the Ledger cards historically were in two columns and they were sort of numbered. But it turns out that humans naturally, like, will either go one, two, three, four, five, six, or it'll be one, two, three, four, five, six down the left column and then twelve, thirteen, fourteen down right.
+781.25-784.48 | SPEAKER_01: But then, when they read the words back in a year or two.
+785.41-803.49 | SPEAKER_01: They might switch it, flip flop it, or they might like listen to the numbers or whatever. So yeah, we have like all these things where people have basically lost their crypto because of one of these things. And the more elaborate the scheme, the more likely like that you are to actually just lose your money. But...
+804.13-814.42 | SPEAKER_01: Plus side is that you have like, and in those cases you have almost an infinite amount of time to like figure it out. So like there's scripts and GPUs that like we have so many scripts to try to like brute force these.
+814.42-818.34 | SPEAKER_00: Yeah, throw twenty-four words in and like try every combination, or whatever.
+818.49-823.99 | SPEAKER_01: But it's kind of like the dumpster guy, right? Like where his hard drive, he lost his, yeah, because I like threw away the hard drive.
+824.59-827.14 | SPEAKER_01: Sometimes, not gonna lie.
+828.26-836.70 | SPEAKER_01: Sometimes the the best thing for your mental health and sanity is to have someone like steal your money. Sometimes it's worse to have it locked up.
+837.95-842.60 | SPEAKER_02: Because then you know it's like there, it could be recovered. It's just like one, and it just sort of.
+842.60-865.92 | SPEAKER_01: Busters you and it's like every year you come back and every time the price of Bitcoin goes up you go back and then you pay another guy to run his GP, the new improved GPU scripts and you don't ever get to like release it. Like I did some big thefts after like FTX, it's been four years now, and those people have basically moved on. They've rebuilt their life. They have their jobs. Like it sucks. Don't get me wrong, but like.
+866.66-880.29 | SPEAKER_01: Because you have to find, yeah, you're like forced to find the closure. I still have people from like 2016, 2017 who locked up like ten thousand ETH, and every couple years they come back and.
+881.12-882.05 | SPEAKER_01: They're so.
+883.37-888.06 | SPEAKER_01: Can I try this? Can I do this? Can I... Yeah, it's just hanging there.
+888.06-894.03 | SPEAKER_00: It's just sitting there, like it's right there. You can see it. It's like in the thing, right? Like, yeah, yeah, yeah, yeah.
+894.03-897.25 | SPEAKER_01: So, anyways, my best advice for this situation and every situation.
+897.89-899.99 | SPEAKER_01: Multiple baskets.
+
+0.03-2.27 | SPEAKER_00: Well, exit multiple passphrases. That's it.
+2.27-3.27 | SPEAKER_01: But try not to overcomplicate.
+3.27-4.06 | SPEAKER_00: Good.
+4.06-20.45 | SPEAKER_01: Like try to find a simplistic way to have a multi-sig like setup, or a Shamir secret shared like setup, where you custody your fund from a few different accounts that are very clear and easy to understand. Just, just scratch off the little scratchy off. It's already made for you.
+20.52-33.98 | SPEAKER_00: Exactly. Oh, for ads too, we have one other little side story on this story, which is everyone was like, "Oh my God, they trace through Zcash. It's not private anymore."
+41.02-48.93 | SPEAKER_00: I did not trace through Zcash. I think some people actually did manage to trace through. Like they managed to like do a, ah, proper TMix.
+49.34-72.03 | SPEAKER_00: They cross their inputs and their outputs, meaning that they have money over here that's going into Tornado and also into Zcash, and then they have money out over here that's coming out of Tornado and also out of Zcash, right? And so ideally, when you're laundering money, it goes in one end and it comes out the other, and you force everyone to properly follow you through. However, when you have like thousands of addresses, you have gas, your funding, right?
+73.86-78.52 | SPEAKER_00: You get confused easily. Okay, the wallets are not that great. Okay, they don't.
+78.52-85.70 | SPEAKER_01: And the amounts need to be different too, right? Like if you have an exact amount in and then an exact amount out, it's easier to follow that too.
+85.70-92.08 | SPEAKER_00: And you know what? If you're moving fast, you're trying to launder this fricking money. You've got one hundred million dollars to get through. Okay, Chase guy to laundering.
+92.08-93.67 | SPEAKER_01: Money part one.
+93.67-99.51 | SPEAKER_00: Let me tell you, the gas will fuck you up every time, kids.
+99.70-121.95 | SPEAKER_00: Stop. Don't stop fucking with USDT because what ends up happening, right, is they come out in USDT because that's what has the most liquidity, right? But then they're very rapidly trying to get out of USDT because they can get frozen, okay? And so then they send gas from over here to over here, and that is how I TMix Zcash because.
+122.82-148.18 | SPEAKER_00: You just follow this little trail over here. Everyone else is like brute forcing it through the pools or whatever. It's like, no, no, no. So anyways, Zcash is still sufficiently private unless you're laundering one hundred million dollars incredibly rapidly and stupid. And by the way, all the XMR people were like, "Monero is so much more private, use it." It's exactly the same. Okay, we trace it in the exact same ways. You can brute force the ins and outs.
+148.18-162.22 | SPEAKER_02: If you fuck up your OPSEC and you fund the gas or come out of the pool, like, yeah, people are gonna, like... And that's why, like, that's just all chain. Yeah, and that's just all chain.
+162.22-163.38 | SPEAKER_01: Yeah.
+163.74-179.66 | SPEAKER_00: So don't, I don't know, people, there's so much drama around this. I just want to, like, everyone needs to calm down. It's, things are still private, especially for, I mean, be careful, right? If you want to separate your ins and your outs, make sure that you're doing so. But it's a lot easier if you're an individual.
+179.66-191.94 | SPEAKER_01: Your own Faraday cage, just like some, some aluminum foil around the, the windows, like it's a big screen, basically a big metal screen. Yeah, just to make sure your phone is dead. Yeah.
+191.94-206.14 | SPEAKER_00: Coinbase used to have tents. That's cold storage. Coinbase cold storage. Yeah, yeah. Okay, so they would go to a random location. This is like my favorite Coinbase story ever. Right, they would go to random location somewhere around the city of San Francisco that like only a few people noticed.
+206.14-208.30 | SPEAKER_01: And there's already taps everywhere.
+208.30-223.20 | SPEAKER_00: Okay, and then they would sit in a Faraday cage where the power was like sourced from somewhere that like nobody was expecting it to be sourced from, because you can't have people side channel attacking the power supply while you generate your cold storage keys. Yeah.
+223.23-227.03 | SPEAKER_00: And then they'd sit in the Faraday cage, and they would generate stuff, and they'd have like.
+227.03-230.91 | SPEAKER_01: Printers that were all like brand new printers, and the printers would be like destroyed.
+230.91-243.17 | SPEAKER_00: Like there was so many things that they did, it was completely bonkers. It's my favorite thing in the world, but it was all, yeah, because like if you're gonna be, if you're gonna be generating cold keys for long-term storage that have millions, billions of dollars in them.
+243.68-246.85 | SPEAKER_00: Like, the number one thing is like, don't be.
+247.36-256.93 | SPEAKER_00: In the building that's called Coinbase, like the attack surface is too big, right? So like narrow it down, get some new laptops, go to a random location, be in a cage.
+257.41-266.18 | SPEAKER_00: Make sure nobody can tap the Wi-Fi or the power supply, nobody can tap the printers beforehand even, right? Like...
+266.18-270.62 | SPEAKER_02: They don't have like cameras pointed at you. Yeah, tents. Yeah.
+270.93-272.61 | SPEAKER_00: Yeah, it's all.
+272.96-282.94 | SPEAKER_02: All right, let's go to ads, and then we'll come back and talk about more espionage. OpenAI. Fuck, like, man, this is amazing. All right, we'll be right back after this quick ad break.
+283.26-301.81 | SPEAKER_03: What if your crypto could do more than just sit in your wallet? Nexo is a digital assets wealth platform where you can generate daily interest on your crypto or borrow funds against your assets. Today, Nexo serves more than ten million clients. Find out more at nexo.com.
+303.07-322.18 | SPEAKER_04: If you like this show, there's another one from our network you should be listening to. Bits and Bips is our weekly market show. On Mondays, Ram Ahluwalia, Austin Campbell, and Chris Perkins chat about where crypto and macro collide. It's sharp, it's fast, and it has its own channel. Search Bits plus sign Bips and subscribe.
+328.75-346.91 | SPEAKER_02: All right. So our next story is also about people who have too many valuable tokens and people wanting to steal them. So this week, OpenAI's office, they revealed, I don't know if this, I don't know if they caught the guy this week or whatever. I think, I think they may have arrested him.
+347.33-362.31 | SPEAKER_02: This week, so OpenAI's office was bugged, and the guy put a recording device, like somewhat homemade, it seemed like, that he'd cooked up. He also asked Claude to help him.
+363.50-364.89 | SPEAKER_02: Hardware renaissance. I'm telling you.
+364.89-371.68 | SPEAKER_00: Yeah, I was gonna say Austin called this in the previous segment. He's like, people are gonna be doing their own hardware.
+372.15-378.08 | SPEAKER_00: Okay, pro tip. This is like gonna be the episode where Taylor teaches you how to be a criminal. Pro tip.
+379.26-384.42 | SPEAKER_00: If you're going to have the AI help you turn into a hardware nerd.
+385.50-389.27 | SPEAKER_00: Don't then use that information to hack the AI company.
+389.71-393.09 | SPEAKER_00: Like, come on, guys. What are you doing?
+393.57-399.36 | SPEAKER_02: Yeah, yeah. This is so, so basically, this guy, and again, this is the.
+399.84-408.38 | SPEAKER_02: There's some interesting things about this, and you know, I'm so paranoid and cynical and suspicious, right?
+409.11-418.88 | SPEAKER_02: I'm now like trying to work out, is this guy playing 4D chess? Right. So one of the things that everyone kept talking about is that he wrapped the device in toilet paper.
+420.19-421.87 | SPEAKER_02: And no one.
+422.16-431.94 | SPEAKER_02: Wrap the device in toilet paper. That's bad tradecraft, right? Like, why would you wrap it? Doesn't it's not going to do anything. It's not going to hide the fact that.
+431.94-436.50 | SPEAKER_00: Is white, by the way. Like, the whole thing is so weird.
+436.50-463.50 | SPEAKER_02: But, and again, this is, I'm not trying to teach you how to do espionage either, but there's something to be said for if you were a nation-state actor, looking retarded. And we've seen this in crypto many times, right? But looking retarded and like you've just had a psychotic break, and like the agent has told you to go in and like bug the place, you're gonna get a much, much, you're not gonna get executed, right?
+463.50-489.02 | SPEAKER_02: Whereas if they believe that you work for like the Saudi Crown Prince and you are like a fucking guy that's been hired and planted there to exfiltrate the weights of these models for like the Saudis, yeah, like you're probably pretty fucked, right? So, so this guy was the only Saudi employee apparently of OpenAI, and...
+489.02-505.11 | SPEAKER_02: He like used his wife's account. But again, like these are things where you're like, even like a relatively smart person who could get hired at OpenAI should be too smart for this. Like, there's things where it's like, this is, it feels too dumb. Like, it feels too... I have so many questions.
+505.16-510.62 | SPEAKER_02: I don't know. How many people, how many employees does OpenAI have? Like ten thousand or something? Like.
+510.98-512.55 | SPEAKER_00: I mean, thousands for sure.
+512.55-534.29 | SPEAKER_02: Thousands, right? Okay, so like, let's say it's five thousand. So like the dumbest person out of five thousand, like some random people will get through the filters, right? Like there's going to be some retards at OpenAI. Like they're not, they can't all be smart, right? And so, you know, maybe this is like the dumbest guy that got through, who also was trying to do espionage. I don't know. It's, there's some stuff that seems a bit off on this, honestly.
+534.29-538.62 | SPEAKER_00: I mean, when I first read the story, or saw the headlines and hadn't dug into it.
+539.04-545.86 | SPEAKER_00: My first thought was like, wait, is this espionage or is this like someone had a crush on someone else and wanted to...
+545.86-549.36 | SPEAKER_02: No, he went to the, he went to the executive.
+549.36-550.40 | SPEAKER_00: Yeah, and that's...
+550.40-564.32 | SPEAKER_02: Room, right? Planted this thing behind the TV. You know, he, he looked to see which rooms the executives used. Like, he was looking for the boardroom where they're going to be talking about whatever, right?
+564.32-565.67 | SPEAKER_00: The most important thing.
+565.67-594.45 | SPEAKER_02: Yeah, the most important thing is planning, like which fucking math problems they're gonna break next week. Like, I don't know, right? Maybe we should ask this guy if they broke crypto. He might know. So, so, so, yeah. Like, I mean, but again, you have to imagine that for every fumbling, bumbling guy that is doing this shit, there's got to be ten guys that have crazy fucking actual trade craft.
+594.45-609.47 | SPEAKER_00: Oh, yeah. No, the funniest meme I saw was the one where it was the NSA, Mossad, and the CCP all spying at the one Saudi guy with his toilet paper in hand, and they're just all watching him like, what the fuck, bro?
+611.55-637.57 | SPEAKER_02: Oh man. So, you know, again, this is like if you have valuable stuff in the world, people will want to steal it, right? And, you know, it's hard to imagine a more valuable intellectual property cache than inside of OpenAI and Anthropic, right? Like maybe at the CIA, but even that's debatable right now, right? Like that the CIA has cooler shit than these guys.
+637.57-638.66 | SPEAKER_00: I don't know if they do.
+638.69-645.44 | SPEAKER_02: Yeah, me either. Like, genuinely. Like, what? Like, they've got some shit, for sure. But, like, these guys have things.
+645.44-650.14 | SPEAKER_00: But also the government has contracts and is using these models, right? So...
+651.35-667.68 | SPEAKER_02: Golly, and run around it, right? Like, if you can get to the, yeah, get a backdoor to Anthropic. So, so I mean, you know, the interesting, the interesting thing about this is, like, A, you can build your own stuff, right? You can make your own hardware, as you were saying.
+667.68-669.76 | SPEAKER_00: Yeah, it's like twenty dollars on Amazon.
+670.81-671.70 | SPEAKER_02: So yeah, so Austin, like.
+671.71-676.48 | SPEAKER_02: Have you been doing like, are you building your own UDCs?
+677.37-688.93 | SPEAKER_02: Are you building your own five? Like, what, like, what are you building? What are you building? How are you doing it? Like, what's the... Yeah, give us the TLDR on, on like whatever the fuck.
+688.93-698.02 | SPEAKER_01: I've built all sorts of stuff, man. I've built weird... I mean, like, yes, I have spy devices in my house. It's, I replaced my Alexa with my own Alexa. So there's a thing that's always listening.
+698.79-699.67 | SPEAKER_02: Taking.
+699.84-702.04 | SPEAKER_01: Conversations and wow. Yeah.
+702.65-705.69 | SPEAKER_01: Dumb thing number one. Dumb thing number two. I made like a blood wallet.
+706.03-710.96 | SPEAKER_02: I saw that. So that, that took like a ton of.
+711.08-714.40 | SPEAKER_02: And it took a... this was the worst. It's like the psychosis loop of...
+714.40-716.22 | SPEAKER_01: Iterating with AI, well, it's like.
+716.22-717.81 | SPEAKER_02: Just one more fix, bro. If we do...
+717.81-729.09 | SPEAKER_01: One more fix, it's gonna work. And I'm like over here, like bleeding. Or this wallet, I'm making my own hardware wallets. Like I think DIY hardware is a thing. I'm gonna be showing people at DevCon how to do that. I love it, dude. Just give the, give the...
+729.66-755.49 | SPEAKER_01: Set up Linux, set up SSH, so your clunker can talk to your Linux. It can control your whole operating system. It's scary, but I let it rip. And then that thing has observability into my whole electronics bench, and it can see things. And I can plug things in, so it can run the chips. It can see where I have the wiring, and it can tell me how to, you know, do it better. Now, if I was doing something nefarious, of course they would track that back to the fourth thing or whatever. That's why, that's why you run.
+755.49-760.70 | SPEAKER_02: GB300 cluster with GLM 5.3 local. If you're really...
+760.70-765.85 | SPEAKER_01: Criminal Act Number Three on this show. Yeah, run your own local GPU.
+765.85-767.75 | SPEAKER_02: Like, genuinely, like, if you have...
+767.75-771.00 | SPEAKER_00: Not send it to the cloud, guys. They'll catch you.
+771.00-793.41 | SPEAKER_02: You can literally build a cluster of, you know, I think it's about... I've got a group where there are a bunch of rich guys that are crypto OGs that are hacking on this stuff. One guy, I think, bought four GB300s. It was like two point five million dollars or something like that. Jesus Christ. As a cluster, but he's getting like one hundred and fifty tokens a second using GLM 5.3.
+793.41-797.81 | SPEAKER_01: Like your brain and everything is right there next to you. It's right there. It's in his house. I'm so jealous.
+797.81-798.69 | SPEAKER_02: Yeah, so...
+798.69-807.84 | SPEAKER_00: You know, I have a bunch of victims from the last decade who can't access their wallets. If this guy wants to throw some RAM at this shit, dude, like...
+808.33-811.23 | SPEAKER_00: Every time I see this, every time I hear about this, I'm like,
+812.48-814.91 | SPEAKER_00: Wow, there's power right there, like.
+814.91-825.15 | SPEAKER_02: Right there. And, you know, it's funny because I went down this path, right? Like I bought a Mac Studio in like before they even canceled like earlier this year, right?
+825.15-827.13 | SPEAKER_01: That was really powerful. Yeah.
+827.13-845.95 | SPEAKER_02: And, and you know, it's, it's the Gen... it's the M3 Ultra, whatever, with five hundred and twelve gigs of RAM. But the frontier models are just like that much better. It didn't make sense, and you have to run a quantized version of most of them because you can't fully run. Like, a lot of them are like eight hundred gigs or even now like...
+846.07-863.70 | SPEAKER_02: Six terabytes of RAM. So, yeah. So it's just, I don't know, it, it didn't feel positive EV to go and buy these things. But I do think we are getting to the point now with like GLM, you know, GLM 5.4 comes out, let's say, right, and it's like Fable 5.1 class.
+863.70-878.85 | SPEAKER_02: At that point, like I'm probably happy. I'm probably fine with that guy living in my house being as smart as they are. I don't know if it's worth like, you know, two million dollars or whatever the fuck it would cost to be able to run that locally. But like, maybe.
+879.52-883.96 | SPEAKER_02: It's probably not far off, right? Um, you know, uh.
+883.96-885.95 | SPEAKER_00: I mean, dude, I've just been falling back to the...
+887.04-890.37 | SPEAKER_00: Whatever, not ChatGPT and not Anthropic.
+890.78-895.89 | SPEAKER_00: Because I just, I, I'm just so annoyed with them nerfing me every second.
+896.30-900.02 | SPEAKER_00: Like it's, and it's even stuff that's like, like I'm asking about.
+
+0.00-11.55 | SPEAKER_00: Ledger, asking about supply chains, but it knows that I'm investigating the Ledger hack. They just nerf me, but I'm not even asking about, like, I'm not even trying to be a hacker. I don't know.
+11.55-29.02 | SPEAKER_01: The rollyback models. I was, we were in Rocky Mountain National Park, and I had Opus 5.5 getting me a ticket. They go on sale at a certain time. I'm like, give me this ticket. It like wailed through the CAPTCHA, a bunch of other things that it needed to do, but it wouldn't sign up for an account on the website for me.
+29.51-36.62 | SPEAKER_01: So I had this drop to four. I had to drop to 4.5. 4.5 signed up for the account, handed it back to 5.5, and 5.5 did the rest.
+36.62-37.87 | SPEAKER_00: I mean, maybe that's what.
+37.87-39.03 | SPEAKER_01: What are we doing this?
+39.47-40.60 | SPEAKER_01: What are we doing here?
+41.14-43.07 | SPEAKER_00: No, I look over and I'm like.
+43.34-49.09 | SPEAKER_00: Yeah, but that's the thing is like every time I have to like look over and be like, okay, so now you're stuck because.
+49.60-66.66 | SPEAKER_00: You've decided this is cyber or whatever, but then yeah, I like force it to fall back. But then even sometimes you just get a different nerf message with the cyber stuff. It's so annoying. So I've just been like, well, if I'm gonna be dealing with these shitty models anyways, might as well deal with one that's not like.
+67.10-74.75 | SPEAKER_00: Like I just go into it and I expect it, you know what I mean? But it's so pleasant to not have your workflows constantly sort of like.
+75.55-85.67 | SPEAKER_00: Nerfed, and I have to like, you know, switch like my brain is in eight different places already when I have to go and like address the fact that it's being nerfed and adjust the models and stuff.
+85.67-92.50 | SPEAKER_02: Like you've already spent the time prompting it and like getting it going, and then you're like, oh wait, it's not working. Yeah, I mean...
+92.50-95.89 | SPEAKER_00: A side five minutes in that it's a cyber task.
+96.70-100.76 | SPEAKER_02: Yeah, it's crazy. That's why like GLM 5.3 is fine.
+101.03-102.05 | SPEAKER_01: Like it's smart enough.
+102.05-126.43 | SPEAKER_02: And, you know, they have fast mode as well. The fast mode stuff is, is pretty crazy. Like, you know, you, you see these like kind of little indicators of what the world would be like in three months, I guess, or a month or whatever the fuck it is. But like the, there's, there's two models that have like ultra fast mode, like, you know, Astro 6, four hundred tokens a second.
+127.04-144.10 | SPEAKER_02: Like it's so fucking fast. I did a test. I was like, I'm gonna just get two agents, 5.5 and Astro, to run the same thing, like just build a quick little test. I've got a bunch of little test projects that I'll give them. This thing did it in like three minutes. It was insane.
+144.10-150.94 | SPEAKER_01: So it's almost real time soon. Like software will be almost real time where it's building the software for you as you're navigating through it.
+150.94-176.55 | SPEAKER_02: It was faster than I could reason about what it was doing. Like it was literally ahead of my ability to figure out what was happening. It was crazy. So, you know, like at some point you hit a thousand tokens a second and it's thinking faster than you can prompt it, right? Like it's crazy. So good times. All right, next, let's go to next story. So XRP had an infinite mint bug. And in fairness.
+176.55-182.65 | SPEAKER_00: Wild, but XRP has been around forever. You shouldn't have infinite mint bugs in 2020.
+182.80-193.91 | SPEAKER_02: It turns out the taxi cab drivers don't understand safe math. Fuck, man. So this is a decade old, right? And this is where like very obviously AI, right?
+193.91-195.07 | SPEAKER_00: Hundred percent.
+195.07-214.91 | SPEAKER_02: Like if it just like if it's, yeah. I mean it's, and even if you said like it's not AI that found it, right? AI has allowed people to think about things in different ways. Even if this was a human that found this, right? It's gonna be AI assisted in the sense of like.
+215.36-227.33 | SPEAKER_02: Go and look at all the places where there could be vulnerabilities, and help me like parse through it so that I can like identify the part of the code where this could be. There's no way that this is like a hundred percent
+227.84-229.03 | SPEAKER_02: human.
+229.57-234.23 | SPEAKER_02: work, because otherwise we would have found it a decade ago if it wasn't buried.
+234.23-237.97 | SPEAKER_01: But there is this new level of lindy, where things got lindy pre-
+237.97-238.80 | SPEAKER_02: AI.
+238.80-247.47 | SPEAKER_01: It's pre-AI lindy, and that means nothing now, right? Bowser was probably the first instance of this—something that had been around for years, billions of dollars out the door.
+247.87-249.32 | SPEAKER_01: Yeah, it's wild.
+249.32-256.93 | SPEAKER_02: No, no, no. Like it's just, like, how do you think about lindy when all of your, you know, priors have been blown up?
+257.19-262.13 | SPEAKER_01: Yep, superintelligence, bro. Yeah.
+262.13-269.94 | SPEAKER_02: So, so, Tay, I'm, I'm curious your take on this because there was the, the, there was this bug, it was found, and they paid
+270.51-271.89 | SPEAKER_02: bounty.
+272.24-281.98 | SPEAKER_02: So it wasn't like they were like, thanks, go fuck yourself, right? Like they paid two hundred and fifty K bounty. It's not clear necessarily that like,
+282.46-295.29 | SPEAKER_02: there was any attempt to like exploit this or whatever, but basically a bunch of people, including Zach XBT, were like, "You fucking retards! You only paid two hundred and fifty K. You should have paid two point five billion. Way more."
+295.95-297.47 | SPEAKER_02: Whatever, right? Like,
+298.05-316.25 | SPEAKER_02: if you have a bug bounty, and the bug bounty is like, we'll pay you two hundred and fifty K, that's our max bug bounty, right? You know, it's not clear to me. Let's say it was two million, right? Let's say it was twenty million. Like, it's still positive EV for you to steal the money, like.
+317.76-345.93 | SPEAKER_02: In a vacuum, yeah, right. Like this is an infinite mint bug. There's so many vectors you could, you, you know, you could mint twenty-one million dollars worth of XRP and probably exploit it. No one would ever know because there's just a, like, so many places where you could wash that money and it wouldn't even be noticed, right? You could probably set up a bot to print you a million dollars a week and no one would notice, and you drop it into different exchanges and it's just never gonna get picked up, right? So.
+345.93-353.96 | SPEAKER_02: It's not clear to me that you can say two hundred and fifty K is not enough, but two million would have been like... Yes. Well, how do you reason? Um, so.
+353.96-356.19 | SPEAKER_00: So, because I think about this a lot.
+356.77-384.05 | SPEAKER_00: So the first thing to remember is that crypto and crypto bug bounties are fundamentally different beasts than sort of the regular world and security and bug bounties. Two hundred and fifty K for reference is also like at the top end of like Google's bug bounty program. And there was like a really amazing bug bounty that someone got from Google for I think a full remote code execution
+384.05-396.93 | SPEAKER_00: series in Chrome, meaning you could basically like have, you could go and it's a good one. They haven't disclosed exactly how it works, but they went to town. They found an amazing vulnerability in Chrome that got full
+397.38-403.52 | SPEAKER_00: remote execution capabilities, right? And they got paid two hundred and fifty K. So when you look at these two things side by side,
+404.76-409.14 | SPEAKER_02: you'd have just fucking hacked the Ledger one time, and like would have been way...
+409.14-416.99 | SPEAKER_00: So, yeah. And then there's also an argument to be made that if two hundred and fifty K is the max payout, and it's disclosed, and it's been like that,
+417.41-431.35 | SPEAKER_00: then you should, as the company, you should sort of stick with that. You shouldn't randomly come up with a bigger bounty just because someone found a bigger bug, because then it's like, well, you don't actually have a budget or a bug bounty program, right? You're just, it's very arbitrary.
+431.62-438.61 | SPEAKER_00: Critical. The most critical disclosure is two hundred and fifty K. That's what it's always been. That's what you get.
+438.61-455.73 | SPEAKER_02: Actually, this is, this is another question. Sorry. So, has, has this two hundred and fifty K bug bounty existed since like nineteen eighty-two for, for XRP? I mean, it's been the same, and they just haven't updated it because that would go back to the like we have too much money now, right? Like XRP used to be worth like...
+456.34-458.38 | SPEAKER_02: Billion dollars. It's totally.
+459.26-487.48 | SPEAKER_00: And, you know, we, I've dealt with this because I dealt with teams that have, out of sort of, let's say, out of date bug bounties, right? Where like they were operating as a little team, and then they raised money, didn't ICO, had, you know, let's say one hundred million TBL, and then they got a disclosure, but their max bug bounty payout, like on paper, was five K, or like even like a mug, right? What do you do in that situation? And it's tough because again, you don't want to, there's a problem.
+487.48-494.13 | SPEAKER_00: With doing everything just like completely arbitrarily, right? Because it goes both ways, right? If you have a max
+494.13-497.98 | SPEAKER_02: And now you've got, like, you know, someone's trying to...
+497.98-512.06 | SPEAKER_00: Yeah, so, but there's creative ways. There's creative ways to reward people without, you know, just completely going into arbitrary land. If the situation is truly special, you can treat them special. On and on. Anyways, the other thing I just want to say is that.
+513.12-524.45 | SPEAKER_00: Two hundred fifty K is also a lot of money for all intents and purposes. It's only not a lot of money when you look at how much the chain is protecting, or you look at the treasury of XRP, but.
+524.45-531.58 | SPEAKER_02: But you're like, Google, Google's worth fucking trillions of dollars, right? And they pay two hundred fifty K, right? Now, you know, exactly.
+531.63-556.16 | SPEAKER_02: If someone had exploited that remote execution bug in Chrome and mass across the internet or whatever, how much money in the market cap of Google would be evaporated? Right, like a hundred billion dollars, a billion. Like so, it's still, you know, it's weird that suddenly there's this pressure of, oh, you're a crypto company and we could have.
+556.16-560.16 | SPEAKER_02: Done this thing and exploited it for a billion dollars or ten billion or.
+560.50-561.43 | SPEAKER_01: Right.
+561.43-575.78 | SPEAKER_02: You owe us ten million dollars. When Google, if they got owned, would lose billions of dollars in market cap and shareholders would be harmed, and they still are paying out two hundred fifty K. It feels like a double standard a little bit, right? Like.
+575.78-576.59 | SPEAKER_00: It does.
+576.61-581.15 | SPEAKER_00: And it also, the other thing, like when you look at it from a company's perspective, right?
+581.70-593.38 | SPEAKER_00: If you pay, if your bug bounty is basically like limitless, right? Or if it's scoped to like the cost that it's going to cost you, right? Like to your market cap or whatever.
+594.08-611.87 | SPEAKER_00: The long-term impact, or like how bug bounties sort of pan out, is that eventually, like no companies can afford this shit, right? And then it actually makes the whole sort of security apparatus and bug bounty programs, it sort of like diminishes their value because.
+612.35-623.49 | SPEAKER_00: You know, it's actually, it's actually more ideal for a wide variety of companies to have a wide variety of programs rather than just Google or just XRP, right? You want.
+623.90-639.61 | SPEAKER_00: There to be a variety of places for different, like, levels of people to hunt and disclose. You also just want people to be able to level up over time, right? A mug isn't appropriate. Like a mug or a T-shirt is a totally appropriate reward for a brand new company, right?
+640.01-650.30 | SPEAKER_00: The value for security researchers to be rewarded for hunting these bugs is also something that I think we don't talk about enough. So, for example,
+650.94-676.97 | SPEAKER_00: What, how much money do you need to incentivize someone who's capable of finding bugs, right? How much money do you need to incentivize that person to hunt your bugs, not rather than exploiting, but like literally dedicate their energy to finding your bugs, right? So one way to look at it is like it's a competitive market. People are more likely to look at Google because there's a max payout of two hundred and fifty k. However, they're also more likely to look at any program that's fair.
+676.97-683.95 | SPEAKER_00: That has like a variety of tiers, right? Because if you're gonna go spend, say, two days or two weeks or two years hunting...
+683.95-693.50 | SPEAKER_02: You don't want to have to only find the two hundred and fifty k bug to get paid anything. Exactly. You want to, you know, find a five k bug or a ten k or whatever.
+693.54-713.44 | SPEAKER_00: Exactly. Because you can find multiple, like, ten k bugs. And Google is really good, for example, at paying out every single release. They're very fair about it. And so, yeah, there's just, like, so many different ways to look at this. I think that in this case with XRP, I understand especially the fact that the XRP Foundation...
+713.95-717.89 | SPEAKER_00: Those guys are all, like, multibillionaires at this point.
+718.85-734.53 | SPEAKER_00: Why two hundred and fifty k seems to be like an absurd number. However, that's their number, and that's, you know, if you don't like that number, you can bitch about, like, you can, if you're a security researcher, go bitch at them, try to get them to do the number, but...
+735.49-740.97 | SPEAKER_00: They do have a program they did pay out, which is more to say than, you know, a lot of programs in the space.
+740.97-764.13 | SPEAKER_02: But yeah, it's, it's not clear, it's not clear that like if that had been a million dollars or five million or twenty million or whatever, right? Yeah, that this would have necessarily been found faster, right? Like two hundred and fifty k is enough that like that's a big payout for a security researcher. You know, like I know guys who were security researchers and like a ten k thing was like their month.
+765.01-767.27 | SPEAKER_02: You know, they're like, all right, we're gonna eat for the rest of the day.
+767.27-776.07 | SPEAKER_00: Because also, don't forget, like, you're not, when you're two hundred and fifty k, like, you know, that's a year, two years, three years even, right?
+776.38-784.13 | SPEAKER_00: Of not going to an office, of doing whatever the hell you want, of funding more, you know what I mean? Like, it's a decent reward. I also think that, like...
+785.79-793.79 | SPEAKER_00: I think one thing that, that programs do need to reexamine. So for the Google one recently, right? The team disclosed, the people who found it disclosed that they...
+794.21-802.35 | SPEAKER_00: Basically, it was like three or four guys. They hunted for like six days straight, and they spent forty k on compute. Wow. Okay, so.
+802.35-804.17 | SPEAKER_02: That, that is shifting, right?
+804.17-811.55 | SPEAKER_00: That's interesting to me. And I think it's really interesting to look at the bug that they found, which was a really good, again, RCE, right?
+812.51-833.02 | SPEAKER_00: But what's the total cost? Like, what's just the baseline cost for that, right? In a, in a totally objective resources, how, how much are those guys getting paid? What's their time worth, right? Number one. Number two, you have a hard number, forty k on the compute. And then to pick, like, you have to have a little bit of insight of just to pick. We're gonna spend this six days on you rather than the other person.
+833.05-846.47 | SPEAKER_00: Yeah, I think there is a much more interesting math problem to say, is that two hundred and fifty k objectively worth it, right? Because if they're gonna do this again, would they pick the Google two hundred and fifty k?
+846.47-858.04 | SPEAKER_02: Right, versus like, it might be five hundred k, and you know you're gonna, and, and like there's a whole bunch of vectors here, right? You have to think how likely is it that we...
+858.04-861.26 | SPEAKER_00: That's the other thing, is when you get to the end, how much are you willing to spend it for?
+861.26-866.05 | SPEAKER_02: What do you pay and you found nothing, right? Like, oh, that's not... that's all.
+866.05-876.95 | SPEAKER_00: That's so much more interesting to me. I think that the math is going to... we're gonna have to math. And maybe it comes in the form of like, you know, the guys that are doing this sort of work, they get subsidies.
+877.23-900.01 | SPEAKER_00: From on the compute, or I don't know. There's all sorts of different things that you can do to make it all sort of pan out in the end and keep people hunting. But I think that that's, I think like the Google situation and when you're talking about like compute and like really objective, how do we spend resources to find really valuable vulnerabilities? I think that's a way more interesting conversation than the XRP one where you're basically saying like.
+
+0.42-6.33 | SPEAKER_00: They have a hundred billion dollars. They're greedy fox. Pay out more. Like, okay, sure, yes.
+6.33-7.95 | SPEAKER_01: But Google has two trillion.
+8.56-26.78 | SPEAKER_01: So like, you know, like, are they greedy? Like, just like, it doesn't, you know, it doesn't. Google's probably got some crypto as well. All right, let's go. Let's go to our next story. So this is interesting to me for a bunch of reasons, right? Starknet is saying may become an L1.
+27.78-51.90 | SPEAKER_01: And I think that this is the path that, in the limit, I think this is where we end up. The whole L2 thing. Ethereum sort of said L2s were a mistake to some extent, right? Like, it only makes sense if you're an L2 that's not generalized, that's specific purpose or app chains or whatever. Even that honestly feels like a bit of a
+51.90-69.80 | SPEAKER_01: cop out. I think that it maybe doesn't make sense at all, and maybe we end up with like it makes sense if you're a chain, right? We might be back to like the L1 proliferation thesis. I just think that's what's going to happen. Like, you know, the the the.
+69.80-88.80 | SPEAKER_01: The premium that is applied, the problem is that there was a period of time where you could start an L2, and it was much easier. And you might not have the L1 premium, but you had like fifty percent of it. Right? That's not the case because there are too many L2s, and now it's like maybe you have like five percent of it.
+88.80-111.91 | SPEAKER_01: And so there's a very obvious like twenty x play. If you can get to some level of credibility as an L1, that the numbers just look better, right? As an L1, as an independent chain, Starknet's like, oh, let's front run this and let's, you know, especially your Starknet, you're looking at Near. Near is an L1, you are an L2, you think that your math is pretty good too.
+111.91-141.60 | SPEAKER_01: Right, you got some privacy, you got some AI, you got some chops, right? Your founder founded Zcash, like there's a whole bunch of things where you're like, why are these guys worth fifty x us or whatever the number is, right? Twenty x us, and it's gonna, if you believe you have a credible path to being an L1, I think that's just what's gonna happen, right? So Starknet said, a, we're fully quantum resistant by twenty twenty-seven. We think we'll beat Ethereum now, like.
+143.04-173.04 | SPEAKER_01: There is an open question of like, can anyone beat anyone at anything anymore when clankers can clank faster than you can think, right? Like maybe everyone's quantum resistant by the end of this year if it's become super easy, right? Obviously there's coordination problems in Ethereum, you know, that you've got to work through, but that hasn't necessarily been like the limiting factor for change in Ethereum for a while. I would argue it's been maybe as much technical as it has been coordination, and so if the technical constraints are gone, you can probably just.
+173.04-184.19 | SPEAKER_01: do things much faster. So Starknet is saying like, if we were an L1, we'd be quantum resistant, and you know Justin Drake is scaring everyone. So.
+185.54-199.90 | SPEAKER_01: It just, I don't know. Like you go, ah, maybe that makes sense, right? Especially when the market then pumps the shit out of the token when they talk about this stuff, right? Like a lot of people are going to be looking around going, I'm going to get me some of that too, so.
+200.74-206.02 | SPEAKER_00: Okay. Also, what's your take? What do you think? I'll just say this: Do you think they should be an L1?
+206.56-221.00 | SPEAKER_02: I think they could probably make more money if they become an L1, but I don't think it's the best thing for the ecosystem if they become an L1. I think we all should be quantum by twenty twenty-seven. I think we should have an arms race to get quantum resistance, and I think that like, why do you think we're going too slow?
+221.00-226.56 | SPEAKER_01: Why is it an issue? What's the issue for the ecosystem if Starknet becomes an L1?
+227.36-231.87 | SPEAKER_02: I guess less L2 block space. I don't know, like left.
+231.87-242.71 | SPEAKER_01: Why do we care about that? Like, like genuinely, right? Like, why does that even, like, we have enough block space in Ethereum now, and we're only going to get more, right? Like the
+242.71-262.37 | SPEAKER_00: I mean, there's, there's, well, it's sort of going out the window. So historically, like, one of the advantages of being an L2 over an L1 was, I guess, the assumption. It doesn't always hold true, but like, that you're basically going to be incredibly compatible with EVM, with Ethereum.
+262.37-265.91 | SPEAKER_01: Which was a lie. That was a lie, right? First of all, right.
+265.91-267.39 | SPEAKER_00: But you don't know so you can do the same.
+267.39-275.88 | SPEAKER_01: Starknet is not compatible with the L1. It's a fucking completely different scheme. It doesn't have to do all the consensus work, but like.
+275.88-278.33 | SPEAKER_02: The question was: What is the ecosystem? You got other.
+278.33-280.47 | SPEAKER_01: Hard work, right? Like, like.
+280.47-299.49 | SPEAKER_00: And some of it, by the way, some of it's on like the user-facing integration land, where, like, okay, so if you didn't change anything, right? You're launching Arbitrum or whatever. If you didn't change anything versus Ethereum, you can get the integration in the wallets on the APIs in Etherscan relatively easily because it's basically the same.
+299.49-302.76 | SPEAKER_01: Needed a bunch of being front, a whole lie, right? So, but it was.
+302.76-312.42 | SPEAKER_00: Like for example, when MetaMask, when we were working on like, if you want to add Arbitrum, if you want to add Optimism, it's literally you just change the chain ID. Everything else is the same.
+312.42-315.06 | SPEAKER_01: Wallet for sure. As a wallet for users, whereas.
+315.06-342.38 | SPEAKER_00: Adding Solana was like, all right, we gotta start from square one on all the libraries, like everything's different, et cetera, et cetera. Now, the problem is that over time, the L2s evolve, and then they add more functionality or different functionality. I remember the first one was like, oh shoot, all of the L2s need to have like their own custom gas parameters. That was the first sign that we were gonna be fucked, right? Yep.
+342.72-348.44 | SPEAKER_00: Now it's not just changing RPC. Now you're like, okay, how does the gas work? What are the transaction
+348.44-349.79 | SPEAKER_01: types, of course, and then they.
+349.79-375.17 | SPEAKER_00: Even just the gas pricing, right? It's like the APIs that now you're talking about proprietary APIs, on and on, right? So, on the one hand, L2s have an advantage in that sense, right? Like it's just more familiar. The interoperability can help with the network effects, especially early on. Long term, not so much. It also doesn't guarantee the integrations. It doesn't guarantee the usability. Doesn't guarantee even like the consensus stuff, right?
+377.76-384.00 | SPEAKER_00: I don't know. It's kind of a restraining factor, right? Like the reason why the L2s.
+385.22-389.26 | SPEAKER_00: Like, it's like, okay, we're gonna try to like, it's so constrained.
+389.26-400.93 | SPEAKER_01: Compatibility is hard, right? So you're trying to play in this compatibility window, right? You can't really innovate. You're trying to remain EVM equivalent or compatible or.
+401.66-420.80 | SPEAKER_01: Or do you want to throw at it, right? Like, and you know, so you've got this like range of things you can do. Meanwhile, Ethereum has woken up and said, "Actually, fuck all of you guys. We're gonna like increase our own block space and make kind of the point of your entire existence, like moot."
+421.60-451.00 | SPEAKER_01: You know, like the point of L2s was to have more block space, cheaper blocks, and like more compute, right? You could do bigger transactions, you could do cheaper transactions, you could do all these things. Ethereum is going to do that. It's just, it just is. It's in the process of doing it. It's going to have like infinite block space. You're going to have bigger blocks, thicker blocks, wider blocks, deeper blocks. Like we need heavier Ethereum blocks. So, so like I just, I think like, you know, the
+451.00-469.19 | SPEAKER_01: The most equivalent thing to Ethereum is the fucking Ethereum chain. Like, don't go and build your own weird fork of it, right? Like, you want like EVM equivalents or compatibility, like fucking build the thing on Ethereum, man. Like, it just like that, like you know.
+469.19-492.59 | SPEAKER_01: We didn't have the technology in 2019, 2020, and we built way too much shit, and we ran out of block space, and so we went on this weird side quest to try and solve it, and we learned a bunch of things, and you know, whatever, we made some money, lost some money, cool, but like, it's 2026. We have clankers. Ethereum is just not going to need L2s.
+492.59-496.54 | SPEAKER_02: It just won't. Yeah, still use L2s every day. I know, it won't need to.
+496.54-500.45 | SPEAKER_01: Need an L2 in 2027, like realistically.
+500.54-526.86 | SPEAKER_02: We'll see. I don't know if Ethereum will ever get as fast as like consumer grade apps. And when you want to make like a instant like sub-second transaction, we may never get that from Ethereum. And it may be expensive to do that, but it's like sub-cent sub-second transactions on L2s that makes so much sense for consumer facing apps. And then have all of those settle to Ethereum. Like I'm still, I don't know, I'm still bullish on some L2s.
+526.86-528.06 | SPEAKER_01: Okay. All right.
+528.06-544.96 | SPEAKER_00: But okay, so I guess maybe this is the problem with Starknet, right? Is like, that's actually not why they're talking about being an L1. They're talking about being an L1 because they want to do like some crazy nerdy shit for quantum and AI and stark and snarks and whatever, right? Like the most nerdy stuff.
+547.14-566.02 | SPEAKER_00: Okay, if you guys want to do that, I applaud you. If you want to nerd out and have this network that is a nerd network, okay, go for it. And also, like, share your learnings, share your research, hire people, pay those people, have bug bounties for people, right? Like, I totally, one hundred percent on board with this.
+567.30-577.66 | SPEAKER_00: Don't expect anyone to use your network necessarily, right? Like, I don't know why as a regular consumer of crypto and chains.
+577.66-582.18 | SPEAKER_01: It's a bunker, man. It's a bunker. When we're all fleeing, we'll flee.
+582.66-587.46 | SPEAKER_02: What do you guys use Starknet for right now? It's probably DeFi, right?
+587.46-589.39 | SPEAKER_00: I, I claimed my airdrop on it.
+589.39-600.40 | SPEAKER_01: Claim my airdrop. I'll be honest. Claim my airdrop. I tested DYDX back in the day. DYDX was a thing. You know, I think one thing that we're seeing is, you know.
+600.40-619.86 | SPEAKER_01: Chains are realizing that they can't rely on at least, you know, non-Ethereum chains. Ethereum still is able to do this, right? And Solana probably, but like most chains are realizing that like they need to be a vertically integrated thing, including apps. You know, DYDX and Starknet is such a good example, right? So, you know, yeah.
+619.86-622.44 | SPEAKER_00: So you went to Starknet to use DYDX.
+622.44-624.82 | SPEAKER_01: Yes, I mean, they were my competitors.
+625.03-628.79 | SPEAKER_01: Checked them out. Well, I mean, then they left. DYDX left, of course.
+628.79-631.89 | SPEAKER_00: YDX left because there was nothing else. No other reason.
+631.89-634.70 | SPEAKER_01: I don't know, man. Like, why do people do anything?
+634.70-646.65 | SPEAKER_00: I'm gonna say it's because there's no one there. You have to have some sort of ecosystem because that's the network effect. It's just classic network effects, right? Having DYDX on Starknet is going to bring a certain amount of people over.
+646.99-657.13 | SPEAKER_00: Because they want to use this thing, because it's better, whatever. However, there has to be other apps and other reasons, because then they all build off of each other. But I mean, look at me.
+657.13-678.38 | SPEAKER_01: Look at Mag, right? Maganith is the quintessential example of this, right? They curated three cohorts of like ten teams, maybe, right? Thirty teams to build consumer apps on this real-time chain, and and like literally ninety-five percent of those teams absolutely wrecked them.
+678.38-704.89 | SPEAKER_01: Like abandon the chain as soon as they got enough traction, started making their own chains, like all kinds of crazy shit, right? Yeah. And and you know, like as a chain that's trying to build its own ecosystem, if you're vertically integrated from like, you know, you're weirdly in this position, especially for the L2s, right? Where like Ethereum is the bottom layer, you can't own that, right? So you can't be fully vertically integrated because Ethereum is your basement, right?
+704.89-725.26 | SPEAKER_01: But above the basement, you have this whole house up until like the roof, where like there's a party going on, and you have no control over it. And then they're like, "Actually, let's go down the street. There's a cool club. Like, see you later." And you're left with a fucking empty house that's trashed, and you're like, "Ah, fuck! Like, what do we do here?" Right?
+725.26-728.72 | SPEAKER_00: Oh wait! You become an L1 that's quantum resistant.
+728.72-744.13 | SPEAKER_01: Yes, but at least then you're like, you know what? We'll build our own. You build your own, and like, you know, dYdX is NFTs and shit, right? Like they left the chain, they went to Cosmos, right? And Starknet is now like, fuck it, we'll build our own PerpDex.
+745.87-749.17 | SPEAKER_01: Which, like, fine, cool. Like, build your own PerpDex.
+749.39-762.06 | SPEAKER_01: At least then they're not gonna leave. Like at least close the doors and the party will never stop, right? It might be a shitty party, but like the partygoers are trapped in the house with you, right? So you know.
+762.06-780.43 | SPEAKER_02: Do you guys remember Argent? Argent was a cool wallet that did good social recovery, and then they built on Starknet, right? Is that where Argent went? And so account abstraction had to have been part of their secret. Like every L2 needs to have a secret move or a secret weapon. Well, no, they didn't actually.
+780.43-791.83 | SPEAKER_01: Account... the reason why Argent went to Starknet was because when they were on Ethereum mainnet, right? And when you set up a wallet, it cost them... they burned so much money in gas, man. Like it cost thirty... I remember.
+791.83-792.61 | SPEAKER_00: That.
+792.61-796.67 | SPEAKER_01: Thirty-eight people ran a wallet, and the VCs that fund them were funding it.
+796.83-803.14 | SPEAKER_00: I was looking at Starknet, was the hottest thing as us getting ready to raise the next round, and um...
+804.67-815.97 | SPEAKER_02: Just stuff like you couldn't sign with the wallet. I remember talking to those guys. There was something with the wallet where wallet signatures weren't respected across apps. So even if you have this smart contract wallet, apps still all had to... I mean, you probably... they were too early.
+815.97-840.95 | SPEAKER_00: The meta-analysis I did on Argent totally blue-pilled me on smart contract wallets because, and this is why we ended up joining MetaMask because I was like, I think they've got it right for all the problems that I had with MetaMask. I was like, they actually from day one, the vision, the strategy, and their understanding of like retail behavior and like nerdy cryptography things, like they actually nailed it. Interoperability is king.
+840.95-868.64 | SPEAKER_00: People are going to move faster than you can ever imagine. And every time you limit their ability to do whatever they want, anytime it's not even like an actual lost money experience or like unable to access experience, even the perception that it might be, right? And with smart contract wallets, there were so many questions that basically you were, you were locked into this little ecosystem of things that you knew worked, and there was no way that a team can keep up.
+868.64-877.87 | SPEAKER_01: I think a few things are changing. It's literally infinite. Like this is what happened to us. Yeah, this thing, and we're like, oh, it's fine. We'll just integrate all the things, and you just can't. There's no way. You just can't.
+877.87-900.07 | SPEAKER_00: You can't. And so it's like you have to unlock. And the second that you unlock anyone, and this is the thing, the biggest problem with MetaMask and its biggest success, right, was that it was so unopinionated. It was like viciously unopinionated about everything. It was like, we are not even gonna add tokens. We're gonna allow people to add their own tokens, but we're not actually like... my favorite story, MetaMask didn't have Tether.
+
+0.00-17.38 | SPEAKER_00: As a token, as a dev token in the wallet for years, right? Worst thing, but also best thing, because it forced them to create this wallet that was fully accessible anywhere. And the priority was like, expand the ability for other people to like integrate and do things with it.
+18.14-22.33 | SPEAKER_01: All right, smart contract wallets. I think another comeback will be smart contract wallets.
+22.48-35.77 | SPEAKER_01: The R1 curve, first of all, is a lot cheaper on Ethereum. That's nerd shit, but basically, like pass keys can sign on smart contract wallets. Gas with 4337 and other account abstraction things can be sponsored.
+35.78-49.58 | SPEAKER_01: The third thing, and I think the biggest thing, is that AI is the new UI. Instead of will the wallet integrate with all these different DApps, it's going to happen at like the chain level. You will go to your wallet, you will express your intent, and it will go do the things it needs to do.
+49.59-60.58 | SPEAKER_01: You don't need to go do send calls to some website, and it signs things. You express your intent to your smart contract wallet. You sign with a pass key, and it goes and does the stuff.
+60.58-64.03 | SPEAKER_00: Well, yeah. If the AI gets good enough, right? It will.
+64.54-70.78 | SPEAKER_01: If the AI gets good enough, there's a very real case that by end of year, like you're gonna have super intelligence next year.
+70.78-74.78 | SPEAKER_00: Because the, the biggest hurdle that you're gonna need to overcome, right, is like.
+76.00-96.25 | SPEAKER_00: So right now, like the reason we have UIs, the reason we have DApps, the reason we have wallets, the reason we have all this stuff, right, is to limit the risk as much as possible. And in crypto, crypto is different because we actually want to enable people to take a huge amount of risk. But like, you don't want to just press a button and then have your money just like magically float away, right? Like that's a bad experience.
+96.25-99.97 | SPEAKER_02: Like, clinkers are gonna be another attack vector that just gets.
+100.54-112.26 | SPEAKER_00: It's gonna be, yeah. But at some point, the clinkers are gonna get good enough to at least like have basic sort of like, let's call them like, they're gonna know how to, for example, like simulate.
+112.31-134.75 | SPEAKER_00: And right now, like when you have like in MetaMask, right? Like there are, you have a ton of indicators in our wallets, right? That kind of like try to hint, like, yo, this might be bad. But the one thing that AI can do like way easier and way better and way more robustly is actually like test the flow beforehand, right? And do all these things beforehand and have a better understanding beforehand. So I do agree that it'll.
+135.36-140.42 | SPEAKER_00: It'll just be a different interaction style. What I don't necessarily agree with is.
+142.08-145.30 | SPEAKER_00: I just don't necessarily agree that it'll be a smart contract wallet.
+145.94-151.12 | SPEAKER_00: Like, ah, like a contract wallet thing. It'll be, it'll be something though. I agree.
+151.12-166.26 | SPEAKER_02: All right. Let's close out here. Before we close out, one minor point we talked last week after Blast shut down, like when Blur shut down, and it was this week. So end of an era there. I mean, I don't even know what else to add to that.
+166.26-175.57 | SPEAKER_01: Dude, shout out! I remember using Blur. You could sweep the floor. It was just like a boop boop boop boop boop, and you get fifteen NFTs. Now I have fifteen NFTs that go to zero instead of just one.
+176.03-177.41 | SPEAKER_00: Good job, Austin.
+178.14-187.98 | SPEAKER_02: All right. Thank you. Thank you, everyone, for joining us on this episode of Uneasy Money. Remember, what happens on chain never stays on chain. We will be back next week. Nothing here on.
+187.98-199.72 | SPEAKER_03: Uneasy Money is financial advice. We're just three builders talking about what's happening on chain, and we want you to always do your own research before aping in. You can find all our disclosures at UnchainedCrypto.com/UneasyMoney.

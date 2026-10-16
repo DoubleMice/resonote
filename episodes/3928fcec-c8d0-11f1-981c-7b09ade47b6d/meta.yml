@@ -1,0 +1,30 @@
+title: 不安的钱：Ledger 供应链攻击为何瞄准近 1 亿美元资产
+guest: Dan Wahr、Taylor、Austin Griffith
+guest_role: 播客圆桌主持人与嘉宾
+tags:
+  - hardware
+  - panel
+  - technical
+  - strategic
+summary: >
+  《Uneasy Money》围绕一批据称被植入蜂窝通信模块的真 Ledger 设备，讨论高价值加密资产如何使分销链成为值得攻击的目标，以及助记词备份与安全之间难以消除的取舍。节目也讨论了 AI
+  降低硬件与漏洞研究门槛后，漏洞赏金的激励设计、Starknet 的 L1 选择和代理式钱包界面所面对的安全问题。
+core_ideas:
+  - Ledger 事件的关键在于攻击者疑似绕过了真伪检验所覆盖的元件，从助记词显示到屏幕的路径截取数据。
+  - 多签和分散保管能降低单台设备失守的损失，但复杂的助记词与恢复规则也会提高用户永久丢失资产的风险。
+  - XRP 漏洞赏金的争论显示，合理激励不仅取决于潜在损失，也取决于研究时间、算力成本和计划规则的可预期性。
+  - 围绕 Starknet 的分歧集中在以太坊扩容后 L2 的价值、互操作性的实际成本，以及应用能否留在生态中。
+  - AI 代理可帮助模拟和解释钱包操作，也会增加一个需要防护和审计的授权入口。
+id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
+source: unchained
+source_title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
+published: 2026-10
+published_sort: "20261015"
+duration: 1h19m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
+status: generated
+article_path: episodes/3928fcec-c8d0-11f1-981c-7b09ade47b6d/article.html
+base: /episodes/3928fcec-c8d0-11f1-981c-7b09ade47b6d/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/3928fcec-c8d0-11f1-981c-7b09ade47b6d/image/45f260131939298c74f431d407381957.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-10-16T18:32:10.777Z

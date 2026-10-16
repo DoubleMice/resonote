@@ -1,11 +1,11 @@
 source: unchained
-refreshed_at: 2026-10-16T03:04:05.956Z
+refreshed_at: 2026-10-16T18:12:01.126Z
 min_duration: 3300
 min_date: "20260925"
 total_candidates: 7
-done: 6
+done: 7
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -127,8 +127,12 @@ episodes:
       🏚️ 01:11:03 How MegaETH shows why L2 ecosystems struggle to keep their apps
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-16T18:12:02.635Z
+    transcript_job_id: b8d38762-208c-473c-afdb-6628a811ffc5_994cd8e704904504abf9ca238cb1cdeb,771ea1cb-dd25-48c3-a8f9-ea17bcf5aa32_ea7a8ecc93f646f68fe7b6de92a08239,048e7a0e-0dbd-4f94-ba78-b0df5f5314e1_43cd361836a6405087c7c738416dbf6a,fc46c494-d49b-4ab7-b2e0-ec6b3a76dc7d_b6cd7be85c1f46049ce55786b4461172,ede6a778-d9b4-429d-bf17-dd7bd1f07ba2_22b8290e4db54e6d97675967ef0e921e,85357866-e1a6-4398-b469-5fe9f6c7e54c_08246b3ecc6e4d848e46ea4b5adb211d
+    transcript_completed_at: 2026-10-16T18:26:00.188Z
   - id: 534387ec-c78f-11f1-9efe-c37a7a073351
     guid: 534387ec-c78f-11f1-9efe-c37a7a073351
     title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
