@@ -1,15 +1,31 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-17T03:03:38.574Z
+refreshed_at: 2026-10-17T18:10:19.455Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 3
-done: 3
+total_candidates: 4
+done: 4
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6ad39cbe641ef406308d2e08
+    guid: 6ad39cbe641ef406308d2e08
+    title: 56. 硅谷国庆见闻 - 愿天下处处是泡沫
+    duration: 1908
+    published: Sat, 17 Oct 2026 17:11:57 GMT
+    published_sort: "20261017"
+    first_seen_at: 2026-10-17T18:10:19.455Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ad39cbe641ef406308d2e08?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    image: https://image.xyzcdn.net/Fvlk7Kc9glmwyhptmXr_C_HK_Zww.png
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-17T18:10:20.843Z
+    transcript_job_id: fea2d2c5-bbfd-4435-9a72-06d4b6c59cc8_0e2fc0aa45af4376b5b395c95841bb89,da8327cc-04e5-49c2-aec5-f7de17b0f689_569a34ddb8bd4021a4fefe148a0067c5,1b9c306e-7e41-4347-85e0-7b34f5d02ebb_d41ddb73b91142d5b5747155fea6c554
+    transcript_completed_at: 2026-10-17T18:13:18.898Z
   - id: 6ac8d704195d838e2aef570d
     guid: 6ac8d704195d838e2aef570d
     title: 55. 从中国缺电到美国缺电：AI能源瓶颈？- 唐奕波

@@ -30547,3 +30547,54 @@ jobs:
     submitted_at: 2026-10-16T18:12:02.635Z
     updated_at: 2026-10-16T18:26:00.188Z
     completed_at: 2026-10-16T18:26:00.188Z
+  - key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z:chunk:0
+    parent_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    attempt_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z
+    provider: mimo
+    id: 6ad39cbe641ef406308d2e08
+    source: taixian-zhihuo
+    title: 56. 硅谷国庆见闻 - 愿天下处处是泡沫
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    task_id: fea2d2c5-bbfd-4435-9a72-06d4b6c59cc8_0e2fc0aa45af4376b5b395c95841bb89
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-17T18:10:20.843Z
+    updated_at: 2026-10-17T18:11:53.299Z
+    completed_at: 2026-10-17T18:11:53.299Z
+  - key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z:chunk:1
+    parent_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    attempt_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z
+    provider: mimo
+    id: 6ad39cbe641ef406308d2e08
+    source: taixian-zhihuo
+    title: 56. 硅谷国庆见闻 - 愿天下处处是泡沫
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    task_id: da8327cc-04e5-49c2-aec5-f7de17b0f689_569a34ddb8bd4021a4fefe148a0067c5
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-17T18:10:20.843Z
+    updated_at: 2026-10-17T18:13:03.257Z
+    completed_at: 2026-10-17T18:13:03.257Z
+  - key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z:chunk:2
+    parent_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    attempt_key: taixian-zhihuo:6ad39cbe641ef406308d2e08:20261017:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a:mimo:2026-10-17T18:10:20.843Z
+    provider: mimo
+    id: 6ad39cbe641ef406308d2e08
+    source: taixian-zhihuo
+    title: 56. 硅谷国庆见闻 - 愿天下处处是泡沫
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ad39cbe641ef406308d2e08/media.xyzcdn.net/67f40c212ac4d88190caa56a/lm4ZzRg-o8LnbElrWLjZDuyFi2Mu.m4a
+    task_id: 1b9c306e-7e41-4347-85e0-7b34f5d02ebb_d41ddb73b91142d5b5747155fea6c554
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-17T18:10:20.843Z
+    updated_at: 2026-10-17T18:13:18.898Z
+    completed_at: 2026-10-17T18:13:18.898Z
