@@ -1,0 +1,31 @@
+title: 184：与陈哲的具身季报 26Q3：Astra 冲击后，通用模型会吃掉 Robotics 吗？
+guest: 陈哲 Peter
+guest_role: AlphaEast 创始合伙人
+tags:
+  - robotics
+  - ai-research
+  - technical
+  - strategic
+  - interview
+summary: |
+  本期具身季报围绕 GPT-6 Astra 进入机器人任务展开：通用模型开始承担空间推理、动作监督和仿真研究工作，但精细接触与实时控制仍是专用模型和端侧系统的重要位置。
+  陈哲与主持人还讨论了世界模型公司的收购路径、宇树上市后的估值与收入压力、视频示范式 ICL，以及 FCC 限制对机器人供应链的影响。
+core_ideas:
+  - Astra 的能力让通用模型与具身模型的分工需要重新界定
+  - 真实部署更可能采用通用模型与端侧动作模型协作的分层系统
+  - 物理 AI 公司的护城河可能来自硬件、专有数据、可靠部署与行业准入
+  - ICL 用视频示范传达任务意图，可能缩短模型在现场的适配时间
+  - 上市节奏与供应链政策让具身公司同时面对技术之外的资源约束
+id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
+source: latepost
+source_title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"
+published: 2026-10
+published_sort: "20261015"
+duration: 1h46m
+url: https://podcast.latepost.com/184
+status: generated
+article_path: episodes/1ba74c4b-43e4-416c-aafe-f191fcb44898/article.html
+base: /episodes/1ba74c4b-43e4-416c-aafe-f191fcb44898/
+visual_notes: false
+thumbnail: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/1/1ba74c4b-43e4-416c-aafe-f191fcb44898/cover.jpg?v=1
+generated_at: 2026-10-18T18:32:31.709Z
