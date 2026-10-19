@@ -1,12 +1,106 @@
 source: acquired
-refreshed_at: 2026-10-19T03:04:35.715Z
+refreshed_at: 2026-10-19T18:12:51.388Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 0
-done: 0
+total_candidates: 1
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: 9c3ce276-af3c-49a3-9d45-94b784b9c6a5
+    guid: 9c3ce276-af3c-49a3-9d45-94b784b9c6a5
+    title: Seinfeld
+    duration: 13820
+    published: Sun, 18 Oct 2026 21:00:46 -0700
+    published_sort: "20261019"
+    first_seen_at: 2026-10-19T18:12:51.388Z
+    url: https://www.acquired.fm/episodes/seinfeld
+    audio_url: https://pscrb.fm/rss/p/media.transistor.fm/96a5f313/515377c5.mp3
+    image: https://img.transistorcdn.com/UeflZq2BnWJL1OgSrOEoiAs2XTQAn_T8KemShoFGQ3Y/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8zYTMw/MDFhMjlmMmNhZTNl/ZDMxNWVhNzJlNzZh/NjRiNC5qcGc.jpg
+    summary: >-
+      Seinfeld, which ended three decades ago, has been watched by 72 million Americans so far THIS YEAR. Behind that
+      incredible stat is an equally incredible business story: obsessive creators, perfect market timing, an ownership
+      structure that aligned incentives for the long term…all of which created a sitcom that became number one by
+      breaking all the rules.
+
+
+
+      Sponsors:
+
+
+      Many thanks to our fantastic Fall '26 Season partners:
+
+
+      SierraAnthropicSentryWorkOSLinks:
+
+
+      Sign up for email updates, get our takeaways and research photos from each episode, and vote on future topics!The
+      Acquired Seinfeld Companion PDFTop of the Rock: Inside the Rise and Fall of Must See TV by Warren
+      LittlefieldComedianThe Seinfeld Chronicles: An Unnecessary Data Exploration by Andy KirkWorldly Partners' Seinfeld
+      Study by Arvind NavaratnamJerry Seinfeld's 2017 Harvard Business Review InterviewAll episode sourcesCarve Outs:
+
+
+      Seinfeld - "The Marine Biologist"Seinfeld - "The Jacket"Seinfeld - "The Dinner Party"The Seinfeld Chronicles: An
+      Unnecessary Data Exploration by Andy KirkBuck's of WoodsideTin CanMore Acquired:
+
+
+      Get email updates and vote on future episodes!Join the SlackCheck out the latest swag in the ACQ Merch
+      Store!00:00:00 Start
+
+      00:00:55 Intro
+
+      00:04:52 Jerry Seinfeld's Stand-Up Origins (1954-1988)
+
+      00:16:16 NBC Pitches a Late-Night Special (1988)
+
+      00:21:35 Enter Larry David (1988)
+
+      00:35:04 Fin-Syn Rules & The Castle Rock Deal
+
+      00:52:45 Making the Pilot & Test Screening Disaster (1989)
+
+      01:04:24 Rick Ludwin Saves the Show (1989-1990)
+
+      01:10:17 Adding Elaine & "No Hugging, No Learning"
+
+      01:28:41 Season 2 & Defying Network Notes (1991)
+
+      01:35:56 The Structural Mechanics of Seinfeld
+
+      01:45:11 Season 4 & "The Contest" (1992)
+
+      01:57:09 Moving to Must See TV Thursdays (1993)
+
+      02:07:28 Anatomy of a Production Week & The Harvard Lampoon Writers
+
+      02:15:44 The Syndication Cash Cow (1995)
+
+      02:28:36 Larry Leaves, Cast Salaries & Season 9 (1996-1997)
+
+      02:42:13 Jack Welch's Brunch Offer & Jerry Walks (1997)
+
+      02:55:04 The Finale & Final TV Economics (1998)
+
+      03:11:21 The Modern Streaming Era & Netflix's Massive Deals
+
+      03:17:38 Analysis
+
+      03:30:00 7 Powers
+
+      03:34:00 Quintessence
+
+      03:41:49 Carve-Outs + Outro
+
+
+      ‍Note: Acquired hosts and guests may hold assets discussed in this episode. This podcast is not investment advice,
+      and is intended for informational and entertainment purposes only. You should do your own research and make your
+      own independent decisions when considering any financial transactions.
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-19T18:12:52.393Z
+    transcript_job_id: ff5325f7-ab82-47e2-a209-eff2d7665c24_a7cbaef96f914bf49a872005c1ab7d4e,6a43156b-6a83-44d1-8822-163fe160577e_ab507c8d7a744cd9b2e9cc2e4c8b5743,088ee85b-4718-4a64-af34-f0383c3c78ae_9a8416a7ee4d46d6b1cb6b5aea654a4d,2ce8a6c9-3ffb-4fd9-a8e4-2f5df85fda00_c359614dd2634082855e136cb0ef2e8a,0bedf9bb-7599-4c12-8be9-b8dca58de2da_b26a93c7e8644aa0a3db59b4c1d499f6,597069bc-ed6e-4dc5-a4ab-8110df24eea1_6f3dfcd6ea1a452c81ad86d6211f7ce8,0daccd3a-f9de-40a3-9468-00d92af21246_eebf10e830ec45cfa6508d7eb5ff0491,b8bce0b3-750c-400e-b0bd-b4281fbcf70b_133ce5c37f5740109179028e8853a7d8,5538a7af-337e-4b77-90eb-45e3e7efcb61_b5352681187b414aa2dcfa4808185eef,b55a0c37-689e-4bbc-9595-eedca3bb162c_2f6cee09684e446abd427de1e8bb9657,4717fd7c-358e-466b-9fe3-c67e6b57fd7b_0881ebb941a7414b875c0d18c578624b,acf7ccdf-a311-4b85-854c-317b97868500_331b9a029bf948e98bbd751e40ef28aa,958e2992-e00c-47f3-b8bb-cdfc989f5da3_beffcbbab7d94394a460b89634554624,026d79db-244e-4956-95c0-2b0600d66238_286dbedcd25d4076b11580144c9f7109,06716881-3f28-441c-93ee-fdccfd2202b6_08e53da1c17a47a7be4002602bfd8bdc,0680cde9-6c4e-42e6-8a82-9aafffdb95e4_bc5a2bfc08b04eba92ce22ff0e475a3e
+    transcript_completed_at: 2026-10-19T18:43:34.343Z

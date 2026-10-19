@@ -1,5 +1,5 @@
 source: sv101
-refreshed_at: 2026-10-19T03:04:35.751Z
+refreshed_at: 2026-10-19T18:12:51.402Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 1
@@ -19,7 +19,7 @@ episodes:
     first_seen_at: 2026-09-30T03:05:00.450Z
     url: https://sv101.fireside.fm/268
     audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/0b644f51-461c-4ddb-b707-d2a39b9a7d80.mp3
-    image: https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
     summary: >-
       这个夏天，来自全球各地的多个气象机构都拉响了同一个警报，一场史无前例的超级厄尔尼诺正在上演。
 
