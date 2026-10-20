@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-10-20T03:04:00.278Z
+refreshed_at: 2026-10-20T18:12:54.634Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 2
-done: 1
+done: 2
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -158,8 +158,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: 朱哲清, 王晟, and 许华哲.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-20T18:12:56.054Z
+    transcript_job_id: 233a59f1-ea31-4284-9d7e-e311b52246da_14c95054162046cba510f9caf968b981,f4269d28-908c-4b2a-b753-0f5d65b565a7_ce77577c2e2c4d8d943f1d7498711f97,99649fa3-293e-4f6f-9207-f942cb34aa74_b062c93019f340a69e5456fccad938e6,f70b124f-c3ad-4100-8f07-f1d98eddb71e_28f46d4307e34d5cb1d9c18ab3a8e51f,af601cdf-4b2e-4f90-ab07-da2132422cc9_a1499935d88e4820b57ae2b217f40ce7,add4388f-7cd1-4ccd-b567-38e0c4039592_96f8903eea604e62893f2a52e5f80384
+    transcript_completed_at: 2026-10-20T18:23:06.786Z
   - id: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
     guid: 0b644f51-461c-4ddb-b707-d2a39b9a7d80
     title: E254｜超级厄尔尼诺来了，我们的日常所需真会因它涨价吗？

@@ -1,0 +1,33 @@
+title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+guest: 许华哲、朱哲清（Bill）、王胜
+guest_role: 机器人创业者、AI 模型公司创始人、华盛顿大学计算机学院助理教授
+tags:
+  - ai-products
+  - ai-research
+  - robotics
+  - interview
+  - technical
+  - strategic
+summary: |
+  三位嘉宾围绕 Astra 讨论 Agent、机器人和 AI 制药的落地条件：Agent 受访问权、身份识别和云端成本限制；机器人需要把慢推理接到本地的快速控制；制药的关键反馈仍来自湿实验。
+  节目认为，模型升级能缩短规划、检索和操作软件的时间，却不能自动缩短网站规则、物理动作和动物实验的周期。真正的变化取决于模型如何接入这些现实流程。
+core_ideas:
+  - Astra 的长程任务、三维理解和 computer use 带来实际帮助，但慢响应与长程幻觉仍限制了它的适用范围。
+  - 消费级 Agent 能否持续运行，取决于网站是否认可其身份、云端浏览器是否被屏蔽，以及 token 和虚拟机成本能否承担。
+  - 许华哲认为机器人应保留快慢分层：大模型负责规划和较静态操作，本地小模型处理高动态的即时反馈。
+  - 真实环境的外观仿真不等于物理仿真更准确；机器人数据也需要记录成功和失败的原因。
+  - 王胜认为药物发现必须把模型和湿实验连成闭环，实验设计、设备匹配和验证周期仍需要专业人员与实验室参与。
+  - 生物医学评估应面对没有固定答案的改进任务，并通过持续湿实验积累真实世界数据。
+id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+source: sv101
+source_title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+published: 2026-10
+published_sort: "20261019"
+duration: 1h20m
+url: https://sv101.fireside.fm/270
+status: generated
+article_path: episodes/9e6e1db1-f30b-492d-8a09-d8756b9df700/article.html
+base: /episodes/9e6e1db1-f30b-492d-8a09-d8756b9df700/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+generated_at: 2026-10-20T18:27:24.405Z

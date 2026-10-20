@@ -31006,3 +31006,105 @@ jobs:
     submitted_at: 2026-10-19T18:12:52.393Z
     updated_at: 2026-10-19T18:43:34.343Z
     completed_at: 2026-10-19T18:43:34.343Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:0
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: 233a59f1-ea31-4284-9d7e-e311b52246da_14c95054162046cba510f9caf968b981
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:15:17.788Z
+    completed_at: 2026-10-20T18:15:17.788Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:1
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: f4269d28-908c-4b2a-b753-0f5d65b565a7_ce77577c2e2c4d8d943f1d7498711f97
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:17:13.803Z
+    completed_at: 2026-10-20T18:17:13.803Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:2
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: 99649fa3-293e-4f6f-9207-f942cb34aa74_b062c93019f340a69e5456fccad938e6
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:19:00.283Z
+    completed_at: 2026-10-20T18:19:00.283Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:3
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: f70b124f-c3ad-4100-8f07-f1d98eddb71e_28f46d4307e34d5cb1d9c18ab3a8e51f
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:20:23.805Z
+    completed_at: 2026-10-20T18:20:23.805Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:4
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: af601cdf-4b2e-4f90-ab07-da2132422cc9_a1499935d88e4820b57ae2b217f40ce7
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:22:19.830Z
+    completed_at: 2026-10-20T18:22:19.830Z
+  - key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z:chunk:5
+    parent_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    attempt_key: sv101:9e6e1db1-f30b-492d-8a09-d8756b9df700:20261019:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3:mimo:2026-10-20T18:12:56.054Z
+    provider: mimo
+    id: 9e6e1db1-f30b-492d-8a09-d8756b9df700
+    source: sv101
+    title: E256｜Agent、机器人与制药，谁先被GPT-6 Astra改写？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9e6e1db1-f30b-492d-8a09-d8756b9df700.mp3
+    task_id: add4388f-7cd1-4ccd-b567-38e0c4039592_96f8903eea604e62893f2a52e5f80384
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-10-20T18:12:56.054Z
+    updated_at: 2026-10-20T18:23:06.786Z
+    completed_at: 2026-10-20T18:23:06.786Z
