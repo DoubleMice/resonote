@@ -1,15 +1,27 @@
 source: xiaojun
-refreshed_at: 2026-10-20T18:12:54.625Z
+refreshed_at: 2026-10-21T03:04:26.273Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 2
+total_candidates: 3
 done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 6ad4dacd641ef406308d86e5
+    guid: 6ad4dacd641ef406308d86e5
+    title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻
+    duration: 7191
+    published: Wed, 21 Oct 2026 00:00:00 GMT
+    published_sort: "20261021"
+    first_seen_at: 2026-10-21T03:04:26.273Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ad4dacd641ef406308d86e5?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    image: https://image.xyzcdn.net/FniPHALFSQ4K7iFElerIG6dBuRzf.png
+    status: needs_transcript
+    priority: 1
   - id: 6acf81f0195d838e2af1e281
     guid: 6acf81f0195d838e2af1e281
     title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
