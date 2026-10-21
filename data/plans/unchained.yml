@@ -1,15 +1,135 @@
 source: unchained
-refreshed_at: 2026-10-21T03:04:26.251Z
+refreshed_at: 2026-10-21T18:13:29.323Z
 min_duration: 3300
 min_date: "20260930"
-total_candidates: 7
+total_candidates: 8
 done: 7
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
+    guid: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
+    title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography
+    duration: 3700
+    published: Wed, 21 Oct 2026 04:49:00 -0000
+    published_sort: "20261021"
+    first_seen_at: 2026-10-21T18:13:29.312Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    image: https://megaphone.imgix.net/podcasts/c9fa318a-cd0a-11f1-a18d-931cacf8b8ff/image/83422bed57ff4a5f3148b8ef8e6cff47.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Justin Drake says crypto should brace for AI breaking elliptic curves before Q-Day. Project Eleven's Alex Pruden
+      and Conor Deegan weigh in on what's actually at risk.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
+
+      Find out more at ⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠⁠⁠⁠⁠
+      Our listener survey⁠⁠⁠⁠⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone
+      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Ethereum researcher Justin Drake set off a debate across crypto by urging chains to plan for "bunker mode," a
+      controlled migration of assets to addresses whose public keys stay hidden behind a hash. His concern is not only
+      quantum computers, but AI getting good enough at math to break elliptic curves first.
+
+
+      Alex Pruden, co-founder and CEO of Project Eleven, and Conor Deegan, its CTO, join Laura Shin to sort out what is
+      at risk. They cover how ECDSA works, why Conor says no scheme in production is broken yet even though Hawk and
+      McEliece fell to AI attacks, why Coinbase's Yehuda Lindell notes hash functions have broken more often than
+      curves, and why NIST still favors lattices.
+
+
+      Alex updates his Q-Day window to 2030 at the earliest and 2033 to 2035 as more likely than not. Both argue the
+      post-quantum and post-AI migrations are the same work, and the chains most at risk may be those doing nothing.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guests:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Alex Pruden - Co-founder and CEO of Project Eleven
+
+        Conor Deegan - CTO of Project Eleven
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🛡️ 02:20 Why Justin Drake's 'bunker mode' tweet adds AI to quantum as a crypto threat
+
+
+      🔑 06:01 What ECDSA is and why its hidden 'trapdoor' structure worries people about AI
+
+
+      🧮 08:33 Why Conor says no scheme is broken yet, even as two cryptographic schemes fell to AI
+
+
+      🔐 13:06 Matthew Green's encryption warning and why privacy chains like Zcash are exposed
+
+
+      💼 17:20 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      ⚖️ 18:04 Where Conor lands between Yehuda Lindell and Justin Drake on AI breaking curves
+
+
+      🏦 25:53 Can blockchains recover if ECDSA breaks? Alex on the ETH Classic fork precedent
+
+
+      🧩 29:59 Curves, lattices, isogenies, or hashes: why NIST still prefers lattices
+
+
+      📅 48:14 Alex's updated Q-Day window and why Conor says 'A-Day' may already be here
+
+
+      🚨 53:05 Haseeb Qureshi's 'cryptographic wartime' and Balaji's rollback idea
+
+
+      🏗️ 58:41 Strongpoint: Project Eleven's crypto-agile custody and pricing quantum risk
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-21T18:13:30.841Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-10-21T18:13:53.879Z
   - id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
     guid: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
     title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
