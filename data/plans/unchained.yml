@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-10-23T03:04:14.316Z
+refreshed_at: 2026-10-23T18:11:38.235Z
 min_duration: 3300
 min_date: "20261002"
 total_candidates: 6
 done: 4
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
@@ -130,8 +130,18 @@ episodes:
       🎯 01:14:23 The drained-key update: bots grabbed 10-digit keys, but 12 digits held
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-23T18:11:39.024Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-10-23T18:11:54.970Z
   - id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     guid: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography

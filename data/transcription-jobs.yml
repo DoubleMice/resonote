@@ -31154,3 +31154,26 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3:mimo:2026-10-23T18:11:39.024Z:chunk:0
+    parent_key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    attempt_key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3:mimo:2026-10-23T18:11:39.024Z
+    provider: mimo
+    id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
+    source: unchained
+    title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-23T18:11:39.024Z
+    updated_at: 2026-10-23T18:11:54.970Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
