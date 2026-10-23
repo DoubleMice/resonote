@@ -1,15 +1,137 @@
 source: unchained
-refreshed_at: 2026-10-22T18:12:28.937Z
+refreshed_at: 2026-10-23T03:04:14.316Z
 min_duration: 3300
-min_date: "20261001"
-total_candidates: 7
-done: 6
+min_date: "20261002"
+total_candidates: 6
+done: 4
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
+    guid: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
+    title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"
+    duration: 4584
+    published: Thu, 22 Oct 2026 20:34:00 -0000
+    published_sort: "20261022"
+    first_seen_at: 2026-10-23T03:04:14.310Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    image: https://megaphone.imgix.net/podcasts/f4c72f28-ce57-11f1-ab3a-8f87c495b76f/image/78bd7e54a3499065a71c96ad4d837431.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      A certificate authority's private key was the number 4 for over a year. Kain, Taylor, and Austin on why the
+      internet's trust schemes are cracking.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at⁠ Nexo⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      ⁠⁠⁠⁠Our listener survey⁠⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone
+      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      For more than a year, the private key behind signatures from a certificate authority trusted across the internet
+      was the number 4.
+
+
+      Taylor Monahan walks Kain Warwick and Austin Griffith through how eMudhra passed two audits with eight weak keys,
+      and why revoking them now runs on an email thread between Google, Mozilla, and Apple. Kain argues it fits a
+      pattern: schemes that assumed nobody would bother trying, now facing AI agents that never stop.
+
+
+      The hosts also cover two remote code execution bugs in PHP, Austin's $1 test that drew three competing theft
+      transactions the moment it landed, papertrade's 1,000x leverage launch and its lose-to-earn token, and why
+      DeepSeek keeps getting cheaper even as DHS bans it for government use. They close on Anthropic, and Kain's case
+      that any frontier lab that turns cash-flow positive would be worth "infinity," a prospect he calls petrifying.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🌐 02:07 Why a burst of unrelated internet-breaking bugs landed in the same 48 hours
+
+
+      🔑 05:13 How a certificate authority's private key turned out to be the number 4
+
+
+      📧 17:47 Why revoking bad certificates runs on a literal email thread
+
+
+      🤖 22:52 Kain on why schemes built on human laziness are unraveling against AI
+
+
+      🐘 25:34 PHP to shell: two remote code execution bugs in the language behind the web
+
+
+      🛡️ 33:21 How Cloudflare is shielding unpatched PHP admin panels during the rollout
+
+
+      🎣 36:04 Austin's $1 test: how fast bots drained a weak Ethereum private key
+
+
+      💼 37:44 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🪣 38:25 papertrade's 1,000x 'bucket shop' and the token you earn by losing
+
+
+      📚 48:55 The mechanism design lessons hidden under DeFi Summer's degeneracy
+
+
+      🐋 52:35 How DeepSeek keeps getting smarter while Kain's API bill fell to $3 a month
+
+
+      🏛️ 57:06 Why DHS banned DeepSeek and why Austin says local models are the safer bet
+
+
+      ♾️ 01:05:13 Why Kain says Anthropic gives off SBF vibes and could be 'worth infinity'
+
+
+      🎯 01:14:23 The drained-key update: bots grabbed 10-digit keys, but 12 digits held
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     guid: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography
@@ -590,218 +712,3 @@ episodes:
     transcript_job_id: 7df6f63b-6b26-4546-b682-e5b3f3dc928f_bb4c9cea32f24d16a2bfe3f7d18c00a1,018ace65-43e1-43c3-8334-ec19738cf6ae_c7e3f0b0903842fb8b0ce75cc86f4d9f,02deb7c2-0d1c-45ee-86c1-145df69713a8_57e2a6fb6971449fa2cc1891a7de8ddc,718f4332-d0cb-4a13-af5a-37b3da5df744_20ecaf2182504d91b5e0023889375598,2c7971e5-3838-4ae9-88e0-dd0ca580e1ae_2d503d2a71d249019279f1c68618cbb2
     transcript_submitted_at: 2026-10-07T18:14:30.150Z
     transcript_completed_at: 2026-10-07T18:22:26.610Z
-  - id: 768e729a-bdd8-11f1-84fe-776dead69d3a
-    guid: 768e729a-bdd8-11f1-84fe-776dead69d3a
-    title: "Uneasy Money: The $388M Bitget Hack Started With a Security Vendor"
-    duration: 4985
-    published: Thu, 01 Oct 2026 20:41:00 -0000
-    published_sort: "20261001"
-    first_seen_at: 2026-10-02T03:04:55.482Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8558616734.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8558616734.mp3
-    image: https://megaphone.imgix.net/podcasts/768e729a-bdd8-11f1-84fe-776dead69d3a/image/8c888643035ca79d97b4e54b5a7dd7d2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Taylor Monahan ties the Bitget hack to North Korea and the crew asks why THORChain still avoids the scrutiny
-      Tornado Cash got.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
-      buying - swap it at ⁠⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠⁠
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      ⁠Our listener survey⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      Attackers took $388 million from Bitget without ever getting its private keys. Opsek founder Pablo Sabbatella
-      explains that the way in was a zero-day in a third-party security product the exchange relied on.
-
-
-      Sabbatella, who now sits on Arbitrum's Security Council, joins Kain Warwick, Taylor Monahan, and Austin Griffith
-      to trace the hack. Monahan attributes it to North Korea's TraderTraitor group and flags how fast the funds left
-      Arbitrum, while the hosts ask why THORChain, which has halted its chain and reallocated balances before, still
-      handles stolen funds.
-
-
-      They also cover NEAR's SHIELD anomaly detection, reports of rogue AI agents hacking outside systems, whether
-      retail should get the upside of a $2 trillion Anthropic IPO, and Vitalik Buterin's 2030 roadmap for Ethereum.
-
-
-      Warwick's case: the harder the problem, the more superintelligence helps, and Ethereum is one of the hardest
-      problems there is.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Guest:
-
-        Pablo Sabbatella - Founder at Opsek
-
-      Timestamps
-
-
-      🚨 02:32 How Bitget got hit for $388M and covered the losses
-
-
-      🛡️ 08:24 Why Pablo says a third-party security product was the way into Bitget
-
-
-      🕵️ 11:22 Taylor ties the hack to North Korea and highlights their rush to exit Arbitrum
-
-
-      ❄️ 13:34 Pablo on why security councils restart the freeze debate every time
-
-
-      ⛓️ 14:17 Why Kain says THORChain can't claim it's like Bitcoin and Ethereum
-
-
-      🧭 30:24 How NEAR's Shield blocks funds using behavioral anomaly detection
-
-
-      📣 34:51 1inch: See how 1inch Aqua lets LPs back multiple positions with one token balance at
-      http://unchainedcrypto.com/go/1inch-yt
-
-
-      🤖 36:16 Rogue AI agents are hacking outside systems as the labs eye IPOs
-
-
-      🔓 39:11 Why Pablo thinks the AI labs want to regulate open-source models
-
-
-      📈 48:55 Kain's case for letting retail take the risk on a $2T Anthropic IPO
-
-
-      🧱 01:05:47 Why Kain calls Vitalik's 2030 roadmap the most bullish Ethereum read in years
-
-
-      🏪 01:19:18 Pablo asks whether Ethereum's real challenge is commercial, not technical
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: ba21a76e-da19-4875-9014-fb66b00f69ca_6ca4a5354a834bda8aaed1dbd5f81181,47dcb585-2978-430d-91b9-248c52e771e6_bc81eb8371744dba9342ad9e5b6d13f6,3c4488de-487b-41dd-9c2d-e4813f267360_c553c3ac1f814d23a19d3793d298b8ef,e7cbf9e8-f0e2-4b4e-b20f-59b86d8877b5_00368f2454354d6ba36c0e56e0981e2f,5668179b-d85b-4ae6-aa5d-485a28ad5366_6b56a29eaad041439357363c46ccb91a,87fc67e0-b157-4979-8fc9-c1217fe7ec2d_e365acc705e04a1eb1a50573ff92f2f8
-    transcript_submitted_at: 2026-10-02T18:22:36.440Z
-    transcript_completed_at: 2026-10-02T18:29:18.568Z
-  - id: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
-    guid: 4908b17c-bdc5-11f1-b5b1-9fed10733b27
-    title: Is Hunter Biden's $LAPTOP Coin a Scam? He Says the Wallets Prove It Isn't
-    duration: 3308
-    published: Thu, 01 Oct 2026 18:24:00 -0000
-    published_sort: "20261001"
-    first_seen_at: 2026-10-02T03:04:55.482Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5345673055.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5345673055.mp3
-    image: https://megaphone.imgix.net/podcasts/4908b17c-bdc5-11f1-b5b1-9fed10733b27/image/38f3fc830e93124925d62850da2a5fa8.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Hunter Biden walks through the $LAPTOP launch, when thin liquidity sent the token to a $317 billion market cap in
-      a minute, and why he says it isn't a scam.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Visit⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re buying - swap it at⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ 1inch.com⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
-
-      ========================================================
-
-
-      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠ Our
-      listener survey⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who takes
-      it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday, October
-      18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      In June, Hunter Biden replied to a small account on X that "fiat is a sham" and the banking class is corrupt. His
-      next move was $LAPTOP, a memecoin he says has the opposite tokenomics of the $TRUMP token.
-
-
-      Hunter joins Laura Shin to trace his path into crypto, from the UN World Food Programme’s digital wallets for
-      refugees (originally covered on Unchained in 2018) to The Internet of Money. He walks through $LAPTOP's first
-      minutes, when a market maker seeded about $5,000 of liquidity and the token briefly showed a $317 billion market
-      cap, and answers critics who call it a scam.
-
-
-      He also lays out the token's prediction market burn mechanism, argues the Clarity Act died because the
-      administration wouldn't bend on ethics rules covering the Trump family, and challenges Elizabeth Warren for siding
-      with the banks.
-
-
-      Host:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-      Guest:
-
-        ⁠⁠⁠⁠Hunter Biden - Artist, Author, and Recovery Advocate
-
-      Timestamps
-
-
-      🎨 01:26 How a blockchain-related initiative at the UN World Food Programme led Hunter to crypto
-
-
-      🏛️ 07:34 Why Hunter says most Democrats only know crypto through Trump's 'grift'
-
-
-      💧 12:47 1inch Aqua: See how LPs back multiple positions with one balance at
-      http://unchainedcrypto.com/go/1inch-yt
-
-
-      💻 13:46 Why Hunter launched $LAPTOP and what he says went wrong at its debut
-
-
-      🔍 21:14 Hunter answers critics who call $LAPTOP the scam he accuses Trump of
-
-
-      🎲 23:52 How $LAPTOP's built-in prediction market burns tokens or funds charity
-
-
-      ⚖️ 33:35 Hunter's case against World Liberty Financial and the Trump family business
-
-
-      🗳️ 46:47 Can Democrats revive the Clarity Act if they take back Congress?
-
-
-      🏦 50:01 Why Hunter can't understand Elizabeth Warren siding with the banks
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 3ef76f52-7a43-48cf-a5c1-d9edd3dbaf51_319f2a99ab36486ea5e4201c128d8ee7,0505af7c-0138-4a51-a435-a5ceb130adb4_ae1e55dbbf074c278de687cda9cc52d3,50e98f27-f739-4942-90d0-9129dfe0c3fe_419a4de856e942a8b1e5ffd12e93420f,7aa9715b-2bb6-43f7-94c0-e51018e30df5_e0ea169ac62f40e2bafff4eebce1da52
-    transcript_submitted_at: 2026-10-02T18:29:19.115Z
-    transcript_completed_at: 2026-10-02T18:32:53.269Z
