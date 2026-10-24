@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-10-23T18:11:38.235Z
+refreshed_at: 2026-10-24T03:03:44.815Z
 min_duration: 3300
-min_date: "20261002"
+min_date: "20261003"
 total_candidates: 6
 done: 4
 pending: 0
@@ -134,6 +134,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-23T18:11:39.024Z
+    transcript_completed_at: 2026-10-23T18:11:54.970Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -141,7 +142,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-23T18:11:54.970Z
   - id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     guid: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
     title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography
