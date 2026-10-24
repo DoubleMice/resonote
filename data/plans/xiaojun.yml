@@ -1,5 +1,5 @@
 source: xiaojun
-refreshed_at: 2026-10-24T03:03:44.842Z
+refreshed_at: 2026-10-24T18:10:59.806Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-21T18:13:54.136Z
-    transcript_completed_at: 2026-10-21T18:14:28.326Z
+    transcript_submitted_at: 2026-10-24T18:11:23.802Z
+    transcript_completed_at: 2026-10-24T18:12:00.162Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

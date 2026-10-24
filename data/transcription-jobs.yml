@@ -31177,3 +31177,49 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3:mimo:2026-10-24T18:11:01.143Z:chunk:0
+    parent_key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    attempt_key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3:mimo:2026-10-24T18:11:01.143Z
+    provider: mimo
+    id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
+    source: unchained
+    title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-24T18:11:01.143Z
+    updated_at: 2026-10-24T18:11:23.550Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-10-24T18:11:23.802Z:chunk:0
+    parent_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    attempt_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-10-24T18:11:23.802Z
+    provider: mimo
+    id: 6ad4dacd641ef406308d86e5
+    source: xiaojun
+    title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-24T18:11:23.802Z
+    updated_at: 2026-10-24T18:12:00.162Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }

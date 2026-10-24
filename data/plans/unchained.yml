@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-10-24T03:03:44.815Z
+refreshed_at: 2026-10-24T18:10:59.778Z
 min_duration: 3300
 min_date: "20261003"
 total_candidates: 6
@@ -253,8 +253,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-21T18:13:30.841Z
-    transcript_completed_at: 2026-10-21T18:13:53.879Z
+    transcript_submitted_at: 2026-10-24T18:11:01.143Z
+    transcript_completed_at: 2026-10-24T18:11:23.550Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
