@@ -1,12 +1,108 @@
 source: lex-fridman
-refreshed_at: 2026-10-24T18:10:59.844Z
+refreshed_at: 2026-10-25T03:04:07.383Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 0
+total_candidates: 8
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 8
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
-episodes: []
+episodes:
+  - id: p-6554
+    guid: https://lexfridman.com/?p=6554
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    duration: 13431
+    published: Thu, 17 Sep 2026 00:40:49 +0000
+    published_sort: "20260917"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/andrew-scull/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=andrew-scull
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6494
+    guid: https://lexfridman.com/?p=6494
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    duration: 11993
+    published: Wed, 12 Aug 2026 13:11:45 +0000
+    published_sort: "20260812"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/khabib-nurmagomedov/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=khabib-nurmagomedov
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6466
+    guid: https://lexfridman.com/?p=6466
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    duration: 14326
+    published: Tue, 30 Jun 2026 21:33:40 +0000
+    published_sort: "20260630"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/anthony-kaldellis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=anthony-kaldellis
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6434
+    guid: https://lexfridman.com/?p=6434
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    duration: 9133
+    published: Mon, 23 Mar 2026 16:28:42 +0000
+    published_sort: "20260323"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/jensen-huang/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jensen-huang
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6426
+    guid: https://lexfridman.com/?p=6426
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    duration: 19017
+    published: Wed, 11 Mar 2026 20:37:33 +0000
+    published_sort: "20260311"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/jeff-kaplan/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jeff-kaplan
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6421
+    guid: https://lexfridman.com/?p=6421
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    duration: 9747
+    published: Sun, 01 Mar 2026 04:33:22 +0000
+    published_sort: "20260301"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/rick-beato/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rick-beato
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6413
+    guid: https://lexfridman.com/?p=6413
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    duration: 12350
+    published: Thu, 12 Feb 2026 03:10:39 +0000
+    published_sort: "20260212"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/peter-steinberger/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=peter-steinberger
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
+  - id: p-6394
+    guid: https://lexfridman.com/?p=6394
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    duration: 16792
+    published: Sun, 01 Feb 2026 02:46:43 +0000
+    published_sort: "20260201"
+    first_seen_at: 2026-10-25T03:04:07.383Z
+    url: https://lexfridman.com/ai-sota-2026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ai-sota-2026
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    status: needs_transcript
+    priority: 1
