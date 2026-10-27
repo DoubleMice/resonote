@@ -1,15 +1,138 @@
 source: unchained
-refreshed_at: 2026-10-27T03:04:57.753Z
+refreshed_at: 2026-10-27T18:09:31.240Z
 min_duration: 3300
 min_date: "20261006"
-total_candidates: 6
+total_candidates: 7
 done: 4
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    guid: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    title: Why America's New Cyber Privateers Can't Go After North Korea
+    duration: 3313
+    published: Tue, 27 Oct 2026 17:56:00 -0000
+    published_sort: "20261027"
+    first_seen_at: 2026-10-27T18:09:31.232Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    image: https://megaphone.imgix.net/podcasts/c46dc126-d22f-11f1-8de1-b3f7712d873a/image/f2549077e0555f30732cbb6db59497a0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Can the US fight AI-powered hackers and North Korea by deputizing its private sector? Two government veterans
+      explain why the answer is yes and no.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
+
+      Find out more at ⁠⁠⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+      Our listener survey⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone
+      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      North Korea has stolen more than $1 billion in crypto this year, AI-driven ransomware attacks have run with no
+      human in the loop, and a single week exposed weak keys and bugs buried in old internet infrastructure. One answer
+      gaining traction in Washington dates to the age of sail: privateering.
+
+
+      Chris Giancarlo, former chairman of the CFTC and author of The New Adventures of CryptoDad, proposed reviving
+      letters of marque and reprisal in a Cointelegraph op-ed with Chris Perkins, then pitched it at a White House
+      crypto summit. Giancarlo and Ari Redbord, global head of policy at TRM Labs, join Laura Shin to unpack the August
+      presidential memo that followed.
+
+
+      They cover why the memo lets vetted contractors target scam compounds, cartels, and ransomware gangs but leaves
+      Lazarus Group to the government, how the Prince Group's $15 billion forfeiture shows stolen funds can be clawed
+      back, and how deepfake interviews put DPRK IT workers inside US companies. The final question: does hitting back
+      make the problem bigger?
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠J. Christopher Giancarlo - Former Chairman of the US CFTC
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Ari Redbord - Global Head of Policy at TRM Labs
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      📋 01:01 Unchained Survey: take the listener survey for a free month of Premium at
+      https://unchainedcrypto.com/survey&nbsp;
+
+
+      🎙️ 02:02 Find Bits + Bips’ new channels and subscribe at https://www.youtube.com/@Bitsandbips&nbsp;
+
+
+      🚨 02:40 Why Redbord says AI-run ransomware is now a civilization-level threat
+
+
+      📜 05:29 Letters of marque: how Giancarlo and Perkins proposed reviving them
+
+
+      💰 10:24 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt&nbsp;
+
+
+      🏛️ 11:14 How crypto privateering went from an op-ed to a White House memo
+
+
+      🛑 16:50 Why the memo bars privateers from going after Lazarus Group
+
+
+      🕸️ 23:04 What hacking back looks like: scam compound infrastructure and clawbacks
+
+
+      🔓 35:24 PHP bugs and weak eMudhra keys: privateering as risks multiply
+
+
+      🇰🇵 42:14 North Korea: why the government, not privateers, pulls the trigger
+
+
+      🎭 48:59 How companies can catch North Korean IT workers using deepfakes
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-27T18:09:32.513Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-10-27T18:09:52.818Z
   - id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
     guid: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
     title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"

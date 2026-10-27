@@ -31522,3 +31522,49 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-10-27T18:09:32.513Z:chunk:0
+    parent_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    attempt_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-10-27T18:09:32.513Z
+    provider: mimo
+    id: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    source: unchained
+    title: Why America's New Cyber Privateers Can't Go After North Korea
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-27T18:09:32.513Z
+    updated_at: 2026-10-27T18:09:52.818Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-10-27T18:09:53.009Z:chunk:0
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-10-27T18:09:53.009Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 15
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-27T18:09:53.009Z
+    updated_at: 2026-10-27T18:10:47.400Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }

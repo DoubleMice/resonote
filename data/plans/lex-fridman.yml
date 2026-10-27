@@ -1,13 +1,13 @@
 source: lex-fridman
-refreshed_at: 2026-10-27T03:04:57.809Z
+refreshed_at: 2026-10-27T18:09:31.307Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 9
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 8
+transcribe_failed: 9
 downloaded: 0
 episodes:
   - id: p-7807
@@ -20,8 +20,18 @@ episodes:
     url: https://lexfridman.com/math-ai-crisis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=math-ai-crisis
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-27T18:09:53.009Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-10-27T18:10:47.400Z
   - id: p-6554
     guid: https://lexfridman.com/?p=6554
     title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
