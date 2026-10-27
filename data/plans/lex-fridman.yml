@@ -1,15 +1,27 @@
 source: lex-fridman
-refreshed_at: 2026-10-26T18:15:15.273Z
+refreshed_at: 2026-10-27T03:04:57.809Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 8
+total_candidates: 9
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 8
 downloaded: 0
 episodes:
+  - id: p-7807
+    guid: https://lexfridman.com/?p=7807
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    duration: 13360
+    published: Mon, 26 Oct 2026 22:52:28 +0000
+    published_sort: "20261026"
+    first_seen_at: 2026-10-27T03:04:57.809Z
+    url: https://lexfridman.com/math-ai-crisis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=math-ai-crisis
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+    status: needs_transcript
+    priority: 1
   - id: p-6554
     guid: https://lexfridman.com/?p=6554
     title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
@@ -19,7 +31,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/andrew-scull/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=andrew-scull
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -41,7 +53,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/khabib-nurmagomedov/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=khabib-nurmagomedov
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -63,7 +75,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/anthony-kaldellis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=anthony-kaldellis
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -85,7 +97,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/jensen-huang/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jensen-huang
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -107,7 +119,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/jeff-kaplan/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jeff-kaplan
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -129,7 +141,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/rick-beato/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rick-beato
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -151,7 +163,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/peter-steinberger/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=peter-steinberger
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -173,7 +185,7 @@ episodes:
     first_seen_at: 2026-10-25T03:04:07.383Z
     url: https://lexfridman.com/ai-sota-2026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ai-sota-2026
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
-    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/artwork_3000-230.png
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo

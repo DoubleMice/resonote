@@ -1,5 +1,5 @@
 source: tulong-zhishu
-refreshed_at: 2026-10-26T18:15:15.261Z
+refreshed_at: 2026-10-27T03:04:57.799Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -24,6 +24,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-26T18:15:46.130Z
+    transcript_completed_at: 2026-10-26T18:16:21.135Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -31,7 +32,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-26T18:16:21.135Z
   - id: 6ab9f026e742e36efcbc0d88
     guid: 6ab9f026e742e36efcbc0d88
     title: 当AI开始设计芯片---聊聊EDA与AI时代的芯片设计

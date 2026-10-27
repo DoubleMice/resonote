@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-26T18:15:15.266Z
+refreshed_at: 2026-10-27T03:04:57.804Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
@@ -24,6 +24,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-26T18:15:16.715Z
+    transcript_completed_at: 2026-10-26T18:15:45.878Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -31,7 +32,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-26T18:15:45.878Z
   - id: 6ad39cbe641ef406308d2e08
     guid: 6ad39cbe641ef406308d2e08
     title: 56. 硅谷国庆见闻 - 愿天下处处是泡沫
