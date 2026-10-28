@@ -31568,3 +31568,187 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-10-28T18:10:43.887Z:chunk:0
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-10-28T18:10:43.887Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 15
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:10:43.887Z
+    updated_at: 2026-10-28T18:11:42.668Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-10-28T18:11:42.888Z:chunk:0
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-10-28T18:11:42.888Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 14
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:11:42.888Z
+    updated_at: 2026-10-28T18:12:32.243Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-10-28T18:12:32.460Z:chunk:0
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-10-28T18:12:32.460Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 16
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:12:32.460Z
+    updated_at: 2026-10-28T18:13:31.834Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-10-28T18:13:32.055Z:chunk:0
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-10-28T18:13:32.055Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:13:32.055Z
+    updated_at: 2026-10-28T18:14:11.505Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-10-28T18:14:11.740Z:chunk:0
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-10-28T18:14:11.740Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 22
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:14:11.740Z
+    updated_at: 2026-10-28T18:15:32.776Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-10-28T18:15:32.996Z:chunk:0
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-10-28T18:15:32.996Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:15:32.996Z
+    updated_at: 2026-10-28T18:16:16.730Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-10-28T18:16:16.973Z:chunk:0
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-10-28T18:16:16.973Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 14
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:16:16.973Z
+    updated_at: 2026-10-28T18:17:08.028Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-10-28T18:17:08.246Z:chunk:0
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-10-28T18:17:08.246Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 19
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-28T18:17:08.246Z
+    updated_at: 2026-10-28T18:18:17.889Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
