@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-10-27T18:09:31.307Z
+refreshed_at: 2026-10-28T03:03:35.044Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 9
@@ -24,6 +24,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-27T18:09:53.009Z
+    transcript_completed_at: 2026-10-27T18:10:47.400Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -31,7 +32,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-27T18:10:47.400Z
   - id: p-6554
     guid: https://lexfridman.com/?p=6554
     title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"

@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-10-27T18:09:31.240Z
+refreshed_at: 2026-10-28T03:03:34.989Z
 min_duration: 3300
-min_date: "20261006"
+min_date: "20261007"
 total_candidates: 7
 done: 4
 pending: 0
@@ -125,6 +125,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-27T18:09:32.513Z
+    transcript_completed_at: 2026-10-27T18:09:52.818Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -132,7 +133,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-27T18:09:52.818Z
   - id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
     guid: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
     title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"
