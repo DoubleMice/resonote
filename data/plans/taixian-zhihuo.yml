@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-10-29T03:03:31.012Z
+refreshed_at: 2026-10-29T18:10:47.895Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-26T18:15:16.715Z
-    transcript_completed_at: 2026-10-26T18:15:45.878Z
+    transcript_submitted_at: 2026-10-29T18:12:19.097Z
+    transcript_completed_at: 2026-10-29T18:12:42.568Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

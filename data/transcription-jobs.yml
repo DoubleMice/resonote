@@ -31752,3 +31752,187 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-10-29T18:10:48.988Z:chunk:0
+    parent_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    attempt_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-10-29T18:10:48.988Z
+    provider: mimo
+    id: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
+    source: sv101
+    title: E257｜对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:10:48.988Z
+    updated_at: 2026-10-29T18:11:17.324Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-10-29T18:11:17.567Z:chunk:0
+    parent_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    attempt_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-10-29T18:11:17.567Z
+    provider: mimo
+    id: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    source: unchained
+    title: Why America's New Cyber Privateers Can't Go After North Korea
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:11:17.567Z
+    updated_at: 2026-10-29T18:11:33.583Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-10-29T18:11:33.750Z:chunk:0
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-10-29T18:11:33.750Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 15
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:11:33.750Z
+    updated_at: 2026-10-29T18:12:18.929Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpz_xg16AMaYjgdzjvuu77C-Cga5.m4a:mimo:2026-10-29T18:12:19.097Z:chunk:0
+    parent_key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpz_xg16AMaYjgdzjvuu77C-Cga5.m4a
+    attempt_key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpz_xg16AMaYjgdzjvuu77C-Cga5.m4a:mimo:2026-10-29T18:12:19.097Z
+    provider: mimo
+    id: 6adf4c2697726cd46758024c
+    source: taixian-zhihuo
+    title: 57. AI硬件是下一轮共识？从具身拳皇到万能赛博工牌 - FoloToy / 魂伴科技
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpz_xg16AMaYjgdzjvuu77C-Cga5.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:12:19.097Z
+    updated_at: 2026-10-29T18:12:42.568Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a:mimo:2026-10-29T18:12:42.751Z:chunk:0
+    parent_key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a
+    attempt_key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a:mimo:2026-10-29T18:12:42.751Z
+    provider: mimo
+    id: 6adf8a8dc96c8942ec12aa7d
+    source: tulong-zhishu
+    title: 不是，怎么又换版本了？---狂飙中的AI 2026
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:12:42.751Z
+    updated_at: 2026-10-29T18:13:12.546Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-10-29T18:13:12.711Z:chunk:0
+    parent_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    attempt_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-10-29T18:13:12.711Z
+    provider: mimo
+    id: 6ad4dacd641ef406308d86e5
+    source: xiaojun
+    title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:13:12.711Z
+    updated_at: 2026-10-29T18:13:41.274Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3:mimo:2026-10-29T18:13:41.454Z:chunk:0
+    parent_key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    attempt_key: unchained:f4c72f28-ce57-11f1-ab3a-8f87c495b76f:20261022:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3:mimo:2026-10-29T18:13:41.454Z
+    provider: mimo
+    id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
+    source: unchained
+    title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:13:41.454Z
+    updated_at: 2026-10-29T18:14:01.465Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3:mimo:2026-10-29T18:14:01.641Z:chunk:0
+    parent_key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    attempt_key: unchained:c9fa318a-cd0a-11f1-a18d-931cacf8b8ff:20261021:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3:mimo:2026-10-29T18:14:01.641Z
+    provider: mimo
+    id: c9fa318a-cd0a-11f1-a18d-931cacf8b8ff
+    source: unchained
+    title: How Crypto Can Survive If AI or Quantum Computers Break Its Cryptography
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4710755371.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-29T18:14:01.641Z
+    updated_at: 2026-10-29T18:14:18.402Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }

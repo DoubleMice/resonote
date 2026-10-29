@@ -1,5 +1,5 @@
 source: tulong-zhishu
-refreshed_at: 2026-10-29T03:03:31.006Z
+refreshed_at: 2026-10-29T18:10:47.891Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -18,13 +18,13 @@ episodes:
     published_sort: "20261026"
     first_seen_at: 2026-10-26T18:15:15.261Z
     url: https://www.xiaoyuzhoufm.com/episode/6adf8a8dc96c8942ec12aa7d?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/lnW0XYKyKthMFjdI81jK8FKWptdE.m4a
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a
     image: https://image.xyzcdn.net/Fn0a7a5FwtBw-mFMkIfpVrucWsDZ.png
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-26T18:15:46.130Z
-    transcript_completed_at: 2026-10-26T18:16:21.135Z
+    transcript_submitted_at: 2026-10-29T18:12:42.751Z
+    transcript_completed_at: 2026-10-29T18:13:12.546Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
