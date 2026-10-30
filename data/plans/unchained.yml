@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-10-30T03:03:37.967Z
+refreshed_at: 2026-10-30T18:08:30.996Z
 min_duration: 3300
 min_date: "20261009"
 total_candidates: 6
 done: 2
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 3
+transcribe_failed: 4
 downloaded: 0
 episodes:
   - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
@@ -136,8 +136,18 @@ episodes:
       🐜 01:18:33 OpenAI's Terra 6.1 and the agent armies battling on AntWars.ai
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-30T18:08:42.823Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-10-30T18:08:59.828Z
   - id: c46dc126-d22f-11f1-8de1-b3f7712d873a
     guid: c46dc126-d22f-11f1-8de1-b3f7712d873a
     title: Why America's New Cyber Privateers Can't Go After North Korea

@@ -31936,3 +31936,49 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3:mimo:2026-10-30T18:08:31.889Z:chunk:0
+    parent_key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3
+    attempt_key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3:mimo:2026-10-30T18:08:31.889Z
+    provider: mimo
+    id: SNAKEOILERS24PT2
+    source: risky-business
+    title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-30T18:08:31.889Z
+    updated_at: 2026-10-30T18:08:42.682Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3:mimo:2026-10-30T18:08:42.823Z:chunk:0
+    parent_key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    attempt_key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3:mimo:2026-10-30T18:08:42.823Z
+    provider: mimo
+    id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
+    source: unchained
+    title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-10-30T18:08:42.823Z
+    updated_at: 2026-10-30T18:08:59.828Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
