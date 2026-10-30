@@ -1,15 +1,143 @@
 source: unchained
-refreshed_at: 2026-10-29T18:10:47.843Z
+refreshed_at: 2026-10-30T03:03:37.967Z
 min_duration: 3300
-min_date: "20261008"
+min_date: "20261009"
 total_candidates: 6
-done: 3
+done: 2
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
+    guid: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
+    title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
+    duration: 4872
+    published: Thu, 29 Oct 2026 20:22:00 -0000
+    published_sort: "20261029"
+    first_seen_at: 2026-10-30T03:03:37.956Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    image: https://megaphone.imgix.net/podcasts/7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812/image/ac450141a52b027618314cadcf3cfab7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Anthropic's S-1 shows the company is still burning cash. Kain Warwick and Taylor Monahan say the bigger risk is a
+      founder voting bloc that has to vote together.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at⁠⁠ Nexo⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      ⁠⁠⁠⁠⁠Our listener survey⁠⁠⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone
+      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
+      October 18.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      Anthropic has filed its S-1, and Kain Warwick stacks it up against Google's 2004 IPO: $12 billion in revenue in Q2
+      2026 alone and $8.7 million in revenue per employee. What jumped out at him, though, was governance: 7 founders
+      holding 50% of the voting shares in a side pot that has to vote together.
+
+
+      Warwick, Taylor Monahan, and Austin Griffith say crypto has run this experiment before. Monahan calls the
+      founders' sense of moral superiority Anthropic's biggest risk, and Griffith compares the bloc to every multisig
+      that stalled once the incentives to coordinate faded.
+
+
+      The hosts also cover how AI models started sending bug bounty disputes to SEAL 911, an AI result that says "ETH is
+      false," Keystone's leaked device signing key, phishing emails sent from Foundation's own mail system, and why
+      Ethereum's Glamsterdam upgrade was cancelled.
+
+
+      In what Warwick calls one of the most dangerous times to be in crypto, the safest move may be doing less.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      📋 00:38 Unchained Survey: complete the listener survey at https://unchainedcrypto.com/survey
+
+
+      🎙️ 01:40 Bits + Bips: search Bits + Bips and subscribe at https://www.youtube.com/@Bitsandbips
+
+
+      📈 02:08 Anthropic's S-1: how $12B in Q2 revenue stacks up against Google's IPO
+
+
+      🗳️ 10:27 Why Kain thinks Anthropic's 7-founder voting bloc is destined to blow up
+
+
+      🤖 23:24 Austin on why AI answers could become winner-take-all like Google search
+
+
+      🚨 27:41 How AI models started sending bug bounty disputes to SEAL 911
+
+
+      🏦 30:50 Nexo: generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🧮 31:32 'AI says ETH is false': why AI chipping away at hard math matters
+
+
+      🎓 46:06 Will kids still go to college? Austin, Tay, and Kain on parenting with AI
+
+
+      🔑 49:52 Are hardware wallets bad again? Keystone's leaked device signing key
+
+
+      ☎️ 54:13 Why nobody legit in crypto will ever call you, and Kain's OTC scam story
+
+
+      📧 01:01:17 Foundation's hacked mail system and a phishing site too polished to be real
+
+
+      🧘 01:07:50 Don't panic: Kain's 'personal Lindy' and Tay's case for doing less
+
+
+      ⛽ 01:11:12 Austin's 'smooth brain take' on why Glamsterdam was cancelled
+
+
+      🐜 01:18:33 OpenAI's Terra 6.1 and the agent armies battling on AntWars.ai
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: c46dc126-d22f-11f1-8de1-b3f7712d873a
     guid: c46dc126-d22f-11f1-8de1-b3f7712d873a
     title: Why America's New Cyber Privateers Can't Go After North Korea
@@ -617,122 +745,3 @@ episodes:
     transcript_job_id: 4eb8292d-85c2-4253-9c69-910c0878deab_f6d8181b59324aae818472817235c973,639c7f56-a0a9-400f-9175-185c3d0f86d0_07cea630ae204b4c810ca564f1713288,b81fdbdb-b1cc-48ac-a22f-124c59d39147_9317ff51041042adb97e86e9508e3ab3,24cb281b-6116-4442-a7bf-b240d1375bbc_3189e60ea61d405daef6d013082d5d3f
     transcript_submitted_at: 2026-10-14T18:12:44.033Z
     transcript_completed_at: 2026-10-14T18:21:39.009Z
-  - id: 6c448732-c33e-11f1-96c4-73b11195b3f5
-    guid: 6c448732-c33e-11f1-96c4-73b11195b3f5
-    title: "How OpenAI's Math Dump Has Crypto Rethinking Its Cryptography: Uneasy Money"
-    duration: 4780
-    published: Thu, 08 Oct 2026 17:33:00 -0000
-    published_sort: "20261008"
-    first_seen_at: 2026-10-08T18:12:27.463Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4591977430.mp3
-    image: https://megaphone.imgix.net/podcasts/6c448732-c33e-11f1-96c4-73b11195b3f5/image/9f51b4291ede29dc2e78899201d961b6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Justin Drake told holders not to panic. Ben DiFrancesco says if AI weakens elliptic curves, the clock is how fast
-      Chinese models catch up.
-
-
-      ========================================================
-
-
-      Thank you to our sponsors!
-
-
-      Visit 1inch to swap tokenized securities, crypto and more. Simple. Secure. Self-custodial. Whatever asset you’re
-      buying - swap it at ⁠⁠⁠⁠⁠⁠⁠http://unchainedcrypto.com/go/1inch-sn⁠⁠⁠⁠⁠⁠⁠
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      ⁠⁠Our listener survey⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      OpenAI released 722 math papers, and Justin Drake followed with a "don't panic" tweet suggesting large holders
-      consider moving funds, setting off a wave of speculation that elliptic curve keys might soon be easier to brute
-      force.
-
-
-      Ben DiFrancesco, Founder and CEO of ScopeLift, joins Kain Warwick, Taylor Monahan, and Austin Griffith to separate
-      rumor from risk. DiFrancesco puts low odds on the rumors but argues crypto would get hit first, patch fastest, and
-      could leave traditional finance as the worse place to hold money, with Chinese open-weight models setting the
-      clock. Monahan untangles the 0.36 ETH MetaMask staking incident that got pulled into the speculation.
-
-
-      They also cover ZachXBT's undercover investigation of a DPRK money launderer, the NEAR Intents hacker sending
-      funds back, and a push for Swiss authorities to intervene at Safe. DiFrancesco closes with a warning for token
-      teams: the regulatory excuse for skipping value return is going away.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Guest:
-
-        ⁠Ben DiFrancesco - Founder and CEO of ScopeLift
-
-      Timestamps
-
-
-      🔐 01:57 Why Justin Drake’s ‘don’t panic’ tweet has crypto eyeing its cryptography
-
-
-      🦊 06:12 Taylor on the MetaMask staking incident and the 0.36 ETH that tipped it off
-
-
-      🧮 14:03 Ben on why even a worst-case ECC break wouldn’t mean instant theft
-
-
-      🏦 20:04 Why Ben thinks TradFi, not crypto, could be the worse place to hold money
-
-
-      🤖 25:02 How AI models went from flubbing 2+2 to formalizing hard math
-
-
-      💧 30:45 1inch: See how LPs can back multiple positions with one token balance at
-      http://unchainedcrypto.com/go/1inch-yt
-
-
-      🔙 31:49 How the NEAR Intents hacker ended up sending the money back
-
-
-      🕵️ 37:07 ZachXBT went undercover with a DPRK money launderer: what he found
-
-
-      😤 51:25 Why instant outrage is the tell for launderers and Sybil farmers
-
-
-      🏗️ 56:11 From Gnosis’s 2017 ICO to Safe, the multisig securing $100B+
-
-
-      ⚖️ 01:02:23 The push for Swiss intervention at Safe and what it actually claims
-
-
-      🗳️ 01:08:12 Ben on how regulatory fear warped DAOs and why value return matters now
-
-
-      🧱 01:17:12 Blast and Abstract shut down: too many L2s, and never build a wallet
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: d8a754ed-b8b3-43c7-a990-cec635538d73_07c2f61df58b49afad39a81257b8b3f1,a1d0f4c2-6917-4556-9751-c63ec1a3ab39_41b84cb3c1734b2ba16c26eecd5b5e1b,aa7495b9-e8ab-4ab2-8322-3ac073f52032_97ee17de6e5948ffa5866584e36d803c,943491a3-aeb9-4a9f-818d-1e28c0b6f9aa_8b126ca5dab6416bb661b9f6815deb0a,2a573def-2629-4873-8cae-e017bd5187f1_b0810387b4524f47abb343b7dcf4cbb6,677031b9-18a0-4b3c-baae-cae46334dad4_bdf9f643b6f34ec5b1e95492bd0de139
-    transcript_submitted_at: 2026-10-08T18:12:28.263Z
-    transcript_completed_at: 2026-10-08T18:19:27.710Z
