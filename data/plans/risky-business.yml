@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-10-30T18:08:31.005Z
+refreshed_at: 2026-10-31T03:02:36.626Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 2
@@ -40,6 +40,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-30T18:08:31.889Z
+    transcript_completed_at: 2026-10-30T18:08:42.682Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -47,7 +48,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-30T18:08:42.682Z
   - id: SOAPBOX111
     guid: https://risky.biz/SOAPBOX111/
     title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"

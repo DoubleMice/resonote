@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-10-30T18:08:30.996Z
+refreshed_at: 2026-10-31T03:02:36.617Z
 min_duration: 3300
-min_date: "20261009"
+min_date: "20261010"
 total_candidates: 6
 done: 2
 pending: 0
@@ -47,9 +47,8 @@ episodes:
       Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
 
 
-      ⁠⁠⁠⁠⁠Our listener survey⁠⁠⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone
-      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
+      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
 
 
       — Laura
@@ -140,6 +139,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-10-30T18:08:42.823Z
+    transcript_completed_at: 2026-10-30T18:08:59.828Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -147,7 +147,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-10-30T18:08:59.828Z
   - id: c46dc126-d22f-11f1-8de1-b3f7712d873a
     guid: c46dc126-d22f-11f1-8de1-b3f7712d873a
     title: Why America's New Cyber Privateers Can't Go After North Korea
@@ -179,10 +178,11 @@ episodes:
       ========================================================
 
 
-      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
-      Our listener survey⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone
-      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
 
 
       — Laura
@@ -308,9 +308,8 @@ episodes:
       Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
 
 
-      ⁠⁠⁠⁠Our listener survey⁠⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone
-      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
+      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
 
 
       — Laura
@@ -434,10 +433,11 @@ episodes:
       ========================================================
 
 
-      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠⁠⁠⁠⁠
-      Our listener survey⁠⁠⁠⁠⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone
-      who takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
 
 
       — Laura
