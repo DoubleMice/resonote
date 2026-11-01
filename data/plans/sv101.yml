@@ -1,5 +1,5 @@
 source: sv101
-refreshed_at: 2026-11-01T03:03:33.412Z
+refreshed_at: 2026-11-01T18:07:38.310Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
@@ -265,8 +265,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-29T18:10:48.988Z
-    transcript_completed_at: 2026-10-29T18:11:17.324Z
+    transcript_submitted_at: 2026-11-01T18:08:04.574Z
+    transcript_completed_at: 2026-11-01T18:08:38.895Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
