@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-11-02T03:03:26.127Z
+refreshed_at: 2026-11-02T18:08:29.172Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 2
@@ -39,8 +39,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-10-30T18:08:31.889Z
-    transcript_completed_at: 2026-10-30T18:08:42.682Z
+    transcript_submitted_at: 2026-11-02T18:08:43.790Z
+    transcript_completed_at: 2026-11-02T18:08:54.516Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
