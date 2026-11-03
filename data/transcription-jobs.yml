@@ -32235,3 +32235,95 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3:mimo:2026-11-03T18:09:10.030Z:chunk:0
+    parent_key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    attempt_key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3:mimo:2026-11-03T18:09:10.030Z
+    provider: mimo
+    id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
+    source: unchained
+    title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-03T18:09:10.030Z
+    updated_at: 2026-11-03T18:09:37.474Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: taixian-zhihuo:6ae73de5c96c8942ec1597ae:20261101:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae73de5c96c8942ec1597ae/media.xyzcdn.net/67f40c212ac4d88190caa56a/lneaitbUxLvLUL-WkpN6IxwUX5JP.m4a:mimo:2026-11-03T18:09:37.670Z:chunk:0
+    parent_key: taixian-zhihuo:6ae73de5c96c8942ec1597ae:20261101:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae73de5c96c8942ec1597ae/media.xyzcdn.net/67f40c212ac4d88190caa56a/lneaitbUxLvLUL-WkpN6IxwUX5JP.m4a
+    attempt_key: taixian-zhihuo:6ae73de5c96c8942ec1597ae:20261101:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae73de5c96c8942ec1597ae/media.xyzcdn.net/67f40c212ac4d88190caa56a/lneaitbUxLvLUL-WkpN6IxwUX5JP.m4a:mimo:2026-11-03T18:09:37.670Z
+    provider: mimo
+    id: 6ae73de5c96c8942ec1597ae
+    source: taixian-zhihuo
+    title: 紧急加更：当科创50跌成科创25，全球AI泡沫到底破没破？- 慧客堂 X 苔藓之火
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae73de5c96c8942ec1597ae/media.xyzcdn.net/67f40c212ac4d88190caa56a/lneaitbUxLvLUL-WkpN6IxwUX5JP.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-03T18:09:37.670Z
+    updated_at: 2026-11-03T18:10:02.620Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-03T18:10:02.849Z:chunk:0
+    parent_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    attempt_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-03T18:10:02.849Z
+    provider: mimo
+    id: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
+    source: sv101
+    title: E257｜对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-03T18:10:02.849Z
+    updated_at: 2026-11-03T18:10:37.507Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-11-03T18:10:37.705Z:chunk:0
+    parent_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    attempt_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-11-03T18:10:37.705Z
+    provider: mimo
+    id: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    source: unchained
+    title: Why America's New Cyber Privateers Can't Go After North Korea
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-03T18:10:37.705Z
+    updated_at: 2026-11-03T18:10:57.559Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }

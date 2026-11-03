@@ -1,15 +1,154 @@
 source: unchained
-refreshed_at: 2026-11-03T03:02:27.094Z
+refreshed_at: 2026-11-03T18:09:08.719Z
 min_duration: 3300
 min_date: "20261013"
-total_candidates: 6
+total_candidates: 7
 done: 2
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 4
+transcribe_failed: 5
 downloaded: 0
 episodes:
+  - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
+    guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
+    title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
+    duration: 4836
+    published: Tue, 03 Nov 2026 17:43:00 -0000
+    published_sort: "20261103"
+    first_seen_at: 2026-11-03T18:09:08.712Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    image: https://megaphone.imgix.net/podcasts/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/image/c2fad37e0a9ec36405ec4db105a810ee.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      A compromised developer laptop and 50 pre-signed transactions let North Korea drain $6.3 billion from Binance.
+      Jonty and Pablo Sabbatella trace how it happened.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
+
+      Find out more at ⁠⁠⁠⁠⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      With Election Day on November 3, crypto voters could make the difference in close races. Check where candidates
+      stand on crypto, verify your registration, and make your voting plan at Stand With Crypto’s Voter Hub.
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      Our ⁠listener survey⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      North Korea only needed 20 minutes to take $6.3 billion from Binance in the largest hack in history, not just
+      crypto history. According to Binance, one of the attack vectors started with a compromised developer laptop, which
+      ultimately led to the attackers being able to sign transactions from the exchange's hot wallets.
+
+
+      Jonty, founder of Pangolin Intelligence, and Pablo Sabbatella, founder of Opsek, trace how an EIP-7702 upgrade let
+      the hackers sweep those wallets, why roughly 43% of the funds were frozen compared with less than 3% after Bybit,
+      and how Circle, Tether, Arbitrum's Security Council and Aave responded. They also debate how decentralized
+      THORChain really is, why the FBI named THOR node operators, and how TraderTraitor lures developers with fake job
+      interviews.
+
+
+      With Chainalysis tying nearly 89% of this year's reported hack losses to North Korea, Pablo and Jonty lay out the
+      security and anti-laundering steps the industry could take before the next attack.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jonty (tanuki42) - Founder of Pangolin Intelligence
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Pablo Sabbatella - Founder of Opsek
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      📋 00:26 Unchained Survey: complete the listener survey at https://unchainedcrypto.com/survey
+
+
+      🚨 02:08 How North Korea took $6.3 billion from Binance in about 20 minutes
+
+
+      🔑 07:51 Why the EIP-7702 delegation made the drain faster
+
+
+      💰 17:35 Nexo: earn daily interest on your crypto or borrow against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🗳️ 17:52 Stand With Crypto: see where candidates stand on crypto and make your voting plan at
+      https://unchainedcrypto.com/go/standwithcrypto-yt
+
+
+      ⛓️ 18:31 Which chains were hit and where exchange signing infrastructure fails
+
+
+      🏦 23:00 Should Binance have held $6 billion in hot wallets?
+
+
+      🧊 29:18 Why Circle and Tether moved fast to freeze the stolen funds
+
+
+      🏛️ 35:38 How the hackers borrowed nearly 20,000 ETH on Aave
+
+
+      🔄 40:37 Is Binance liquidity helping launder funds through THORChain?
+
+
+      ⚖️ 45:51 How decentralized is THORChain after a three-vote halt?
+
+
+      🚔 54:19 What the FBI naming THOR node operators signals
+
+
+      🤖 01:02:33 Why the laundering trail looks machine-driven
+
+
+      🕵️ 01:06:06 Who TraderTraitor is and how fake job interviews hack developers
+
+
+      🛡️ 01:13:00 What the industry should change to stop North Korea
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-03T18:09:10.030Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-03T18:09:37.474Z
   - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     guid: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
@@ -262,8 +401,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-01T18:08:39.112Z
-    transcript_completed_at: 2026-11-01T18:08:59.538Z
+    transcript_submitted_at: 2026-11-03T18:10:37.705Z
+    transcript_completed_at: 2026-11-03T18:10:57.559Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
