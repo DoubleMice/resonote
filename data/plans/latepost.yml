@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-02T18:08:29.193Z
+refreshed_at: 2026-11-03T03:02:27.142Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 3
@@ -19,7 +19,7 @@ episodes:
     first_seen_at: 2026-10-15T03:03:39.760Z
     url: https://podcast.latepost.com/184
     audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/1ba74c4b-43e4-416c-aafe-f191fcb44898.mp3
-    image: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/1/1ba74c4b-43e4-416c-aafe-f191fcb44898/cover.jpg?v=1
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/1/1ba74c4b-43e4-416c-aafe-f191fcb44898/cover.jpg?v=1
     summary: >-
       2026 年 Q3，具身智能领域最有冲击力的变化，来自一个通用模型：9 月初 OpenAI 发布 GPT-6 Astra 后，具身从业者们发现，Astra 不只理解任务、拆解任务，还能输出机器人末端执行器的位姿，完成了本该属于
       VLA 等物理 AI 模型的部分工作，而且还做得很不错。
@@ -266,7 +266,7 @@ episodes:
     first_seen_at: 2026-10-02T03:04:55.536Z
     url: https://podcast.latepost.com/183
     audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/47e78c2f-c36f-4894-9124-dad5dcffc972.mp3
-    image: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/4/47e78c2f-c36f-4894-9124-dad5dcffc972/cover.jpg?v=1
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/4/47e78c2f-c36f-4894-9124-dad5dcffc972/cover.jpg?v=1
     summary: >-
       「这个秋天并不冷。」
 
@@ -509,7 +509,7 @@ episodes:
     first_seen_at: 2026-09-24T03:03:58.366Z
     url: https://podcast.latepost.com/182
     audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/63e76d1a-c5bb-4103-8ef4-e235917367c6.mp3
-    image: https://assets.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/6/63e76d1a-c5bb-4103-8ef4-e235917367c6/cover.jpg?v=1
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/6/63e76d1a-c5bb-4103-8ef4-e235917367c6/cover.jpg?v=1
     summary: >-
       「工具产品是解题，娱乐产品是出题。」
 
