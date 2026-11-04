@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-03T18:09:08.719Z
+refreshed_at: 2026-11-04T03:02:34.820Z
 min_duration: 3300
-min_date: "20261013"
+min_date: "20261014"
 total_candidates: 7
 done: 2
 pending: 0
@@ -141,6 +141,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-03T18:09:10.030Z
+    transcript_completed_at: 2026-11-03T18:09:37.474Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -148,7 +149,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-03T18:09:37.474Z
   - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     guid: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
