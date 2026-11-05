@@ -1,9 +1,9 @@
 source: unchained
-refreshed_at: 2026-11-04T18:07:59.734Z
+refreshed_at: 2026-11-05T03:02:31.941Z
 min_duration: 3300
-min_date: "20261014"
-total_candidates: 7
-done: 2
+min_date: "20261015"
+total_candidates: 6
+done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -785,112 +785,3 @@ episodes:
     transcript_job_id: b8d38762-208c-473c-afdb-6628a811ffc5_994cd8e704904504abf9ca238cb1cdeb,771ea1cb-dd25-48c3-a8f9-ea17bcf5aa32_ea7a8ecc93f646f68fe7b6de92a08239,048e7a0e-0dbd-4f94-ba78-b0df5f5314e1_43cd361836a6405087c7c738416dbf6a,fc46c494-d49b-4ab7-b2e0-ec6b3a76dc7d_b6cd7be85c1f46049ce55786b4461172,ede6a778-d9b4-429d-bf17-dd7bd1f07ba2_22b8290e4db54e6d97675967ef0e921e,85357866-e1a6-4398-b469-5fe9f6c7e54c_08246b3ecc6e4d848e46ea4b5adb211d
     transcript_submitted_at: 2026-10-16T18:12:02.635Z
     transcript_completed_at: 2026-10-16T18:26:00.188Z
-  - id: 534387ec-c78f-11f1-9efe-c37a7a073351
-    guid: 534387ec-c78f-11f1-9efe-c37a7a073351
-    title: Why Crypto Buybacks Are 'the Wrong Way to Allocate Capital'
-    duration: 3583
-    published: Wed, 14 Oct 2026 05:22:00 -0000
-    published_sort: "20261014"
-    first_seen_at: 2026-10-14T18:12:42.515Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4558422859.mp3
-    image: https://megaphone.imgix.net/podcasts/534387ec-c78f-11f1-9efe-c37a7a073351/image/616f5a589ae4ec729e1cfc1d1b404be9.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      ARK Invest's Lorenzo Valente says quantum fears and the Ledger hack are speeding up the death of self-custody,
-      that Ethereum has to pick a lane, and buybacks are “crazy.”
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
-
-      Find out more at https://unchainedcrypto.com/go/nexo-podcast-sn.
-
-
-      Geo-restrictions, eligibility and terms apply.
-
-
-      ========================================================
-
-
-      Quick favor: We're deciding what Unchained does next; new shows, stream times, what's worth paying for.⁠⁠⁠⁠⁠⁠ Our
-      listener survey⁠⁠⁠⁠⁠⁠ takes five minutes, it's anonymous, and I read the write-in answers myself. Everyone who
-      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      Justin Drake warned that ECDSA, the cryptography securing Bitcoin and Ethereum, could break before Q-Day, in the
-      worst case "in months, not years," and an attack on Ledger devices sold through a third-party reseller has led to
-      about $100 million in losses. Lorenzo Valente, Director of Research, Digital Assets at ARK Invest, says both
-      threats speed up a trend ARK already saw: self-custody is slowly dying.
-
-
-      He tells Laura Shin why ARK favors a barbell of exchanges that own the user and infrastructure like Solana,
-      Uniswap, and Aave, and why he would point a first-time Bitcoin buyer to an ETF. They also cover Satoshi's coins,
-      why Ethereum's L1 accrues so little while Robinhood makes millions, and why he calls the buyback craze irrational.
-
-
-      Plus: ARK's tokenized venture fund, Cloudflare's agentic commerce plans, and why Binance has never swapped out its
-      USDT despite earning no yield. If he's right, crypto's next wave of users may never hold their own keys.
-
-
-      Host:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-      Guest:
-
-        ⁠⁠⁠⁠Lorenzo Valente - Director of Research, Digital Assets at ARK Invest
-
-      Timestamps
-
-
-      🔭 01:27 Why Lorenzo says crypto investing is moving from '0 to 1' to '1 to 100'
-
-
-      🧮 08:41 Justin Drake's ECDSA warning and why RIAs keep asking ARK about quantum
-
-
-      💸 16:42 Nexo: Generate daily interest on your crypto or borrow against your assets at
-      https://unchainedcrypto.com/go/nexo-podcast-yt
-
-
-      🏋️ 17:31 The barbell: why Lorenzo favors exchanges and core crypto infrastructure
-
-
-      🪙 24:34 Satoshi's coins and why Lorenzo is less worried about Bitcoin's quantum fix
-
-
-      🔐 26:28 Ledger, Bitget, and why Lorenzo sees 'nowhere to hide' in hardware wallets
-
-
-      🍔 30:11 Ethereum's 'franchise model' and why Lorenzo says L1 value accrual is broken
-
-
-      🔥 38:04 Why Lorenzo thinks crypto has gone 'crazy' over token buybacks
-
-
-      📈 45:17 Why ARK thinks tokenized equities could pass stablecoin supply in 3 years
-
-
-      🤖 51:04 Cloudflare, AI bots, and why L1s are still orders of magnitude too slow
-
-
-      💵 54:05 Why Binance never dropped USDT, and what that says about Tether and Circle
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: 4eb8292d-85c2-4253-9c69-910c0878deab_f6d8181b59324aae818472817235c973,639c7f56-a0a9-400f-9175-185c3d0f86d0_07cea630ae204b4c810ca564f1713288,b81fdbdb-b1cc-48ac-a22f-124c59d39147_9317ff51041042adb97e86e9508e3ab3,24cb281b-6116-4442-a7bf-b240d1375bbc_3189e60ea61d405daef6d013082d5d3f
-    transcript_submitted_at: 2026-10-14T18:12:44.033Z
-    transcript_completed_at: 2026-10-14T18:21:39.009Z
