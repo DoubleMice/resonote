@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-05T03:02:31.996Z
+refreshed_at: 2026-11-05T18:08:36.736Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 6
@@ -35,12 +35,12 @@ episodes:
   - id: 6adf4c2697726cd46758024c
     guid: 6adf4c2697726cd46758024c
     title: 57. AI硬件是下一轮共识？从具身拳皇到万能赛博工牌 - FoloToy / 魂伴科技
-    duration: 5590
+    duration: 5591
     published: Mon, 26 Oct 2026 17:00:00 GMT
     published_sort: "20261026"
     first_seen_at: 2026-10-26T18:15:15.266Z
     url: https://www.xiaoyuzhoufm.com/episode/6adf4c2697726cd46758024c?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/lpz_xg16AMaYjgdzjvuu77C-Cga5.m4a
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/luiQGRg_JGbnsDAd4kSxVru7pTwv.m4a
     image: https://image.xyzcdn.net/Fm6KJ_lCJYHnrkqRfI-sM8efBq6a.jpeg
     status: transcribe_failed
     priority: 1

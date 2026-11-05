@@ -1,15 +1,149 @@
 source: unchained
-refreshed_at: 2026-11-05T03:02:31.941Z
+refreshed_at: 2026-11-05T18:08:36.692Z
 min_duration: 3300
 min_date: "20261015"
-total_candidates: 6
+total_candidates: 7
 done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 5
+transcribe_failed: 6
 downloaded: 0
 episodes:
+  - id: c0e66182-d934-11f1-8762-df5aaedf801b
+    guid: c0e66182-d934-11f1-8762-df5aaedf801b
+    title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"
+    duration: 4670
+    published: Thu, 05 Nov 2026 16:20:00 -0000
+    published_sort: "20261105"
+    first_seen_at: 2026-11-05T18:08:36.687Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
+    image: https://megaphone.imgix.net/podcasts/c0e66182-d934-11f1-8762-df5aaedf801b/image/1489412f0f136624767b7b79b52b2163.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      The $6B Binance hack sent stolen funds through Aave. LlamaRisk CEO Adam Sadowski walks through the market freeze
+      and why nothing was taken from the protocol.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at⁠⁠⁠ Nexo⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
+
+
+      Our ⁠listener survey⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
+      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
+
+
+      — Laura
+
+
+      ========================================================
+
+
+      North Korean hackers pulled roughly $6 billion out of Binance, and within minutes Tether and Circle were freezing
+      stablecoins as the attackers raced to swap into ETH, routing part of the haul through Aave.
+
+
+      Adam Sadowski, CEO of LlamaRisk, Aave's risk provider, joins Kain Warwick and Taylor Monahan to walk through the
+      overnight market freeze, why nothing was stolen from Aave, and whether anyone should be able to deposit $1 billion
+      and borrow all the ETH in a single block.
+
+
+      They also cover Aave's 4-of-7 guardian multisig, AI agents hunting for exploits, why Kain says there is no such
+      thing as the price of an asset, how an AI model helped Synthetix recover 9 million stolen SNX, and Taylor's
+      warning after THORChain processed nearly $200 million for North Korea despite an FBI callout. Once a protocol has
+      the power to stop a theft, can it still choose not to?
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Adam Sadowski - CEO of LlamaRisk
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      📋 00:22 Unchained Survey: complete the listener survey at https://unchainedcrypto.com/survey
+
+
+      🎙️ 01:17 Bits + Bips: search Bits + Bips and subscribe to our weekly crypto and macro show at
+      https://www.youtube.com/@Bitsandbips
+
+
+      🚨 01:49 The $6B Binance hack and how Tether and Circle froze funds in minutes
+
+
+      🔍 10:16 How the Binance hacker routed $60M in USDT through Aave to borrow ETH
+
+
+      ⚖️ 14:16 Should anyone be able to deposit $1B and borrow all the ETH in one block?
+
+
+      💰 23:18 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🤝 24:00 Why Kain ranks the Binance response among crypto's best anti-heist efforts
+
+
+      🛡️ 27:51 Aave's guardians, risk stewards, and the race against AI exploit agents
+
+
+      🧩 31:40 Why Kain thinks adding complexity is the most dangerous move for Aave
+
+
+      📈 37:23 Who decides the price? Oracles, tokenized stocks, and Chainlink CRE
+
+
+      🪙 44:57 How an AI model found Synthetix a way to recover 9M stolen SNX
+
+
+      ⛓️ 54:42 How a one-block Ethereum reorg made THORChain double spend mid-hack
+
+
+      🚔 01:00:41 Why Taylor fears the FBI callout could send Thor node operators to prison
+
+
+      🏦 01:07:24 A French bank heist, ZachXBT, and the $30M that couldn't be frozen
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-05T18:08:37.701Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-05T18:08:58.440Z
   - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
@@ -277,8 +411,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-02T18:08:54.648Z
-    transcript_completed_at: 2026-11-02T18:09:12.886Z
+    transcript_submitted_at: 2026-11-05T18:09:26.476Z
+    transcript_completed_at: 2026-11-05T18:09:46.853Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
