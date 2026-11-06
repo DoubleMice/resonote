@@ -1,18 +1,30 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-05T18:08:36.736Z
+refreshed_at: 2026-11-06T03:02:51.741Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 6
+total_candidates: 7
 done: 4
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 2
 downloaded: 0
 episodes:
+  - id: 6aecc6d9b4a4e20202f57597
+    guid: 6aecc6d9b4a4e20202f57597
+    title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer
+    duration: 4088
+    published: Thu, 05 Nov 2026 18:24:40 GMT
+    published_sort: "20261105"
+    first_seen_at: 2026-11-06T03:02:51.741Z
+    url: https://www.xiaoyuzhoufm.com/episode/6aecc6d9b4a4e20202f57597?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aecc6d9b4a4e20202f57597/media.xyzcdn.net/67f40c212ac4d88190caa56a/llMhZCJD7W7TLu_5yF1cIkIGIfXJ.m4a
+    image: https://image.xyzcdn.net/Fk4Q4EEaChXnTsjmYEHmP8ace9O-.png
+    status: needs_transcript
+    priority: 1
   - id: 6ae73de5c96c8942ec1597ae
     guid: 6ae73de5c96c8942ec1597ae
-    title: 紧急加更：当科创50跌成科创25，全球AI泡沫到底破没破？- 慧客堂 X 苔藓之火
+    title: 紧急加更：科创50跌成科创25之后，费半也要更名费2.5吗？- 慧客堂 X 苔藓之火
     duration: 4617
     published: Sun, 01 Nov 2026 16:10:24 GMT
     published_sort: "20261101"

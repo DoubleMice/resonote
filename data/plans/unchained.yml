@@ -1,9 +1,9 @@
 source: unchained
-refreshed_at: 2026-11-05T18:08:36.692Z
+refreshed_at: 2026-11-06T03:02:51.562Z
 min_duration: 3300
-min_date: "20261015"
-total_candidates: 7
-done: 1
+min_date: "20261016"
+total_candidates: 6
+done: 0
 pending: 0
 needs_transcript: 0
 transcribing: 0
@@ -136,6 +136,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-05T18:08:37.701Z
+    transcript_completed_at: 2026-11-05T18:08:58.440Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -143,7 +144,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-05T18:08:58.440Z
   - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
@@ -796,126 +796,3 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-  - id: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
-    guid: 3928fcec-c8d0-11f1-981c-7b09ade47b6d
-    title: "Uneasy Money: Why Ledger's Supply Chain Became a Nearly $100M Target"
-    duration: 4719
-    published: Thu, 15 Oct 2026 19:40:00 -0000
-    published_sort: "20261015"
-    first_seen_at: 2026-10-16T03:04:05.948Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4213053905.mp3
-    image: https://megaphone.imgix.net/podcasts/3928fcec-c8d0-11f1-981c-7b09ade47b6d/image/45f260131939298c74f431d407381957.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      A Ledger reseller's devices shipped with a hidden LTE modem inside. Taylor Monahan lays out how it passed the
-      genuine check and why panicking now costs more.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
-      by more than 10 million clients.
-
-
-      Find out more at Nexo.
-
-
-      Geo-restrictions, eligibility and terms apply.
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      ⁠⁠⁠Our listener survey⁠⁠⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      takes it can enter a drawing for a free year of Unchained Premium or Bits + Bips Premium. Open through Sunday,
-      October 18.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      Genuine Ledger devices sold through the reseller CryptoBilis shipped with an LTE chip and eSIM wired inside,
-      intercepting seed phrases on their way to the screen. The losses are estimated at $70 million to $100 million over
-      roughly four months.
-
-
-      Kain Warwick, Taylor Monahan, and Austin Griffith trace how the implant passed Ledger's genuine check, why
-      panicked users are now losing money to phishing and fake apps, and whether an iPhone or a DIY build makes a better
-      hardware wallet.
-
-
-      They also cover the recording device planted in OpenAI's office, the decade-old XRP infinite mint bug that earned
-      a $250K bounty, and why Taylor finds Google's Chrome payouts and $40K compute bills the more interesting math.
-
-
-      Then StarkNet's talk of becoming an L1 turns into a debate over whether Ethereum will need L2s at all. Kain's
-      answer: the most Ethereum-equivalent chain is Ethereum itself.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Timestamps
-
-
-      🎬 00:00 Intro&nbsp;
-
-
-      🔐 01:32 Why a Ledger reseller became the entry point for a supply chain attack
-
-
-      📡 09:15 Taylor on how the CryptoBilis attack moved past fake devices and scratchers
-
-
-      🧯 19:01 Why Taylor says panicked Ledger owners now face the bigger risk
-
-
-      💸 20:17 Why Austin sees DIY hardware wallets as the future
-
-
-      🕵️ 30:34 How Taylor “demixed” Zcash by following the gas trail
-
-
-      📣 34:52 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
-      https://unchainedcrypto.com/go/nexo-podcast-yt&nbsp;
-
-
-      🎙️ 35:37 What the bug planted in OpenAI's office says about AI espionage
-
-
-      🛠️ 41:42 Austin's homemade Alexa, blood wallet, and AI-run electronics bench
-
-
-      🪙 48:04 Why a decade-old XRP infinite mint bug points to AI-assisted hunting
-
-
-      🧮 51:04 Is $250K enough? Taylor compares the XRP bounty to Google's Chrome payout
-
-
-      ⛓️ 01:00:30 StarkNet wants to become an L1: why Kain thinks that's where L2s end up
-
-
-      🏚️ 01:11:03 How MegaETH shows why L2 ecosystems struggle to keep their apps
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: b8d38762-208c-473c-afdb-6628a811ffc5_994cd8e704904504abf9ca238cb1cdeb,771ea1cb-dd25-48c3-a8f9-ea17bcf5aa32_ea7a8ecc93f646f68fe7b6de92a08239,048e7a0e-0dbd-4f94-ba78-b0df5f5314e1_43cd361836a6405087c7c738416dbf6a,fc46c494-d49b-4ab7-b2e0-ec6b3a76dc7d_b6cd7be85c1f46049ce55786b4461172,ede6a778-d9b4-429d-bf17-dd7bd1f07ba2_22b8290e4db54e6d97675967ef0e921e,85357866-e1a6-4398-b469-5fe9f6c7e54c_08246b3ecc6e4d848e46ea4b5adb211d
-    transcript_submitted_at: 2026-10-16T18:12:02.635Z
-    transcript_completed_at: 2026-10-16T18:26:00.188Z
