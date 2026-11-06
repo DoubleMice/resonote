@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-11-06T03:02:51.562Z
+refreshed_at: 2026-11-06T18:09:59.322Z
 min_duration: 3300
 min_date: "20261016"
 total_candidates: 6
@@ -274,8 +274,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-03T18:09:10.030Z
-    transcript_completed_at: 2026-11-03T18:09:37.474Z
+    transcript_submitted_at: 2026-11-06T18:10:28.387Z
+    transcript_completed_at: 2026-11-06T18:10:47.772Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -535,8 +535,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-03T18:10:37.705Z
-    transcript_completed_at: 2026-11-03T18:10:57.559Z
+    transcript_submitted_at: 2026-11-06T18:12:32.396Z
+    transcript_completed_at: 2026-11-06T18:12:49.532Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -666,8 +666,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-04T18:08:43.571Z
-    transcript_completed_at: 2026-11-04T18:09:03.829Z
+    transcript_submitted_at: 2026-11-06T18:13:08.357Z
+    transcript_completed_at: 2026-11-06T18:13:26.929Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -787,8 +787,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-04T18:09:27.361Z
-    transcript_completed_at: 2026-11-04T18:09:44.379Z
+    transcript_submitted_at: 2026-11-06T18:13:27.076Z
+    transcript_completed_at: 2026-11-06T18:13:42.792Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

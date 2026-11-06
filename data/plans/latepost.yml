@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-11-06T03:02:51.664Z
+refreshed_at: 2026-11-06T18:09:59.357Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
 done: 3
 pending: 0
-needs_transcript: 2
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
@@ -106,22 +106,22 @@ episodes:
       相关链接：
 
 
-      本期图文版：《与一、二级投资人聊 Anthropic 招股书：泡沫、增速下滑和 coding 之后是什么》
+      -本期图文版：《与一、二级投资人聊 Anthropic 招股书：泡沫、增速下滑和 coding 之后是什么》
 
 
-      《可能不喜欢，但无法忽视：Anthropic 招股书披露的 33 个事实丨晚点小数据》
+      -《可能不喜欢，但无法忽视：Anthropic 招股书披露的 33 个事实丨晚点小数据》
 
 
-      186 期：Anthropic 招股书丨 “银行也有百亿预算”，与 Fusion Fund 张璐聊大企业在想什么
+      -186 期：Anthropic 招股书丨 “银行也有百亿预算”，与 Fusion Fund 张璐聊大企业在想什么
 
 
-      177 期：详解 Kimi K3：强到冲击 Anthropic 估值的模型什么样？
+      -177 期：详解 Kimi K3：强到冲击 Anthropic 估值的模型什么样？
 
 
-      159 期：马斯克 Terafab 太空算力、英伟达重拾 CPU｜与 Fusion Fund 张璐聊 AI 算力新趋势
+      -159 期：马斯克 Terafab 太空算力、英伟达重拾 CPU｜与 Fusion Fund 张璐聊 AI 算力新趋势
 
 
-      183 期：与 Henry 的「AI 季报 26Q3」：Muse 引爆个人助理、Astra 进入机器人、OpenAI 收入猛增
+      -183 期：与 Henry 的「AI 季报 26Q3」：Muse 引爆个人助理、Astra 进入机器人、OpenAI 收入猛增
 
 
       小红书@曼祺_火柴Q即刻@曼祺_火柴Q
@@ -140,8 +140,18 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-06T18:10:15.968Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-06T18:10:28.235Z
   - id: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     guid: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     title: "186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么"
@@ -244,22 +254,22 @@ episodes:
       相关链接：
 
 
-      本期图文版：《与一、二级投资人聊 Anthropic 招股书：泡沫、增速下滑和 coding 之后是什么》
+      -本期图文版：《与一、二级投资人聊 Anthropic 招股书：泡沫、增速下滑和 coding 之后是什么》
 
 
-      《可能不喜欢，但无法忽视：Anthropic 招股书披露的 33 个事实丨晚点小数据》
+      -《可能不喜欢，但无法忽视：Anthropic 招股书披露的 33 个事实丨晚点小数据》
 
 
-      185 期： Anthropic 招股书丨与 Amont 李肇宇聊定价逻辑和潜在风险
+      -185 期： Anthropic 招股书丨与 Amont 李肇宇聊定价逻辑和潜在风险
 
 
-      177 期：详解 Kimi K3：强到冲击 Anthropic 估值的模型什么样？
+      -177 期：详解 Kimi K3：强到冲击 Anthropic 估值的模型什么样？
 
 
-      159 期：马斯克 Terafab 太空算力、英伟达重拾 CPU｜与 Fusion Fund 张璐聊 AI 算力新趋势
+      -159 期：马斯克 Terafab 太空算力、英伟达重拾 CPU｜与 Fusion Fund 张璐聊 AI 算力新趋势
 
 
-      183 期：与 Henry 的「AI 季报 26Q3」：Muse 引爆个人助理、Astra 进入机器人、OpenAI 收入猛增
+      -183 期：与 Henry 的「AI 季报 26Q3」：Muse 引爆个人助理、Astra 进入机器人、OpenAI 收入猛增
 
 
       小红书@曼祺_火柴Q即刻@曼祺_火柴Q
@@ -278,8 +288,18 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-06T18:12:00.097Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-06T18:12:14.745Z
   - id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
     guid: 1ba74c4b-43e4-416c-aafe-f191fcb44898
     title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"

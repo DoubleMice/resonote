@@ -1,5 +1,5 @@
 source: sv101
-refreshed_at: 2026-11-06T03:02:51.649Z
+refreshed_at: 2026-11-06T18:09:59.346Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 3
@@ -29,7 +29,7 @@ episodes:
 
       Vitalik曾向这个圈子的机构捐赠大量资金。他在节目中回忆，一笔加密货币捐赠如何意外地变成数亿美元，以及受赠机构后来的方向，为什么让他开始重新考虑当初的选择。
 
-      节目全程以中文录制，前半段由Afra介绍背景，后半段是我们与Vitalik的对话。本期涉及英文人名和机构名较多，为方便大家理解，我们在shownotes文末整理了名词解释，也在Bilibili、YouTube、视频号等平台也上线了带字幕版本，方便大家对照收听。
+      节目全程以中文录制，前半段由Afra介绍背景，后半段是我们与Vitalik的对话。
 
       【主播】
 
@@ -265,8 +265,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-03T18:10:02.849Z
-    transcript_completed_at: 2026-11-03T18:10:37.507Z
+    transcript_submitted_at: 2026-11-06T18:10:47.901Z
+    transcript_completed_at: 2026-11-06T18:11:10.735Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
