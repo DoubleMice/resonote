@@ -1,5 +1,5 @@
 source: tulong-zhishu
-refreshed_at: 2026-11-08T03:02:50.842Z
+refreshed_at: 2026-11-08T18:08:05.996Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 4
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-05T18:08:58.573Z
-    transcript_completed_at: 2026-11-05T18:09:14.153Z
+    transcript_submitted_at: 2026-11-08T18:08:28.464Z
+    transcript_completed_at: 2026-11-08T18:08:45.709Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
