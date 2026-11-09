@@ -1,13 +1,13 @@
 source: risky-business
-refreshed_at: 2026-11-09T03:03:17.158Z
+refreshed_at: 2026-11-09T18:09:51.556Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
 done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: SOAPBOX112
@@ -35,8 +35,18 @@ episodes:
 
 
       This episode is also available on YouTube.
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-09T18:10:13.253Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-09T18:10:26.023Z
   - id: SNAKEOILERS24PT2
     guid: https://risky.biz/SNAKEOILERS24PT2/
     title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"

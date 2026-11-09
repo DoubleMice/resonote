@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-09T03:03:17.285Z
+refreshed_at: 2026-11-09T18:09:51.610Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-06T18:10:00.225Z
-    transcript_completed_at: 2026-11-06T18:10:15.819Z
+    transcript_submitted_at: 2026-11-09T18:10:26.247Z
+    transcript_completed_at: 2026-11-09T18:10:48.889Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -45,8 +45,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-06T18:12:14.881Z
-    transcript_completed_at: 2026-11-06T18:12:32.254Z
+    transcript_submitted_at: 2026-11-09T18:13:03.748Z
+    transcript_completed_at: 2026-11-09T18:13:27.851Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -67,8 +67,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-06T18:12:49.671Z
-    transcript_completed_at: 2026-11-06T18:13:08.212Z
+    transcript_submitted_at: 2026-11-09T18:14:27.226Z
+    transcript_completed_at: 2026-11-09T18:14:55.322Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

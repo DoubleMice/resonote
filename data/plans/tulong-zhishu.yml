@@ -1,15 +1,37 @@
 source: tulong-zhishu
-refreshed_at: 2026-11-09T03:03:17.255Z
+refreshed_at: 2026-11-09T18:09:51.603Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 4
+total_candidates: 5
 done: 2
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 6af135bcb4a4e20202f6dccc
+    guid: 6af135bcb4a4e20202f6dccc
+    title: 从 3.9%时间占比到"字节时间"，我们是怎么走到这儿的？
+    duration: 3745
+    published: Mon, 09 Nov 2026 03:33:43 GMT
+    published_sort: "20261109"
+    first_seen_at: 2026-11-09T18:09:51.603Z
+    url: https://www.xiaoyuzhoufm.com/episode/6af135bcb4a4e20202f6dccc?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a
+    image: https://image.xyzcdn.net/FkrlAMqdkM5JQxyRs4MBk6nJ0-Sq.png
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-09T18:09:53.061Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-09T18:10:13.003Z
   - id: 6ae81dffc96c8942ec15ea3c
     guid: 6ae81dffc96c8942ec15ea3c
     title: 从龙虾到《赵云与阿斗》，我的10个AI-aha moment
@@ -45,8 +67,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-06T18:11:10.872Z
-    transcript_completed_at: 2026-11-06T18:11:37.224Z
+    transcript_submitted_at: 2026-11-09T18:13:51.458Z
+    transcript_completed_at: 2026-11-09T18:14:26.981Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
