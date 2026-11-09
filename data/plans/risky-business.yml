@@ -1,15 +1,42 @@
 source: risky-business
-refreshed_at: 2026-11-08T18:08:05.957Z
+refreshed_at: 2026-11-09T03:03:17.158Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 2
+total_candidates: 3
 done: 1
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: SOAPBOX112
+    guid: https://risky.biz/SOAPBOX112/
+    title: "Soap Box: Security must be more browser-centric"
+    duration: 2163
+    published: Mon, 09 Nov 2026 13:58:50 +1100
+    published_sort: "20261109"
+    first_seen_at: 2026-11-09T03:03:17.158Z
+    url: https://risky.biz/SOAPBOX112/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this Soap Box episode Patrick Gray chats to Push Security co-founder and CEO Adam Bateman about the benefits of
+      taking a browser-centric approach to security.
+
+
+      By now most Risky Business listeners know that Push sells a browser extension-based product that can reliably
+      prevent phishing, ClickFix and ConsentFix. But what’s next? Where to from here once you’re already in the browser?
+
+
+      Well, Push is expanding into the data loss prevention and secure web gateway product space. Why use a SWG based on
+      15-year-old technology when an extension can give you an even better security result? Especially when you can drop
+      the drawbacks, like tromboning all your traffic into a random data centre…
+
+
+      This episode is also available on YouTube.
+    status: needs_transcript
+    priority: 1
   - id: SNAKEOILERS24PT2
     guid: https://risky.biz/SNAKEOILERS24PT2/
     title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"
