@@ -1,13 +1,13 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-10T03:02:47.789Z
+refreshed_at: 2026-11-10T18:07:12.799Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 8
 done: 4
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 3
+transcribe_failed: 4
 downloaded: 0
 episodes:
   - id: 6ae8a8d3c96c8942ec164467
@@ -20,8 +20,18 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6ae8a8d3c96c8942ec164467?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
     image: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-10T18:07:13.589Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-10T18:07:28.997Z
   - id: 6aecc6d9b4a4e20202f57597
     guid: 6aecc6d9b4a4e20202f57597
     title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer
