@@ -1,15 +1,27 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-09T18:09:51.610Z
+refreshed_at: 2026-11-10T03:02:47.789Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 7
+total_candidates: 8
 done: 4
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 6ae8a8d3c96c8942ec164467
+    guid: 6ae8a8d3c96c8942ec164467
+    title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
+    duration: 4296
+    published: Tue, 10 Nov 2026 00:00:00 GMT
+    published_sort: "20261110"
+    first_seen_at: 2026-11-10T03:02:47.788Z
+    url: https://www.xiaoyuzhoufm.com/episode/6ae8a8d3c96c8942ec164467?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
+    image: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
+    status: needs_transcript
+    priority: 1
   - id: 6aecc6d9b4a4e20202f57597
     guid: 6aecc6d9b4a4e20202f57597
     title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer
