@@ -1,15 +1,27 @@
 source: lex-fridman
-refreshed_at: 2026-11-10T18:07:12.803Z
+refreshed_at: 2026-11-11T03:02:33.919Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 9
+total_candidates: 10
 done: 0
 pending: 0
-needs_transcript: 9
+needs_transcript: 10
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: p-7818
+    guid: https://lexfridman.com/?p=7818
+    title: "#504 – Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare"
+    duration: 10875
+    published: Tue, 10 Nov 2026 23:52:44 +0000
+    published_sort: "20261110"
+    first_seen_at: 2026-11-11T03:02:33.919Z
+    url: https://lexfridman.com/ukraine-war-preston-stewart-michael-kofman/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ukraine-war-preston-stewart-michael-kofman
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+    status: needs_transcript
+    priority: 1
   - id: p-7807
     guid: https://lexfridman.com/?p=7807
     title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"

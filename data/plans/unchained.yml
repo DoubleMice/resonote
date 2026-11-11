@@ -1,15 +1,108 @@
 source: unchained
-refreshed_at: 2026-11-10T18:07:12.760Z
+refreshed_at: 2026-11-11T03:02:33.849Z
 min_duration: 3300
-min_date: "20261020"
-total_candidates: 6
+min_date: "20261021"
+total_candidates: 7
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 6
 downloaded: 0
 episodes:
+  - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
+    guid: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
+    title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
+    duration: 3365
+    published: Wed, 11 Nov 2026 01:00:00 -0000
+    published_sort: "20261111"
+    first_seen_at: 2026-11-11T03:02:33.842Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    image: https://megaphone.imgix.net/podcasts/517d5018-dd6b-11f1-a60d-2bc1d7680ae1/image/4f5681e990d2f5bac85e6bdde7922588.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Bitwise CIO Matt Hougan says crypto bottomed in June, argues the blue wave may not matter, and lays out the math
+      behind Bitcoin at $1.6 million.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
+
+      Find out more at ⁠⁠⁠⁠⁠⁠⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠⁠⁠⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Crypto just absorbed the biggest hack in its history, a $6.3 billion theft from Binance, plus a Democratic sweep
+      of Congress that dims the odds for the Clarity Act. Bitcoin barely flinched.
+
+
+      Matt Hougan, Chief Investment Officer of Bitwise, tells Laura Shin why he thinks the market bottomed in June and
+      why bad news has stopped mattering. He lays out three AI scenarios he says all end well for Bitcoin, why
+      institutions aren't asking about hacks, and why the average Bitwise client only allocates after eight meetings.
+
+
+      They also cover the quantum threat to Satoshi's coins, why a few dozen public companies opted out of tokenized
+      trading, Hyperliquid as the Amazon of finance, and whether to own Bitcoin or Zcash. Hougan closes with the
+      store-of-value math behind Bitwise's call for a $1.6 million Bitcoin by 2036, a forecast more bullish than
+      JPMorgan's.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Matt Hougan - Chief Investment Officer of Bitwise
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      📈 00:56 Why Matt thinks crypto bottomed in June and bad news stopped mattering
+
+
+      🤖 02:53 Why Matt says every AI scenario, boom or bust, ends well for Bitcoin
+
+
+      💰 10:14 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🏛️ 10:31 What the Democratic blue wave means for crypto and why DeFi is most at risk
+
+
+      🔐 17:18 Why institutions aren't worried about hacks, and Bitwise's 'rule of 8'
+
+
+      ⚛️ 24:07 Quantum: why Satoshi's coins are the risk that keeps Matt up at night
+
+
+      📊 27:04 Why companies are opting out of tokenized stocks, and NYSE's Avalanche pick
+
+
+      🛒 35:44 How Hyperliquid echoes Amazon, and the risk of a US-only money internet
+
+
+      🚀 42:14 The store-of-value math behind Bitwise's $1.6 million Bitcoin call
+
+
+      🛡️ 49:00 Bitcoin or Zcash? Why Matt would own both, plus which tokenomics work
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: c0e66182-d934-11f1-8762-df5aaedf801b
     guid: c0e66182-d934-11f1-8762-df5aaedf801b
     title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"

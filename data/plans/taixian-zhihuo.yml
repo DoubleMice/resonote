@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-10T18:07:12.799Z
+refreshed_at: 2026-11-11T03:02:33.912Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 8
@@ -24,6 +24,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-10T18:07:13.589Z
+    transcript_completed_at: 2026-11-10T18:07:28.997Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -31,7 +32,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-10T18:07:28.997Z
   - id: 6aecc6d9b4a4e20202f57597
     guid: 6aecc6d9b4a4e20202f57597
     title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer
