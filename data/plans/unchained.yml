@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-11-11T03:02:33.849Z
+refreshed_at: 2026-11-11T18:08:11.828Z
 min_duration: 3300
 min_date: "20261021"
 total_candidates: 7
 done: 0
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 6
+transcribe_failed: 7
 downloaded: 0
 episodes:
   - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
@@ -101,8 +101,18 @@ episodes:
       🛡️ 49:00 Bitcoin or Zcash? Why Matt would own both, plus which tokenomics work
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-11T18:09:00.703Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-11T18:09:19.279Z
   - id: c0e66182-d934-11f1-8762-df5aaedf801b
     guid: c0e66182-d934-11f1-8762-df5aaedf801b
     title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"
@@ -228,8 +238,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-08T18:08:07.099Z
-    transcript_completed_at: 2026-11-08T18:08:28.290Z
+    transcript_submitted_at: 2026-11-11T18:09:52.998Z
+    transcript_completed_at: 2026-11-11T18:10:18.103Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -504,8 +514,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-08T18:08:58.751Z
-    transcript_completed_at: 2026-11-08T18:09:20.828Z
+    transcript_submitted_at: 2026-11-11T18:10:18.330Z
+    transcript_completed_at: 2026-11-11T18:10:43.845Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

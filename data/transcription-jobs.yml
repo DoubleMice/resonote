@@ -33247,3 +33247,141 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3:mimo:2026-11-11T18:08:13.322Z:chunk:0
+    parent_key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3
+    attempt_key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3:mimo:2026-11-11T18:08:13.322Z
+    provider: mimo
+    id: p-7818
+    source: lex-fridman
+    title: "#504 – Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 13
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:08:13.322Z
+    updated_at: 2026-11-11T18:09:00.448Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3:mimo:2026-11-11T18:09:00.703Z:chunk:0
+    parent_key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    attempt_key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3:mimo:2026-11-11T18:09:00.703Z
+    provider: mimo
+    id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
+    source: unchained
+    title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:09:00.703Z
+    updated_at: 2026-11-11T18:09:19.279Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: tulong-zhishu:6ae81dffc96c8942ec15ea3c:20261102:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ae81dffc96c8942ec15ea3c/media.xyzcdn.net/6507bc165c88d2412626b401/lmnKz0xu2iFhemuwb3hVycVf_NZe.m4a:mimo:2026-11-11T18:09:19.508Z:chunk:0
+    parent_key: tulong-zhishu:6ae81dffc96c8942ec15ea3c:20261102:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ae81dffc96c8942ec15ea3c/media.xyzcdn.net/6507bc165c88d2412626b401/lmnKz0xu2iFhemuwb3hVycVf_NZe.m4a
+    attempt_key: tulong-zhishu:6ae81dffc96c8942ec15ea3c:20261102:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ae81dffc96c8942ec15ea3c/media.xyzcdn.net/6507bc165c88d2412626b401/lmnKz0xu2iFhemuwb3hVycVf_NZe.m4a:mimo:2026-11-11T18:09:19.508Z
+    provider: mimo
+    id: 6ae81dffc96c8942ec15ea3c
+    source: tulong-zhishu
+    title: 从龙虾到《赵云与阿斗》，我的10个AI-aha moment
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6ae81dffc96c8942ec15ea3c/media.xyzcdn.net/6507bc165c88d2412626b401/lmnKz0xu2iFhemuwb3hVycVf_NZe.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:09:19.508Z
+    updated_at: 2026-11-11T18:09:37.313Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3:mimo:2026-11-11T18:09:37.555Z:chunk:0
+    parent_key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3
+    attempt_key: risky-business:SNAKEOILERS24PT2:20261030:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3:mimo:2026-11-11T18:09:37.555Z
+    provider: mimo
+    id: SNAKEOILERS24PT2
+    source: risky-business
+    title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SNAKEOILERS24PT2.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:09:37.555Z
+    updated_at: 2026-11-11T18:09:52.773Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:c0e66182-d934-11f1-8762-df5aaedf801b:20261105:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3:mimo:2026-11-11T18:09:52.998Z:chunk:0
+    parent_key: unchained:c0e66182-d934-11f1-8762-df5aaedf801b:20261105:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
+    attempt_key: unchained:c0e66182-d934-11f1-8762-df5aaedf801b:20261105:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3:mimo:2026-11-11T18:09:52.998Z
+    provider: mimo
+    id: c0e66182-d934-11f1-8762-df5aaedf801b
+    source: unchained
+    title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:09:52.998Z
+    updated_at: 2026-11-11T18:10:18.103Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3:mimo:2026-11-11T18:10:18.330Z:chunk:0
+    parent_key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    attempt_key: unchained:7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812:20261029:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3:mimo:2026-11-11T18:10:18.330Z
+    provider: mimo
+    id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
+    source: unchained
+    title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-11T18:10:18.330Z
+    updated_at: 2026-11-11T18:10:43.845Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
