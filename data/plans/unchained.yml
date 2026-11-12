@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-11-12T03:02:53.567Z
+refreshed_at: 2026-11-12T18:08:59.791Z
 min_duration: 3300
 min_date: "20261022"
 total_candidates: 6
@@ -377,8 +377,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-09T18:11:07.086Z
-    transcript_completed_at: 2026-11-09T18:11:33.105Z
+    transcript_submitted_at: 2026-11-12T18:10:15.745Z
+    transcript_completed_at: 2026-11-12T18:10:44.370Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -638,8 +638,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-09T18:13:28.101Z
-    transcript_completed_at: 2026-11-09T18:13:51.223Z
+    transcript_submitted_at: 2026-11-12T18:12:40.225Z
+    transcript_completed_at: 2026-11-12T18:13:02.632Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

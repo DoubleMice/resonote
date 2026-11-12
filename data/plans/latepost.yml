@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-12T03:02:53.614Z
+refreshed_at: 2026-11-12T18:08:59.840Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
@@ -143,8 +143,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-09T18:10:49.127Z
-    transcript_completed_at: 2026-11-09T18:11:06.850Z
+    transcript_submitted_at: 2026-11-12T18:09:58.220Z
+    transcript_completed_at: 2026-11-12T18:10:15.509Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -291,8 +291,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-09T18:12:42.083Z
-    transcript_completed_at: 2026-11-09T18:13:03.504Z
+    transcript_submitted_at: 2026-11-12T18:12:19.246Z
+    transcript_completed_at: 2026-11-12T18:12:39.978Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
