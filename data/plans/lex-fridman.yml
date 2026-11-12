@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-11-11T18:08:11.898Z
+refreshed_at: 2026-11-12T03:02:53.636Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 10
@@ -24,6 +24,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-11T18:08:13.322Z
+    transcript_completed_at: 2026-11-11T18:09:00.448Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -31,7 +32,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-11T18:09:00.448Z
   - id: p-7807
     guid: https://lexfridman.com/?p=7807
     title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
