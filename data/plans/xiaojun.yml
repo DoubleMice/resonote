@@ -1,15 +1,27 @@
 source: xiaojun
-refreshed_at: 2026-11-12T18:08:59.819Z
+refreshed_at: 2026-11-13T03:03:23.374Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 3
+total_candidates: 4
 done: 1
 pending: 0
-needs_transcript: 1
+needs_transcript: 2
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 6af5debf14d01a26f8a900ac
+    guid: 6af5debf14d01a26f8a900ac
+    title: 156. 《侠》｜对影之刃零制作人梁其伟6小时访谈
+    duration: 23247
+    published: Fri, 13 Nov 2026 00:00:00 GMT
+    published_sort: "20261113"
+    first_seen_at: 2026-11-13T03:03:23.374Z
+    url: https://www.xiaoyuzhoufm.com/episode/6af5debf14d01a26f8a900ac?utm_source=rss
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
+    image: https://image.xyzcdn.net/FnCtjkSjiSXqv1q56tG8xYV-h3Nv.png
+    status: needs_transcript
+    priority: 1
   - id: 6ad4dacd641ef406308d86e5
     guid: 6ad4dacd641ef406308d86e5
     title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻

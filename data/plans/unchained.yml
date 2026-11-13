@@ -1,15 +1,123 @@
 source: unchained
-refreshed_at: 2026-11-12T18:08:59.791Z
+refreshed_at: 2026-11-13T03:03:23.357Z
 min_duration: 3300
-min_date: "20261022"
+min_date: "20261023"
 total_candidates: 6
 done: 0
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
-transcribe_failed: 6
+transcribe_failed: 5
 downloaded: 0
 episodes:
+  - id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
+    guid: b145fc70-dec4-11f1-9671-1b56aa1d87ba
+    title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
+    duration: 4551
+    published: Thu, 12 Nov 2026 18:12:00 -0000
+    published_sort: "20261112"
+    first_seen_at: 2026-11-13T03:03:23.352Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    image: https://megaphone.imgix.net/podcasts/b145fc70-dec4-11f1-9671-1b56aa1d87ba/image/eaaf060dbb9efa83899442e7c35cb7c1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Vitalik is moving on from ultrasound money. Ex-core dev Greg Markou joins Kain and Austin to ask who should make
+      the case for ETH instead.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at⁠⁠⁠⁠ Nexo⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Vitalik Buterin is moving on from "ultrasound money," and Kain Warwick reads it as a concession that EIP-1559's
+      fee burn was a meme rather than a reason for ETH to be valuable.
+
+
+      Greg Markou, co-founder and CEO of Sprinter and a former Ethereum core dev, joins Kain and Austin Griffith to ask
+      who should make the case for ETH the asset now, and why Greg thinks it shouldn't be Vitalik. Greg also defends
+      core devs facing an AI-fueled flood of EIPs while app developers push back on gas repricing.
+
+
+      The panel weighs the Ethereum Foundation's seppuku-clause lawsuit, picks apart the telemetry Greg says Ledger's
+      signing SDK sends after a transaction is signed, and unpacks MegaETH's pivot to a marketplace for AI inference.
+      Kain's bet: a multitrillion-dollar gap between AI subscriptions and API pricing is an arbitrage no terms of
+      service can contain.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        Austin Griffith - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Guest:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Greg Markou - Co-founder and CEO of Sprinter
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🎙️ 00:40 Bits + Bips: search Bits + Bips and subscribe to the weekly crypto and macro show at
+      https://www.youtube.com/@Bitsandbips
+
+
+      ⚔️ 01:15 Why Kain calls the seppuku clause in the EF lawsuit a 'red herring'
+
+
+      💙 12:38 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🦇 13:27 How EIP-1559's burn turned into 'ultrasound money' and why Vitalik moved on
+
+
+      🍳 22:48 Why Greg says Vitalik should 'just cook' and leave the ETH pitch to others
+
+
+      ⛽ 24:14 Why app developers are pushing back on Ethereum's gas repricing
+
+
+      📬 27:52 Greg defends core devs as AI pushes EIP submissions to multiple a day
+
+
+      🤖 34:57 Kain's AGI test: can a model reconstruct his 2020 onchain P&L?
+
+
+      🔐 38:27 What Ledger's signing SDK sends after you sign, and why Greg objects
+
+
+      📱 52:23 Austin's vision for crypto apps: passkeys, multisigs and spending limits
+
+
+      🧮 58:23 MegaETH's pivot to a blockchain marketplace for AI inference
+
+
+      💸 01:07:14 Why Kain says the gap between AI subscriptions and API prices can't last
+
+
+      🧨 01:13:35 The 1inch gas token, gas repricing and the Osaka bug that went undisclosed
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     guid: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
@@ -640,137 +748,6 @@ episodes:
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-12T18:12:40.225Z
     transcript_completed_at: 2026-11-12T18:13:02.632Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.5"
-          }
-      }
-  - id: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
-    guid: f4c72f28-ce57-11f1-ab3a-8f87c495b76f
-    title: "Uneasy Money: Is the Internet Breaking Because Bots Never Get Lazy?"
-    duration: 4584
-    published: Thu, 22 Oct 2026 20:34:00 -0000
-    published_sort: "20261022"
-    first_seen_at: 2026-10-23T03:04:14.310Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML3739897466.mp3
-    image: https://megaphone.imgix.net/podcasts/f4c72f28-ce57-11f1-ab3a-8f87c495b76f/image/78bd7e54a3499065a71c96ad4d837431.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      A certificate authority's private key was the number 4 for over a year. Kain, Taylor, and Austin on why the
-      internet's trust schemes are cracking.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
-      by more than 10 million clients.
-
-
-      Find out more at⁠ Nexo⁠.
-
-
-      Geo-restrictions, eligibility and terms apply.
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      For more than a year, the private key behind signatures from a certificate authority trusted across the internet
-      was the number 4.
-
-
-      Taylor Monahan walks Kain Warwick and Austin Griffith through how eMudhra passed two audits with eight weak keys,
-      and why revoking them now runs on an email thread between Google, Mozilla, and Apple. Kain argues it fits a
-      pattern: schemes that assumed nobody would bother trying, now facing AI agents that never stop.
-
-
-      The hosts also cover two remote code execution bugs in PHP, Austin's $1 test that drew three competing theft
-      transactions the moment it landed, papertrade's 1,000x leverage launch and its lose-to-earn token, and why
-      DeepSeek keeps getting cheaper even as DHS bans it for government use. They close on Anthropic, and Kain's case
-      that any frontier lab that turns cash-flow positive would be worth "infinity," a prospect he calls petrifying.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Timestamps
-
-
-      🎬 00:00 Intro
-
-
-      🌐 02:07 Why a burst of unrelated internet-breaking bugs landed in the same 48 hours
-
-
-      🔑 05:13 How a certificate authority's private key turned out to be the number 4
-
-
-      📧 17:47 Why revoking bad certificates runs on a literal email thread
-
-
-      🤖 22:52 Kain on why schemes built on human laziness are unraveling against AI
-
-
-      🐘 25:34 PHP to shell: two remote code execution bugs in the language behind the web
-
-
-      🛡️ 33:21 How Cloudflare is shielding unpatched PHP admin panels during the rollout
-
-
-      🎣 36:04 Austin's $1 test: how fast bots drained a weak Ethereum private key
-
-
-      💼 37:44 Nexo: Generate daily interest on your crypto or borrow funds against your assets at
-      https://unchainedcrypto.com/go/nexo-podcast-yt
-
-
-      🪣 38:25 papertrade's 1,000x 'bucket shop' and the token you earn by losing
-
-
-      📚 48:55 The mechanism design lessons hidden under DeFi Summer's degeneracy
-
-
-      🐋 52:35 How DeepSeek keeps getting smarter while Kain's API bill fell to $3 a month
-
-
-      🏛️ 57:06 Why DHS banned DeepSeek and why Austin says local models are the safer bet
-
-
-      ♾️ 01:05:13 Why Kain says Anthropic gives off SBF vibes and could be 'worth infinity'
-
-
-      🎯 01:14:23 The drained-key update: bots grabbed 10-digit keys, but 12 digits held
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-11-10T18:07:29.138Z
-    transcript_completed_at: 2026-11-10T18:07:47.298Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
