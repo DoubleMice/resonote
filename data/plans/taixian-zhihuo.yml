@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-13T03:03:23.403Z
+refreshed_at: 2026-11-13T18:08:28.569Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 8
@@ -19,7 +19,7 @@ episodes:
     first_seen_at: 2026-11-10T03:02:47.788Z
     url: https://www.xiaoyuzhoufm.com/episode/6ae8a8d3c96c8942ec164467?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
-    image: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
+    image: https://image.xyzcdn.net/FkaXuiZNNam8yRUyi6FYe_wYB4T7.png
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
@@ -89,8 +89,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-09T18:14:27.226Z
-    transcript_completed_at: 2026-11-09T18:14:55.322Z
+    transcript_submitted_at: 2026-11-13T18:11:12.665Z
+    transcript_completed_at: 2026-11-13T18:11:39.578Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

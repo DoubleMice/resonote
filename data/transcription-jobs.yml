@@ -33661,3 +33661,95 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3:mimo:2026-11-13T18:08:30.002Z:chunk:0
+    parent_key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3
+    attempt_key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3:mimo:2026-11-13T18:08:30.002Z
+    provider: mimo
+    id: ad3b421a-d013-4a69-9613-924fa6d47992
+    source: latepost
+    title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-13T18:08:30.002Z
+    updated_at: 2026-11-13T18:09:07.974Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a:mimo:2026-11-13T18:09:08.229Z:chunk:0
+    parent_key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
+    attempt_key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a:mimo:2026-11-13T18:09:08.229Z
+    provider: mimo
+    id: 6af5debf14d01a26f8a900ac
+    source: xiaojun
+    title: 156. 《侠》｜对影之刃零制作人梁其伟6小时访谈
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 26
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-13T18:09:08.229Z
+    updated_at: 2026-11-13T18:10:48.809Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3:mimo:2026-11-13T18:10:49.068Z:chunk:0
+    parent_key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    attempt_key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3:mimo:2026-11-13T18:10:49.068Z
+    provider: mimo
+    id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
+    source: unchained
+    title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-13T18:10:49.068Z
+    updated_at: 2026-11-13T18:11:12.446Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/luiQGRg_JGbnsDAd4kSxVru7pTwv.m4a:mimo:2026-11-13T18:11:12.665Z:chunk:0
+    parent_key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/luiQGRg_JGbnsDAd4kSxVru7pTwv.m4a
+    attempt_key: taixian-zhihuo:6adf4c2697726cd46758024c:20261026:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/luiQGRg_JGbnsDAd4kSxVru7pTwv.m4a:mimo:2026-11-13T18:11:12.665Z
+    provider: mimo
+    id: 6adf4c2697726cd46758024c
+    source: taixian-zhihuo
+    title: 57. AI硬件是下一轮共识？从具身拳皇到万能赛博工牌 - FoloToy / 魂伴科技
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6adf4c2697726cd46758024c/media.xyzcdn.net/67f40c212ac4d88190caa56a/luiQGRg_JGbnsDAd4kSxVru7pTwv.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-13T18:11:12.665Z
+    updated_at: 2026-11-13T18:11:39.578Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
