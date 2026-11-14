@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-13T18:08:28.553Z
+refreshed_at: 2026-11-14T03:02:12.390Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 6
@@ -226,6 +226,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-13T18:08:30.002Z
+    transcript_completed_at: 2026-11-13T18:09:07.974Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -233,7 +234,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-13T18:09:07.974Z
   - id: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
     guid: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
     title: "185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险"

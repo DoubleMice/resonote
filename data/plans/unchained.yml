@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-13T18:08:28.503Z
+refreshed_at: 2026-11-14T03:02:12.353Z
 min_duration: 3300
-min_date: "20261023"
+min_date: "20261024"
 total_candidates: 6
 done: 0
 pending: 0
@@ -120,6 +120,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-13T18:10:49.068Z
+    transcript_completed_at: 2026-11-13T18:11:12.446Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -127,7 +128,6 @@ episodes:
               "message": "Unsupported model mimo-v2.5"
           }
       }
-    transcript_completed_at: 2026-11-13T18:11:12.446Z
   - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     guid: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
