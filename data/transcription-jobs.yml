@@ -33891,3 +33891,279 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/llhltNxrx2dBu57vwqDfjt0PbUu1.m4a:mimo:2026-11-15T18:07:41.207Z:chunk:0
+    parent_key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/llhltNxrx2dBu57vwqDfjt0PbUu1.m4a
+    attempt_key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/llhltNxrx2dBu57vwqDfjt0PbUu1.m4a:mimo:2026-11-15T18:07:41.207Z
+    provider: mimo
+    id: 6af9d3eca4a79edf1379be34
+    source: taixian-zhihuo
+    title: 62. 后黄仁勋时代：一切还一样吗？- TZ / Trader韭
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/llhltNxrx2dBu57vwqDfjt0PbUu1.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 7
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:07:41.207Z
+    updated_at: 2026-11-15T18:08:12.347Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3:mimo:2026-11-15T18:08:12.586Z:chunk:0
+    parent_key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3
+    attempt_key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3:mimo:2026-11-15T18:08:12.586Z
+    provider: mimo
+    id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
+    source: latepost
+    title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:08:12.586Z
+    updated_at: 2026-11-15T18:08:38.035Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a:mimo:2026-11-15T18:08:38.256Z:chunk:0
+    parent_key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a
+    attempt_key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a:mimo:2026-11-15T18:08:38.256Z
+    provider: mimo
+    id: 6af135bcb4a4e20202f6dccc
+    source: tulong-zhishu
+    title: 从 3.9%时间占比到"字节时间"，我们是怎么走到这儿的？
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:08:38.256Z
+    updated_at: 2026-11-15T18:08:57.445Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3:mimo:2026-11-15T18:08:57.669Z:chunk:0
+    parent_key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3
+    attempt_key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3:mimo:2026-11-15T18:08:57.669Z
+    provider: mimo
+    id: SOAPBOX112
+    source: risky-business
+    title: "Soap Box: Security must be more browser-centric"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:08:57.669Z
+    updated_at: 2026-11-15T18:09:10.374Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3:mimo:2026-11-15T18:09:10.597Z:chunk:0
+    parent_key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    attempt_key: unchained:21ab5726-d7ae-11f1-97a1-4b3fbb715cc9:20261103:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3:mimo:2026-11-15T18:09:10.597Z
+    provider: mimo
+    id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
+    source: unchained
+    title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:09:10.597Z
+    updated_at: 2026-11-15T18:09:38.577Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-15T18:09:38.794Z:chunk:0
+    parent_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    attempt_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-15T18:09:38.794Z
+    provider: mimo
+    id: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
+    source: sv101
+    title: E257｜对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:09:38.794Z
+    updated_at: 2026-11-15T18:10:13.888Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-11-15T18:10:14.107Z:chunk:0
+    parent_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    attempt_key: xiaojun:6ad4dacd641ef406308d86e5:20261021:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a:mimo:2026-11-15T18:10:14.107Z
+    provider: mimo
+    id: 6ad4dacd641ef406308d86e5
+    source: xiaojun
+    title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:10:14.107Z
+    updated_at: 2026-11-15T18:10:49.202Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a:mimo:2026-11-15T18:10:49.425Z:chunk:0
+    parent_key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
+    attempt_key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a:mimo:2026-11-15T18:10:49.425Z
+    provider: mimo
+    id: 6ae8a8d3c96c8942ec164467
+    source: taixian-zhihuo
+    title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:10:49.425Z
+    updated_at: 2026-11-15T18:11:12.673Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: latepost:16de99b4-9940-4d7e-bd08-9ff0d4423df0:20261106:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3:mimo:2026-11-15T18:11:12.900Z:chunk:0
+    parent_key: latepost:16de99b4-9940-4d7e-bd08-9ff0d4423df0:20261106:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3
+    attempt_key: latepost:16de99b4-9940-4d7e-bd08-9ff0d4423df0:20261106:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3:mimo:2026-11-15T18:11:12.900Z
+    provider: mimo
+    id: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
+    source: latepost
+    title: "185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/16de99b4-9940-4d7e-bd08-9ff0d4423df0.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:11:12.900Z
+    updated_at: 2026-11-15T18:11:29.713Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-11-15T18:11:29.953Z:chunk:0
+    parent_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    attempt_key: unchained:c46dc126-d22f-11f1-8de1-b3f7712d873a:20261027:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3:mimo:2026-11-15T18:11:29.953Z
+    provider: mimo
+    id: c46dc126-d22f-11f1-8de1-b3f7712d873a
+    source: unchained
+    title: Why America's New Cyber Privateers Can't Go After North Korea
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1925396671.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:11:29.953Z
+    updated_at: 2026-11-15T18:11:54.864Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a:mimo:2026-11-15T18:11:55.077Z:chunk:0
+    parent_key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a
+    attempt_key: tulong-zhishu:6adf8a8dc96c8942ec12aa7d:20261026:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a:mimo:2026-11-15T18:11:55.077Z
+    provider: mimo
+    id: 6adf8a8dc96c8942ec12aa7d
+    source: tulong-zhishu
+    title: 不是，怎么又换版本了？---狂飙中的AI 2026
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6adf8a8dc96c8942ec12aa7d/media.xyzcdn.net/6507bc165c88d2412626b401/liFTkQnDduLqfyZNmKIqZVdacEH6.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:11:55.077Z
+    updated_at: 2026-11-15T18:12:33.068Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+  - key: taixian-zhihuo:6aecc6d9b4a4e20202f57597:20261105:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aecc6d9b4a4e20202f57597/media.xyzcdn.net/67f40c212ac4d88190caa56a/llMhZCJD7W7TLu_5yF1cIkIGIfXJ.m4a:mimo:2026-11-15T18:12:33.301Z:chunk:0
+    parent_key: taixian-zhihuo:6aecc6d9b4a4e20202f57597:20261105:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aecc6d9b4a4e20202f57597/media.xyzcdn.net/67f40c212ac4d88190caa56a/llMhZCJD7W7TLu_5yF1cIkIGIfXJ.m4a
+    attempt_key: taixian-zhihuo:6aecc6d9b4a4e20202f57597:20261105:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aecc6d9b4a4e20202f57597/media.xyzcdn.net/67f40c212ac4d88190caa56a/llMhZCJD7W7TLu_5yF1cIkIGIfXJ.m4a:mimo:2026-11-15T18:12:33.301Z
+    provider: mimo
+    id: 6aecc6d9b4a4e20202f57597
+    source: taixian-zhihuo
+    title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6aecc6d9b4a4e20202f57597/media.xyzcdn.net/67f40c212ac4d88190caa56a/llMhZCJD7W7TLu_5yF1cIkIGIfXJ.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-15T18:12:33.301Z
+    updated_at: 2026-11-15T18:12:55.795Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }

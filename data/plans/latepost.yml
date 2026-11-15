@@ -1,15 +1,212 @@
 source: latepost
-refreshed_at: 2026-11-15T03:03:05.825Z
+refreshed_at: 2026-11-15T18:07:39.881Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 6
+total_candidates: 7
 done: 3
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 3
+transcribe_failed: 4
 downloaded: 0
 episodes:
+  - id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
+    guid: 77706b7f-cf2f-4400-826c-0331ae6c62a8
+    title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+    duration: 4573
+    published: Sun, 15 Nov 2026 12:15:00 +0800
+    published_sort: "20261115"
+    first_seen_at: 2026-11-15T18:07:39.881Z
+    url: https://podcast.latepost.com/188
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/7/77706b7f-cf2f-4400-826c-0331ae6c62a8/cover.jpg?v=2
+    summary: >-
+      「世间万物都与性有关，除了性本身。性关乎权力。」
+
+
+      2026 年 11 月 12 日，英伟达宣布，创始人兼 CEO 黄仁勋辞去公司总裁、首席执行官及董事职务，即刻生效。CFO Colette Kress 被任命为临时 CEO，董事会则启动正式 CEO 的遴选程序。
+
+
+      这场突然的交接，发生在一场持续发酵的风波之后。此前，美国媒体报道黄仁勋与英伟达客户 Megaspeed International
+      前高管黄乐存在婚外关系，英伟达董事会随后启动独立调查，黄仁勋也向员工承认婚外关系并道歉，最终辞职。
+
+
+      过去 33 年，黄仁勋几乎亲自参与了公司的每一次重大转型。他既是技术路线的决策者，也是供应链关系的建立者，推动了英伟达向 AI 基础设施公司转型，也通过投资、融资和信用支持，深度参与了整个 AI 产业的扩张。
+
+
+      他的离开会给英伟达留下什么？一家高度依赖创始人的公司，能否在创始人离开后继续做出正确的战略决策？与英伟达紧密绑定的供应商、客户和 AI 基础设施公司，会不会受到影响？而当 AI
+      产业最重要的流动性提供者换了人，行业的增长节奏又会如何变化？
+
+
+      本期，我和《晚点 LatePost》跟踪 AI 算力的记者刘伊伦，以及香港一家基金的高级投资策略师 Todd 一起聊了黄仁勋闪电离职后的影响和后续推演。我们提到的上述问题，有些已经有了短期的答案，有些还在演进中。
+
+
+      离开英伟达，可能并不是黄仁勋面临的最坏结果。
+
+
+      本期节目已发布图文版，# 黄仁勋闪电辞职后，英伟达和 AI 行业失去了什么丨晚点播客
+
+
+      本期嘉宾：
+
+
+      Todd，某买方机构高级投资策略师
+
+
+      刘伊伦，《晚点 LatePost》科技组作者
+
+
+      本期主播：
+
+
+      程曼祺，《晚点 LatePost》科技报道负责人
+
+
+      本期剪辑：甜食
+
+
+      时间线跳转：
+
+
+      -黄仁勋离职：AI 基建失去了一个激进的 “央行行长”
+
+
+      02:19 对英伟达：失去了能顶住压力做转型、升级的创始人
+
+
+      06:27 对 AI 基建：更保守的 CFO 接任，AI“央行行长” 换人
+
+
+      08:31 英伟达的三重挑战：即使没有出轨风波，它也处在最需要创始人的时刻
+
+
+      11:48 对股价：英伟达过去一年涨幅已很小，如今创始人溢价也不再
+
+
+      -谁受益、谁受损：同行、小弟、大型云厂商、中国开源模型的影响推演
+
+
+      17:07 AMD、博通吃到短期涨幅，但不解决长期挑战：美民众反对建数据中心、中国算力生意又做不了
+
+
+      19:44 一损俱损：CoreWeave、新云与倒卡公司
+
+
+      21:11 利好国产 GPU 的需求预期，但产能是问题
+
+
+      26:09 中国大型云厂商开始抢卡，B300 服务器此前已涨到 2000 万元
+
+
+      28:45 云厂商的左右互搏：存量卡升值、新增成本上升
+
+
+      32:46 美国进一步禁止中国开源模型的可能性变大
+
+
+      35:00 那些中美之间的公司，再难 “站中间、串两边”
+
+
+      -黄仁勋还能回来吗：调查、两党争斗与 “台湾供应链迎来最严厉父亲”？
+
+
+      36:25 数十年后回望，“川普变法失败” or 给人类应对 AI 风险的可能
+
+
+      42:10 黄仁勋还能回归吗？得先把自己从 “刑事犯罪风险” 中解救出来
+
+
+      51:40 英伟达长期 CEO 人选：如果是库克，那台湾供应链 “完了”
+
+
+      -芯片管制的四层网络
+
+
+      53:26 目前，哪些英伟达芯片能合法进入中国
+
+
+      57:10 美国对华芯片管制的四层手段
+
+
+      59:33 2025~2026 从供过于求到供不应求
+
+
+      01:01:48 BAT 与独立模型公司的算力分配
+
+
+      01:06:46 未来三个月展望：调查、资产配置与 AI“缩表”
+
+
+      01:10:39 基建周期或已走完，应用层仍然很早
+
+
+      01:14:23 连点成线
+
+
+      相关链接：
+
+
+      185 期：Anthropic 招股书丨与 Amont 李肇宇聊定价逻辑和潜在风险
+
+
+      169 期：访谈 Cerebras 早期投资人周楠：英伟达挑战者？Scaling Law 的萌芽、被遗忘的百度美研
+
+
+      163 期：详解DeepSeekV4：Infra巨鲸、百万上下文走进现实、极致效率优化
+
+
+      159 期：马斯克 Terafab 太空算力、英伟达重拾 CPU｜与 Fusion Fund 张璐聊 AI 算力新趋势
+
+
+      158 期：V4 发布前的 DeepSeek：人才竞争、组织特点和独特的 AGI 目标|Solo
+
+
+      115 期：华为发布超节点，如何搅动 AI 算力市场？与魔形智能徐凌杰聊芯片层新变化
+
+
+      附录：本期出现的公司、芯片型号、人物、技术术语等
+
+        Colette Kress：英伟达执行副总裁兼 CFO，2013 年加入公司；黄仁勋离职后兼任临时 CEO。此前曾在思科、微软和德州仪器担任财务管理职位。
+        Chris Malachowsky、Curtis Priem：黄仁勋之外的两位英伟达联合创始人。Malachowsky 目前仍任 NVIDIA Fellow；Priem 早已离开公司。
+        A100 / A800 / H100 / H20 / H200 / B300：英伟达几代数据中心 AI GPU。A100、A800 属于 Ampere 架构；H100、H20、H200 属于 Hopper 架构，其中 A800、H20 是面向中国市场推出的调整版；B300 属于 Blackwell Ultra 架构。它们在不同时期受到美国对华出口许可要求影响。
+        MW / GW：兆瓦（Megawatt）和吉瓦（Gigawatt），都是功率单位，1 GW = 1000 MW。节目里用它们表示数据中心可承载的电力规模，而不是芯片本身的算力。
+        Mellanox：以色列高性能网络公司，核心产品包括 InfiniBand 和高速以太网。英伟达 2020 年以 70 亿美元完成收购，将 GPU 计算与数据中心互联能力整合起来。
+        费城半导体指数（PHLX Semiconductor Sector Index，SOX）：由 30 家在美国上市的大型半导体公司组成的修正市值加权指数，常被视为观察全球半导体板块表现的代表性指标。
+        CoreWeave：以 GPU 云和 AI 基础设施为主业的美国云服务商，也是英伟达生态中重要的算力客户与合作伙伴。
+        BIS（Bureau of Industry and Security）：美国商务部工业与安全局，负责实施《出口管理条例》（EAR）及先进计算芯片等出口管制。
+        外国直接产品规则（Foreign Direct Product Rule，FDPR）：美国出口管制中的长臂规则之一；特定境外制造产品若直接使用受控的美国技术、软件或设备，仍可能受 EAR 约束。
+
+      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
+
+
+      小红书@Yilun即刻@YilunLiu
+
+
+      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
+
+
+      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
+
+
+      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
+
+
+      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
+
+
+      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-15T18:08:12.586Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-15T18:08:38.035Z
   - id: ad3b421a-d013-4a69-9613-924fa6d47992
     guid: ad3b421a-d013-4a69-9613-924fa6d47992
     title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
@@ -367,8 +564,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-12T18:09:58.220Z
-    transcript_completed_at: 2026-11-12T18:10:15.509Z
+    transcript_submitted_at: 2026-11-15T18:11:12.900Z
+    transcript_completed_at: 2026-11-15T18:11:29.713Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
