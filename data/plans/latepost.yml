@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-16T03:03:25.231Z
+refreshed_at: 2026-11-16T18:09:55.325Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
@@ -44,13 +44,13 @@ episodes:
       离开英伟达，可能并不是黄仁勋面临的最坏结果。
 
 
-      本期节目已发布图文版，# 黄仁勋闪电辞职后，英伟达和 AI 行业失去了什么丨晚点播客
+      本期节目已发布图文版，黄仁勋闪电辞职后，英伟达和 AI 行业失去了什么丨晚点播客
 
 
       本期嘉宾：
 
 
-      Todd，某买方机构高级投资策略师
+      Todd，某买方机构高级投资策略师 *小红书@Todd在路上 抖音@Todd在路上 *
 
 
       刘伊伦，《晚点 LatePost》科技组作者
@@ -422,8 +422,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-13T18:08:30.002Z
-    transcript_completed_at: 2026-11-13T18:09:07.974Z
+    transcript_submitted_at: 2026-11-16T18:10:16.600Z
+    transcript_completed_at: 2026-11-16T18:10:53.826Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -712,8 +712,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-12T18:12:19.246Z
-    transcript_completed_at: 2026-11-12T18:12:39.978Z
+    transcript_submitted_at: 2026-11-16T18:15:03.138Z
+    transcript_completed_at: 2026-11-16T18:15:24.211Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

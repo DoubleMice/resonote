@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-16T03:03:25.244Z
+refreshed_at: 2026-11-16T18:09:55.343Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 9
@@ -13,12 +13,12 @@ episodes:
   - id: 6af9d3eca4a79edf1379be34
     guid: 6af9d3eca4a79edf1379be34
     title: 62. 后黄仁勋时代：一切还一样吗？- TC / Trader韭
-    duration: 5842
+    duration: 5376
     published: Sun, 15 Nov 2026 17:11:32 GMT
     published_sort: "20261115"
     first_seen_at: 2026-11-15T18:07:39.897Z
     url: https://www.xiaoyuzhoufm.com/episode/6af9d3eca4a79edf1379be34?utm_source=rss
-    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/llhltNxrx2dBu57vwqDfjt0PbUu1.m4a
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/lv0UhpV_CY3AQeZg0IVDQ3V2UuSC.m4a
     image: https://image.xyzcdn.net/FhxNXv4WKHlE7j4y4iE8rSLZtw3j.png
     status: transcribe_failed
     priority: 1
@@ -89,8 +89,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-12T18:13:40.789Z
-    transcript_completed_at: 2026-11-12T18:14:07.014Z
+    transcript_submitted_at: 2026-11-16T18:14:05.120Z
+    transcript_completed_at: 2026-11-16T18:14:28.531Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
@@ -111,8 +111,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-13T18:11:12.665Z
-    transcript_completed_at: 2026-11-13T18:11:39.578Z
+    transcript_submitted_at: 2026-11-16T18:15:24.468Z
+    transcript_completed_at: 2026-11-16T18:15:51.485Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

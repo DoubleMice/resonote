@@ -1,5 +1,5 @@
 source: lex-fridman
-refreshed_at: 2026-11-16T03:03:25.248Z
+refreshed_at: 2026-11-16T18:09:55.352Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 10
@@ -23,8 +23,8 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-14T18:06:58.773Z
-    transcript_completed_at: 2026-11-14T18:07:29.317Z
+    transcript_submitted_at: 2026-11-16T18:13:00.773Z
+    transcript_completed_at: 2026-11-16T18:13:47.018Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {

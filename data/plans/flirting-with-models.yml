@@ -1,15 +1,37 @@
 source: flirting-with-models
-refreshed_at: 2026-11-16T03:03:25.208Z
+refreshed_at: 2026-11-16T18:09:55.292Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 1
+total_candidates: 2
 done: 1
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 600df4b7-4220-4de9-ab9e-0c5a25e201e2
+    guid: 600df4b7-4220-4de9-ab9e-0c5a25e201e2
+    title: Richard Falk-Wallace – Risk Models for the Front Office with Arcana (S8E1)
+    duration: 4077
+    published: Mon, 16 Nov 2026 00:00:00 -0500
+    published_sort: "20261116"
+    first_seen_at: 2026-11-16T18:09:55.292Z
+    url: http://www.flirtingwithmodels.com/
+    audio_url: https://episodes.captivate.fm/episode/600df4b7-4220-4de9-ab9e-0c5a25e201e2.mp3
+    image: https://artwork.captivate.fm/594874aa-8b76-43d5-9927-795aaef45178/flirting-with-models-richard-falk-wallace-3000x3000.jpg
+    status: transcribe_failed
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-16T18:09:56.817Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
+    transcript_completed_at: 2026-11-16T18:10:16.354Z
   - id: 89c095f2-656e-4be2-a667-b919352b0002
     guid: 89c095f2-656e-4be2-a667-b919352b0002
     title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)
