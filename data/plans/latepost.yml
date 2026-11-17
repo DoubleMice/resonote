@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-17T03:03:09.420Z
+refreshed_at: 2026-11-17T10:48:01.161Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
@@ -198,13 +198,13 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:08:12.586Z
-    transcript_completed_at: 2026-11-15T18:08:38.035Z
+    transcript_submitted_at: 2026-11-17T10:48:41.527Z
+    transcript_completed_at: 2026-11-17T10:49:01.192Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
               "code": "400",
-              "message": "Unsupported model mimo-v2.5"
+              "message": "Unsupported model mimo-v2.6"
           }
       }
   - id: ad3b421a-d013-4a69-9613-924fa6d47992
@@ -422,13 +422,13 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-16T18:10:16.600Z
-    transcript_completed_at: 2026-11-16T18:10:53.826Z
+    transcript_submitted_at: 2026-11-17T10:52:22.512Z
+    transcript_completed_at: 2026-11-17T10:52:53.436Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
               "code": "400",
-              "message": "Unsupported model mimo-v2.5"
+              "message": "Unsupported model mimo-v2.6"
           }
       }
   - id: 16de99b4-9940-4d7e-bd08-9ff0d4423df0

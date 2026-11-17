@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-17T03:03:09.432Z
+refreshed_at: 2026-11-17T10:48:01.178Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 9
@@ -23,13 +23,13 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:07:41.207Z
-    transcript_completed_at: 2026-11-15T18:08:12.347Z
+    transcript_submitted_at: 2026-11-17T10:48:18.709Z
+    transcript_completed_at: 2026-11-17T10:48:41.328Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
               "code": "400",
-              "message": "Unsupported model mimo-v2.5"
+              "message": "Unsupported model mimo-v2.6"
           }
       }
   - id: 6ae8a8d3c96c8942ec164467
@@ -45,13 +45,13 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:10:49.425Z
-    transcript_completed_at: 2026-11-15T18:11:12.673Z
+    transcript_submitted_at: 2026-11-17T10:53:11.016Z
+    transcript_completed_at: 2026-11-17T10:53:29.798Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
               "code": "400",
-              "message": "Unsupported model mimo-v2.5"
+              "message": "Unsupported model mimo-v2.6"
           }
       }
   - id: 6aecc6d9b4a4e20202f57597

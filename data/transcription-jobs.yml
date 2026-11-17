@@ -34443,3 +34443,279 @@ jobs:
               "message": "Unsupported model mimo-v2.5"
           }
       }
+  - key: flirting-with-models:600df4b7-4220-4de9-ab9e-0c5a25e201e2:20261116:https://episodes.captivate.fm/episode/600df4b7-4220-4de9-ab9e-0c5a25e201e2.mp3:mimo:2026-11-17T10:48:02.339Z:chunk:0
+    parent_key: flirting-with-models:600df4b7-4220-4de9-ab9e-0c5a25e201e2:20261116:https://episodes.captivate.fm/episode/600df4b7-4220-4de9-ab9e-0c5a25e201e2.mp3
+    attempt_key: flirting-with-models:600df4b7-4220-4de9-ab9e-0c5a25e201e2:20261116:https://episodes.captivate.fm/episode/600df4b7-4220-4de9-ab9e-0c5a25e201e2.mp3:mimo:2026-11-17T10:48:02.339Z
+    provider: mimo
+    id: 600df4b7-4220-4de9-ab9e-0c5a25e201e2
+    source: flirting-with-models
+    title: Richard Falk-Wallace – Risk Models for the Front Office with Arcana (S8E1)
+    audio_url: https://episodes.captivate.fm/episode/600df4b7-4220-4de9-ab9e-0c5a25e201e2.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:48:02.339Z
+    updated_at: 2026-11-17T10:48:18.511Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/lv0UhpV_CY3AQeZg0IVDQ3V2UuSC.m4a:mimo:2026-11-17T10:48:18.709Z:chunk:0
+    parent_key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/lv0UhpV_CY3AQeZg0IVDQ3V2UuSC.m4a
+    attempt_key: taixian-zhihuo:6af9d3eca4a79edf1379be34:20261115:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/lv0UhpV_CY3AQeZg0IVDQ3V2UuSC.m4a:mimo:2026-11-17T10:48:18.709Z
+    provider: mimo
+    id: 6af9d3eca4a79edf1379be34
+    source: taixian-zhihuo
+    title: 62. 后黄仁勋时代：一切还一样吗？- TC / Trader韭
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6af9d3eca4a79edf1379be34/media.xyzcdn.net/67f40c212ac4d88190caa56a/lv0UhpV_CY3AQeZg0IVDQ3V2UuSC.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:48:18.709Z
+    updated_at: 2026-11-17T10:48:41.328Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3:mimo:2026-11-17T10:48:41.527Z:chunk:0
+    parent_key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3
+    attempt_key: latepost:77706b7f-cf2f-4400-826c-0331ae6c62a8:20261115:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3:mimo:2026-11-17T10:48:41.527Z
+    provider: mimo
+    id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
+    source: latepost
+    title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/77706b7f-cf2f-4400-826c-0331ae6c62a8.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:48:41.527Z
+    updated_at: 2026-11-17T10:49:01.192Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a:mimo:2026-11-17T10:49:01.372Z:chunk:0
+    parent_key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
+    attempt_key: xiaojun:6af5debf14d01a26f8a900ac:20261113:https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a:mimo:2026-11-17T10:49:01.372Z
+    provider: mimo
+    id: 6af5debf14d01a26f8a900ac
+    source: xiaojun
+    title: 156. 对影之刃零梁其伟的6小时访谈：3A动作游戏、武侠、“最强者是朴实的”，“世界没有敌人，只有你和你的另一个自己”
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 26
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:49:01.372Z
+    updated_at: 2026-11-17T10:50:23.772Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3:mimo:2026-11-17T10:50:23.961Z:chunk:0
+    parent_key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    attempt_key: unchained:b145fc70-dec4-11f1-9671-1b56aa1d87ba:20261112:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3:mimo:2026-11-17T10:50:23.961Z
+    provider: mimo
+    id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
+    source: unchained
+    title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:50:23.961Z
+    updated_at: 2026-11-17T10:50:47.896Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3:mimo:2026-11-17T10:50:48.074Z:chunk:0
+    parent_key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3
+    attempt_key: lex-fridman:p-7818:20261110:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3:mimo:2026-11-17T10:50:48.074Z
+    provider: mimo
+    id: p-7818
+    source: lex-fridman
+    title: "#504 – Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_preston_stewart_michael_kofman.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 13
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:50:48.074Z
+    updated_at: 2026-11-17T10:51:26.371Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a:mimo:2026-11-17T10:51:26.549Z:chunk:0
+    parent_key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a
+    attempt_key: tulong-zhishu:6af135bcb4a4e20202f6dccc:20261109:https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a:mimo:2026-11-17T10:51:26.549Z
+    provider: mimo
+    id: 6af135bcb4a4e20202f6dccc
+    source: tulong-zhishu
+    title: 从 3.9%时间占比到"字节时间"，我们是怎么走到这儿的？
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/6507bc165c88d2412626b401/6af135bcb4a4e20202f6dccc/media.xyzcdn.net/6507bc165c88d2412626b401/lg6vpxJZL3GePzwTdPyVC_vikILY.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:51:26.549Z
+    updated_at: 2026-11-17T10:51:42.843Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3:mimo:2026-11-17T10:51:43.029Z:chunk:0
+    parent_key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3
+    attempt_key: risky-business:SOAPBOX112:20261109:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3:mimo:2026-11-17T10:51:43.029Z
+    provider: mimo
+    id: SOAPBOX112
+    source: risky-business
+    title: "Soap Box: Security must be more browser-centric"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX112.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:51:43.029Z
+    updated_at: 2026-11-17T10:51:53.918Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-17T10:51:54.106Z:chunk:0
+    parent_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    attempt_key: sv101:7a1e61d3-f02c-498b-ac84-cf68f59b4ca9:20261028:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3:mimo:2026-11-17T10:51:54.106Z
+    provider: mimo
+    id: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
+    source: sv101
+    title: E257｜对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/7a1e61d3-f02c-498b-ac84-cf68f59b4ca9.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:51:54.106Z
+    updated_at: 2026-11-17T10:52:22.327Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3:mimo:2026-11-17T10:52:22.512Z:chunk:0
+    parent_key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3
+    attempt_key: latepost:ad3b421a-d013-4a69-9613-924fa6d47992:20261113:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3:mimo:2026-11-17T10:52:22.512Z
+    provider: mimo
+    id: ad3b421a-d013-4a69-9613-924fa6d47992
+    source: latepost
+    title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/ad3b421a-d013-4a69-9613-924fa6d47992.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 9
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:52:22.512Z
+    updated_at: 2026-11-17T10:52:53.436Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3:mimo:2026-11-17T10:52:53.638Z:chunk:0
+    parent_key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    attempt_key: unchained:517d5018-dd6b-11f1-a60d-2bc1d7680ae1:20261111:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3:mimo:2026-11-17T10:52:53.638Z
+    provider: mimo
+    id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
+    source: unchained
+    title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 4
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:52:53.638Z
+    updated_at: 2026-11-17T10:53:10.827Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }
+  - key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a:mimo:2026-11-17T10:53:11.016Z:chunk:0
+    parent_key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
+    attempt_key: taixian-zhihuo:6ae8a8d3c96c8942ec164467:20261110:https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a:mimo:2026-11-17T10:53:11.016Z
+    provider: mimo
+    id: 6ae8a8d3c96c8942ec164467
+    source: taixian-zhihuo
+    title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
+    audio_url: https://dts-api.xiaoyuzhoufm.com/track/67f40c212ac4d88190caa56a/6ae8a8d3c96c8942ec164467/media.xyzcdn.net/67f40c212ac4d88190caa56a/liqPlal8toLccVsjs1IWrF75KFVu.m4a
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-17T10:53:11.016Z
+    updated_at: 2026-11-17T10:53:29.798Z
+    error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.6"
+          }
+      }

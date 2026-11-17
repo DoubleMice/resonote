@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-11-17T03:03:09.396Z
+refreshed_at: 2026-11-17T10:48:01.125Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
@@ -38,13 +38,13 @@ episodes:
     status: transcribe_failed
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:08:57.669Z
-    transcript_completed_at: 2026-11-15T18:09:10.374Z
+    transcript_submitted_at: 2026-11-17T10:51:43.029Z
+    transcript_completed_at: 2026-11-17T10:51:53.918Z
     transcript_error: |
       MiMo transcription failed: 400 {
           "error": {
               "code": "400",
-              "message": "Unsupported model mimo-v2.5"
+              "message": "Unsupported model mimo-v2.6"
           }
       }
   - id: SNAKEOILERS24PT2
