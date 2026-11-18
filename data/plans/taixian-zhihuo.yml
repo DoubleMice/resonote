@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-18T02:26:14.971Z
+refreshed_at: 2026-11-18T05:22:51.357Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 9
@@ -23,9 +23,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: dc7523b9-8f40-47a0-b455-0b29d0498be0_2u6envg4mqf3bzbf28_3ee9a49653a3499aa6671699a7d052c4,4c818955-ab75-4a26-ac6a-046fd4da540d_2sn016g4mqhcl5evi8_a813f261e8114c83bd6bba7b79c00192,66a752e7-890c-437f-ad4c-348ef5cefe10_2twe1ig4mqo4h21wcg_282c1ed5321f490ea5acc25d90fc0566,9a8022c5-1221-4770-91a6-5810a1245bb8_2u6envg4mquitgxiio_adcbbf34d10e419789e890a73173932d,07ae0717-5ebd-4595-8d98-e4b994e4f575_2twg4ig4mqyieio9hc_96d05bc94f604b19bdacd1a5ff64b2a8,c67b35e2-834e-4403-8786-cabd5f883c4d_2twk49g4mr030i6xa8_2cbe1c26bc4947e5aaad56b40debe9e2
     transcript_submitted_at: 2026-11-18T02:32:42.381Z
     transcript_completed_at: 2026-11-18T02:41:31.038Z
-    transcript_job_id: dc7523b9-8f40-47a0-b455-0b29d0498be0_2u6envg4mqf3bzbf28_3ee9a49653a3499aa6671699a7d052c4,4c818955-ab75-4a26-ac6a-046fd4da540d_2sn016g4mqhcl5evi8_a813f261e8114c83bd6bba7b79c00192,66a752e7-890c-437f-ad4c-348ef5cefe10_2twe1ig4mqo4h21wcg_282c1ed5321f490ea5acc25d90fc0566,9a8022c5-1221-4770-91a6-5810a1245bb8_2u6envg4mquitgxiio_adcbbf34d10e419789e890a73173932d,07ae0717-5ebd-4595-8d98-e4b994e4f575_2twg4ig4mqyieio9hc_96d05bc94f604b19bdacd1a5ff64b2a8,c67b35e2-834e-4403-8786-cabd5f883c4d_2twk49g4mr030i6xa8_2cbe1c26bc4947e5aaad56b40debe9e2
   - id: 6ae8a8d3c96c8942ec164467
     guid: 6ae8a8d3c96c8942ec164467
     title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
@@ -39,9 +39,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 2dc3da15-793f-4ecf-a1e8-0adb26c22df4_2sn102g4n249gyzgg0_8a1cb593a99f4c688aa69b477286a247,6b63365c-2830-4220-84da-32edfda468f3_2sn102g4n2abe5301s_6b5f8f4efc3b4eeaa48c6edc26753d82,50698268-d257-4d77-b4de-be13d7cbe5a3_2tvv3jg4n2ciidihvk_2b076728771141a980929c19d6e00c81,c1475bf6-091b-42f8-bbb3-73a899221eb9_2twx7tg4n2isjnludc_7e37ded7a173456a8a21674dac72e874,b84d0542-38ef-4244-bd75-4541ce8d5945_2twt87g4n2ogbskoao_393b46bd6c014258b9f2086995e3806e
     transcript_submitted_at: 2026-11-18T04:43:55.275Z
     transcript_completed_at: 2026-11-18T04:51:40.185Z
-    transcript_job_id: 2dc3da15-793f-4ecf-a1e8-0adb26c22df4_2sn102g4n249gyzgg0_8a1cb593a99f4c688aa69b477286a247,6b63365c-2830-4220-84da-32edfda468f3_2sn102g4n2abe5301s_6b5f8f4efc3b4eeaa48c6edc26753d82,50698268-d257-4d77-b4de-be13d7cbe5a3_2tvv3jg4n2ciidihvk_2b076728771141a980929c19d6e00c81,c1475bf6-091b-42f8-bbb3-73a899221eb9_2twx7tg4n2isjnludc_7e37ded7a173456a8a21674dac72e874,b84d0542-38ef-4244-bd75-4541ce8d5945_2twt87g4n2ogbskoao_393b46bd6c014258b9f2086995e3806e
   - id: 6aecc6d9b4a4e20202f57597
     guid: 6aecc6d9b4a4e20202f57597
     title: 60. 美国中期选举的账单来了：关税，油价，电费，我的股票 - Gavin Newton-Tanzer

@@ -1,15 +1,110 @@
 source: unchained
-refreshed_at: 2026-11-18T02:26:14.918Z
+refreshed_at: 2026-11-18T05:22:51.288Z
 min_duration: 3300
 min_date: "20261028"
-total_candidates: 5
+total_candidates: 6
 done: 2
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 3
 downloaded: 0
 episodes:
+  - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
+    guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
+    title: Why So Many Public Companies Are Saying No to Tokenized Stocks
+    duration: 3832
+    published: Wed, 18 Nov 2026 03:16:00 -0000
+    published_sort: "20261118"
+    first_seen_at: 2026-11-18T05:22:51.283Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6962118769.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6962118769.mp3
+    image: https://megaphone.imgix.net/podcasts/7e252e40-e2fe-11f1-927a-fbe1f6fcd054/image/6da3918c7c015617ee87db8f4414b201.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      SEC Director Jamie Selway and Securitize President Brett Redfearn on why 67 companies opted out of OKX ICE, and
+      what could bring them back.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
+
+      Find out more at ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Sixty-seven companies have opted out so far of having their shares traded on OKX ICE's tokenized stock venue, and
+      a full-page Wall Street Journal ad warned CEOs that crypto would soon tokenize their stock on unregulated venues.
+
+
+      Jamie Selway, Director of the SEC's Division of Trading and Markets, and Brett Redfearn, President of Securitize,
+      join Laura Shin to sort out what the SEC's innovation exemption actually allows. Selway lays out its design: a
+      five-year term, volume caps as low as 25 basis points, and a 30-day issuer consent window. Redfearn argues that
+      tokenizing a stock and trading it on a TSV are two different things.
+
+
+      They also cover the Hims & Hers token that hit $132 offshore, weekend pricing, why synthetics are off the table
+      for now, and the "investomer." Selway says a rule proposal has to be a 2027 event, so the next year of trading may
+      shape the rules that follow.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guests:
+
+        Brett Redfearn - President of Securitize
+
+        Jamie Selway - Director of the Division of Trading and Markets at the SEC
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🚪 01:26 Why 67 companies opted out of OKX ICE, and whether they can opt back in
+
+
+      📰 07:09 From the AMC spat to the WSJ ad: where the issuer pushback came from
+
+
+      💙 14:32 Nexo: Earn daily interest on your crypto or borrow funds against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt
+
+
+      🔗 14:57 Why Brett says tokenizing a stock and trading it on a TSV aren't the same
+
+
+      📊 23:19 How Jamie and Brett answer issuers worried about price and volatility
+
+
+      🏛️ 28:26 Jamie on the exemption's design: 5 years, volume caps, 30-day consent
+
+
+      🪙 35:25 How Securitize's tokenized stocks trade outside the exemption
+
+
+      💊 48:37 The Hims & Hers token that traded 4.5x higher than the stock: could it happen under the exemption?
+
+
+      🌍 55:01 Will the SEC ever allow tokenized synthetics in the US?
+
+
+      📅 01:02:33 When Jamie expects the SEC to propose final rules for tokenized trading
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
     guid: b145fc70-dec4-11f1-9671-1b56aa1d87ba
     title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
@@ -119,9 +214,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 220b76ae-9e28-42ba-a680-c1e7b68adb8b_2twso4g4mw25uoham8_59c0c947662143cd8fd78db00e6b91d6,c3a95b16-43f7-44c5-b5fb-3fcea1643942_2u6c3tg4mw927pxibk_65d6fc114e3145dbb5debb4ed44d2b61,3c1a679e-21db-40d7-9abd-fc5ebb11f4c9_2twbikg4mwfaj2dslc_047dc49b0c644e3a95c69cf63ffbbc44,ca11f42a-269b-41ac-9cd0-0a5de5ab8ca0_2twtlng4mwl02ihrls_a179acbe10c84c71b76aace52ff8e093,a43097f6-51a1-463e-be9d-cf61ee5e4049_2u6bzeg4mwnfs8c2kg_4e3794fccd044a01bb20dd3023ba9c4b,120b2af0-6955-4319-8d5e-f21cc4e427a4_2twt87g4mwqkq3idj4_44409e8d71e344968dff060f81514428
     transcript_submitted_at: 2026-11-18T03:35:58.447Z
     transcript_completed_at: 2026-11-18T03:44:03.234Z
-    transcript_job_id: 220b76ae-9e28-42ba-a680-c1e7b68adb8b_2twso4g4mw25uoham8_59c0c947662143cd8fd78db00e6b91d6,c3a95b16-43f7-44c5-b5fb-3fcea1643942_2u6c3tg4mw927pxibk_65d6fc114e3145dbb5debb4ed44d2b61,3c1a679e-21db-40d7-9abd-fc5ebb11f4c9_2twbikg4mwfaj2dslc_047dc49b0c644e3a95c69cf63ffbbc44,ca11f42a-269b-41ac-9cd0-0a5de5ab8ca0_2twtlng4mwl02ihrls_a179acbe10c84c71b76aace52ff8e093,a43097f6-51a1-463e-be9d-cf61ee5e4049_2u6bzeg4mwnfs8c2kg_4e3794fccd044a01bb20dd3023ba9c4b,120b2af0-6955-4319-8d5e-f21cc4e427a4_2twt87g4mwqkq3idj4_44409e8d71e344968dff060f81514428
   - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     guid: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
@@ -216,9 +311,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 7fb5bb02-db79-4ec3-8539-f4389ed45a4a_2twcmig4n1oqb817gg_7a9808d1b1d84c23bcadacb41c9e14e6,bac5584e-548d-4e47-ba20-7e40c6cf5ee9_2twledg4n1udjedn28_89c5377c8cd14ac998c8b30688c70132,a1cdb4a9-adbb-4d9a-94cc-85efbeac12b1_2sn102g4n1z28nz2tc_434185c71da74435a30f5d5ee5a6893d,97510f23-3796-4dd5-bd95-e5a3ca71cd7c_2twg8wg4n20fokvhts_eec2bbebcb2d4e2cbf5979c286708a2c
     transcript_submitted_at: 2026-11-18T04:39:03.706Z
     transcript_completed_at: 2026-11-18T04:43:54.808Z
-    transcript_job_id: 7fb5bb02-db79-4ec3-8539-f4389ed45a4a_2twcmig4n1oqb817gg_7a9808d1b1d84c23bcadacb41c9e14e6,bac5584e-548d-4e47-ba20-7e40c6cf5ee9_2twledg4n1udjedn28_89c5377c8cd14ac998c8b30688c70132,a1cdb4a9-adbb-4d9a-94cc-85efbeac12b1_2sn102g4n1z28nz2tc_434185c71da74435a30f5d5ee5a6893d,97510f23-3796-4dd5-bd95-e5a3ca71cd7c_2twg8wg4n20fokvhts_eec2bbebcb2d4e2cbf5979c286708a2c
   - id: c0e66182-d934-11f1-8762-df5aaedf801b
     guid: c0e66182-d934-11f1-8762-df5aaedf801b
     title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"

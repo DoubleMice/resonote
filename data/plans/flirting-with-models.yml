@@ -1,5 +1,5 @@
 source: flirting-with-models
-refreshed_at: 2026-11-18T02:26:14.931Z
+refreshed_at: 2026-11-18T05:22:51.305Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 2
@@ -23,9 +23,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 9a286d75-aae0-4dfb-9e1f-4b04e2c4b767_2twg8wg4mpu2824n40_b59ef8c4ca3e45cbb36f9cf527caa50f,041dfa2c-2090-4e22-a69b-339af4336c17_2twjmsg4mpwy8radxc_d308c96e036449f7883085827380b034,6dba2441-f403-47d2-8411-e718ad728a96_2u6bzeg4mq11od7ke8_42105f6ef5074addbc6eb49e1664fdc7,27a83818-549e-46cd-8e38-9fa0eec8692b_2twtuxg4mq6dpy3nk0_a1b59cbb0f344993986b9d23e66ec098,46e8c6eb-7dfe-443d-9cf0-0a5dda5fee1d_2twajkg4mqbp53yjuo_010a9b06a08c45efa6184ec5068419e9
     transcript_submitted_at: 2026-11-18T02:26:16.080Z
     transcript_completed_at: 2026-11-18T02:32:41.872Z
-    transcript_job_id: 9a286d75-aae0-4dfb-9e1f-4b04e2c4b767_2twg8wg4mpu2824n40_b59ef8c4ca3e45cbb36f9cf527caa50f,041dfa2c-2090-4e22-a69b-339af4336c17_2twjmsg4mpwy8radxc_d308c96e036449f7883085827380b034,6dba2441-f403-47d2-8411-e718ad728a96_2u6bzeg4mq11od7ke8_42105f6ef5074addbc6eb49e1664fdc7,27a83818-549e-46cd-8e38-9fa0eec8692b_2twtuxg4mq6dpy3nk0_a1b59cbb0f344993986b9d23e66ec098,46e8c6eb-7dfe-443d-9cf0-0a5dda5fee1d_2twajkg4mqbp53yjuo_010a9b06a08c45efa6184ec5068419e9
   - id: 89c095f2-656e-4be2-a667-b919352b0002
     guid: 89c095f2-656e-4be2-a667-b919352b0002
     title: Philip & Allan Maymin – Compounding Through Risk, Not Return (S7E35)

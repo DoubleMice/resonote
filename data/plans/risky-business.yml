@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-11-18T02:26:14.925Z
+refreshed_at: 2026-11-18T05:22:51.297Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
@@ -38,9 +38,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 76c87152-69d2-42aa-a15e-1f67688320f6_2twcacg4mz01qwy3uo_f142ae945df74c07b4320764ea67175b,bfdb9f33-5f18-452b-b1a7-2dae06971ba7_2twtuxg4mz5j6wfbi8_15d1cd47df55426eb2054a105272815b,d336acf4-a44a-4b81-aa9b-10dc747fff0e_2u6e2fg4mzbszuw5xc_a7b37f063b3c4056b53e2b1fdb074d4c
     transcript_submitted_at: 2026-11-18T04:09:07.116Z
     transcript_completed_at: 2026-11-18T04:13:42.982Z
-    transcript_job_id: 76c87152-69d2-42aa-a15e-1f67688320f6_2twcacg4mz01qwy3uo_f142ae945df74c07b4320764ea67175b,bfdb9f33-5f18-452b-b1a7-2dae06971ba7_2twtuxg4mz5j6wfbi8_15d1cd47df55426eb2054a105272815b,d336acf4-a44a-4b81-aa9b-10dc747fff0e_2u6e2fg4mzbszuw5xc_a7b37f063b3c4056b53e2b1fdb074d4c
   - id: SNAKEOILERS24PT2
     guid: https://risky.biz/SNAKEOILERS24PT2/
     title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"

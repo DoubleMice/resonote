@@ -1,5 +1,5 @@
 source: tulong-zhishu
-refreshed_at: 2026-11-18T02:26:14.966Z
+refreshed_at: 2026-11-18T05:22:51.351Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 5
@@ -23,9 +23,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: eff045fe-cc87-47ff-ae68-d4b8e636eae2_2twam2g4myjbu3w5q8_9fc0a2c3819447ee936056968ae41e28,053c3f37-5574-4a2f-ae13-09048e2e0dd5_2twk49g4mym8yvpibk_93c6cc7b90c34273bbcff12547d02364,ded9b20d-554d-4f81-b27f-2880ad0ab865_2sn016g4myqy7jtog0_d181889489414d6590edb5b1d6c619c0,415fe9bb-4b44-41c2-b374-bb59c20b8740_2twg8zg4myv6f4u41s_37fddfaefd3b4f07a120ef8d97b8679d,c1c9bf0b-8410-437e-8de9-2c5684ae53c9_2twledg4myy445260w_3424c00a8bb54b83a4fd6c90a90ce730
     transcript_submitted_at: 2026-11-18T04:03:49.740Z
     transcript_completed_at: 2026-11-18T04:09:06.669Z
-    transcript_job_id: eff045fe-cc87-47ff-ae68-d4b8e636eae2_2twam2g4myjbu3w5q8_9fc0a2c3819447ee936056968ae41e28,053c3f37-5574-4a2f-ae13-09048e2e0dd5_2twk49g4mym8yvpibk_93c6cc7b90c34273bbcff12547d02364,ded9b20d-554d-4f81-b27f-2880ad0ab865_2sn016g4myqy7jtog0_d181889489414d6590edb5b1d6c619c0,415fe9bb-4b44-41c2-b374-bb59c20b8740_2twg8zg4myv6f4u41s_37fddfaefd3b4f07a120ef8d97b8679d,c1c9bf0b-8410-437e-8de9-2c5684ae53c9_2twledg4myy445260w_3424c00a8bb54b83a4fd6c90a90ce730
   - id: 6ae81dffc96c8942ec15ea3c
     guid: 6ae81dffc96c8942ec15ea3c
     title: 从龙虾到《赵云与阿斗》，我的10个AI-aha moment
