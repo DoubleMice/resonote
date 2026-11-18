@@ -1,0 +1,29 @@
+title: 复盘 Personal Agent 集体诞生：AI 产品、需求与未来入口
+guest: 蔡伟
+guest_role: 蚂蚁灵光负责人
+tags:
+  - ai-products
+  - product-management
+  - interview
+  - deep-dive
+summary: |
+  蚂蚁灵光负责人蔡伟回顾产品从信息整理、闪应用到个人智能体的演进，解释模型能力、服务供给和安全信任如何影响产品体验。对谈还讨论普通人的助理需求、通用与垂直产品的竞争，以及成本、补贴和未来入口的不确定性。
+core_ideas:
+  - 个人智能体以持续管理事项和主动服务为方向，但提醒频率和个人记忆的调用需要根据用户与任务调整。
+  - 接入服务需要逐个打磨接口和交易体验，涉及支付及个人数据时还需要明确权限和安全机制。
+  - 通用助理能否胜过垂直产品，与服务供给的开放程度和用户实际体验有关，目前难有定论。
+  - 用户是否愿意使用和付费，取决于产品提供的价值及成本；算力降价和大众需求增长仍是蔡伟的预期。
+  - 产品团队既要理解模型和训练边界，也要观察事项完成与放弃等指标，避免只追逐单一增长数字。
+id: 6afd12c6a4a79edf137afd61
+source: xiaojun
+source_title: 157. 复盘Personal Agent集体诞生背后：和蔡伟聊AI产品史、需求真伪、入口与未来想象
+published: 2026-11
+published_sort: "20261118"
+duration: 2h44m
+url: https://www.xiaoyuzhoufm.com/episode/6afd12c6a4a79edf137afd61?utm_source=rss
+status: generated
+article_path: episodes/6afd12c6a4a79edf137afd61/article.html
+base: /episodes/6afd12c6a4a79edf137afd61/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/FvLuA_xazPI-w8wrJm-BAVbLja5k.png
+generated_at: 2026-11-18T19:08:13.052Z

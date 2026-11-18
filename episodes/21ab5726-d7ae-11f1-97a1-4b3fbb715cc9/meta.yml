@@ -1,0 +1,26 @@
+title: Binance 遭窃约 63 亿美元：攻击、冻结与资金去向
+guest: Jon T.、Pablo Sabatella
+guest_role: Picklin Intelligence 创始人、OffSec 创始人
+tags:
+  - interview
+  - technical
+summary: |
+  Unchained 讨论 Binance 遭窃约 63 亿美元的事件，以及攻击者可能如何利用签名系统转走多条链上的资产。两位嘉宾分析冻结、跨链兑换和 DeFi 的连带风险，并区分已披露的信息与尚待调查的入侵路径。
+core_ideas:
+  - Binance 的初步通报涉及受攻陷的工程师笔记本，后续又发现其他入侵点；完整路径尚未公布。
+  - 嘉宾认为攻击者可能利用签名基础设施转移资金，EIP-7702 则可能加快以太坊资产的转出。
+  - 冻结阻止部分资产继续流动，但大额兑换和洗钱仍可能影响去中心化金融协议。
+  - 安全建议包括隔离权限、监测终端设备、了解攻击组织的手法，以及及时处理可核实的赃款线索。
+id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
+source: unchained
+source_title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
+published: 2026-11
+published_sort: "20261103"
+duration: 1h21m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
+status: generated
+article_path: episodes/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/article.html
+base: /episodes/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/image/c2fad37e0a9ec36405ec4db105a810ee.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-11-18T19:11:15.504Z

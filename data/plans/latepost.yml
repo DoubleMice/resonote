@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-11-18T05:54:08.134Z
+refreshed_at: 2026-11-18T18:08:00.533Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
-done: 5
+done: 6
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
@@ -552,18 +552,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:11:12.900Z
-    transcript_completed_at: 2026-11-15T18:11:29.713Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.5"
-          }
-      }
+    transcript_submitted_at: 2026-11-18T18:33:08.419Z
+    transcript_completed_at: 2026-11-18T18:38:56.848Z
+    transcript_job_id: 84f36235-4a34-4d03-b3b5-1efcfa838900_2twam2g4p433wrco3k_ecbca5dcc19348e7b34de5f46a25123b,c6146e8c-40b1-4141-9910-f9c4711c2232_2tvlb5g4p4914b7ny8_d2e373936f3447b2a71606846e9fc902,5ed80dbf-f0a4-415e-ac0d-7cd0630d0b23_2u6envg4p4epjx4em8_0ef11291b8414de389cab151ed53c685,6b8b47ba-938d-4501-98ac-6b10d606a55d_2twrmag4p4ithgcmbk_ec3c74b12ea341ceb01cc5ad15b94a5a
   - id: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     guid: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     title: "186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么"

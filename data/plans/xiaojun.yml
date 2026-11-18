@@ -1,13 +1,13 @@
 source: xiaojun
-refreshed_at: 2026-11-18T05:54:08.120Z
+refreshed_at: 2026-11-18T18:08:00.502Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 5
-done: 2
+done: 4
 pending: 0
-needs_transcript: 2
+needs_transcript: 1
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 6afd12c6a4a79edf137afd61
@@ -20,11 +20,15 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6afd12c6a4a79edf137afd61?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6afd12c6a4a79edf137afd61/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltU-y2wl0s2fvaEJBluGHouM2hO0.m4a
     image: https://image.xyzcdn.net/FvLuA_xazPI-w8wrJm-BAVbLja5k.png
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-18T18:08:02.156Z
+    transcript_job_id: a739ae3d-a243-4fdc-9b6b-5f76f81723f3_2tww7ig4p1w53ohz40_2cb71c20c98c4af69bbb414d2e20e7ae,073d341e-9c9c-4de5-bc0d-339347512c97_2tvsxng4p21dn85y4g_bda776fad95c484f9c61731f75e85ab0,88dd7836-f6f4-4f95-b52f-f171cd07cddd_2twg4ig4p22uph7668_681dd5e73eb64bf79db0a7fb0d4dd8e4,7223a857-5e6a-4127-8754-0ab65c46d16c_2twp1ug4p26gzmvuv4_43ce4e70a1194fa9abaf034f626c8ac2,de4d2569-7ade-41b4-bb2e-bd06c6c15501_2twcacg4p27vbpyneo_93c9885563aa411ebd7aa99b55574ff9,9d4d4bea-fb9f-4669-a4d3-557432589b9a_2tvvk5g4p2d1qa9qf4_d6d068009b484a8cb8baffa6294963f3,4d78f6b9-42a2-42db-bd1d-3a24fc965a99_2twg8zg4p2gcaci8lc_6afa555a9b75470bb51b9abb3a611a44,240ede1b-ecf9-45b5-a9d7-5fd306719b9d_2twcmig4p2mo9c1r7k_1547750c37014814adbd3047735443b1,113f2ec6-fd79-4c5c-a095-6b5eb266bdaf_2twtuxg4p2qowhto1s_fd570e9467754c8098f409c8ec940bba,cef5b73b-e607-413a-a4b9-ecd019cfffde_2tvt7pg4p2uv8pyw3k_a7970760a99544f6b1dd0c9408b045bb,mimo:6afd12c6a4a79edf137afd61:10:2026-11-18T18:08:02.156Z
+    transcript_completed_at: 2026-11-18T18:20:22.917Z
   - id: 6af5debf14d01a26f8a900ac
     guid: 6af5debf14d01a26f8a900ac
-    title: 156. 对影之刃零梁其伟的6小时访谈：3A动作游戏、武侠、“最强者是朴实的”，“世界没有敌人，只有你和你的另一个自己”
+    title: 156. 对影之刃零梁其伟6小时访谈：3A游戏、15年创业路上斩妖除魔、命运——"世界没有敌人，只有你和另一个自己"
     duration: 23247
     published: Fri, 13 Nov 2026 00:00:00 GMT
     published_sort: "20261113"
@@ -48,18 +52,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6ad4dacd641ef406308d86e5?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6ad4dacd641ef406308d86e5/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/ltpY6K_PLBv7SfR1D4RZchFHwzII.m4a
     image: https://image.xyzcdn.net/FniPHALFSQ4K7iFElerIG6dBuRzf.png
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-15T18:10:14.107Z
-    transcript_completed_at: 2026-11-15T18:10:49.202Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.5"
-          }
-      }
+    transcript_submitted_at: 2026-11-18T18:53:05.145Z
+    transcript_completed_at: 2026-11-18T19:03:58.384Z
+    transcript_job_id: 98dd581c-a71a-4e4d-b1c5-d1533cfdadd0_2twx7tg4p5w1zxze9s_e07ef83d50754ebe8102721c0df4a3fa,0d6a4b4f-3ae0-4ec7-bed9-a16af487e6dd_2twledg4p5xicac5c0_16987221335645839a157782349e247e,0f2e55c8-bb80-4f8d-8d8f-df3f841a5b78_2tvt7pg4p65m6h45xc_8a7213d388e54450ba788ef19c6cb82a,383aa4a1-ba70-432a-b797-35a7f266e0e4_2twp1ug4p67vzoledc_a858bc63a859452e9c1ea69f266f91e1,a9ae4f5c-5e20-4226-8e60-fb29f05850b1_2twk49g4p6gz4mw3k0_91e091ddd18e418881181360172b5df7,57caa239-65f1-4a2e-b9fa-6a67526062c3_2twajkg4p6j52nfpxc_a545255ea1d240e887ec49f8a00acce8,b1d77099-472d-445c-916f-30531222461c_2twfw2g4p6lby0qdq8_f9f39618fdbe4a4caa5da4722853828a,c4c182fd-ee9e-482a-8fd1-1b4cfe3c3915_2twp1ug4p6r31ctxq8_979e67fae10e41ee8b0b38c773861db4
   - id: 6acf81f0195d838e2af1e281
     guid: 6acf81f0195d838e2af1e281
     title: 154. 对Dyna创始人Lindon的3小时访谈：机器人世界的迷雾、分歧与抉择，修心、《沉思录》与王阳明
