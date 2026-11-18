@@ -10,6 +10,17 @@
 # color: 用于 landing page 中区分视觉
 
 sources:
+  - id: three-buddy-problem
+    name: Three Buddy Problem
+    rss_url: https://feeds.fireside.fm/securityconversations/rss
+    # Single-episode pilot; widen selection only after reviewing the result.
+    include_title_patterns: ['^Bruce Dang on Calif, iOS Exploit Chains, AI Hacker Takeover$']
+    min_duration: 1800
+    min_date: "20261113"
+    cache_limit: 50
+    color: "#475569"
+    description: 安全研究者深访，关注漏洞研究、逆向分析与 AI 攻防实践
+
   - id: tbpn
     name: TBPN
     rss_url: https://feeds.transistor.fm/technology-brother
