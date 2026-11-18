@@ -1,0 +1,30 @@
+title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+guest: 刘一伦、Todd
+guest_role: 晚点科技组记者；香港基金美股 AI 研究员
+tags:
+  - hardware
+  - chips
+  - strategic
+  - panel
+summary: >
+  刘一伦与美股投资人 Todd 从黄仁勋辞职这一录制时消息出发，讨论英伟达的创始人依赖、供应链关系，以及 GPU、ASIC 和 CUDA
+  生态可能面临的变化。对谈还梳理了高端算力获取收紧后中国云厂商、模型公司和国产芯片企业的约束，并区分了市场判断、渠道信息与尚待发展的政治和监管事件。
+core_ideas:
+  - 黄仁勋长期主导战略转向并直接管理众多高管；继任者能否延续决策和供应链协作，仍需观察。
+  - GPU 的通用性仍有价值，但若工作负载逐渐稳定，ASIC 和软件迁移工具可能压低部分壁垒。
+  - 高端进口卡更难获取会增加国产替代需求，但制造产能、封装与软件适配限制了短期补位速度。
+  - 2025 年后算力供需转紧，云厂商须在内部模型、外部租赁和合规采购之间重新分配资源。
+  - Todd 对 AI 基建的二级市场周期偏谨慎，同时认为编程之外的应用仍需要在成本、物理条件和商业回报上逐步验证。
+id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
+source: latepost
+source_title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+published: 2026-11
+published_sort: "20261115"
+duration: 1h16m
+url: https://podcast.latepost.com/188
+status: generated
+article_path: episodes/77706b7f-cf2f-4400-826c-0331ae6c62a8/article.html
+base: /episodes/77706b7f-cf2f-4400-826c-0331ae6c62a8/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/7/77706b7f-cf2f-4400-826c-0331ae6c62a8/cover.jpg?v=2
+generated_at: 2026-11-18T04:58:02.563Z

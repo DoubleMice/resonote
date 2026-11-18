@@ -1,0 +1,36 @@
+title: 安全防护应更以浏览器为中心：Push Security 的产品路线
+guest: Adam Bateman
+guest_role: Push Security 首席执行官、联合创始人
+tags:
+  - ai-products
+  - startup
+  - interview
+  - founder
+  - quick-take
+  - technical
+  - strategic
+summary: >
+  Risky Business 主持人 Patrick Gray 与 Push Security 联合创始人 Adam Bateman 讨论浏览器为何能成为钓鱼防护、AI
+  使用治理和数据防泄漏的控制点。两人主张把控制贴近账号、租户、上传和复制粘贴等交互，并讨论以浏览器扩展和端点组件逐步覆盖传统 SWG、CASB 与非浏览器流量的可能性。
+
+  本期为付费赞助访谈，Gray 披露自己是 Push Security 顾问并持有期权；文中产品能力、客户采用和市场判断均保留其来源归属。
+core_ideas:
+  - Push Security 最初通过浏览器发现员工使用的 SaaS 与登录身份，生成式 AI 应用使这一能力成为治理入口。
+  - 在浏览器内可结合账号、租户和操作本身设置规则，例如限制个人账号上传或阻止复制粘贴访问令牌。
+  - Bateman 以 ClickFix 为例，认为检测剪贴板注入及跳转上下文，比依赖短命恶意域名名单更有针对性。
+  - Push 正把域名分类和网页过滤扩展为 SWG、CASB 的补充或替代，但大型企业的访问控制与预算归属会让迁移更复杂。
+  - 计划中的端点组件用于深入检查上传文件并覆盖非浏览器流量；两位受访者都认为代理行为仍难以完全约束。
+  - 扩展加端点组件可能缩小与企业浏览器的能力差距，但 Bateman 的路线是保留用户已有浏览器。
+id: SOAPBOX112
+source: risky-business
+source_title: "Soap Box: Security must be more browser-centric"
+published: 2026-11
+published_sort: "20261109"
+duration: 36m
+url: https://risky.biz/SOAPBOX112/
+status: generated
+article_path: episodes/SOAPBOX112/article.html
+base: /episodes/SOAPBOX112/
+visual_notes: false
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+generated_at: 2026-11-18T05:11:27.168Z

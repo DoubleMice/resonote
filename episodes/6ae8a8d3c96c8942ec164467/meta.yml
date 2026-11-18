@@ -1,0 +1,32 @@
+title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
+guest: Joey Wang
+guest_role: Harvey agents 与内部云端 AI 平台负责人
+tags:
+  - ai-products
+  - ai-research
+  - startup
+  - interview
+  - engineer
+  - technical
+summary: |
+  Joey Wang 结合 Harvey 的法律 AI 产品，讲述了垂直应用如何把模型放进律师已有的文档、审查和责任流程中。访谈重点讨论了以真实使用场景更新评测、选择与后训练多个模型的方式，以及工程、权限治理和模型研究之间的取舍。
+core_ideas:
+  - 法律 AI 将条款判断、redline 和修改来源放进律师可审查的工作流。
+  - Harvey 先从可重复的法律任务构建 benchmark，再用客户反馈、法律专家经验和测试结果持续修改评测。
+  - 后训练前要定义适合客户的结果；法律场景有时需要长解释和可追溯的来源。
+  - 文档检索和并发等工程改进能迅速扩大 agent 可见的上下文，早期往往比自训模型更直接影响体验。
+  - 内部协作 agent 能否部署，取决于权限、审查规则和数据边界是否清楚。
+  - 法律软件面向自助式扩张时，需要格外处理用户对结果责任的理解。
+id: 6ae8a8d3c96c8942ec164467
+source: taixian-zhihuo
+source_title: 61. 在Harvey训练大模型是什么体验？- Joey Wang
+published: 2026-11
+published_sort: "20261110"
+duration: 1h12m
+url: https://www.xiaoyuzhoufm.com/episode/6ae8a8d3c96c8942ec164467?utm_source=rss
+status: generated
+article_path: episodes/6ae8a8d3c96c8942ec164467/article.html
+base: /episodes/6ae8a8d3c96c8942ec164467/
+visual_notes: false
+thumbnail: https://image.xyzcdn.net/FkaXuiZNNam8yRUyi6FYe_wYB4T7.png
+generated_at: 2026-11-18T05:21:33.043Z

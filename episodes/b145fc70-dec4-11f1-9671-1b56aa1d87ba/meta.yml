@@ -1,0 +1,30 @@
+title: 「超声波货币」叙事失效后：以太坊、钱包与推理市场
+guest: Greg Markou
+guest_role: 前以太坊核心开发者
+tags:
+  - panel
+  - engineer
+  - technical
+  - strategic
+summary: >
+  前以太坊核心开发者 Greg Markou 与 Kain、Austin 讨论了「超声波货币」叙事为何不足以说明 ETH 的价值，以及 gas 改价怎样牵动既有应用的复杂依赖。话题还延伸至 Ledger
+  清晰签名的信任边界、把多签隐藏在应用体验后的取舍，以及链上推理市场如何利用订阅与 API 之间的价格差。
+core_ideas:
+  - EIP-1559 改善了费用体验，但销毁机制不应替代对以太坊网络价值的完整说明
+  - gas 重定价要同时考虑协议资源、既有合约和链下服务之间难以穷尽的依赖
+  - 清晰签名需要解释复杂交易，服务器协助、设备能力和遥测边界因此成为安全争议
+  - passkey、多签、限额与恢复机制可以藏在应用后台，但跨链兼容会把最弱环节带进体验
+  - 推理额度的价格差可能形成双边市场，隐私、履约和套利会决定这种市场的边界
+id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
+source: unchained
+source_title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
+published: 2026-11
+published_sort: "20261112"
+duration: 1h16m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
+status: generated
+article_path: episodes/b145fc70-dec4-11f1-9671-1b56aa1d87ba/article.html
+base: /episodes/b145fc70-dec4-11f1-9671-1b56aa1d87ba/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/b145fc70-dec4-11f1-9671-1b56aa1d87ba/image/eaaf060dbb9efa83899442e7c35cb7c1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-11-18T05:05:15.946Z

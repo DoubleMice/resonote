@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-11-17T18:09:09.353Z
+refreshed_at: 2026-11-18T02:26:14.956Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 7
-done: 3
+done: 5
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 4
+transcribe_failed: 2
 downloaded: 0
 episodes:
   - id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
@@ -195,18 +195,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-17T10:48:41.527Z
-    transcript_completed_at: 2026-11-17T10:49:01.192Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.6"
-          }
-      }
+    transcript_submitted_at: 2026-11-18T02:41:31.490Z
+    transcript_completed_at: 2026-11-18T02:50:13.477Z
+    transcript_job_id: 36eac820-0bf2-492c-8a7f-81a9be0099dd_2tvmopg4mr79a9wav4_9611052f93bf458a9ca8dee138be5695,55a03293-6543-4d85-85b6-dc838a4bcb2a_2twpxug4mrcg8usd8g_c8ddd6cca16f4e01bbd3da3a3c8c89a3,87d40eba-59ba-4075-b34f-fd9ba579b36c_2tvt7pg4mrj26d8r28_9a86383124a14b8e830defaf8c355953,b4f767ae-142e-4d5f-bb59-3d7aba8ce5c1_2twan1g4mrpj72pwqo_7993eb7ddd784592811dc40bc36c0043,e22047aa-2901-4e6d-a8c2-22c5a783bb6b_2twledg4mrtsm8dvcw_cec3c5d925284c158d5bc90dcf530b06,fdf24ee9-cb28-4272-adc3-fa32f9a43771_2twskag4mrxlmxdk3k_39d3393d87a54576840c5632789b117f
   - id: ad3b421a-d013-4a69-9613-924fa6d47992
     guid: ad3b421a-d013-4a69-9613-924fa6d47992
     title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
@@ -419,18 +413,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-17T10:52:22.512Z
-    transcript_completed_at: 2026-11-17T10:52:53.436Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.6"
-          }
-      }
+    transcript_submitted_at: 2026-11-18T04:23:42.623Z
+    transcript_completed_at: 2026-11-18T04:39:03.243Z
+    transcript_job_id: 12628bb4-c3cc-4e7f-bb63-a57f0155447b_2twtlng4n0bzbr25mo_9a806c707edd4b66852a3f8c2e9362a6,243ad99c-3074-4ea4-abdb-6da2ff969732_2twi4lg4n0ir5pkao0_ad96fd1be1ab43b2974e128cab09e91d,1ecfa7df-16f3-4dfb-b21e-0b8780e8f9bb_2twskag4n0mz4fad4w_43552ca3363143749d552321fe63df77,c9302172-ad96-4a6e-adf7-103a3f9b68c3_2twcx0g4n0plfg8d1c_3310ebd7e5d14e26828120071850d5c1,07883a27-278b-435c-a7e1-b215aad33d07_2twrnmg4n0ug9shqf4_95860e97e8e145c0a11bfa045b77308f,81a2ce87-9ced-4acd-8aa0-faae8c44bd5c_2twajkg4n1340me9z4_437cb0755cb14a2492264d4154893f84,56c84628-331a-4574-ba32-08963cddd3ce_2twm40g4n18bsslj40_ae2dce7116f444c09ac364f8e2ec16d3,76b03e0d-0faf-4327-92bc-458ad4dd6151_2twg8zg4n1fruiroqo_ea4f19087d5d4b51bff3f584d5b707d4,662d4bec-2cc8-4f67-8a88-a8a2478545ad_2twtuxg4n1kslbv668_f36a7cf415144b7dae33ef05fcd68e51
   - id: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
     guid: 16de99b4-9940-4d7e-bd08-9ff0d4423df0
     title: "185: Anthropic招股书丨与Amont李肇宇聊定价逻辑和潜在风险"

@@ -1,0 +1,338 @@
+The request was rejected because it was considered high risk
+
+0.00-1.03 | SPEAKER_00: That part of it. That.
+1.64-2.71 | SPEAKER_01: For sure.
+2.71-5.84 | SPEAKER_02: Yeah. So as that expansion happened.
+5.84-14.44 | SPEAKER_00: Which, in fairness, the block expansion was like such a controversial topic. Like sliding it into this other thing. Sorry, Austin.
+14.44-30.17 | SPEAKER_01: No, no. What it, what it did better was just like help wallets decide on how to pay gas for the transactions. Before 1559, you would like go to make transactions and you would give failures all the time, and it would be terrible UX. And then afterwards, it would just be like you would hit go and it would go, and it would work.
+30.17-37.76 | SPEAKER_00: Okay. All right. Maybe I'm, maybe I'm putting, I'm hanging too much on 1559. So all right. It was a really good thing that solved a lot of problems.
+38.88-55.55 | SPEAKER_00: But boy, did it fucking create some chaos! Because the unintentional consequence of this, right, was putting the burn in. Which my recollection of this, which may or may not be completely wrong.
+56.00-76.32 | SPEAKER_00: But my recollection of this was like this was something that was added after the initial spec. The burning part got like put in for reasons of like actually this will be more efficient, whatever. And then it landed, and we started burning a bunch of ETH, and ultrasound money happened.
+78.24-80.05 | SPEAKER_01: It was a good meme at the time.
+80.05-109.18 | SPEAKER_00: It was a good meme. It was a good meme. And you know, I think Ethereum was looking for, Ethereum is so good, man. It's like the best fucking thing ever. But it's hard to explain to people why it's good. Like genuinely, like it's like, it's like, how long do you have? Four hours? No, like you don't have four hours to explain to you why this thing is good, right? You want like a four-second soundbite, right? And
+109.18-113.97 | SPEAKER_01: A lot of times, you don't need decentralization until you do. Until you're getting censored.
+113.97-139.71 | SPEAKER_00: There's so many. There's so many things. It's, it's a complex, amazing system, and it's beautiful. And you can't really distill it down to like a four-second soundbite, unfortunately. But what if you could? How good would that be? And so we keep trying to invent these like self-sovereign money. Yeah, like whatever, man. We keep inventing memes to try and like encapsulate this, this complex system.
+139.71-169.68 | SPEAKER_00: Into like a four-second soundbite. And I think that's fine. Like, you know, whatever. Like we need to do something with our time. Um, and, and, but this one, and I was, I was here for this, right? Like I was like, ultrasound money, it's great. Um, I probably had the bat fucking speaker emoji on my, uh, X account for a while, like whatever. Right. Um, but the problem was it, um, I think was such an effective meme that it sort of took over the, like,
+170.08-197.95 | SPEAKER_00: Discourse, and, and you know, it became about like what can we do to burn more. There were all these burn trackers. Like it, it just got a little bit out of hand, right? And it wasn't the intention. The intention of 1559, to your point, Austin, right, was not burn ETH. That was like a weird mechanism design choice.
+199.39-206.89 | SPEAKER_01: Yeah. What else were we gonna do with the ETH? We can't like send it to a thing and govern over it because then we can't want to people. We tried that. We extract it.
+207.24-214.40 | SPEAKER_00: We did try that. It was like a really elegant way to do it. We're gonna send Greg like a million dollars a year to like do whatever the fuck he wanted. That was the plan.
+216.76-224.00 | SPEAKER_02: That would be great. You'd be okay with that. I have an EIP for, you know, the Zcash style funding from that era.
+224.03-228.97 | SPEAKER_00: That was a terrible experience. Tell us that we love.
+229.02-237.09 | SPEAKER_00: We love, we love, like deep cut stories, right? Tell us this, like give us the story of that, like just the quick.
+237.92-265.21 | SPEAKER_02: I think like it was Ed Connelly, Sydney, and Lane was like, "Yo, what if we like dev grant it the way Zcash is?" I was with Zooko like two weeks ago. It's like it works, and just it was pitchforks. Like, like you know, like a little taste of like EIP 999 style pitchforks. I was like, okay, we're not. I'm not touching the block reward. Sorry, sorry, guys.
+265.21-268.22 | SPEAKER_01: Well, we're seeing people argue about that again. Yeah.
+268.58-282.97 | SPEAKER_02: Yeah, I mean, like, listen. I think there's like, not to get off topic, but I think like if we're gonna redirect funds, I think there's like a good argument to like actually get block reward funding. But you know, it's more elegant just to burn it and not worry about it.
+282.97-286.62 | SPEAKER_00: It's just easier to burn it. But I mean, like, I think like the problem with the burn and the problem with...
+289.06-303.60 | SPEAKER_02: The problem with the burn is it doesn't matter. Like, if the goal is to make transaction fees like super cheap, why do we care about making money off of the... It's like, why do we care about making money off the transaction fee? Yeah.
+303.60-306.03 | SPEAKER_01: Like, why do we care for this? Like, you know, this...
+306.03-309.00 | SPEAKER_02: Incidental to it's like an incidental. It just doesn't make sense.
+309.00-311.48 | SPEAKER_00: Because it was a meme. It was a good meme.
+311.48-338.16 | SPEAKER_02: What, so it was a good meme until like Wall Street decided to like actually do price impact on ETH, and now people are like concerned. This is the problem. We had great memes to like propel the like, you know, the nominal amount of impact that the total cash in hand had, but now that with the amount of ETFs, the amount of, you know, everything else going, I think we have to be like, the careful stair-stepping we have is like significantly higher, right?
+338.16-362.33 | SPEAKER_00: But we don't have that. We don't have that in our DNA. Unfortunately, we have like shit posting on Twitter. Seriously, like we don't like who the fuck like name one person in anywhere in even in the vicinity of Ethereum who should be writing like research about the value of Ethereum, like the asset. Like I feel like there's.
+362.33-385.09 | SPEAKER_00: No one who still today has like deep credibility there. And sorry, and when I say like writing about it from a mechanism design, all of that stuff, like we've got tons of those people, but someone who's writing something for like a Wall Street bro to be to explain the thesis of why ETH, the asset, should be valuable, I don't think we have many of those guys.
+385.66-393.15 | SPEAKER_02: There, this is like throwing it back. Like Brian Mossoff is probably one of the best, like well spoken, right, from Ether Capital.
+393.47-397.35 | SPEAKER_02: Um, but, but he's, he's not in the, really in the game as much anymore.
+397.35-400.54 | SPEAKER_00: What did we do to him? We must have done something to him.
+401.41-408.69 | SPEAKER_02: Uh, I don't know. Just, I think just pain. It's only so much pain you can endure.
+408.69-411.21 | SPEAKER_00: Take in the world, yeah.
+411.94-435.29 | SPEAKER_00: So yeah. Okay. So we keep trying to meme some easy way to make ETH valuable into existence, and we keep failing, right? And this kind of feels like Vitalik capitulating, and, and I don't think Vitalik was like wandering around being like ultrasound money, right? Like my sense is no.
+435.29-436.25 | SPEAKER_01: That was GD.
+436.25-466.02 | SPEAKER_00: Exactly, right. So it wasn't like Vitalik ever got on this train. I think, you know, he tends to try to stay aloof from the memetic valuation of Ethereum, right? But this feels like actually coming in a little bit harder and saying, like, this was a dumb meme, and we have to believe that Ethereum has value for its like intrinsic properties, right, rather than some like extrinsic, extrinsic impact that it has, like.
+466.40-488.80 | SPEAKER_02: But why is, why is Vitalik gotta do it? Like, come on, like he is chief scientist, not PR, not marketing, not like Capitol Hill. Like, we have Afri, I, I haven't been seeing as much, but like that's who should be doing it. Like, let Vitalik just, just cook.
+489.47-499.36 | SPEAKER_00: But like the founder needs to, and like, you know, we can disagree on this, right? But like the founder needs to have a coherent thesis of why you should care about their thing.
+500.03-511.66 | SPEAKER_01: Sure, but like Bill Gates doesn't like pitch Microsoft anymore. Sure, right. And like, sure, we can talk sixty. We can talk sixty years versus ten years. Sure, but I think like with the acceleration.
+511.66-515.52 | SPEAKER_00: Yeah, like so. Where's the Ballmer of Ethereum, man?
+516.26-518.31 | SPEAKER_02: Developer, developer, developer, developer.
+518.31-519.94 | SPEAKER_00: Yeah, literally, yeah.
+522.27-523.03 | SPEAKER_02: I mean, that's awesome.
+523.03-523.97 | SPEAKER_01: At the EIP.
+523.97-525.54 | SPEAKER_00: All right, Austin.
+526.33-528.19 | SPEAKER_00: Austin Ballmer.
+528.19-533.24 | SPEAKER_01: It's true. I do a lot of work with developers. Totally different game these days with AI, though.
+533.24-536.84 | SPEAKER_00: Yeah, now the developers are agents.
+536.84-547.90 | SPEAKER_01: So yes, that's right. So adding to this, like gas burn thing, there's, first of all, it costs a penny to send a billion dollars across, like, like.
+548.90-568.37 | SPEAKER_01: Gas is very cheap right now, and it is very cheap to send things on Ethereum. There's another kind of interesting hot topic, I think, since we like hot topics around here, and that is they're changing the gas pricing. Like they're doing some repricing stuff and trying to figure out how to make Ethereum scale. And certain things like SSTOREs are getting more expensive.
+568.37-592.39 | SPEAKER_01: And application developers, this is where this is my area, are pissed. They, they are really pushing back right now on the core developers, saying like, "Yo, like we, we like you can't reprice this out from underneath us." And I think the core developers are now kind of going back to the drawing board a little bit on some of these things. So I think there's an interesting tension there right now that's kind of, you know, adjacent to this, this gas burn discussion.
+592.39-620.98 | SPEAKER_00: I mean, Greg, you would have been there when Loy from Kyber. We talked about this maybe last week. I think you weren't here when Loy from Kyber was like, "Has anyone of the core devs actually looked at the implications of this change that you guys are making? Because it like breaks AMMs." And you guys were all like, "Oh, sorry, man, we didn't actually look." There's smart contracts running on this thing. Like, when did that happen?
+621.23-634.72 | SPEAKER_00: So, you know, this isn't all the first time I think we've seen. What's your take on that? Like, why, like, you know, you've got Austin on one hand, right? Like, who is application layer.
+635.05-635.82 | SPEAKER_00: Right, that's why.
+635.82-637.97 | SPEAKER_01: I assume that's why they brought you in, so that someone.
+637.97-659.58 | SPEAKER_00: Is actually paying attention to the application layer in the EIP. Thank you for your service. And then, you know, we've got an ex-core dev, right? Where, where's the breakpoint in this tension between the application layer and like, what's your, what's your thesis on how much the core dev should care about the application layer, like?
+660.74-666.45 | SPEAKER_00: Yeah, you must have a take because this tension has existed for so long.
+666.45-668.58 | SPEAKER_02: Yeah. So.
+669.70-670.97 | SPEAKER_02: I think it's a misnomer to think.
+670.97-673.12 | SPEAKER_00: That they don't care.
+673.35-674.90 | SPEAKER_02: But I also think it's a.
+674.90-677.28 | SPEAKER_01: I think it's a question on how much, like.
+677.28-706.80 | SPEAKER_02: The individuals actually like interact with the chain versus build the chain. You know, I think that's like relatively known that like most of a good portion of the builders are not as active on the chain. Whatever, that's, that's just the case. I, here's the problem with the core dev builders, the protocol, the core dev, the core... Yeah, sorry, the like the core dev builders, right? It's like, I think one of the big problems though is.
+706.80-713.70 | SPEAKER_02: This thing's a beast, like an absolute, like monolithic beast, and.
+715.39-724.51 | SPEAKER_02: Yeah, changing stuff is like—it's really hard to find the invariants, right? Like, truthfully, all right, that's why the testnets exist. But, like, in all honesty, like.
+725.82-738.97 | SPEAKER_02: It's, it's like not straightforward to say like, oh yeah, this will break every contract that we have out there. And we've, we've seen this before at the tooling layer. Like I broke Web3JS when I was maintaining it years ago.
+738.97-739.75 | SPEAKER_01: And broke.
+739.75-741.92 | SPEAKER_02: Like every app post 1559.
+742.22-743.59 | SPEAKER_01: Like that, just I did.
+744.03-748.62 | SPEAKER_02: And it's just I didn't know there was like an invariant with MetaMask, and I was just unaware that this was going to happen.
+748.99-749.97 | SPEAKER_02: And it's like, it's hard to.
+750.55-756.73 | SPEAKER_01: Can't even blame your client now. Back then, it was you, your clients.
+756.73-759.46 | SPEAKER_02: Yeah, fucking. Yeah, it was a 03 me.
+759.46-761.60 | SPEAKER_01: Yeah, yeah.
+761.76-769.32 | SPEAKER_02: I think the biggest problem we see is that, like, people see that a testnet breaks and they just absolutely like lose the fricking mind.
+769.79-790.83 | SPEAKER_02: They lose their mind. And like, here's the problem with Core Dev. And I'm, I'm gonna defend them right here, because like, honestly, like, what I've been seeing on Twitter is like a disaster. Here's the kicks. Go look at the EIPs that like get funneled in. There's like ten per day. And then there's a bunch of like shenanigans. That changed. That no, it's like increased with AI. It's like really bad.
+790.83-795.85 | SPEAKER_00: Sorry, but like really, before, well, it wasn't ten per day. Like we, it was.
+795.85-816.02 | SPEAKER_02: It was like one a week, you know? Like I subscribe to the EIP bot tracker, and I get a notification multiple times a day. Wow. Right. There's just too much shit coming in, and then there's also like they have to hold up arguments. Some of these guys have to hold up arguments over EIPs that are like long dead but won't give up.
+816.02-826.30 | SPEAKER_02: You know, like the EOF folks, they like don't give up, you know, for years. You know, there's so many of these that keep coming up, and then it's a fight to like get the headliners.
+826.84-856.03 | SPEAKER_02: And so yeah, a lot of the time is like focused on like figuring out what will work, what to get in. The math makes sense. Yeah, like gas repricing looks great. We've done this so many times. It's also broken so many times. You know, we did in, in, in Tangerine with Solar, whatever it was called, Spruce, Dragon. Like we implemented like so many gas reprices, and it, and it worked fine in some cases. It broke some stuff, and those are the invariants we're willing to break. It's just like, there's just so much to track. So.
+856.03-881.28 | SPEAKER_01: A little bit. I feel like Core Devs have this defense mechanism where they built up being able to say no quicker, like to things, like when stuff shows up or someone tries to argue something. It's like, no, we've talked about that. I don't want to talk about that anymore. So I think that sometimes comes off to outsiders as like this ivory tower thing. Right. And it's, it's because of like a built-up defense mechanism.
+881.28-888.37 | SPEAKER_00: Yeah, but, but they are in an, like, in fairness, we should have them in an ivory tower to protect them from.
+888.37-893.15 | SPEAKER_01: Just for defense. Yeah, like defense against AI jabron.
+893.15-900.04 | SPEAKER_00: But they, but also, you know, to your point, Greg, like that doesn't mean that they shouldn't fucking use the chain. Now, if
+
+0.16-0.96 | SPEAKER_00: Yeah.
+0.96-26.83 | SPEAKER_01: Like use the chain, man. Now, like there is something to be said, right? There's something to be said for this. And, and I think, um, one of my favorite, uh, videos ever of Steve Jobs is where, you know, there's that like neck beard bro that, like, when, when Steve Jobs comes back to Apple, and there's that like neck beard, um, engineer who's like, you are changing the Cocoa.
+26.83-54.99 | SPEAKER_01: Layer and it's going to, and, and Steve Jobs like, just shut the fuck up, man. Like no one cares. Like that's not the important thing here. The important thing is the user experience and what we're gonna build. Like your weird, like fight that you're having over like the underlying thing is, is not that important, right? And I think that like there, there is a tendency to get bogged down in the
+54.99-81.27 | SPEAKER_01: details, because in order to be good at that job, you have to be so, you have to care about Cocoa, whatever the fuck that guy was talking about, right? You have to care about, you don't want a guy who doesn't care about that in that role because then you're gonna get a bad version of Cocoa, whatever the fuck it is, right? So like, can you have a human, and you've been a core dev, can you have a human that's like as good as they need to be
+81.27-86.30 | SPEAKER_01: at being a core dev who's also like shitcoining eighteen hours a day?
+88.61-96.73 | SPEAKER_02: It's not just like using the chain, too. It's like deploying weird fucking contracts, like weird, weird contracts. Like, remember if you had often.
+96.73-104.06 | SPEAKER_01: As a core dev in the 90s, it's impossible. Like, you would say to that guy, "Stop doing nonsense and do your fucking job, man."
+104.75-123.78 | SPEAKER_01: Like focus in the chain. So can, can you have that, can you have the same person who deeply cares about, you know, the consensus layer, also just like slinging shitcoins and deploying random shit? Like, is there a separation of concerns here that makes sense?
+124.22-128.42 | SPEAKER_00: Yeah, so like when I say use the chain, I'm talking.
+129.31-155.30 | SPEAKER_00: I don't think many of them are writing contracts, you know, are writing, you know, that's what I mean. I don't mean like, you know, I'm a pumper or whatever. I mean pumps and soul. You know what I mean? I don't think there's even a chain on Uniswap Swiger. You know, like no one's Swigging. It's about like writing it and like seeing the complexities and being a user of like the DevX side is what I'm getting at. And that's not happening as much, right?
+155.30-161.03 | SPEAKER_00: And it's tough, like you said. But I think we're in the best age ever, the best age ever. This is like the best
+161.03-162.11 | SPEAKER_02: stage of software.
+162.11-186.43 | SPEAKER_00: You can, because they can. Like, you can just get shit done. You can just get shit done, right? And I think it's gonna get better. They want to increase the speed. They want to get like probably three, four hard forks every year. Maybe, maybe we can get ambitious and like actually deploy shit without, you know, debating AA for four years. That'd be great. And I think we can get there. And I think AI is like getting us there.
+187.14-191.32 | SPEAKER_00: But breaks like these are gonna happen, and yeah, it sucks.
+191.32-192.38 | SPEAKER_02: This is what happens, right?
+192.38-200.64 | SPEAKER_00: We bundled thirty EIPs into a giant hard fork. There's like twenty of them, and yeah, one of them is gonna break, and then we get nothing.
+201.95-202.72 | SPEAKER_00: Sucks.
+204.90-206.70 | SPEAKER_00: That, that's the reality we're in right now.
+206.70-232.13 | SPEAKER_01: Right, with this, it's just... And do you think, you, you think like, you know, we've talked about the full verification here and like a bunch of like process improvements of like using AI to like do these things. Should we have like more automated AI tooling to like catch this stuff earlier? Like, is that the... presume like you have to assume that that's, that's kind of what's happening, right? Like.
+232.54-245.58 | SPEAKER_00: Yeah, yeah. I mean, it's gonna get better. I think one of the hardest things is like replaying, is like actually playing with like live state stuff. Right. You know, if you look at, it's really hard to test the chain.
+245.58-265.63 | SPEAKER_00: There's like so much off-chain code that you need to be extremely knowledgeable on, like why that EOA exists and is executing. Like, you know, to, to create like a good environment. Like if you go and Foundry fork test right now and try to, any of us here, try to Foundry fork test and say, I'm gonna see if like
+266.14-282.90 | SPEAKER_00: Uniswap, and I know the Wildcat team was really active on, online about this, and you know, pick your other random protocol. I guarantee you, there's so many oracles that you have to configure, update, to do a price update, to know that this is actually happening the way it is. You'll have no idea.
+283.00-286.53 | SPEAKER_00: So, like, testing this stuff has so many invariants that
+287.36-294.98 | SPEAKER_00: It's, yeah. AI is gonna probably make it easier, so we can figure it out. And it's just a matter of this is probably one of those cases where we're like, okay, we gotta go deeper on the testing.
+295.36-319.25 | SPEAKER_01: So, so this is like a slide aside, but I've said this a long time ago, and, and I've kind of stuck with it, that like we will know when AGI has arrived when you can say to a clanker, "What was my P&L on like the twentieth of August, twenty twenty, in this address?" and it can just tell you the answer, right? Because
+319.25-347.84 | SPEAKER_01: the, the range and depth of different fucking nonsensical things that were going on on the twentieth of August twenty twenty on Ethereum is so vast that like only a super intelligent entity would be able to answer that question. And, and so I've been chipping away at this for like a long time. Like each new models, I build new things, whatever. I have an agent using my old cane.eth address that was active through that whole thing. Like, and it's so painful. Like.
+347.84-366.29 | SPEAKER_01: I, I, I, uh, it goes, hey, you sent a hundred ETH to this contract, and I cannot work out what the fuck this is, right? So, like, it goes through, and like, every single transaction, there's like, I think nine hundred transactions over the course of a year or something, right? So, three transactions a day.
+366.29-391.99 | SPEAKER_01: And then, you know, something like two or three thousand, uh, like, um, event, uh, events were emitted across this for different reasons, whatever, right? Um, and, and it's like, it, it has to sit there and grind so hard for one address in one period of time, and it's still, it's now down to, it has fifty-eight unknowns, right? And it's like.
+391.99-419.98 | SPEAKER_01: And I just threw Fable at it, and I was like, "Fable, there's fifty-eight unknowns here, man. Like, do your best." Fable five point two, and, and you know, it found, it found like two issues of like Blur, and the Blur contract updated. They disconnected the oracle and pointed at a different thing, and you got to go back through the blocks and be like, "When did they change the oracle pointer?" Because it was a proxy contract. It's like so. Like to your point, it's a beast. Like.
+419.98-435.78 | SPEAKER_01: Like, ignore even just the consensus. Like the shit that's on the chain is insane. So, you know, it's the idea that you could just like perfectly test this thing and roll something out and have no consequences is where, where we're well beyond that.
+436.38-440.77 | SPEAKER_00: It's super hard, yeah. Yeah, and, and that's why, like, the app developers just need to, like.
+441.57-445.47 | SPEAKER_00: You know, they see a change coming out. They go and test it. We have AI. You can just go, let's say like here.
+446.06-450.24 | SPEAKER_00: Yeah, you know how your AI knows, your, your model will know how.
+451.30-469.35 | SPEAKER_00: Oh, your like protocol works. Just be like, oh yeah, based on this hard fork, we would be screwed. Report it. Yeah, the problem is like, it's so good for business to make noise, to hit a hundred k, you know. Oh, I'm sure I have a hundred bucks. But incentives, where would the incentives be, lucky for the baby.
+469.95-474.59 | SPEAKER_00: Thought leadership's like, it's always gonna look this messy because it's good for business.
+474.59-475.46 | SPEAKER_01: Right, it is.
+475.46-479.59 | SPEAKER_00: I mean, and then it's good for like the Ethereum core devs wholly to dunk.
+479.60-502.02 | SPEAKER_01: You know, like, but you know, the best part is he doesn't dunk by saying like Vitalik's wrong. He's like, "Vitalik's right, guys. You should stop doing the things that you're doing." He's always, it's, it's, it's genius. Um, but yeah, I mean, in fairness, you come out and say the, the core devs broke my incredibly important protocol, and now they can't deploy the thing.
+502.82-529.22 | SPEAKER_01: That's positive EV. Like, if you can pull that off, well played. Like, so. All right, let's, let's move on to some French devs and some Ledger fucking nonsense. Man, I hate Ledger so much. I know I've said it, but I, like, there's no, you can't hate Ledger enough. Like, you really can't. Even when they try and do something in, like, a good way, they manage to fuck it up. Like.
+529.22-559.10 | SPEAKER_01: So, so basically, the issue is that Ledger's signing SDK is, um, I don't want to say surreptitiously, but I'm just gonna say surreptitiously sending, we don't know the intent, but that's kind of what's happening, sending transactions, um, to their signing service, um, whenever you sign something. It sends a bunch of metadata about the transactions, whatever, um, probably your fucking address as well, because they've also got that, um, and, ah, it.
+559.84-566.68 | SPEAKER_01: Just, I don't know, man. Like, they just keep doing dumb shit. I.
+567.47-568.54 | SPEAKER_00: Just can't.
+572.35-577.86 | SPEAKER_00: I have grapes because, like, clear signing has been like this topic for.
+580.10-582.60 | SPEAKER_00: I don't know, Austin. Like.
+582.60-584.07 | SPEAKER_02: We need clear signing.
+584.25-588.26 | SPEAKER_02: Clear signing is like five years late. We're five years late with clear signing.
+588.26-589.05 | SPEAKER_00: Yeah, finally.
+589.05-591.40 | SPEAKER_01: Don't we have clear signing? I thought we have it.
+591.40-599.49 | SPEAKER_02: Basically, like, people have been building their own, but there is a standard for clear signing, but there's still a lot of work that needs to go in, like, adoption.
+599.49-612.19 | SPEAKER_01: Yeah, right. Is this like, sorry, is that the protocol? Give me the dirt on clear signing because I've been sold into thinking that the job is done, mission accomplished. There's like a mission accomplished banner behind me here.
+612.19-620.83 | SPEAKER_00: No, like, clear signing is, there's like a standard, I forget the number, 7730 maybe.
+621.57-639.46 | SPEAKER_00: 7730. Yeah, exactly. 7730. Um, and like, it tells you how to like read the payload, how to do the stuff. But like, how you implement it's totally up to you, right? And, and the Ledger's CTO, or I don't know who it was, said it straight up, our devices don't have enough memory on hand to like handle this.
+639.71-644.77 | SPEAKER_01: And maybe they can offload it to the spy chips that are in there. They probably got some more processing power.
+644.77-650.00 | SPEAKER_02: Maybe you could just like send a phone call on the, be like, "Hey, get some extra CPU here."
+650.69-658.37 | SPEAKER_00: That's, that's basically what they're doing, though. Uh, like, come on. I mean, listen, like.
+658.85-667.45 | SPEAKER_00: They've had so many issues for the last couple years, and they were pioneers. Don't get me wrong, the tech was great, probably is still pretty good.
+667.45-685.08 | SPEAKER_01: But they saved like, man in the middle. Ledger saved so many people, like probably billions of dollars, right? So we have to credit them with, you know, it's like, it's like the early years of a band or something like that. And then it's like, man, just like fucking stop putting out albums, please.
+685.08-700.67 | SPEAKER_00: Yeah, yeah, you know, the, the EF also like, you know, was really good with supporting everybody, and then they did the Sepolia thing. But, um, you know, you can't just start like throwing telemetry. Like, okay, so I like spent some time digging into this, and, okay, tell us, give us the, no.
+701.31-724.13 | SPEAKER_00: Well, I mean, like there's a tweet by like their CTO or whatever, and it's just like borderline factually wrong, or he's just like misdirecting intentionally. They do like a post API. There's a post request, so an API call to their server after a signing interaction happens containing metadata. There's a V1 versus a V2. They like strip some of the metadata out of the V2, but you can still correlate.
+724.13-725.06 | SPEAKER_01: An address to a.
+725.06-734.65 | SPEAKER_00: And it's like you can still make the correlations, and it happens after signing, which is completely unnecessary. There's no reason that needs to happen, right? And it also.
+734.65-764.59 | SPEAKER_01: So maybe maybe just to clarify, yeah, if people aren't following this, right? So the the thing that they said, the Ledger CTO was like, no, no, man, we need to do this to like process the signing to make sure that you're not signing the wrong thing because the devices can't do it themselves. So we offload it to our servers and then we make sure that everything's safe. You're saying, then why the fuck are you signing the transaction first and then?
+764.59-766.91 | SPEAKER_01: Sending the metadata afterwards.
+767.14-772.00 | SPEAKER_00: There's like yeah, there's like all sorts of shit going on, right? So it's like yeah, they.
+772.61-780.02 | SPEAKER_00: You know, reading a contract like bytecode and then saying what it does is like obviously quite challenging. It's.
+780.02-781.54 | SPEAKER_02: It needs support.
+781.54-782.62 | SPEAKER_00: Uh.
+783.17-804.13 | SPEAKER_00: That's why they offloaded to a server. They've also had like four or five years of lead time knowing this was going to be cumbersome, and it would have been really nice to just like preload the device with more memory, like have the default Uniswap stuff. So you know, just like there's like some basics we could do. There's creativity, right? Like these things don't need to be what are they like four gigs.
+804.70-815.94 | SPEAKER_00: Do you know how much we can pack in like this much? I can get like a two fifty-six gig like chip. There's things that could have been improved. We don't need this. This is like a byproduct of the wedgie.
+815.94-816.75 | SPEAKER_02: The wedgie, yeah.
+817.46-820.00 | SPEAKER_01: So, so like, how much RAM has that bad boy got?
+820.00-823.03 | SPEAKER_02: I I don't know, sixty-four. Let me, let me go find out.
+823.27-824.16 | SPEAKER_02: So much RAM.
+824.16-828.77 | SPEAKER_01: We need that RAM for the data centers, man. Stop fucking wasting that RAM.
+829.02-831.81 | SPEAKER_00: Wedgie AI. That's like the pivot. Yeah.
+832.58-833.54 | SPEAKER_00: Sorry.
+833.59-835.62 | SPEAKER_02: Yeah, yeah. Well, I put it.
+836.54-851.23 | SPEAKER_00: Yeah, they could have like made it easier. So anyway, we have the server. It's fine. Is it like sketchy? Yeah, it's like super sketchy to say right before your transaction gets sent to device, we're gonna make a third-party API request outside of your environment, so that we can do the clear signing if you want clear signing.
+852.15-870.62 | SPEAKER_00: Okay, fine, whatever. But then they also add like a post-transaction, even if it fails, even if there's like an error, they still send telemetry back. And like that's in the V2 docs. And I mean, I had Grok and Claude look it up, so I'm like quite confident in like that, and it.
+871.33-875.04 | SPEAKER_00: They're just like they constantly do telemetry stuff. They're at
+875.41-881.89 | SPEAKER_00: It's like super. The like desktop app has a shit ton of telemetry in it. Yeah, always has, right? Yeah, and.
+882.98-892.90 | SPEAKER_00: I don't know, man. It like kind of like, it's kind of one of those things where it's like it makes me like sit back and laugh and go like you know the DeFi, you know, DeFi Dave's like PE tracker.
+893.27-899.98 | SPEAKER_00: Have you seen this, like the private equity, like tracker for like New York, and it's like, man, it was got.
+
+0.00-18.73 | SPEAKER_00: Like build on for like some of the corpes and just be like, come on, like, why is this telemetry here? What are we doing? Um, it just doesn't make sense. It's like adding extra steps to like potentially get malicious code injected, right? Did we not learn from Bybit that like shoving shit just before a transaction is scary, is bad on Gnosis?
+18.73-28.16 | SPEAKER_01: But that is what we're trying to solve here, right? Like, you want someone to clearly see what they're signing and understand what they're about to sign, and it's scary to just get a ball of call data.
+28.42-32.61 | SPEAKER_00: But is anybody even gonna do it on the ledger on like this little device, man?
+33.44-42.09 | SPEAKER_00: I don't know, you know, it's like also like, look at the standard. It's a bunch of arrays. Yeah, yeah, it's like a bunch of arrays.
+42.81-44.45 | SPEAKER_00: It's like ugly to look at.
+44.77-52.99 | SPEAKER_01: It looks, it looks nice once it gets to the device and you present it. Like it's clear, like you're sending X to Y, and that's what's happening here.
+53.66-55.05 | SPEAKER_00: Yeah.
+55.05-75.55 | SPEAKER_01: Okay, so there's, there's other tricky parts here. So the clear signing standard will have like an on-chain registry that anybody can add things to, but then they need to be audited, and so the wallet has to choose like at what level or what audit they show. And a lot of people are just kind of showing everything right now. And then there's this other tricky thing with.
+76.22-105.17 | SPEAKER_01: Like proxy contracts, or even like ENS addresses, things that can change out from underneath that can't be like written into firmware because that is, is like, like dynamic, right? So say you're interacting with some DeFi contract that is a diamond contract, and you don't know what facet is plugged into it. Uh, if you want to clear sign that, that's going to be very difficult, and it will actually have to like phone to some.
+105.17-124.26 | SPEAKER_01: Trusted server somewhere that signs something, and maybe you have three or four of them, and they're all signed, and you just like have like just the Merkle proof of the information, and that with just the information comes in. But like this is a tricky problem to solve to show to the end user that like clearly this is what you're doing when you hit this button.
+124.90-125.79 | SPEAKER_02: But I don't know, man.
+125.79-151.74 | SPEAKER_00: I think it just proves this: like these devices are just not meant for end users. Yes, like we're using them wrong. Yeah, agreed. Like the hardware wallet should be a equivalent of a YubiKey that you plug into a somewhat secure device. I don't care if you air gap it or what you do with it, and that is just like an interface to get a better interface. This is why GridPlus had this shit figured out. They did the GridPlus.
+151.74-154.47 | SPEAKER_02: Dude, I tried so hard to use the GridPlus.
+155.47-157.27 | SPEAKER_01: Yeah.
+157.27-167.66 | SPEAKER_02: There is something to be said for like just human idiocy, right? Like you know, it's not the form factor I'm used to, and I was like, oh, the card, and then they did some dumb stuff where I was.
+167.66-169.58 | SPEAKER_01: Like if you just let me put.
+169.58-171.54 | SPEAKER_02: Multiple cards in, then I would be.
+171.83-173.40 | SPEAKER_02: Because now I can have like fifty cards.
+173.40-176.96 | SPEAKER_01: Cards here that are each wallet, but you couldn't. You had to like re-earn.
+176.96-179.17 | SPEAKER_02: Do the firmware on the...
+179.17-180.34 | SPEAKER_01: Giant fucking device.
+180.34-184.77 | SPEAKER_02: This big, and then a card. You put the card in, and the card's intrinsically tied to the device.
+184.77-188.76 | SPEAKER_00: You only have one card? Like what the fuck? They changed that. You...
+189.03-194.47 | SPEAKER_02: Plug the card into any device. It was over for me by that point. But yeah, I get it. Like that.
+194.47-201.43 | SPEAKER_00: Like these interfaces are what makes sense, you know. Like dedicated, like it's unfortunate that today users need a dedicated signing laptop.
+201.74-213.66 | SPEAKER_00: Like it's unfortunate that like some of us have to carry like two, three laptops with us when we travel, because like I might have to sign something and I have to sign this in isolation. And like the Ledger for me is just like not, or the Trezor or the whatever is just not.
+214.27-218.98 | SPEAKER_00: Sufficient enough. It's just there's too much going on in there. So what about...
+218.98-232.76 | SPEAKER_01: You just need, like, can it, can it be that we start moving people toward a safe or an alternative multi-sig, and you have a hardware wallet as like a signer, that's like some recovery thing, but like that's the better UX.
+232.76-256.11 | SPEAKER_00: Yeah, I mean, like the best UX is like, I mean, the best UX is like some sort of a multi-sig. You have like 2FA style backup that acts as your ledger or whatever. Sure, whatever you want to do, like those work. You know, like the Infinox one, good UX. Like it's one of my main drivers. Like good UX, right? It just like it does its job. Yeah, no one cares, man. Like.
+256.70-267.94 | SPEAKER_00: Literally, no one cares. No one. Like that's the beauty of it. But like, you know what's scary? You know what's fucking scary? Like, okay, I know we're talking about Ledger and like all their telemetry, which is like, they just need to strip that shit out.
+268.22-274.78 | SPEAKER_00: Honestly, it's like, it's pathetic. Um, it's pathetic that Ambi and, and Rabbie had to like do a custom.
+275.68-288.10 | SPEAKER_00: Like modification to like make it work, but you know what else? Did you guys update your iOS last night? Because last night, if you had a app that like a crypto wallet.
+288.45-310.94 | SPEAKER_00: Another app could steal it if you did the signing. Wow, like the sandbox broke, and they did a hot fix. Like we're just screwed either way. We're screwed either way, and so it's like, like, like, like Austin said. I think we need to move to multisigs, and you just need to move to like, you know, you need limits, you need circuit breakers, you need, you need all sorts of shit implemented.
+310.94-322.62 | SPEAKER_02: In fairness, though, that like that it does introduce complexity, right? And then it becomes harder at times to show the user like what is the trade-off space, you know? It's not like, yeah, I don't know, I don't think.
+322.62-324.93 | SPEAKER_00: I'm not suggesting using a Gnosis safe.
+325.67-330.40 | SPEAKER_00: And also, like, like, are users gonna like be browsing anymore? No, you don't.
+330.40-332.53 | SPEAKER_02: Like down.
+332.53-340.04 | SPEAKER_00: Yeah, and like users are gonna just download like I want to shitcoin trade, so I'm downloading Pump, or I want to bet, so I'm downloading Polymarket. Agreed.
+340.04-360.90 | SPEAKER_02: I think we're, I think we're in that, that world, and like probably, you know, when, when, when, I mean, you know, the regulatory fucking unintended consequences of like fucking Gensler and his goons. If it wasn't for that, you would have had.
+360.90-387.69 | SPEAKER_02: Dedicated native apps, you know, DeFi teams were scared to build a native app because it would mean they like had control of a thing, right? And so, you know, like what took Aave like buying a company to like release an app, right? Like they, they, um, you know, it was too scary. Like Synthetix was never going to release the fucking Synthetix mobile app. Are you kidding me? I don't want to go to jail. If I can release a mobile app, then I'm...
+387.69-415.76 | SPEAKER_02: Responsible for the thing, like, 'cause you have, 'cause Apple's like you have to have a company in order to do this thing. And so all of a sudden now you're like creating this nexus between the company that's issuing the app, and you know, we could have worked around this, but I think most DeFi teams were just like, nope, not, not interested in that, right? And so therefore the UX is much worse. We didn't try and figure out like how could DeFi work with even today in order to interact like Synthetix and, and, um,
+415.76-437.22 | SPEAKER_02: And Infinity tried to solve this of like how do you allow a user to use Synthetix inside of Infinity, and like we got, like, it was unsolvable. It was like there was no good way without like rebuilding the entire interface to do that. Like you end up in a DApp browser inside of a mobile Safari wrapped thing like.
+437.44-439.73 | SPEAKER_00: Yeah, you gotta frame it and.
+440.03-441.63 | SPEAKER_00: So bad it did. So bad.
+442.27-466.16 | SPEAKER_01: So the future is basically apps. Is that what you're saying? Like basically, I'm gonna have... Apps are so bad. I'm gonna do a face scan. Maybe I'm even doing a face scan, and it's a signer on a Gnosis safe that has limits, but I don't know about any of that. I'm coming here to do the app thing, whatever the app thing is. Whether I'm like locking up USDC and earning yields, or I'm trading shitcoins or whatever, I'm just coming in and I'm using an app that's called...
+466.16-473.47 | SPEAKER_01: You know, tradeshitcoins.org or whatever, and it does a face scan, and I have a balance, and I go.
+474.02-502.56 | SPEAKER_00: Hundred percent, hundred percent. Like the fact that someone's like, you know, the fact that we use Gnosis safe to this day is like kind of crazy to me. It should just be like a background service. Um, but like, you know, the, the, you know, where the, like, all that has to fall on, and this is the unfortunate part, and this is where we're gonna see hacks and security holes happen is that it's gonna fall on all the like embedded wallet teams because that's where all the apps are gonna go to. They're gonna go use them, and so we have to make, they have to expose it correctly.
+502.56-516.67 | SPEAKER_00: And so, like you know, like yeah, we, we have this, like you can do whatever you want. That's the best part about the EVM. You can just do anything. You can just do things. It's so powerful. It's so good. Uh, like, but.
+517.70-525.82 | SPEAKER_00: The new wave of people that are going to be building apps, and like apps are so bad. Hundred percent. Look at the app store; it is crazy, and like people are downloading them.
+526.91-538.78 | SPEAKER_00: We just have to hope that the security is okay. Otherwise, we're gonna get bullshit like telemetry injected everywhere. And then what happened to Polymarket? Polymarket, do you guys? Polymarket got hacked the same day.
+539.68-543.71 | SPEAKER_02: Binance. Yeah, it was during the Binance hack. Yeah, yeah.
+543.71-552.17 | SPEAKER_00: But everybody forgot. But yeah, it got, it got, it got, it got hacked because of the fucking dependency on an analytics tracker in their website.
+553.02-560.34 | SPEAKER_00: Right, and it's like this is the problem with injecting shit, and this is why like people are gonna start hand rolling crypto and hand rolling a bunch of stuff, and it's gonna blow up.
+560.34-564.49 | SPEAKER_02: Sorry, Greg. You said apps are so bad. What, what did you mean?
+564.49-566.73 | SPEAKER_01: So bad. So bad. So bad.
+566.93-574.75 | SPEAKER_02: But okay, so but, but the, sorry, then the thing that you were saying that is problematic is like how will the app do custody?
+575.64-577.04 | SPEAKER_02: Yeah, 'cause it's like.
+577.04-579.03 | SPEAKER_01: What's your... what's your up.
+579.98-580.77 | SPEAKER_02: If you like.
+580.79-581.70 | SPEAKER_02: If you're going native.
+582.05-607.56 | SPEAKER_01: Face scan. Well, it's basically a passkey. You have a passkey. That passkey is a signer on a contract. The contract is a signer on a multisig. It's just an R1 curve signature. You face scan. You do your thing, and then there's there's limits on the thing, so you can't spend so much per day. And there's social recovery on the thing, so if you lose it, someone can reset it. And it's like a dead man switch where you can reset the reset if they nefariously reset it.
+607.56-620.94 | SPEAKER_01: And then maybe you start learning, like you slowly start learning about what a second and third signer might look like on that. And then eventually you get yourself a a wedgie or something, like a hardware wallet is like a, it's buried in my backyard, and I can pull it up and do my own social recovery kind of thing.
+622.18-625.94 | SPEAKER_00: But, but, and like users are used to this cumbersome bullshit anyway.
+625.94-638.72 | SPEAKER_01: This isn't cumbersome. This is just a face scan. Like it's just like Pham. If you play Pham, it's just it's just a passkey. You passkey to get into it. But it's all database dollars. You could do Pham the same UX, but actually use a multisig now.
+639.47-661.39 | SPEAKER_00: I I totally agree. But what I'm saying is, like we like we don't even have to do this education step. I think everybody gets the UX part wrong. Like, right from Canada, like our banking infra is crazy. It's like still phone 2FA. Like, you know, we have to like hop through hoops. Like people are used to dealing with like nonsense till they get access to an account.
+662.04-670.19 | SPEAKER_00: Like saying, telling them, oh, you gotta add like somebody that you trust. They're gonna be like, oh yeah, this is way better than who my first dog was. Yeah, you don't.
+670.26-671.77 | SPEAKER_00: I'm great. You know what I mean?
+672.51-673.76 | SPEAKER_01: But, but you know what?
+673.76-677.18 | SPEAKER_00: But like the UX, the bar is so low.
+677.64-696.42 | SPEAKER_00: And like we just spend so much time thinking it's like gonna be tough, and the problem is we just have to rely on these like third parties, which like are doing a great job. The, you know, like the Privy's of the world, the, the, you know, those turnkey to like implement the tools so that we can actually give this to people, so we don't get wrecked.
+696.93-707.74 | SPEAKER_01: But I basically built a wallet, and it is that thing. It's a safe with these passkeys and limits, and I got it all built out. And I'm like, okay, great, I have this wallet now. It's really easy to send and receive, like.
+708.38-719.01 | SPEAKER_01: Really, all I built was a starter kit for other people to make applications on top of that. Like, yes, it's a wallet, and you can do all of this stuff, but people don't want a wallet anymore. Like, the wallet is like so.
+719.25-733.84 | SPEAKER_02: No, but even like, you know, I know we've been very much in Ethereum land for this show, but like also SVM, right? Like then, like because that place is a fucking dumpster fire, man. Like now you.
+733.84-735.76 | SPEAKER_01: Have a wallet across an S.
+735.76-744.98 | SPEAKER_02: Yeah, there's no like, you know, they've got SolanSafe like, there's, but like you know, there's nothing, none of that stuff will work.
+744.98-747.97 | SPEAKER_01: Right, so now you need to be able to move funds.
+747.97-776.29 | SPEAKER_02: And so, like, you know, it becomes the the least secure place is the thing that dictates the UX, right? Like, and so it's like actually it's better to just put it in a database because otherwise the UX breaks as soon as someone wants to trade on Pump.fun, and they do, and therefore you you just drag you into this hellscape of like cross-chain compatibility, and and you can't build your beautiful, you know, palace in the sky that you've built for us all. And unfortunately.
+776.66-778.68 | SPEAKER_01: It's true. Yeah, I can't argue with that.
+778.97-786.12 | SPEAKER_01: Like basically, the thing that I'm building here would be EVM, and yeah, people do want other things for sure. They want other things.
+786.12-787.15 | SPEAKER_02: Unfortunately.
+787.15-790.75 | SPEAKER_01: And that's why we get database dollars instead of self-sovereign money.
+791.78-796.64 | SPEAKER_02: I don't know, man. The lesson is never try. I think.
+796.87-826.56 | SPEAKER_02: Trying is the first step to failing, homie. Yes, trying is the first step to failing. All right, let's move on to MegaETH. This one, I think, I don't know if you saw this, Austin, but but I spoke to Namik. I was trying to get him on the show to to talk about this. Maybe we'll get him next week. I I got the kind of DL on on the plan here, right? The the thesis is, and you know, we've seen a few pivots to AI that have gone.
+826.56-842.04 | SPEAKER_02: In most cases, like pretty good, right? Like it's so positive EV if you're in crypto to pivot out. Yeah, like there's there's not that many people that have pivoted. Even the people who have like just stumbled and bumbled their way into an AI pivot are doing doing.
+842.04-846.68 | SPEAKER_01: Better than the average crypto person, um, but they are basically.
+846.68-852.93 | SPEAKER_02: Saying that, you know, if you want to build a marketplace, build your marketplace on a blockchain.
+853.66-854.70 | SPEAKER_02: It's actually a.
+854.70-855.85 | SPEAKER_01: Pretty good solution.
+855.85-874.04 | SPEAKER_02: I think we've proven that we have some receipts. Marketplaces on blockchains are good, and you have this like upstream challenge of like where is inference coming from, right? So you know, people are selling you.
+874.04-875.44 | SPEAKER_01: Inference and you don't.
+875.44-877.36 | SPEAKER_02: Really know where it's coming from, and there's a bunch of different.
+877.36-881.47 | SPEAKER_01: Incentives for like why people are selling you inference and what they're doing with it.
+881.47-883.59 | SPEAKER_02: And you know, distill.
+884.03-900.08 | SPEAKER_02: All of that stuff, right? If you could, and this is maybe the the challenging part, right? If you could strip out the the risky stuff using the blockchain, then you could.
+
+0.00-14.72 | SPEAKER_00: Buy inference from whoever's selling the cheapest inference. And at the moment, you have this very, very crazy arbitrage that exists, which is the cost of API versus the cost of a plan.
+15.39-16.69 | SPEAKER_01: Subscription is so much cheaper.
+16.69-46.69 | SPEAKER_00: Yeah, so much cheaper, right? And, and you cannot have a, an extremely valuable asset that you're selling with price discrimination like this, and not have the world show up and be like, whoa, whoa, whoa, like, we're gonna collapse this delta, right? To the point where eventually, you know, the API and the plan has, you can't subsidize something this much and not have people turn up and be like, well, we're gonna arb this subsidy, right? Um, and so the idea is that like, there's a bunch of people for a bunch of reasons that are willing to sell you.
+46.69-60.52 | SPEAKER_00: Cheaper than what the labs are willing to sell you inference at their API rack rates, right? And they will distribute it via the blockchain. And so.
+61.03-82.85 | SPEAKER_00: Terms of service or anything, whatever. And they're still going to do it. Yeah, yeah. They're just like, it's not even, they're just making a two-sided marketplace, right? You got supply over here, and you got demand over here, and we're just going to let supply and demand have a party in the middle. And, and like, I mean, it's, it, you know.
+82.85-104.65 | SPEAKER_00: We're seeing this with like Venice. I think Venice has done a really good job of this. They have some nice, like, you know, TEE and like confidential compute stuff that they've like sprinkled on top, so that, you know, you get the privacy aspects. But like, the, the, the cheapest API rates on Venice are like, you know, who the fuck knows what those guys are doing.
+104.65-134.65 | SPEAKER_00: But if you're like, I don't care, um, you know, I don't care whether my traces get like vacuumed up into, you know, especially if you, if you're like, if you're working on something open source, it's actually pretty amazing because you don't care. Like, why the fuck would you care if all your code's public anyway, right? If you're working on something proprietary, like you're solving some math problem, like probably, I'd say maybe don't do that. Um, but, but like, yeah, it's, it's, it's, I just think we're going to see more and more of.
+134.65-164.26 | SPEAKER_00: Of the, the concept of we can make these hyper-efficient markets by putting them on a blockchain that are permissionless and accessible around the world, et cetera. And we have these very valuable things that are ironically called tokens that people want. And creating a marketplace for tokens on a blockchain is just going to become like such an obvious play. So, you know, yeah, but why?
+166.59-173.04 | SPEAKER_01: Permissionless marketplace, like going back to supply and demand getting to party without anybody. Like you can't, you, you.
+173.04-177.48 | SPEAKER_02: So is it just like the trust? Like you're not gonna, there's like a trust factor.
+177.48-187.12 | SPEAKER_01: There's no privacy and there's no provability. But if you don't care about privacy and provability, you just need to like dog out some, uh, the cheapest.
+188.27-218.27 | SPEAKER_00: Yeah, you want the cheapest possible inference, and you don't care what happens to your traces. Now, they've got some ideas of how they can like protect your traces and strip them out, and some other things. Again, even ignoring that, right? Like, if you genuinely do not care about your traces and you just want the cheapest thing, buying your trace, sorry, buying tokens via blockchain where you don't care about who your counterparty is, it's going to be the cheapest way. Like, there's, I don't see any, I don't see any way where you can beat that. Like, and we're seeing it with Venice, right?
+218.27-228.53 | SPEAKER_00: Like they're doing this already, um, you know, once you have a two-sided marketplace and the supply can come from anywhere, um, permissionlessly, and shatter mirages, like.
+228.53-248.96 | SPEAKER_01: Near as well, yeah. Cool thing about Venice is I stake my VVV and I get DM, and I basically get some like daily amount that I can just use because of that staked DM. So there's some neat like things going on there where I just get like free inference every day for the first few dollars or something. Yeah, I don't have, and again, because the arbitrage exists.
+248.96-264.56 | SPEAKER_00: Right, right. They're just, they're just slicing out some of that arb and using it for tokens, which different kind of, different tokens. Yeah, the money tokens. We should have made AI guys call their token something else. It's a bit annoying. Brain tokens and money tokens or something.
+264.56-266.13 | SPEAKER_02: Something.
+266.13-287.47 | SPEAKER_00: But yeah, so I just, I think, I think we will see more of this because the arbitrage, what is stopping the arbitrage right now? Terms of service, like other weird, you know, frictionful things that blockchains are designed to, you know, alleviate, right? And I think that that arbitrage just can't last.
+287.47-290.97 | SPEAKER_02: You cannot have a multi-trillion.
+290.97-305.32 | SPEAKER_00: Trillion-dollar arb that's just sitting there, you know, uh, the law can't even stop that. Like, I'm sorry, it just can't, like nature finds a way. So, um, but you know, the mega-eth is turning into mega, and.
+305.97-311.55 | SPEAKER_01: Selling inference or creating a marketplace for it, creating a marketplace for it. Interesting.
+311.55-314.96 | SPEAKER_03: I didn't. I mean.
+314.96-321.58 | SPEAKER_02: It's better, and like, instead of them continuing to try, yeah, it's like there's like the.
+321.86-338.62 | SPEAKER_03: The tech's good, you know. So like, put it to a different use case that will just work out better. Like, I'm all in favor of like a good healthy pivot. Yeah, I think like, I think we like, these like.
+341.06-351.17 | SPEAKER_03: Way too high of a bar, or like a pivot. Like, yeah, okay, VL2 didn't work, but it can still make you a return, make you money. Who cares?
+351.42-353.63 | SPEAKER_00: Because people's bags are too heavy, man. So they get.
+353.63-383.63 | SPEAKER_00: Get mad, like if, if you know your average VC, right, that has, you know, bunch of portfolio companies, pivot happens in the dark, no one cares. Like maybe the users are a bit annoyed or whatever if they're actually using it. But as soon as you have like public markets and people are bag holding a thing and it pivots, they start panicking, man, and they, they lash out and they're angry at everyone and the world. Why did I buy this dumb thing for the speed of light or whatever the fuck I did and lock my money?
+383.63-389.79 | SPEAKER_00: Up for a year, like that's, it's just, it's life.
+390.56-410.73 | SPEAKER_01: Being able to buy inference on chain is kind of cool. Like thinking of like an actual DAO that could pay for its own inference on its own, or like a program that you write can pay for its inference on chain and continue its life like by itself. I don't know. There's, there's some nice autonomous stuff that happens. There's some cool stuff. I mean, the problem is you still need APIs, right? Like, yeah, yeah, yeah.
+410.73-415.83 | SPEAKER_00: Yeah, it's just a marketplace. But yeah, it's a marketplace API somewhere. Yeah.
+415.83-416.64 | SPEAKER_01: You're not streaming.
+416.64-418.37 | SPEAKER_00: Inference over a blockchain, right?
+418.37-423.75 | SPEAKER_01: The GPU, the blockchain can't see the GPU. I think is a critical thing to talk about there. Yeah, yeah.
+423.75-424.83 | SPEAKER_03: It's fine.
+424.83-431.94 | SPEAKER_01: Honestly, it's fine. I don't believe everything's fine. Speaking of.
+431.94-457.12 | SPEAKER_00: Was that okay? So, why did this arbitrage exist? Because of incentives, like why everything exists, right? And at the moment, the incentive is at least to the best that we can kind of discern from, you know, looking in, inside this black box of like the big labs, right? They want people to subscribe.
+457.12-476.48 | SPEAKER_00: They know that if they charge everyone rack rate APIs, that, you know, they are very price sensitive and it wouldn't work. They wouldn't be able to scale, so they've raised a bunch of money. They've created these subsidies to get more people to use the thing, which feeds back into the, the tracers, and we are hooked on this subsidy.
+476.48-477.29 | SPEAKER_01: Yeah.
+477.29-480.19 | SPEAKER_00: Yeah, we're hooked on the subsidies, man.
+480.19-487.90 | SPEAKER_03: I, I also question the, like, how much, like, do you really think every plan is maxing it every week?
+488.54-494.05 | SPEAKER_00: I know. Like, I do question if I... I know my plans were fucking maxed up to the gills, we're like.
+494.05-497.96 | SPEAKER_03: Yeah, but like, look at who we're talking to. We're talking to... No, no, no, for sure.
+497.96-498.84 | SPEAKER_00: Sure, like.
+498.84-510.41 | SPEAKER_03: We're, we're the weirdos that went from like, you know, we're the crypto weirdos to like, yeah, we were probably ahead on AI with everybody else. Yeah, I guarantee you the subsidies are probably not as like nasty as people think.
+510.41-540.15 | SPEAKER_00: Aggregate, right? But this is, but so here's the problem, right? In aggregate, so, so, you know, if we think about this, right, there's a bunch of people who are paying twenty bucks a month, fifty bucks a month for the normal plan and using nothing, right? Spotify, like, there's a bunch of people who pay twenty-nine ninety-five a month and stream two songs, right? Amazing. Like, Daniel Ek is eating amazing because of that, right? And, and, you know, then there's people who are like streaming that have like
+540.15-569.47 | SPEAKER_00: Connected their Spotify account to like a multiple proxies and are like streaming into like, you know, music venues and like on selling it or whatever. So like there's always going to be this barbell of like people who don't use it and people who like try and max extract from it. Um, the problem is that you can't really like resell streaming music that easily, right? Like it's become a commoditized thing. Whereas you can absolutely resell tokens, right? Like I will buy your fucking cheap tokens all day, man, like.
+569.47-574.77 | SPEAKER_00: All day, and, you know, and the interesting thing about the market dynamic here is, as
+574.92-604.92 | SPEAKER_00: You can see this. OpenAI is trying to close the arb. They keep tweaking and tweaking and like raising the, the, um, you know, amount that you, uh, get, um, from the API, right? Like lowering API cost, giving more, doing like little tweaks to the economics, whilst also trying to bring down. They, they're trying to close this arb because they know that it, it's not sustainable, right? So long as that arb exists and it's a trillion-dollar market, people will fucking turn up and, and you can just sell this.
+604.92-623.67 | SPEAKER_00: That's right, and so, um, so yeah, like it, you know, putting that on a blockchain and, and whatever. But the problem is that even if Anthropic is not net losing money on that arb, right? It's such the market will become so efficient that like.
+623.67-653.67 | SPEAKER_00: It's like the, the lady, um, my head of engineering was, was saying, um, there's this lady that runs a startup, um, and they give a free trial. You have to put a credit card in. They give a free trial, and it's like, um, like some DevOps system, and you get like fifteen minutes of inference to like learn how the system works. And she literally was on the timeline yesterday being like, "I'm ready to kill myself. This is a fucking nightmare." You can't give out free inference. They banned.
+653.67-680.27 | SPEAKER_00: All of Indonesia, like the whole country, is banned now because people were like using stolen credit cards to break into this system that's just trying to give like a fifteen-minute free DevOps thing. Like they're so fungible, tokens are so fungible that people will steal them from anywhere. And we were making the joke that it's like quite hilarious because if you think about it, anyone who says I'm going to give out some free inference to you.
+680.27-689.54 | SPEAKER_00: The optimal play is to go and take that inference, and try and find other places where you can steal inference from. And so like.
+689.54-691.04 | SPEAKER_02: The first crack.
+691.04-721.04 | SPEAKER_00: In the in the thing, and like you just get this like swarm of people like flooding in, trying to like exploit it because inference begets inference begets inference. So anyway, all of that is to say, like you know, VC dollars have been uh injected into the system to create addicts, like uh our friend Austin here, um who's looking around for some more tokens, um and uh and you know.
+721.04-751.04 | SPEAKER_00: It it is it is a virtuous cycle, don't get me wrong, right? Because like the more training data, the more Austins clankers do things, the more training data, and you know training gets better, models get better, models get cheaper, they get more efficient. All like this society should put as much money as possible, aside from the potential paperclipping that's coming for all of us. We should put as much money as possible into this because having abundant intelligence is like a superpower, right? Like the more.
+751.04-761.76 | SPEAKER_00: More intelligence you have, the better. So these subsidies are good, but markets don't like giant arbitrage opportunities just sitting there out in the open, right? Like they'll get arbed out.
+762.08-765.44 | SPEAKER_03: Yeah, it'll close. I mean.
+766.24-774.08 | SPEAKER_00: Spoken, spoken like ex-Ethereum core dev. It'll be, it'll solve itself eventually.
+774.85-784.69 | SPEAKER_03: Yeah, I mean, like a lot of people have been tweeting about this though. Like, I think like some of the Paradigm guys, Tarun, and it's like if you look at the markets.
+784.69-785.87 | SPEAKER_02: That exists now, and the.
+785.87-814.83 | SPEAKER_03: They're arbs that exist in like the AI scene. They're they're almost like identical to what we had in crypto for like the last five years. It's crazy. They're like like almost pattern matching like down to like the same trends. And so like it'll shut down, it'll close. People will work on like dollar cost, uh, like cost per like intelligence, I guess, um, right, to like get it down to make it cheap. Like that's inevitably going to happen. Um, I'm less interested.
+814.83-818.67 | SPEAKER_00: Remember when the OneInch guys built the Gas Token?
+818.67-826.53 | SPEAKER_01: We mentioned that earlier, like that was cool, like smart contract. That was in like those guys, that was a nightmare. Those guys should have been talking to your Paradigm guys.
+826.53-838.46 | SPEAKER_00: So funny because we like, I never talk to core devs, right? So I always like, I have my own like little happy perspective on like dumb shit that happened on Ethereum, and then being like, like, fuck those guys.
+839.26-856.67 | SPEAKER_03: That was like such a nightmare. I like, I don't want to get into it too much, but like, it was just like that's actually I think what caused so much gas repricing back in the days as well, because we had to like change all how SSTORE worked, I think, and Karaoke Store.
+856.71-886.24 | SPEAKER_03: Um, it was, it was super annoying, which actually uncovered another bug, um, which was the Osaka bug that didn't get released, disclosed for like two years. But basically, uh, due to so much tinkering people are doing, someone found a way to like access, we like reprice things incorrectly, which caused like an infinite loop, um, at the VM, and that was due to like database storage stuff. There's a blog post, it's called Dodging a Bullet on the Ethereum Security Blog. It's a good one.
+886.72-891.33 | SPEAKER_01: Also, kind of direction like self-destruct. This, this, the old suicide function.
+891.33-897.07 | SPEAKER_03: The old suicide is shit too. Yeah, yeah, yeah. But like Gas Token was such a pain in the ass.
+897.07-898.98 | SPEAKER_00: You can't say suicide anymore.
+
+It self destructs. All right, I think, yeah, we're we're a little bit over here, so let's wrap it up here. Thank you, Greg, for jumping in on short notice. Very, very much pleasure to have you as always. And glad that you're back, Austin. Hopefully, we'll have Tay back next week, and we will see you guys soon. Remember, what happens on chain never stays on chain. We'll be back next week. Nothing you hear on Un-Easy Money is financial advice. We're just three builders talking about what's happening on chain, and we want you to always do your own research before aping in. You can find all our disclosures at unchainedcrypto.com/uneasymoney.

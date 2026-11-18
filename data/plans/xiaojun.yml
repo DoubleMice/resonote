@@ -1,13 +1,13 @@
 source: xiaojun
-refreshed_at: 2026-11-17T18:09:09.328Z
+refreshed_at: 2026-11-18T02:26:14.937Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 4
-done: 1
+done: 2
 pending: 0
 needs_transcript: 1
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 6af5debf14d01a26f8a900ac
@@ -20,18 +20,12 @@ episodes:
     url: https://www.xiaoyuzhoufm.com/episode/6af5debf14d01a26f8a900ac?utm_source=rss
     audio_url: https://dts-api.xiaoyuzhoufm.com/track/626b46ea9cbbf0451cf5a962/6af5debf14d01a26f8a900ac/media.xyzcdn.net/626b46ea9cbbf0451cf5a962/lvnhry4gLCC3Ut_6NMJN7QRmdDaN.m4a
     image: https://image.xyzcdn.net/FnCtjkSjiSXqv1q56tG8xYV-h3Nv.png
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-17T10:49:01.372Z
-    transcript_completed_at: 2026-11-17T10:50:23.772Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.6"
-          }
-      }
+    transcript_submitted_at: 2026-11-18T02:50:13.998Z
+    transcript_completed_at: 2026-11-18T03:35:57.937Z
+    transcript_job_id: f95670eb-9f48-4703-8819-154828e36d6a_2twab7g4ms2o39kow0_1fed774d73b34e7d9ec70f0028a03ae7,0cab93e5-03e6-412d-8f09-08ed659fc8b5_2tvt8pg4ms95ybs2rk_950a166a910c4d7d844a41cca7c287b8,419d10cf-1393-49c5-8855-496aa73e247d_2twam2g4msckgr9rsw_988bcf36a2044c62a6963957432ce8cf,72462b95-2dc3-49d2-a80d-24903d00f667_2twk49g4msgm18wutc_30451a0f199a4136aaf8045db37aa10c,e7954a69-489d-48d1-9466-c43a52711b4a_2smzzpg4msp463ec5c_70a4ff0cb88447f9b32223a009d4f966,fdf95974-e556-499a-aba3-5f5eb065036d_2twg4ig4msucsq0wsg_2775ec87a6e541bf920d0573a25fab20,295608dd-33cb-4f85-85ab-8b3fed9c7566_2twg8zg4msyqdobfnk_a89174682e7d4054b1268438119fda60,55b653fd-1e3e-4861-9565-7c5568cf2129_2u6c3tg4mt2xrh5gjk_d072113887974b329e01dc35a3262158,75ac6015-ce08-4164-94fa-f92c7204d58d_2twk49g4mtarqf4fsw_baf9d591978846c0ba3c8bd1e6eab82d,c3c95ffa-de88-4035-92aa-7f2e0fc1395a_2twcmig4mtjseq6nsw_c6fbf42937cc48c29c3d01600adfec60,4f8223fd-c22f-484e-8101-965e0a210b3c_2tww7ig4mtojfcm60w_abf78a44eb3b4f979f57a8f079a5f0ce,ffb046b1-3193-49e1-b291-637256401a20_2tvmopg4mtvnuindvk_db7e3f57e0774ff78eab6d64ab36f106,15b1f9a4-a278-452e-9114-e1275cedd898_2tvt8pg4mtz6k84lxc_0cf563a302654d3f8251a230c2e3b5a5,09aa820a-ae0d-4f9e-bce8-ea92f5f387d1_2tvok8g4mu61q1og01_baa3be2c288f4830b35f007e7dcb72a9,f8dc322d-8e2e-4e1f-beab-90a17cd0c99f_2twpxug4mud9f1zb40_ed22b7ff3d6842a0a2f0f19c81a6adc7,5f9a6c59-18e3-43ad-b56d-1a7e0925c84f_2twk49g4muf9thw3r4_11737d6333d64affa3ab75b76e289e17,199b694e-18e8-4206-a27a-2dea03fd18c6_2u6c3tg4mulpgibbb4_71e234bdbaef45219e935e73f4cf69dc,837786c4-d320-4f3a-8888-15756720d0c5_2twk49g4muu6f256v4_4ce73564fae0482ca0f2c08dc310b905,cb75fd83-7281-4410-9253-bff8e0f762f5_2twan1g4mv1p676eww_e5dba3b974154ed19725473253596afc,d0670dc4-d80e-468d-85f2-782c81a59b37_2twcx0g4mv57uixnnk_5a453a93f87a4765987ae0c9ee4b3778,eae937a5-50d3-41e8-b876-38edb557ea79_2twso4g4mvczwy7jeo_917f298675814393bc6eaca070f57b8f,ba5ca5a4-3511-4e30-b0fb-cf91f2f3c47a_2twskag4mvf8sfagao_fd52bb5577754160a555292a7425102e,f323a2f2-8984-455f-9a6a-72dd148572a8_2twcmig4mvmhkfxd6o_9f17148cbfe0473490c8567ea6739726,262532fd-f7f7-4bb7-8892-49c422b60240_2twp1ug4mvpxzgndhc_f7b9984cf004450c947d460e3b6e0d09,f83c07f9-f8b5-420d-b20c-70b855710c3c_2twso4g4mvsw4occ1s_36303af63fb2422eb11f93fbe580f3dd,9f65e0ee-c3f0-4e28-bcf1-221ed9c1d799_2twt87g4mw022l12io_e34a9728e8d642339a7bf982ed6b4961
   - id: 6ad4dacd641ef406308d86e5
     guid: 6ad4dacd641ef406308d86e5
     title: 155. 和科沃斯钱程聊，父与子、企二代接班的样本与肌理、机器人，和我内心的追寻

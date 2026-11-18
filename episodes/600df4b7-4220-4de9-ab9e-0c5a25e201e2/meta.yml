@@ -1,0 +1,31 @@
+title: Richard Falk-Wallace：让风险模型进入投资组合经理的日常决策
+guest: Richard Falk-Wallace
+guest_role: Arcana 创始人
+tags:
+  - interview
+  - founder
+  - technical
+  - strategic
+  - startup
+summary: >
+  Arcana 创始人 Richard Falk-Wallace
+  讨论基本面投资者为何需要把因子风险、组合构造和业绩归因带入日常决策。他认为，选股判断正确并不保证组合的风险调整后收益更好；识别可预见的相关性、仓位偏差和重复失误，才能让研究能力更稳定地转化为组合结果。
+core_ideas:
+  - 因子模型的作用是识别组合中可预见的共同波动，避免把相关持仓误当成真正分散。
+  - 押对一个有正回报的因子，仍可能因降低组合夏普比率而损害整体的风险调整后表现。
+  - 业绩拆解应区分选股、仓位、财报前后交易和持仓阶段，寻找反复出现且可调整的失误。
+  - 基础因子模型与短期主题模型各有用途；更复杂的模型通常提高解释力，也可能降低稳定性和可执行性。
+  - 对尚未采用此类工具的基本面经理，首要任务是理解基本权衡，并建立固定的风险与业绩反馈流程。
+id: 600df4b7-4220-4de9-ab9e-0c5a25e201e2
+source: flirting-with-models
+source_title: Richard Falk-Wallace – Risk Models for the Front Office with Arcana (S8E1)
+published: 2026-11
+published_sort: "20261116"
+duration: 1h8m
+url: http://www.flirtingwithmodels.com/
+status: generated
+article_path: episodes/600df4b7-4220-4de9-ab9e-0c5a25e201e2/article.html
+base: /episodes/600df4b7-4220-4de9-ab9e-0c5a25e201e2/
+visual_notes: false
+thumbnail: https://artwork.captivate.fm/594874aa-8b76-43d5-9927-795aaef45178/flirting-with-models-richard-falk-wallace-3000x3000.jpg
+generated_at: 2026-11-18T04:59:12.332Z

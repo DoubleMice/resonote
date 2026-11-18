@@ -1,0 +1,36 @@
+title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
+guest: 刘松铭
+guest_role: LiberAI 创始人
+tags:
+  - robotics
+  - startup
+  - ai-research
+  - ai-products
+  - interview
+  - founder
+  - deep-dive
+  - technical
+  - strategic
+summary: >
+  LiberAI 创始人刘松铭解释了为何公司不只做世界模型，而是同时投入数据采集、机器人本体和场景交付：基础模型会增强上层理解与规划，接触、控制、硬件和客户现场仍需专门能力。他以 Libre 0
+  的数据配比、手套采集实验和奶茶制作演示为例，讨论具身智能从模型能力走向可复制收入时会遇到的成本、传感器和场景选择问题。
+core_ideas:
+  - RDT-1B 让刘松铭看到机器人预训练的价值，但遥操作数据昂贵且缓慢，数据如何扩展仍是核心难题。
+  - Libre 0 将互联网视频、第一视角视频、手套和真机数据混合训练；团队认为手套数据补上了视频缺少的动作信息。
+  - 刘松铭将基础模型的长项放在 System 2 的理解与规划，把接触、动作执行、运控和硬件视为更靠近物理世界的工作。
+  - 全栈不是自制所有零件，而是控制会影响模型效果与交付质量的硬件、数据和系统环节。
+  - 场景选择要兼顾标准化、模型匹配、低人工兜底，以及能否积累可复用的数据或交付能力。
+  - 具身智能的主要不确定性在于模型进步与商业化进度能否匹配，硬件迭代和资本周期都会拉长兑现时间。
+id: ad3b421a-d013-4a69-9613-924fa6d47992
+source: latepost
+source_title: "187: 对话LiberAI刘松铭：Astra来袭，00后物理AI创始人看到的胜率"
+published: 2026-11
+published_sort: "20261113"
+duration: 2h10m
+url: https://podcast.latepost.com/187
+status: generated
+article_path: episodes/ad3b421a-d013-4a69-9613-924fa6d47992/article.html
+base: /episodes/ad3b421a-d013-4a69-9613-924fa6d47992/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/a/ad3b421a-d013-4a69-9613-924fa6d47992/cover.jpg?v=1
+generated_at: 2026-11-18T05:20:22.997Z
