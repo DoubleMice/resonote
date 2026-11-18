@@ -1,0 +1,32 @@
+title: Bruce Dang：iOS 攻击链、AI 漏洞研究与安全行业的下一步
+guest: Bruce Dang
+guest_role: Calif 安全研究员
+tags:
+  - ai-safety
+  - coding-agents
+  - researcher
+  - interview
+  - deep-dive
+  - technical
+summary: |
+  Calif 安全研究员 Bruce Dang 结合 iOS 攻击链、SMB 漏洞和逆向工程案例，解释 AI 能做什么，以及研究者为何仍需复现和验证结果。访谈还讨论补丁质量、内存安全语言、漏洞披露期限、职业培养和模型供应商集中的风险。
+core_ideas:
+  - Dang 称 Calif 不出售漏洞或利用链，已公开展示的研究均已报告相关厂商。
+  - 模型能够自主完成部分平台上的漏洞发现和利用，但苹果平台的复杂攻击链仍需要资深研究员参与。
+  - 虚构崩溃日志和依赖不现实条件的利用结果说明，复现、验证和优先级排序仍是重要工作。
+  - 大量补丁给测试与部署带来压力；内存安全语言可减少部分风险，但不能消除逻辑漏洞。
+  - 嘉宾对渗透测试的前景、模型供应商的权力以及年轻研究者如何培养存在不同判断。
+  - 检测与响应仍依赖资产清单、日志和事件关联，AI 产生的流量既增加数据量，也可能留下可供发现的痕迹。
+id: 936f57d2-5d86-4ecf-b299-1ecda48cdc36
+source: three-buddy-problem
+source_title: Bruce Dang on Calif, iOS Exploit Chains, AI Hacker Takeover
+published: 2026-11
+published_sort: "20261113"
+duration: 3h2m
+url: https://securityconversations.fireside.fm/bruce-dang-calif-ios-exploits-ai-hacker-takeover
+status: generated
+article_path: episodes/936f57d2-5d86-4ecf-b299-1ecda48cdc36/article.html
+base: /episodes/936f57d2-5d86-4ecf-b299-1ecda48cdc36/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/5/5f0c01ff-49f1-4c51-a8f8-f14c0d9bc72e/episodes/9/936f57d2-5d86-4ecf-b299-1ecda48cdc36/cover.jpg?v=1
+generated_at: 2026-11-18T06:00:00.343Z

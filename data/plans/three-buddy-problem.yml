@@ -1,10 +1,10 @@
 source: three-buddy-problem
-refreshed_at: 2026-11-18T05:51:49.901Z
+refreshed_at: 2026-11-18T05:54:08.094Z
 min_duration: 1800
 min_date: "20261113"
 total_candidates: 1
-done: 0
-pending: 1
+done: 1
+pending: 0
 needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
@@ -114,8 +114,6 @@ episodes:
       Jensen Huang out at NVIDIA
 
       TLPBLACK
-    status: pending
+    status: generated
     priority: 1
-    transcript_url: https://docs.google.com/document/d/1Hah6O13XJK0v44lL_sJXvupT0wkl0zqK2Hd-5aGguIQ/export?format=txt
-    transcript_type: text/plain
     transcript_provider: rss
