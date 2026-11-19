@@ -1,0 +1,30 @@
+title: 顾全全：从大模型预训练到 AI 制药的规模化探索
+guest: 顾全全
+guest_role: Geodesic Intelligence 创始人
+tags:
+  - ai-research
+  - startup
+  - founder
+  - interview
+  - technical
+summary: |
+  顾全全回顾在字节参与 AI 制药与豆包预训练的经历，解释结构预测、药物设计和大模型规模扩展之间的关系。他也讨论训练稳定性、团队协作、湿实验和创业计划，并分享对学术研究与工业研发的不同取舍。
+core_ideas:
+  - 顾全全称，Chai 2 的结果促使团队转向结构设计，并以 SeedFold 为基础训练 Seed Protein。
+  - 扩大模型需要匹配数据、算力与训练方案，小模型实验的结果也需要验证能否迁移到更大规模。
+  - 大模型训练需要跨团队检查和充分调研，训练失败可能带来时间与算力损失。
+  - 他计划将湿实验结果用于模型后训练，并设想向药企提供按任务计费的模型服务。
+  - 学术训练有助于培养研究方法，工业研发则提供资源与竞争环境，但成果也可能无法公开。
+id: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5
+source: latepost
+source_title: "189: Geodesic顾全全：预训练有点“无聊”了，但用scaling改变AI制药才刚开始"
+published: 2026-11
+published_sort: "20261119"
+duration: 1h36m
+url: https://podcast.latepost.com/189
+status: generated
+article_path: episodes/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5/article.html
+base: /episodes/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/2/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5/cover.jpg?v=1
+generated_at: 2026-11-19T19:15:18.890Z

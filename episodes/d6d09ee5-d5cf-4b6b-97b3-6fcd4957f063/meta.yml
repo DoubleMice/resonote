@@ -1,0 +1,31 @@
+title: Anthropic 招股书与大企业的 AI 预算
+guest: 张璐
+guest_role: Fusion Fund 创始合伙人
+tags:
+  - ai-products
+  - startup
+  - coding-agents
+  - interview
+  - investor
+  - strategic
+summary: >
+  Fusion Fund 创始合伙人张璐从企业客户的角度解读 Anthropic 招股书，讨论编程之外的 AI 需求、客户留存和算力支出。她结合接触大型企业的经历，分析企业部署、成本与数据约束，以及医疗、基础设施和监管领域的机会与不确定性。
+core_ideas:
+  - 张璐关注 Anthropic 的企业客户留存、增购与非编程收入，同时警惕收入增长和长期算力投入之间的压力。
+  - 企业常先在现有流程中试点自动化，再考虑调整业务；张璐预计大规模部署需要数年，节奏未必像编程工具一样快。
+  - 大企业预算增加不等于回报已经验证，同行竞争、数据隐私和使用成本都会影响采购与部署。
+  - 受监管行业的本地部署、推理降本和细分应用可能为初创企业提供机会，但简单应用也面临模型公司的竞争。
+  - 算力总需求增长可以与某些设备闲置、旧一代 GPU 租金下跌同时发生；物理 AI 部署还需要处理安全和监管问题。
+id: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
+source: latepost
+source_title: "186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么"
+published: 2026-11
+published_sort: "20261106"
+duration: 1h13m
+url: https://podcast.latepost.com/186
+status: generated
+article_path: episodes/d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063/article.html
+base: /episodes/d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/cover.jpg?v=7
+generated_at: 2026-11-19T19:18:55.426Z

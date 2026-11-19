@@ -1,13 +1,13 @@
 source: latepost
-refreshed_at: 2026-11-19T03:03:27.249Z
+refreshed_at: 2026-11-19T18:09:25.571Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 8
-done: 6
+done: 8
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
   - id: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5
@@ -221,8 +221,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-19T18:33:59.828Z
+    transcript_job_id: 1ef5fdd5-d51b-4804-b7bd-502d6326c299_2twfkag4somyfwkh6o_8669c720f52b463d91b309c1bce27bd8,d51e90dc-8ce2-4f11-b2cc-29691aa1f92c_2twee0g4sou2rou03k_4369e62f211243c7b11a48ddfac904a3,e3e0d48f-461e-49bf-bf2d-0f2a26adc1ba_2twnqdg4sp20vg86ps_51a469dfa43045ecb79b6965020b6559,9e0f553f-feaa-4014-aa00-b103ccb64e54_2sn0l8g4sp9k5w114w_af0cb1430efe4a83befe00494aa9c44c,562ac799-823a-4977-b5cb-259b2cf1ba0c_2twwz2g4spdvhz3ncw_2cc652ac1c4a496c84c9a2a3226044b0,38b6aa6a-41fb-4484-8d33-b1ae175aef69_2twcy1g4spl80twhz4_54846405ccf74a5a865c0b27d2f1546c,ea4b6650-6c62-4252-a16f-692b21f64ef2_2twfodg4spsld5sx6o_5aebe9803a0d4b65a8bc31890623ecf9
+    transcript_completed_at: 2026-11-19T18:48:19.989Z
   - id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
     guid: 77706b7f-cf2f-4400-826c-0331ae6c62a8
     title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
@@ -907,18 +911,12 @@ episodes:
 
 
       关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-16T18:15:03.138Z
-    transcript_completed_at: 2026-11-16T18:15:24.211Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.5"
-          }
-      }
+    transcript_submitted_at: 2026-11-19T19:05:57.505Z
+    transcript_completed_at: 2026-11-19T19:11:36.760Z
+    transcript_job_id: 4b502125-ad86-46bc-b343-9584570d09cb_2twl6mg4srh8m55jpc_f4c8bae0bea24667ae0a1a5b3fbe791f,7ed3af69-70b5-47bc-b09a-24e29334b567_2twfkag4srlq1afmyo_be5014461a0f4290bfab0cb6a1922a05,0038f079-29ae-487e-a82c-b8b23885a80f_2twayag4srri9io3y8_2f9ecbaff9d04c3ea650723babd17a6e,f00b41da-b11b-4eec-9caf-70040b6997fc_2u525cg4srswhn2ebk_02034c42d9ed4bc99f83d20b237e766a,bd74afb0-4ee5-4931-aeea-dbeb00d4510f_2twie0g4srwzvm1tz4_0946e8965de6408b869f65e61e7348ac
   - id: 1ba74c4b-43e4-416c-aafe-f191fcb44898
     guid: 1ba74c4b-43e4-416c-aafe-f191fcb44898
     title: "184: 与陈哲的「具身季报26Q3」：Astra冲击后，通用模型会吃掉Robotics吗？"

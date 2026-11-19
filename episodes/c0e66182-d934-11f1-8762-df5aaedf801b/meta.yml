@@ -1,0 +1,28 @@
+title: 币安约 60 亿美元失窃后，谁有权冻结赃款？
+guest: Adam
+guest_role: Llama Risk 首席执行官
+tags:
+  - interview
+  - technical
+summary: >
+  币安发生约 60 亿美元的资产失窃后，安全研究人员、稳定币发行方和链上协议团队竞相追踪并限制资金转移。节目讨论 Aave 市场暂停、Synthetix 调用代币权限，以及 THORChain
+  恢复运行后的风险，也分析了自动化风控和链上价格数据的取舍。
+core_ideas:
+  - 稳定币发行方可以冻结特定地址的资产，Aave 市场冻结则阻止新增存借款，同时保留还款、提款与清算功能。
+  - 攻击者用 USDT 抵押借入 ETH；借款接近抵押率上限，录制时已开始进入清算。
+  - Aave 风险团队希望加快应急响应，但主持人提醒，增加外部信号和自动化控制也可能引入新的复杂性。
+  - Synthetix 团队利用代币授权机制转移被盗 SNX，重新引出协议控制权和介入责任的问题。
+  - Monahan 警告，THORChain 节点在公开归因后继续处理相关交易，可能面临法律风险；节目没有给出最终责任认定。
+id: c0e66182-d934-11f1-8762-df5aaedf801b
+source: unchained
+source_title: "Uneasy Money: What the $6B Binance Hack Revealed About Who Can Freeze Stolen Funds"
+published: 2026-11
+published_sort: "20261105"
+duration: 1h18m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
+status: generated
+article_path: episodes/c0e66182-d934-11f1-8762-df5aaedf801b/article.html
+base: /episodes/c0e66182-d934-11f1-8762-df5aaedf801b/
+visual_notes: false
+thumbnail: https://megaphone.imgix.net/podcasts/c0e66182-d934-11f1-8762-df5aaedf801b/image/1489412f0f136624767b7b79b52b2163.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-11-19T19:14:39.956Z

@@ -1,0 +1,421 @@
+0.03-15.23 | SPEAKER_00: But I would argue it's a good hook to be on. Stopping North Korea from getting money from Binance users is a fine hook. If you find yourself stuck on that hook, you are in a privileged position to actually stop these motherfuckers and get your.
+19.84-40.61 | SPEAKER_00: Hey everyone. Before we start, Unchained is running a listener survey, and it decides real things. Whether there is a weekly recap show, what time the streams go on, what goes into premium, it is anonymous and takes a few minutes. And everyone who finishes it gets a free month of Unchained Premium. Nothing's anonymous, by the way, anymore. So don't.
+40.61-54.56 | SPEAKER_00: Don't rely on that advice. Go to unchainedcrypto.com/survey. That's unchainedcrypto.com/survey, and it's open for another three days till November eighth. Let's go to ads, guys.
+55.36-60.07 | SPEAKER_01: This episode is brought to you by Nexo, the premier digital assets wealth platform.
+60.09-61.10 | SPEAKER_01: Earn daily interest.
+61.47-82.79 | SPEAKER_01: Crypto or borrow funds, all through one platform trusted by more than ten million clients. Find out more at nexo.com. Geo-restrictions, eligibility, and terms apply. Not listening to Bits and Bips yet? It's our weekly crypto and macro market show with Rom Alawalia, Austin Campbell, and Chris Perkins. Search Bits and Bips and subscribe.
+84.26-99.55 | SPEAKER_00: All right, hey everyone! I am here with my co-host Taylor Monahan, security expert, and we have a very special guest this week, Adam Zadkowski at Wormhole, Harbledown, CEO of Llama Risk. So thanks very much for joining us, Adam.
+100.45-105.63 | SPEAKER_02: Well, thanks for having me, Kane. Happy to be here, and happy to join you as well, Taylor.
+106.85-108.22 | SPEAKER_00: Good week for it.
+108.93-117.18 | SPEAKER_00: Risk, huh? It's been a real, real. Are we doing risk? What are we doing about risk? Do we have a plan for risk?
+117.18-119.05 | SPEAKER_03: We are surviving in the risk.
+119.05-120.85 | SPEAKER_00: We have a plan. We have a plan.
+120.85-125.02 | SPEAKER_02: It's a, it's a tough world out there, but we, we do have a plan.
+125.67-133.47 | SPEAKER_02: And it was, it was extremely stressful last week for me, as I think it was for a lot of people.
+133.47-138.40 | SPEAKER_00: For Taylor, yeah, I wasn't stressed. Actually, I wasn't stressed at all.
+138.54-167.11 | SPEAKER_00: Yeah, I was just like, I don't know, man. Like, I don't care anymore. I just don't care. Yeah, it's fine. It wasn't because finance. It was Binance. It was, yeah. It was, it was, it was partially because it was Binance. Partially because it was only six billion, and I was like, that's fine. They'll cover that. See, I'm not kidding. Like, I'm not kidding. I was like, whatever. I was a little... I'll be, I'll be honest. I was a little bit annoyed. I was like, fucking North Korea, man. Like, we don't need that's like six nukes for them.
+167.11-169.91 | SPEAKER_02: We don't need them with any more nukes. So that was annoying.
+170.25-172.08 | SPEAKER_00: And then I like had like a little bit of like.
+172.15-190.75 | SPEAKER_00: Secondary annoyance of like the money launderers. They're going to help them to like launder the money. Um, and then someone pointed out that like, you know, they're buying ETH, and I was like, okay, swings and roundabouts, you know, uh, it's a phrase we have like ups and downs. Like someone's buying ETH.
+191.33-192.37 | SPEAKER_00: At least.
+192.37-194.82 | SPEAKER_02: At least temporarily.
+194.82-198.94 | SPEAKER_00: I mean, dude. Temporarily is all we've got now, like.
+199.68-211.51 | SPEAKER_00: Austin's on the show, so we can, we control the fate, sent him to the Mumbai gulags. So, so let's go through this. Yeah.
+212.06-222.39 | SPEAKER_00: Yeah, so that was, that was my, that was my reaction, and, and we did actually have to do some stuff, so we can talk about that because Synthetix, Synthetix had like eight million SNX.
+222.39-226.64 | SPEAKER_03: I saw you guys robbed them. Yeah, our team got them.
+227.19-229.26 | SPEAKER_03: I thought our team control now.
+229.79-230.79 | SPEAKER_03: Yeah.
+230.79-231.97 | SPEAKER_02: All right, so.
+231.97-235.70 | SPEAKER_00: So like, yeah, walk us through.
+235.70-238.14 | SPEAKER_03: We have the alpha on the show, so I'll say that.
+238.47-260.77 | SPEAKER_03: I have to shout out Zero Shadow, specifically this guy Harrison at Zero Shadow, freaking goat. He just happened to see an alert go off that was like a massive amount of money moving out of Binance, and he put it in the chat. And then I happened to see it, and I wished that I had not seen it, but I happened to see it, and I was sitting there, and I was like.
+261.86-264.46 | SPEAKER_03: Nope, nope. Like my.
+264.46-266.97 | SPEAKER_01: My response in the chat was like, I'm gonna remain super optimistic.
+266.97-274.14 | SPEAKER_03: Let me know when they start dumping the Tether, and like five minutes later, he's like, "I think we need to call Tether," and I was like.
+275.42-284.10 | SPEAKER_03: Yep, and so I call... I didn't call Tether, but I put it in our chat, and I don't know. Like, I mean, I think the stars just sort of aligned on this one. It's like.
+284.67-289.34 | SPEAKER_00: The timing seemed like not, not good timing, right? Like as in.
+289.34-293.43 | SPEAKER_03: Actually, it's been at this time. The last three big, four big hacks now.
+293.43-309.97 | SPEAKER_00: It's morning to me. Yeah, the thing that's confusing to me, it's weird. You know, they're, they're not idiots, right? Like they know when you're asleep. They know when like the primary actors are asleep, right? Like in every single time anything bad's ever happened at Synthetix, it's two a.m. Sydney time. Every time.
+310.64-312.51 | SPEAKER_00: So yeah.
+312.51-337.00 | SPEAKER_02: Certainly, in the, in the middle of the night for, for many of our team when we were in the war room working to freeze, freeze the Aave markets. I should probably preface actually that I'm, I'm here today on, on behalf of the Llama Risk team as the, the risk provider to Aave. So we, we were working long hours into the night on this.
+337.03-339.32 | SPEAKER_03: But you guys, yeah.
+339.32-362.15 | SPEAKER_02: So immediately when we saw the drain, we knew that we we needed to freeze the markets, and so we convened together and and worked out a solution. So we ended we ended up freezing the markets overnight until we knew that the the situation was was resolved. And this was this was for many of our team. It was going into like four four a.m. So it was it was hours and hours that we were working on it.
+362.15-363.11 | SPEAKER_03: Yeah.
+363.11-369.54 | SPEAKER_00: Was that Europe European time zone, or what? What time zone is that? That if you can say, like.
+371.30-379.84 | SPEAKER_00: Was that oh, so was that going to U.S. time zone? Like what? Like four a.m. It seemed like it was morning for the U.S. So I don't understand how that's
+379.94-408.91 | SPEAKER_02: The Binance, no, the Binance incident. When I was, I was in the East Coast at the time. So, so there was a conference going on, LinkedIn NYC, and fortunately we were just coming back from the conference at the end of the afternoon when we were delightfully surprised with with this mess to have to clean up. So, so so East Coast time. This was around. It was oh yes, okay, yeah, okay. And so for our for our colleagues in in Europe, it was we we were.
+409.07-411.42 | SPEAKER_02: Going into late late night, yeah.
+411.74-441.23 | SPEAKER_00: Yeah, even you know it was funny. Like even the Aave thing, right? Like I like, and this is so bad. This is so so bad. And I and I hate this. But like after Celo DAO and everything was fine, what I've learned now is nothing bad can happen to Aave. That is the lesson that I have taken. It's not a good lesson to learn, right? Like I like I've got a bunch of money in Aave, and I like at no point was I concerned about it. I was like, ah, it'll be fine. Like things are fine. Things just.
+441.23-444.97 | SPEAKER_00: Work out. It'll be fine. I mean, there is a sense of.
+444.97-447.94 | SPEAKER_03: I will say that.
+448.86-463.65 | SPEAKER_03: I will say that someone asked me the day of on Twitter. Someone was like, like how like what's Taylor's like swear-o-meter at? Like how rage-filled is she? And I was like, I it caught me super off guard. So I was like, what? Like I've been in a state of like.
+464.45-467.81 | SPEAKER_03: Transcendence, like calm.
+468.25-479.23 | SPEAKER_03: I'm like in my zone right now. Like this is like we're just gonna handle this. Like I don't know what it is. It's like there's so much, so many bad things happen, and then when something this big happens.
+480.19-482.75 | SPEAKER_03: It's like I was completely.
+483.04-485.84 | SPEAKER_00: You feel like you've had pre-season training, and you're ready for it.
+485.84-489.30 | SPEAKER_03: I was just like, "Oh, it's six billion dollars. Let's fucking go!" Like, let's.
+489.60-497.33 | SPEAKER_03: Like what do you know what I mean? And it's like it wasn't even like oh my god, like let's freak out and who do we need to call? It was like.
+497.33-501.58 | SPEAKER_00: But they were like big chunks, right? Like it was like a billion dollars of tether. That's like one hit.
+501.58-509.73 | SPEAKER_03: You tethering, and I was so. Paulo was the same minute. Was like, what's up? And I was like.
+509.92-512.03 | SPEAKER_03: Shit! We are.
+512.97-521.97 | SPEAKER_03: No, tether is the best. But I mean, even Circle stepped up this time. They were able to freeze really fast as well. How is that possible? Circle got.
+521.97-523.00 | SPEAKER_02: Their freeze in just like.
+523.00-535.93 | SPEAKER_00: Like three minutes after tether. Can someone explain that to me? Like because we've talked about this for the longest time that Circle needs like the fucking president to like make a decree before they fucking do anything.
+535.93-542.21 | SPEAKER_03: Circle circle has insisted that law enforcement got in contact with them.
+543.08-550.21 | SPEAKER_03: And that this was what I'm telling you, yeah, and I'm gonna give you the alpha on the show, guys. There's, there's no way.
+550.21-554.27 | SPEAKER_00: There's no way. Like, are we like? How dumb do you think we are, man? Like, come on.
+555.23-559.91 | SPEAKER_00: You know the FBI called Jeremy and was like, "Hey, Jeremy, just a heads up."
+559.91-569.02 | SPEAKER_03: Not that fast, like the thing is, like you know, Binance has been has cooperated with law enforcement for a really long time. They have relationships with law enforcement, like.
+569.66-575.58 | SPEAKER_03: That's like one of the reasons why there was law enforcement on this all weekend long. FBI was in office all weekend long.
+576.10-583.03 | SPEAKER_03: But that it's just it was so fast, and I'm so glad that they froze. But I think that they are, perhaps.
+583.03-584.84 | SPEAKER_02: Changing, changing their.
+584.84-585.73 | SPEAKER_03: Perhaps.
+585.73-586.49 | SPEAKER_02: Strategy.
+586.49-588.96 | SPEAKER_03: Yeah, and especially for this amount of money and.
+589.61-599.26 | SPEAKER_03: You know the knowledge that this is Binance. As long as Binance acknowledged it as like a theft, like right, you know they can get and will get your money.
+599.26-602.25 | SPEAKER_00: Hell, man! Too big to fail, so.
+602.70-613.14 | SPEAKER_00: So, so walk. Can you walk walk me through the because like genuinely and this like again I I understand that I'm retarded but like I didn't even bother to look at the Aave situation.
+613.85-615.58 | SPEAKER_00: So can you walk? What like?
+616.38-622.69 | SPEAKER_00: Adam, can you walk us through the Aave situation? Like what? What? What happened? What? Like yeah, play by play.
+623.07-638.67 | SPEAKER_02: So the the first thing that I should say about this, and I'm gonna I'm gonna preface with this because after the event, my dad messaged me and was like, "Hey, I heard Binance got hacked and funds routed through Aave," and my dad is not somebody who is interested in crypto at all.
+638.67-644.10 | SPEAKER_00: I was gonna say like that's impressive. You would expect to be like, hey, I heard Bitcoin got hacked.
+644.10-652.03 | SPEAKER_03: No, no. My mom has asked me about two hacks. My mom has asked me about two hacks in the history of ever. The first was the DAO.
+652.97-654.79 | SPEAKER_03: And the second was Binance.
+654.79-656.04 | SPEAKER_00: Amazing. Yeah, so.
+656.04-686.04 | SPEAKER_02: So this obviously has has widespread, you know, mainstream media is covering this, but there's nuance to the situation that I think a lot of people are missing, and so they they hear Aave Aave is associated in some way. Does this mean Aave had funds stolen from it? And the answer is resounding no. There was nothing that was stolen from Aave. The the protocol itself worked as it was intended, which is that users can
+686.04-715.05 | SPEAKER_02: supply collateral and create an overcollateralized loan, maintaining the solvency of the protocol and users. So, so suppliers to the to the lending market can always withdraw their money. So, so in this particular case, what we what we're concerned about is that Aave doesn't want to have stolen funds on its books, although it's it's it's not actually interfering with the protocol operation in any way. So that's why we needed to take
+715.05-744.00 | SPEAKER_02: to take action. I think at the time that the funds were drained, and there was about three billion dollars that landed on Ethereum, most of it in stablecoins, Tether and and USDC. The the hacker proceeded to funnel most of those funds through DEX pools, and then about thirty-five minutes into the exploit, they decided to route some of that money through Aave.
+744.00-754.08 | SPEAKER_02: And they did so presumably because they were running out of on-chain liquidity that was immediately accessible to them, and so the next best way of exiting from... And sorry, just to be clear.
+754.08-762.55 | SPEAKER_00: It was like stables into ETH, right? They were like, they were trying to offload the stables into ETH as quickly as possible, and then they hit some.
+762.55-792.55 | SPEAKER_02: Yeah, exactly. Because as as you guys are describing, there there were motions to freeze the the hacker's funds to Tether and Circle, and they were moving pretty quickly actually to to do those freezes. And so the the hacker only had so much time to exit out of the freezeable stablecoins that they were holding into something that would not be recoverable. So in in this case, they were exiting into ETH. So they were supplying Tether USDT as collateral, and
+792.55-821.11 | SPEAKER_02: and then taking an ETH loan against it. And so they they supplied sixty sixty million dollars of USDT and and borrowed forty-five million dollars-ish worth of ETH. And actually, as of as of today, that position has started to enter liquidation because they they opened a loan at the maximum loan-to-value that they that was allowable with very little buffer.
+821.11-827.97 | SPEAKER_02: before it would enter liquidation. So the market's pumped a little bit today, and yeah, and the the position. So if ETH goes up, they
+827.97-830.85 | SPEAKER_00: get liquidated. It's like Binance out for ETH.
+831.04-853.51 | SPEAKER_03: Yeah. Also, it's worth noting that these are the same exact hacker thieves as the LayerZero Calpada situation, which might explain why they were kind of quick to go to Aave because that was sort of like their whole, not their whole strategy, but like they were familiar with that path from the Calpada situation, right?
+853.51-877.32 | SPEAKER_00: So one one question, like I know you said Aave, you know, worked as intended, as like a, you know, decentralized collateralized lending market, which like I think is true. We've talked about this before, right? We talked about this with the fifty million dollar fat finger thing. We've talked about it with Calpada, like.
+877.32-900.06 | SPEAKER_00: Is it a good idea that someone can deposit a billion dollars, and like let's ignore flash loans for a second because like slightly different use case, right? But like, is it a good idea that someone can deposit a billion dollars worth of stablecoins in one block and then borrow like all the ETH? Like, what is what purpose does that?
+
+0.03-0.77 | SPEAKER_00: Surf.
+2.59-32.52 | SPEAKER_00: Yeah, so, so what I would say is that, first of all, the way that Aave works is that it has a configurable toolset of all kinds of risk parameters that it can maintain. And so for an on-chain lending protocol, it's, it's important to have active risk management according to the profile of the assets and as that profile changes. And in particular for the, these assets that were involved, USDT and WETH, these are...
+32.52-57.60 | SPEAKER_00: Some of the, uh, you would say, like, the, the central or, like, the blue chip assets that are listed on, uh, that are used in, in on-chain lending, and they're very liquid assets. And, uh, we size markets according to the risk and the liquidity of, of those assets. So, um, it, it, it was the case that there was, uh, a large amount that somebody could...
+57.60-75.97 | SPEAKER_00: use for this purpose, but it was, there is a, an intended use or a viable use for, for taking these actions to, if, for example, you wanted to short ETH, a legitimate use would be to supply stablecoin and to, to borrow WETH against it. But like a billion...
+75.97-78.34 | SPEAKER_01: dollars, like realistically, like...
+78.94-80.42 | SPEAKER_01: Is it a good idea?
+81.37-101.79 | SPEAKER_01: And, and, and just to be like a hundred percent clear, right? Like these are configurable parameters. This is not us saying like, hey, should we update the protocol to like make it able to stop this? Like we could, like the parameters could exist to make it so that there's some kind of like...
+102.43-107.46 | SPEAKER_01: ratcheting or something, like, do we really need someone to be able to, to short a...
+107.46-116.54 | SPEAKER_00: billion dollars? It certainly is a trade-off that needs to be decided on how much do you want to allow for...
+117.06-144.70 | SPEAKER_00: just open operation of the market, and how much do you want to kind of limit that, that operation, organic, organic demand in order to, like you say, to, like, ratchet the exposure potential. And that's actually exactly work that we, we've been working to implement. So we're, we're building a solution right now that is... So you might be familiar with the, the term risk oracles. So these are...
+144.70-146.54 | SPEAKER_01: Oh, yeah. I'm not taking signals.
+146.54-169.28 | SPEAKER_00: They're taking signals from the, the real world as data, interpreting them into an action that should be appropriate for the, the DeFi protocol, and then executing those. And so, in this case, we're, we're going to be implementing a solution that, that limits the, the borrowing capability over certain time periods, so that...
+169.28-199.00 | SPEAKER_01: No, exactly, because obviously, you know, like, this is not a simple thing, right? Like, as a amateur mechanism designer myself, right? Like, you can't just be like, oh, why don't you just make it hard to do the thing, right? Because it's on-chain and sybil and, and, and, and, right? Like, and, you know, it's very easy if you say, okay, like, the maximum amount that a single, you know, account can borrow through there is a million dollars per minute or whatever, and then you can just sybil it, and otherwise the entire market grinds to a halt, and everyone's like,
+199.00-201.38 | SPEAKER_01: waiting because, you know...
+201.47-213.35 | SPEAKER_01: North Korea has dumped a billion dollars in, and so now no one can borrow for the next month because the ratchet is sitting there. Like, these are all non-trivial things to solve, right? Like, clearly, you guys are trying to balance this, but...
+213.35-231.98 | SPEAKER_00: Well, yeah, there's always a trade-off to any kind of risk management action. And that, and that would go back to the, the situation that has happened on, on Binance, that they have, of course, they have internal security systems in place to, to prevent what happened from an unauthorized withdrawal from the exchange.
+231.98-259.07 | SPEAKER_00: But they're also forced to to constrain themselves by this this trade-off between how much usability and and immediate access to capital do we want to allow versus how much security and sort of decentralized kind of using MPC, you know, multiple signatures across multiple parties, distributed. So how how difficult we want to make it to access those funds and and use put put their money to use.
+259.49-266.97 | SPEAKER_01: You know, it's interesting, right? Because, uh, uh, uh, someone I know, uh, in in one of the groups I'm in was like, do we remember?
+266.97-268.04 | SPEAKER_00: The BitMEX days are.
+268.04-297.38 | SPEAKER_01: Like the daily withdrawal window. And everyone's like, holy shit, you know, we actually didn't all remember that. You were the only one. And it's kind of, you know, it's kind of funny, right? Because there is this like bank run risk that every exchange needs to balance. If you say, you know, if Binance were to turn up today and say, all right, hey guys, you can only take out a billion dollars a day for the next ninety days, it would be over.
+297.76-320.54 | SPEAKER_01: Like you can't say that because immediately the adversarial nature of crypto is people go, oh, you only have a billion dollars and you're like scrounging through, you know, uh, CZ's couch cushions to find the next billion for tomorrow to let us out. And everyone would freak out and start nuking everything and the world would would explode, right? Um, and so you can't just be like, you can't have your money.
+321.12-324.74 | SPEAKER_01: You need to like, and you definitely can't change the rules.
+325.38-355.22 | SPEAKER_01: But at the same time, you've got to have this balance of like, should we allow someone to be able to pull out? And this is a different situation because they pulled it out by like bypassing the actual, you know, security of the the like withdrawal factory that they've created, right? You know, there there wouldn't have even worked, I think, if they had had ratcheting on Binance to like withdraw this. But like, if you couldn't even withdraw at all,
+355.22-357.86 | SPEAKER_01: like there was no way, like.
+358.27-385.12 | SPEAKER_01: The the faucet was completely empty except for like one hour a day. And then everyone at Binance got together and like really focused on that for like that one day. Like, you know, once a day for an hour, they're like, all right guys, like, let's really make sure that no one steals the money during this hour, right? It would make it would make North Korea's lives a lot harder. But you just can't do that because people like, no, I want my money when I want it. Um. So yeah, yeah.
+385.12-411.41 | SPEAKER_00: Yeah, so this this actually reminds me of another point that I wanted to make about the the incident and the response on Aave. So when we convened at the war room and made the decision to freeze the market, I also wanted to talk a little bit about what freezing means because going off of what you you're saying, Kane, about like limiting people's access to their own money, the the one of the big advantages of of on-chain finance is that we can take...
+411.41-434.40 | SPEAKER_00: Remediation, remediating action without like forcing, uh, kind of, you know, uh, limiting control of people's own own capital. And so the action that was taken in this place, we we call it a market freeze, but this is sort of a confusing term. So I'll just, uh, suss it out a little bit. So when when Aave executes a market freeze, that means that
+434.40-458.83 | SPEAKER_00: No one can borrow additional money from the market, and no one can supply additional capital into the market. But it still keeps the the ability for users to repay their debt and to withdraw their money from the capital. So they're they're never actually locked into the protocol, and liquidations continue to to operate as as they normally do.
+458.83-481.36 | SPEAKER_00: And so you could think of this as kind of a one-way valve, where users can always exit, but no new exposure can come in. So this is, this is Aave's way of, of having like a, a way of, of kind of saying we're closed for business temporarily, but we're not going to impact the, the users who are already in the protocol.
+481.45-482.55 | SPEAKER_01: Got it. Got it.
+483.42-490.37 | SPEAKER_01: Yeah, cool. Okay. Um, all right, let's go to ads. We'll come back and we'll, we'll talk some more about this because this is definitely the biggest.
+490.91-492.06 | SPEAKER_01: We can talk about the...
+492.06-493.40 | SPEAKER_02: Yeah.
+493.40-496.14 | SPEAKER_01: Yeah, all right, we'll be back in a minute.
+496.14-514.88 | SPEAKER_02: What if your crypto could do more than just sit in your wallet? Nexo is a digital assets wealth platform where you can generate daily interest on your crypto or borrow funds against your assets. Today, Nexo serves more than 10 million clients. Find out more at nexo.com.
+515.68-534.78 | SPEAKER_02: If you like this show, there's another one from our network you should be listening to. Bits and Bips is our weekly market show. On Mondays, Ram Ahluwalia, Austin Campbell, and Chris Perkins chat about where crypto and macro collide. It's sharp, it's fast, and it has its own channel. Search Bits plus sign Bips and subscribe.
+536.96-566.86 | SPEAKER_01: All right. Yeah, so, so, you know, there have been a number of actions, I guess, taken by, by a bunch of different teams and, and people across the space that jumped in quickly to like try and, you know, limit how much money that, that North Korea could, could extract from this thing. And I think like in the grand scheme of things, this is one of the more successful
+566.86-576.42 | SPEAKER_01: anti-heist maneuvers that we've pulled off collectively. I mean, you know, as you said, it's such a large amount of money. Everyone's like, "All right, we better fucking get our shit together."
+577.17-584.03 | SPEAKER_01: But yeah, Tae, you were saying you, you had some quite, some other questions about Aave.
+584.42-602.40 | SPEAKER_03: Yeah, yeah. So I just want to... So I think maybe let's just take a step back and walk through like the series of that first sort of day or two. It's like the first thing that happens is that Binance gets hacked, right? So there's this large exodus of money that has, that is flowing out of Binance on a number of chains, and...
+603.07-604.19 | SPEAKER_03: On the...
+604.70-625.70 | SPEAKER_03: I guess on like the initial incident response side, we're like trying to coordinate with Binance. We're like trying to get all the addresses. Binance obviously is in their systems trying to shut things down. This one was interesting because there was like the way that DPRK had gotten into their systems made it a bit hard for Binance to just like stop the flows
+626.18-655.04 | SPEAKER_03: perfectly, like as like a hard stop. The attacker did some like crazy shit with 7702 that was like sweeping things. So it's like they had to keep some of the systems on in order to rescue their own money and know what was happening. At the same time, that, that was allowing sort of like the sweeps and the deposits to continue, which then was allowing the on-chain contract to like keep sweeping funds to the attacker. Meanwhile,
+655.49-659.42 | SPEAKER_03: we're starting to see responses from, like, you know, every...
+660.83-669.63 | SPEAKER_03: obviously you have the stablecoins, which are sort of classic at this point, right? They can freeze, they have a blacklist function built into the smart contract. Those are pretty straightforward.
+670.08-681.92 | SPEAKER_03: The second round was like basically everyone asking, what can we do to stop this, right? Um, I think that there was actually...
+682.72-687.01 | SPEAKER_03: Two, I guess there's like sort of two ways to look at the actions that were taken.
+687.42-700.77 | SPEAKER_03: Some of the actions that were taken were, this is like a lot of really stolen money. It belongs to Binance. It's been stolen. It's probably DPRK, right? Sanctioned threat actor.
+700.77-704.42 | SPEAKER_01: Well, I mean, it belongs to Binance users, right?
+705.01-706.62 | SPEAKER_01: You know, yeah.
+706.62-709.31 | SPEAKER_03: But I mean, there's a clear victim, right? There's a clear victim.
+709.80-738.98 | SPEAKER_03: Binance has obviously been a large part of this industry for years. A lot of those token teams have relationships with Binance, right? Because they, by chance, had the token to be stolen. That means that the token was listed on Binance. So there's just like a lot of sort of interesting dynamics at play. I think that the decision that each team was making, and what I wanted to talk about with like Aave, is like some of the teams did make the decision to freeze the assets because it was a...
+739.65-759.39 | SPEAKER_03: Uh, the risk was that they don't want DPRK to have that money. They don't want to support DPRK. They don't want to support theft, et cetera. But I think there's actually a more interesting risk, which is when a huge amount of money gets stolen, that can create secondary risk to markets, right? Or to your token.
+760.16-771.35 | SPEAKER_03: Or to your protocol, or to whatever else. And so I want to ask, like, how does Aave think about those sorts of things, or how do you guys think about those sorts of things, right? Because it's not just so simple.
+771.35-801.27 | SPEAKER_00: The most, the most critical thing to address, I think, with a protocol like Aave that's trying to, that needs to be able to close shop essentially when, when shit hits the fan. So there's been a giant hack that happens, we need to do something about it. So the way that Aave works right now is it can delegate certain risk management actions to a trusted entity. So in this case, it has, it has two different functions. It has the risk stewards,
+801.27-824.59 | SPEAKER_00: and it has the guardians, and both of these are manual multisigs. In the case of the risk steward, it's, it's operated by Llama Risk and Aave Labs jointly. And in the case of the, the guardians, it's a distributed set of, it's a, it's a four of seven multisig that have to align to take action. And, and for this type of incident where we need to close the markets quickly,
+824.59-836.00 | SPEAKER_00: the guardians is the lever that we use. It's the one that has the capability to, to freeze the markets or set LTV zero, basically risk-reducing action instantaneously.
+836.93-856.14 | SPEAKER_00: So the, the, the problem with relying on manual actors is that we're living in an age now where, and, and Elon Musk went, went on the record on social media talking about this, that we're having AI agents that are scanning for exploit opportunities and taking advantage of them.
+856.14-885.42 | SPEAKER_00: So very much like, you know, automated exploit systems that are probably going to be accelerating over time, and we need to have systems in place that are not manual systems that will get a group of signers together and execute. I think that in this particular case, the, the, the guardian signers on Aave did everything that they should have done correctly, and I'm really proud of my, my team.
+885.42-900.02 | SPEAKER_00: How everyone came together, initiated the war room, quickly came to a decision, gathered the signers, created the payload. So it's a whole... there's a number of steps involved in doing these things, but ultimately, we need to arrive at an automated system that can.
+
+0.00-25.98 | SPEAKER_00: Defend adequately against, against, you know, the, the reality of the world that we're, we're faced with. I think that we have a good pathway to do it, and I would, I would point to what I think is a trilemma right now in, in how to appropriately manage risk in DeFi today. So there's, there's really three main paths that we have available to us. So either you have token governance.
+25.98-35.10 | SPEAKER_00: Or you have a delegated operator, or you have an on-chain controller, like a smart contract that has simple logic that it'll implement.
+35.58-63.45 | SPEAKER_00: And all three of these options really have a trade-off that they make in terms of either speed or the verifiability of the action and the consistency of the action, and the, the sophisticated access to, to risk signals that it can use to act upon. So all three of those options we have available have some kind of shortcoming. And what we, what we need to arrive at is a system that can be
+63.45-91.95 | SPEAKER_00: All three of these things at once, so it can, it can work autonomously and, and basically instant, very low latency. It should be verifiable, so it should run on programmable logic that all parties kind of understand and agree on. The, the protocol has knowledge about how the, the operation works and has control over what that logic is, and it should be powered by, by data-rich
+91.95-102.53 | SPEAKER_00: risk signals to be able to derive appropriate responses based on that. So this is, this is kind of a lot of information that I'm, that I'm trying to just art. Just on that loss, just on that.
+102.53-116.80 | SPEAKER_01: Last question, right? Like, you know, call me cynical if you will, but like, the unintended consequences of changing these systems is extremely high.
+117.63-129.57 | SPEAKER_01: Like extremely high, right? Like Aave in particular, you know, we've talked about this in the show many times. Like the worst thing that you can do sometimes is to do something, right now, like.
+130.37-143.26 | SPEAKER_01: Obviously, you guys are thinking about this, and you're trying to be judicious and cautious and careful about how, how you roll these things out. But you know, the most stable complex systems come from
+143.84-170.65 | SPEAKER_01: small components being built up over time, right? That get Lindy, and Aave is one of those. Aave is more complex today than it was when it was ETHLend, right? ETHLend was very simple, very simple set of contracts, and, you know, it now has the scale and complexity that it has, and it's earned it by like layering on these things. But you know, complexity is complexity. Um, and so I do have like a visceral, immediate reaction to like, oh, we're gonna add
+170.65-180.72 | SPEAKER_01: these like off-chain signals and stuff, you know, to, to help defend against these things. How are you guys thinking about?
+180.72-205.20 | SPEAKER_00: Well, I think that the important thing to understand is that with any kind of delegation that the Aave DAO gives to a risk manager, and that is the, the same case for if it's the risk steward, which is a manual multisig, or the guardian, which is a manual operator, it, it's the DAO is always scoping what the capabilities are of what, ah, whoever it's delegating to. So.
+205.57-232.48 | SPEAKER_00: If it's delegating to an, an off-chain system, a risk oracle system, it's not just giving free rein for that risk oracle to just make whatever change to whatever parameter it wants without bounds. So there, there are contracts that sit between the, the off-chain system and the, the Aave markets that are dictating both the, the frequency that the
+232.48-261.98 | SPEAKER_00: that the delegated operator can act, and the bounds with which it can change parameters, and which parameters it's, it's allowed to change. So we, we want to arrive at a system where the, the DeFi protocol is never relinquishing its control to a third-party operator, whether that is a, a trusted single entity or whether that is a risk oracle or whether it's a multisig. We want to, we want to have a system where the, the DeFi protocol is empowered in the sense that it has
+261.98-275.62 | SPEAKER_00: it has ownership over its contracts and all the logic that's running on them. It can remove delegation and it can dictate what the bounds of any kind of delegation are. So.
+275.87-277.74 | SPEAKER_01: And, and, yeah, the really, the really.
+277.74-288.07 | SPEAKER_00: great thing about Aave, in my opinion, is that it is a protocol that is built with lots of modularity and configurability in mind. So.
+288.38-318.27 | SPEAKER_00: There's, there's, there's, there's a spectrum, I think, in how a DeFi protocol philosophy on whether you should be like totally decentralized in the sense that it's all, it's all like, it's, it, the contract's deployed and it can never change, and then you have the other side where it's like totally configurable. And I, I find that Aave has, to me, the right, the right kind of balance of like we need to have certain configurability and be able to adapt and compete as the market develops, but we also have
+318.27-322.59 | SPEAKER_00: the assurance that the protocol is always in control; it's always the owner.
+322.82-350.18 | SPEAKER_01: Yeah, and I mean, you know, again, like there, there's a trade-off space here. Like there's trade-offs all the way down. There's nothing you can do. There's no free lunch, right? Like you, you know, saying we're gonna hermetically seal our contracts, right, on the Ethereum chain, and nothing, you know, other than the like one, you know, input from an on-chain transaction can, can change the state within these contracts. Like Uni, Uniswap, let's say, right, like.
+350.18-357.38 | SPEAKER_01: You know, there's a factory, but like once the thing's there, you know, if there is a bug in Uniswap, it's over.
+357.89-367.90 | SPEAKER_01: There is no mechanism by which you can, you know, like obviously you can freeze the funds that are in there if there's a bunch of Tether in there or USDC or whatever, but like.
+368.00-368.77 | SPEAKER_00: The way.
+369.66-374.96 | SPEAKER_01: Everything else is gone, right? Arguably, you would say, "Well, what are the odds that that would happen?"
+375.01-377.78 | SPEAKER_01: Right, it's been sitting on ETH.
+377.78-379.97 | SPEAKER_00: Yeah, and like, you know, I'm.
+379.97-384.99 | SPEAKER_01: I'm not, I'm not, I don't even know, man, like, but like, you know.
+385.41-413.74 | SPEAKER_01: You would hope, and this is where, in fairness, right? Like I think, you know, the Vitalik's talk, we were, we were talking about this before the show started, right? Like a big chunk of Vitalik's talk was like, you know, formal verification, verifiability, et cetera. A hermetically sealed contract that is formally verified, to, you know, that every state transition is going to work the way that you think, with, with the inputs that you expect.
+413.74-434.27 | SPEAKER_01: Is arguably better, but Aave is not that thing. There is no world where Aave can have that thing because it must have inputs that come from the real world. Once you crack that door open, then now you're making judgment calls about what inputs are okay, et cetera. And so, like, this is not even me saying like, don't add extra checks and balances. I'm just saying.
+435.10-442.04 | SPEAKER_01: Like adding things is, in some way, the most dangerous thing you can do, right? And, and I'm sure you guys are thinking about.
+442.04-467.29 | SPEAKER_00: I, I think that the, the way that the on-chain financial system is going is that there's, there's always, in order to have a sophisticated financial system on-chain, we're always going to need external data that's coming in. And, and lending protocols have demonstrated this because, you know, since, since we've had on-chain lending, we've had to have price feeds that are really critical dependencies that are
+467.29-485.30 | SPEAKER_00: determining what's the value of this collateral, and, and enforcing the solvency for the protocol. That, that price feed goes out, and you lose everything. You know, you, the protocol can become insolvent, or existing users can lose, you know, their, their entire position in, instantaneously, basically.
+486.38-503.60 | SPEAKER_00: This is just, to me, it's, it's the reality that the, that on-chain finance will always be defined by the, how sophisticated sort of information can we have about the real world to power these applications.
+503.96-513.80 | SPEAKER_00: Price feeds have, have always been sort of presented as like, this is just like the, the true number of how this, this, you know.
+513.97-543.65 | SPEAKER_00: the true asset, asset price for this thing. But, but there's, you know, under, under the hood, there's a methodology that's defining what that price is. And that has been pretty simple for crypto assets because we have access to exchange data from multiple exchanges. We can do an aggregation method, and it's pretty straightforward. But we're, we're starting to see with more sophisticated or, or more novel kind of collateral types that are coming on-chain now that this assumption is, is starting to change.
+543.65-552.77 | SPEAKER_01: It's always been wrong, man. Like it's always been wrong. There's no such thing as a price of an asset. It's like a, it's a construct that, like, people don't.
+554.18-558.40 | SPEAKER_01: They like, oh, what's the price of Bitcoin? Right, depends on how much you have.
+559.04-585.60 | SPEAKER_01: Depends on how much you have. Depends on how motivated you are, right? The price of Bitcoin during a hack is not the same as the price of Bitcoin not during a hack, right? Because you have a motivated seller that is willing to sell, and therefore, you know, just saying like, "Oh, yeah, it's mid-market on Binance or whatever," right? Like, what happens if Binance is having a bad day? So I think it's, it's never, it's unfortunately never been that simple. Anyone who's built an oracle knows.
+585.60-609.23 | SPEAKER_01: You know, you go down a rabbit hole really quickly. You're like, oh, it's just like pointed at that price. CoinGecko, those guys are pretty accurate. And it's like, no, no, well, hang on a second. Like, what's the latency on CoinGecko? Oh, it's fifteen minutes. Okay, well, so it's the price fifteen minutes ago. Like, it's, it's unending. As I, as I know, you know, right? But like, it's not a trivial thing to know about the real world, unfortunately.
+609.23-617.26 | SPEAKER_00: And with, and I'm, I'm starting to get towards the, the novel asset class that's, that's becoming popular lately. So tokenized stocks are.
+617.47-619.24 | SPEAKER_00: The latest craze.
+620.42-649.42 | SPEAKER_00: And, and they've been coming to Aave. We, we have a tokenized stock instance on Base Chain that just deployed two, two months ago. And this asset class has some unique characteristics. And so when you're creating a price feed, you have the, the normal market trading hours, and then you have the overnight session, and then you have the early morning session. And the, so you have multiple exchanges where you're getting this data from, and with varying sort of like
+649.42-668.14 | SPEAKER_00: you know, liquidity and various kind of like, like trading volumes that happen on these exchanges, and having to stitch together between the different trading sessions to have a coherent price between them. And this is a problem that, that we've been working with, with Chainlink on. Chainlink is, is.
+668.14-681.97 | SPEAKER_01: Dude, like, so when, when we first launched WTI, right? Like, this is hilarious, right? So like, Chainlink and Synthetics, when we were first launching our, our crude oil prices, right? You got Brent and WTI.
+681.97-682.86 | SPEAKER_00: Remember that, actually.
+682.86-708.20 | SPEAKER_01: Yeah, yeah, you got, you got the, you got these two options, right? And it took six months, man. It took six months to find out what the price of oil was on-chain, because you couldn't trust this particular price service, this particular price service. You had to aggregate them, but then you couldn't trust the aggregated price, and then, you know, they had like.
+708.20-722.46 | SPEAKER_01: The, the, the complexity of trying to construct information about the real world is just like so much higher than your intuition, um, and, and it's just, it's a really hard thing to do. Um, it's a really hard thing to do.
+722.56-748.75 | SPEAKER_00: And and what we believe is that there's there's always been risk risk judgment that has been embedded into how we construct price feeds. And going back to crypto price feeds, it's like, what's your aggregation method on how you derive this price? Because there's yeah, multiple different strategies you could choose. And different oracle providers choose different strategies, whether it's a median or it's a volume-weighted asset price, for example.
+748.75-777.74 | SPEAKER_00: And as we're getting more types of financial products that are coming on-chain, we're starting to recognize more and more that there's there's much more complex risk judgment that is involved in in creating price feeds for these assets. And it's it's our belief that there is kind of an un sort of an unrecognized layer of the stack of power in the financial system for for on-chain products.
+777.74-806.38 | SPEAKER_00: Because we have data infrastructure through oracle networks like like Chainlink, which I'm I'm a big fan of Chainlink personally. They have proven that they're they're one of the best off-chain data infrastructure providers for for blockchain networks. But what we believe is that there's there's a risk layer that is is not yet fully kind of understood, and it's now possible for
+806.38-832.69 | SPEAKER_00: Risk managers like LlamaRisk and and other risk managers in the space to kind of take advantage of this opportunity because of its Chainlink CRE is the Chainlink runtime environment where developers can produce their own custom oracle logic within Chainlink infrastructure. So that risk judgment call no longer has to be kind of offloaded to a particular provider.
+832.69-833.57 | SPEAKER_01: Baked, baked, baked, baked.
+833.57-863.41 | SPEAKER_00: It's not baked into the price feed. It's something that a risk manager or a protocol team can develop their own custom methodology on. On how do we create pricing for this asset, or how do we create some sort of risk judgment that how do we that might action upon our protocol to protect it in various conditions. We can run that logic and and own the logic, although it runs off-chain. We can own
+863.41-890.34 | SPEAKER_00: what workflows are running and integrated into our on-chain system. So this is really what's exciting to me is that now for it's really the first time this has been possible to have like a neutral infrastructure that has proven high integrity, where developers, risk managers, protocol teams can implement their own custom logic into into these off-chain systems that integrate with with the on-chain component of the system.
+891.01-900.03 | SPEAKER_01: All right, let's let's go through a couple more of the incidents here. So one involved synthetics. Um, so I can
+
+0.00-7.23 | SPEAKER_00: I can speak to that directly. So, so we got up, and I think like twenty.
+8.00-36.29 | SPEAKER_00: Maybe twenty million or twenty-five million or something like that. SNX, like, solidly like ten, fifteen percent of the total supply of SNX is on Binance, right? So anything happens with Binance, I'm like, definitely that's waking me up, right? So, so it was my morning, and I was like, okay, let's figure out what's going on here. You know, we, we identified the wallet. I think it was about nine million SNX had been stolen, but.
+36.29-64.10 | SPEAKER_00: Because Synthetix has historically said, "Eh, there's nothing we can do." They didn't bother to do anything with it. They just let it sit there. They're probably like, "Yeah, we got years before these guys fucking figure their shit out, right?" But unfortunately, it was, it was not to be because we were like, "All right, hang on a second. This is clearly North Korea's biggest hack in history. Like, we cannot sit here and, and do nothing. Like, let's go back to first principles and ask the question, like, what can we do?"
+64.10-87.05 | SPEAKER_00: Right, and, and it's funny because I, I vividly recall these debates in the Synthetix Discord in like 2019, and I even had a clanker go back and like find my prior statements about like what I, what did I say about this, right? And, and there was, at the time of the Kw hack, I was like, listen, we have proxies.
+87.05-111.38 | SPEAKER_00: So we could do anything. A proxy allows you to do anything. We could replace the entire contract with one token that's owned by me and call it a day, right? So you have to, you have to be aware of the, the, you know, kind of power that the, the Synthetix DAO has, right? Which is ultimate power to do anything to any part of the system, to be completely clear.
+111.38-124.11 | SPEAKER_00: And like that statement is out there, like at the time of this, right? But then the caveat to that statement is, but we would never do that because, like, you know, vibes and decentralization and stuff, right? And then it would be guys be.
+124.11-127.58 | SPEAKER_01: It's being prosecuted and banned, it's in your Twitter.
+127.58-146.85 | SPEAKER_00: Exactly right, and, and that was kind of it. Like that was it. No one ever challenged that for like another like six fucking years, man. It's crazy. So the thing that we explicitly said is we could replace the token authority contract and the, the token state and change the state.
+146.85-176.17 | SPEAKER_00: And this was in relation to SYNTH, right, which was like a sub token inside it. But we could just go and say the guy that has eleven billion synthetic ether, which at the time he had, has zero, right? We could do that. We had the ability to do that. We chose not to. Instead, we paid him I think one hundred ether, and he traded through the oracle. We fixed the oracle. Speaking of oracles, right? Like we got some history with oracles. We fixed the oracle, and, and he traded through the oracle and.
+176.17-184.97 | SPEAKER_00: Sold the eleven billion synthetic ether that he had for like a dollar or whatever, right? To close it out. So then we were like, ah, see, like all we did was change the.
+184.97-187.43 | SPEAKER_01: Oracle. It was fine. Like we didn't, you know.
+187.43-190.43 | SPEAKER_00: No hand of God involved here at all.
+191.04-216.61 | SPEAKER_00: Which doesn't stand up scrutiny in hindsight, but whatever. And so we said, let's go back to first principles. And what options do we have here? And I cannot tell you how fucking retarded I would have to be in the level of retarded that this never occurred to me that we could do this. We always, whenever we consider something like this, it was like we would have to change the token state.
+216.61-237.06 | SPEAKER_00: Right, but no, actually, there's a much more elegant solution that the clanker found in like seven seconds. It's like crazy. You spent your whole life doing this shit, and then the clanker is just like so much smarter than you. And like, liter... it was like, why don't you just use the token authority to create an approval to transfer the tokens?
+237.94-243.62 | SPEAKER_00: And I was like, no, no, no, we can't do that. Literally, like, this is in the office. We were talking, and I was like, no, no, no, that wouldn't work.
+244.08-253.07 | SPEAKER_00: We can't do it because it wouldn't work. And one of the guys like Opus is pretty convinced that it would work. And I was like, fuck that guy. He doesn't know what he's talking about.
+253.07-254.71 | SPEAKER_01: Create an approval. Yeah.
+254.71-260.14 | SPEAKER_00: It just created an approval, and so we switched the token state, the token authority out.
+260.14-263.87 | SPEAKER_01: Solid rug. That's a solid, and just create an approval.
+263.87-281.64 | SPEAKER_00: And then transferred the tokens to the DAO. It was so simple. It was so fucking simple. Um, and it just never had occurred to us. And it was even to the point where I was like, man, surely we thought about this. And I went back through everything, and at no point could I find anything where we thought.
+281.64-285.56 | SPEAKER_01: It's so interesting. So this is, I think. Okay. So we didn't want.
+285.56-290.45 | SPEAKER_00: To try, this is the thing we didn't want to try. We never. We didn't.
+290.47-291.84 | SPEAKER_00: We didn't want to try.
+291.84-293.56 | SPEAKER_01: Okay, so we'll probably talk.
+293.56-294.62 | SPEAKER_00: Figure out a solution.
+295.07-301.34 | SPEAKER_01: We'll probably talk about Thorchain in a minute here. I don't actually want to talk about Thorchain, but we will. But the biggest.
+301.89-308.96 | SPEAKER_01: Thing that we ask teams to do in crises like this is we ask the question: What can you do?
+308.96-312.18 | SPEAKER_00: Try. You asked them to try. What a crazy thing to ask them to do.
+312.18-324.99 | SPEAKER_01: And like we can lead them, we can hold their hand, we can morally support, we do all these things. But ultimately, it is the team and the team alone who can figure it out or cannot figure it out.
+325.09-334.11 | SPEAKER_01: And everyone has a threshold, and everyone has illogical and logical reasons for where that threshold is, but.
+334.66-352.65 | SPEAKER_01: I think that like what you've just said hits the nail just on the head. It's like there was never a situation prior to this that was the right combination of circumstances that got you to like really actually sit down and ask the question in like a in a fully like authentic.
+352.65-371.36 | SPEAKER_00: I mean, since 2019, right? Yeah. Like since 2019, like that's seven years ago now, right? Yeah. Like in in almost a decade, we were like, no, we've litigated this. We had a conversation at Discord. We decided how it will be, and then we just shut that part of our brain off and threw away the key and never thought about it again.
+371.39-373.22 | SPEAKER_01: But also, there was nothing.
+373.92-383.61 | SPEAKER_01: Like I don't know, people ask me all the time, like, well, what's the threshold then? And they want me to like put like an arbitrary threshold, like if it's a million dollars, then you have to do so. No, that's not how it works. Like.
+384.04-386.49 | SPEAKER_01: A huge number of circumstances, and.
+386.52-393.72 | SPEAKER_01: And it's like the it's the totality of all those circumstances that determine like when things can happen.
+393.72-412.58 | SPEAKER_00: But the Overton the Overton window has shifted. Arbitrum shifted it. Arbitrum like after Arbit like literally in the there was one guy that we were like we're in the office and again we're talking about it and and I think there's only one person that was like uh really and I was like listen after Arbitrum.
+413.31-425.00 | SPEAKER_00: You can't sit here with a straight face and have the power to do it and not do it, right? Yeah. And so, yeah, we were like, fuck it, like let's let's not.
+425.00-428.33 | SPEAKER_01: By the way, Arbitrum did it again too. They got I know.
+428.33-454.07 | SPEAKER_00: Of course they did. Of course they did. And on some level, they're now on the hook for doing this, right? But I would argue it's a good hook to be on. Stopping North Korea from getting money from fucking Binance users is a fine hook. If you find yourself stuck on that hook, you are in a privileged position to actually stop these motherfuckers, and you should. Sorry.
+454.07-463.27 | SPEAKER_01: Yeah, and and again, things did have to come together because there was actually like everyone was flying to Mumbai, like.
+463.27-465.24 | SPEAKER_00: Not a certain amount.
+465.24-479.07 | SPEAKER_01: There is a certain amount of fate that like plays a role in in, you know, the stars aligning and stuff. So yeah. Um. But I just I don't know. I find it all so interesting. I think it's also like worth acknowledging just since we've been talking about risk, like.
+479.58-487.39 | SPEAKER_01: There is a risk to doing these things and to having these controls, right? And so, a lot of times people again.
+487.39-491.07 | SPEAKER_00: Like if North Korea fucking turns up and tries to sue me.
+492.21-493.46 | SPEAKER_01: That's a risk.
+495.68-501.35 | SPEAKER_01: Gonna be a fucking dumbass lawyer alone out in North Korea, but so yeah.
+501.35-522.66 | SPEAKER_02: In a really yeah like general sense for for anyone who's building a protocol or or needs to to to manage the protocol operations, um, it's seems kind of simple, but like just having a game plan beforehand for any kind of incident that could happen and what is your a pre-agreed response action.
+522.66-539.12 | SPEAKER_02: Is really really great practice just just in general because I don't think that anybody is really can be prepared fully when an incident happens and you have to respond to it. How chaotic it gets very quickly. So if you haven't been in if you've been in those situations, then you know the alternative.
+539.12-559.05 | SPEAKER_00: Is just be in the situations enough where you just don't care and you give zero fucks and you can think clearly. It doesn't matter. Like as I said, my heart rate went up. Like my heart rate was like zero beats per minute higher when I found out about this. I was like, all right, what are we gonna do? And we looked at it and we're like, yeah, fuck it, let's just do this. Like.
+559.05-560.33 | SPEAKER_01: It's wild. It's wild.
+560.33-568.49 | SPEAKER_00: Yeah, I wouldn't recommend that as like a life choice to go through that journey. But like, if you happen to have been through it, then it's it's yeah.
+568.76-571.47 | SPEAKER_02: So it's it's a good place to be in, in your opinion.
+571.47-575.75 | SPEAKER_00: Good place to be in. It's not a fun. It's not a. It's not a good process to go through to get there.
+576.45-586.21 | SPEAKER_00: So what else have we? What else? What other? There has to have been some other. Thorchain. Let's talk Thorchain. What other? What were the other things out of this?
+586.34-607.71 | SPEAKER_01: The janky ass fucking protocol. Thorchain double spent immediately during the hack. The hack. Well, sorry, the hack happened. They start laundering the funds through Thorchain, of course, right? Thorchain somehow double spent, meaning Thorchain paid out because there was a one block reorg on Ethereum. I just want to emphasize, like, I'm sorry, what?
+608.51-616.83 | SPEAKER_01: That you, your protocol is so janky, bro. What the fuck? Like this is a core thing. Like you have to process the swaps.
+616.83-619.90 | SPEAKER_00: Uncle's, Uncle's. What about Uncle's?
+619.90-646.55 | SPEAKER_01: I'm sorry. What? So anyway, so Thorchain, this happened. This happened. Luckily for Thorchain, they double spent to a person who's like a Thorchain bolt member or whatever. So he returned the money, but that doesn't fix the underlying bug because, like, spoiler, there's there's little one-block two-block reorgs that happen constantly. So they had to turn off, and then they had to push an update. And here's where it gets really.
+646.55-655.33 | SPEAKER_01: Nasty, and I'm I'm gonna be just super blunt about this. Like this is nasty shit. This is we are very firmly.
+656.13-665.15 | SPEAKER_01: The U.S. feds are have set them up by hook, line, and sinker, and Thorchain has taken it. So they shut down on Friday.
+665.95-676.42 | SPEAKER_01: Because of this reorg, so because of the protocol problem, they literally shut down the protocol. Or most, I guess there was a couple chains that were still on, but like the whole thing was basically off.
+677.89-683.90 | SPEAKER_01: In order to turn back on, they had to update the code that the Thor nodes run.
+685.28-693.37 | SPEAKER_01: To fix the bug, right? Because you can't just have like double spends going through left, right, and center, right? The protocol is going to lose money. That's dangerous. That's bad. So, especially once.
+693.37-697.44 | SPEAKER_00: Someone sees that it's a thing that can happen, right? There becomes a next bug factor.
+697.87-701.02 | SPEAKER_00: Wait a second! I didn't realize that this could. Yeah, yeah, yeah.
+701.02-716.19 | SPEAKER_01: Especially with the volume being hurled, I mean, just freaking guys. The laundering on this is like nothing anyone has ever seen. It is faster. It is harder. The, I think there's like already like fifty thousand addresses. Like it is a wild amount.
+716.48-733.03 | SPEAKER_00: My, my sense from the timeline is that like they stumbled across this like eight days before, as in like realizing that they'd be able to take over the, the roll infra. Yeah, yeah, yeah. Sorry, as in North Korea.
+733.74-736.15 | SPEAKER_00: October twentieth or something, right? It was like the timeline.
+736.15-739.56 | SPEAKER_01: No, so we have on chain going to October eighth.
+741.20-746.02 | SPEAKER_00: But like, that's not, surely that's not enough time to like get your laundering.
+746.02-754.79 | SPEAKER_01: No, no, they were, they were also still laundering Bitcoin. Done doing Bitcoin. Bitcoin. Three weeks ago, four weeks ago now. Five weeks ago, maybe.
+754.99-756.44 | SPEAKER_01: Yeah. So.
+756.44-760.13 | SPEAKER_00: So their laundry, their laundry was already cranking when this happened.
+760.13-770.88 | SPEAKER_01: Yeah, they just started bringing in. It seems like they found some new guys who are using like some really crazy automated scripts. Like, and we've seen them script stuff before, but this is next level.
+770.91-771.94 | SPEAKER_00: It's in close.
+771.94-780.66 | SPEAKER_01: Yeah, so there's a human in the loop, but there's all... Yeah, I think there's a Claude in the loop as well. Maybe not literally Claude, but it's one of them.
+780.66-783.47 | SPEAKER_00: Probably Obliterated GLM.
+783.47-789.57 | SPEAKER_01: Yeah, there's just a lot going on. So this is where it gets nasty for Thorchain, though, is like.
+791.10-801.38 | SPEAKER_01: So they're turned off. Okay, they have to do a distribution to fix the vulnerability. During this time, Thorchain is not processing any stolen funds.
+801.89-814.25 | SPEAKER_01: During this time, over the weekend, the FBI, IRS, CIA, U.S. Secret Service release a formal statement attributing the hack to Trader Trader, which is North Korea. It's as.
+814.25-822.62 | SPEAKER_00: Wait, can we? Sorry, just as like a, a minor aside here, who in, we should ask our friend, but who gets to decide these names?
+823.01-825.70 | SPEAKER_01: Trader Trader, um, Trader Trader.
+826.21-854.32 | SPEAKER_01: They're all security researchers. Trader Trader is a really old name. I don't know who decided it, but it was back when they originally would always hack people through these malicious trading applications. So they would get decentralized exchange operators to run these applications, and so it's like a funny little pun. You get it, Trader Trader. It's Trader, like an on-chain Trader, and then you get, you know, betrayed Trader.
+854.91-859.30 | SPEAKER_01: Because, see, we're so clever.
+859.30-860.99 | SPEAKER_00: But like Lassiter's, like.
+860.99-867.56 | SPEAKER_01: Yeah, that Lassiter is a security researcher. Like, it's the security community that names you. Get to name, name.
+867.66-880.54 | SPEAKER_01: You find, if you find an organized that collects all the intel around a new campaign or a new rat group or a subthread, right? If you do, if your work is good enough, you get to pick their name.
+880.54-888.16 | SPEAKER_00: You get to pick their name. It's like naming a star. If you find a star, if you discover a star, you get to name it. So, like, I do wonder.
+888.16-889.25 | SPEAKER_01: Whatever you.
+889.25-897.30 | SPEAKER_00: Do wonder what they think about this like internally, right? Like those teams, like they must have their own teams, surely, like their own team names.
+897.30-900.01 | SPEAKER_01: It's actually funny. Our friend asks, he, he calls them Trader.
+
+0.00-1.33 | SPEAKER_00: Trader too, but he doesn't know any.
+1.33-9.95 | SPEAKER_01: Yeah, that's what's, that's what's crazy is like internally, like it's like a meme now where like he knows the name of them based on the external.
+9.95-12.60 | SPEAKER_00: Yeah, he's different though. He's in a different group and.
+12.60-17.26 | SPEAKER_01: He's in a different group. He's in the like shitty snowman. Sorry, he's in the one that talks to.
+17.26-19.04 | SPEAKER_00: Taylor and Kim.
+19.04-20.47 | SPEAKER_01: Yeah. Yeah.
+20.73-23.39 | SPEAKER_01: Yeah, I don't think anyone from Trader Trader talks to me, so.
+23.39-39.33 | SPEAKER_00: So, but they all look up to Trader Trader. Those are like the big boys. They're like the serious OGs. Like, it's really, it's fascinating. The culture is like just impeccable. Okay, so back to Thorchain. Okay, are we ready? This is so bad.
+40.74-68.90 | SPEAKER_00: Halloween Saturday, FBI attributes formerly to Trader Trader. Big fancy statement, puts addresses out there, and they explicitly call out the Thor nodes as the first party in the "how you can help" section. They explicitly ask the Thor nodes, and then like RBC guys, whatever their name for sex is, VASP's, right? This is like the swappers, whatever. They name all these different parties that are going to be
+68.90-71.40 | SPEAKER_00: having funds go to them, but the first one of the
+71.40-74.38 | SPEAKER_01: asks Thorchain for help.
+74.38-86.37 | SPEAKER_00: They asked Thor nodes to block. They literally asked Thor node operators to block the transactions involving assets, the involving the stolen assets, and then provide us
+86.37-90.06 | SPEAKER_01: something for Chain is inclined to comply with.
+90.06-98.30 | SPEAKER_00: I mean, absolutely not. So, um, but but they they they made a very explicit request.
+99.33-102.24 | SPEAKER_00: So that's that's some nasty work, okay.
+103.30-109.07 | SPEAKER_00: You know, we like feds when they're helping us on hacks, but like when they're officially calling you out by name.
+109.47-128.61 | SPEAKER_00: This is bad. And this is not all. The other ones are like, yeah, also, if you run like a centralized service, or be aware. Yeah, no. Thor nodes, capital T-E-H-O-R-N. Yeah, you like, they were like full bore. Okay. So then, the next thing that happens
+129.79-146.21 | SPEAKER_00: is, and this is just all foreshadowing for what's coming into the pipeline, you guys. Okay, so the next thing that happens is that all the Thor node operators and all the Thor node builders comment on this article and basically say like, we can't do anything, which is a really bad plan because the whole
+147.26-163.37 | SPEAKER_00: purpose of this attribution thing, right, is to put everyone on notice that these addresses and these stolen funds are North Korea, and that makes them fucking sanctioned. Okay, they are sanctioned as hell. This is an OFAC thing. This is criminal liability. This is not regulators anymore, right?
+163.37-167.82 | SPEAKER_01: DOJ shit, right? Like you're now like at the top of the
+167.83-169.33 | SPEAKER_01: three-letter chain, yeah.
+169.33-179.97 | SPEAKER_00: Okay, and the thing about OFAC and sanctions law is that it actually makes a huge difference whether you know, versus not knowing, and so.
+182.40-204.38 | SPEAKER_00: Now they've formally attributed. They said it's DPRK. They've explicitly called out Thor node operators. The Thor node operators have read this thing and acknowledged that they read this thing because they are incessantly talking about it on the fucking timeline and on fucking podcasts and in the fucking Discord and the fucking public. The next thing that they do is they do a private distribution
+204.38-218.43 | SPEAKER_00: for the new updated Thor node that they released to all the Thor nodes, the Thor nodes then vote to turn the network back on, and in doing so, they process transactions that were involving addresses that were explicitly on the FBI's list.
+220.32-236.87 | SPEAKER_00: Uh, and now it's turned back on. It's like they've already done like almost two hundred million dollars in volume for DPRK in like two days. It's crumb. What's gonna happen next, guys? I don't know, but uh, I'm fucking over our builders going
+236.87-244.15 | SPEAKER_01: they're like, talk about commitment to the bit. They're extremely committed to this bit, like.
+244.15-259.97 | SPEAKER_00: I, I have such disrespect for Thorchain. I hate them. I think they're shit. It's junk. Like I have so many different problems with them. But at the end of the day, I do not want to see builders going to prison. Period. End of conversation. They don't belong in prison.
+262.08-288.82 | SPEAKER_00: You got it, was a warning shot. It was such a loud warning shot. It was the same warning shot that they shot in 2022 when Ronin got hacked, right? And we learned our fucking lesson. And it's so, it is so painful to me because it's like watching, it's like watching the same slow-motion train wreck again. You know, and we're not, Ronin is still sitting here waiting for his next fucking trial.
+288.82-290.05 | SPEAKER_01: Yeah, it's not, it's not.
+290.05-293.60 | SPEAKER_00: And that was weird. Ronin hack has.
+294.88-296.64 | SPEAKER_00: This is like if, if.
+297.98-300.54 | SPEAKER_00: It's like if Ronin, Ronin and Alexei were like.
+301.82-312.14 | SPEAKER_00: Like Ronin gets hacked, the FBI is like, "This is DPRK. Don't touch these addresses." And then they updated Tornado Cash, like the
+312.14-313.66 | SPEAKER_01: Yeah. Yeah.
+313.66-319.95 | SPEAKER_00: Who explicitly let the Ronin funds go through? Like, we would be done with that.
+319.95-322.28 | SPEAKER_01: It's crazy. It's crazy. It's like.
+322.63-345.98 | SPEAKER_01: So crazy. There, there's a level of delusional mess that, as I said, like they're committed to the bit of like, no, no, no, we can't do anything, and therefore we can do anything that we want because of this, we can't do anything. And the problem is, you know, as we saw with fucking Tornado, like they got Alexei's phone, clearly. Like we don't know exactly where those fucking.
+346.03-354.09 | SPEAKER_01: That chats came from, right? But then they just screenshot the like thing where the guy's like, "Holy shit!"
+354.25-380.83 | SPEAKER_01: Yeah, but it's not even a bad line. You know, in context, that it was like, "Holy shit! Like we should, like we should stop this, right?" And then and they make it out like there was like, "Ah, fuck these guys, we're not going to do shit." And it was like, "No, no, that's not what the message was saying," and you know it. But you know, in the fucking court of law, you get to put up a screenshot of like the one crossed out one line of like.
+380.83-381.94 | SPEAKER_00: Rest of the lines.
+381.94-384.27 | SPEAKER_01: They don't have to put the rest up. They can do whatever the fuck they want. So.
+384.27-402.99 | SPEAKER_00: And I would just say the lines for this are way more. They're so much worse. Free Roman Storm hashtag. Like I don't, I genuinely, for all the issues I have with Thorchain and their decisions, and like every, I just disagree with them so vehemently. I do. I still do not want to see.
+402.99-413.67 | SPEAKER_01: It's bad precedent, right? Like it's bad precedent to to be even fucking getting close to this thing.
+413.67-427.20 | SPEAKER_00: Also, have you seen these Thor node operators? Like they—they're not prison guys. This is not—you put me in prison. Like this is not going to end well. Like I don't know.
+428.48-448.16 | SPEAKER_01: Oh man! All right, let's let's wrap it up here. DevCon. None of us are at DevCon. Well, actually, Austin. Austin's at DevCon. Oh, sorry. The French thing. Let's do the French thing quickly. So Zach. Zach found that a bank got heisted.
+448.44-450.11 | SPEAKER_00: A bank got hacked, guys.
+450.11-461.56 | SPEAKER_01: But also, this bank has like what, two and a half times as many assets as Binance, two hundred and thirty-five billion or something. And this is like a bank that all of them never heard of. Banks have said.
+461.56-463.16 | SPEAKER_00: Or this is this is still.
+463.65-464.74 | SPEAKER_00: Yeah, no, this is confirmed.
+464.74-467.87 | SPEAKER_01: This is Zach. This is Zach. No, no, no. Confirmed by Zach.
+468.03-469.66 | SPEAKER_00: No, confirmed by the bank now.
+469.92-471.43 | SPEAKER_01: Oh, they've said it. Okay, cool.
+471.43-473.39 | SPEAKER_00: Yeah, a little press release saying like.
+474.27-478.23 | SPEAKER_00: It was a super sophisticated external attack, and it's going to be.
+478.23-486.64 | SPEAKER_01: It always is so sophisticated, so fucking sophisticated. You would not believe the sophistication of this thing.
+486.64-488.79 | SPEAKER_00: So they are more sophisticated than any.
+488.79-489.87 | SPEAKER_01: Never seen.
+489.87-499.01 | SPEAKER_00: They're one real ass bank. Two, yeah, it's like two hundred billion assets under management or something. Like it's it's a real, like you guys, it's a real bank. It's a French bank.
+499.01-510.02 | SPEAKER_01: But let's not forget, banks lose money all the time. The only reason why it's not a problem is because the fucking database, and they just like call up the other guys and say, "Oh, sorry, oops, fat fingered it," like.
+510.02-524.37 | SPEAKER_00: Yeah, and that's what people were like. People were saying earlier because CZ actually went on an interview and said like, you know, like you know, sort of all eyes are on us right now. But like, wait until you know my favorite thing to realize the.
+524.37-527.20 | SPEAKER_01: My favorite thing is the CZ stick of like.
+528.64-556.98 | SPEAKER_01: Pretending like he's just heard about something for like the first time, and and you could see him being on there, being like, "Guys, I've just heard about these banks. Do you realize how much money these guys have? So much money, it's crazy. Why do they have this much money? And they're just losing it. I didn't even know these guys existed. One of my team told me today about these banks. What are they doing over here? Why is everyone paying attention to us?"
+557.14-561.59 | SPEAKER_01: It's like, bro. Like what? Like come on, man. Like I love it.
+561.71-562.65 | SPEAKER_00: I love it.
+563.38-568.75 | SPEAKER_01: It's a good bit. It's a good bit. Every time something weird happens, he's like, "I just heard about this."
+569.02-571.58 | SPEAKER_01: One of my team just told me in a meeting this morning.
+572.22-573.34 | SPEAKER_00: Um.
+573.74-600.79 | SPEAKER_00: So yeah, so the bank, the bank got hacked. We don't know how exactly it is confirmed. The reason why Zach XBT knows about it is because they apparently stole the money out of the accounts at the bank, and they put them in, I guess, new bank accounts somewhere else. And then from those bank accounts, they then purchased cryptocurrency via a whole bunch of centralized exchanges, because of just the volume and everyone being on high alert due to the Binance hack.
+600.79-630.68 | SPEAKER_00: I'm guessing that there's like a whole bunch of people having a whole bunch of conversations like, "Wait, this is super anomalous behavior. What the hell is going on?" And then when they were tracing it on chain, it's basically huge outflows coming from all of these centralized exchanges, and then like commingling, and then doing some really filthy laundering. And so Zach was able to like basically cluster all that activity, trace it back. I assume talk and more with the centralized exchanges, and then apparently.
+630.68-641.40 | SPEAKER_00: The bank was not aware. He was. Zach was trying to like freeze funds, coordinate with the exchanges and stuff to freeze funds. But in order to do that, you have to have some confirmation that this is like illicit activity.
+641.40-652.11 | SPEAKER_01: Yeah, I mean, in the real world, yes, you can't just be a guy on the internet that like tweets things, right? It works in crypto, but not for banks. I don't think. I don't think they do.
+652.11-679.52 | SPEAKER_00: So he wanted to at least, at least identify the victim, at least get some sort of like this is super, you know, um, but he was unable to because it goes, it crosses back into fiat and because the bank hadn't made a statement, um, and so I think Zach cited thirty million. Basically, he was watching about thirty million dollars that should have been stopped and should have been frozen, but couldn't because there was no victim identified.
+683.71-688.26 | SPEAKER_01: But we don't know. We don't know who's on the other side of this yet. This could be anyone, right? It's not.
+688.26-696.51 | SPEAKER_00: Right. All we know is that it's definitely not Lazarus. So not only did this bank get hacked, but they got hacked by not the best hackers in the world.
+697.57-724.79 | SPEAKER_01: I mean, dude, they're banks, man. Like, they're banks. Like, the, these guys. Like, see, as funny as CZ pretending like he'd never heard of banks was, like, banks are not prepared for this shit. Like, he's right. Like, banks are not fucking prepared for this shit. Like, you know, the thing that banks have relied on for whatever, like a hundred years, right, is like the slowness of them.
+724.79-731.45 | SPEAKER_00: That it's not even the banks aren't slow anymore. Like there's, it's not just like, no, no, no. They're faster now.
+731.45-747.99 | SPEAKER_01: They're faster and they're like, crypto is much more connected to tradfi. There's many more egress vectors for money. It's not like you just call up your friend at the other French bank in, yeah, fucking, you know, Marseille.
+747.99-748.80 | SPEAKER_00: We're not. We're not.
+748.80-760.96 | SPEAKER_01: Go like, hey, bro, like, sorry, can you just send me the database back? Like, that's not like now, like there's fucking a million different ways to get this shit out. Yeah, so.
+761.09-773.05 | SPEAKER_00: And let me also, there was a, there was a few people on my timeline being like, no, no, no, because the banks don't hold all the money, so you can't steal the money. And I was like, I'm sorry, what? What the fuck? I was like, so hold the fact, that's not how money.
+773.05-783.39 | SPEAKER_01: Works. It's not, it's not a sack of diamonds and gold at the bottom of, of vault. What in the hell are you talking about?
+783.39-784.85 | SPEAKER_00: Just a database, like.
+784.85-789.89 | SPEAKER_01: Yeah, it's worse. It's actually worse. It, it only works.
+789.89-791.73 | SPEAKER_00: Steal the actual funds.
+791.73-793.44 | SPEAKER_01: That doesn't steal funds.
+793.44-797.11 | SPEAKER_00: You can just change the line in the database and get the actual funds.
+797.11-823.16 | SPEAKER_01: You get the money back. What? The money's not real, guys. Just a heads up, in case you were not aware of this, money is not real. It's not a real thing. So it, that works really well when you can be like, hey, give me my fake money back to the other guy who runs the fake money business. Uh, that breaks down if the fake money can be connected to real money really quickly, and people can actually steal it, because then.
+823.16-838.30 | SPEAKER_01: Now the person who gave the real money is not going to be willing to give the fake money back. They're going to say, "No, that's my money now, man. I gave a bunch of Bitcoin and gold to these fucking guys. I'm not giving you, I'm not just crediting your database back here."
+839.03-847.09 | SPEAKER_01: All right. So let's, let's wrap up here. Let's talk Devcon quickly.
+848.06-877.15 | SPEAKER_01: So, I mean, the thing that we've been saying the entire time that we hoped would happen, both for good and ill, I guess. And, you know, maybe, maybe Adam, you've got some insight into this, because hopefully the EF is talking to Aave people about their, whatever the fuck they're planning. But like the acceleration of the roadmap finally has hit Ethereum, the sleepiest region of
+877.15-898.97 | SPEAKER_01: cryptocurrency, and they're like, all right, we gotta, no one's saying 2030 anymore. It's crazy. We had, remember, this was like two years ago that 2030 came out. Now we're two years later. We're at the end of 2026, and now we're talking 2028. I'm so here for this. This is like my best timeline for me. Where everyone was complaining about 2030, and now we're saying.
+898.97-900.04 | SPEAKER_00: Saying all of these things.
+
+0.03-16.40 | SPEAKER_00: Usually would have been, we'd be talking 2035 by now. Instead, we're talking 2028. This is amazing. I'm so fucking confident that the clankers are going to whip Ethereum into shape and get this thing working. It's amazing. Good times.
+16.40-21.45 | SPEAKER_01: Is that all we got in DACON? I was hoping that you were going to bring me the alpha. Like, I just want to see...
+21.45-26.66 | SPEAKER_00: We're going faster. The alpha is the same things faster.
+27.18-30.05 | SPEAKER_00: It's as simple as that. Let's not overcomplicate it.
+30.72-36.99 | SPEAKER_01: Have you been following DACON things? Is there anything I... I want to like watch the talk and stuff. I'm not there, but...
+38.02-46.16 | SPEAKER_02: Yeah, I, I just know about, uh, Vitalik's, uh, hood and his, uh, his, his scam artist antics. Yeah.
+46.16-49.09 | SPEAKER_01: Yeah, that was, oh, Ethereum.
+50.53-52.85 | SPEAKER_01: Oh, it's Ethereum.
+52.85-54.04 | SPEAKER_00: Never change.
+54.04-59.65 | SPEAKER_01: No, actually, please, just, just, just change a little bit, okay?
+59.65-62.56 | SPEAKER_00: Yeah, be careful what you wish for. Be careful what you wish for.
+62.56-63.46 | SPEAKER_01: It's true.
+63.46-69.26 | SPEAKER_00: This is one thing. Don't change, just go faster. Like, honestly, the simplest thing.
+69.26-77.50 | SPEAKER_02: So my team is planning to go to ETHCC, as we do every year in the springtime. Is that a conference you guys are looking forward to?
+78.08-96.77 | SPEAKER_00: You know, it's funny. I used to go to ETHCC every year when it was in Paris. And then when they moved it to the south of France, I went to the Belgian one as well. But when they moved it to the south of France, I was like, ah, it's a lot of effort from Sydney. It's like seven.
+96.77-101.20 | SPEAKER_01: Oh, so you have to do, yeah, I was about to say, you have to do like seven flights. It's just not worth it.
+101.20-106.79 | SPEAKER_00: Like Paris, I'm like, I'll go to Paris. Although now I probably wouldn't, if you said to me, hey, do you want to go to a...
+106.93-110.15 | SPEAKER_00: ...in Paris, I'd probably say no. I'd rather not get murdered.
+110.94-117.45 | SPEAKER_01: Paris is a weird place, dude. It is crazy. I might... All right, we'll see, we'll see.
+117.45-135.97 | SPEAKER_00: All right, let's wrap it up here. Let's wrap it up here. All right. Thank you very much, Adam, for joining us. We will be back next week with Austin, assuming he makes it back safely from Dubai, hopefully. Hopefully then we'll have the alpha and we'll have the real alpha for you. He won't tell us. He'll keep it secret.
+136.46-140.45 | SPEAKER_00: All right. Thank you, everyone, for joining us for this episode.
+140.61-162.24 | SPEAKER_00: Great to hang out with you guys. Thank you. Yeah, thank you. Thank you. Thanks, Adam. All right, remember, what happens on-chain never stays on-chain. We'll be back next week. See you guys. Nothing you hear on Unnecessary Money is financial advice. We're just three builders talking about what's happening on-chain, and we want you to always do your own research before investing in it. You can find all our disclosures at unchainedcrypto.com/unnecessarymoney.

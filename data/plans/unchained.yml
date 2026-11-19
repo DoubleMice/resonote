@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-11-19T03:03:27.208Z
+refreshed_at: 2026-11-19T18:09:25.518Z
 min_duration: 3300
 min_date: "20261029"
 total_candidates: 6
-done: 4
+done: 5
 pending: 0
 needs_transcript: 0
 transcribing: 0
-transcribe_failed: 2
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
@@ -440,18 +440,12 @@ episodes:
       🏦 01:07:24 A French bank heist, ZachXBT, and the $30M that couldn't be frozen
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
+    status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-16T18:15:51.728Z
-    transcript_completed_at: 2026-11-16T18:16:16.324Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.5"
-          }
-      }
+    transcript_submitted_at: 2026-11-19T18:48:20.556Z
+    transcript_completed_at: 2026-11-19T19:00:15.042Z
+    transcript_job_id: 39318ee8-3a2c-4ebe-b4d3-46f8d023c349_2twt1gg4spx068r4lc_ac60d9cbcd38438caac7e883aa48ff11,c80d49d7-cbca-48ea-aa8e-02f58a42e489_2sn0tzg4sq4803ny80_a63cc65e371345c1bc44346fd2fa5910,ca9951bb-44ce-46e2-941f-d0de31e3404e_2tvlakg4sqcgizda80_c94c092dc03b4f13b5d4cedaa5613f72,1e8d83e3-1cc7-41a4-add8-7f8f1c82ae43_2twyg9g4sqi889vk00_256cd81b2200461a8ea073c93e6046a9,41221054-e4f6-44ef-bdaf-43025ae469ba_2twl7jg4sqptveul1c_9b01710730e349bab7f9ff88b11c8c6a,135551b6-7891-4ad3-9ea2-41a31022d443_2tvrhrg4sqw9qek5q8_409f3caed0564448af9255534d785341
   - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes

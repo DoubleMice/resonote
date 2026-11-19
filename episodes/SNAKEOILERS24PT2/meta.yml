@@ -1,0 +1,31 @@
+title: Snake Oilers：智能体沙箱、API 权限与威胁情报查询
+guest: Jake King、Alex Ferguson、Simon Warren
+guest_role: Minimal.dev 代表、RequestRocket 创始人、TRM Labs 代表
+tags:
+  - ai-products
+  - coding-agents
+  - startup
+  - interview
+  - technical
+  - quick-take
+summary: |
+  Risky Business 邀请三家厂商介绍智能体隔离、第三方 API 权限控制和多源威胁情报查询。嘉宾结合软件供应链、薪资系统集成和勒索软件调查解释产品设计，同时讨论系统支持和查询费用等限制。
+core_ideas:
+  - Jake King 主张限制智能体的网络、工具和凭据权限，并介绍 Minimal.dev 的隔离环境与软件供应链设计。
+  - Alex Ferguson 介绍 RequestRocket 如何在第三方 API 前转换认证、限制请求权限并过滤返回数据。
+  - API 调用记录可用于审计和排查集成故障，Ferguson 举例说明客户如何发现凭据被撤销。
+  - Simon Warren 介绍 TRM Labs 的 Ardent 如何按使用量调用多个威胁情报数据源，以及如何设置费用上限。
+  - 勒索软件调查可以结合行业情报、泄露凭据和区块链数据；资产匹配及 MCP 集成在节目中仍属开发方向。
+id: SNAKEOILERS24PT2
+source: risky-business
+source_title: "Snake Oilers: Minimal.dev, Request Rocket and TRM Labs"
+published: 2026-10
+published_sort: "20261030"
+duration: 44m
+url: https://risky.biz/SNAKEOILERS24PT2/
+status: generated
+article_path: episodes/SNAKEOILERS24PT2/article.html
+base: /episodes/SNAKEOILERS24PT2/
+visual_notes: false
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+generated_at: 2026-11-19T19:16:54.827Z

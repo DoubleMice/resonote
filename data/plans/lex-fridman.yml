@@ -1,15 +1,31 @@
 source: lex-fridman
-refreshed_at: 2026-11-19T03:03:27.265Z
+refreshed_at: 2026-11-19T18:09:25.582Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 10
-done: 1
+total_candidates: 11
+done: 2
 pending: 0
 needs_transcript: 9
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: p-7826
+    guid: https://lexfridman.com/?p=7826
+    title: "#505 – GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami &#038; Money"
+    duration: 12418
+    published: Thu, 19 Nov 2026 04:37:34 +0000
+    published_sort: "20261119"
+    first_seen_at: 2026-11-19T18:09:25.582Z
+    url: https://lexfridman.com/larry-lawton/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=larry-lawton
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_larry_lawton.mp3
+    image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-19T18:09:27.101Z
+    transcript_job_id: 02bcfb8d-2c0e-4361-ad86-1d9def23a43c_2sn03bg4smheu9fpj4_43b6f8476f3945fe96438f7c47128761,b3011164-dd22-41d2-9c47-4bf9024b7479_2twum8g4smly72bv28_00b52ac189c64411950f65e6afdd6edb,8d54486c-e37c-47e6-b96f-b0a21abae10f_2twcksg4smtftybn5s_1b13b11bd3604c65839d036fde261bfe,be6c95c4-233d-48e5-b6e9-500f4391a4f5_2tvrhrg4smvjntdam8_4a8d12555ef446eea24eb8a5944d5a60,b28c807e-d4b0-4c08-8490-8296a432e8bc_2twl7jg4sn2jzcm96o_d78e74d9b53845d8b54eb25374b4d6a3,fb2dc13f-0342-4811-89a8-1fa1de1291c1_2twee0g4sn8c6342dc_3cc12a79b0ce41afbd372a2a7e66d0b1,36110a8c-1f75-44b3-aeaf-7cabeb0a87de_2twdnqg4snf5qlmo00_ad769ce889cf4a079ba38eda34b67240,ab8d9f20-6baf-4bd1-80fa-183f7287cdb4_2twe0rg4snk82writc_34b58a37c11241c28f5daf3c89f85efc,44e1d4e3-0dd1-4520-b766-9288347e9132_2tvtk2g4snlc2f99mo_949d9a95000a42bd863724744e62a311,501d8446-aca7-475f-9422-2de820dc0fd8_2twcjeg4snscg0zaio_14ff5569b169407e8c921dd54dc17fd6,00f88d4a-d790-4eb5-bebf-762931b00320_2tvlakg4snyg6vzcao_78a0541594814c1ba3c08b898ebbe0bb,c7663efe-0ea8-4508-997f-0717de9f095e_2twdeig4so5r77km4g_a82b1f9664404e8888abeccb2fadeb61,7885bc81-6914-42a2-8f49-1a5307e0c8a3_2twrufg4so9vrqn20w_05a01ab40fdb4e8a8e92270b19b6a8e0,88264297-cc2c-45f2-b814-7da21bfe9229_2twknsg4sofhxgcmbk_c2b36a063a5148fd8ba9d2b3e266132c
+    transcript_completed_at: 2026-11-19T18:33:59.192Z
   - id: p-7818
     guid: https://lexfridman.com/?p=7818
     title: "#504 – Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare"
