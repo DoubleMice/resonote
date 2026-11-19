@@ -1,15 +1,228 @@
 source: latepost
-refreshed_at: 2026-11-18T18:08:00.533Z
+refreshed_at: 2026-11-19T03:03:27.249Z
 min_duration: 1800
 min_date: "20260101"
-total_candidates: 7
+total_candidates: 8
 done: 6
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 1
 downloaded: 0
 episodes:
+  - id: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5
+    guid: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5
+    title: "189: Geodesic顾全全：预训练有点“无聊”了，但用scaling改变AI制药才刚开始"
+    duration: 5762
+    published: Thu, 19 Nov 2026 08:00:00 +0800
+    published_sort: "20261119"
+    first_seen_at: 2026-11-19T03:03:27.249Z
+    url: https://podcast.latepost.com/189
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5.mp3
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/2/26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5/cover.jpg?v=1
+    summary: >-
+      「The best model is yet to come, scaling continues.（最好的模型尚未到来，规模化仍在继续。）」
+
+
+      今年 6 月 ，顾全全发推宣告离开字节，推文的最后一句如此写道。
+
+
+      这句话串起了他在字节 3 年多的工作：一是 AI 制药，他带团队做出了蛋白质结构预测模型 SeedFold 和蛋白质设计模型 SeedProteo；一是豆包的预训练，2025 年初，他的团队开始负责其中的 scaling
+      与优化部分。
+
+
+      不久后，我们在 6 月中旬于硅谷采访了顾全全，当时他正在筹备 AI 制药方向的创业。
+
+
+      今年 9 月，这家新公司 Geodesic Intelligence 亮相，发布了药物发现智能体平台 NovaDDE，以及 NovaAtom-Lite-Preview。11 月 10 日，Geodesic
+      又更新了全原子结构预测模型 今年确实有很多 AI 医疗的新公司出现，比如字节就有小荷健康。
+
+
+      顾全全的离职引起了一些争议。他自称字节 AI 制药负责人和 Seed 预训练的”优化与规模化“负责人（optimazation & scaling lead）。而此后有媒体的报道暗示，接近字节的人士并不认可这种表达。
+
+
+      我们在节目中直接讨论了：大公司如何组织不同方向的研究，为什么存在对 “负责人” 的不同定义。
+
+
+      顾全全说，离开的原因之一是 “有点儿无聊” 了。他认为预训练仍有大量要完善的细节和创新空间，但秘密正在减少，工程和组织能力在竞争中的比重越来越大。“方案很早就出现了，但团队要花几个月论证、形成共识，再推进。”
+
+
+      而 scaling 本身仍有巨大空间，“scaling continues” 就是新方向：把大模型上验证的 scaling 方法带进更多领域。
+
+
+      在顾全全眼中，AI 制药就是一个数据量巨大，但却仍未被 scaling 思路改造的富矿。他说这次创业，前六个月的算力花费就需要 1000 万美元。
+
+
+      与 Anthropic 的判断一致，顾全全也认为做 AI 制药必须自己掌握
+      “湿实验室”。因为从模型设计出候选分子到真的发现新药，还要通过湿实验来验证亲和力、成功率、毒性、可合成性和特异性……而实验结果又能作为奖励信号，进入模型后训练。
+
+
+      在顾全全离职前后，字节跳动还走出了数家 AI 制药公司，包括肖文之创立的 Molence Bio，以及在字节官方支持下独立融资，由刘凯创立的 Anew Labs。
+
+
+      本期，我们从顾全全离开字节聊起，拆解基模当下的 scaling 状态和预训练如何组织； AI for Science 能否出现一次类似 AI coding 的跃迁。最后，我们回到学界与工业界之间：当榜单把不同 “门派”
+      拉上同一擂台，什么才算有野心的研究？
+
+
+      本期嘉宾：
+
+
+      顾全全，Geodesic Intelligence 创始人
+
+
+      本期主播：
+
+
+      程曼祺，《晚点 LatePost》科技报道负责人
+
+
+      本期剪辑：吴宇量
+
+
+      时间线跳转：
+
+
+      -在字节 3 年：AI 制药与基模预训练
+
+
+      00:59 为什么离开字节：AI 制药与预训练的双线经历
+
+
+      02:52 三个 AI for 制药团队为何一度在字节内并行
+
+
+      11:21 为什么押注 AI for Science
+
+
+      14:04 Chai-2 改变了什么：从结构预测走向抗体与蛋白质设计
+
+
+      22:57 新方向：把 scaling 带进 AI 制药
+
+
+      -预训练越来越像 “盖楼”：秘密少了，较量在组织与执行
+
+
+      24:46 25 年初加入豆包预训练：解决 scaling 和训练稳定性
+
+
+      28:06 何谓 “训飞”？为何中国大模型团队去年至今普遍遇到训练波折
+
+
+      32:52 四类团队协作 “盖楼”：数据、架构、优化与 Infra
+
+
+      37:00 字节为什么禁止蒸馏：短期能力与世界第一的取舍
+
+
+      42:13 预训练还有多少秘密和诀窍？
+
+
+      46:28 “已经有点儿无聊了”
+
+
+      51:06 字节投入 coding，为什么看起来晚
+
+
+      -把 scaling 带进蛋白质设计，算力之外还缺一座湿实验室
+
+
+      55:04 公开数据多、算力投入少：生物模型是 scaling 的 “洼地”
+
+
+      57:39 蛋白质语言模型 vs 结构设计模型
+
+
+      01:02:51 为什么必须自建湿实验室？
+
+
+      01:07:08 商业模式设想：自己做药，也向药企提供模型：按任务价值收费
+
+
+      01:13:28 AI for Science 能否复制 AI coding 的跃迁
+
+
+      -学界与工业界之间：从 “门派不同、互不踢馆” 到走上同一座擂台
+
+
+      01:14:28 大模型热潮如何击穿学界
+
+
+      01:17:49 现在还值得读博士吗？
+
+
+      01:22:28 “用差异化追求掩盖了都很菜的事实”
+
+
+      01:32:58 仍会研究那些多年没解决的理论问题，这是 “大脑的保健操”
+
+
+      相关链接：
+
+
+      140 期：深势科技张林峰、孙伟杰：AI for Science，从开始到现在
+
+
+      150 期：年末 AI 回顾｜从模型到应用、从技术到商战，拽住洪流中的意义之线
+
+
+      183 期：与 Henry 的「AI 季报 26Q3」：Muse 引爆个人助理、Astra 进入机器人、OpenAI 收入猛增
+
+
+      附录：本期出现的公司、模型、人物与技术术语
+
+
+      -技术术语
+
+        靶点（target）：药物希望干预的生物对象，常见的靶点是与疾病机制相关的蛋白质。模型设计 binder 或药物分子时，通常需要先给定靶点信息。
+        Binder：能够与目标分子特异结合的蛋白质或其他分子。蛋白质 binder 设计的目标，是直接生成能与指定靶点结合的候选序列与结构。
+        结构预测 / 结构设计：结构预测从分子序列等信息推断三维结构；结构设计则从目标功能或结合关系出发，反向生成满足要求的分子结构与序列。 顾全全团队在字节期间做的 SeedFold，就是一个生物分子结构预测模型，典型的还有** AlphaFold 系列。 同由顾全全团队做的 **SeedProteo，则是一个全原子蛋白质 binder 设计模型。 本期还聊到了肖文之团队在字节期间做的开源结构预测与设计模型 Protenix。
+        蛋白质语言模型（protein language model）：把氨基酸序列视为符号序列进行训练的模型，可学习蛋白质的结构、功能和进化信息。它建模的核心对象是序列，而结构模型建模的对象是三维原子结构。 顾全全团队在 Seed 期间做的 DPLM 就是一个扩散蛋白质语言模型；这类模型的代表还有节目中提及的 Meta 做的 ESM。
+        湿实验（wet lab）：在真实实验室中进行生物、化学实验。
+        CRO（Contract Research Organization，合同研究组织）：为药企或生物科技公司提供实验、临床研究等外包服务。
+        Hit rate：在蛋白质设计中，通常指被验证能与目标结合的候选占比。
+        亲和力（binding affinity）：衡量两个分子结合强弱的指标。但这个指标不能单独证明候选物最终能成为药物。
+        特异性（specificity）：候选分子优先结合目标靶点、尽量不与其他分子发生非预期结合的能力。
+
+      -公司、机构、模型与项目
+
+        Geodesic Intelligence：顾全全创立的 AI 制药公司，目前已发布药物发现平台 NovaDDE，以及可预测蛋白质、DNA、RNA 与小分子配体复合物结构的全原子模型 NovaAtom-Lite。
+        Chai Discovery：2024 年成立的 AI 药物设计公司，联合创始人包括 Joshua Meier 等。公司先后发布 Chai-1 和 Chai-2：前者聚焦多模态生物分子结构预测，后者进一步面向从头抗体、纳米抗体和 mini-binder 设计。
+        Latent Labs：由前 Google DeepMind AlphaFold 团队成员 Simon Kohl 创立的生成式生物学公司，研发蛋白质设计模型 Latent-X、Latent-X2 和药物设计智能体 Latent-Y。
+        Boltz PBC：源于 MIT 研究团队的生物分子 AI 公司，发布过开源结构预测模型 Boltz-1、Boltz-2，后续推出 BoltzMol、BoltzProt 等分子与蛋白质设计模型。
+        AlphaFold 2 到 AlphaFold 3 的发展：AlphaFold 2 是蛋白质结构预测的突破式进展；AlphaFold 3 将预测范围扩展到蛋白质、DNA、RNA、配体等多类分子及其相互作用。本期中提到的 Pairformer 是 AlphaFold 3 架构中的核心模块。
+        Isomorphic Labs 和 IsoDDE：Alphabet 旗下 AI 制药公司，由 Demis Hassabis 创立并担任 CEO，该公司推出了IsoDDE（Isomorphic Labs Drug Design Engine），是由多种预测与生成模型组成的统一药物设计系统。
+        Absci：美国生成式 AI 制药公司，重点做从头设计抗体等生物药物；Chai Discovery 联合创始人 Joshua Meier 曾在此任职。
+        Baseten：成立于 2019 年的 AI 基础设施公司，为模型训练、部署和高性能推理提供平台与多云算力服务。
+        英矽智能（Insilico Medicine）：以生成式 AI 和自动化平台推进靶点发现、小分子设计与临床管线的 AI 制药公司。
+        晶泰科技（XtalPi）：以 AI、物理建模和自动化实验平台服务药物与材料研发。
+        BindCraft：David Baker 团队成员参与开发的一次性蛋白质 binder 设计方法，把结构生成、序列设计与计算筛选组合成一套流程。
+        NVIDIA Cosmos：英伟达面向物理 AI 的世界基础模型与工具体系。节目以其多模态理解和生成能力为例，讨论通用基础模型能否吸收垂直模型。
+
+      -人物
+
+        John Jumper：AlphaFold 2 核心负责人之一，与 Demis Hassabis 共同获得 2024 年诺贝尔化学奖；2026 年离开 Google DeepMind，加入 Anthropic。
+        David Baker：华盛顿大学教授、Institute for Protein Design 主任，长期研究计算蛋白质设计，与 Demis Hassabis、John Jumper 共同获得 2024 年诺贝尔化学奖。
+        Kevin Weil：OpenAI for Science 副总裁，曾任 OpenAI 首席产品官，本期我们引用了他对 AI for Science 发展节奏的判断。最近他官宣了离开 OpenAI 后创立的新公司 Warp Sciences。
+
+      小红书@曼祺_火柴Q即刻@曼祺_火柴Q
+
+
+      ☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆
+
+
+      欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。
+
+
+      这里有更多互动，更多话题讨论。欢迎贡献选题 & 推荐嘉宾。
+
+
+      请先添加「晚点」小助手的微信号，备注：“晚点聊”，我们邀请您入群。
+
+
+      关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：
+    status: needs_transcript
+    priority: 1
   - id: 77706b7f-cf2f-4400-826c-0331ae6c62a8
     guid: 77706b7f-cf2f-4400-826c-0331ae6c62a8
     title: "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
@@ -555,9 +768,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 84f36235-4a34-4d03-b3b5-1efcfa838900_2twam2g4p433wrco3k_ecbca5dcc19348e7b34de5f46a25123b,c6146e8c-40b1-4141-9910-f9c4711c2232_2tvlb5g4p4914b7ny8_d2e373936f3447b2a71606846e9fc902,5ed80dbf-f0a4-415e-ac0d-7cd0630d0b23_2u6envg4p4epjx4em8_0ef11291b8414de389cab151ed53c685,6b8b47ba-938d-4501-98ac-6b10d606a55d_2twrmag4p4ithgcmbk_ec3c74b12ea341ceb01cc5ad15b94a5a
     transcript_submitted_at: 2026-11-18T18:33:08.419Z
     transcript_completed_at: 2026-11-18T18:38:56.848Z
-    transcript_job_id: 84f36235-4a34-4d03-b3b5-1efcfa838900_2twam2g4p433wrco3k_ecbca5dcc19348e7b34de5f46a25123b,c6146e8c-40b1-4141-9910-f9c4711c2232_2tvlb5g4p4914b7ny8_d2e373936f3447b2a71606846e9fc902,5ed80dbf-f0a4-415e-ac0d-7cd0630d0b23_2u6envg4p4epjx4em8_0ef11291b8414de389cab151ed53c685,6b8b47ba-938d-4501-98ac-6b10d606a55d_2twrmag4p4ithgcmbk_ec3c74b12ea341ceb01cc5ad15b94a5a
   - id: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     guid: d6d09ee5-d5cf-4b6b-97b3-6fcd4957f063
     title: "186: Anthropic招股书丨“银行也有百亿预算”，与Fusion Fund张璐聊大企业在想什么"

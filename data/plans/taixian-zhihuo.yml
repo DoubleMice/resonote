@@ -1,5 +1,5 @@
 source: taixian-zhihuo
-refreshed_at: 2026-11-18T18:08:00.549Z
+refreshed_at: 2026-11-19T03:03:27.260Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 9
@@ -55,9 +55,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 0c48d3e3-9447-4520-8624-49866515db42_2twajkg4p3nk7e6m80_60f7c87de5d54293a9072c877d18fa71,64f2ff08-500c-4fe7-b500-2817097bf142_2twg8wg4p3pz9yt43k_b630586752e14808aabc862057d88270,149eacd1-0e8d-4bd5-a381-7e1868951562_2u6envg4p3rezkre2o_922e03e2d2614df7aa757dbfe6a8add1,e6ea822f-8b05-420c-abb4-bd5374c9f6d0_2tvt7pg4p3xy6okt1c_8f14886f510b40cc90b6744ce4f7a2cc,a090ad49-e07a-438c-91d9-cd17a0bd58e1_2twcx0g4p3zkj2awao_b30cea61bdb7481c9ac156aded497444
     transcript_submitted_at: 2026-11-18T18:28:13.474Z
     transcript_completed_at: 2026-11-18T18:33:07.794Z
-    transcript_job_id: 0c48d3e3-9447-4520-8624-49866515db42_2twajkg4p3nk7e6m80_60f7c87de5d54293a9072c877d18fa71,64f2ff08-500c-4fe7-b500-2817097bf142_2twg8wg4p3pz9yt43k_b630586752e14808aabc862057d88270,149eacd1-0e8d-4bd5-a381-7e1868951562_2u6envg4p3rezkre2o_922e03e2d2614df7aa757dbfe6a8add1,e6ea822f-8b05-420c-abb4-bd5374c9f6d0_2tvt7pg4p3xy6okt1c_8f14886f510b40cc90b6744ce4f7a2cc,a090ad49-e07a-438c-91d9-cd17a0bd58e1_2twcx0g4p3zkj2awao_b30cea61bdb7481c9ac156aded497444
   - id: 6ae73de5c96c8942ec1597ae
     guid: 6ae73de5c96c8942ec1597ae
     title: 紧急加更：科创50跌成科创25之后，费半也要更名费2.5吗？- 慧客堂 X 苔藓之火

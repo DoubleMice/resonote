@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-18T18:08:00.473Z
+refreshed_at: 2026-11-19T03:03:27.208Z
 min_duration: 3300
-min_date: "20261028"
+min_date: "20261029"
 total_candidates: 6
 done: 4
 pending: 0
@@ -106,8 +106,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-18T18:20:23.554Z
     transcript_job_id: 6b2e802b-22ac-466c-965b-d0ee6047d13f_2twg4ig4p2yfowczr4_10ed5a5e56784f3db4e9b6248f4ae294,44df218d-80b1-4947-baf7-6827407a6cef_2twso4g4p34yi03wn4_3e4e9b99512548ef83c5ee1ece200c0b,5bfae5ac-ff1a-4ab1-a4d3-84ae5aa05519_2twil1g4p3ahf1exvk_9bb8ced1c9444f36a4cd1fdc50db8fda,f4d66a68-730e-4287-9252-53d84cf59aee_2twil1g4p3fuhsvcao_ece6d8d5f7e0446884c02cd91d82e263,0f975e17-1ce8-4bd2-9d3d-ebcceef70de4_2tvmopg4p3l7io5pfk_099fad0402e549a3ae778d46882b4e7f
+    transcript_submitted_at: 2026-11-18T18:20:23.554Z
     transcript_completed_at: 2026-11-18T18:28:12.829Z
   - id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
     guid: b145fc70-dec4-11f1-9671-1b56aa1d87ba
@@ -582,9 +582,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: bd8a8e4c-4e36-40e6-8d31-3471b924e6ab_2twam2g4p5iledzshs_04757e9acea54cbf8328abac92253772,5771b512-23da-46da-8b99-a3f3d3d3a93b_2twajkg4p5no2gya68_0be7bd459fd14f60a70103781bd0fbc0,bf7b1ec1-46eb-4ac0-80ce-88208aa6ac2e_2twe1ig4p5os0282dc_2f39123eaf68493d9dbe7924eac13bee,5036b823-ebde-4c7c-9f8c-df2f3cd5cac8_2twbikg4p5q726apz4_e9b997bde7ee44b394f6f5db4d0af763,e0fc6b9d-147f-4f71-82c9-f68ff6399232_2u6envg4p5r4o6s268_e719819afcb847b99a1a778a8a0622a3,9bff3a04-c686-42e8-9733-7e0b0fa65fbd_2twi4lg4p5sswu68sg_465de66882684f09b45d701373beaedf
     transcript_submitted_at: 2026-11-18T18:48:50.303Z
     transcript_completed_at: 2026-11-18T18:53:04.486Z
-    transcript_job_id: bd8a8e4c-4e36-40e6-8d31-3471b924e6ab_2twam2g4p5iledzshs_04757e9acea54cbf8328abac92253772,5771b512-23da-46da-8b99-a3f3d3d3a93b_2twajkg4p5no2gya68_0be7bd459fd14f60a70103781bd0fbc0,bf7b1ec1-46eb-4ac0-80ce-88208aa6ac2e_2twe1ig4p5os0282dc_2f39123eaf68493d9dbe7924eac13bee,5036b823-ebde-4c7c-9f8c-df2f3cd5cac8_2twbikg4p5q726apz4_e9b997bde7ee44b394f6f5db4d0af763,e0fc6b9d-147f-4f71-82c9-f68ff6399232_2u6envg4p5r4o6s268_e719819afcb847b99a1a778a8a0622a3,9bff3a04-c686-42e8-9733-7e0b0fa65fbd_2twi4lg4p5sswu68sg_465de66882684f09b45d701373beaedf
   - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     guid: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
     title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
