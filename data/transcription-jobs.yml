@@ -37785,3 +37785,73 @@ jobs:
     submitted_at: 2026-11-19T19:05:57.505Z
     updated_at: 2026-11-19T19:11:36.760Z
     completed_at: 2026-11-19T19:11:36.760Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z:chunk:0
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: fff46c97-e075-4b73-9c8b-f23128de479a_2twttng4w6vuze8t8g_286b2c7a3dc640e89b8cb5cc7afd2811
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-20T18:09:22.549Z
+    updated_at: 2026-11-20T18:11:35.543Z
+    completed_at: 2026-11-20T18:11:35.543Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z:chunk:1
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: a7f3720d-27fd-42e1-96ea-4ac90ea806ae_2u52rrg4w71wqp5fr4_ffee932430034a06aec378f2944f9e40
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-20T18:09:22.549Z
+    updated_at: 2026-11-20T18:14:16.667Z
+    completed_at: 2026-11-20T18:14:16.667Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z:chunk:2
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-20T18:09:22.549Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: ""
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: failed
+    retries: 0
+    submitted_at: 2026-11-20T18:09:22.549Z
+    updated_at: 2026-11-20T18:15:46.441Z
+    error: >-
+      MiMo transcription returned empty text:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {"error":{"object":"error","message":"Internal Server
+      Error","type":"ServiceUnavailableError","param":null,"code":"503"}}

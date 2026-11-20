@@ -1,13 +1,13 @@
 source: unchained
-refreshed_at: 2026-11-20T03:03:14.872Z
+refreshed_at: 2026-11-20T18:09:21.013Z
 min_duration: 3300
 min_date: "20261030"
 total_candidates: 6
 done: 5
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 1
 downloaded: 0
 episodes:
   - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
@@ -114,8 +114,31 @@ episodes:
       🧯 56:43 Circuit breakers: how teams can cover the 10% of risk audits miss
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-20T18:09:22.549Z
+    transcript_error: >-
+      MiMo transcription returned empty text:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {"error":{"object":"error","message":"Internal Server
+      Error","type":"ServiceUnavailableError","param":null,"code":"503"}}
+    transcript_completed_at: 2026-11-20T18:15:46.441Z
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     title: Why So Many Public Companies Are Saying No to Tokenized Stocks
