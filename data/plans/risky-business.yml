@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-11-19T18:09:25.530Z
+refreshed_at: 2026-11-20T03:03:14.878Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 3
@@ -70,9 +70,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: c3824646-3449-4593-87db-f0593830ec61_2twyg9g4sqyjzpr9xc_7ae27f9eaf3b49f0b40628454bb076d4,1cf8f4d7-4686-4ba9-9ed8-18b0ebc90c4c_2twdeig4sr4wdmk4xs_7e28735521a240b78a8f2cc1ba51340a,5aa222cc-23b7-4cd8-a031-fa6d15086391_2twidug4srac2witxc_4a72d3d8824349f2975603d3b26235db
     transcript_submitted_at: 2026-11-19T19:00:15.675Z
     transcript_completed_at: 2026-11-19T19:05:56.903Z
-    transcript_job_id: c3824646-3449-4593-87db-f0593830ec61_2twyg9g4sqyjzpr9xc_7ae27f9eaf3b49f0b40628454bb076d4,1cf8f4d7-4686-4ba9-9ed8-18b0ebc90c4c_2twdeig4sr4wdmk4xs_7e28735521a240b78a8f2cc1ba51340a,5aa222cc-23b7-4cd8-a031-fa6d15086391_2twidug4srac2witxc_4a72d3d8824349f2975603d3b26235db
   - id: SOAPBOX111
     guid: https://risky.biz/SOAPBOX111/
     title: "Soap Box: HD Moore talks OT security, frontier fearmongering and more"

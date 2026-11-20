@@ -1,15 +1,121 @@
 source: unchained
-refreshed_at: 2026-11-19T18:09:25.518Z
+refreshed_at: 2026-11-20T03:03:14.872Z
 min_duration: 3300
-min_date: "20261029"
+min_date: "20261030"
 total_candidates: 6
 done: 5
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
-transcribe_failed: 1
+transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    guid: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    duration: 3976
+    published: Thu, 19 Nov 2026 20:24:00 -0000
+    published_sort: "20261119"
+    first_seen_at: 2026-11-20T03:03:14.867Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    image: https://megaphone-images.spotifycdn.com/podcasts/2fabddb8-e457-11f1-a5c5-d7971c18aa50/image/4d93529665531945bae49a2c424a46d6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      Anthropic is raising $81.3 billion at a $1.5 trillion valuation. Kain, Tay and Austin ask whether an IPO this
+      risky, existentially and financially, is one to buy.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
+      by more than 10 million clients.
+
+
+      Find out more at⁠⁠⁠⁠⁠ Nexo⁠⁠⁠⁠⁠.
+
+
+      Geo-restrictions, eligibility and terms apply.
+
+
+      ========================================================
+
+
+      Anthropic is raising $81.3 billion at a $1.5 trillion valuation in its Nasdaq IPO, with up to 20% of shares set
+      aside for retail. Kain Warwick calls it a very risky IPO, existentially and financially, and says that may be
+      exactly why it's hard to sit out.
+
+
+      Taylor Monahan and Austin Griffith join him to size up the AI lab race: why Opus 5.5 still holds up after Fable
+      5.2, how Meta and Google made big leaps, and why Tay sees Anthropic's own governance and culture as the risk she's
+      least ready to accept.
+
+
+      Then the hosts turn to a rough week for infrastructure: outages at Microsoft, the FAA and Apple, and an Optimizely
+      injection that reached sites from Ledger to HSBC but netted about $7,000. Austin argues the slop is human-written
+      code, not AI, and Tay explains why her top advice for crypto teams is now monitoring, detection and circuit
+      breakers that cover the risk audits miss.
+
+
+      As Kain puts it: would you rather Aave be off for an hour or a smoking crater?
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan - Co-host of Uneasy Money and Security Expert
+
+        ⁠Austin Griffith⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🎙️ 00:52 Bits + Bips: Watch the weekly crypto and macro market show at https://www.youtube.com/@Bitsandbips&nbsp;
+
+
+      🤖 01:23 Anthropic's IPO: a $64B raise at a $1.4T valuation, with 20% for retail
+
+
+      🧠 07:09 Why Kain is still happy talking to Opus 5.5 after Fable 5.2 launched
+
+
+      🏛️ 14:11 Why Tay sees Anthropic's governance, not AI risk, as the IPO's weak spot
+
+
+      🔎 20:52 Is AI eating Google's ad business?
+
+
+      📈 29:22 Nexo: Generate daily interest on your crypto or borrow against your assets at
+      https://unchainedcrypto.com/go/nexo-podcast-yt&nbsp;
+
+
+      📡 30:04 Microsoft, the FAA and Apple: a week of outages that weren't hacks
+
+
+      🕵️ 33:32 How the Optimizely hack hit Ledger, Zoom and HSBC and netted just $7,000
+
+
+      🧑‍💻 40:06 Why Austin says the real slop is human-written code, not AI
+
+
+      🔐 46:23 When will a $1 AI audit stand in for a $20,000 human one?
+
+
+      🚨 52:20 Why Tay's top advice for crypto teams is now monitoring and detection
+
+
+      🧯 56:43 Circuit breakers: how teams can cover the 10% of risk audits miss
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     title: Why So Many Public Companies Are Saying No to Tokenized Stocks
@@ -19,7 +125,7 @@ episodes:
     first_seen_at: 2026-11-18T05:22:51.283Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6962118769.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML6962118769.mp3
-    image: https://megaphone.imgix.net/podcasts/7e252e40-e2fe-11f1-927a-fbe1f6fcd054/image/6da3918c7c015617ee87db8f4414b201.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone-images.spotifycdn.com/podcasts/7e252e40-e2fe-11f1-927a-fbe1f6fcd054/image/6da3918c7c015617ee87db8f4414b201.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       SEC Director Jamie Selway and Securitize President Brett Redfearn on why 67 companies opted out of OKX ICE, and
       what could bring them back.
@@ -118,7 +224,7 @@ episodes:
     first_seen_at: 2026-11-13T03:03:23.352Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9326740660.mp3
-    image: https://megaphone.imgix.net/podcasts/b145fc70-dec4-11f1-9671-1b56aa1d87ba/image/eaaf060dbb9efa83899442e7c35cb7c1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone-images.spotifycdn.com/podcasts/b145fc70-dec4-11f1-9671-1b56aa1d87ba/image/eaaf060dbb9efa83899442e7c35cb7c1.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       Vitalik is moving on from ultrasound money. Ex-core dev Greg Markou joins Kain and Austin to ask who should make
       the case for ETH instead.
@@ -230,7 +336,7 @@ episodes:
     first_seen_at: 2026-11-11T03:02:33.842Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML8203108490.mp3
-    image: https://megaphone.imgix.net/podcasts/517d5018-dd6b-11f1-a60d-2bc1d7680ae1/image/4f5681e990d2f5bac85e6bdde7922588.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone-images.spotifycdn.com/podcasts/517d5018-dd6b-11f1-a60d-2bc1d7680ae1/image/4f5681e990d2f5bac85e6bdde7922588.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       Bitwise CIO Matt Hougan says crypto bottomed in June, argues the blue wave may not matter, and lays out the math
       behind Bitcoin at $1.6 million.
@@ -327,7 +433,7 @@ episodes:
     first_seen_at: 2026-11-05T18:08:36.687Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5777086063.mp3
-    image: https://megaphone.imgix.net/podcasts/c0e66182-d934-11f1-8762-df5aaedf801b/image/1489412f0f136624767b7b79b52b2163.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone-images.spotifycdn.com/podcasts/c0e66182-d934-11f1-8762-df5aaedf801b/image/1489412f0f136624767b7b79b52b2163.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       The $6B Binance hack sent stolen funds through Aave. LlamaRisk CEO Adam Sadowski walks through the market freeze
       and why nothing was taken from the protocol.
@@ -443,9 +549,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 39318ee8-3a2c-4ebe-b4d3-46f8d023c349_2twt1gg4spx068r4lc_ac60d9cbcd38438caac7e883aa48ff11,c80d49d7-cbca-48ea-aa8e-02f58a42e489_2sn0tzg4sq4803ny80_a63cc65e371345c1bc44346fd2fa5910,ca9951bb-44ce-46e2-941f-d0de31e3404e_2tvlakg4sqcgizda80_c94c092dc03b4f13b5d4cedaa5613f72,1e8d83e3-1cc7-41a4-add8-7f8f1c82ae43_2twyg9g4sqi889vk00_256cd81b2200461a8ea073c93e6046a9,41221054-e4f6-44ef-bdaf-43025ae469ba_2twl7jg4sqptveul1c_9b01710730e349bab7f9ff88b11c8c6a,135551b6-7891-4ad3-9ea2-41a31022d443_2tvrhrg4sqw9qek5q8_409f3caed0564448af9255534d785341
     transcript_submitted_at: 2026-11-19T18:48:20.556Z
     transcript_completed_at: 2026-11-19T19:00:15.042Z
-    transcript_job_id: 39318ee8-3a2c-4ebe-b4d3-46f8d023c349_2twt1gg4spx068r4lc_ac60d9cbcd38438caac7e883aa48ff11,c80d49d7-cbca-48ea-aa8e-02f58a42e489_2sn0tzg4sq4803ny80_a63cc65e371345c1bc44346fd2fa5910,ca9951bb-44ce-46e2-941f-d0de31e3404e_2tvlakg4sqcgizda80_c94c092dc03b4f13b5d4cedaa5613f72,1e8d83e3-1cc7-41a4-add8-7f8f1c82ae43_2twyg9g4sqi889vk00_256cd81b2200461a8ea073c93e6046a9,41221054-e4f6-44ef-bdaf-43025ae469ba_2twl7jg4sqptveul1c_9b01710730e349bab7f9ff88b11c8c6a,135551b6-7891-4ad3-9ea2-41a31022d443_2tvrhrg4sqw9qek5q8_409f3caed0564448af9255534d785341
   - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
     title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
@@ -455,7 +561,7 @@ episodes:
     first_seen_at: 2026-11-03T18:09:08.712Z
     url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
     audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
-    image: https://megaphone.imgix.net/podcasts/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/image/c2fad37e0a9ec36405ec4db105a810ee.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    image: https://megaphone-images.spotifycdn.com/podcasts/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/image/c2fad37e0a9ec36405ec4db105a810ee.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
     summary: >-
       A compromised developer laptop and 50 pre-signed transactions let North Korea drain $6.3 billion from Binance.
       Jonty and Pablo Sabbatella trace how it happened.
@@ -579,140 +685,3 @@ episodes:
     transcript_job_id: bd8a8e4c-4e36-40e6-8d31-3471b924e6ab_2twam2g4p5iledzshs_04757e9acea54cbf8328abac92253772,5771b512-23da-46da-8b99-a3f3d3d3a93b_2twajkg4p5no2gya68_0be7bd459fd14f60a70103781bd0fbc0,bf7b1ec1-46eb-4ac0-80ce-88208aa6ac2e_2twe1ig4p5os0282dc_2f39123eaf68493d9dbe7924eac13bee,5036b823-ebde-4c7c-9f8c-df2f3cd5cac8_2twbikg4p5q726apz4_e9b997bde7ee44b394f6f5db4d0af763,e0fc6b9d-147f-4f71-82c9-f68ff6399232_2u6envg4p5r4o6s268_e719819afcb847b99a1a778a8a0622a3,9bff3a04-c686-42e8-9733-7e0b0fa65fbd_2twi4lg4p5sswu68sg_465de66882684f09b45d701373beaedf
     transcript_submitted_at: 2026-11-18T18:48:50.303Z
     transcript_completed_at: 2026-11-18T18:53:04.486Z
-  - id: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
-    guid: 7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812
-    title: "Uneasy Money: Why Anthropic's IPO Governance Has Crypto Veterans Worried"
-    duration: 4872
-    published: Thu, 29 Oct 2026 20:22:00 -0000
-    published_sort: "20261029"
-    first_seen_at: 2026-10-30T03:03:37.956Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML1170056383.mp3
-    image: https://megaphone.imgix.net/podcasts/7de9b40a-d3d6-11f1-a86c-cbbc1ab6f812/image/ac450141a52b027618314cadcf3cfab7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      Anthropic's S-1 shows the company is still burning cash. Kain Warwick and Taylor Monahan say the bigger risk is a
-      founder voting bloc that has to vote together.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-
-      Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted
-      by more than 10 million clients.
-
-
-      Find out more at⁠⁠ Nexo⁠⁠.
-
-
-      Geo-restrictions, eligibility and terms apply.
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      Our listener survey takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      Anthropic has filed its S-1, and Kain Warwick stacks it up against Google's 2004 IPO: $12 billion in revenue in Q2
-      2026 alone and $8.7 million in revenue per employee. What jumped out at him, though, was governance: 7 founders
-      holding 50% of the voting shares in a side pot that has to vote together.
-
-
-      Warwick, Taylor Monahan, and Austin Griffith say crypto has run this experiment before. Monahan calls the
-      founders' sense of moral superiority Anthropic's biggest risk, and Griffith compares the bloc to every multisig
-      that stalled once the incentives to coordinate faded.
-
-
-      The hosts also cover how AI models started sending bug bounty disputes to SEAL 911, an AI result that says "ETH is
-      false," Keystone's leaked device signing key, phishing emails sent from Foundation's own mail system, and why
-      Ethereum's Glamsterdam upgrade was cancelled.
-
-
-      In what Warwick calls one of the most dangerous times to be in crypto, the safest move may be doing less.
-
-
-      Hosts:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Austin Griffith⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
-
-      Timestamps
-
-
-      🎬 00:00 Intro
-
-
-      📋 00:38 Unchained Survey: complete the listener survey at https://unchainedcrypto.com/survey
-
-
-      🎙️ 01:40 Bits + Bips: search Bits + Bips and subscribe at https://www.youtube.com/@Bitsandbips
-
-
-      📈 02:08 Anthropic's S-1: how $12B in Q2 revenue stacks up against Google's IPO
-
-
-      🗳️ 10:27 Why Kain thinks Anthropic's 7-founder voting bloc is destined to blow up
-
-
-      🤖 23:24 Austin on why AI answers could become winner-take-all like Google search
-
-
-      🚨 27:41 How AI models started sending bug bounty disputes to SEAL 911
-
-
-      🏦 30:50 Nexo: generate daily interest on your crypto or borrow funds against your assets at
-      https://unchainedcrypto.com/go/nexo-podcast-yt
-
-
-      🧮 31:32 'AI says ETH is false': why AI chipping away at hard math matters
-
-
-      🎓 46:06 Will kids still go to college? Austin, Tay, and Kain on parenting with AI
-
-
-      🔑 49:52 Are hardware wallets bad again? Keystone's leaked device signing key
-
-
-      ☎️ 54:13 Why nobody legit in crypto will ever call you, and Kain's OTC scam story
-
-
-      📧 01:01:17 Foundation's hacked mail system and a phishing site too polished to be real
-
-
-      🧘 01:07:50 Don't panic: Kain's 'personal Lindy' and Tay's case for doing less
-
-
-      ⛽ 01:11:12 Austin's 'smooth brain take' on why Glamsterdam was cancelled
-
-
-      🐜 01:18:33 OpenAI's Terra 6.1 and the agent armies battling on AntWars.ai
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: transcribe_failed
-    priority: 1
-    transcript_provider: mimo
-    transcript_submitted_at: 2026-11-17T18:09:10.716Z
-    transcript_completed_at: 2026-11-17T18:09:43.133Z
-    transcript_error: |
-      MiMo transcription failed: 400 {
-          "error": {
-              "code": "400",
-              "message": "Unsupported model mimo-v2.6"
-          }
-      }
