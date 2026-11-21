@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-20T18:09:21.013Z
+refreshed_at: 2026-11-21T03:03:10.036Z
 min_duration: 3300
-min_date: "20261030"
+min_date: "20261031"
 total_candidates: 6
 done: 5
 pending: 0
@@ -118,6 +118,7 @@ episodes:
     priority: 1
     transcript_provider: mimo
     transcript_submitted_at: 2026-11-20T18:09:22.549Z
+    transcript_completed_at: 2026-11-20T18:15:46.441Z
     transcript_error: >-
       MiMo transcription returned empty text:
 
@@ -138,7 +139,6 @@ episodes:
 
       {"error":{"object":"error","message":"Internal Server
       Error","type":"ServiceUnavailableError","param":null,"code":"503"}}
-    transcript_completed_at: 2026-11-20T18:15:46.441Z
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     title: Why So Many Public Companies Are Saying No to Tokenized Stocks
