@@ -1,15 +1,39 @@
 source: risky-business
-refreshed_at: 2026-11-22T18:08:01.396Z
+refreshed_at: 2026-11-23T03:03:23.683Z
 min_duration: 900
 min_date: "20260101"
-total_candidates: 3
+total_candidates: 4
 done: 3
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: SOAPBOX113
+    guid: https://risky.biz/SOAPBOX113/
+    title: "Soap Box: Do AI agents need their own identities?"
+    duration: 2172
+    published: Mon, 23 Nov 2026 12:09:45 +1100
+    published_sort: "20261123"
+    first_seen_at: 2026-11-23T03:03:23.683Z
+    url: https://risky.biz/SOAPBOX113/
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    image: https://risky.biz/static/img/rb-feed-main.png
+    summary: >-
+      In this sponsored Soap Box edition of the Risky Business podcast Patrick Gray chats with Fletcher Heisler, the CEO
+      of open source IDP company Authentik.
+
+
+      Do AI agents need their own identities? Or can we scope agent actions and authorisations in different ways?
+
+
+      It’s a fast moving space and lots of new tech and standards are emerging. Fletcher joins Pat to demystify it all!
+
+
+      This episode is also available on YouTube.
+    status: needs_transcript
+    priority: 1
   - id: SOAPBOX112
     guid: https://risky.biz/SOAPBOX112/
     title: "Soap Box: Security must be more browser-centric"
