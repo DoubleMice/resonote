@@ -1,0 +1,30 @@
+title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+guest: Atlas、吴伟
+guest_role: XTX Markets 量化研究员、前 DRW AI 研究科学家
+tags:
+  - ai-research
+  - investor
+  - interview
+  - deep-dive
+  - technical
+summary: |
+  Atlas 与吴伟解释系统化交易、做市及市场模型的运作，并讨论算力和深度学习如何改变量化研究。他们也分析市场数据的噪声与验证难题、交易执行和风控，以及大公司和小团队各自可能拥有的优势。
+core_ideas:
+  - 系统化交易由模型和系统执行决策，主观投资者也可借助 AI，但最终由人决定交易。
+  - 市场数据虽多，有效独立信息却有限；短期盈利和历史回测都不足以单独证明策略可靠。
+  - 预测信号还需经过仓位控制和订单执行，交易本身也可能改变市场价格。
+  - 新模型需要发现能补充现有模型的信号；算力有助于实验，但不能消除市场噪声和验证延迟。
+  - 大型机构在数据、算力和执行系统上有积累，小团队可能在容量有限的特殊场景找到机会。
+id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+source: sv101
+source_title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+published: 2026-11
+published_sort: "20261122"
+duration: 2h31m
+url: https://sv101.fireside.fm/273
+status: generated
+article_path: episodes/bc105fa7-23de-4c70-a338-6d70daf9aed1/article.html
+base: /episodes/bc105fa7-23de-4c70-a338-6d70daf9aed1/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+generated_at: 2026-11-23T18:54:40.745Z

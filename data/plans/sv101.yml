@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-11-23T03:03:23.703Z
+refreshed_at: 2026-11-23T18:08:33.197Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 4
-done: 3
+done: 4
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -192,8 +192,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Atlas Wang and Wei Wu.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-23T18:20:12.944Z
+    transcript_job_id: 2b34b2b2-cf54-4ef9-b4d0-0a3501a81340_2tvmdyg56x8ebturk0_7b9a540e24f449e19624ad1e5b55137e,6a2c6dd2-2f13-4ac9-bf20-4f67932874bf_2tvsing56xdib65yio_a215f938c679405e896b2aeafa614d1d,600c57c8-595f-4dad-b69e-7be79c57ec8b_2twm9wg56xizoxd91c_973b57e723384cd5b3e32548e9865769,f291b01b-9000-4493-beb2-5520edc38bef_2twcjeg56xp0os5gqo_3443bac15a374d96ac6a6ae3de4a91ce,94dec305-1a2f-4919-ace2-264a668f6329_2u6fb5g56xttf88hs0_a0b6390d5c93424d913855f7f5331010,85584750-a142-4ec1-ad1b-aa9f47ce51c1_2sn0tzg56xz93vgg00_0cc9f7ec7d4348c9b2e4b5a3b7eca76a,5332e221-bb88-4d7f-988c-6ae223188582_2twfkag56y4o0913b4_e94b3918ae134452a218c6ea85ca2f34,1d9286e7-3efe-48d7-b4c9-b7d40447a3cf_2twcksg56y9v290fls_ebac4e9929d74f5793c98594b3ee4222,2a30cac5-132c-40ac-904f-6c2b43c33dcd_2u525cg56yf4o7oa2o_6ee809f961d84130b4705aacc7de78f2,5e959129-8007-4b56-8455-a3b323e152d8_2tvmdyg56yjieiurcw_0b9a94dd2bcc47f89ef960dbc21ca455,64d4e67a-86d2-4a0f-b030-57714d8473d1_2tvvtrg56yl26nby0w_63e886ad3a01423da131a6ac58c415dd
+    transcript_completed_at: 2026-11-23T18:35:57.497Z
   - id: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
     guid: 7a1e61d3-f02c-498b-ac84-cf68f59b4ca9
     title: E257｜对话Vitalik：AI安全背后的哲学思想，有效利他主义如何影响硅谷？

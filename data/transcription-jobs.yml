@@ -37855,3 +37855,462 @@ jobs:
 
       {"error":{"object":"error","message":"Internal Server
       Error","type":"ServiceUnavailableError","param":null,"code":"503"}}
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:0
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: 03ad6331-2456-430a-a0e2-60498efa304c_2u6fb5g56w6ld9qm80_a207dbcc1aaf4472951c418acd7d0627
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:10:41.915Z
+    completed_at: 2026-11-23T18:10:41.915Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:1
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: 0432fddc-7b43-48b8-bdc7-01e09f0dd106_2twm9wg56wc9my4idc_cdbe48579be54e1c84228ae14df440ce
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:12:05.558Z
+    completed_at: 2026-11-23T18:12:05.558Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:2
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: c0ae6d70-ae35-4512-ba90-e23aa512b5c5_2twdeig56wgqripn9c_60db803066e7404286268ae361d2e973
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:13:23.648Z
+    completed_at: 2026-11-23T18:13:23.648Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:3
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: a9890c1c-1ae9-4779-9b83-cdc275594486_2smzk6g56wkx08ecqo_6e53c85fbc5d4b518ffac9580119914e
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:15:32.487Z
+    completed_at: 2026-11-23T18:15:32.487Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:4
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: 01c42ed7-22c1-492d-a135-56a5c4c251f9_2twhjvg56wrtbuxkhs_df8ff55e50644cd99c8c4561e26c2f35
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:17:07.185Z
+    completed_at: 2026-11-23T18:17:07.185Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:5
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: 33b61986-717a-4690-b4a6-009355a2e6ac_2tvvtrg56wwvremolc_da92c10be7e14858aa0756ebac7c7246
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:17:27.235Z
+    completed_at: 2026-11-23T18:17:27.235Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:6
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: dfa0369c-fd7b-4144-b24c-af4efeb2873a_2tvlhyg56wxyeqx340_73516b345ab94358b5b3df5da0ed39cf
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:19:35.136Z
+    completed_at: 2026-11-23T18:19:35.136Z
+  - key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z:chunk:7
+    parent_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    attempt_key: latepost:7bc6cc68-a934-4e3a-9f88-52564246590b:20261123:https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3:mimo:2026-11-23T18:08:34.227Z
+    provider: mimo
+    id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+    source: latepost
+    title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+    audio_url: https://aphid.fireside.fm/d/1437767933/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/7bc6cc68-a934-4e3a-9f88-52564246590b.mp3
+    task_id: 27ad7a04-09ae-41fc-b155-151bdf2fbd18_2twdeig56x4sgedm9s_06e57ed7aa62490e854153f9c94f3330
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 8
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:08:34.227Z
+    updated_at: 2026-11-23T18:20:12.542Z
+    completed_at: 2026-11-23T18:20:12.542Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:0
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 2b34b2b2-cf54-4ef9-b4d0-0a3501a81340_2tvmdyg56x8ebturk0_7b9a540e24f449e19624ad1e5b55137e
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:22:17.825Z
+    completed_at: 2026-11-23T18:22:17.825Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:1
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 6a2c6dd2-2f13-4ac9-bf20-4f67932874bf_2tvsing56xdib65yio_a215f938c679405e896b2aeafa614d1d
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:24:00.227Z
+    completed_at: 2026-11-23T18:24:00.227Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:2
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 600c57c8-595f-4dad-b69e-7be79c57ec8b_2twm9wg56xizoxd91c_973b57e723384cd5b3e32548e9865769
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:25:52.864Z
+    completed_at: 2026-11-23T18:25:52.864Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:3
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: f291b01b-9000-4493-beb2-5520edc38bef_2twcjeg56xp0os5gqo_3443bac15a374d96ac6a6ae3de4a91ce
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:27:22.501Z
+    completed_at: 2026-11-23T18:27:22.501Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:4
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 94dec305-1a2f-4919-ace2-264a668f6329_2u6fb5g56xttf88hs0_a0b6390d5c93424d913855f7f5331010
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:29:04.070Z
+    completed_at: 2026-11-23T18:29:04.070Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:5
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 85584750-a142-4ec1-ad1b-aa9f47ce51c1_2sn0tzg56xz93vgg00_0cc9f7ec7d4348c9b2e4b5a3b7eca76a
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:30:45.217Z
+    completed_at: 2026-11-23T18:30:45.217Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:6
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 5332e221-bb88-4d7f-988c-6ae223188582_2twfkag56y4o0913b4_e94b3918ae134452a218c6ea85ca2f34
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:32:22.266Z
+    completed_at: 2026-11-23T18:32:22.266Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:7
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 1d9286e7-3efe-48d7-b4c9-b7d40447a3cf_2twcksg56y9v290fls_ebac4e9929d74f5793c98594b3ee4222
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:34:00.651Z
+    completed_at: 2026-11-23T18:34:00.651Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:8
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 2a30cac5-132c-40ac-904f-6c2b43c33dcd_2u525cg56yf4o7oa2o_6ee809f961d84130b4705aacc7de78f2
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:35:22.577Z
+    completed_at: 2026-11-23T18:35:22.577Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:9
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 5e959129-8007-4b56-8455-a3b323e152d8_2tvmdyg56yjieiurcw_0b9a94dd2bcc47f89ef960dbc21ca455
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:35:52.361Z
+    completed_at: 2026-11-23T18:35:52.361Z
+  - key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z:chunk:10
+    parent_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    attempt_key: sv101:bc105fa7-23de-4c70-a338-6d70daf9aed1:20261122:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3:mimo:2026-11-23T18:20:12.944Z
+    provider: mimo
+    id: bc105fa7-23de-4c70-a338-6d70daf9aed1
+    source: sv101
+    title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/bc105fa7-23de-4c70-a338-6d70daf9aed1.mp3
+    task_id: 64d4e67a-86d2-4a0f-b030-57714d8473d1_2tvvtrg56yl26nby0w_63e886ad3a01423da131a6ac58c415dd
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:20:12.944Z
+    updated_at: 2026-11-23T18:35:57.497Z
+    completed_at: 2026-11-23T18:35:57.497Z
+  - key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z:chunk:0
+    parent_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    attempt_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z
+    provider: mimo
+    id: SOAPBOX113
+    source: risky-business
+    title: "Soap Box: Do AI agents need their own identities?"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    task_id: d6df8835-a25a-4a9b-93c3-b8c738572432_2tvlhyg56ylu0rxwxs_8d55f740955c4a9cbbf3ae91965c3eaf
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:35:57.855Z
+    updated_at: 2026-11-23T18:37:54.729Z
+    completed_at: 2026-11-23T18:37:54.729Z
+  - key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z:chunk:1
+    parent_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    attempt_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z
+    provider: mimo
+    id: SOAPBOX113
+    source: risky-business
+    title: "Soap Box: Do AI agents need their own identities?"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    task_id: c1419860-399a-4a5f-b8d9-bd9e0d883e87_2twrufg56yrno0nfuo_cbaa4ab3c1dd467fb07479d7916f6491
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:35:57.855Z
+    updated_at: 2026-11-23T18:39:55.739Z
+    completed_at: 2026-11-23T18:39:55.739Z
+  - key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z:chunk:2
+    parent_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    attempt_key: risky-business:SOAPBOX113:20261123:https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3:mimo:2026-11-23T18:35:57.855Z
+    provider: mimo
+    id: SOAPBOX113
+    source: risky-business
+    title: "Soap Box: Do AI agents need their own identities?"
+    audio_url: https://dts.podtrac.com/redirect.mp3/media3.risky.biz/SOAPBOX113.mp3
+    task_id: 01c7e776-5a6a-40be-8d21-110413ce6bfa_2tvsing56yy4bks6io_089b5a004fc34670a2aaab662b42b507
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 3
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:35:57.855Z
+    updated_at: 2026-11-23T18:40:51.777Z
+    completed_at: 2026-11-23T18:40:51.777Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z:chunk:0
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: 159b7cbb-c952-4e8e-a142-87f5e76653a1_2twee0g56z1uzqojr4_7ae6e413af644e4d8279975e725492e3
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:40:52.132Z
+    updated_at: 2026-11-23T18:43:09.281Z
+    completed_at: 2026-11-23T18:43:09.281Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z:chunk:1
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: 0a78d4f5-6fd5-416d-bb52-06cefe5f1491_2twfkag56z8hpczk00_d26699180d6d45128d8df83b54ef23ab
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:40:52.132Z
+    updated_at: 2026-11-23T18:45:20.358Z
+    completed_at: 2026-11-23T18:45:20.358Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z:chunk:2
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: 0c930291-3d09-4602-86b1-dc94b4ed5800_2tvsing56zfi7pd534_223f4bb3b6dc4ca98398924dd9676eba
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:40:52.132Z
+    updated_at: 2026-11-23T18:48:59.602Z
+    completed_at: 2026-11-23T18:48:59.602Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z:chunk:3
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: 402d7389-f6a5-403d-b610-a706081e7666_2twm9wg56zr8w0vls0_cd1cb5c0a6e746d1ab6ca89ab16d5190
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:40:52.132Z
+    updated_at: 2026-11-23T18:50:44.373Z
+    completed_at: 2026-11-23T18:50:44.373Z
+  - key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z:chunk:4
+    parent_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    attempt_key: unchained:2fabddb8-e457-11f1-a5c5-d7971c18aa50:20261119:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3:mimo:2026-11-23T18:40:52.132Z
+    provider: mimo
+    id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
+    source: unchained
+    title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML2189071904.mp3
+    task_id: 08b549c9-1ff7-48d8-8297-62f46650be63_2smzk6g56zwu24ey2o_3f8a923017634f069565b39c802976ce
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-23T18:40:52.132Z
+    updated_at: 2026-11-23T18:51:10.652Z
+    completed_at: 2026-11-23T18:51:10.652Z

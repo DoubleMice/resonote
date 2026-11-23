@@ -1,0 +1,29 @@
+title: AI 智能体需要自己的身份吗？
+guest: Fletcher Heisler
+guest_role: authentik 首席执行官
+tags:
+  - ai-safety
+  - ai-products
+  - interview
+  - technical
+  - quick-take
+summary: |
+  authentik 首席执行官 Fletcher Heisler 与主持人 Patrick Gray 讨论智能体身份、人的授权以及设备绑定凭据。两人也分析身份系统迁移中可交给智能体的工作，并强调测试和人工核验。
+core_ideas:
+  - 智能体访问企业资源时，应能追踪具体操作者及其与授权人的关系。
+  - 独立身份和人类身份下的受限授权各有设计空间，长期自主运行及人员离职会带来额外管理问题。
+  - 设备绑定凭据旨在限制被盗令牌的滥用，但不同方案的支持程度仍有差异。
+  - 智能体可以辅助重复配置与身份系统迁移，上线前仍需测试和人工核验。
+id: SOAPBOX113
+source: risky-business
+source_title: "Soap Box: Do AI agents need their own identities?"
+published: 2026-11
+published_sort: "20261123"
+duration: 36m
+url: https://risky.biz/SOAPBOX113/
+status: generated
+article_path: episodes/SOAPBOX113/article.html
+base: /episodes/SOAPBOX113/
+visual_notes: false
+thumbnail: https://risky.biz/static/img/rb-feed-main.png
+generated_at: 2026-11-23T18:52:51.702Z

@@ -1,0 +1,29 @@
+title: 对话蚂蚁灵光蔡伟：大厂首个个人 Agent，验证了什么
+guest: 蔡伟
+guest_role: 蚂蚁灵光负责人
+tags:
+  - ai-products
+  - product-management
+  - interview
+  - product-lead
+summary: |
+  蚂蚁灵光负责人蔡伟介绍灵光 2.0 如何以持续管理事项为核心，讨论产品架构、模型、安全和服务接入的取舍。上线一周多的早期反馈涉及理财、办公等场景，但留存的具体数据、长期需求和商业模式仍待观察。
+core_ideas:
+  - 灵光以事项组织持续跟进，团队最关注托管事项数，同时也观察用户数和留存。
+  - 个人助理需要判断提醒的时机与内容，并在支付和个人数据使用上划定权限边界。
+  - 团队放弃基于 OpenClaw 的早期架构，自研调度基础设施，并在发布前修补安全问题。
+  - 办公和账单等场景获得早期使用，但第三方服务授权与详情页体验仍有限制。
+  - 蔡伟认为后台任务可以利用延迟容忍度优化算力成本，商业化则仍在探索。
+id: 7bc6cc68-a934-4e3a-9f88-52564246590b
+source: latepost
+source_title: "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+published: 2026-11
+published_sort: "20261123"
+duration: 1h52m
+url: https://podcast.latepost.com/190
+status: generated
+article_path: episodes/7bc6cc68-a934-4e3a-9f88-52564246590b/article.html
+base: /episodes/7bc6cc68-a934-4e3a-9f88-52564246590b/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/1/19a49f52-28ee-4e25-b8e9-4f0ee70917e0/episodes/7/7bc6cc68-a934-4e3a-9f88-52564246590b/cover.jpg?v=1
+generated_at: 2026-11-23T18:55:16.352Z
