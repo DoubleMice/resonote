@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-23T18:08:33.174Z
+refreshed_at: 2026-11-24T03:03:16.263Z
 min_duration: 3300
-min_date: "20261102"
+min_date: "20261103"
 total_candidates: 6
 done: 6
 pending: 0
@@ -117,9 +117,9 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
+    transcript_job_id: 159b7cbb-c952-4e8e-a142-87f5e76653a1_2twee0g56z1uzqojr4_7ae6e413af644e4d8279975e725492e3,0a78d4f5-6fd5-416d-bb52-06cefe5f1491_2twfkag56z8hpczk00_d26699180d6d45128d8df83b54ef23ab,0c930291-3d09-4602-86b1-dc94b4ed5800_2tvsing56zfi7pd534_223f4bb3b6dc4ca98398924dd9676eba,402d7389-f6a5-403d-b610-a706081e7666_2twm9wg56zr8w0vls0_cd1cb5c0a6e746d1ab6ca89ab16d5190,08b549c9-1ff7-48d8-8297-62f46650be63_2smzk6g56zwu24ey2o_3f8a923017634f069565b39c802976ce
     transcript_submitted_at: 2026-11-23T18:40:52.132Z
     transcript_completed_at: 2026-11-23T18:51:10.652Z
-    transcript_job_id: 159b7cbb-c952-4e8e-a142-87f5e76653a1_2twee0g56z1uzqojr4_7ae6e413af644e4d8279975e725492e3,0a78d4f5-6fd5-416d-bb52-06cefe5f1491_2twfkag56z8hpczk00_d26699180d6d45128d8df83b54ef23ab,0c930291-3d09-4602-86b1-dc94b4ed5800_2tvsing56zfi7pd534_223f4bb3b6dc4ca98398924dd9676eba,402d7389-f6a5-403d-b610-a706081e7666_2twm9wg56zr8w0vls0_cd1cb5c0a6e746d1ab6ca89ab16d5190,08b549c9-1ff7-48d8-8297-62f46650be63_2smzk6g56zwu24ey2o_3f8a923017634f069565b39c802976ce
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     title: Why So Many Public Companies Are Saying No to Tokenized Stocks

@@ -1,5 +1,5 @@
 source: latepost
-refreshed_at: 2026-11-23T18:08:33.210Z
+refreshed_at: 2026-11-24T03:03:16.303Z
 min_duration: 1800
 min_date: "20260101"
 total_candidates: 9
@@ -177,8 +177,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-23T18:08:34.227Z
     transcript_job_id: 03ad6331-2456-430a-a0e2-60498efa304c_2u6fb5g56w6ld9qm80_a207dbcc1aaf4472951c418acd7d0627,0432fddc-7b43-48b8-bdc7-01e09f0dd106_2twm9wg56wc9my4idc_cdbe48579be54e1c84228ae14df440ce,c0ae6d70-ae35-4512-ba90-e23aa512b5c5_2twdeig56wgqripn9c_60db803066e7404286268ae361d2e973,a9890c1c-1ae9-4779-9b83-cdc275594486_2smzk6g56wkx08ecqo_6e53c85fbc5d4b518ffac9580119914e,01c42ed7-22c1-492d-a135-56a5c4c251f9_2twhjvg56wrtbuxkhs_df8ff55e50644cd99c8c4561e26c2f35,33b61986-717a-4690-b4a6-009355a2e6ac_2tvvtrg56wwvremolc_da92c10be7e14858aa0756ebac7c7246,dfa0369c-fd7b-4144-b24c-af4efeb2873a_2tvlhyg56wxyeqx340_73516b345ab94358b5b3df5da0ed39cf,27ad7a04-09ae-41fc-b155-151bdf2fbd18_2twdeig56x4sgedm9s_06e57ed7aa62490e854153f9c94f3330
+    transcript_submitted_at: 2026-11-23T18:08:34.227Z
     transcript_completed_at: 2026-11-23T18:20:12.542Z
   - id: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5
     guid: 26f9d2a2-21ec-4404-bd78-0d7eb20e6ae5

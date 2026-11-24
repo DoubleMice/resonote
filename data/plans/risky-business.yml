@@ -1,5 +1,5 @@
 source: risky-business
-refreshed_at: 2026-11-23T18:08:33.181Z
+refreshed_at: 2026-11-24T03:03:16.272Z
 min_duration: 900
 min_date: "20260101"
 total_candidates: 4
@@ -35,8 +35,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-23T18:35:57.855Z
     transcript_job_id: d6df8835-a25a-4a9b-93c3-b8c738572432_2tvlhyg56ylu0rxwxs_8d55f740955c4a9cbbf3ae91965c3eaf,c1419860-399a-4a5f-b8d9-bd9e0d883e87_2twrufg56yrno0nfuo_cbaa4ab3c1dd467fb07479d7916f6491,01c7e776-5a6a-40be-8d21-110413ce6bfa_2tvsing56yy4bks6io_089b5a004fc34670a2aaab662b42b507
+    transcript_submitted_at: 2026-11-23T18:35:57.855Z
     transcript_completed_at: 2026-11-23T18:40:51.777Z
   - id: SOAPBOX112
     guid: https://risky.biz/SOAPBOX112/
