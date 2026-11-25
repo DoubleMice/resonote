@@ -5,9 +5,9 @@ min_date: "20260101"
 total_candidates: 11
 done: 2
 pending: 0
-needs_transcript: 9
+needs_transcript: 0
 transcribing: 0
-transcribe_failed: 0
+transcribe_failed: 9
 downloaded: 0
 episodes:
   - id: p-7826
@@ -52,8 +52,18 @@ episodes:
     url: https://lexfridman.com/math-ai-crisis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=math-ai-crisis
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-29T18:11:33.750Z
+    transcript_completed_at: 2026-10-29T18:12:18.929Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6554
     guid: https://lexfridman.com/?p=6554
     title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
@@ -64,8 +74,18 @@ episodes:
     url: https://lexfridman.com/andrew-scull/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=andrew-scull
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:10:43.887Z
+    transcript_completed_at: 2026-10-28T18:11:42.668Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6494
     guid: https://lexfridman.com/?p=6494
     title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
@@ -76,8 +96,18 @@ episodes:
     url: https://lexfridman.com/khabib-nurmagomedov/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=khabib-nurmagomedov
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:11:42.888Z
+    transcript_completed_at: 2026-10-28T18:12:32.243Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6466
     guid: https://lexfridman.com/?p=6466
     title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
@@ -88,8 +118,18 @@ episodes:
     url: https://lexfridman.com/anthony-kaldellis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=anthony-kaldellis
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:12:32.460Z
+    transcript_completed_at: 2026-10-28T18:13:31.834Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6434
     guid: https://lexfridman.com/?p=6434
     title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
@@ -100,8 +140,18 @@ episodes:
     url: https://lexfridman.com/jensen-huang/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jensen-huang
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:13:32.055Z
+    transcript_completed_at: 2026-10-28T18:14:11.505Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6426
     guid: https://lexfridman.com/?p=6426
     title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
@@ -112,8 +162,18 @@ episodes:
     url: https://lexfridman.com/jeff-kaplan/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jeff-kaplan
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:14:11.740Z
+    transcript_completed_at: 2026-10-28T18:15:32.776Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6421
     guid: https://lexfridman.com/?p=6421
     title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
@@ -124,8 +184,18 @@ episodes:
     url: https://lexfridman.com/rick-beato/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rick-beato
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:15:32.996Z
+    transcript_completed_at: 2026-10-28T18:16:16.730Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6413
     guid: https://lexfridman.com/?p=6413
     title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
@@ -136,8 +206,18 @@ episodes:
     url: https://lexfridman.com/peter-steinberger/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=peter-steinberger
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:16:16.973Z
+    transcript_completed_at: 2026-10-28T18:17:08.028Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
   - id: p-6394
     guid: https://lexfridman.com/?p=6394
     title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
@@ -148,5 +228,15 @@ episodes:
     url: https://lexfridman.com/ai-sota-2026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ai-sota-2026
     audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
     image: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
-    status: needs_transcript
+    status: transcribe_failed
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-10-28T18:17:08.246Z
+    transcript_completed_at: 2026-10-28T18:18:17.889Z
+    transcript_error: |
+      MiMo transcription failed: 400 {
+          "error": {
+              "code": "400",
+              "message": "Unsupported model mimo-v2.5"
+          }
+      }
