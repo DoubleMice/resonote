@@ -1,15 +1,115 @@
 source: unchained
-refreshed_at: 2026-11-24T18:09:04.061Z
+refreshed_at: 2026-11-25T03:03:22.698Z
 min_duration: 3300
-min_date: "20261103"
+min_date: "20261104"
 total_candidates: 6
-done: 6
+done: 5
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    guid: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    duration: 3827
+    published: Tue, 24 Nov 2026 18:51:00 -0000
+    published_sort: "20261124"
+    first_seen_at: 2026-11-25T03:03:22.690Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    image: https://megaphone-images.spotifycdn.com/podcasts/04211822-e838-11f1-8bbe-0b7c80bf7a3f/image/7359a000a8a436dbffae7248b37d323c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      What if AI data centers mined crypto on the side? Ryan Watkins of Syncracy Capital lays out how Pearl's footprint
+      could pass Bitcoin's with about 12.5% of data center capacity.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+        Already Have a Crypto-Backed Loan? Get a Better Rate with Arch Lending.
+
+      Arch Lending can beat your current crypto-backed loan interest rate by up to 2%, subject to eligibility. Plus,
+      refinance an eligible third-party loan by November 30 and pay no Arch origination fee. Use code SwitchToArch to
+      explore refinancing. Terms and eligibility apply.
+
+
+      Explore Refinancing
+
+
+      ========================================================
+
+
+      Syncracy Capital has made a big investment in Pearl, and co-founder Ryan Watkins opened his case with a line built
+      to rile Bitcoiners: for the first time in years, Bitcoin's long-term viability as a store of value is being
+      tested.
+
+
+      Watkins argues that with no fee market, Bitcoin's security budget now depends on its price doubling every four
+      years. Pearl, which swaps SHA-256 hashing for the matrix multiplication behind AI inference, is his answer, though
+      he frames it as a venture bet, not a call to flip Bitcoin.
+
+
+      He walks Laura Shin through why near-zero mining overhead could pull AI clouds in, the January FP8 upgrade, duplex
+      miners, and "P-Day," when his model says Pearl could pass Bitcoin's compute and energy footprint with about 12.5%
+      of data center capacity. He also answers criticism of Pearl's raise and mining concentration. If he's right, AI's
+      buildout could end up paying for proof-of-work security.
+
+
+      Host:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
+
+      Guest:
+
+        ⁠⁠⁠⁠Ryan Watkins - Co-Founder of Syncracy Capital
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🎙️ 00:53 Bits + Bips: Catch the weekly crypto and macro show with Ram, Austin, and Chris at
+      https://www.youtube.com/@Bitsandbips
+
+
+      🧱 01:14 Why Ryan says Bitcoin is being tested for the first time in years
+
+
+      ⚙️ 07:25 Why near-zero overhead would make mining Pearl a no-brainer for AI clouds
+
+
+      💸 11:26 Arch Lending: Refinance an eligible crypto loan by November 30 and get the origination fee waived with
+      code Switch to Arch at https://unchainedcrypto.com/go/arch-podcast-yt&nbsp;
+
+
+      🏦 12:33 How the AI industry could come to treat Pearl as its native store of value
+
+
+      🧮 18:08 What Pearl is today: GPUs mining by proving matrix multiplication
+
+
+      📈 25:46 P-Day: why Ryan thinks Pearl's hash rate could pass Bitcoin's this decade
+
+
+      🔀 31:57 Why duplex miners earning AI revenue could price out synthetic miners
+
+
+      🛡️ 42:29 Why Ryan thinks renting GPUs for a 51% attack on Pearl wouldn't work
+
+
+      🧾 45:23 Ryan answers critics on Pearl's $55M raise, insider supply and fair launch
+
+
+      🔮 57:46 What happens to Bitcoin if Pearl's compute footprint passes it?
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: needs_transcript
+    priority: 1
   - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     guid: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
@@ -556,136 +656,3 @@ episodes:
     transcript_job_id: 39318ee8-3a2c-4ebe-b4d3-46f8d023c349_2twt1gg4spx068r4lc_ac60d9cbcd38438caac7e883aa48ff11,c80d49d7-cbca-48ea-aa8e-02f58a42e489_2sn0tzg4sq4803ny80_a63cc65e371345c1bc44346fd2fa5910,ca9951bb-44ce-46e2-941f-d0de31e3404e_2tvlakg4sqcgizda80_c94c092dc03b4f13b5d4cedaa5613f72,1e8d83e3-1cc7-41a4-add8-7f8f1c82ae43_2twyg9g4sqi889vk00_256cd81b2200461a8ea073c93e6046a9,41221054-e4f6-44ef-bdaf-43025ae469ba_2twl7jg4sqptveul1c_9b01710730e349bab7f9ff88b11c8c6a,135551b6-7891-4ad3-9ea2-41a31022d443_2tvrhrg4sqw9qek5q8_409f3caed0564448af9255534d785341
     transcript_submitted_at: 2026-11-19T18:48:20.556Z
     transcript_completed_at: 2026-11-19T19:00:15.042Z
-  - id: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
-    guid: 21ab5726-d7ae-11f1-97a1-4b3fbb715cc9
-    title: How North Korea Stole $6.3 Billion From Binance in 20 Minutes
-    duration: 4836
-    published: Tue, 03 Nov 2026 17:43:00 -0000
-    published_sort: "20261103"
-    first_seen_at: 2026-11-03T18:09:08.712Z
-    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
-    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML4382913102.mp3
-    image: https://megaphone-images.spotifycdn.com/podcasts/21ab5726-d7ae-11f1-97a1-4b3fbb715cc9/image/c2fad37e0a9ec36405ec4db105a810ee.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
-    summary: >-
-      A compromised developer laptop and 50 pre-signed transactions let North Korea drain $6.3 billion from Binance.
-      Jonty and Pablo Sabbatella trace how it happened.
-
-
-      ========================================================
-
-
-      Thank you to our sponsor!
-
-        Put your crypto to work with Nexo: earn daily interest or borrow funds against your assets on one platform trusted by more than 10 million clients.
-
-      Find out more at ⁠⁠⁠⁠⁠⁠https://unchainedcrypto.com/go/nexo-podcast-sn⁠⁠⁠⁠⁠⁠.
-
-
-      Geo-restrictions, eligibility and terms apply.
-
-
-      With Election Day on November 3, crypto voters could make the difference in close races. Check where candidates
-      stand on crypto, verify your registration, and make your voting plan at Stand With Crypto’s Voter Hub.
-
-
-      ========================================================
-
-
-      Quick favor: We’re deciding what Unchained does next; new shows, stream times, what’s worth paying for.
-
-
-      Our ⁠listener survey⁠ takes five minutes, it’s anonymous, and I read the write-in answers myself. Everyone who
-      finishes it gets a free month of Premium, Unchained or Bits + Bips, your pick. Open through Sunday, November 8.
-
-
-      — Laura
-
-
-      ========================================================
-
-
-      North Korea only needed 20 minutes to take $6.3 billion from Binance in the largest hack in history, not just
-      crypto history. According to Binance, one of the attack vectors started with a compromised developer laptop, which
-      ultimately led to the attackers being able to sign transactions from the exchange's hot wallets.
-
-
-      Jonty, founder of Pangolin Intelligence, and Pablo Sabbatella, founder of Opsek, trace how an EIP-7702 upgrade let
-      the hackers sweep those wallets, why roughly 43% of the funds were frozen compared with less than 3% after Bybit,
-      and how Circle, Tether, Arbitrum's Security Council and Aave responded. They also debate how decentralized
-      THORChain really is, why the FBI named THOR node operators, and how TraderTraitor lures developers with fake job
-      interviews.
-
-
-      With Chainalysis tying nearly 89% of this year's reported hack losses to North Korea, Pablo and Jonty lay out the
-      security and anti-laundering steps the industry could take before the next attack.
-
-
-      Host:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Laura Shin⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠, Host / Unchained
-
-      Guest:
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Jonty (tanuki42) - Founder of Pangolin Intelligence
-
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Pablo Sabbatella - Founder of Opsek
-
-      Timestamps
-
-
-      🎬 00:00 Intro
-
-
-      📋 00:26 Unchained Survey: complete the listener survey at https://unchainedcrypto.com/survey
-
-
-      🚨 02:08 How North Korea took $6.3 billion from Binance in about 20 minutes
-
-
-      🔑 07:51 Why the EIP-7702 delegation made the drain faster
-
-
-      💰 17:35 Nexo: earn daily interest on your crypto or borrow against your assets at
-      https://unchainedcrypto.com/go/nexo-podcast-yt
-
-
-      🗳️ 17:52 Stand With Crypto: see where candidates stand on crypto and make your voting plan at
-      https://unchainedcrypto.com/go/standwithcrypto-yt
-
-
-      ⛓️ 18:31 Which chains were hit and where exchange signing infrastructure fails
-
-
-      🏦 23:00 Should Binance have held $6 billion in hot wallets?
-
-
-      🧊 29:18 Why Circle and Tether moved fast to freeze the stolen funds
-
-
-      🏛️ 35:38 How the hackers borrowed nearly 20,000 ETH on Aave
-
-
-      🔄 40:37 Is Binance liquidity helping launder funds through THORChain?
-
-
-      ⚖️ 45:51 How decentralized is THORChain after a three-vote halt?
-
-
-      🚔 54:19 What the FBI naming THOR node operators signals
-
-
-      🤖 01:02:33 Why the laundering trail looks machine-driven
-
-
-      🕵️ 01:06:06 Who TraderTraitor is and how fake job interviews hack developers
-
-
-      🛡️ 01:13:00 What the industry should change to stop North Korea
-
-      Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: generated
-    priority: 1
-    transcript_provider: mimo
-    transcript_job_id: bd8a8e4c-4e36-40e6-8d31-3471b924e6ab_2twam2g4p5iledzshs_04757e9acea54cbf8328abac92253772,5771b512-23da-46da-8b99-a3f3d3d3a93b_2twajkg4p5no2gya68_0be7bd459fd14f60a70103781bd0fbc0,bf7b1ec1-46eb-4ac0-80ce-88208aa6ac2e_2twe1ig4p5os0282dc_2f39123eaf68493d9dbe7924eac13bee,5036b823-ebde-4c7c-9f8c-df2f3cd5cac8_2twbikg4p5q726apz4_e9b997bde7ee44b394f6f5db4d0af763,e0fc6b9d-147f-4f71-82c9-f68ff6399232_2u6envg4p5r4o6s268_e719819afcb847b99a1a778a8a0622a3,9bff3a04-c686-42e8-9733-7e0b0fa65fbd_2twi4lg4p5sswu68sg_465de66882684f09b45d701373beaedf
-    transcript_submitted_at: 2026-11-18T18:48:50.303Z
-    transcript_completed_at: 2026-11-18T18:53:04.486Z
