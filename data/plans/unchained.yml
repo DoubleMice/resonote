@@ -1,15 +1,123 @@
 source: unchained
-refreshed_at: 2026-11-25T03:03:22.698Z
+refreshed_at: 2026-11-25T18:09:19.876Z
 min_duration: 3300
 min_date: "20261104"
-total_candidates: 6
-done: 5
+total_candidates: 7
+done: 7
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    guid: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    duration: 5263
+    published: Wed, 25 Nov 2026 17:21:00 -0000
+    published_sort: "20261125"
+    first_seen_at: 2026-11-25T18:09:19.870Z
+    url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    image: https://megaphone-images.spotifycdn.com/podcasts/b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f/image/55ae5888a520e9591d70a7638a5a5bc0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+    summary: >-
+      North Korea drained $6.4 billion from Binance. Taylor Monahan lays out why most of the record 44% frozen came
+      early, and why tracing the rest rarely pays off now.
+
+
+      ========================================================
+
+
+      Thank you to our sponsor!
+
+
+      Your personal information may be more exposed than you think. Cape is a privacy-first mobile carrier built to help
+      protect your data and reduce unwanted tracking. Get 33% off your first 6 months with code UNCHAINED.
+
+
+      ========================================================
+
+
+      Nvidia's board reinstated Jensen Huang after removing him over affairs, one of them reportedly with a woman US
+      intelligence suspects of spying for China. Kain Warwick, Taylor Monahan, and Austin Griffith ask why a board would
+      wipe out $1.2 trillion in value and then reverse course, and whether the alleged spy got Huang to do anything
+      Nvidia didn't already want.
+
+
+      Then SKY, the former MakerDAO, saw about $2 billion in USDS outflows after a report tied half a billion dollars of
+      PSM swaps to illicit funds and stUSDS users can’t withdraw with&nbsp; founder Rune Christensen blaming a $77
+      million SKY-backed loan. Kain recalls selling 30,000 ETH in 2022 to keep Synthetix from imploding.
+
+
+      Taylor walks through why a record 44% of North Korea's $6.4 billion Binance haul is frozen and why the rest is so
+      hard to catch, while Austin lays out why post-quantum work now outranks UX upgrades at the Ethereum Foundation.
+      Kain closes on a big claim: AI labs are mispriced because they sell to the one industry they are deflating.
+
+
+      Hosts:
+
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
+
+        ⁠Taylor Monahan⁠ - Co-host of Uneasy Money and Security Expert
+
+        ⁠⁠Austin Griffith⁠⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
+
+      Timestamps
+
+
+      🎬 00:00 Intro
+
+
+      🔁 01:01 Nvidia reinstates Jensen Huang: why the rehire wasn't priced in
+
+
+      🕵️ 11:13 If you were Nvidia's board: Tay weighs the spy angle against the affairs
+
+
+      🧠 17:26 Why Kain's esteem for human intelligence keeps falling next to AI
+
+
+      📱 19:54 Cape: Get 33% off your first 6 months with code UNCHAINED at
+      https://unchainedcrypto.com/go/cape-yt&nbsp;&nbsp;&nbsp;
+
+
+      🎙️ 20:48 Bits + Bips: Watch the weekly crypto and macro show on its own channel at
+      https://www.youtube.com/@Bitsandbips&nbsp;&nbsp;
+
+
+      🏦 21:11 SKY's rough week: North Korea-linked PSM swaps and Rune's $77M loan
+
+
+      ⚖️ 28:51 Why Synthetix forced Kain to borrow, and how he levered SNX into ETH
+
+
+      🩹 40:19 Why Kain thinks early ETH whales share a high tolerance for pain
+
+
+      🔐 42:26 PQAI: why the EF is putting hash-based signatures ahead of UX upgrades
+
+
+      🤖 44:19 How the EF is using AI: local models, evals, and 'AI is the new UI'
+
+
+      🧊 51:20 Tay on why tracing the $6.4B Binance haul is rarely worth it anymore
+
+
+      💎 01:01:24 Why Kain would rather talk to Google's Neon than the pricier Carbon
+
+
+      📐 01:14:17 The AI-assisted Riemann proof and what it means for academia
+
+
+      💸 01:18:19 Kain's bull case: why AI labs are mispriced as software deflates
+
+      Learn more about your ad choices. Visit megaphone.fm/adchoices
+    status: generated
+    priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-25T18:09:21.088Z
+    transcript_job_id: 2ff67466-e2e7-4fdd-b539-e317c50ca30d_2sn0lug5e15xzm5ce8_a0e08f6358484b82bb098b0215746e2f,65296c4c-f8ae-4b4e-964b-d2af5e4da2b6_2twrgeg5e1dcaton40_8812abffec6448c7a80193b51087f7bc,3875a584-63c8-4fc2-aeb0-d1d0c548e07d_2twnmxg5e1inx7jls0_5537ed2736bd4761b98a1f3c9cfa009e,818be1c5-40e3-4441-99fc-98ba46ee288c_2twnojg5e1pvtjlzwg_a70ac3f2b74c4b77807df0123a399d7c,d653a131-013f-44b4-9304-c3ffed41bcb9_2tvsx6g5e1xtwf6eww_c9f0f0819ace4dd6a487a0661097b885,df9e76a2-687a-4670-b326-f07e67f23387_2u6f0zg5e23n34rtvk_0265d55bf1bc4c4ab3ff73bb00661af3
+    transcript_completed_at: 2026-11-25T18:21:49.678Z
   - id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
     guid: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
     title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
@@ -65,7 +173,7 @@ episodes:
 
       Guest:
 
-        ⁠⁠⁠⁠Ryan Watkins - Co-Founder of Syncracy Capital
+        Ryan Watkins - Co-Founder of Syncracy Capital
 
       Timestamps
 
@@ -108,8 +216,12 @@ episodes:
       🔮 57:46 What happens to Bitcoin if Pearl's compute footprint passes it?
 
       Learn more about your ad choices. Visit megaphone.fm/adchoices
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-25T18:54:36.994Z
+    transcript_job_id: e0b76f47-b892-45f7-89be-6c2212cc4b47_2twexyg5e5738wvoxs_838abe8de49340e8a83c39e61fc05163,f7b9a1b1-9743-4931-80f1-679e2edd20d5_2tvlp9g5e5bvwd6osg_bd41c96bf2ea437581b255edf7c7d716,3b232959-57e1-4b97-93b9-cfcd17edbee9_2twj2gg5e5gwqltybk_0652f4572163478d8a128fe14c4ee086,be8e46e3-a8d7-4822-ba6d-d99eb9c44129_2sn00tg5e5l0rafy0w_fbfbfbd3a78d42e182a11c360e56422d,8a40d55e-4e94-4b2c-9142-999503f8894c_2sn0lug5e5p2svzwu8_d408c105d0d0403cb86e015e06d84270
+    transcript_completed_at: 2026-11-25T19:00:56.967Z
   - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     guid: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
@@ -167,7 +279,7 @@ episodes:
 
         ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
 
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan - Co-host of Uneasy Money and Security Expert
+        Taylor Monahan - Co-host of Uneasy Money and Security Expert
 
         ⁠Austin Griffith⁠ - Co-host of Uneasy Money and Builder Enablement at Ethereum Foundation
 
@@ -376,7 +488,7 @@ episodes:
 
       Guest:
 
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Greg Markou - Co-founder and CEO of Sprinter
+        Greg Markou - Co-founder and CEO of Sprinter
 
       Timestamps
 
@@ -483,7 +595,7 @@ episodes:
 
       Guest:
 
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Matt Hougan - Chief Investment Officer of Bitwise
+        Matt Hougan - Chief Investment Officer of Bitwise
 
       Timestamps
 
@@ -594,11 +706,11 @@ episodes:
 
         ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Kain Warwick⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Host of Uneasy Money and Founder of Infinex and Synthetix
 
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠
+        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Taylor Monahan⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠ - Co-host of Uneasy Money and Security Expert
 
       Guest:
 
-        ⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠Adam Sadowski - CEO of LlamaRisk
+        Adam Sadowski - CEO of LlamaRisk
 
       Timestamps
 

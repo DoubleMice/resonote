@@ -1,0 +1,32 @@
+title: OpenClaw：从聊天窗口走向行动的 AI 助手
+guest: Peter Steinberger
+guest_role: OpenClaw 创建者
+tags:
+  - ai-products
+  - ai-safety
+  - coding-agents
+  - founder
+  - interview
+  - deep-dive
+summary: >
+  OpenClaw 创建者 Peter Steinberger 讲述个人智能体从 WhatsApp 原型发展为开源项目的经过，以及工具调用、记忆和安全配置背后的取舍。他与 Lex Fridman
+  还讨论了智能体编程、开源项目的可持续性，以及 AI 可能给应用和程序员带来的变化。
+core_ideas:
+  - 最初的助手把消息应用接到编程智能体，让用户随时调用电脑上的工具；语音处理案例展示了模型组合现有工具的能力。
+  - 私有网络、沙箱和权限限制可以降低部分风险，但提示注入尚未解决，强大模型被利用后也可能造成更大损失。
+  - Steinberger 用智能体辅助编程，但仍强调理解贡献者意图、审阅敏感代码、测试和持续重构。
+  - 智能体可能改变用户使用应用和服务的方式，平台的访问限制与个人自动化需求之间存在张力。
+  - 访谈时项目未来的合作选择尚未敲定；嘉宾希望项目继续开源，也承认 AI 带来的职业变化可能令人失落。
+id: p-6413
+source: lex-fridman
+source_title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+published: 2026-02
+published_sort: "20260212"
+duration: 3h26m
+url: https://lexfridman.com/peter-steinberger/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=peter-steinberger
+status: generated
+article_path: episodes/p-6413/article.html
+base: /episodes/p-6413/
+visual_notes: false
+thumbnail: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+generated_at: 2026-11-25T22:14:36.500Z

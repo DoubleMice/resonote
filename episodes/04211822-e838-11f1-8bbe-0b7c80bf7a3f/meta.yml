@@ -1,0 +1,31 @@
+title: Pearl 能否让 AI 数据中心成为比特币的挑战者？
+guest: Ryan Watkins
+guest_role: Syncros Capital 联合创始人
+tags:
+  - interview
+  - founder
+  - investor
+  - hardware
+  - strategic
+summary: >
+  Syncros Capital 联合创始人 Ryan Watkins 解释了他对 Pearl 的投资逻辑：让 AI
+  数据中心在处理推理任务时挖矿，或许能降低保护加密货币网络的长期成本。访谈也讨论了当前合成计算占多数、数据中心采用的条件、攻击风险与代币分配争议，并区分现状与未来设想。
+core_ideas:
+  - Watkins 认为比特币长期面临区块补贴递减和手续费不足的问题，但仍以比特币保持领先为基本预期。
+  - Pearl 以 GPU 矩阵乘法参与工作量证明；访谈时多数挖矿计算尚未处理真实 AI 推理请求。
+  - 数据中心能否同时获得推理和挖矿收入，取决于软件支持、额外开销和运营者对 GPU 的控制权。
+  - Pearl 与比特币的计算能源规模比较基于未来采用率模型，两条网络的哈希率不能直接比较，能源规模超越也不等同于价格超越。
+  - 通用 GPU 的攻击激励、矿池集中度、早期持币比例和未来代币用途仍有争议或待观察。
+id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+source: unchained
+source_title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+published: 2026-11
+published_sort: "20261124"
+duration: 1h4m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+status: generated
+article_path: episodes/04211822-e838-11f1-8bbe-0b7c80bf7a3f/article.html
+base: /episodes/04211822-e838-11f1-8bbe-0b7c80bf7a3f/
+visual_notes: false
+thumbnail: https://megaphone-images.spotifycdn.com/podcasts/04211822-e838-11f1-8bbe-0b7c80bf7a3f/image/7359a000a8a436dbffae7248b37d323c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-11-25T22:05:45.116Z

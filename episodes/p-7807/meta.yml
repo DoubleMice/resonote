@@ -1,0 +1,30 @@
+title: AI 冲击数学界：黎曼猜想、流体方程与计算复杂性
+guest: Stephen Brunton、Ankur Moitra、Alex
+guest_role: 流体力学研究者、数学与理论计算机科学研究者、数论研究者
+tags:
+  - ai-research
+  - researcher
+  - panel
+  - deep-dive
+  - technical
+summary: |
+  三位研究者讨论节目所述的 AI 数学证明，包括准黎曼猜想、纳维–斯托克斯方程的一个反例和唯一博弈猜想，并解释这些结果的条件与尚存的问题。对话还涉及形式化验证、人类理解、研究职业和 AI 辅助学习的变化。
+core_ideas:
+  - 准黎曼猜想的结果扩大了无零点区域，但完整的黎曼猜想仍未解决。
+  - 光滑外力条件下的流体方程反例揭示了数学上的可能性，湍流预测和工程设计仍然困难。
+  - 唯一博弈猜想关系到近似算法的理论界限，而最坏情况难度不等于所有实际实例的难度。
+  - Lean 能检查形式化证明，人仍需判断命题是否符合原意，并理解证明的方法与意义。
+  - AI 改变年轻研究者的职业预期，也让教学、审稿和研究合作面临新的选择。
+id: p-7807
+source: lex-fridman
+source_title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+published: 2026-10
+published_sort: "20261026"
+duration: 3h43m
+url: https://lexfridman.com/math-ai-crisis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=math-ai-crisis
+status: generated
+article_path: episodes/p-7807/article.html
+base: /episodes/p-7807/
+visual_notes: false
+thumbnail: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+generated_at: 2026-11-25T22:04:35.209Z

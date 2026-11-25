@@ -38314,3 +38314,2621 @@ jobs:
     submitted_at: 2026-11-23T18:40:52.132Z
     updated_at: 2026-11-23T18:51:10.652Z
     completed_at: 2026-11-23T18:51:10.652Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:0
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: 2ff67466-e2e7-4fdd-b539-e317c50ca30d_2sn0lug5e15xzm5ce8_a0e08f6358484b82bb098b0215746e2f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:12:01.725Z
+    completed_at: 2026-11-25T18:12:01.725Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:1
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: 65296c4c-f8ae-4b4e-964b-d2af5e4da2b6_2twrgeg5e1dcaton40_8812abffec6448c7a80193b51087f7bc
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:13:41.196Z
+    completed_at: 2026-11-25T18:13:41.196Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:2
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: 3875a584-63c8-4fc2-aeb0-d1d0c548e07d_2twnmxg5e1inx7jls0_5537ed2736bd4761b98a1f3c9cfa009e
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:15:56.080Z
+    completed_at: 2026-11-25T18:15:56.080Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:3
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: 818be1c5-40e3-4441-99fc-98ba46ee288c_2twnojg5e1pvtjlzwg_a70ac3f2b74c4b77807df0123a399d7c
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:18:24.557Z
+    completed_at: 2026-11-25T18:18:24.557Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:4
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: d653a131-013f-44b4-9304-c3ffed41bcb9_2tvsx6g5e1xtwf6eww_c9f0f0819ace4dd6a487a0661097b885
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:20:13.180Z
+    completed_at: 2026-11-25T18:20:13.180Z
+  - key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z:chunk:5
+    parent_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    attempt_key: unchained:b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f:20261125:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3:mimo:2026-11-25T18:09:21.088Z
+    provider: mimo
+    id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+    source: unchained
+    title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+    task_id: df9e76a2-687a-4670-b326-f07e67f23387_2u6f0zg5e23n34rtvk_0265d55bf1bc4c4ab3ff73bb00661af3
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:09:21.088Z
+    updated_at: 2026-11-25T18:21:49.678Z
+    completed_at: 2026-11-25T18:21:49.678Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:0
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: 31206767-0dd5-45e5-9f93-8af224793c24_2twcy1g5e29vuno8hs_023b0e76f17a4b1f994be4170bfc5bdb
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:23:51.873Z
+    completed_at: 2026-11-25T18:23:51.873Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:1
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: 8fe25e63-bb4b-4cd8-ba32-08d42e3b2ebe_2sn0bgg5e2fcn48934_17fd2d4b4d1c4f1d9a491bcf656b9f48
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:25:10.990Z
+    completed_at: 2026-11-25T18:25:10.990Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:2
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: 3faa35ed-6216-4519-a767-b9d31f2cb7fa_2twj9pg5e2jkzr51xc_9fb94f0e29cc40529636452340a655b4
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:26:45.870Z
+    completed_at: 2026-11-25T18:26:45.870Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:3
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: 1d96aad5-866b-42af-bf1f-8ff9a0652917_2twjdjg5e2ont63w8w_8e05cde4b4b74ac1a8d9a2216c69ed03
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:28:08.977Z
+    completed_at: 2026-11-25T18:28:08.977Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:4
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: 3ff3328e-f75e-4afa-9f44-56f18fc6ed35_2u6fbtg5e2t3yznn5s_74d34badc7b64e2b9c1530818f1d3a17
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:29:29.822Z
+    completed_at: 2026-11-25T18:29:29.822Z
+  - key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z:chunk:5
+    parent_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    attempt_key: sv101:34b5fd41-4431-485c-98e6-c8a7008b2d62:20261124:https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3:mimo:2026-11-25T18:21:50.161Z
+    provider: mimo
+    id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+    source: sv101
+    title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/34b5fd41-4431-485c-98e6-c8a7008b2d62.mp3
+    task_id: e2a335ef-1c04-42d4-a5ff-3565de1ab581_2sn0xsg5e2xfciob28_8afbb7609de3460fbfcb5fc1cc9f037c
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 6
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:21:50.161Z
+    updated_at: 2026-11-25T18:30:55.361Z
+    completed_at: 2026-11-25T18:30:55.361Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:0
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 72d5c305-154c-42e6-8861-0c8c8e177ce1_2u53png5e34di1huyo_da059151e0834b0da46352afe41f2331
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:32:57.671Z
+    completed_at: 2026-11-25T18:32:57.671Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:1
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: b0787d28-e7f9-420b-8bef-88e8b9bc2927_2u52rgg5e38kb2yy9s_fff8a7f6c3564d949e41f8e0433c8bc7
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:34:49.455Z
+    completed_at: 2026-11-25T18:34:49.455Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:2
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 65e2de80-8659-44d9-afe1-c930c892f65d_2smzx3g5e3ejtdju2o_477db761f3374492a36c647464ef1a5b
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:36:44.485Z
+    completed_at: 2026-11-25T18:36:44.485Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:3
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: cf6e3a09-4df8-4009-ab50-696f721908a7_2twds9g5e3kpbf1p1c_faba3222b2d24bf081bcb2a631d2608b
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:38:08.397Z
+    completed_at: 2026-11-25T18:38:08.397Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:4
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 0e495edd-78fc-41ae-a775-e6a3a68be185_2tvlp9g5e3p7cj5c74_bc4b76b3c2ef450abde59194eab35e64
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:39:33.396Z
+    completed_at: 2026-11-25T18:39:33.396Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:5
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: efdddd81-dd16-4fe3-9f62-c433aad7718a_2sn0lug5e3tqr9alfl_d42d2538adf44b0ebce8391877e11c11
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:41:04.984Z
+    completed_at: 2026-11-25T18:41:04.984Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:6
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 5de602b9-cce8-4ef3-b892-0daf6660f51b_2twwddg5e3yn3c0e80_5183ce0adfee45b0aa915088dd89ea99
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:42:09.069Z
+    completed_at: 2026-11-25T18:42:09.069Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:7
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 5febb796-a32b-42a4-8240-7c51dd296c73_2twnojg5e422o3bx8g_8c6f088b4eb64f1aafd42dd6405263c2
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:43:17.081Z
+    completed_at: 2026-11-25T18:43:17.081Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:8
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: d96d603d-a7b8-4444-95b3-2359832bf014_2twcy1g5e45pojcmio_6df31d36ea9d4b36848e20ab7e1d925c
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:44:54.499Z
+    completed_at: 2026-11-25T18:44:54.499Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:9
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: e0ba13e4-0a1a-40d4-b9fb-8efd4fa94987_2twnmxg5e4axg4xv5s_25dbde7a70054b5eb6f521610b7201fc
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:46:51.183Z
+    completed_at: 2026-11-25T18:46:51.183Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:10
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: ef20af84-fba7-4b44-bdb3-82c57d77e8fa_2tvubag5e4h6cqvmyp_77fd2978f69643119a18f1b46cd97bb7
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:48:38.969Z
+    completed_at: 2026-11-25T18:48:38.969Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:11
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 04f13dca-37c8-4542-9932-2735485a6c82_2twexyg5e4my1g4t1c_3ff19010ab544c93a0b847f4f88ce045
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:50:35.429Z
+    completed_at: 2026-11-25T18:50:35.429Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:12
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: acd4811f-aff3-43e3-aabe-fba76bdf0c1d_2u6fbtg5e4t6egitxc_b88a8dee9bf94b119e8fac386f1222e9
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:51:30.799Z
+    completed_at: 2026-11-25T18:51:30.799Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:13
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: ad8142f5-f748-4675-b10c-31350602027f_2sn0y4g5e4w53pzcow_1de60771ab6a4701a3fd7e6fc1ef2994
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:53:22.519Z
+    completed_at: 2026-11-25T18:53:22.519Z
+  - key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z:chunk:14
+    parent_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    attempt_key: lex-fridman:p-7807:20261026:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3:mimo:2026-11-25T18:30:55.848Z
+    provider: mimo
+    id: p-7807
+    source: lex-fridman
+    title: "#503 – AI Crisis in Math: Navier-Stokes, Riemann Hypothesis &#038; Complexity Theory"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_math_ai_crisis.mp3
+    task_id: 3951fc3a-7157-4dd3-90e2-bba67332eafa_2twj9pg5e524963t34_f67d386d71c34062a67f0ebd008ce7bd
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:30:55.848Z
+    updated_at: 2026-11-25T18:54:36.492Z
+    completed_at: 2026-11-25T18:54:36.492Z
+  - key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z:chunk:0
+    parent_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    attempt_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z
+    provider: mimo
+    id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    source: unchained
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    task_id: e0b76f47-b892-45f7-89be-6c2212cc4b47_2twexyg5e5738wvoxs_838abe8de49340e8a83c39e61fc05163
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:54:36.994Z
+    updated_at: 2026-11-25T18:56:25.045Z
+    completed_at: 2026-11-25T18:56:25.045Z
+  - key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z:chunk:1
+    parent_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    attempt_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z
+    provider: mimo
+    id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    source: unchained
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    task_id: f7b9a1b1-9743-4931-80f1-679e2edd20d5_2tvlp9g5e5bvwd6osg_bd41c96bf2ea437581b255edf7c7d716
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:54:36.994Z
+    updated_at: 2026-11-25T18:57:58.780Z
+    completed_at: 2026-11-25T18:57:58.780Z
+  - key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z:chunk:2
+    parent_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    attempt_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z
+    provider: mimo
+    id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    source: unchained
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    task_id: 3b232959-57e1-4b97-93b9-cfcd17edbee9_2twj2gg5e5gwqltybk_0652f4572163478d8a128fe14c4ee086
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:54:36.994Z
+    updated_at: 2026-11-25T18:59:15.660Z
+    completed_at: 2026-11-25T18:59:15.660Z
+  - key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z:chunk:3
+    parent_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    attempt_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z
+    provider: mimo
+    id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    source: unchained
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    task_id: be8e46e3-a8d7-4822-ba6d-d99eb9c44129_2sn00tg5e5l0rafy0w_fbfbfbd3a78d42e182a11c360e56422d
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:54:36.994Z
+    updated_at: 2026-11-25T19:00:31.837Z
+    completed_at: 2026-11-25T19:00:31.837Z
+  - key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z:chunk:4
+    parent_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    attempt_key: unchained:04211822-e838-11f1-8bbe-0b7c80bf7a3f:20261124:https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3:mimo:2026-11-25T18:54:36.994Z
+    provider: mimo
+    id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
+    source: unchained
+    title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
+    audio_url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML5242191082.mp3
+    task_id: 8a40d55e-4e94-4b2c-9142-999503f8894c_2sn0lug5e5p2svzwu8_d408c105d0d0403cb86e015e06d84270
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 5
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T18:54:36.994Z
+    updated_at: 2026-11-25T19:00:56.967Z
+    completed_at: 2026-11-25T19:00:56.967Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:0
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: bd1a666b-efd1-4fc8-b71a-79d635267212_2tvsx6g5e5su6n0j5s_48e944e2f07548abba507a106b9528d3
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:03:17.736Z
+    completed_at: 2026-11-25T19:03:17.736Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:1
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: bd3f0e20-2132-48cd-8ebf-c76bc4c045e4_2twh6lg5e5xz9n0jy8_c908e760f39947aa81e25422071bb1a9
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:04:23.694Z
+    completed_at: 2026-11-25T19:04:23.694Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:2
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 931d5fe1-7059-4bc2-9d9a-6d49a18ee571_2sn0y4g5e61i8rszy8_fb03f67e245f4d5b88c14c63e835649a
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:05:53.547Z
+    completed_at: 2026-11-25T19:05:53.547Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:3
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 4c2bc794-59f1-4695-81e7-187027386595_2tvsn2g5e66bi5h81s_20b5fbb5008d485e80af0bdc8131f9f6
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:07:22.039Z
+    completed_at: 2026-11-25T19:07:22.039Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:4
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: mimo:p-6554:4:2026-11-25T19:00:57.446Z
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:07:42.435Z
+    completed_at: 2026-11-25T19:07:42.435Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:5
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: e7394da9-a654-4743-a2da-6ca48d497d46_2twnmxg5e6c5a2pxj4_e66afb86ce78480a9f1904f6c1af663c
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:09:27.607Z
+    completed_at: 2026-11-25T19:09:27.607Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:6
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 6ceb6086-3fe6-4d46-ae1a-f5e20f951701_2twd1zg5e6hrxn7xfk_2c687f04bb4d412690cb8409b434eb4a
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:10:55.093Z
+    completed_at: 2026-11-25T19:10:55.093Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:7
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 664feafd-6da0-4ad0-a1ae-c387c3833667_2tvsn2g5e6mgfrcow0_b6c7bf505b0c46039a0b31d14e8fb4b9
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:12:05.433Z
+    completed_at: 2026-11-25T19:12:05.433Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:8
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 1ed2207a-10ce-4265-b54e-ff42b5994f68_2twwddg5e6q7yxh5og_078f16e3dd834aae80919558318e22fc
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:13:00.851Z
+    completed_at: 2026-11-25T19:13:00.851Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:9
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: mimo:p-6554:9:2026-11-25T19:00:57.446Z
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:13:20.208Z
+    completed_at: 2026-11-25T19:13:20.208Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:10
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: d247b027-23a2-40bf-809a-c575ebf00851_2twj2gg5e6u85spt6o_1de463414e52447584c59b3f196ddb37
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:14:47.892Z
+    completed_at: 2026-11-25T19:14:47.892Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:11
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 837f9c47-c781-4d9d-9c83-fb08297616a6_2smz9jg5e6ywy5zb40_545e0311fb824e92aa7e23000655c7c4
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:16:20.021Z
+    completed_at: 2026-11-25T19:16:20.021Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:12
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: 0a1f5150-bb02-47b1-a9b3-59e360c05af9_2twwddg5e73uis43r4_4df7653e41da4440ba86a83c0bca0044
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:17:47.503Z
+    completed_at: 2026-11-25T19:17:47.503Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:13
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: d927056a-b654-4cb8-9ca0-b1600ff9213c_2u52prg5e78j6oekn4_25a1bf160f854c538173e3b9606d96b3
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:19:20.227Z
+    completed_at: 2026-11-25T19:19:20.227Z
+  - key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z:chunk:14
+    parent_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    attempt_key: lex-fridman:p-6554:20260917:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3:mimo:2026-11-25T19:00:57.446Z
+    provider: mimo
+    id: p-6554
+    source: lex-fridman
+    title: "#502 – Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud &#038; Jung"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_andrew_scull.mp3
+    task_id: ba039e87-0a21-4ea2-8c28-559031cf1039_2tvubag5e7dhzcyzgg_19e61f02f8b64a59bb46f5b8308f3d5f
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 15
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:00:57.446Z
+    updated_at: 2026-11-25T19:20:43.787Z
+    completed_at: 2026-11-25T19:20:43.787Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:0
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 17038b3e-22a2-4868-b7d2-7d9b5e1ad323_2twj2gg5e7k15wqeio_4c2c5492238f4ee58a78ed8745186f0f
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:22:57.510Z
+    completed_at: 2026-11-25T19:22:57.510Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:1
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 58f21df8-ca46-483a-b68d-e1cdc13f0b5f_2sn0y4g5e7p4k3xlvk_92ce8b6ca3414ab4a1cec7fd259d8afd
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:24:02.515Z
+    completed_at: 2026-11-25T19:24:02.515Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:2
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 4e59c308-651f-46f8-a322-9be5bf7b71f5_2u52prg5e7slpnknpc_89b2290b921542b2af90a5096a65dac1
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:25:48.547Z
+    completed_at: 2026-11-25T19:25:48.547Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:3
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: fca31da5-5ed6-4a47-af12-22265c1d1daa_2u52rgg5e7ya0367sw_3f089f15b21f43eea04d326643542647
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:27:00.246Z
+    completed_at: 2026-11-25T19:27:00.246Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:4
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 88568d31-4108-481a-81b1-6e32797b5b52_2tvlp9g5e824a844jk_f947c4eab3794186a8276e9148ed42d4
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:28:36.779Z
+    completed_at: 2026-11-25T19:28:36.779Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:5
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 658eed09-6d5f-4db5-902d-004dccc269e0_2twd01g5e87a5hgwzk_82e617cea95b45bd9809ee85ed31475a
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:29:43.558Z
+    completed_at: 2026-11-25T19:29:43.558Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:6
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 31c7a561-a237-458a-880f-675e89475440_2smzh8g5e8auvhts00_771f5e7e82ce4a26ab1b4029271c80c7
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:31:21.185Z
+    completed_at: 2026-11-25T19:31:21.185Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:7
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 710e4d25-05b9-4592-812a-7b91396962fd_2u53png5e8g2zgidc0_38f5f0919a484ccf9da8bec182be588d
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:32:25.392Z
+    completed_at: 2026-11-25T19:32:25.392Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:8
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 3b881d95-6d8e-4c5f-a5e4-5f3d50139045_2twrgeg5e8jiq3f4lc_c3a57b3d9c124e3eae284ecf977400f7
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:33:57.185Z
+    completed_at: 2026-11-25T19:33:57.185Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:9
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 865ac287-aef1-4a83-af31-255456f52f45_2twyftg5e8ofl6pkw0_de729a9e434e40deb7c3e9a5ba82bf38
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:35:10.308Z
+    completed_at: 2026-11-25T19:35:10.308Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:10
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 6c1646ba-1b08-4cfe-b28d-50b64adb21aa_2twnp8g5e8scgymdj4_345b1f415b4f49639e46798126fdd112
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:36:48.319Z
+    completed_at: 2026-11-25T19:36:48.319Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:11
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 077e6eff-933a-4afa-a8d5-f537ce91585d_2twe6cg5e8xlbbufb4_caf1aaacb27e45bc8f9e5f37aed735b6
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:37:58.683Z
+    completed_at: 2026-11-25T19:37:58.683Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:12
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 81dbe4b9-6ecb-4adf-982a-1e3bab098010_2sn0y4g5e91cuc3bb4_1d67125acdf14faa8b4133e6d7b96b82
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:39:08.664Z
+    completed_at: 2026-11-25T19:39:08.664Z
+  - key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z:chunk:13
+    parent_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    attempt_key: lex-fridman:p-6494:20260812:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3:mimo:2026-11-25T19:20:44.271Z
+    provider: mimo
+    id: p-6494
+    source: lex-fridman
+    title: "#500 – Khabib Nurmagomedov: Dagestan, MMA, UFC, Islam, Conor, Fedor &#038; Football"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_khabib_nurmagomedov.mp3
+    task_id: 8a53317d-63fb-4121-be4d-84a43269d71a_2tvsn2g5e9530yy51c_2cd6f17eccb9464bb71fcab1235cd46f
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:20:44.271Z
+    updated_at: 2026-11-25T19:39:41.836Z
+    completed_at: 2026-11-25T19:39:41.836Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:0
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 23d1ed75-19c2-4538-8c07-df29f9c7377a_2twoopg5e99e2am41s_8e4f6b6145e04009874d10383ee4d7c2
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:41:36.406Z
+    completed_at: 2026-11-25T19:41:36.406Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:1
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 894fab23-73c7-4b19-ad69-ae6bf5fd0898_2twwddg5e9d0ia52ww_6d4e633989ba4e3281b81b68ef06f0e3
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:43:17.945Z
+    completed_at: 2026-11-25T19:43:17.945Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:2
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 9b94adad-28e5-43c9-ab42-39d81eee17b7_2twhkmg5e9ig3f8w74_0c67d18e54cf428ca56ca192ac26de79
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:44:58.829Z
+    completed_at: 2026-11-25T19:44:58.829Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:3
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: b81bca7b-0c69-4561-ba9a-b7da2cdd3cde_2twnojg5e9nuf67jeo_2272cff5ef234ee79476081e140ffe60
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:46:25.892Z
+    completed_at: 2026-11-25T19:46:25.892Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:4
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 20eee57f-e8aa-40e5-bf94-8e81833b6ca2_2twwggg5e9si91hm9s_df9656cd1a2741e6b88d8917cb78cf93
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:48:07.159Z
+    completed_at: 2026-11-25T19:48:07.159Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:5
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 7055539b-c67e-4045-9377-c49e8b480e6b_2tvubag5e9xx9qvytc_2cc153a312774b849c44ecba1cd376c3
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:49:39.847Z
+    completed_at: 2026-11-25T19:49:39.847Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:6
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 6dd581d5-5bd4-4388-94da-246ed2772c5b_2twcmig5ea2vzfwlj4_5a5ab6b36ad24252850cd59de8bf8610
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:51:18.816Z
+    completed_at: 2026-11-25T19:51:18.816Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:7
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 105cc4da-61a2-4c1f-b0a2-adff2a032749_2tvsh8g5ea86r3w4xs_5355b14a7224450aa230e92bc229c851
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:52:44.104Z
+    completed_at: 2026-11-25T19:52:44.104Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:8
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 157afb23-4625-4439-ba75-8ede55c6e9bd_2twh18g5eacqzf98u8_b14ab269b33c43cdb35ba956991735eb
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:53:55.175Z
+    completed_at: 2026-11-25T19:53:55.175Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:9
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 836915c0-0fb8-4340-b31c-2627f36d5356_2sn0y4g5eagk08cf7k_e4262596f5eb4f0399238c290e394ae7
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:55:35.020Z
+    completed_at: 2026-11-25T19:55:35.020Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:10
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: mimo:p-6466:10:2026-11-25T19:39:42.320Z
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:55:55.546Z
+    completed_at: 2026-11-25T19:55:55.546Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:11
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 5df04457-d068-4eda-95b7-21e6dbc3b007_2u6f0zg5eamzultybk_88d4e8d6c17148f7b5a5c782d8d8cd7b
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:57:40.001Z
+    completed_at: 2026-11-25T19:57:40.001Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:12
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 1a2833f3-7699-4b5a-acc8-a65ba4123113_2twwddg5easl1ptiio_2ff110c97f6745ca99e0513b3489ea81
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T19:59:23.355Z
+    completed_at: 2026-11-25T19:59:23.355Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:13
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: d12e653a-6a4a-43a0-a09d-5ea770ef6491_2twifog5eay48fi9kw_ad81430324a3428db5de47bbcead6d5b
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T20:01:56.535Z
+    completed_at: 2026-11-25T20:01:56.535Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:14
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: cd90839b-1d68-43e4-99d4-be17e3da06f6_2u52egg5eb6bk7qqkg_738b1adf8f8d4bf4bd74c08c6eea40aa
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T20:03:41.208Z
+    completed_at: 2026-11-25T20:03:41.208Z
+  - key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z:chunk:15
+    parent_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    attempt_key: lex-fridman:p-6466:20260630:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3:mimo:2026-11-25T19:39:42.320Z
+    provider: mimo
+    id: p-6466
+    source: lex-fridman
+    title: "#498 – Anthony Kaldellis: Roman Empire, Byzantine Empire, Rise &#038; Fall of Empires"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_anthony_kaldellis.mp3
+    task_id: 307be58a-08f5-47e9-855b-e941787a79d6_2tvsh8g5ebbyeccphc_64eecc9d9f5d481289ac65094b508026
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 16
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T19:39:42.320Z
+    updated_at: 2026-11-25T20:05:27.406Z
+    completed_at: 2026-11-25T20:05:27.406Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:0
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 0d8c230c-6be8-47d4-857a-c4fbc45d0655_2smzh8g5ebj93rxl34_5d4388a8832b4476a4a4b9c18cb0330e
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:07:09.668Z
+    completed_at: 2026-11-25T20:07:09.668Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:1
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 9640e2a0-cde0-4192-ae0e-e9ad0e60a518_2twnp8g5ebn2uuhclc_c9ab4455c61c4d28843eb33360d2d6ae
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:08:31.263Z
+    completed_at: 2026-11-25T20:08:31.263Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:2
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 26f9dc28-4a5c-4197-bff9-f4ce2f42988a_2twnp8g5ebrg4nbzls_79b469d0822a440e92ed78202d505d50
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:09:45.144Z
+    completed_at: 2026-11-25T20:09:45.144Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:3
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: c278c5b1-9b0c-483f-be07-a8c1c6ee987b_2twmxlg5ebvegggi68_3d9a8e2fba554e2a8d8de5fa9130bfdf
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:11:06.301Z
+    completed_at: 2026-11-25T20:11:06.301Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:4
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 099c0fc8-96f9-47ee-a94b-ccd6d74541f8_2tvsh8g5ebzqoasni8_a28fa1f7744d4079bb33e45625238797
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:12:17.707Z
+    completed_at: 2026-11-25T20:12:17.707Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:5
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 03c121c5-ac10-443a-9f85-f1ba3d0e2a56_2tvubag5ec3kcl4mio_a4535a0286d14ce68f936d3b68ca100a
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:13:34.748Z
+    completed_at: 2026-11-25T20:13:34.748Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:6
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 63ac7d3a-47a6-4ae2-bb27-98017cbca9f9_2twnqyg5ec7opguyv4_4947f8c57f1e420f98714e8f87f7230a
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:14:41.528Z
+    completed_at: 2026-11-25T20:14:41.528Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:7
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 03b30632-0201-492f-8a9a-321a27080694_2tvsn2g5ecb9dgyayo_3dbd03aeaba04bbabaf85974e93b0673
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:16:38.479Z
+    completed_at: 2026-11-25T20:16:38.479Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:8
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: af545207-6101-432b-ac26-2dae1d126070_2sn0bgg5echit7y39c_148f5671615842289b77298a304410e4
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:17:41.594Z
+    completed_at: 2026-11-25T20:17:41.594Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:9
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: 75fbd0ef-8d76-4ab8-88ac-83ee6de26f29_2twyftg5eckwe46vb4_29f5d8736f6844b799efd38821eea5e8
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:18:32.201Z
+    completed_at: 2026-11-25T20:18:32.201Z
+  - key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z:chunk:10
+    parent_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    attempt_key: lex-fridman:p-6434:20260323:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3:mimo:2026-11-25T20:05:27.917Z
+    provider: mimo
+    id: p-6434
+    source: lex-fridman
+    title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jensen_huang.mp3
+    task_id: f57d8ad9-0bf2-4f77-9c73-1a7919cd8df6_2twnqyg5ecnkvt1slc_a8a54da5c9ae438f9b8ab8d2079566c8
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:05:27.917Z
+    updated_at: 2026-11-25T20:18:46.188Z
+    completed_at: 2026-11-25T20:18:46.188Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:0
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: d4bd9366-466f-4d3f-9db8-1f9a309b3006_2smzh8g5ecrnrlhgqo_e9aadc0067704e1ebd86c3b3ecaf7542
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:21:04.140Z
+    completed_at: 2026-11-25T20:21:04.140Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:1
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: f3db3465-2b49-4ebf-b4e5-8fa87c942e7e_2twl7jg5ecvqlcnytc_6c831854fdd24820b9a8937671454861
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:22:36.364Z
+    completed_at: 2026-11-25T20:22:36.364Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:2
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 9a9a92c6-8a1f-4688-bdd7-a41f17d742d4_2u53u8g5ed0o8w0pa8_916b56c0e05d44aa8330fcbfdc1116f2
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:24:07.802Z
+    completed_at: 2026-11-25T20:24:07.802Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:3
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 83f3c1f3-7cf0-46da-9f49-fe90c3c489b5_2u52egg5ed5kf9dkw0_2a33b8585f354fa39945a20a17c1fc7d
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:25:48.229Z
+    completed_at: 2026-11-25T20:25:48.229Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:4
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 09828264-72e8-44b0-830e-8acd400181e6_2u52prg5eday0l3qww_4820a646f4904671bd7bbc9b5ab0e33b
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:27:32.787Z
+    completed_at: 2026-11-25T20:27:32.787Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:5
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 82320f1a-d8dc-4b5e-8e4c-b86ac5cdfd31_2twcmig5edgjen5g5c_1f394274ef1b4dc49ffb58caa9f1c93e
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:28:56.149Z
+    completed_at: 2026-11-25T20:28:56.149Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:6
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 6a771a4e-bd2d-4346-a35d-376d78a47c74_2twj9pg5edl02kgpa8_0e3311f751584e699c8d8662990004b8
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:29:56.483Z
+    completed_at: 2026-11-25T20:29:56.483Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:7
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: bc359c38-3fd8-4e73-b432-77f57c08c3ce_2tvsx6g5edo8decjk0_66b1c24f3cfa4b39a6f291589bcb392d
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:31:21.009Z
+    completed_at: 2026-11-25T20:31:21.009Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:8
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 910ae4d9-e6c5-4d27-a351-9f05d813abbb_2u53u8g5edsrd8v6rk_682aaff1b3814a269a0397b497a83444
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:32:46.001Z
+    completed_at: 2026-11-25T20:32:46.001Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:9
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: e10a3cf1-2068-4c00-9032-71617be09f78_2u52egg5edxaxjojk0_0d38d343a34a4623b73290da59c8fe6d
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:34:35.090Z
+    completed_at: 2026-11-25T20:34:35.090Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:10
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 8ca0b924-8d16-41bd-9979-68549a4d6b8a_2sn00tg5ee35db41kx_24ef4293c7e8435e82d573a3d67a5d42
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:35:58.511Z
+    completed_at: 2026-11-25T20:35:58.511Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:11
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 07081621-fe4e-4e5c-8fe1-9dcc8cd52e05_2twd01g5ee7lue4j5s_169384767aba423a950528154bfc967c
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:37:15.246Z
+    completed_at: 2026-11-25T20:37:15.246Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:12
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 92a40091-1fd0-4e90-a220-ee08d53b37aa_2smzx3g5eebpzpmmf5_8d17970d1f59495ea57c0d30b57074cf
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:38:38.655Z
+    completed_at: 2026-11-25T20:38:38.655Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:13
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 1a7154aa-6ed9-4ac9-bf1d-9fa1169e3067_2twervg5eeg6g388hs_b7c2f442be564abb8dde82ce9f7457f8
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:40:04.751Z
+    completed_at: 2026-11-25T20:40:04.751Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:14
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 6523bd13-1a6d-40d4-b12f-e35f03a5d7ca_2twexyg5eeksbwgm4g_96647bcdd66447818ef76b3f352bf9dc
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:41:47.565Z
+    completed_at: 2026-11-25T20:41:47.565Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:15
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: e56cb46f-9ed9-44fb-b107-a5ecfa6821b0_2twds9g5eeqafkb5ds_5a380487aeea40e78f460bcf31e5751a
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:43:17.057Z
+    completed_at: 2026-11-25T20:43:17.057Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:16
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 5e26fa78-01ef-4945-bcd9-067780326a82_2twl7jg5eev2wk93wg_83fc74af80364258bc77f937334c6b6b
+    submission_mode: data_uri
+    chunk_index: 16
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:45:07.995Z
+    completed_at: 2026-11-25T20:45:07.995Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:17
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 8db586d5-fd9c-4fe1-b0ea-d99e8176028d_2u52egg5ef10mshjb4_73552d436a1b4ca5ad9c1e0081d702f8
+    submission_mode: data_uri
+    chunk_index: 17
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:46:09.822Z
+    completed_at: 2026-11-25T20:46:09.822Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:18
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 3615f777-ba2a-4db1-af6e-8867491bb4f0_2twds9g5ef4bufp5og_5abb39323e064b7aa34a970d8cbf92a9
+    submission_mode: data_uri
+    chunk_index: 18
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:47:45.547Z
+    completed_at: 2026-11-25T20:47:45.547Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:19
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 29370d9c-6025-4f4e-b603-b5d52279d6a4_2twjdjg5ef9g8rec5c_56c5aae8a1854438a30f1a0828dbf3d3
+    submission_mode: data_uri
+    chunk_index: 19
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:49:19.819Z
+    completed_at: 2026-11-25T20:49:19.819Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:20
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: a8a09a67-8158-4105-b0a7-03d18878274c_2sn00tg5efehwiqeww_c0f6717e747b4e42afc5a045d1a542b3
+    submission_mode: data_uri
+    chunk_index: 20
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:50:44.495Z
+    completed_at: 2026-11-25T20:50:44.495Z
+  - key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z:chunk:21
+    parent_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    attempt_key: lex-fridman:p-6426:20260311:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3:mimo:2026-11-25T20:18:46.694Z
+    provider: mimo
+    id: p-6426
+    source: lex-fridman
+    title: "#493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_jeff_kaplan.mp3
+    task_id: 8b789fa7-9c3a-4c60-b1d7-d392da849eb1_2twrgeg5efizzakruo_c8016c9f63d64c76b2a9f1ce5b5cb088
+    submission_mode: data_uri
+    chunk_index: 21
+    chunk_count: 22
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:18:46.694Z
+    updated_at: 2026-11-25T20:50:55.010Z
+    completed_at: 2026-11-25T20:50:55.010Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:0
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: 31264fa7-5f29-4958-9c04-a2f6c6c2ef66_2twh18g5efldfor3sw_fcbc31b3282240bb9264a12de847c17b
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T20:52:56.880Z
+    completed_at: 2026-11-25T20:52:56.880Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:1
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: dd3c5d0f-3f76-4e2d-bb04-926ed85b2838_2sn0bgg5efq46s3egw_170f0e2671a249328d8e01186ae102ba
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T20:54:44.750Z
+    completed_at: 2026-11-25T20:54:44.750Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:2
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: 342c8319-94d7-43df-b574-6d1bf58ada0b_2twnzcg5efvw0qntog_302c569428bc4cefa4e3e88c78aa5a22
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T20:56:49.818Z
+    completed_at: 2026-11-25T20:56:49.818Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:3
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: c0bed732-fd41-4269-b20a-42ffdbddcf40_2smzx3g5eg2l3oc9og_30fca83da3a8407ba4a2a72b628c1cd4
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T20:58:28.332Z
+    completed_at: 2026-11-25T20:58:28.332Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:4
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: a2475b2b-1edf-4fe6-a479-be5e288d2245_2twl7jg5eg7uxv08w0_a8b6e3ae191b4f5f81070415d32622c9
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:00:17.358Z
+    completed_at: 2026-11-25T21:00:17.358Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:5
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: 5b8dac8d-0b00-47cb-b162-04113db8184b_2u52rgg5egdoweu1a8_a3646c31e6ae4ac2964e1ae255fe1e01
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:01:57.376Z
+    completed_at: 2026-11-25T21:01:57.376Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:6
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: 771b31cb-a279-49e6-9ed1-543a8509e1cb_2twnmxg5egj1ltxm9s_34728cc4072e4b8682344e8f4565b67d
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:03:44.603Z
+    completed_at: 2026-11-25T21:03:44.603Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:7
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: fd728643-a570-4954-a007-c2cca558f3f6_2twjdjg5egos626m80_44168694e1854c96b9a6e7d68931ea7b
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:05:33.799Z
+    completed_at: 2026-11-25T21:05:33.799Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:8
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: ba0879c8-2dfd-427b-9fa1-1b16ea47891b_2tvsx6g5egumt8idc0_654431d8e9c14fa7bf1bf3c6fa7acb7c
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:07:04.026Z
+    completed_at: 2026-11-25T21:07:04.026Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:9
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: b8f30cdf-013a-42f0-9253-832d719fa5b7_2twljrg5egzgf4j1ts_65c0b28eb0764a0295d6dacc1f1e9892
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:08:43.886Z
+    completed_at: 2026-11-25T21:08:43.886Z
+  - key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z:chunk:10
+    parent_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    attempt_key: lex-fridman:p-6421:20260301:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3:mimo:2026-11-25T20:50:55.549Z
+    provider: mimo
+    id: p-6421
+    source: lex-fridman
+    title: "#492 – Rick Beato: Greatest Guitarists of All Time, History &#038; Future of Music"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3
+    task_id: 61df2ca5-aa25-49f5-8ebb-c5174daf952b_2twcmig5eh4sswx9ts_054e1568d7bb4b3fa778665cf46410e0
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 11
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T20:50:55.549Z
+    updated_at: 2026-11-25T21:10:22.656Z
+    completed_at: 2026-11-25T21:10:22.656Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:0
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 6bcd69e8-5229-4048-abdb-32ea4f1fa662_2tvsn2g5ehc8w3a60w_46044520d18c45c89b2fabb3b887c603
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:12:02.316Z
+    completed_at: 2026-11-25T21:12:02.316Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:1
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 0e543124-2dea-4a2f-8a51-9a53c2850fd1_2u52egg5ehffefr6dc_e6474fa8ee2846098697731f15488d64
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:13:45.194Z
+    completed_at: 2026-11-25T21:13:45.194Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:2
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 953fad83-824c-4d07-a453-ea1a924ab29a_2twifog5ehkxet2vb4_c9d729bb3e6946c480e9d96d1bf1efa3
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:15:17.782Z
+    completed_at: 2026-11-25T21:15:17.782Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:3
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 0652ef37-023a-492e-ad93-736a525569e6_2twj2gg5ehpvyov2tc_84c2a3c5f70e411e893a196ad3956dab
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:17:11.937Z
+    completed_at: 2026-11-25T21:17:11.937Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:4
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 03833f9d-0aaf-463f-afee-94186397adae_2twmxlg5ehvzxgsv0h_ce9ad47c097341c081006bdf1765c248
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:18:21.401Z
+    completed_at: 2026-11-25T21:18:21.401Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:5
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 028b6225-4ca5-4760-bda8-5157703d2b79_2smz9jg5ehzpoc0glc_0e75a87bbeea4973878a9e658db8ea4c
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:20:07.473Z
+    completed_at: 2026-11-25T21:20:07.473Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:6
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: ca4200c5-8336-4d02-b5cd-c7673d4c9dc4_2u6fbtg5ei5dzwpx4w_5299df311db343fe917cfa2ccf61c08a
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:21:42.235Z
+    completed_at: 2026-11-25T21:21:42.235Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:7
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 94030ba4-fcb0-48bb-9c9d-1e73a8e71a84_2u53u8g5eiagn44wzk_5a01d03200a34f0ea2731370d8de0b68
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:23:19.436Z
+    completed_at: 2026-11-25T21:23:19.436Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:8
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 0502f253-d276-4457-a75d-73ee228d3bca_2tvsh8g5eifo58uu4g_391c059a7a534ebca7393dd3155b5e76
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:24:18.294Z
+    completed_at: 2026-11-25T21:24:18.294Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:9
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 4639c344-5de0-4954-bd7f-a65fb8fe68c2_2tvubag5eiitczzd34_406db32ba84246c7a4510018375f4926
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:26:12.569Z
+    completed_at: 2026-11-25T21:26:12.569Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:10
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: dfcabc40-3f7c-40ee-93e0-4e67a95a6593_2twd01g5eioxh0d5a8_5ebcabc147034bfcabe8882b35f838cc
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:27:50.562Z
+    completed_at: 2026-11-25T21:27:50.562Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:11
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 376ba853-c670-491c-b0f9-efacbe82c837_2u6fbtg5eiu6cedm9s_68a62af602364d2b8bbe78abebb24657
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:29:18.495Z
+    completed_at: 2026-11-25T21:29:18.495Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:12
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: 3700fc5f-f973-4cfe-a603-927f3fad46db_2u52rgg5eiyvqdxy4g_6ab8ffc366914de2b758893112d5dd62
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:31:10.965Z
+    completed_at: 2026-11-25T21:31:10.965Z
+  - key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z:chunk:13
+    parent_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    attempt_key: lex-fridman:p-6413:20260212:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3:mimo:2026-11-25T21:10:23.218Z
+    provider: mimo
+    id: p-6413
+    source: lex-fridman
+    title: "#491 – OpenClaw: The Viral AI Agent that Broke the Internet &#8211; Peter Steinberger"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_peter_steinberger.mp3
+    task_id: bb06945e-962e-40d6-b41d-fe417ec9e44c_2sn0lug5ej4w5ssvsw_5e074a2839b94149981a146627228240
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 14
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:10:23.218Z
+    updated_at: 2026-11-25T21:32:10.287Z
+    completed_at: 2026-11-25T21:32:10.287Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:0
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 01ed9299-6a2a-4089-be64-0043e034fbcc_2twnojg5ejb1hgucqo_507870b606d2478780a4a2a237cff619
+    submission_mode: data_uri
+    chunk_index: 0
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:34:08.743Z
+    completed_at: 2026-11-25T21:34:08.743Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:1
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 6f64f31b-c2c8-487b-a349-9d66d0ae508c_2u6f0zg5ejef1rvfnk_8013e07ce9e848c5b8b4b0c101b28005
+    submission_mode: data_uri
+    chunk_index: 1
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:35:43.672Z
+    completed_at: 2026-11-25T21:35:43.672Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:2
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 5f32e6b4-bf2a-446a-b80a-67da08139697_2smzh8g5ejji6euccg_269886c0d5e842e09f572bec4bf40772
+    submission_mode: data_uri
+    chunk_index: 2
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:37:11.121Z
+    completed_at: 2026-11-25T21:37:11.121Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:3
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 7aa6269d-e19d-42a9-8c69-0b0dc109c273_2twexyg5ejo6no9728_56a302d9ab434ddc9ee80e1089fc05cf
+    submission_mode: data_uri
+    chunk_index: 3
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:39:02.941Z
+    completed_at: 2026-11-25T21:39:02.941Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:4
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 5f739cee-3a05-448d-b122-6855f79ffd0c_2twnzcg5eju5ystatc_189a72bb58414011845cc7d991ef786d
+    submission_mode: data_uri
+    chunk_index: 4
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:40:14.263Z
+    completed_at: 2026-11-25T21:40:14.263Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:5
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: a93701d3-228a-4f8a-81f3-e37b41899695_2twnojg5ejxzep7da8_d003848344ff4b188524ad8a2b788448
+    submission_mode: data_uri
+    chunk_index: 5
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:41:51.818Z
+    completed_at: 2026-11-25T21:41:51.818Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:6
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 07a326ce-4c97-4601-9164-ec588f56e0f5_2twhkmg5ek37bivshs_de6c465289524526b39aeb70965a5aa0
+    submission_mode: data_uri
+    chunk_index: 6
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:43:16.367Z
+    completed_at: 2026-11-25T21:43:16.367Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:7
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: aeeaf4ce-e0ae-40d0-b88a-790e57530efa_2twnqyg5ek7q8taq68_4c8a85c00eda4fdf91ffd27b66ee8d8d
+    submission_mode: data_uri
+    chunk_index: 7
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:44:40.343Z
+    completed_at: 2026-11-25T21:44:40.343Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:8
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 4c4b7157-b668-4774-84ce-358dd9c375b1_2twj9pg5ekc80s6vb4_ed1cb32d2ed847a7a0dc86be3b270881
+    submission_mode: data_uri
+    chunk_index: 8
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:46:10.151Z
+    completed_at: 2026-11-25T21:46:10.151Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:9
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 6b5a447e-ea68-42e3-abee-6fd8d55d79f2_2twnmxg5ekh13zv668_5338251d556e4c16b618bffa8f9c4ba4
+    submission_mode: data_uri
+    chunk_index: 9
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:47:52.377Z
+    completed_at: 2026-11-25T21:47:52.377Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:10
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 8bd931a5-948f-42d0-86e0-4a289ea508ee_2twrgeg5ekmi6hpbls_29906eeb9445400eb968bf9622b49cf1
+    submission_mode: data_uri
+    chunk_index: 10
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:49:35.153Z
+    completed_at: 2026-11-25T21:49:35.153Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:11
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 4cc30d8c-e95e-423e-a7c3-4050c2120d46_2twyftg5eks04in5z4_fb38fec4185943da8205b65f7b699da5
+    submission_mode: data_uri
+    chunk_index: 11
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:51:10.643Z
+    completed_at: 2026-11-25T21:51:10.643Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:12
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: d5173608-09b2-4a2e-824e-3e23fb8aeb2a_2u6fbtg5ekx41ylts0_7d527d46b0b4444183051a877a2a8256
+    submission_mode: data_uri
+    chunk_index: 12
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:52:43.517Z
+    completed_at: 2026-11-25T21:52:43.517Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:13
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 5713f4ab-327f-464f-9de2-d77261b54f4d_2tvsp4g5el23300jr4_e45c0c54c5b64f389992450a7d1bd9d0
+    submission_mode: data_uri
+    chunk_index: 13
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:53:40.583Z
+    completed_at: 2026-11-25T21:53:40.583Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:14
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 039cedf4-27e1-4808-aaeb-4b0880567bb0_2smz9jg5el551aicxs_bbb0d14d8701402cbc1634e6ac8bae64
+    submission_mode: data_uri
+    chunk_index: 14
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:54:49.111Z
+    completed_at: 2026-11-25T21:54:49.111Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:15
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: b06014a3-661a-4e6c-be6f-49cfa6cb9a33_2sn0xsg5el8t2pvv28_a805b51f2c964240866f835a3506a048
+    submission_mode: data_uri
+    chunk_index: 15
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:55:55.089Z
+    completed_at: 2026-11-25T21:55:55.089Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:16
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 7ad185bc-c485-42e1-9748-74a0dde477a5_2twexyg5elcc5ethj4_37d09adee1c846bfa63e38fc16390cb3
+    submission_mode: data_uri
+    chunk_index: 16
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:57:24.125Z
+    completed_at: 2026-11-25T21:57:24.125Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:17
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: 7c70df4d-c019-4b55-bdd4-6566a160ac01_2tvsh8g5elh3ru6sjk_43841b73002c412c8f9508203ed11f1c
+    submission_mode: data_uri
+    chunk_index: 17
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T21:59:07.110Z
+    completed_at: 2026-11-25T21:59:07.110Z
+  - key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z:chunk:18
+    parent_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    attempt_key: lex-fridman:p-6394:20260201:https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3:mimo:2026-11-25T21:32:10.798Z
+    provider: mimo
+    id: p-6394
+    source: lex-fridman
+    title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+    audio_url: https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_ai_sota_2026.mp3
+    task_id: fe2b5058-4ac5-4c12-af7d-60081e3f1dbc_2u6f0zg5elmlrbiu4g_c6f551e82bf644edb9ce61d5961c66cc
+    submission_mode: data_uri
+    chunk_index: 18
+    chunk_count: 19
+    status: succeeded
+    retries: 0
+    submitted_at: 2026-11-25T21:32:10.798Z
+    updated_at: 2026-11-25T22:00:00.039Z
+    completed_at: 2026-11-25T22:00:00.039Z

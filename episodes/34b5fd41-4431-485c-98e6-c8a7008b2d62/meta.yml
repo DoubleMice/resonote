@@ -1,0 +1,31 @@
+title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+guest: Maggie Wang、徐一星
+guest_role: 安先资本创始人兼CEO、数据中心规划与能源策略从业者
+tags:
+  - hardware
+  - chips
+  - investor
+  - panel
+  - strategic
+summary: |
+  Maggie Wang和徐一星从信用与能源角度，解释英伟达对算力供应商的支持如何影响数据中心融资，以及CoreWeave等新云公司为何面临不同于大型科技公司的借债成本。讨论还涉及并网延期、债务期限、AI算力需求和表外承诺，并保留嘉宾对未来政策及市场风险的判断条件。
+core_ideas:
+  - 数据中心的土地、电力接入、机房和芯片寿命不同，需要匹配不同期限和结构的融资。
+  - 英伟达既供应芯片，也投资客户并参与算力采购和担保；具体信用保护取决于承诺的条款和生效条件。
+  - CoreWeave的远期订单不能消除现金到账时间与债务到期时间之间的错配，有抵押债务的受偿顺序也影响无担保债权人。
+  - 电网接入、设备供应和监管变化可能推迟项目收入，并使资金紧张与融资成本上升相互强化。
+  - 嘉宾看好长期算力需求，但债权人仍需判断项目何时通电、现金何时到账，以及借款人能否按期偿债。
+  - 主持人补充，AI相关债券新发行占比上升，表外承诺规模较大，但合同名义承诺不等同于已产生的债务。
+id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
+source: sv101
+source_title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
+published: 2026-11
+published_sort: "20261124"
+duration: 1h26m
+url: https://sv101.fireside.fm/274
+status: generated
+article_path: episodes/34b5fd41-4431-485c-98e6-c8a7008b2d62/article.html
+base: /episodes/34b5fd41-4431-485c-98e6-c8a7008b2d62/
+visual_notes: false
+thumbnail: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+generated_at: 2026-11-25T22:03:19.912Z

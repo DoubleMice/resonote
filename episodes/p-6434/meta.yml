@@ -1,0 +1,31 @@
+title: 黄仁勋谈 NVIDIA：从游戏显卡到 AI 工厂
+guest: Jensen Huang（黄仁勋）
+guest_role: NVIDIA 首席执行官
+tags:
+  - hardware
+  - chips
+  - ai-research
+  - interview
+  - ceo
+  - deep-dive
+summary: |
+  黄仁勋回顾 NVIDIA 将 CUDA 带入游戏显卡的高成本决策，并解释从芯片到数据中心的协同设计。访谈还讨论智能体与算力需求、电力和供应链约束、开放模型及 AI 对工作的影响，保留主持人对就业转型痛苦的担忧。
+core_ideas:
+  - NVIDIA 用 GeForce 扩大 CUDA 的装机基础，早期为此承担了显著成本。
+  - 大规模计算需要同时优化软件、芯片、网络、供电和冷却，单一部件提速不足以消除系统瓶颈。
+  - 黄仁勋预计合成数据、测试时计算和多智能体协作将继续扩大算力需求。
+  - 数据中心可否在电网高峰时主动降低负载，取决于客户合同、工程设计和电力供应方的配合。
+  - 黄仁勋看好 AI 带来的工作机会，也承认部分任务会被自动化；主持人强调失业者可能承受的痛苦。
+id: p-6434
+source: lex-fridman
+source_title: "#494 – Jensen Huang: NVIDIA &#8211; The $4 Trillion Company &#038; the AI Revolution"
+published: 2026-03
+published_sort: "20260323"
+duration: 2h32m
+url: https://lexfridman.com/jensen-huang/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=jensen-huang
+status: generated
+article_path: episodes/p-6434/article.html
+base: /episodes/p-6434/
+visual_notes: false
+thumbnail: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+generated_at: 2026-11-25T22:10:32.663Z

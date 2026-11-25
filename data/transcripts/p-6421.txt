@@ -1,0 +1,973 @@
+0.03-27.14 | SPEAKER_00: The following is a conversation with Rick Beato, legendary music educator, interviewer, producer, songwriter, and a true multi-instrument musician, playing guitar, bass, cello, and piano. Rick, with his incredible YouTube channel, celebrates great musicians and musical ideas, and helps millions of people, including me, fall in love with great music all over again.
+28.58-51.03 | SPEAKER_00: And now a quick few second mention of each sponsor. Check them out in the description or at lexfreeman.com/sponsors. It is in fact the best way to support this podcast. We got Uplift Desk for my favorite office desk, BetterHelp for mental health, Element for electrolytes, Fin for customer service AI agents.
+51.03-68.61 | SPEAKER_00: Shopify for selling stuff online, and our friend Perplexity for curiosity-driven knowledge exploration. The number of things that Perplexity ships at the rate it ships is freaking incredible. Choose wisely, my friends.
+69.09-84.96 | SPEAKER_00: And now, onto the full ad reads. I try to make them interesting, but if you skip, please still check out our sponsors. I enjoy their stuff. Maybe you will too. To get in touch with me for whatever reason, go to lexfreeman.com/contact. All right, let's go.
+86.08-110.14 | SPEAKER_00: This episode is brought to you by Uplift Desk, my go-to for all office and podcast studio furniture. I'm sitting behind one right now. The podcast you're about to watch or listen to was filmed behind three Uplift Desks. It was upgraded from two because they had to expand in case there's four people on the podcast to make it a little bit roomier in that.
+110.78-114.34 | SPEAKER_00: Room, there's four Uplift Desks, as one of them I have.
+114.85-139.04 | SPEAKER_00: I don't know how many, four monitors, four monitors and a computer on which I do a lot of the editing and now a lot of the agentic stuff. Every machine, every compute surface in my place is doing some kind of agentic work. There's agents running all the time. There's an agent running right now on this very computer I'm recording this with.
+139.04-168.26 | SPEAKER_00: Anyway, that's on the software front. On the hardware front, the desks just make me feel happy. Long, long, long before Uplift was a sponsor, I was using their desk, and the fact that they're now a sponsor just brings joy to my heart. I recommend it highly, without question. The greatest standing desks of all time, customizable, two hundred thousand desk combinations, makes me more productive, brings me more happiness.
+168.80-193.76 | SPEAKER_00: An incredible product, incredible people, incredible desks. Cannot recommend it enough. Go to upliftdesk.com/lex. Use code Lex to get four free accessories, free same-day shipping, free returns, a fifteen-year warranty, and an extra discount off your entire order. That's upliftdesk.com/lex.
+195.07-209.89 | SPEAKER_00: This episode is also brought to you by BetterHelp, spelled H-E-L-P, Help. We have an incredible episode coming up on psychiatry. What an episode! What a mind-blowing, no pun intended, episode.
+210.98-215.04 | SPEAKER_00: The human mind, as I'm sure we'll get to in that episode,
+215.78-223.81 | SPEAKER_00: is an incredibly complex machine, and each individual mind has its own intricate complexities.
+224.61-234.85 | SPEAKER_00: And the history of psychiatry, which is the focus of that episode, is a history of people trying to figure out how to be a kind of mechanic to that machine.
+235.62-245.34 | SPEAKER_00: I personally think that talk therapy is one of the most powerful ways to at least elucidate, bring to the surface
+246.18-249.44 | SPEAKER_00: the issues that need to be resolved.
+249.98-267.74 | SPEAKER_00: And that's what BetterHelp is about. They figure out what you need and match you with a licensed professional therapist in under forty-eight hours. It's easy, discreet, affordable, available everywhere. Check them out at BetterHelp.com/lex and save on your first month. That's BetterHelp.com/lex.
+269.02-285.86 | SPEAKER_00: This episode was also brought to you by Element, my daily zero-sugar and delicious electrolyte mix. I gave Element actually a shout-out in a recent video, training video with Khabib Nurmagomedov.
+286.85-309.73 | SPEAKER_00: What an incredible experience that was. And it was a funny moment because when we hung out, Islam Mamedov was there too. And I had Element with me. And Islam came up to me. He got really excited when he saw Element. He's like, "Oh, can I have one of these?" It was like a, it was like an infomercial. It was almost like a
+309.73-334.37 | SPEAKER_00: kind of funny Dagestan version of a commercial for Element, but it was real. And I was like, "Sure." It was two people who love Element kind of exchanging the goods. I guess he was all out. So I'm always happy to share. And in that case, I had a giant stash. So it's not like I was letting go. I still had a stash.
+335.04-344.64 | SPEAKER_00: All right. Anyway, get a free eight-count sample pack with any purchase. Try it at drinkelement.com/lex.
+345.44-360.29 | SPEAKER_00: This episode is also brought to you by Fin, the number one AI agent for customer service. Like I said, I have agents running everywhere all the time. This particular agent specializes in customer service.
+360.77-363.01 | SPEAKER_00: Sixty-five percent average resolution rate.
+363.02-385.79 | SPEAKER_00: It's trusted by over six thousand customers, including AI companies, the engineers of some of which I've already interviewed and will interview in the future. It's built to handle complex, multi-step queries like returns, exchanges, and disputes. Obviously, customer service, a deep care for the concerns of the individual customers, is extremely important.
+386.24-391.26 | SPEAKER_00: To the degree AI can help facilitate that, that's really important.
+392.13-398.27 | SPEAKER_00: I'm a huge believer in what Jeff Bezos talked about in my conversation with him, as he's always talked about
+398.78-400.64 | SPEAKER_00: an extreme focus on the customer.
+401.06-419.20 | SPEAKER_00: A company that focuses on the customer is a company that's going to succeed. And don't get comfortable just because you're making a lot of money, just because there's a lot of revenue, a lot of profit. Don't get lazy. Don't forget what brought you to the dance. It's an extreme obsession of making the customer happy.
+419.65-431.33 | SPEAKER_00: Anyway, go to fin.ai/lex to learn more about transforming your customer service and scaling your support team. That's fin.ai/lex.
+432.45-447.26 | SPEAKER_00: This episode, finally, is brought to you by Shopify, a platform designed for anyone to sell anywhere with a great-looking online store. Shopify's CEO that I always talk about, Tobi, is now going wild programming.
+448.45-464.03 | SPEAKER_00: His GitHub is on fire. He's obviously building a lot of cool stuff. It is always really inspiring, and I think really important for the engineers at the company to see that the leadership is building. Leadership is down, ground level.
+464.48-478.34 | SPEAKER_00: understanding the state-of-the-art technologies that are involved in engineering the product, in this case of Shopify, but also just products in general, how to build. I think a builder
+479.42-489.06 | SPEAKER_00: is what makes for a great leader of other builders. And so I'm always a fan of following along of all the incredible engineering that Shopify is doing behind the scenes
+490.21-508.19 | SPEAKER_00: to deliver all the products that it's delivering. So, you know, to have the infrastructure for a huge amount of people connecting and selling stuff, plus the thousands of integrations that they have to handle seamlessly, all of that at your fingertips if you just want to sell some T-shirts, like I do.
+508.19-524.93 | SPEAKER_00: or actually run a legitimate, large-scale business, all of that is supported by Shopify. Sign up for a one-dollar-per-month trial period at shopify.com/lex. That's all lowercase. Go to shopify.com/lex to take your business to the next level today.
+525.47-541.38 | SPEAKER_00: This is the Lex Fridman Podcast. To support it, please check out our sponsors in the description, where you can also find links to contact me, ask questions, give feedback, and so on. And now, dear friends, here's Rick Beato.
+557.57-580.37 | SPEAKER_00: You had, I think, an incredibly fun and diverse beginning to your music journey. I heard somewhere that one of the things that made you fall in love with music was listening to guitar solos, some epic guitar solos. What's an early guitar solo that you remember you connected to spiritually, musically, where you're like, "Wow, there's magic in this."
+581.03-604.03 | SPEAKER_01: Well, the first solo that I learned was "Hey Joe." It was actually a good beginner song, you know, when I first started playing the guitar, because it has pretty simple chords, right? So it's like E, C, G, D, A. And I learned the solo, and I figured out this, like, it's this pentatonic scale, E minor pentatonic scale. I didn't know that's what it was called, but I learned this thing, and it's like...
+604.61-616.64 | SPEAKER_01: Whoa, he's just in this one shape here. Now there was no, you couldn't go look anything up. You just, if you could figure out the notes, you notice that there was a little pattern to it. And then I...
+617.28-625.18 | SPEAKER_01: I got so obsessed with it, and I showed my younger brother, John, who started playing guitar right at the same time I did. So I was fourteen, he was eleven.
+625.63-634.58 | SPEAKER_01: And I would play rhythm for him for five minutes while he would solo over "Hey Joe." And then as soon as I'd start soloing, he'd throw the guitar down. Then we get in a fight.
+635.28-642.75 | SPEAKER_01: And so my mom eventually was like, "What's going on here?" And I was like, "John won't play rhythm."
+643.52-668.99 | SPEAKER_01: John won't play rhythm for me. She's like, "Okay, I'll play rhythm for you. What, what are the chords?" And I was like, "Okay, it's like E, C, G, D, A." And so my mom would literally play rhythm for twenty minutes while I'd play. Hashtag parenting. That's amazing. When, when I look back on it now, my mom's been gone for ten years now. When I look back on it, it's like, my God, my parents were so cool.
+668.99-677.96 | SPEAKER_00: We should mention that "Hey Joe" and Hendrix in general is kind of known for the rhythm not being simple rhythm, just the chords that you mentioned. It's what you do with those chords.
+678.13-679.03 | SPEAKER_00: Almost improv.
+679.03-688.02 | SPEAKER_01: the rhythm side. He did all those really cool chord fragments, riffs, and things like that. That's just part of his, that's the Hendrix style. What do you think? I mean, many...
+688.02-691.95 | SPEAKER_00: people put Hendrix as the greatest guitarist of all time. What do you think is part of...
+691.95-694.13 | SPEAKER_01: of that? You know, I, I make lists.
+694.13-718.02 | SPEAKER_00: You do. If you somehow don't know who Rick Beato is, go on YouTube right now and watch your excellent interviews with musicians, watch your breakdown analysis of different songs, and watch your top twenty lists where you're very opinionated, sometimes very openly critical about certain kinds of songs. It's fun. Opinions are fun.
+718.24-740.62 | SPEAKER_01: But they do change, Lex, from day to day. Yeah, exactly. But anytime I do a list, if I do twenty, I like to do twenty because that gives me some leeway to, to throw in. I have to throw in something that is so weird that people, you know, something that a lot of people won't know just to have it on there so I can at least...
+740.62-756.25 | SPEAKER_01: introduce a, you know, I'll put somebody like Al Di Meola, who's a famous fusion guitar player. I'll throw in one of his solos or something, or just some, some oddball solo in there, just so that people, as they're listening down the list, will get exposed to something they would not necessarily get exposed to.
+756.25-757.97 | SPEAKER_00: Yeah, a lot of variety, but Hendrix.
+759.39-768.02 | SPEAKER_00: Did you show up here today, Rick, trying to tell me that Hendrix is not up there? I just, I'm getting that vibe right now.
+768.02-773.92 | SPEAKER_01: No, I'm not, but I don't want to say greatest, you know, you can say, well...
+774.50-778.68 | SPEAKER_01: There, there are people that, that inspired Jimi Hendrix.
+779.75-781.03 | SPEAKER_00: older guitar players.
+781.03-796.04 | SPEAKER_01: Charlie Christian and Django Reinhardt were the first two really big, and probably, and Andres Segovia were, were three of the giants of the twentieth century as far as guitar influences for most of the players that were to follow.
+796.04-807.75 | SPEAKER_00: So, yeah, go to Perplexity. Django Reinhardt was, of course, a jazz guitarist and composer active mainly in France, and is widely regarded as one of the greatest guitarists in jazz history.
+808.00-810.18 | SPEAKER_01: So Django was, um...
+810.69-826.24 | SPEAKER_01: Well, there's a huge movement right now, Gypsy Jazz movement, as they call it, that is kind of built around the style of music that he played back in the early twentieth century. One of the things about Django is that he was in a fire.
+827.17-843.23 | SPEAKER_01: And he had two of his third and fourth fingers, so his ring finger and pinky, were essentially melted together. He had no use of them, although he could use them while he was chording. But a lot of these incredibly fast lines, he's just playing with two fingers.
+843.65-846.85 | SPEAKER_01: And it's amazing.
+857.79-862.15 | SPEAKER_00: That, what is that? So that's Gypsy Jazz.
+862.15-863.78 | SPEAKER_01: That's Gypsy Jazz, yeah.
+866.85-872.14 | SPEAKER_01: Him, Stéphane Grappelli, is a violinist that played with him a lot.
+872.14-875.03 | SPEAKER_00: How much of this is improvisation?
+875.03-876.70 | SPEAKER_01: He's doing there is improvised.
+881.06-900.03 | SPEAKER_00: Feels so free. Yeah. And fun, like swing. And then that leads to, you said pre-bebop. So bebop was a kind of jazz that was also influential on you and your own life journey. And it's this complicated, legendary kind of jazz that was very influential.
+
+0.00-2.33 | SPEAKER_00: From the music that followed, so what was bebop?
+2.33-9.66 | SPEAKER_01: Well, after the the big bands were happening in the, you know, from the 20s through the 40s.
+10.85-23.20 | SPEAKER_01: Small people would go out and play in small groups that they would tour with. And Charlie Parker, who's really kind of the one of the main figures of early bebop, really developed the language of it.
+23.58-24.97 | SPEAKER_01: Usually, the music that they're
+25.02-25.97 | SPEAKER_01: playing over are standard
+26.04-36.22 | SPEAKER_01: chord progressions that that they would use as vehicles to improvise over. A lot of them were AABA form. And Charlie Parker
+37.02-44.61 | SPEAKER_01: created this language of improvisation that was far more sophisticated than the swing players
+45.12-49.18 | SPEAKER_01: of the big band era, you know, think of people like Benny Goodman.
+49.60-58.04 | SPEAKER_01: Uh, of that era, they would have really fast tempo songs, angular lines, chromaticism, things like that, chromatic notes.
+58.04-69.41 | SPEAKER_00: Chromatic notes are just notes next to each other. Next to each other, yeah. I like to think of it as connecting notes. Connecting. You're putting in more notes than are supposed to be there, and so doing, creating some interesting texture.
+69.66-76.99 | SPEAKER_01: Yeah, so that is one of the most difficult styles to master because all these things are a language.
+77.48-93.92 | SPEAKER_01: Blues playing, they're all just languages, right? It's like, just like you'd learn any type of language. My dad loved bebop. Now, when I was a little kid, and he's listening to these bebop records, whether it's Charlie Parker or Dizzy Gillespie or
+94.50-104.96 | SPEAKER_01: Oscar Peterson, Joe Pass, great jazz guitar player. I'm just hearing this stuff. I don't know any different. My dad was not a musician, but for some reason he liked incredibly sophisticated
+105.04-109.82 | SPEAKER_01: music that was very technical, and um...
+111.14-129.89 | SPEAKER_01: I just heard it and just was like, oh yeah, okay, cool. And not realizing that it was developing my ear because I really, bebop is one of the hardest to improvise in that style, in that language of bebop. It's very difficult to do, and
+131.04-149.22 | SPEAKER_01: hearing it as a kid is one of the things that I think enables you, just like languages, enables you to learn it as opposed to somebody that's never been exposed to it and tries to learn it as a teenager. I think it's very similar to learning languages.
+149.86-158.58 | SPEAKER_01: Which kind of is like my theory on perfect pitch that every child is born with perfect pitch, and they start to lose the ability around nine months.
+158.58-159.34 | SPEAKER_00: Mm-hmm.
+159.34-164.22 | SPEAKER_01: When people become culturally bound listeners, when babies do.
+164.90-181.02 | SPEAKER_01: They start out as citizens of the world. You know, they can, they have the phon, the the neural pathways to hear the sounds, the phonemes of all 6,500 languages spoken on Earth. But then, around nine months, they begin to lose that ability, and they
+181.54-189.76 | SPEAKER_01: When they become these culturally bound listeners, there's a great YouTube video with this woman, Patricia Kuhl. She's a language researcher.
+190.50-206.59 | SPEAKER_01: And I watched this, The Linguistic Genius of Babies. I saw this in 2010, this lecture that she did, like a TED Talk. And she talks about this, that kids, they did a an experiment. They exposed kids to Mandarin three times a week for 25-minute sessions, just to
+207.23-227.10 | SPEAKER_01: person speaking Mandarin to these babies, and they were able to recognize the sounds, the phonemes of that language, even later on. And when I realized that my son Dylan had perfect pitch, I thought, "Why does Dylan have perfect pitch, but no one
+227.97-234.30 | SPEAKER_01: in my family had ever had perfect pitch?" And I thought, "Well, it must be because of the things I exposed to him
+235.26-239.02 | SPEAKER_01: prenatally, and then in the first nine months of his life.
+239.02-259.18 | SPEAKER_00: Because it's the only way I could explain it. We're going to return to Joe Pass. We've got to go to Dylan. You mentioned Dylan. I guess that's in part one of the origin stories of, uh, you putting out videos into the world is the early videos you did with Dylan, set of videos on his perfect pitch. And for people who don't know, and maybe you can speak to what perfect pitch means.
+259.38-262.59 | SPEAKER_01: It's the ability to identify any note.
+263.10-265.66 | SPEAKER_01: Without a reference tone, so, um.
+266.14-281.77 | SPEAKER_01: You can play. It doesn't matter how quickly they are that they can, a person with perfect pitch can hear a note and immediately identify it, or a collection of notes. And taking a tangent upon tangent, you also have a course on ear training. Yes, but my course is for relative pitch.
+281.77-290.87 | SPEAKER_00: Not to be confused with perfect pitch. Is it fair to say that relative pitch, as far as the thing you would learn, is more useful for musicians? Yes. Can you explain the difference between the two?
+290.87-310.95 | SPEAKER_01: Relative pitch is basically learning how to identify pitches relative to a stated tonic or something that you've heard, or just relative to each other. If you hear a note and then you hear another note after it, you can recognize, let's say, it's a minor third interval. So if you're on the note A, the next note would be C.
+311.08-313.06 | SPEAKER_01: So once you're given a reference note.
+313.54-320.43 | SPEAKER_01: You can use relative pitch to identify the relative nature from one pitch to another. And of course,
+320.43-347.26 | SPEAKER_00: Intervals make up scales, and intervals make up chords. And so that if you develop at any degree relative pitch, you can understand, you can hear the music better. Yes. So what does it take? Since we're taking a tangent on tangent, what is it take to train your ear? What's a TLDR on the course before people go out and sign up?
+347.26-356.98 | SPEAKER_01: It's just practice, basically. You start with intervals, typically with small intervals, like minor second, major second. So minor second would be half step, major second would be whole step.
+356.98-358.03 | SPEAKER_00: Are you listening to the tone?
+358.03-364.24 | SPEAKER_01: One after the other, or two of them together. Both. So played separately, it's called melodic intervals, right? Like a melody.
+364.65-371.18 | SPEAKER_01: And harmonic intervals are played like a harmony together. So you have to be able to identify them both, both ways.
+371.18-378.09 | SPEAKER_00: What's an early journey like? We'll give people a preview of what they should like. What does that look like? What does practice look like?
+378.09-395.98 | SPEAKER_01: Well, my course, it will play you an interval, and then you identify it by clicking on whether it's, you know, a major third or minor third, or major sixth or minor sixth, or perfect fifth or tritone, whatever it is. And it will teach you gradually over time how to recognize all the intervals.
+395.98-399.71 | SPEAKER_00: So you listen to a melodic interval or harmonic interval.
+400.64-416.26 | SPEAKER_00: How quickly does the ear in the various age groups that we humans are in, how quickly does the ear learn the different intervals? Is it a week, two weeks, a month, two months, five years?
+416.26-426.29 | SPEAKER_01: I think you do it pretty quickly within, you know, if you practice within a couple months, you can really make a lot of progress on it if you practice daily.
+426.29-430.03 | SPEAKER_00: What benefit does it have to you as a musician in general?
+430.03-454.97 | SPEAKER_01: Well, it's great if you want to hear a chord progression if you're trying to figure out a song, and you can say, "Oh, that's going from the six minor chord to the four major to the five major to the one major." You can just identify it immediately, and then you figure out what the first chord is. Then you know what the rest of the chords are because they're in relation to whatever that first chord is. And for learning solos, for example, or learning melodies, being able to sound something out.
+454.97-462.84 | SPEAKER_00: Do you recommend people couple that with music theory in terms of education, the education journey?
+462.84-467.62 | SPEAKER_01: They have to be taught together because these terms are really music theory, right?
+467.94-494.46 | SPEAKER_01: That those intervals: major second, minor second, major third, minor third, perfect fourth. So as you're doing that, and then you once you learn the intervals, the twelve intervals in an octave, then you you learn them both melodically and harmonically. So played together and separate. Then you learn chords, and so then you learn to identify major, minor, diminished, augmented, suspended chords, things like that.
+494.46-501.70 | SPEAKER_01: Well, you're basically learning music theory at the same time with that because learning music theory is just the name of things in music.
+501.70-503.03 | SPEAKER_00: So there's...
+503.18-504.03 | SPEAKER_01: The sound of...
+504.03-504.89 | SPEAKER_00: things.
+505.09-523.39 | SPEAKER_00: There's the name of things, and then there's the haptic, like playing the thing, right? Probably so playing chords, playing scales. Yeah, I believe a course on scales and on chords. Yeah, okay, since we're doing the tangent, let's go. How do you recommend people... there's a bunch of people listening to this that are curious about...
+523.81-536.61 | SPEAKER_00: how they can start in playing guitar, maybe even playing piano, maybe playing other instruments, although guitar, of course, is the greatest instrument of all time. Absolutely. What are the early steps of that journey? What do you recommend people do in general?
+536.61-544.86 | SPEAKER_01: Well, if you're a beginner, getting a good beginner guitar course and learning, first of all, the open chords in first position.
+545.31-552.96 | SPEAKER_01: A lot of songs can be played that way. A lot of old songs can be played that way, maybe not new modern songs necessarily.
+552.96-554.56 | SPEAKER_00: And a few chords and...
+555.20-557.03 | SPEAKER_00: with an eye towards maybe playing a song.
+557.03-563.62 | SPEAKER_01: Yeah, with an eye towards you learn, you learn the chord shapes, and you learn how to strum basic patterns to begin with.
+564.03-573.24 | SPEAKER_01: I think the first thing for learning guitar is actually how to position your fingers so that you don't mute strings that you don't want to mute.
+573.67-595.46 | SPEAKER_01: That's the hardest thing for people to do, basically, is to get their fingers arched to where they... If you're playing a C major chord, your index finger is on the first fret of the B string. You have to have that open E string ringing there, and it's hard for people to make those micro, micro adjustments. You take it for granted, like she's been playing guitar for, I don't know how many years, forever, right? Forever, yeah.
+595.63-612.53 | SPEAKER_01: And you don't even think about stuff like that when you're playing a guitar solo. Every little thing that you do, if you're playing your Comfortably Numb guitar solo, you have to, out of midair, strike the string that your fingers on to play the note. And these are all fine adjustments that you're doing.
+612.53-629.24 | SPEAKER_00: I'm, I'm just a hobbyist, recreational player, but wow, you're taking me all the way back. You're right. It's the haptic, the physical aspect of it is really tricky. Comfortably Numb is a good example. But if you do lead, you have to get a super clean sound.
+629.24-658.33 | SPEAKER_00: Now that's both when you're playing fast, you want it to be super precise. But when you play slow, when you have one note and you're holding it and you're bending it, it better be really clean. Yes. And for that, it's... I guess you have to really place the finger in the right place. Plus, there's the... well, there's the calluses, so it doesn't hurt. And then the positioning of the string on the curvature of the finger. Where does it fall? Like, how much do you bend the finger?
+658.33-663.74 | SPEAKER_01: You have to have enough of flesh on it to actually raise the, raise the string and pitch.
+664.04-691.04 | SPEAKER_00: Otherwise, it... yeah, because you're lifting it with part of a flesh, and of course, you have to decide, depends how OCD you are. Do you want to be like the perfect, the proper musician, or do you want to do a Hendrix? So the thumb over the top, way over the top. Yes. And so, like, you, you, if you have a fretboard here, I think the more like classical guitarists, the very proper, perfect.
+691.04-715.70 | SPEAKER_00: A perpendicular alignment of the fingertips to the fretboard versus like Hendrix is like, fuck it, you nerds, I'm gonna do it. The messiness is part of the magic. Of course, like B.B. King is also kind of messy looking in terms of his positioning of the fingers, but his tone is incredibly clean. Yeah.
+715.70-717.23 | SPEAKER_01: Super clean. So like that.
+717.23-723.59 | SPEAKER_00: Teaches you that maybe any position can converge towards a super clean tone, you just have to figure it out.
+723.59-725.86 | SPEAKER_01: I think a lot of it has to do with...
+726.43-754.42 | SPEAKER_01: How they wear their guitars. If you wear your guitar low, if you're Hendrix and you're wearing your guitar, that's true. If you're wearing it lower, lower, then you can't get your fingers on top of it like that. And the thumb acts as a way to mute the lower strings from ringing if you're playing through a loud amplifier. So there's so many other micro adjustments when you're playing leads because you have to kind of mute the other strings that are, so they don't ring out.
+754.72-762.46 | SPEAKER_01: If you're playing the first note and "Comfortably Numb" in the solo at the end, and you're at the ninth fret of the G string, and you bend that.
+763.07-767.08 | SPEAKER_01: If you bend that G string and you accidentally hit the B string under it.
+767.59-790.31 | SPEAKER_01: You don't want that ringing, so you have to kind of angle your index finger so it, to mute that. So all these micro adjustments that you don't even think about. I mean, you're not thinking about that, Lex, when you're playing it. You've done it so many times that these things are just part of your, of your brain. That's why this is such a great brain developer for kids to learn instruments.
+790.31-798.05 | SPEAKER_00: Yeah, of course you have to solve that puzzle. Must be really frustrating in the beginning, like holding a chord. Yes, like all of them.
+798.50-801.46 | SPEAKER_00: It hurts too, right? It does hurt. Especially on acoustic guitar.
+801.46-803.42 | SPEAKER_01: Not for that long, though. For like...
+803.97-807.42 | SPEAKER_00: A week, a couple, yeah, couple weeks, a couple.
+808.29-813.12 | SPEAKER_01: I don't want to discourage anyone. You know, it's, it's actually pretty easy to learn basic stuff.
+813.12-825.02 | SPEAKER_00: Right, but the, the pain is temporary, I guess is the point I'm trying to make. It is. So, so what else? So the physical component, play a few chords. Where does the journey continue if you're learning guitar?
+825.02-840.00 | SPEAKER_01: Well, then it's like if you play electric guitar, then you get into single note playing and stuff like that. That's where it gets, to me, where it gets really fun. You know, you have single note playing that with riffs. If you think of "Back in Black", right, that has a riff.
+840.05-850.62 | SPEAKER_01: Embedded in the, in the actual melody, or many songs that have riffs. The Hendrix stuff that has chordal riffs, and you're moving up the neck and...
+851.04-857.98 | SPEAKER_01: And involving all the fingers and things like that. So there's, it really depends on what you wanna, what styles you wanna play.
+857.98-866.00 | SPEAKER_00: So you're thinking about song learning, so different components of song learning, so riffs and songs, lead and songs.
+866.00-880.52 | SPEAKER_01: And then you have fingerpicking. If you have "Stairway to Heaven", songs like that, how about wanting to learn that, that involves fingerpicking because you have to isolate certain notes of the chord and play two at together, you know, and multiple times.
+880.52-894.22 | SPEAKER_00: There's a few crossroads. You get to select things. So I guess you're speaking to the fact there's a, if you're a righty, there's a right hand. You can use your fingers or you can use a pick. Correct. And it's a choice you make.
+894.22-900.00 | SPEAKER_01: And sometimes you use both, because in Stairway to Heaven, you're using the fingers at the beginning or fingers.
+
+0.00-13.12 | SPEAKER_00: And pick, hybrid, they call it hybrid picking. And then later on, you're using the pick to flat pick the picking patterns. On the music theory front, do you recommend people learn scales and chords and like the theory of it?
+13.22-26.96 | SPEAKER_01: Later on, I would say I wouldn't say necessarily right right off the bat. I think I think learning songs is the is the first thing that you should do because you want to keep people motivated. So you get them to like.
+26.96-28.42 | SPEAKER_00: Falling in love with music, yeah.
+29.22-37.04 | SPEAKER_00: All right, and that takes a couple months, three months. Depends on how motivated they're. So you recommend practicing like.
+37.04-52.69 | SPEAKER_01: Every day, every day. My son Dylan, when he started learning the guitar a couple years ago, I said it's better to practice ten minutes a day, seven days a week, than to practice one day for an hour, which is roughly the same amount of time.
+52.69-66.29 | SPEAKER_00: Yeah, but it usually turns into something longer. But otherwise, like if you have a busy life, you know, taking a day off, that day turns into a week, and then a week turns into a month, and all of a sudden you haven't touched the instrument for months.
+66.29-77.11 | SPEAKER_01: Which is why I leave my guitar on a stand all the time, so that if I walk by it, I'm like, okay, I'll just pick it up for a second, and then that second turns into ten minutes, and an hour, two hours.
+77.11-83.89 | SPEAKER_00: All right, we gotta talk about this Dylan video. So this might be one of the earliest. That's the first one. That's the first video on the channel.
+83.89-89.82 | SPEAKER_01: It was. It was actually before the channel because this actually blew up on Facebook, and then I put it on YouTube after.
+90.72-94.31 | SPEAKER_00: So if it's okay. Yeah.
+94.31-101.02 | SPEAKER_01: Okay, Dylan, we're gonna do the hardest ear training test of all time. Are you ready? Wait.
+101.02-103.65 | SPEAKER_00: Oh.
+103.65-130.50 | SPEAKER_01: Now, just a quick backstory on this. I made this for my friend Shane's wife who wanted to see it. Because Shane, I was a friend that I was producing, and he was there. And Dylan had come down the day in the day, and I said, "Oh, check this out!" And I played this stuff. He's like, "That's amazing! Can you make a video so I can show my wife?" And I was on the way to a school board meeting because I was on the school board at Dylan's school, and I said, "Hey."
+130.50-157.53 | SPEAKER_01: Dylan, come downstairs. I'm gonna make this video. It'll take one minute. Just need to do this thing for my friend Shane. And he's like, I don't want to. And I said, Come on, it'll take one minute. I don't want to. So I said to my wife, I'm like, Would you tell Dylan to come downstairs? I want to do this video. It'll take one minute. She's like, Dylan, go downstairs. And he had he has a mouthful of candy there because he was eating candy. So if you look at him, he's he's he's literally has a mouthful of candy while he's doing this.
+157.53-161.73 | SPEAKER_00: And it was just on Facebook. It went quite viral.
+161.73-162.72 | SPEAKER_01: Yeah, like at.
+164.10-169.96 | SPEAKER_01: I don't know, eighty million views, something like they had like two hundred fifty thousand comments, something like that. Insane. How old is Dylan here?
+169.96-176.44 | SPEAKER_00: He's eight. Eight years old. Yeah. Can you actually give some more backstory about like how you discovered that Dylan has perfect pitch?
+176.44-201.21 | SPEAKER_01: So when Dylan was about two, he, I was doing a FaceTime with my brother John, and and I was I was like, check this out, John, and I played the Stone in Love, Neal Schon's solo from Journey, and and I was like, check this out, and Dylan would sing along, and and my my brother John was like, wow, Dylan can sing all the notes, and I was like, yeah, then I played Black Dog, Zeppelin, and Dylan would sing that, and.
+201.21-229.23 | SPEAKER_01: He's like, Dylan's got a good ear, and then John and I were like, well, we have good ears too, so maybe we could have done that we were that age. So a couple more years goes by. Well, he was about three and a half, and I'm in the car. I'm like, Dylan, sing the Star Wars theme, and he sings it. And I'm like, that's in the right key. And I check. I play it on my phone. I was like, oh my gosh. And then I ask him, sing the Superman theme, because we had been listening to John Williams soundtracks the week before, and he sings that. And
+229.23-256.75 | SPEAKER_01: That was in the right key, and I ask him another song. So I turn the car around. I go back to the studio. I go to the piano. I hit the note B flat, and Dylan says, "Star Wars." Star Wars starts on a big B flat major chord, but it's the note B flat. It's the main one that you hear. And then I play the note G, and he goes, "Superman," and that's the first note in the trumpet part of the of the Superman theme. And then I realized that he had perfect pitch. And then in five minutes, I taught him the name of the twelve notes.
+256.75-259.67 | SPEAKER_01: Which he already knew, but he just didn't know the names.
+259.67-269.76 | SPEAKER_00: So you just associate the the names to the thing, you know? What do you think is this in his mind? Because it's not just individual notes. He can like hear everything. Yeah. What is that?
+269.76-274.14 | SPEAKER_01: He doesn't see colors. He just says every note sounds completely different.
+274.91-279.13 | SPEAKER_00: Wow! Like you said, maybe it's a language thing.
+279.28-283.84 | SPEAKER_00: Yeah, it really is a he just learned the language. Yeah, the language.
+283.84-289.82 | SPEAKER_01: Just like it's like perfect, um, it's like native music fluency. If you think of it like that.
+289.82-291.67 | SPEAKER_00: So let's let's listen to some of this.
+291.67-297.86 | SPEAKER_01: Here we go. As fast as you can. We're gonna start with single notes, and we're gonna do some intervals, then chords. Okay, here we go.
+299.39-302.15 | SPEAKER_02: B flat, C.
+303.21-304.19 | SPEAKER_01: Okay. Good.
+305.42-307.64 | SPEAKER_02: A flat, B flat.
+307.64-308.70 | SPEAKER_01: Great. How about this?
+308.70-310.57 | SPEAKER_02: D flat.
+310.57-311.68 | SPEAKER_01: Great. What about this?
+315.01-316.97 | SPEAKER_01: This is incredible.
+320.67-322.56 | SPEAKER_01: And then, how about this?
+322.56-323.41 | SPEAKER_02: 我。
+324.51-326.54 | SPEAKER_01: What is it? E flat.
+327.03-329.33 | SPEAKER_00: He's, he's annoyed.
+329.33-333.67 | SPEAKER_01: He is annoyed. Yeah, but the part is this when I.
+333.71-334.68 | SPEAKER_01: Play these next.
+335.01-341.48 | SPEAKER_01: That's really, I think, why the video went so viral. The next part of this, where I play these super complex poly chords.
+341.48-345.45 | SPEAKER_02: Okay, I'm gonna do some poly chords for you. These are really gonna be hard. You ready? What's this?
+349.25-351.42 | SPEAKER_01: Okay, sing a B flat.
+354.98-356.96 | SPEAKER_01: Very good. What's this chord?
+364.42-366.48 | SPEAKER_02: E flat, E flat major.
+366.97-369.38 | SPEAKER_01: Great. Sing an F sharp.
+369.93-373.28 | SPEAKER_01: Excellent. What's this chord?
+377.31-379.52 | SPEAKER_01: Great. What's this chord?
+383.62-413.09 | SPEAKER_01: F major, F major. He had nine over F major, so I had to look at my hand to make sure that that's what it was, because they're all in inversions. So I think the reason that this went so viral is that the more that someone knew about music, the more that they shared the video, because these poly chords. So the people that were the best musicians were like, were, would looked at it, I was like, oh my god, you know, C augmented over D flat augmented.
+413.09-424.10 | SPEAKER_01: And the second chord was A flat major over A major, but they were both in inversion, right? So it was like a first inversion A flat major chord, first inversion A major chord.
+424.10-454.04 | SPEAKER_01: And then A minor over D flat major, and then E add nine over F major. And for an eight-year-old, I mean, for anyone. Plus, they're all close voiced; they're all just right next to each other. Yeah, yeah. It's not like you know where you can hear them clearly. It's all in the mid range of the piano, so you have to really listen, and, and you have to die. He has to dissect each one. Like, what are the notes being played there, and, and what is like? What's the theory? Because he's actually using music theory to dissect them.
+454.04-460.83 | SPEAKER_00: It must be in his brain. Those components of the chords all sound different, like very clearly different.
+460.83-461.89 | SPEAKER_01: Yes.
+461.89-471.59 | SPEAKER_00: It's truly incredible. The human mind is incredible, and so you're saying like some part of that is the things you hear in the first few months of life.
+471.59-477.44 | SPEAKER_01: I did a thing where I, I played what I call high information music. High information music would be.
+478.56-507.30 | SPEAKER_01: Bach, Well-Tempered Clavier, fugues, any, anything Bach. And I would play the Well-Tempered Clavier, and I would play. I have a, a friend, a Turkish pianist who's one of the greatest improvisers I've ever heard. His name, Aydin Essen. And I would play Aydin's improvisations for Dylan. It had very sophisticated harmony and linear things in it, and Keith Jarrett, and mainly jazz.
+507.30-536.72 | SPEAKER_01: Classical and modern classical music, and then, then we would play, listen to rock music. Once he was born, I'm talking on my wife's stomach before Dylan was born, starting at fifteen weeks for thirty minutes a night, and then when Dylan was born, I would sit with him for an hour every morning and listen to music, and I would look at him. In order for this, uh, for them to hear these phonemes apparently and develop this language or get the, the language acquisition has to.
+536.72-560.93 | SPEAKER_01: Involve the social brain. So when kids look at you, you're, when a baby's looking at you, they're looking at your mouth, and they're getting social cues from, from that. And this is also another component of saying, this is where this word stops or starts and stops. These are how this, the phonemes are separated from one another. These are how they're connected.
+560.93-580.85 | SPEAKER_01: So I believe that all kids are born with perfect pitch, and then around nine months they begin to lose it. If you don't engage their social brain, making these pitches, no. I never played pitches for Dylan and said, "This is a C, this is a B flat, this is a G." I just played complex, high information music for him, and, and played with him.
+580.85-608.49 | SPEAKER_00: And that applies maybe even more generally to high information language. Yes. And it starts before they're born. I think I, I saw some, some of these incredible scientists that work on the neuroscience and neurobiology, psychology of language in early life. I think a big part is in the mother's stomach, you're listening to the mother speak. Yes, that's right.
+608.49-613.55 | SPEAKER_00: So, like, that's, that's how, on the language side, you're picking up the language already. That's right.
+613.55-621.98 | SPEAKER_01: And you're picking up the music, musical language. So native music fluency, you could call it. So if the mother's sitting back and.
+621.98-628.52 | SPEAKER_00: Listening to Bach and some bebop jazz, you have, you have a pretty good chance. Much better chance.
+628.53-649.62 | SPEAKER_00: Okay, all right. So as we unwind back our way back, Joe Pass and bebop. You were, you were funny enough talking about what is bebop jazz and, and people like Joe Pass. And in your own life, your dad was somehow listening to that kind of incredibly complex and sophisticated music.
+649.62-660.05 | SPEAKER_01: But wasn't a musician. Wasn't a musician. We never, my, I have six siblings, and we could never figure out why Dad liked really sophisticated jazz.
+660.05-661.74 | SPEAKER_00: We just took it for granted at that time.
+661.74-677.54 | SPEAKER_01: Yeah, just took it for granted, and my dad passed away in 2004, and we never really talked about that. But he and I used to listen to music together all the time. He'd put, we'd put on a record. I'd sit on one side of the room, he'd sit on the other, and not say a word. Listen through the whole side A, I go flip it over.
+678.69-685.63 | SPEAKER_01: Listen to side B. Never say a word, and then get up and go do stuff. And we did that all the time.
+685.89-699.54 | SPEAKER_00: And so the first time you impressed your dad was with the Joe Pass song, right? And by the way, we'll have to go to this song because, uh, people must have forgot because, uh, people just think you're, uh, um,
+699.54-699.97 | SPEAKER_01: Um.
+700.26-722.69 | SPEAKER_00: Like a good communicator or something, they, they don't realize how good you are at guitar. How good you are actually a lot of instruments, but guitar especially. And there's this video, the greatest guitar solo ever. Can you give me some context for this particular intricate, complicated solo? Who's Joe Pass?
+722.69-749.91 | SPEAKER_01: Joe Pass was a guitarist. He lived from 1929 to 1994, and he was one of the greatest bebop players and solo guitar players. So he made a record that this is off of called "Virtuoso" in 1973 that my dad gave me for Christmas when I was in tenth grade, and he said, "And this is not like my dad. My dad worked for the railroad. He was very, you know, few words spoken."
+749.91-776.47 | SPEAKER_01: Born in 1919, he said, "If you ever learn to play guitar like this, you've accomplished something with your life." And I was like, "What?" So this record stayed unopened until about March after Christmas. And one day I was like, "Okay, I'll open it up," and I put it on, I start listening to it, and I was like, "Whoa, this is kind of cool." And so I said, "I think I can figure out some of this stuff." So I figured out.
+776.47-783.28 | SPEAKER_01: This thing is by, by ear mostly. Yeah, just by ear. I didn't know any of the chords or anything. If you can listen to a little bit here.
+783.30-799.79 | SPEAKER_01: Go back to that brother, brother, brother, Geno Vanelli thing with Carlos Rios playing. That stuff is incredibly hard. This I'm starting. I don't know any chords, so I start out. I don't even know what that chord is, but I figured it out. I, I just, and it's weird. I mean, look at that weird bar.
+799.79-806.04 | SPEAKER_00: So you're just finding, like, playing around, putting your fingers in various positions.
+806.04-820.98 | SPEAKER_01: Right, trying every combination of fingers. I'd never played that chord. That's a weird looking chord. Yeah, and but I kept... I moved my fingers around till I heard to where it sounded like, "Oh, that's it, definitely." And I just looked at my hands like, "What is that?" Had no idea what it was.
+820.98-834.71 | SPEAKER_00: So you were connected to this. You were really connected to the music, yeah. And so that, that's why you can hear. It's not necessarily... Did you even, you didn't have perfect pitch? No. And not even relative pitch. No, I did not. Yeah.
+834.71-838.91 | SPEAKER_01: No, I didn't know anything about intervals. I didn't know anything about music theory, anything. This is all just...
+838.91-840.02 | SPEAKER_00: He was just like playing around.
+840.63-843.04 | SPEAKER_01: That's right. I mean, look at that weird bar there.
+844.19-847.87 | SPEAKER_01: But then you get into these things.
+852.90-859.55 | SPEAKER_01: So that stuff there, I can figure out, and then this.
+861.47-864.93 | SPEAKER_01: That stuff I could figure out, and then these things here.
+866.21-870.18 | SPEAKER_01: Those are just inversions of it, but I didn't know that.
+871.17-875.58 | SPEAKER_01: I had heard Joe play that on the record. This is the last song. I listened to it a bunch of times, and I started.
+875.58-880.97 | SPEAKER_00: So you just replay over and over and over and over, and you're like trying to replicate it. Yeah.
+881.03-881.98 | SPEAKER_00: And I'm memorizing.
+881.98-882.91 | SPEAKER_01: Every different.
+883.03-883.98 | SPEAKER_00: Shape all.
+884.03-884.97 | SPEAKER_00: That I had.
+885.02-885.97 | SPEAKER_00: Never played before.
+886.04-890.71 | SPEAKER_00: Would you recommend people do something like that with a complicated song? Yeah.
+890.71-898.97 | SPEAKER_01: Yeah, but there's so many YouTube videos that you can go and just learn it without having to. Yes, yeah, I would recommend. I feel like the...
+898.97-900.10 | SPEAKER_00: Struggle, the struggle is worth it.
+
+0.00-18.19 | SPEAKER_00: This is true for education in general. People, like, there's all these educators that try to make learning easier and more fun and all that kind of stuff. Great, wonderful. But part of the thing is the struggle, absolutely. But yeah, let's, uh...
+23.07-32.32 | SPEAKER_01: I heard licks like that all over this, so I knew that that was, and then these licks here.
+34.94-39.49 | SPEAKER_01: He plays a lot of ideas like that. That's basically a C9 chord in the top notes of it.
+42.92-50.85 | SPEAKER_01: So all these are just inversions of, of the same chord. So if I could play that, then it's just figuring out the single notes. Okay, so...
+64.70-71.45 | SPEAKER_01: Okay, so if you just take this first part here, when he goes, so this, this intro part.
+71.45-80.48 | SPEAKER_00: You make it sound so simple when you break it down. And, and, and by the way, Jeff Pass, incredible guitar player. Like, this is obvious. And he improvised all this.
+80.48-81.54 | SPEAKER_01: He could have played like that.
+81.54-83.04 | SPEAKER_00: But, you know, the first.
+86.14-88.50 | SPEAKER_00: It was the individual that was hard.
+89.98-91.04 | SPEAKER_01: Make a play like that.
+92.25-93.82 | SPEAKER_01: That sounds more, more realistic.
+102.62-107.41 | SPEAKER_00: The amount of different genres that you're able to replicate is incredible.
+107.41-116.93 | SPEAKER_01: This is just taking the needle, moving it there, then going back a little. Oh, there! And then by the end, the record was so scratched.
+117.63-126.31 | SPEAKER_01: It was, uh, um, but it was worth it. When I played it for my dad, he couldn't believe, I mean, he didn't say, "That's amazing." He was just like,
+126.31-127.24 | SPEAKER_00: Hmm.
+127.26-147.90 | SPEAKER_00: Pretty good. So, what was the role of bebop jazz in the history of music? It seems like it was influential in your life. Another guy you had an incredible interview with, Flea. People should go listen to that one. It's a great conversation. One of the things that surprised me is just how many musical genres influenced Flea. And the guy showed up in a Miles Davis T-shirt.
+148.52-152.47 | SPEAKER_01: And bebop. And Miles Davis played with Charlie Parker.
+152.47-160.61 | SPEAKER_00: When he was eighteen years old, and that's, he was, Charlie Parker was really his mentor. Can you explain to me why, with many of the folks you've interviewed,
+161.02-164.38 | SPEAKER_00: Uh, and in general, out there.
+164.99-169.03 | SPEAKER_00: In the, in the world of jazz, all roads lead to Miles Davis.
+169.03-174.11 | SPEAKER_01: Such an influential figure because he was the greatest innovator in the history of jazz.
+174.59-203.36 | SPEAKER_01: He was at the forefront of all these different styles of jazz. I mean, he started as a bebop player, and then he, you had records like "The Birth, Birth of the Cool" and "Modal Jazz" and hard bop, and records like "Bitches Brew" where he started to, I guess you would call fusion. You start to get these records. You had two main groups of Miles Davis. You had the Miles Davis fifties quintet and the Miles Davis sixties quintet.
+203.96-233.54 | SPEAKER_01: Now, Miles made records with many people, but the fifties quintet had John Coltrane in it. I mean, different piano players, could have been Wynton Kelly, but Paul Chambers in the bass, Philly Joe Jones in the drums. And that particular group was made just incredibly important records. And then he had his sixties group, which was Herbie Hancock on the piano, Ron Carter on the bass, Tony Williams on the drums, and Wayne Shorter on the saxophone.
+234.11-239.25 | SPEAKER_01: And they made all these incredibly important records.
+239.25-243.55 | SPEAKER_00: I forget who said it in an interview with you, but they talked about like,
+244.32-257.09 | SPEAKER_00: Uh, Miles Davis, um, his music feeling like, I think, I think toes hanging over the cliff or something like this, meaning like there's always a risk, there's a danger that you're willing to make
+258.11-274.08 | SPEAKER_00: to fuck it all up live, and that feeling is what creates the, the aliveness of the music. Like, can you speak to that? Just the, the creating in the music, the feeling like you're on the edge.
+274.62-283.00 | SPEAKER_00: Like you're challenging the possibilities of what can happen, and it all can go to shit. And because of that, it feels alive.
+283.00-288.61 | SPEAKER_01: Well, when I interviewed Ron Carter, that played in, in Miles's sixties quintet.
+289.18-297.70 | SPEAKER_01: I asked Ron, because Ron did records. He played bass on two thousand two hundred recordings, famous records, and I said,
+298.11-310.85 | SPEAKER_01: Did you guys ever rehearse with Miles? No, never. I said, so what, what would you do? He goes, we'd just show up at the studio, and he'd have the charts, put them on the stand, and, and we would, we'd just roll.
+311.17-313.44 | SPEAKER_01: And I said, would you listen to it after? No.
+313.86-341.96 | SPEAKER_01: And I said, well, what about your, what about the, the live records that you did at when you'd record at clubs and things like that? He goes, we never knew that we were recording. He goes, maybe I'd see a microphone, a different kind of microphone in my bass amp. He goes, then months later, the record would come out, and I'd see it, and I was on it, and I would take it down to the union and say, I played on this record, so you get paid for it. But he said, we didn't even know we were recording. So Miles was always about, you know.
+341.96-345.25 | SPEAKER_01: Don't think about it. Just, just play.
+347.65-353.05 | SPEAKER_00: That's crazy. That was on purpose. That was on purpose, not to, not to do rehearsals, not...
+353.05-359.01 | SPEAKER_01: Yeah, he wanted people to just feel it, play it.
+359.87-363.03 | SPEAKER_01: Thought is the enemy of flow, as Vinnie Caliuto
+363.03-365.25 | SPEAKER_00: told me, thought is the enemy of flow.
+365.92-371.70 | SPEAKER_00: How do you make sense that Flea, the bassist for the Red Hot Chili Peppers, is influenced by bebop jazz?
+371.70-375.44 | SPEAKER_01: So his stepfather was a jazz bass player.
+375.96-395.71 | SPEAKER_01: And his, when his parents got divorced, his, he was born in Australia, and then they moved to, to New York. Then his parents got divorced, and his mom married his stepfather, who was a jazz, jazz musician. And they, then they used to have jam sessions at their place, and Flea...
+396.29-402.24 | SPEAKER_01: loved it. It was kind of like my upbringing with my dad playing jazz all the time.
+402.91-412.35 | SPEAKER_01: Once, once it gets inside you, it's just there, and, and so he is heavily influenced by jazz musicians.
+412.35-421.14 | SPEAKER_00: Yeah, his impression, which is hilarious. I mean, he's a character. His whole physical way of being is a character. And his impression of just upright bass is just fun to watch. His whole...
+421.14-444.38 | SPEAKER_01: His intensity, when he picked up his bass during the interview, it, he's an intense guy and funny, and, you know, really emotional. And, and he picks up his bass, and there's a fierceness that you immediately feel. And he starts, he talks about how he practices, and then when he starts doing slapping stuff, he gets...
+445.06-448.59 | SPEAKER_01: It's so into it, and I'm just sitting there going, whoa.
+448.59-454.45 | SPEAKER_00: Wow. Yeah, he talked about his practicing routine with you. And one of the things he's like, I have to practice the slapping. Yeah.
+454.60-465.97 | SPEAKER_00: No, there's differences in the structure of the different bands, but usually, like, the bassist has a vibe to them. I don't know if we can put words to exactly what that is, as a kind of energy
+466.38-467.98 | SPEAKER_00: that drives a band. To me,
+467.98-472.48 | SPEAKER_01: the bass is one of the only instruments that, when you play a bad note, everybody notices.
+472.99-475.57 | SPEAKER_01: I started on the bass.
+475.84-476.61 | SPEAKER_01: A kid.
+476.97-480.14 | SPEAKER_00: Yeah, but you also play drums. You also play...
+480.14-490.43 | SPEAKER_01: Yeah, but my first instrument was the cello in third grade, and then I switched to the bass in sixth grade. And my, I majored, my undergrad degree is in classical bass, so I...
+491.07-494.66 | SPEAKER_01: I always think of myself as a bass player first.
+495.10-499.67 | SPEAKER_01: And I always think the bass is the most important instrument, because... So I'm always...
+499.77-521.02 | SPEAKER_01: Because as much as I love to play the guitar, and I love to play the guitar more than anything, I think, but the bass really defines what the quality of the chord is. Because you can put the root in there, you can put the third of the chord in the bass, you put the fifth in there, you can play a lot of notes. And whatever you play in the bass kind of defines what kind of chord it is. So the bass player has a lot of power.
+521.02-528.19 | SPEAKER_00: I have to go back to the beginning of our conversation. What do you think are some of the great solos of all time?
+528.61-536.18 | SPEAKER_00: Can we, can we put a few in the consideration? You have a great list on the top twenty rock guitar solos of all time.
+536.18-539.84 | SPEAKER_01: Yeah, so I put "Comfortably Numb" as my favorite, as my top one. Yeah, on that.
+539.84-540.70 | SPEAKER_00: That day, right?
+540.70-555.71 | SPEAKER_01: On that day, yeah, right. Now, the day later, I would have said it's the second solo. Okay. But I did the first solo because, because nobody talks about that solo, and that solo is equally great. And when David Gilmour...
+556.42-561.66 | SPEAKER_01: When I played it for him, and we talked about it in my interview with him, it was...
+562.69-573.79 | SPEAKER_01: Just to watch his face when he listened to it was incredible. I mean, I'm thinking to myself, it's like I'm sitting with David Gilmour, and he's listening to "Comfortably Numb", and he's hearing it.
+574.43-580.74 | SPEAKER_01: He's played it a million times live, but how many times has he gone back and listened to it on the record?
+581.07-584.78 | SPEAKER_01: Probably not for a long time, and then he's here, and he's like, "Ooh."
+584.78-587.76 | SPEAKER_00: Maybe you just don't look back. When you do great things, you don't look back.
+587.76-591.66 | SPEAKER_01: Miles never looked back. He never wanted to hear the old stuff. He always moved on.
+591.66-606.03 | SPEAKER_00: There was this funny moment where you, where you made a video why David Gilmour will never be on the channel, and then you ended up, of course, interviewing him twice. He's one of the greatest guitar players of all time. What do you think is at the core of his genius?
+606.03-610.75 | SPEAKER_01: He has just an incredible melodic sense.
+611.46-612.90 | SPEAKER_01: He knows.
+613.47-629.54 | SPEAKER_01: How phrases should be put together. There's a flow to his ideas that I think is just incredible. It's the same with Hendrix. This flow, how one idea leads to the next, how there's space between them. It's just like speaking.
+629.54-653.98 | SPEAKER_00: That's why I write about, uh, Miles Davis. He was very good at understanding tempo, and the value of silence. Yes, and I think, I think David Gilmour doesn't always play fast, right? But he does a lot with less. Yes, and some of that is also on the more technical side. Probably the tone of the... I mean, he's one of the most...
+654.05-664.03 | SPEAKER_00: uniquely recognizable tones in all of music. Yes. What do you understand about what it takes to shape the tone that is David Gilmour?
+664.03-681.60 | SPEAKER_01: He has a very sophisticated setup for his tone, and, and that was one of the things when I went to his studio, and I said to him, "So, David, is there anything I'm not supposed to see here?" I mean, he never sits down and shows people his gear, and he laughed about it. But there I am sitting there right next to all these pedals that, and I...
+681.60-682.97 | SPEAKER_00: And I asked his tech, Phil.
+682.97-691.58 | SPEAKER_01: I said, "Are these the same ones he used on the records?" He's like, "Yeah." And his tech has been with him for like fifty years, and...
+692.58-694.80 | SPEAKER_01: I mean, the exact ones? Yes.
+694.80-696.52 | SPEAKER_00: So it's hard to...
+696.52-713.34 | SPEAKER_01: It's hard to imagine that those things still... Of course, though, they, he's just kept it. Yeah, this is his Vox Echo that he played through, and this is this, you know, these are all the same effects pedals. And wait, is this the same Hiwatt amp? Yeah, is this the same? Yes.
+713.86-728.25 | SPEAKER_01: Yeah, he gets some new stuff, but, but they keep all their own gear. And it's, I mean, he did, he does sell his guitars for charity, but like he has a black Strat that is a, it's a signature version. It's like an exact copy of his old one.
+728.69-732.55 | SPEAKER_01: So to him, it sounds exactly the same, plays the same.
+732.55-735.30 | SPEAKER_00: Well, of course, they converge towards that kind of...
+735.84-736.86 | SPEAKER_00: Hardware.
+737.31-750.43 | SPEAKER_00: But there's so many tiny details over the years. You see the final result of it, but there's a, there's a journey there of, of exploring. And of course, he's not, I guess he's not doing any soft, like no emulation, no amp.
+750.43-771.71 | SPEAKER_01: He does do emulation, actually. He does. He has this thing. And this is, I asked him in the first interview about this. There's a little rack thing that I had heard that he used, but I asked him for sure. It's called the Zoom 9030. I put out a short where he talks about it. I said, "So that Zoom 9030, is that a real thing?" Because I've read about it. He's like, "Yeah."
+771.71-790.20 | SPEAKER_01: And he talks about how when he's sitting there recording on his own, and he, he runs Pro Tools himself, and, and so he'll be sitting there. There's no one there to help him. He's like, "I'll just plug into this thing, and then I'll play a solo with this modeling." It's like a kind of nineties modeling, early modeling thing.
+790.53-794.98 | SPEAKER_01: And he'll play a solo, and then after a while, you hear the solo, and it's like...
+795.49-806.62 | SPEAKER_01: Well, I'm not going to replay that. That sounds great. You get used to the sound of it, and that's what it is. So people always talk about, "Oh, well, he couldn't have used that. He's recording through an amp," because it sounds great.
+807.33-816.33 | SPEAKER_01: And then he's like, "Yeah, yeah, so that's what I use." And then I have, I have the video of it right there, and it says his presets, DG1 and DG2, and, you know, whatever.
+816.33-821.96 | SPEAKER_00: What's your process for preparing for interviews like that? You've done a few legendary people.
+821.96-824.06 | SPEAKER_01: I never prepare for interviews.
+825.38-826.40 | SPEAKER_01: Because...
+826.98-841.50 | SPEAKER_01: I ask people things that I'm interested in knowing. So just letting your curiosity just play, pull you forward. And I can think of a hundred questions to ask David Gilmour. And, but I always ask my questions based on what they say to me.
+841.65-851.42 | SPEAKER_01: So, but I do make a playlist of songs that I want to talk about. So that kind of guides me is that, because I want to make sure that I...
+852.26-868.93 | SPEAKER_01: There's specific things that I need to play, to, so that you can jog his memory. Because anytime you play something that somebody recorded, even fifty years ago, they'll remember. If they don't remember the exact specifics, they...
+869.76-879.76 | SPEAKER_01: That, that brings it to life to them again, and they can, they can kind of piece together some aspects about it, and they can really talk.
+880.19-885.96 | SPEAKER_01: He can talk about the phrasing and the, you know, the kind of melodic direction of things like that.
+885.96-899.97 | SPEAKER_00: So there's a lot of tiny details that go into a particular song, whether it's in the production or how it's played or how it was composed, all that kind of stuff. And you don't know what those are ahead of time. No, you just know the song, and you just are looking to jog their memory.
+
+0.64-12.92 | SPEAKER_00: And maybe your own curiosity of like, how did you do this, or how did, what did this sound or that, you make it look easy, but you have to have a depth of knowledge. You're saying you don't prepare. I have an
+12.92-14.56 | SPEAKER_01: incredibly good memory.
+14.98-36.80 | SPEAKER_01: Exactly. That's what it is. Is that I can remember when records came out, who produced them, where they recorded them, who was the engineer, what the, what songs were on it. And not only that, but the, with the people I'm interviewing know that I can play all the parts of all the instruments because I've done breakdowns of their songs, which is why I get the interviews.
+37.63-39.44 | SPEAKER_01: With them in the first place, really.
+39.44-57.89 | SPEAKER_00: But the actual, like, the skill of the interview, the thing you're not saying, the preparation, is that you young listening to bebop. That's right. It's the, it's the background knowledge. It's the soul carrying with you, being able to radiate the love of the soul of music.
+58.24-61.95 | SPEAKER_01: I will say this, Alexis, that the, the other thing is that...
+62.50-92.11 | SPEAKER_01: Most of these people have a really good sense of humor. When I was, when the first time I interviewed David in New York, my brother John came along, and he is a massive David Gilmour fan. That's his biggest influence as a guitar player. And so he said, "You're interviewing David Gilmour? Well, I'm, I'm coming." I was like, "All right, come on, come on down." So, so my brother John standing about five feet away. And John is a sales guy, but a great guitar player. So John's like, "I was like, this is John, this is David, this is my brother John."
+92.11-100.03 | SPEAKER_01: David, great to meet you, buddy. And, you know, sounds like a soul. He's a sales guy. And, and so during the interview, I, I, I was like,
+100.48-112.00 | SPEAKER_01: Hey John, what was I gonna ask David? Oh, ask me about the Gilmour effect. Oh yeah, that's right. And the Gilmour effect is my thing that I say in the comment section when people say, anytime anybody plays anything technical,
+112.86-114.75 | SPEAKER_01: Oh yeah, that's great, but.
+114.82-117.65 | SPEAKER_01: I much prefer David Gilmour.
+117.67-129.44 | SPEAKER_01: And so I always call it the Gilmour effect. Anytime I have like Yngwie Malmsteen, anybody that, that has chops that I interview, that the, the negative comments are always, "Well, I prefer David Gilmour."
+129.54-136.45 | SPEAKER_01: And I, I said that, I told David that, and he's like, "Well, maybe they should keep their opinions to themselves."
+137.15-148.10 | SPEAKER_00: Yeah, a lot of these folks have really wonderful personalities with, with a trusted person to be able to reveal that personality. So, coffees at the top on that day. What else was up there? Stairway to Heaven.
+148.70-151.04 | SPEAKER_00: Hey Joe, what in that list?
+151.55-154.84 | SPEAKER_00: Your top Hendrix solo was Hey Joe.
+154.84-180.59 | SPEAKER_01: It's the first guitar solo I ever learned, so I had to put it on there. So I don't, I don't necessarily do these by, I do those in kind of how, how important they are to me and, and my development. So there, there's always a biographical component to these lists. Number three was Kid Charlemagne, a Steely Dan solo, Larry Carlton, an amazing solo, extremely difficult to figure out. Probably...
+180.59-185.70 | SPEAKER_01: There's two solos on the list that are just about, are very, that one I can play.
+186.72-195.30 | SPEAKER_01: Oh, well, there's a few solos that are very hard to play. Stone in Love by Journey by Neil, Neil Schon is very hard to play some of the licks.
+195.90-206.27 | SPEAKER_01: The, um, there's a song, there's a solo by a guitarist, Carlos Rios, that people don't know. It's Brother to Brother, a Gino Vannelli song, but it's very hard to play.
+206.69-214.61 | SPEAKER_01: And figure out, and that people don't know the solo, so I put it on my list because I knew that a lot of people are going to watch it and they're going to know what this solo is.
+214.61-232.80 | SPEAKER_00: For me, the sentimental one, my my first solo is Mr. Crowley, Randy Rhoads. I like the musicality, Mr. Crowley, that there is a melodic component to it. You're playing really fast, but there's there's a melody to it. And also, there's like the legendary nature to the the the the brief time we had we had Randy Rhoads.
+233.34-236.74 | SPEAKER_00: It's probably one of the greatest guitarists ever.
+236.74-240.54 | SPEAKER_01: Fifty-six to eighty-two, I think. Terrible. Um.
+241.25-242.53 | SPEAKER_01: He was, um...
+243.58-256.99 | SPEAKER_01: Um, absolute brilliant guitarist, had his own style. Let me just say, he was the guitarist for Ozzy Osbourne the band. Yeah. And that Mr. Crowley solo is a is a great solo, great solo, and...
+257.73-263.17 | SPEAKER_01: Um, he's incredibly influential as a guitar player. Um, to...
+263.58-267.12 | SPEAKER_01: For metal guitar players, and um, I love Randy Rhoads.
+267.12-274.96 | SPEAKER_00: Uh, another guy. So one of my favorites is Mark Knopfler. Yes, and I did have Mark Knopfler.
+274.96-276.99 | SPEAKER_01: on my list. Sultans of Swing.
+277.71-285.31 | SPEAKER_01: Now, I had it high on the list, and I'll tell you why. I would have had it lower because it was one of the early ones because I wanted people to be like, okay.
+285.70-295.52 | SPEAKER_01: Oh, this is a serious list. So Rick's going to talk about serious stuff. So, um, and Rick's going to play along with all these things.
+305.25-319.01 | SPEAKER_01: So I wanted to kind of state that at the beginning of the video. I mean, I made the video in one day to do twenty solos. I think I played nineteen of them, but the Heart solo that I had on there, Nancy Wilson, I I played the video of. And I tried to get...
+319.49-348.58 | SPEAKER_01: A couple of my friends to play the Ice Cream Man Van Halen solo. So I called Dweezil Zappa, and I was like, "Dweezil, can you play the Ice Cream Man solo? I'm making a video about it." He's like, "Oh, I'd have to practice that." And I called my friend Phil X, who's an amazing guitar player, and and he's like, "No, I'd have to practice that." I was like, "Come on, man, can you just let me play Ice Cream Man?" The opening lick of Ice Cream Man that he plays is very hard to play because it's an incredibly long stretch, and it hurt my fingers to do.
+348.58-361.80 | SPEAKER_01: And Eddie would turn his guitar up like this to to play, and plus it's a tricky, it's just, it's a tricky rhythm, and and it's such a big stretch. It's like, man, I can't, that hurts my hand.
+361.80-367.52 | SPEAKER_00: I just love that that's the Van Halen solo you have to play.
+367.52-369.18 | SPEAKER_01: Yeah, I have to do some...
+369.60-372.58 | SPEAKER_01: There's so many Van Halens. My God, it could be. There's... I could pick...
+373.44-376.03 | SPEAKER_01: twenty-five different Van Halen solos.
+376.03-390.16 | SPEAKER_00: But to me, I mean, there really is nobody like Mark Knopfler. I mean, this this unique guitarist, there's something about his tone. Speaking of Gilmour, there's just the tone, the care.
+390.16-413.63 | SPEAKER_00: The timing of the notes, his improvisation, like the live performances of Sultans of Swing that's been actually going, like, somewhat viral around a recent, recently, his, his, uh, pretty old live performance of, uh, Sultans of Swing. For me, Brothers in Arms, these kind of soulful, mournful type of...
+414.43-424.89 | SPEAKER_00: solos he does really, really well. Also, the interesting instrumentation of Romeo and Juliet, just so, so many, is, ah, ah, truly one of the greats. Now, obviously, the intro...
+424.89-435.58 | SPEAKER_01: to Money for Nothing is, is one of the greatest, almost impossible to recreate that because of the sound is so unique and his...
+436.13-438.20 | SPEAKER_01: It's just improvised.
+438.22-439.03 | SPEAKER_01: It's so cool.
+439.03-445.23 | SPEAKER_00: Yeah, there's certain songs like Europa by Santana. Santana can have that tone too.
+445.60-449.57 | SPEAKER_00: That Mark Knopfler makes me really, just how clean it is.
+450.24-454.14 | SPEAKER_00: I think he beats B.B. King in my book in terms of cleanliness of just...
+454.59-462.72 | SPEAKER_00: pure beauty of a single note, like a power of a single note. I don't know anybody who beats Mark Knopfler.
+462.72-477.54 | SPEAKER_01: Well, that thing about being able to recognize somebody from a note. Yeah, you know, yeah. When I hear Brian May, I can immediately recognize it's Brian May. It's incredibly melodic, the tone that he has. Gilmour, Hendrix.
+478.46-482.02 | SPEAKER_01: Everyone that we're talking about, Van Halen, it's just they have that.
+482.69-486.37 | SPEAKER_01: One note. Oh, I know who that is, and that's.
+486.88-488.45 | SPEAKER_01: That's why we're talking about them.
+488.45-490.97 | SPEAKER_00: That'd be funny. That'd be a good video. B.B. King.
+491.04-493.92 | SPEAKER_00: You hear one note as a test of like...
+494.37-498.09 | SPEAKER_00: How quickly can you recognize just a solo starts playing?
+498.09-499.96 | SPEAKER_01: That's a great, I'm going to make that video.
+499.96-500.74 | SPEAKER_00: Tomorrow.
+500.74-501.70 | SPEAKER_01: Hahaha.
+502.02-505.35 | SPEAKER_01: Lexus. The day after tomorrow, you'll see it.
+505.35-506.12 | SPEAKER_00: I would love to.
+506.12-509.92 | SPEAKER_01: Can you say, can you recognize these players by one note? By one note?
+509.92-515.11 | SPEAKER_00: Yeah, I think it's... I think we're being a little too aggressive with that. I think you need like two or three.
+515.11-540.54 | SPEAKER_01: No, no, no. I guarantee you. So I was going to do a video last week where I was going to play songs in reverse. Okay, see if you can recognize these songs in reverse. And I had my two assistants come in. It's like, do you know what song that is? They're like, oh, that's Adele. Like, what? Then they're like, oh, that's, that's Nirvana. Instantly, they could recognize. Like, well, that's not worth making. It's like, yeah, it's so obvious. You hear the tone of the voice backwards, forwards, doesn't matter. You know it is.
+540.54-542.73 | SPEAKER_00: Okay, so it's about the tone.
+542.95-548.97 | SPEAKER_00: How could you possibly know from a single note? I guess Van Halen, you can.
+548.97-552.16 | SPEAKER_01: One note of, of B.B. King's vibrato, you could know.
+554.27-561.25 | SPEAKER_01: I'm going to... What I'll do is, I would separate the guitars. I'll... you... I, I can actually separate the tracks, and I'll just play one note.
+561.25-564.48 | SPEAKER_00: You think you can, from a single vibrato, you can know it's B.B. King? Yes.
+565.22-568.84 | SPEAKER_00: Well, we'll see. Put it on record. I'm skeptical. I'm going to do it. I'll do...
+568.84-572.95 | SPEAKER_01: Twenty of them. Can you recognize these guitarists from a single note?
+572.95-575.68 | SPEAKER_00: Could you recognize Stevie Ray Vaughan versus...
+577.76-579.41 | SPEAKER_00: Eric Clapton?
+580.48-581.28 | SPEAKER_00: All right.
+581.76-603.14 | SPEAKER_00: You might be right. You might be right. Quick thirty-second thank you to our sponsors. Check them out in the description. It really is the best way to support this podcast. Go to lexfreeman.com/sponsors. We've got Uplift Desk for my favorite office desks, BetterHelp for mental health, Element for electrolytes, Thin for customer service AI agents, Shopify...
+603.14-603.96 | SPEAKER_01: for selling stuff.
+603.96-613.02 | SPEAKER_00: Online, and Perplexity for curiosity-driven knowledge exploration. Choose wisely, my friends.
+613.44-617.70 | SPEAKER_00: And now back to my conversation with Rick Beato.
+618.18-641.40 | SPEAKER_00: What do you think is the best Eric Clapton song? One of the things we haven't mentioned so far is the importance of lyrics and maybe meaning of the song, what it represents. So in that sense, "Tears in Heaven". Well, the story behind that is, is heartbreaking. And then I personally really love the sound of "Wonderful Tonight".
+641.40-644.59 | SPEAKER_01: It's a great song. That's one of my favorite Clapton songs.
+644.59-647.10 | SPEAKER_00: And I, as I was like listening to it...
+648.00-658.82 | SPEAKER_00: Just doing a whole personal journey, introspection, knowing that I'm going to talk to Rick Beato, listening to just a bunch of songs. And I, I learned...
+659.39-668.67 | SPEAKER_00: as embarrassing that I didn't know the, the stories behind the music, but I learned that Eric Clapton was married for ten, for a decade.
+669.25-674.30 | SPEAKER_00: to the same woman that George Harrison was married to, and that this woman...
+674.94-700.48 | SPEAKER_00: Was the muse, the inspiration for, for like, so many of the legendary songs of rock, including a Wonderful Tonight, including Layla, and including George Harrison's Something. Yeah, legendary song also. The same woman. Is she the greatest muse in rock history? Probably yes. This is great.
+701.09-704.93 | SPEAKER_00: Uh, so in your interviews of musicians and producers...
+705.79-724.06 | SPEAKER_00: I think the thing you're ultimately fascinated by is their whole, the process, the, the, the recording, the production, the songwriting, the different elements of the process. So, are there examples of different things that stand out to you from the, all the interviews you've done?
+724.64-735.97 | SPEAKER_00: And by the way, all the recording and production you've done yourself. So on the recording front, on the production front, on the songwriting process front, just things that pop into memory.
+735.97-759.24 | SPEAKER_01: When I've interviewed the, the guys that are the producers, like Rick Rubin, Daniel Lanois, Brendan O'Brien, Butch Vig, the thing about producers, as opposed to people that are musicians, if you're in a musician, even if you're David Gilmour, you, you do a record and then you tour and then you do another record, maybe years go by, but producers are working on multiple records.
+759.24-787.44 | SPEAKER_01: You know, sometimes at a time, Rick Rubin could be working on multiple records, and, and the variety of things that they do, you can talk to. I mean, I can talk to Rick about the Chili Peppers, and I can talk to him about Johnny Cash. I can talk to him about Tom Petty and all these records that I love. And there's just so many interesting stories that, I mean, these interviews could go on for, for days with, with Rick.
+787.44-791.33 | SPEAKER_01: And the variety of records that he worked on, and um.
+791.81-806.14 | SPEAKER_01: And there's so much knowledge to be gained for me, at least, and I think that, that the craft of production and recording engineering is something that is not well documented.
+806.91-830.62 | SPEAKER_01: Um, especially since there's no, there's so few studios nowadays where there used to be a mentorship thing where you go and you work as an assistant engineer and you work your way up. I interviewed a guy named Ken Scott that worked with the Beatles. I interviewed him at Abbey Road Studios just two months ago, and he started as a tape op when he was sixteen. He started on the, uh,
+830.62-840.00 | SPEAKER_01: Hard Day's Night record with the Beatles, and he worked his way up. And he said the first time he ever recorded an orchestra was he recorded I Am the Walrus, the orchestra part.
+840.15-854.27 | SPEAKER_01: He set up the mics, and I asked him. I said, "So where was the band?" "Standing right behind me, the Beatles, right behind him." The guy I'm interviewing at Abbey Road recorded I Am the Walrus there. I mean, he recorded many Beatles songs, and.
+855.42-869.40 | SPEAKER_01: And he was eighteen years old. And I mean, I just can't, I can't even fathom that. We, they have a little cafe in the basement of Abbey Road. And I said, "Did the Beatles come in here?" He goes, "Oh yeah, they come in here and get coffee." And I remember when they got two microwaves.
+870.02-885.86 | SPEAKER_01: Like the first microwaves in nineteen sixty-five, and they were amazed by them. And it's hard to imagine that I'm talking to people that worked on these historic records, but you know, they all start with a blank tape or an empty hard drive.
+886.27-887.20 | SPEAKER_01: And then.
+887.97-896.93 | SPEAKER_01: You eventually fill them up with this music that you can't, you can never imagine it not existing, like Stairway to Heaven or whatever it is.
+896.93-900.03 | SPEAKER_00: Yeah, it's funny. Like looking back, you would probably...
+
+0.00-18.04 | SPEAKER_00: For them, just to realize they've created that magic is hard to believe. Yeah, because you're looking at a blank thing, and the magic comes out, and you don't even, you don't even understand. You don't understand. Probably a lot of these artists don't understand where that came from. They're channeling some deeper.
+18.04-23.17 | SPEAKER_01: When I interviewed Brian May, he told me, I can't remember if this was.
+23.62-49.97 | SPEAKER_01: If we talked about it on camera or not, but we talked about Bohemian Rhapsody, and at the very end, there was a thing where he was depressing his whammy bar a little bit, and it sounds like the piano is out of tune. I never noticed it before he mentioned this to me, and he said it always bothered him. And the there's always something about these songs that bothers people. Even these songs.
+49.97-51.49 | SPEAKER_00: The little things, yeah, right.
+52.04-56.97 | SPEAKER_01: And they, they sit and they hear it, and they're like, "Oh man, I wish I bent up a little higher on that," or whatever.
+56.97-60.61 | SPEAKER_00: I mean that, that there's certain moments in songs.
+61.50-62.66 | SPEAKER_00: They're just.
+63.36-85.11 | SPEAKER_00: Unlike anything else, and Bohemian Rhapsody, when Freddie Mercury is, sometimes wish I've never been born at all. And then guitar comes in. I mean, there's just nothing like that. Yeah, that was that. I don't even know. I mean, that that whole thing, and you've done videos on it. It's an incredibly complicated composition. It's
+85.11-109.32 | SPEAKER_00: It's crazy that a popular song, popular rock song, could be this operatic, so complicated. The other thing akin to that moment is Phil Collins with In the Air Tonight, the drum bridge. Do do do do do do do do. Yeah. Yeah. And what is that? I can't. It's a... I don't, I don't understand how you can create that.
+109.32-138.03 | SPEAKER_00: What is that? Why is that so magical? Why is that so singular inside a particular song and in rock history, period? Like these moments, I don't know musically. I don't understand how you create them because it might be bigger than musical. It might be cultural. A bunch of different elements, and plus it's him, Phil, with, like, I've seen live performance. He has like a headset. He does something. He's like a telemarketer or something. Like his whole vibe and look to him. He's.
+138.03-163.98 | SPEAKER_01: Doesn't look like a rock star, but he is. Those are hooks. When you think about it, right? It's like, it's as much of a hook as any, as the chorus of the song or any song. That drum thing is something that people wait for, and they air drum to it. Everybody air drums to it, and it is a hook. And those are hard to create. Those are, those moments are really hard to create, and usually they're done by accident. Yes, it's hard.
+163.98-168.54 | SPEAKER_00: If you chase it, you're not gonna get it. Yeah, in your conversation with Sting.
+170.62-175.78 | SPEAKER_00: He said something about, um, how modern music is simpler.
+177.09-185.28 | SPEAKER_00: More minimalistic, and the bridge is gone, I think he said. And he said he thought that the bridge is therapy.
+185.98-200.03 | SPEAKER_00: Yes, it's like a chance for you to reflect, I guess, on the verse right before the chorus comes. It changed my view of the bridge. I suppose the therapeutic nature of it, at least lyrically. You think he's onto something?
+200.03-205.95 | SPEAKER_01: The value of the bridge. The bridge is a place, I think, where you can kind of change the.
+206.59-216.29 | SPEAKER_01: Frame of reference of a song. You could probably do anything, I guess. Lennon used to, he would have some kind of biting lyrics, like, um.
+217.92-238.72 | SPEAKER_01: We can work it out. So McCartney writes the, you know, try to see it my way. Do I have to keep on going until I can't go on? And then, but the bridge is very Lennon. Life is very short, and there's no time for fussing and fighting, my friend. I have always thought that it's a crime. So I'll ask you once again. I mean, it's very, you know, very Lennon-esque. This is, that was really a kind of a
+239.36-242.98 | SPEAKER_01: Ah, real collaboration between the two of those.
+242.98-264.03 | SPEAKER_00: This is where different parts of the bank can clash in interesting ways. I mean, the Beatles are the epitome of that. Such like each individual Beatle is a great talent in their own right. Yes. How were the Beatles able to create some of the greatest songs of all time, all before they turned thirty years old?
+264.03-286.50 | SPEAKER_01: I have never been able to figure that out, but I have a theory that because I have a theory, because PA systems were so bad back then, and the Beatles, people screamed so loudly that the Beatles thought, okay, we don't, we don't need, we can't tour anymore because we can't even hear ourselves. So we're just going to be a studio band.
+286.50-296.35 | SPEAKER_01: And maybe because of, we have all these great late Beatles records are from 1966 on, just because they had bad PA systems.
+296.99-320.54 | SPEAKER_01: And they had no monitors, you know. They're in Shea Stadium. People are screaming so loudly they can't hear themselves. They're like, "Okay, forget this. We can't tour. We'll just make studio records." So that's what they did. And in that one year, like from August 6, 1965, they put out Help! Then in December 3rd, they put out Rubber Soul of '65. Then, then August.
+321.66-350.37 | SPEAKER_01: Fifth, they put out Revolver. So within three hundred and sixty-five days, they put out three fourteen, I think, fourteen-song records. So they wrote and recorded three incredibly important records. They were in the studio, it's like working out. They're practicing their craft every day, writing songs, trying to outdo the other ones. And so you had the, the perfect thing of, of four supremely talented.
+350.85-357.82 | SPEAKER_01: Musicians, songwriters, singers, and then the best producer you could possibly have, George Martin.
+358.40-380.61 | SPEAKER_01: And it was just a perfect storm. I think that when I would talk to friends that would just play in local clubs, and they'd play four-hour sets five nights a week, and they never lost their voices because they're always working those muscles. And same with the Beatles; they were always in the studio singing every single day, doing takes and.
+381.89-384.97 | SPEAKER_01: And I think that that was part of it, at least.
+384.97-403.06 | SPEAKER_00: But you also have this theory that, you know, that the greatest productivity that musicians have is before they turn thirty. That the greatest sort of creative genius that can come out of the human mind musically is before the age of thirty.
+403.06-419.65 | SPEAKER_01: I think it's the same in mathematics as well. You have this fluid intelligence versus crystallized intelligence. Fluid intelligence up until you're about, you know, in your late twenties, thirty years old, and then crystallized. So you're using the, crystallized is you're using your life experience to
+420.67-442.50 | SPEAKER_01: To write things, so you'll find that that composers Bach, Beethoven, Mozart wrote their most important works at the end of their life. Beethoven, the late string quartets, the Ninth Symphony, things like that. So they have a whole lifetime of experience that lead up to this, and there's not, they're not improvising. But things for improvising, writing pop songs, and that.
+443.23-452.61 | SPEAKER_01: I think when your mind is really most active and your brain processing speed is at its pinnacle, that
+453.70-468.04 | SPEAKER_01: This is my theory that people can come up with those kind of ideas. Same with improvising. I think that most jazz improvisers, not all, but most, do their best improvising before age thirty, creating something.
+468.04-471.84 | SPEAKER_00: Yes, truly novel. That that requires youth.
+474.05-494.77 | SPEAKER_00: It's just a theory, though, but it seems to apply. What do you think about the the twenty-seven club? A bunch of the music greats died at twenty-seven: Hendrix, Brian Jones, Jim Morrison, Janis Joplin, Amy Winehouse, Kurt Cobain. Kurt Cobain, of course. A big part of music history is linked to drug history.
+494.77-496.14 | SPEAKER_01: Hmm.
+496.14-498.08 | SPEAKER_00: LSD.
+499.01-500.70 | SPEAKER_00: Coke, heroin.
+501.31-502.97 | SPEAKER_00: Weed, smoking.
+502.97-527.04 | SPEAKER_01: Smoking. I think about this a lot. If you go back and you watch videos, The Beatles, any of their movies, they're smoking all the time. The Get Back documentary, they're smoking constantly. Go watch any of the MTV Unplugs, Nirvana, Kurt Cobain is smoking every second that he's not playing. He's smoking. Every singer smoked. Every musician smoked. Nowadays.
+527.04-537.77 | SPEAKER_01: I asked my son Dylan, "Dylan, does anybody smoke at his high school?" He's like, "Smoke? Nobody smokes." He thinks that was an absurd question, and that was part of culture.
+537.77-557.41 | SPEAKER_00: Yeah, it was for everybody. I mean, that was that was a big transformation over the past twenty years, and just everybody stopped smoking. But I don't think smoking has the kind of hard negative effect that we're talking about. I mean, I almost would rather have them smoke than some of the other hard drugs. Maybe smoke distracts them from the hard.
+558.05-570.53 | SPEAKER_00: I mean, heroin and coke. I mean, those those things really and alcohol, unfortunately, can be easily abused. I think it seems like it's a the life of a musician.
+571.68-584.29 | SPEAKER_00: This dopamine thing of getting on stage and being being adored by tens of thousands, hundreds of thousands of people, the high of that, and then the come down after.
+584.80-612.65 | SPEAKER_00: It's a really hard life for just even neurobiologically. Of like, how do you deal with that? You have to be able to control the roller coaster of your mind, and of course, drugs will be a part of that. And you think everything is allowed and everything is possible, and then there is also culture depending on who you hang out with that certain kinds of categories of drugs are good for your creativity, and so.
+612.65-615.84 | SPEAKER_00: Naturally, start to abuse those drugs.
+616.58-630.94 | SPEAKER_00: I don't know. I think I think I think it's really interesting the role that drugs have played in in the history of music. They have certainly been extremely destructive, but they have also certainly been productive.
+631.52-635.97 | SPEAKER_00: Muses, inspirations for some of these folks.
+635.97-638.30 | SPEAKER_01: Oh, absolutely! Now.
+639.20-648.45 | SPEAKER_01: Would we want to, you know, advocate people doing things like that to boost their creativity? No. Well, I wouldn't, but.
+649.38-667.71 | SPEAKER_01: Just like smoking, which I think improved people's voices, I mean, really, the raspiness of it. This is the reason that the that that so many these virtually every famous singer, no matter what genre of music, jazz, soul.
+668.26-680.97 | SPEAKER_01: Rock, they all smoked. Nat King Cole, yeah, Miles Davis too. Miles smoked. Everybody smoked. Miles didn't. Well, Miles was a heroin addict too. I mean, yeah, so many jazz musicians. Well, Miles had a
+680.97-691.67 | SPEAKER_00: Sound to him, you're right. I mean, smoking must must play a gigantic role to that, adding some complexity to the voice. Yes, yeah, some richness to the voice.
+691.67-696.22 | SPEAKER_01: Nat King Cole, he's he smoked. I think four packs a day. He died of lung cancer.
+696.99-700.45 | SPEAKER_01: A lot of heavy smokers, though, singers.
+700.96-706.49 | SPEAKER_01: Frank Sinatra, heavy smoker. McCartney was a heavy smoker. Lennon, all those guys smoked.
+706.49-713.50 | SPEAKER_00: Yeah, it's hard to know the chicken or the egg, but I certainly wouldn't recommend doing drugs as a way to get better at music.
+713.86-735.86 | SPEAKER_00: No, but you know, it does seem to go hand in hand, and some of it has to do with the period, with the time period, with the with the place, because sometimes it's part of the culture. The drug is like you're saying, smoking. If you're smoking now, that's going to be a very different experience than smoking ten years ago, twenty years ago, fifty years ago. It's a different.
+735.86-752.03 | SPEAKER_00: Different vibe. So sometimes the drug is a deep, integrated part of the culture versus an actual chemical substance. The sixties, right there. I don't know. They were on everything in the sixties. Yeah.
+753.60-754.98 | SPEAKER_01: I mean, it has to account.
+754.98-769.04 | SPEAKER_00: For something, Lex, you know, on the songwriting front, you mentioned a story about Elton John recording. So he's one of the legendary songwriters. But yeah, you've met him, and you know something about the process of.
+769.04-789.34 | SPEAKER_01: His, yeah, because he was recording in a studio in Atlanta that I was working with a band that I was producing, and he was in, I was in Studio B, he was in Studio A, and this band that I was working with, they were called Jump Little Children, and so he had his assistant come in and ask, "Hey, is this... are you guys Jump Little Children?" Yeah, yeah, and then all of a sudden...
+790.02-815.86 | SPEAKER_01: I couldn't see out into the live room. Elton walked into the thing, and we were getting ready to track. And I'm, I'm pressing the button. "Yo, where are, where are you guys? What's up? I thought we're gonna start this." And no one's responding. I can hear talking. I was like, "What's going on? Where are they?" Then all of a sudden, they come back in the studio, and they were stunned. I said, "Where were you guys?" Elton John just walked into our session, and he said he's a big fan. He said to come over when we're done and, and hang out in Studio A. So.
+815.86-842.09 | SPEAKER_01: So we did, and he was there with Bernie Taupin. They were working on a song, and he, we talked with him for an hour. And he was talking about recording two records a year, and then they'd go on tour, and they'd write and record the whole record in two weeks. So Bernie would give him lyrics, Elton would go out and spend fifteen minutes writing all the melody. He'd look at his lyrics, and he was doing that that day. Bernie was there, and they had a lyric sheet up on the piano.
+842.09-846.53 | SPEAKER_01: And Elton would go on, and they'd just... "Okay, just record this." And Elton would sit there and...
+847.04-851.38 | SPEAKER_01: and play and come up with the song in fifteen minutes or so.
+851.66-863.74 | SPEAKER_01: There's a great version of, I think, "Tiny Dancer", where Elton is coming up with it on... it's on YouTube, and he's just coming up with the music right there. And then the band, "Okay, here's how it goes," and they record it right then.
+864.32-867.62 | SPEAKER_01: Then you move on to the next song. It's really incredible. Yeah.
+868.54-888.16 | SPEAKER_02: That's it. Yeah, dude. That's one that I've just done the other day with "Tiny Dancer", which is about Bernie's girlfriend. So I just sort of ran it through and put two verses together, then a middle, then a chorus, and then back to a verse, sort of thing. It's very... it happens very quickly. It sounds long, but it sort of... it sort of starts off.
+888.16-896.80 | SPEAKER_03: Blue Jean, baby, LA lady, seamstress for the band.
+897.36-899.42 | SPEAKER_03: The band.
+
+0.61-2.78 | SPEAKER_00: Time hurts my...
+3.68-6.17 | SPEAKER_00: Pretty eyes.
+6.78-8.47 | SPEAKER_00: You're married.
+8.47-12.97 | SPEAKER_01: Okay, it's really amazing that he just, he's looking at it as just the lyric.
+13.03-31.03 | SPEAKER_01: Yeah, and it's one of the, he's one of the very few people that has the lyrics first and writes the music to it, which to me is far more difficult. Ninety-nine percent of songwriters write the music first, and then they put the melody and lyrics to the finished backing track.
+31.42-49.54 | SPEAKER_02: And maybe they write like lyrics, they write like nonsense words kind of thing, and then they figure out from there. Yeah, that's, I mean, I don't know what skill that is exactly. That's incredible. I mean, in that process, he makes it his own. Yes.
+50.11-55.96 | SPEAKER_02: Okay, you had an amazing interview with Kirk Hammett. I'm a huge Metallica fan.
+56.97-67.55 | SPEAKER_02: There is a lot of interesting stuff that came out of that from that conversation. One is the distinction between heavy metal and hard rock.
+67.58-81.95 | SPEAKER_02: Which is very interesting. Of course, Metallica went through their own evolution. They had many periods. I mean, they've been around forty years, over forty years, yeah. Crazy. The other thing is the downpicking, which was interesting.
+82.37-85.98 | SPEAKER_02: Was just creating that really distinct sound, James.
+85.98-102.40 | SPEAKER_01: James and Kirk's the, the down, the downpicking. I used to be able to do that. I just can't do that anymore. It hurts my thumb to, to do it. I think honestly, I, I thought a lot about it. It's like, why does it, why is it so painful? Why is it so hard? It's from swiping with your thumb on phones.
+102.96-117.02 | SPEAKER_01: And I think it affects that basal joint there. And I'm no, I'm serious. And I think that that's actually right because I'm thinking like, why does that hurt so much to do that? All the downstrokes and stuff. It's got to be something. It's like, yeah, it's from, from swiping with the phone.
+117.02-137.97 | SPEAKER_02: The other thing that came through was that he's an improviser at heart, and that I think clashes with this kind of rigid structure that metal is. So there's a real soulful, melodic aspect to him, and he gave a lot of props to James Hetfield for just being a great composer, being a great musician and writer of riffs, of...
+137.97-156.38 | SPEAKER_01: Rhythm. The improvisation part of it, you don't think of because they, they, because you have the finished songs that you listen to, but those songs are born out of improvisations of jams, of little fragments of ideas, and then they craft them into these masterpieces.
+157.22-157.98 | SPEAKER_01: Also, you mentioned.
+157.98-163.97 | SPEAKER_02: And this is weird that I didn't know that Hendrix used different gauge strings.
+163.97-165.68 | SPEAKER_01: Yeah, he was the one that talked about that.
+165.68-166.54 | SPEAKER_02: Wasn't he? Yeah.
+166.54-177.03 | SPEAKER_01: Yeah, that was really interesting. See, these are the things that I like to learn from, from these interviews with these people. I was like, what? Why have I never heard of that?
+177.03-198.33 | SPEAKER_02: It's like, cause one of the ways you can find uniqueness of sound is by trying different things that are not. I mean, I guess Zappa was really good at this, right? Yeah, completely breaking out of what are you supposed to do, the ways you're supposed to do them, and doing it completely differently. You often ask musicians what their perfect song is. First of all, it's an interesting question.
+199.14-203.36 | SPEAKER_02: What is a perfect song? Like one that surprised me is Hans Zimmer said,
+203.36-228.47 | SPEAKER_01: God Only Knows by the Beach Boys. I was surprised by that too, but I thought it was like, yeah, okay, that's a perfect song for sure. The first interview I ever did was with Peter Frampton in 2018, and I asked him in that interview, "What's a perfect song?" And he said, "A Whiter Shade of Pale," and I was like, "Ooh, that's a great song." And then I thought, I'm going to ask that to people just to see what they... Now people are prepared if I ask that. But it's like,
+229.01-239.01 | SPEAKER_02: They're willing to go out on a limb and say it. Yeah. Like if you ask me, I don't even know. I guess you just say it, whatever, right? Like what would I even say? What's a perfect song?
+239.46-243.45 | SPEAKER_01: Yeah, I would go... See, I feel the pressure, right?
+243.45-250.27 | SPEAKER_02: Because the problem is, the reality is, it changes day by day, like minute by minute.
+251.52-252.38 | SPEAKER_02: I...
+255.94-272.97 | SPEAKER_02: Yeah, I would probably, I'm sorry, but I would have to go Mark Knopfler, and I would probably go... Is it, is it really cheesy to say the obvious thing? I would go "Sultans of Swing", even though, like, I'm tempted to say "Europa", but then, like, "Sultans of Swing" hits on so many.
+273.02-273.97 | SPEAKER_02: Levels, because it's...
+276.03-300.97 | SPEAKER_01: A great melody, great lyrics, and then multiple great guitar solos. And it has such a unique sound to it. The other thing is that it sounds very different from other Dire Straits songs. I mean, this is like early Dire Straits Strat tone. And then you think of, like, "Money for Nothing" is a Les Paul, and it's a totally different kind of vibe than him playing on "Sultans of Swing". But that song is amazing. Plus, it's a...
+300.97-325.12 | SPEAKER_02: About music. Yes. So it's like there's a, there's a meta aspect to it. But then there's also like we're talking about this guitar stuff, but Leonard Cohen, "Hallelujah". I mean, Leonard Cohen in general, like these songwriters, they go super simple on guitar. And it's just, uh, what's that called? Singer-songwriter type. Uh, I told you off mic, uh,
+325.92-331.97 | SPEAKER_02: One of my, maybe the music guest, that's a dream guest, is Tom Waits.
+332.96-339.04 | SPEAKER_02: I've wanted to talk to Tom Waits for a very long time, and I've gone through different periods of...
+340.58-344.77 | SPEAKER_02: You've met me at a point in my life where I've given up a little bit.
+344.77-349.86 | SPEAKER_01: I was telling you, it's going to happen. Like, once you give up on it, it's going to happen.
+349.86-351.68 | SPEAKER_02: Yeah, yeah.
+352.26-356.21 | SPEAKER_01: But Tom Waits won't be on your podcast.
+356.21-362.21 | SPEAKER_02: Exactly. Exactly. Dude, this is, this is my, this is my job. Come, come here.
+362.97-391.22 | SPEAKER_02: I want to see it. I'm such a, a fan of like this, like, artistry on the, on the musical front, which Tom Waits has. But I'm a, I'm a sucker for great lyrics. Lyrics to me is such a big part of great songs. And, and he's another example. He has a song called "Martha". It's about a love story that didn't work out, and it's an older man calling the woman that he was in love with,
+391.22-398.62 | SPEAKER_02: And basically reminiscing about, like, time, you know, thinking about, like, what, what would have happened if it worked out, that kind of thing.
+399.26-421.03 | SPEAKER_02: And then, you know, I love that song for a long time. And, you know, at some point, I found out that he wrote that when he was in his early twenties. And you realize similar with the Beatles. Like, these guys somehow are able to capture the human condition so masterfully, and they're kids. Yes. I don't get it.
+421.03-433.03 | SPEAKER_01: I don't understand it. I can't speak for Tom Waits, but in the Beatles' case, they went to Hamburg. They spent time on their own. They played cover gigs that were eight hours long, and they lived...
+433.20-438.02 | SPEAKER_01: Yeah, they've lived. They lived life. Yeah, it's not like, not like kids today.
+438.05-449.97 | SPEAKER_02: Now you're on a porch. You also had an amazing interview with Billy Corgan. Yes. Smashing Pumpkins. He is...
+450.02-450.97 | SPEAKER_02: Definitively.
+451.04-451.96 | SPEAKER_02: One of my favorite musicians.
+452.03-472.03 | SPEAKER_02: I love Billy. You asked him an interesting question about how he creates this melancholy feeling that permeates a lot of his songs. And he jokingly said that the secret is all about the seventh and then, and the ninth. So, like, musically, chord-wise, what do you think about that? Do you think he's onto something?
+472.03-497.82 | SPEAKER_01: He's talking a little music theory there. Yeah, yeah, yeah. Seventh and ninth over the chord that he's playing. So if you're playing a C chord, he's saying a B would be the seventh, D would be the ninth. And he does use a lot of those notes. But almost all these people that we're talking, no, all these people that we're talking about use these notes, and this is why their songs... And when I interviewed Sting, I called them surprise tones. And Sting's like, I like the way he uses the word surprise.
+498.46-506.75 | SPEAKER_01: Notes that are outside the chord, that are dissonant with the chords that they're playing, but that creates emotion. Dissonance equals emotion.
+507.30-512.37 | SPEAKER_01: And that's, that's what I like. I want music to be to depress me.
+512.37-522.11 | SPEAKER_02: Yeah, what is that? I don't know. The, the, the, but melancholy, and I think you articulated it in that interview, it's not actually that depressing. There's something about that melancholy feeling.
+522.75-547.10 | SPEAKER_02: That is somehow the other side of the coin of happiness. It's a kind of longing. Yes. Well, there's a hopefulness to it, that aloneness that you feel. I mean, that's actually like one of the intimate connections you have with music is when you're alone. There's, I think there's a social way of listening to music, like maybe a concert and so on. But there's this, there's nothing like you're alone in a car, driving.
+547.55-570.62 | SPEAKER_02: Listening to, like, whatever it is, Bruce Springsteen. I think Louis C.K. has a bit about that. And was it Bruce Springsteen? He sometimes has to pull over to the side of the road and just weep or, or something like this. It's just, there's some, there's something about that. Sometimes a song just connects with you. And I don't know, nothing like a melancholy song could do that. You think about, like...
+571.68-580.03 | SPEAKER_02: Maybe things you regret or how life could have worked out. And sometimes it's not even about, like, it's not even real. It's just connects.
+580.03-591.97 | SPEAKER_01: Something to the, in the soul, the, the uneasiness that we all feel, maybe the loneliness we all feel that underpins so much of the human condition, and just connects to that. I don't know what that is. There's a Kurt Cobain lyric. It was on the...
+591.97-599.68 | SPEAKER_02: ...In Utero record from the song "Frances Farmer". The chorus part is, "I miss the comfort of being sad."
+600.32-602.02 | SPEAKER_02: And I was like, yes.
+602.78-607.02 | SPEAKER_00: There's a comfort in being sad.
+607.02-632.51 | SPEAKER_02: Yeah, that's it right there. In terms of love songs, somehow I find powerful that kind of desperation. So, like, I've always connected to Pearl Jam's "Black". Oh, amazing. That line, there was a friend of mine who was going through a breakup, so I was listening, and he, he's the one that introduced me to Pearl Jam during that, that whole period when Pearl Jam was huge with "Ten".
+633.25-634.97 | SPEAKER_02: Is, is that line is, uh...
+634.97-638.40 | SPEAKER_01: Someday, someday you, you'll have a beautiful life.
+639.01-648.49 | SPEAKER_01: You know, "someday you'll be a star in somebody else's sky. Why, why, why can't it be, can't it be mine?" Oh my God, that...
+648.86-652.96 | SPEAKER_01: blows me away. That's an amazing line. Well, yeah.
+652.96-655.27 | SPEAKER_02: Yeah, the delivery is incredible.
+655.52-674.37 | SPEAKER_02: Eddie Vedder, one of the great frontmen of all time. Yes. And that whole period, that whole moment in history of Kurt Cobain and Eddie Vedder that captured, that was the '90s. That was one side of the '90s that just, this singular moment in history. Who, who do you think are the great...
+674.85-687.65 | SPEAKER_02: frontmen in history of music? Freddie Mercury, Robert Plant, Freddie Mercury number one, probably. Steven Tyler, Jim Morrison, Jim Morrison himself. Yeah, Roger Daltrey.
+688.10-712.42 | SPEAKER_02: Um, well, we have to say, I have to say, we have to say James Hetfield. James Hetfield. I mean, there's nothing. I have, I mean, I have to talk to you about this. I have, I mean, this is the greatest, I think the greatest concert of all time. This is their historic performance in Moscow in September of '91. This is shortly before the Soviet Union collapsed.
+712.86-726.96 | SPEAKER_02: Plus, we should mention AC/DC and Pantera were there too, and about one point six million people were there. Now, by the way, there's like some kind of reporting that it was a half a million people.
+726.96-749.06 | SPEAKER_02: Five hundred thousand people, that's somewhere, I've seen statements like that. That's a ridiculously inaccurate statement. So it's a free concert. So any official counts don't count. It's, uh, it's, it's definitely over a million. It's, it's very likely to be one point five, one point six million people. And this moment in history that I think they channeled.
+749.60-766.02 | SPEAKER_02: It's like whenever great music, the Metallica was firing on all cylinders at the very top of their game, and they meet this moment in history, this place in history, those a defining part of the twentieth century collapsing, and you have these people who are, um,
+766.94-777.18 | SPEAKER_02: for a moment, through music, are able to escape the fear, the anger they feel, all of it. There's also a political, social, cultural moment meeting
+777.60-804.03 | SPEAKER_02: the musical moment, and the, the set list. I was just, I was, I listened to it several times over the past few days, just taking myself back into that moment in time, listening to the set list. Enter Sandman, Creeping Death, Harvester of Sorrow, Fade to Black, Sad But True, Master of Puppets, Seek and Destroy, For Whom the Bell Tolls, One, and Whiplash. Look at that. How was that? That
+804.54-807.84 | SPEAKER_01: just. That's my kind of set. That's amazing.
+808.08-821.25 | SPEAKER_01: That's my kind of set right there. I don't know if you could think of anything that could beat that. I think that the guys in the band would say that too. That was, I mean, they were really at their, at their peak. The Black Album had just come out then, and
+821.86-823.09 | SPEAKER_01: That must have been so...
+824.28-826.03 | SPEAKER_02: so exciting.
+826.05-838.97 | SPEAKER_02: I mean, Woodstock was big. There's, there's certain moments in time where they really, really meet the moment. Are you a fan of live, live, like big? I used to be, but at this point, yeah, I can't.
+841.70-847.98 | SPEAKER_01: I'd much rather see people play in small clubs and, or go to the, I'd like to listen
+847.98-860.51 | SPEAKER_02: in the studio, go to the studio even. I generally almost entirely agree with you. I just think that there's these historic moments, but you don't know which one's going to be which. But you're making the concert free.
+861.31-865.63 | SPEAKER_02: It's just all of it to get, plus Pantera and AC/DC.
+866.69-887.38 | SPEAKER_02: The other, which actually is a legitimate thing you've mentioned, is as one of the greatest concerts of all time, is Beethoven's world premiere of the Ninth Symphony. You know, I didn't really know the personal side of Beethoven until I saw this movie called Immortal Beloved. It's an excellent movie with Gary Oldman.
+887.45-899.98 | SPEAKER_02: I really, it's a masterful celebration of Beethoven in an interesting kind of way through the perspective of a love letter that he's written. But then I realized, like, this is early, this is many, many, it's a couple decades ago now.
+
+0.03-29.97 | SPEAKER_00: That, you know, he went deaf before he even started writing the Ninth Symphony, which is why they consider it to be one of the greatest compositions of all time, the greatest symphonies of all time. He went deaf, couldn't hear anything before he even started writing it. And so there's that famous story of him in that world premiere of having to be turned around because he can't hear people applauding. So he has to be turned around to see that people are actually clapping.
+29.97-39.59 | SPEAKER_00: I mean, there's just this whole tragic element, plus the the meaning of the symphony that ends in this beautiful Ode to Joy.
+39.96-49.66 | SPEAKER_00: The symphony itself is a kind of... it starts with the chaos and conflict and ends with this celebration of...
+51.55-52.70 | SPEAKER_00: peace and...
+53.57-67.07 | SPEAKER_00: brotherly unity, and a, I guess, a call for that, a reaching for that, for that peace, and it's a, there's a tragic element to it again, connected to history, which is it was post-Napoleonic Wars.
+67.32-95.12 | SPEAKER_00: And before the American Civil War, so like you're in this, in this middle, this respite from from war, calling for peace, not knowing that, uh, truly horrific wars are coming. So you have the American Civil War, and you have the, of course, the two world wars coming. So this, all of it together, and the fact that he's conducting deaf, and he wrote this whole thing deaf. I was reading a lot about his process, and he just edits and edits and edits and edits.
+95.12-98.05 | SPEAKER_00: So the fact that he had to edit in his head...
+99.26-108.83 | SPEAKER_01: It's just insane. I mean, Beethoven was sick all the time, too. I mean, there are a lot of people were sick all the time. It was very common. What would motivate you?
+109.70-111.55 | SPEAKER_01: to write
+112.45-126.50 | SPEAKER_01: music, this beautiful music that you can never actually hear except for in your head, right? Like, why, the amount of time it takes to write, to write a thirty-five-minute, forty-minute piece.
+126.94-136.42 | SPEAKER_01: All the parts, you've got to hear all the orchestration in your head. You're editing, you're doing all these things. Where do you get the motivation when you can't
+137.12-140.73 | SPEAKER_01: hear the actual finished
+140.77-169.27 | SPEAKER_01: work. And people would say, "Well, he hears it in his head." But what kind of enjoyment is it? You want to hear the orchestra. I mean, it's really profound that he, that, that he was inspired to do this. There's a thing called the Heiligenstadt Testament that he wrote. It was a letter to his brothers from 1802. I think they found it in his desk after Beethoven died, and he felt a sense of shame and humiliation
+169.27-197.09 | SPEAKER_01: because of his hearing loss, and he said that he was afflicted with this thing where him, of all people, that someone standing next to him could hear a flute that he could not hear, or a shepherd singing in the field that, and he could not hear this. And, and of all the people, why him, where hearing played such an important part? Another person that would have, had to have had perfect pitch because you could never do this
+198.02-215.55 | SPEAKER_01: if you didn't have perfect pitch, which I think all these great composers, for the most part, Brahms didn't, from what I know, but all the rest of them, for sure, had perfect pitch. So they could hear these things in their head, and that's how they composed. I mean, you love sound and music.
+216.64-221.96 | SPEAKER_00: What do you think it was like gradually losing your hearing for Beethoven?
+221.96-223.01 | SPEAKER_01: It must have been...
+224.00-226.59 | SPEAKER_01: Terrible. I mean, I just...
+228.45-239.59 | SPEAKER_01: Terrible. I mean, I've heard things where he had to, would have a stick in his mouth and, and put it on the soundboard of the piano, and you could feel the bright vibrations in his skull and things like that.
+239.59-247.07 | SPEAKER_00: Trying to... Yeah, I just... But also, there's... What is, what is that that he's able to write?
+248.48-266.18 | SPEAKER_00: Like one of the greatest symphonies ever, while deaf. So that there's something about that, we mentioned darkness, but torment that he's going through. And ultimately, Ode to Joy, like, not a cynical thing, right? A call for the positive.
+267.62-272.06 | SPEAKER_01: Yeah, yeah. That's, that's, I...
+273.06-276.72 | SPEAKER_01: I've devoted many, many hours thinking about that.
+276.72-278.72 | SPEAKER_00: And plus, Napoleon broke his heart.
+279.26-283.84 | SPEAKER_00: Because he was a supporter of Napoleon, because Napoleon was supposed to represent
+284.32-295.02 | SPEAKER_00: the French Revolution, this, this hopeful future of no more kings, no more monarchs, no more authoritarian regimes, and Napoleon ended up becoming essentially king.
+295.43-325.11 | SPEAKER_00: Becoming an authoritarian, and Beethoven sort of famously was critical of that. Nevertheless, I think maintained a fascination with Napoleon throughout his life, but sort of a kind of more sophisticated, complex view of human nature and human civilization. So becoming more cynical, like seeing more clearly that the world disappoints you, that dreams get shattered, and through that is able to still
+325.11-328.70 | SPEAKER_00: do this call for a hopeful future.
+329.34-334.14 | SPEAKER_00: All right, so okay, so Beethoven, one of the greats for sure.
+334.82-356.29 | SPEAKER_00: Like basically everybody, I know how to play the first movement of Moonlight Sonata, but I always avoided the third movement because I was like, I'll never be good enough. Never, never, never, never. I say never. One of these days, maybe. You know, it'd be great if Tom Waits writes me an email that says, "I only talk to people that can play the third movement."
+356.29-357.37 | SPEAKER_01: That's it.
+357.37-375.09 | SPEAKER_00: That'd be, that'd be a dream come true. There you go. You're like, for this. That's motivation. That's my dragon or whatever you do. You have to have a prince and rescue the princess. My dragon is the third movement of Moonlight Sonata. Okay. You often highlight the importance of Bach. In fact, so many of your guests...
+375.09-384.08 | SPEAKER_01: Every famous songwriter is influenced by Bach. They are the greatest composer of all time, the greatest musician of all time. Even Sting and...
+384.15-388.47 | SPEAKER_00: Dominic Miller said they go to Bach even for like practice every day.
+388.47-398.94 | SPEAKER_01: People talk about Bach was not known other than in his places he lived. Eisenach, he was born in Leipzig. He spent many years.
+399.36-417.79 | SPEAKER_01: But Bach was known to great musicians. It was difficult to find manuscripts, but there was a premiere of the Saint Matthew Passion that Mendelssohn had done in 17, in 1829. It was on March 11th, I believe. He had a manuscript because...
+418.43-432.32 | SPEAKER_01: His father and mother collected manuscripts, and he got a manuscript of this piece. And I think he was twenty years old, and, and they had a performance of it in Berlin.
+432.80-444.35 | SPEAKER_01: And Beethoven, Mozart, they studied the Well-Tempered Clavier, the two books of the Well-Tempered Clavier. But Bach wrote profoundly beautiful music, and...
+445.31-452.22 | SPEAKER_01: some of the most complex contrapuntal music that I don't think anyone has ever done like that.
+453.12-466.95 | SPEAKER_01: Extremely bright guy. Had twenty kids. Ten of them, only ten survived till adulthood. Lost both his parents when he was nine, within nine months of each other. Went to live with an older brother. Like, extremely productive. Yes, I saw.
+466.95-482.82 | SPEAKER_00: I, yeah, I think from all the music teachers I've ever had, I, I understood the importance of studying Bach. He didn't write Master of Puppets, but he wrote some great, powerful music. Well put.
+483.42-493.70 | SPEAKER_00: I, I, I tried to educate the aforementioned music teachers of the brilliance of the Master of the Puppets.
+494.46-497.93 | SPEAKER_00: Sometimes a good riff is greater than any, any musical composition.
+497.93-501.95 | SPEAKER_01: I agree. I go back and I play Master of Puppets.
+502.56-505.23 | SPEAKER_01: Every time I'm trying out a new amplifier.
+505.23-506.11 | SPEAKER_00: That's my go-to.
+508.26-514.38 | SPEAKER_00: So, like, so the, the stereotypical like guitar store, when you come in, you're playing Master of Puppets.
+514.38-529.40 | SPEAKER_01: I'll play Master of Puppets. I will play. I have to play some heavy riff. And so usually it will default to some Metallica or something like that. Or I'll play Alice in Chains. Or I do usually, like a lot of times I'll go and I'll do drop D something or play Tool.
+530.15-540.74 | SPEAKER_01: I usually would do something, do some drop tuning thing, and it's always got to be some type of metal that I'll test to see if the bottom end's tight on the amp and stuff. So yes.
+541.60-545.22 | SPEAKER_00: All right, we have to talk about this a little bit. You made a bunch of videos about it.
+546.37-553.98 | SPEAKER_00: There was a moment in time, it still goes on, but there was a moment when really people were freaking out about the use of AI in music.
+554.40-568.67 | SPEAKER_00: Uh, so there's these, I would say, incredible apps like Suno, Udio, Eleven Labs Music is also great. It can generate basically text to song, full song from a text prompt.
+569.66-596.98 | SPEAKER_00: And a lot of people start freaking out just based on how good it is. So you start to immediately imagine how this is going to transform music, and you're going to replace musicians and all that kind of stuff. It is legitimately nerve-wracking because these are early versions, so you don't know where it goes. But in your intuition now, you've been thinking about this, you made a bunch of videos now, like being able to reflect, okay, everybody chill, calm down.
+596.98-614.04 | SPEAKER_01: If you write a prompt in Suno and it spits out a song, which I've did, I've done, made a bunch of videos in this, I made up a fake artist, Eli Mercer, in this video. Then I did a thing for CBS News, I made up this fake artist, Sadie Winters, and came up with this song, Walking Away. Well, the computer...
+614.04-621.66 | SPEAKER_00: The program came up with it. There is some creativity in the process. So in this particular thing, the process is generate an image.
+621.66-644.64 | SPEAKER_01: I did it in ChatGPT, the image. Then I went to, then I went to Claude and I wrote the lyrics because Claude's way better at lyrics than Suno is. Suno's bad at lyrics, at least right now. So I, so I did, I created the lyrics in Claude, and then I imported the lyrics into Suno. And I had great results with the songs that I came up, that it came up with. I always have to qualify that.
+645.28-663.02 | SPEAKER_01: But as I started thinking about this, people freak out about this. Oh, this is bad, this is bad. And I was like, no, who are going to be the ones that are going to benefit from AI? Well, the people that are already great songwriters. Because you have to be able to recognize when it spits out something good versus when it spits out something that's not that good.
+663.29-671.01 | SPEAKER_01: And every other song, I've probably created one hundred and thirty song ideas out of which there's three good ones.
+671.01-701.00 | SPEAKER_00: And there's a thing that's happening where people's ear very quickly is becoming attuned to AI slop. Yes. And that's actually quite fascinating. Like, for example, one of the things, there's this viral clip going around of an AI-based, like a soul jazz remix of songs like 50 Cent, Many Men. And I think it is super impressive. And it's a different pipeline, actually. It's a tricky pipeline to how to pull that off. And I think a lot of the creativity in that,
+701.00-714.62 | SPEAKER_00: Even that kind of remixing is in the pipeline that of how you actually do that, because there's actually a lot of manual stuff in that pipeline. But I think ironically, it's very cool at first.
+715.14-723.68 | SPEAKER_00: But when you listen to it for a while, you understand that this is AI slop. Yes. For a soul remix.
+724.24-733.76 | SPEAKER_00: It, it actually lacks soul. Let me think of like when I listen to soul or blues. I think I really want, in that case, to know.
+734.62-754.53 | SPEAKER_00: I don't want AI B.B. King. I want the real B.B. King. And I, if I, if I know if any AI is involved in the B.B. King process, I'm tuning out. Yes, and I don't think I'm being curmudgeonly old dude in that. I think we humans want.
+755.78-756.71 | SPEAKER_00: Authenticity.
+757.34-763.65 | SPEAKER_01: So when, when AI, when I first started making these AI videos, it started back in twenty twenty-three. I made my first one.
+767.39-769.02 | SPEAKER_01: I would take my phone.
+769.89-772.70 | SPEAKER_01: Come up in the kitchen, I play a song, and my...
+773.12-803.08 | SPEAKER_01: My youngest and Dylan, my youngest Layla, and I have three kids. My oldest Dylan. As soon as I play it, why are you listening to AI? And it's like, oh my God, instantly. And it's like, how do you know? Oh, it has this ringing sound in the thing. So it took me probably about four or five days to figure, okay, what are they hearing that I'm not hearing? So I did it. I separated all the parts, and what they're hearing was the artifacts that are in the vocal reverb that were,
+803.08-808.58 | SPEAKER_01: that made incomplete. It just couldn't do the ambiences correctly, right? Because it's trained on...
+809.06-820.03 | SPEAKER_01: A lot of these AI programs are trained on very low bit, bit rate MP3s, right? So they feed all this stuff in there. So they're getting really inferior information on the train,
+820.03-820.87 | SPEAKER_00: in the training process.
+820.87-830.40 | SPEAKER_01: Whereas now, when they make these deals with the major labels, they'll get the multi-tracks and they'll get high-quality wave files to train from, right?
+830.85-844.96 | SPEAKER_01: And whoever opts in, they get the solo vocal tracks. You know, if Ed Sheeran wants to do it or Drake or whoever wants to give their voice to it, let it do its thing and then get their royalties from it. I'm not saying that any, any of them are doing it. I'm just giving an example, but...
+846.18-857.82 | SPEAKER_01: Every time that I would do it, I could be down the hall, and I would play something on my phone just to see if they're like, "Why are you listening to AI?" Oh, they could instantly tell. Then eventually it started getting better, and, and then it'd be like...
+858.69-864.35 | SPEAKER_01: "Is this AI?" I'd be in the car with Layla coming back from Taekwondo practice, and she's like,
+864.99-872.35 | SPEAKER_01: "Is this AI? Why does it sound like AI? Sounds like it could be AI." And I'd be like, "Yeah, it's AI." She's like, "Oh, it's getting better."
+872.78-883.39 | SPEAKER_01: And then I did this song for, um, it was an NPR interview, and I created a song with a fake artist, and the song was called Neon Ghosts, and I played it for Layla in the car. She's like,
+884.26-897.01 | SPEAKER_01: "Can you separate the tracks?" I said, "Yeah, I have them separated back home." "Okay, I want to go down and hear it." So we go down to the studio, and, and I play it for her, and she listens to the soloed vocal. She said, "Wow, this is really realistic."
+897.02-900.07 | SPEAKER_01: This is very hard to tell, even with a soloed vocal.
+
+0.00-25.25 | SPEAKER_00: I think the room for creativity right now for humans is lyrics. It seems like the lyrics that are being generated, they lack soul somehow. Yeah. So I don't know the words correctly. Yeah. I mean, they can be incredibly sophisticated, but there's something, the edge is not there, some kind of edge that we want in our lyrics, some kind of surprise.
+25.92-40.45 | SPEAKER_00: But not cringe or not cliche, some, something truly novel in the lyrics. But that, if that's the case, it's kind of sad that, um, that.
+41.79-54.42 | SPEAKER_00: That's where the creativity has to come from, but not from the music, because then if we can create very realistic music that sounds really damn good, where's the role of the musician there?
+54.42-58.56 | SPEAKER_01: I think the role of the musician is that in, in actually.
+59.52-86.65 | SPEAKER_01: If they use AI to assist them in coming up with ideas, like it as a creation tool, then the musician, like some of this stuff is just not high quality, sonically high quality. So the musician goes in and redoes stuff and changes things and adds parts, and then they actually do music production, and maybe they re-sing the parts and they change stuff, and then, then it's just basically like an idea generator. And I think that that's a great use of AI, is for that.
+86.65-89.54 | SPEAKER_00: But, but see, if you do that...
+90.30-94.34 | SPEAKER_00: Does it make you sad that you don't necessarily need to learn instruments?
+94.98-106.05 | SPEAKER_00: So basically, you can, I mean, you could think of it as a different kind of instrument, but you can write lyrics, you can hum the melody, you can just hum parts. Yeah.
+106.59-117.95 | SPEAKER_00: You know, and then, and then do A, B kind of thing, this kind of rhythm, this kind of, and stitch them together, and never actually have your fingers on a guitar or, or...
+118.59-123.78 | SPEAKER_01: That's why I'm not going to use AI, Lex. It's for that reason because.
+124.22-152.83 | SPEAKER_01: To me, it's just boring. And when I use it, it's just like, eh. But I, I used it for about a month or so, just because I was making videos and I was trying to see how it's advancing. Every, every three or four months, I'll, I'll, I'll sit down and I'll see whatever new versions they have, and I'll write some songs, write some songs. I'll prompt some songs, and see what they come up with, and see if they're improving on the things. But ultimately, I don't find it interesting to, to use. I hear you.
+153.98-156.10 | SPEAKER_00: You're a bit old school. I'm sorry.
+156.10-157.07 | SPEAKER_01: Yeah.
+157.07-181.50 | SPEAKER_00: I'm trying to think about the future. And I think it's still, even in the future, also going to be boring. I think there's something fundamentally boring about it. And I'm trying to figure it out. So, for example, I use it a lot for more and more and more for programming. So for building stuff. And there, it's not about the, the final output is not the code. The output is what the code creates.
+182.43-196.03 | SPEAKER_00: And there, it's extremely useful. Not, it doesn't matter if it's boring or not, it's useful. But when the final output is the thing that AI creates, which would be in, in music, then there is something about us that just, like, we know.
+196.67-207.94 | SPEAKER_00: We, there is something boring about it. Yes. We want to celebrate and see the thing that's hard to create. And if AI can just text a song, generate a top ten hit.
+208.32-235.97 | SPEAKER_00: We, we will quickly lose value for that, I think. And so we'll want raw, like raw, whatever, whatever shape that raw takes. I wouldn't say raw talent, but that raw talent of any kind. And perhaps it would make me a little bit sad, but that's also awesome. Perhaps the new kind of raw talent that civilization is asking for is how to make
+235.97-238.08 | SPEAKER_00: Uh, great TikToks.
+238.85-241.09 | SPEAKER_00: Maybe that's what raw talent looks like.
+242.05-245.09 | SPEAKER_00: It makes me a little bit sad because I'm a huge fan of long form.
+245.09-246.26 | SPEAKER_01: Mm-hmm.
+246.26-249.15 | SPEAKER_00: But that, that also creating TikToks.
+249.82-251.96 | SPEAKER_00: And it's, it's also talent.
+251.96-277.22 | SPEAKER_01: It is a talent, absolutely. When I see anything that's AI generated, I instantly recognize it. Any video, I'm like, ugh, boring, boring, boring. And my kids do the same thing. They just have no interest in engaging with it. As soon as they recognize it, and they can spot it a mile away, and they're just like, boring, boring, boring, boring, boring. And then they kind of dis, then they, they don't even want to engage with the social media platforms, which is, which is a danger.
+277.73-286.05 | SPEAKER_01: Which I think they need to crack down on the AI slop. YouTube's done a pretty good job on it, but it's hard to, it's hard to stay on this.
+286.69-296.26 | SPEAKER_01: It's, get, it gets flooded with so much of this stuff. It's so easy to create and put up there, and to just be in the...
+296.70-301.38 | SPEAKER_01: In the whack-a-mole thing, where you're just trying to get rid of it all, is, is...
+301.38-329.65 | SPEAKER_00: Fundamentally, like it's fundamentally boring. I think boring, it's boring. And it's, and it's annoying to have to flip through the AI slop. Yeah. But I think actually as a civilization, it's just inspiring for authenticity, because you want to be real, raw, and being raw, which I, you know, one of the things I like about podcasts is people just shooting shit and just being themselves in, in the long form versus overproduced. Because I think AI is making people realize...
+329.65-340.16 | SPEAKER_00: The AI is good at being overproduced, right? So there'll be more. That's got that covered. Yeah, even artists, because you're saying like, yeah, they'll use it as tools. Part of me thinks like,
+340.77-347.74 | SPEAKER_00: Not really. I think, I think, I think they'll quickly, this kind of process of generating a bunch of different options.
+348.64-360.29 | SPEAKER_00: Uh, and choosing the one you like the most, I think is a really frustrating process for artists. And it, I, I think it, I think AI will, will definitely be used extremely effectively.
+361.47-371.10 | SPEAKER_00: As a very, uh, fine-grained tool, um, in the image domain, it's editing images, but not like...
+372.13-383.46 | SPEAKER_00: Macro editing, but very specific kind of editing that photo, Photoshop is increasingly integrating in. I mentioned to you offline, so the whole, um, Isotope RX.
+383.46-401.95 | SPEAKER_00: A group of software that does a lot of the denoising, the, all, all the de, removing the wind, all the... they, they integrate machine learning extremely effectively. Yes. So working with audio in different kinds of ways. There's a bunch of different other programs that do that. Maybe for like B-roll footage.
+403.14-414.03 | SPEAKER_00: And same thing on the audio. If you just need a little audio to create a feeling of a scene, yeah, it might be used there in that kind of way. But truly original stuff...
+414.03-438.14 | SPEAKER_01: I've saved videos where I'm doing speaking over music, for example, in an interview. Somebody's playing, and, and we have two dialogue, two people speaking in laughs. But it's, but there's so much bleed coming from the person playing that you can't hear what we're saying. And then we'll split out the voice for that section, the two voices, separate them, and then take the music and separate that stuff. And so it's really helpful for things like that.
+439.31-468.09 | SPEAKER_00: And now, once again, quick thirty-second thank you to our sponsors. Check them out in the description. It really is the best way to support this podcast. Go to lexfreedman.com/sponsors. We got Uplift Desk for my favorite office desks, BetterHelp for mental health, Element for electrolytes, Fin for customer service AI agents, Shopify for selling stuff online, and Perplexity for curiosity-driven knowledge exploration. Choose wisely, my friends. And now...
+468.09-477.31 | SPEAKER_00: Back to my conversation with Rick Beato. So you have this video breaking down Sabrina Carpenter and the song "Manchild."
+477.73-480.58 | SPEAKER_00: And you use that as an example of...
+481.31-497.82 | SPEAKER_00: Building up people's intuition about the, the music business and how the music production for these popular songs is being done these days. Who's doing the songwriting? How's it being done? And all that kind of stuff. I was wondering if you could speak to that.
+498.21-527.07 | SPEAKER_01: In that particular song, Jack Antonoff, who was one of the writers, Amy Allen, Sabrina Carpenter, said in some awards thing that there's an old guy on YouTube that says that Sabrina had very little to do with the song. And so he said in this clip, you being the old guy, me being the old guy, that, well, Sabrina really was the, she's amazing, and she's the one that wrote everything in the song. So my response is like, well, why are you guys even included on the songwriting then?
+528.10-532.90 | SPEAKER_00: So one of the things you highlight is a lot of people are included on the list of...
+533.63-535.52 | SPEAKER_00: Uh, songwriters. Yeah.
+535.78-560.88 | SPEAKER_01: Ten people, eleven people. I mean, you know, like, why are the song, why does Song of the Year have songs that are interpolation, meaning that they have melodies from other songs, and they're interpolation? They used to call it stealing. And then you have songs that use samples for the whole thing, like the Doja song that's out right now. And I said, look, she took a Gaultier song and...
+560.88-572.88 | SPEAKER_01: Basically took off his melody, and she created her own melody over it. It's like, well, it's, I mean, it saves time for, you don't have to actually create a track. You just can sing over someone else's song that was already successful.
+572.88-587.63 | SPEAKER_00: Yeah, you pointing that out, the song "Anxiety" broke my brain. I mean, it's so absurd. Yeah, that feels unfair. It feels, it's a good song, but it was also a good song before. And it was before that, it was also a good song.
+587.63-593.66 | SPEAKER_01: Right, 2011 to Luis Fonsi in 1967. So...
+594.27-602.88 | SPEAKER_01: Why is that considered to be in the top songs of the year? It's like, come on, you can't find another song that's not based on that.
+603.49-605.79 | SPEAKER_01: That's ridiculous. Yeah, yeah, yeah.
+605.81-609.36 | SPEAKER_01: Yeah, and, and Doja has some really good songs on a record.
+609.60-636.03 | SPEAKER_00: Yeah, but why are these the ones that are coming to the top, right? This is interesting. That, that, that might be just a criticism of the machinery of the business that drives them. It's not necessarily... Like, a lot of these folks are really good musicians. First of all, I think a lot of them are also good. Like, the actual songs that make it to the top are good. I'm, I'm a big fan of Bruno Mars. He's a great songwriter.
+636.48-638.40 | SPEAKER_00: And he's a great musician all around. Absolutely.
+638.41-641.84 | SPEAKER_00: You know, this is a Michael Jackson reincarnated. Super.
+641.84-642.85 | SPEAKER_01: Super talented guy.
+642.85-668.06 | SPEAKER_00: Incredible, right? Yes. You mentioned Billie Eilish and her brother write a lot of the songs. Super good. Yeah. Super talented. I mean, Taylor Swift is unlike anything. I mean, that's a historic figure in music. She's a fundamentally, at least originally, a singer-songwriter. Yes. So that's a... I mean, that... I mean, I'm sorry, but that, that is a, like, of the kind of music that Rick Beato...
+668.70-674.03 | SPEAKER_00: Uh, gives props to. She's the, she carries the...
+674.03-680.97 | SPEAKER_01: flame forward. She works on her own songs, absolutely, and she, but she never has more than two co-writers on things.
+680.97-682.09 | SPEAKER_00: I'm gonna take a quick bathroom break.
+683.40-689.60 | SPEAKER_00: I have to ask you about this complexity that you're facing on a basically daily basis.
+690.40-713.65 | SPEAKER_00: I think it's a challenge a lot of YouTube folks experience, but you're just so viscerally experiencing it because a lot of what you do in your channel is celebrate music broadly. And so as part of that process, you have to sometimes show clips of music. And I think all of that falls under fair use quite obviously. And so you get all these YouTube copyright claims.
+713.65-741.24 | SPEAKER_00: And for folks who don't know, if you get three, three of those, each one of those can be a strike on the channel, and it can take down your channel. And you, you get some insane amount. You said you got like, I think you had a similar thing on the Rick Rubin episode, like thirteen. Yeah. Thirteen. So what? Can you just speak to this whole thing? You've been in a constant battle: WMG, UMG, all the, all, all.
+741.24-744.87 | SPEAKER_01: All the three-letter name record labels, right?
+744.87-747.95 | SPEAKER_00: The, the music business people. So what, what's the story there?
+747.95-754.34 | SPEAKER_01: Well, this has been going on since the beginning of my channel, and I've made videos periodically when I first started.
+755.01-762.85 | SPEAKER_01: It was just instant blocks, so you never knew. Back in, I started, it'll be ten years in June. So when I play music...
+763.26-784.22 | SPEAKER_01: In a video, YouTubers were not playing music in videos because they didn't, because of the content ID things and the takedowns and stuff. So I would play music and I would just see what happens. And then you get a content ID claim, or you realize that people were, quote unquote, blockers, and I came up with that term, that they would block your video, take down your video.
+784.64-796.42 | SPEAKER_01: And I realized at first it was like anything. Guns N' Roses, which is still the case. Guns N' Roses, AC/DC, I mean many bands: Fleetwood Mac, Led Zeppelin.
+797.02-797.86 | SPEAKER_01: And then.
+798.50-812.77 | SPEAKER_01: And then something happened. There, there was that guy on the skateboard on TikTok that had the ocean spray thing, and, and he was listening to "Dreams" by Fleetwood Mac, and that blew up and became a number one song again.
+813.70-818.40 | SPEAKER_01: And the labels then realized, I mean, I had made many videos about.
+819.30-831.47 | SPEAKER_01: About why this is wrong and it should be fair use and everything. Well, because of that, the label is like, "Ooh, maybe we should rethink this." And then they just started demonetizing videos. And demonetize means they get all the...
+831.47-832.23 | SPEAKER_00: They get all the money.
+832.23-839.04 | SPEAKER_01: In a one-hour video, if they, if you use twenty seconds of a clip, they get all the money. Okay.
+839.90-852.32 | SPEAKER_01: So I hired a lawyer finally after the Rick Rubin video because I thought it was ridiculous. I go over to, to, to Tuscany. I interview Rick at his house, and...
+852.99-853.89 | SPEAKER_01: And, uh...
+854.40-860.37 | SPEAKER_01: I hired, hired a lawyer to fight this, who I'm going to have on my channel. I don't want to say who it is, but he's another YouTuber.
+861.06-866.11 | SPEAKER_01: And he had, had approached me a couple years ago, and, and it's not cheap to do.
+866.21-868.45 | SPEAKER_00: Oh, you, you're going to do like a public interview with him?
+868.45-872.55 | SPEAKER_01: I'm doing interviews with them, yes. I talked to him today about it, actually. I can't wait.
+872.55-874.05 | SPEAKER_00: Yeah, that'd be great.
+874.05-884.32 | SPEAKER_01: So he said you should fight these because every single one of them is fair use. And he went through my, my entire catalog. I have twenty-one hundred videos.
+885.09-900.00 | SPEAKER_01: And he's fought four thousand content ID claims and won every single one of them. Four thousand. That's a lot. I mean, when I do top twenty guitar solos, there's twenty content ID...
+
+0.00-1.57 | SPEAKER_00: Claims, you know.
+2.24-9.99 | SPEAKER_00: And it's either, it can be either from the sound recording if I use that, or if I just play it, it can be from the publisher. That's amazing.
+9.99-12.32 | SPEAKER_01: Yeah, so is there...
+12.61-23.19 | SPEAKER_01: I mean, that's, he's still, he's still a lawyer, still work. Does that, is there a hopeful thing you can say about the future of...
+23.19-42.73 | SPEAKER_00: Yeah, fight these content ID claims. If it's fair use, if you're not just playing the song and listening to it. And because a lot of the stuff that are reaction videos or whatever that are not where they play the whole song. I mean, I'm using these things and I'm talking. A lot of the times it's in interviews or it's in, I'm breaking down a solo and there's a, yeah, see that's.
+42.73-50.14 | SPEAKER_01: An obvious one, but even reaction videos, right? Yeah, even reaction videos, yes, absolutely. Those are more borderline. Yeah.
+51.39-53.94 | SPEAKER_01: But I don't know. I love those videos.
+53.94-55.05 | SPEAKER_00: Absolutely.
+55.05-63.12 | SPEAKER_01: Like when a person is just sitting there and listening to it, and they're like, you know, like a, like a voice teacher is listening to a vocal performance. Yeah, but those are.
+63.12-64.28 | SPEAKER_00: Breakdowns.
+64.28-65.48 | SPEAKER_01: Yeah, those are breakdowns, yeah.
+65.48-75.68 | SPEAKER_00: I think that the content ID stuff that was happening with these major labels, they would hire third parties that would go out, use AI, and go and, um,
+76.42-81.62 | SPEAKER_00: Anytime they detect anything, they always go to the biggest channels first. They get the most views. Makes sense and stuff, and.
+82.01-89.04 | SPEAKER_00: And they would claim everything that they could. And historically, YouTubers never would fight back. They were like, "Oh, this is easy money."
+89.24-96.83 | SPEAKER_00: YouTubers never fight back at these things because they're afraid to have their channels taken down. Yep. So.
+96.83-100.76 | SPEAKER_01: Rick Beato said, "Hold my beer." There you go. I mean, I mean, it's important.
+100.76-110.82 | SPEAKER_00: It took me years, though, Lex. I didn't, I've been doing this, so I, so I've been doing it for one year now, and I'm nine years, ten years into my channel. So it took me that long.
+110.85-137.03 | SPEAKER_01: I mean, hopefully it, uh, there's a ripple effect also. It's not just your situation. Hopefully, you don't have to deal with this for much longer. Right. Um, how has Spotify changed music? Sometimes we highlight the fact that they change the nature of music in that it's, um, the scarcity is not there, but also allows it, it's like every kind of music is available and so fast and so easy. It's easy to explore.
+137.03-141.36 | SPEAKER_00: It's a commodity. It's like turning on a water faucet. Do you think it's just...
+141.36-149.63 | SPEAKER_01: There's some good to, I mean, there's a lot of good to that, right? Have you, did you go through that whole process? I still remember.
+150.50-162.08 | SPEAKER_01: Where I had to basically throw away the albums. I never did that. What, after you, after you uploaded them into your computer? Yeah, so there's that two-step process.
+162.59-166.47 | SPEAKER_01: One, there's like the hard albums, CDs for me.
+166.67-177.12 | SPEAKER_01: Yeah, and then, and then you upload them into your computer. Yeah, when you save them, and then you, uh, how do you put it?
+177.63-201.73 | SPEAKER_01: Allegedly, a friend of yours pirates some extra songs, and posts them on the computer. So you, but you have your stash on the computer. You're like, this is my finely selected stash of greatness. Sometimes organized by album, sometimes not. And the big moment for me, that was really difficult to do, really difficult to do, is throw away that stash.
+202.62-204.70 | SPEAKER_01: Big, and switch to Spotify.
+205.46-211.39 | SPEAKER_01: Switch to streaming, and basically rebuild the stash of playlists and all this kind of stuff.
+211.94-236.67 | SPEAKER_01: And it was heartbreaking because so much love and effort went into that. Both the CD, the stashing of the CD, and the stashing of the MP3s in the computer. And then in Spotify, it just seems just effortless. But it helped me discover all kinds of artists I never would have discovered otherwise. And Pandora, I use a lot. Pandora is more, um...
+237.79-243.52 | SPEAKER_01: Prioritizing on the discovery part versus organization part. And that was really wonderful.
+243.52-250.30 | SPEAKER_00: So one of the things I, I'll start with the positive that I like about Spotify is that they show view count, they show play counts.
+250.78-258.60 | SPEAKER_00: Whether they're real or not is another question. But, but they show how many plays songs have, and that's how the charts are based.
+258.60-263.50 | SPEAKER_01: Does that give you signal that something is listened to a billion times? Does that mean something to you?
+263.50-275.52 | SPEAKER_00: Yeah, it means that, that it's a popular song. Well, that's a massive hit. That's very few songs that have a billion, billion plays. Now, the downside of Spotify is the way that they pay their artists. Now they've lumped in...
+276.45-286.43 | SPEAKER_00: Podcasts with that, that are getting a cut of this, the streaming, with the, with the music, um, and...
+287.58-305.28 | SPEAKER_00: You know, the search and discovery. I mean, there's, there's a, there's benefits of algorithms and there's negative things of algorithms. Algorithms happen to kind of, a lot, many times, pigeonhole people into listening to the same genre of music all the time and not expanding their...
+305.70-314.62 | SPEAKER_00: You know, the discovery of, of new music that you might hear on the radio back in the day where program directors...
+315.10-320.38 | SPEAKER_00: Would play things that they liked, right? And you might hear some, ooh, what is that? Oh, that's a new...
+320.96-328.98 | SPEAKER_00: Soundgarden record, or, you know, they're like, whoa, I like that. I'm going to go check that out. And, you know, something that you might not have heard, or something odd, like...
+328.98-333.48 | SPEAKER_01: One thing I really love doing on Spotify is you can, you can have radio.
+333.88-337.89 | SPEAKER_01: Meaning, like you have a few. It's similar to Pandora. Like you can...
+338.75-345.22 | SPEAKER_01: Okay, this is going to reveal a little too much about myself, but usually when I go work out...
+345.98-350.96 | SPEAKER_01: I'll listen to something like Rage Against the Machine radio. I'm sorry.
+350.96-352.28 | SPEAKER_00: What else would you listen to?
+352.28-379.30 | SPEAKER_01: I need motivation. Classical music, I don't know. But yeah, it's pretty good because it recommends a bunch of other stuff I wouldn't even know. Some of it I know, obviously, but akin to the, similar to the Rage Against the Machine-y type thing, it recommends a bunch of artists. It's like, oh, holy shit, that's awesome. So I don't know, that, that discovery works really well. So some of it is a technology thing, but that experience is fundamentally more...
+380.22-388.58 | SPEAKER_01: Vibrant than I had previously with my stash. I would just keep a stash, and I would listen to the same record over and over and over and over.
+389.18-403.01 | SPEAKER_01: But yeah, what's lost is the, the, I'm sure you love, you love this, but listening through the Led Zeppelin records, just driving in a car, listening to the whole thing all the way through. Yeah, that's lost.
+403.01-408.74 | SPEAKER_00: So I have my old iTunes libraries from 2005 that I've, that I...
+409.92-414.30 | SPEAKER_00: That I've saved, the, the CDs that I uploaded into my computer. Yeah.
+415.04-418.21 | SPEAKER_00: Anytime I do that, I play songs...
+418.85-420.26 | SPEAKER_00: On my, um...
+420.90-429.63 | SPEAKER_00: When I'm doing an interview, I always play wave files. I put them in, and it's funny that when I interview a mixer, I interviewed this mixing engineer, Andy Wallace.
+430.18-444.00 | SPEAKER_00: And people comment, "Wow, that the song sounded amazing." Well, not only are they great mixes that he did, but I'm using wave files in there, and people notice that. And these are wave files from...
+444.48-460.10 | SPEAKER_00: From, you know, original encoding, not, not remastered things that Spotify keeps doing and adding a bunch more top end and things like that, that these are the, these are actually the, the original WAV files from off the CD that I ripped.
+460.86-462.05 | SPEAKER_00: Twenty years ago.
+462.50-471.16 | SPEAKER_01: What's your current, and people are really curious about that. So, what's your current stack? What are the tools you use? What's your DAW? What's the audio interface? What are the mics?
+471.16-473.29 | SPEAKER_00: So I use Pro Tools.
+473.31-483.97 | SPEAKER_00: For the most part, but I also use Logic and Ableton. I've got all, I've got all those. So you're mostly on a Mac. I'm only on a Mac. Only on a Mac. Only on a Mac. I'm only on a Mac. The opposite, although...
+483.97-484.78 | SPEAKER_01: Although we have...
+484.78-488.85 | SPEAKER_00: Multiple PCs because my kids use PCs.
+488.85-490.19 | SPEAKER_01: Yeah, just to, well...
+490.19-492.20 | SPEAKER_00: They do it for gaming. They like to game.
+492.20-493.63 | SPEAKER_01: Right. That's true.
+493.65-495.78 | SPEAKER_01: But like in terms of editing...
+496.38-498.90 | SPEAKER_01: I hate how good Mac is.
+499.53-503.03 | SPEAKER_01: And just integrating the hardware and the software just work well together.
+503.03-531.58 | SPEAKER_00: If I didn't have a Mac, honestly, I wouldn't be talking to you right now because I got a G3. So the only good thing that a major label did for me is when my band was on UMG and they bought a, they bought me a G3 and a, and an SM7 and Pro Tools Digi 001, the first prosumer Pro Tools thing. And I learned how to use Pro Tools, and that allowed me to learn how to edit video and become a record producer.
+532.10-535.96 | SPEAKER_00: So I got to give it, give it to Macs for that.
+535.96-537.94 | SPEAKER_01: Pro Tools, I mean, that's still the...
+538.31-544.29 | SPEAKER_01: That's kind of the industry standard. Yeah, I gotta ask you because I know I've never used Pro Tools. I've used...
+544.80-563.79 | SPEAKER_01: Again, I'm a caveman. I've used Reaper, I've used Studio One. That's recently I've used that. And for the most time, I've used Ableton Live. I feel like I'm using one percent of the power of the tool. Like Ableton Live makes me feel like I'm literally just pressing the record button.
+563.79-567.96 | SPEAKER_00: Ableton's amazing. It really is. It is, yeah. But I feel like that...
+567.96-588.77 | SPEAKER_01: I mean, it's designed for people that are doing like all kinds of meaty stuff and like looping and the, what is it, the push button with the, with the beats and the, it's, it's, I mean, I sound, I sound really out of touch, but it's just the power is incredible. Also, it's, I think it's...
+589.18-600.97 | SPEAKER_01: It's not just for recording, it's also for live performances. Yes. So this is why Studio One has been a little bit nicer for me because it's simpler made for recording, more so.
+601.56-605.97 | SPEAKER_00: Any DAW that you get used to, Lex, that's just...
+606.24-626.30 | SPEAKER_00: Using it, yeah, and yeah, you have to become a master at the things if you want to be a recording engineer or producer. You, you become an expert. A lot of the, you know, Finneas and Billie Eilish, I think that they use Logic. That's their DAW that they like to use. And Logic, you know, a lot of pros use Logic. You know, I, I fire up Logic every couple of days and I use it for things.
+626.82-641.97 | SPEAKER_00: I have, I have it on my laptop here, and I, I have Pro Tools and Logic on my laptop. I use both. I use Pro Tools mostly, though. But Pro Tools, that's where you feel like at home? I'm an, I'm an expert in Pro Tools. Are you using any, uh, emulation?
+641.97-644.04 | SPEAKER_01: The amp sims, or it's...
+644.04-654.70 | SPEAKER_00: It's all real amps. No, I use amp sims on my laptop here when I travel and things like that. I use Neural DSP, which I just did a video at their headquarters in Helsinki.
+655.34-662.91 | SPEAKER_00: And their, um, the CEO, Doug Castro, is a friend of mine. I actually talked to him today, as a matter of fact.
+663.58-670.27 | SPEAKER_00: And I have a Kemper amp sim, you know, a modeler. I have an Axe-Fx.
+670.72-688.74 | SPEAKER_00: I've got a Helix. I pretty much have all these things, but for me, I can... I have a hundred amps in my studio, so... and I have mics set up all the time on cabs and stuff. I have a hundred amplifiers, real amplifiers. Real? Yeah. Wait, sorry, a hundred? I have a hundred. Yeah, about a hundred, maybe ninety-five.
+690.02-698.86 | SPEAKER_00: How did, how does one go, get to that level, collecting and being? I'll be sixty-four in, uh, in April, so.
+699.97-705.32 | SPEAKER_01: I don't let go. No. Why would you get to a hundred? Like, is it, is it tone difference?
+705.32-711.14 | SPEAKER_00: Yes. So everything does one thing really well. And so it'd be like.
+712.13-740.64 | SPEAKER_00: Okay, so I have this Marshall JCM 800 that's modded that, that does this one thing. It's got great mids and it's good for this kind of a tune. So I will pull that out. Then it's like, no, I need more of like a scooped metal tune sound that's more like Metallica or Dream Theater or something. So, oh, I'm gonna pull out my, my, uh, Mesa, Mesa Boogie. Or I need a, uh, I need something that's chimey that's more like Brian May or like The Edge. I'm gonna pull out my Vox AC30.
+740.64-742.94 | SPEAKER_00: So everything, and, and.
+743.36-754.44 | SPEAKER_00: That's, that's why I have so many amps, because they all do. Every amp I have does one thing really well. If it doesn't do well, do it well, I get rid of it. And I'm down to a hundred.
+754.44-757.70 | SPEAKER_01: Down to a hundred. It's only a hundred. Yeah, but I could get...
+757.70-760.44 | SPEAKER_00: By with probably seventy-five.
+760.44-764.39 | SPEAKER_01: Come on, but then you're really running the risk of not having just the right.
+764.39-765.45 | SPEAKER_00: You.
+765.45-771.90 | SPEAKER_01: But you're using emulation, so that's, that's great. I mean, I'm not, but there's the other side of it, which is the guitar.
+773.63-784.07 | SPEAKER_01: I told you offline, I think having multiple guitars is cheating, but whatever. Nobody agrees with me on this. I only have like one. I do have some side pieces.
+784.07-785.96 | SPEAKER_00: Um, but one main.
+785.96-794.85 | SPEAKER_01: Just Strat, what do you want? American Strat. I said I would never do this, but I was in a guitar store. I live next to a guitar store in Cambridge.
+795.36-803.06 | SPEAKER_01: And one day I would always stop by. I don't know why. I just, just look at the guitars. Like, I don't really know why exactly.
+803.06-806.96 | SPEAKER_00: Just be in the aura of these great instruments, and I...
+806.96-813.54 | SPEAKER_01: They, they brought in this American Strat that had these different shades of, it was like a silver.
+815.36-821.05 | SPEAKER_01: And I just, I've never had this feeling. They talk about love at first sight. I just...
+821.05-826.97 | SPEAKER_00: Fell in love with the guitar. Can you just speak to the kind of guitars you have and you love?
+826.97-828.49 | SPEAKER_01: I pretty much have.
+828.49-830.43 | SPEAKER_00: Mainly...
+831.26-835.39 | SPEAKER_00: Uh, old school guitars, right? So I have...
+836.22-840.93 | SPEAKER_00: Gibsons, I have Fenders, I have PRS guitars.
+841.54-843.14 | SPEAKER_00: And then I have...
+843.55-854.14 | SPEAKER_00: I have two Gibson acoustics. I have a 1957 Country & Western that I've had for probably thirty-some-odd years. It's a great guitar. And I have a J-45 Gibson.
+854.62-882.34 | SPEAKER_00: And I have a Martin D-28. So I only have three nice acoustics. Then I have a Guild 12-string, and I have a Guild Nashville-tuned guitar. So the low strings are up, up the octave. So the E, A, and D and G are up the octave. That's Nashville tuning. Six string, though. Like basically what David Gilmour plays on "Comfortably Numb" in my video, he plays a Nashville tune, but with one variation. The low E is up two octaves.
+882.94-885.09 | SPEAKER_00: So, um, he...
+885.82-896.57 | SPEAKER_00: He demonstrates actually the, this is how he wrote "Comfortably Numb." The, the chorus part of it was with this particular guitar that he's playing in the video. What can you say about...
+896.76-897.98 | SPEAKER_00: Like the different...
+897.98-900.02 | SPEAKER_01: Uh, feels at the guitars.
+
+0.00-4.03 | SPEAKER_00: Acoustics have, like, what? How do you know which one to pull out?
+4.03-19.36 | SPEAKER_01: It depends on the kind of part that I'm playing. If I want something with really tight midrange, with not, that doesn't have a lot of low, low bass, this particular old Gibson that I have, the '57, I will pull that out. It's got very balanced.
+19.94-32.10 | SPEAKER_01: Strings and midrange doesn't have a lot. It doesn't have a booming bottom end, booming low E string or anything, or A string. So it depends on what, what kind of sound I'm looking for.
+32.10-33.90 | SPEAKER_00: More about sound versus feel.
+33.90-44.35 | SPEAKER_01: Yeah, all my guitars play equally well. I have them all set up to where they play well. I have a signature Gibson guitar that I've had for...
+44.96-55.98 | SPEAKER_01: Five years now? When you say Gibson, Gibson Les Paul? Gibson, it's a double-cut Les Paul Special, yeah, with P90 pickups. I don't know what double-cut means, but it sounds...
+55.98-57.33 | SPEAKER_00: Cut, cut, two, um.
+57.72-63.10 | SPEAKER_00: Oh, yeah, as opposed to a Les Paul that has one cut. So it's a Les Paul Special that has two.
+63.10-64.76 | SPEAKER_01: I have it over there.
+64.76-67.42 | SPEAKER_00: That's the... yeah, that's the... all right, nice.
+67.42-73.96 | SPEAKER_01: When you play this, you're going to be like, "Oh my God, this is butter." And now I'm... I can... I said it's cheating. I don't...
+73.96-75.33 | SPEAKER_00: And what amp do you play through?
+76.36-83.20 | SPEAKER_00: Do you play through an amp sim, or do you have, what do you have? Like a... this is going to be an amp... yeah, yeah, I use Bi-Amps effects. I'm sorry.
+83.62-86.03 | SPEAKER_00: Lex, I, I use amp sims too, so.
+86.03-101.21 | SPEAKER_01: I just got the new John Mayer Neural DSP plugin today that I have not tried out. He did a modeling of all his amplifiers that the Neural DSP did. And it sounds great. John played it. It sounds just like his amps.
+101.50-102.28 | SPEAKER_01: Incredible. John's great.
+102.28-105.98 | SPEAKER_00: I've been fortunate enough to have dinner with him a few times.
+106.85-108.03 | SPEAKER_00: And, uh, outside of being...
+108.03-119.97 | SPEAKER_01: an incredible musician. He's also conversational. He's just... yes, I've known John since he was... he... he lived in Atlanta, but when he got signed, and I knew John from way back then, probably in the early 2000s. I think he doesn't get enough...
+119.97-123.90 | SPEAKER_00: credit. Like he's one of the greatest living...
+124.36-125.54 | SPEAKER_01: guitarists.
+125.68-127.55 | SPEAKER_01: Fantastic guitar player. Absolutely.
+127.55-132.64 | SPEAKER_00: And a celebrator, if that's a word, of great guitar playing.
+132.66-133.41 | SPEAKER_00: Absolutely.
+134.02-149.03 | SPEAKER_00: By way of advice, you started your YouTube channel in your mid-fifties and found incredible success. You've had essentially multiple careers. Is there some wisdom you can extract from that?
+149.03-152.51 | SPEAKER_01: So my, my theory is that...
+155.07-160.13 | SPEAKER_01: Somebody's got to be successful, so why can't it be you? That was, that was...
+162.30-174.34 | SPEAKER_01: That's, that was my, when I started my channel, I mean, I didn't start it to... it started by accident with the Dylan video. And, um, and really, so many people reached out to me. I started it six months after that viral video.
+174.88-182.11 | SPEAKER_01: So many people wrote to me, "Can you teach me this?" Pro musicians, well-known ones that you would, who you'd know, "Can you teach me this?"
+182.85-185.06 | SPEAKER_01: I can't teach you what Dylan did, but I can.
+185.63-215.28 | SPEAKER_01: I can teach you relative pitch, develop your ear that way. But then I had conservatories writing to me about this stuff from all over the world. "How did you teach Dylan this?" Because we made about four different videos, and they got more and more sophisticated. And so I thought, okay, I'll make some YouTube videos and explain this stuff. This is really why I started. So I didn't have to keep... I couldn't answer the emails. There were so many of them. So I just started making videos on how to train your ear and music theory.
+215.28-222.11 | SPEAKER_01: And that's really how I started my channel. And, and my wife was like, "What are you doing?" I said, "I'm making YouTube videos. Why?"
+222.62-237.98 | SPEAKER_01: So I don't have to keep telling people how I did this stuff. And then all of a sudden, you know, I had four thousand subscribers the first month, another four thousand, then hit a hundred thousand after a year, and then six months later, two hundred thousand, then three months later, three hundred thousand.
+238.98-248.22 | SPEAKER_00: So I think there, one thing that should be said, that in modern culture for young people, a lot of them will see YouTube and TikTok and Instagram.
+248.77-260.61 | SPEAKER_00: And they kind of want to be famous. They want to get the clicks and the views and so on. And that's the thing they chase and optimize. I think the thing that you're leaving unstated, perhaps,
+261.25-266.24 | SPEAKER_00: is that you spent many years pursuing the mastery of a craft.
+267.26-269.73 | SPEAKER_00: And there's a lot of value.
+270.34-290.14 | SPEAKER_00: To getting good at something, absolutely. Offline, you can actually reveal your journey online, but the thing you're chasing is not, uh, fame. It's getting good at something. And I think actually what happens is even if the thing you get good at
+291.84-297.15 | SPEAKER_00: is not the thing that you become famous for, if that's the thing that ends up happening.
+297.89-319.81 | SPEAKER_00: It's still like getting good at one thing somehow relates to getting good at another thing. Somehow they'll lead you to get better at getting better at the next thing, at the next thing, at the next thing. But if you're just chasing fame and trying to figure out how do I do the viral thing or so on, it just seems to, you might actually get there, but it'll be unfulfilling and not long lasting.
+320.19-325.89 | SPEAKER_01: My theory of my channel has always been make videos on things I'm interested in and
+326.78-335.71 | SPEAKER_01: At first I thought, oh, nobody's gonna watch an old white-haired guy on YouTube. Yeah, that was kind of my thing. Well, that was not correct, um.
+337.44-338.56 | SPEAKER_01: And.
+339.01-363.04 | SPEAKER_01: Then it's like, we'll just make videos on stuff I'm interested in. It just so happens that other people are interested in the same things I'm interested in, and keep learning. And when I produced bands, I never let them take my picture, ever. I never let them record me in the studio. There's virtually no pictures of any band I ever produced. So from nineteen ninety-nine to twenty-fifteen, when I, December twenty-fifteen, when that Dylan video came out,
+363.52-370.97 | SPEAKER_01: No one took my picture. There were no pictures of me on the internet. You're fully behind the camera kind of guy, being like, no.
+371.11-372.80 | SPEAKER_01: No pictures, no.
+373.50-377.96 | SPEAKER_01: No pictures with people. "Hey, can we take a picture?" I said, no, no pictures with people.
+378.37-379.21 | SPEAKER_00: Like.
+379.43-382.37 | SPEAKER_00: You're the talent. You're the face.
+383.07-409.22 | SPEAKER_00: No, I mean, but again, the thing you're leaving unstated there is, is like you spent a lot of years teaching music, like really exploring music, trying a music career of like trying to create, trying to produce, trying to be a musician, and all these, not just trying, like being, getting extremely good at it. I just, I think in modern culture,
+409.89-424.95 | SPEAKER_00: There's a sense you want to skip that part. I want to be famous. I want to, you know, this. And that is a thing that's not going to be, in most cases, effective as a primary thing to chase. So,
+424.95-426.34 | SPEAKER_01: I
+426.82-447.58 | SPEAKER_01: have an undergrad in classical bass. I have a master's from New England Conservatory in jazz guitar. Then I taught college for, I taught jazz studies for five years from eighty-seven to ninety-two. Then I got a publishing deal, my first publishing deal in nineteen ninety-two with PolyGram Publishing. And then I became a producer when I was thirty-seven, having no idea how to engineer. I taught myself engineering.
+448.61-450.08 | SPEAKER_01: And then YouTube.
+450.72-452.69 | SPEAKER_01: I taught myself how to edit videos.
+452.69-454.50 | SPEAKER_00: And then you taught yourself how to interview.
+454.50-458.50 | SPEAKER_01: And I taught myself an interview. I'd never done an interview before, and it was like, an interview or what?
+458.50-461.22 | SPEAKER_00: You haven't just done that. You've taught yourself.
+461.66-465.11 | SPEAKER_00: Not how to do just YouTube, but YouTube Shorts. Yes.
+465.11-468.54 | SPEAKER_01: Different, totally different thing, totally different skill.
+468.54-470.59 | SPEAKER_00: And then not just YouTube, but like.
+471.07-475.74 | SPEAKER_00: How to be like a, there's a, because you're both a YouTuber.
+476.29-493.31 | SPEAKER_00: And like a musician who posts stuff on YouTube. YouTuber means like you're thinking about stuff like thumbnails. Which I make my own thumbnails. I've always made my own thumbnails. By the way, before I forget, I think I speak for the entirety of the internet.
+493.89-506.03 | SPEAKER_00: Thanking you for how you introduce your videos and how you close them. Because you, this is a big part of YouTube where people have a thirty-minute introduction to to a five-minute video. You just go straight in.
+506.94-529.20 | SPEAKER_00: That's really wonderful. That's, I mean, on all fronts. I mean, I suppose it has to do with the production and your skill that you have of understanding cutting, cutting the fat. The next song. Yeah, cutting, cutting the fluff, cutting the bullshit. I'll just get straight to the core of the thing. I've heard you talk about maintaining friendships for a long time. You said never waste a friendship. Can you elaborate on that? Yeah.
+529.20-537.02 | SPEAKER_01: That's one of my things is that I really value the time I've spent with people, friendships, and keeping in touch with people. I...
+537.66-550.91 | SPEAKER_01: talk to each one of my siblings multiple times a week. I talk to my sisters probably every night, my two sisters. I have friends from college. I got friends from growing up. I have friends from, you know.
+551.52-560.97 | SPEAKER_01: both colleges I went to. I have friends from all different eras of my life that I keep in touch with and visit whenever I can. And you must have met some incredible
+560.97-565.95 | SPEAKER_00: humans and incredibly weird and interesting humans throughout your life.
+567.39-572.48 | SPEAKER_00: So it's worth it, the effort to, to connect and reconnect.
+572.48-581.82 | SPEAKER_01: I mean, it's pretty much everything in life. Nothing means anything more than the friendships that you make and your family. Yeah, what's the point of this whole thing? That's right.
+582.85-583.97 | SPEAKER_01: What's the role of music?
+583.97-585.21 | SPEAKER_00: In, uh,
+585.50-586.36 | SPEAKER_00: in the human
+586.61-587.59 | SPEAKER_00: experience.
+587.59-593.44 | SPEAKER_01: Well, hopefully to enlighten people and to create the soundtrack of their life.
+593.44-594.42 | SPEAKER_00: It is, right? Yeah.
+594.59-602.14 | SPEAKER_00: Music, music does something. I get, sometimes when I'm alone, I'll listen, listen to a song.
+602.94-605.79 | SPEAKER_00: And there's nothing quite like a song.
+607.04-621.54 | SPEAKER_00: That makes me truly feel, like feel alive in whatever that is—sadness, or hope, or excitement. Or, um, when I'm working out, listening to Rage Against the Machine, like protest.
+622.62-634.75 | SPEAKER_00: Or as I was listening to the Metallica, I was really into the set that they played in Moscow. Just hyped, like truly hyped. I was like pacing, listening to it.
+636.10-646.62 | SPEAKER_00: And there's nothing like that. I've never found anything. And I don't know what that is in the human psyche that's that. But I'm so glad we found it. We humans created instruments.
+647.65-659.04 | SPEAKER_00: They can vibrate strings and together create harmonies and melodies, and ones that reverberate through generations, and they carry that.
+660.97-662.22 | SPEAKER_01: One of the greatest things that humans
+662.49-663.30 | SPEAKER_01: did.
+664.00-664.93 | SPEAKER_01: Creating music.
+664.93-686.82 | SPEAKER_00: And all of that led up to you, some guy, being listened to by millions of people on the internet. This is all a simulation, Rick. And I've been a fan of yours for a long time. Like I told you, this is crazy to meet you. Same, Lex. Thank you for everything you do for the world, for celebrating music.
+686.82-701.70 | SPEAKER_00: For helping us discover and rediscover some of the incredible musicians and songs that have been created over the decade, over the centuries. Thank you for being who you are, and thank you for talking to me. Thanks, I appreciate it.
+702.40-720.90 | SPEAKER_00: Thanks for listening to this conversation with Rick Beato. To support this podcast, please check out our sponsors in the description, where you can also find links to contact me, ask questions, give feedback, and so on. And now, let me leave you with some words from Friedrich Nietzsche, as I often do.
+721.86-725.66 | SPEAKER_00: Without music, life would be a mistake.
+726.82-731.42 | SPEAKER_00: Thank you for listening, and hope to see you next time.

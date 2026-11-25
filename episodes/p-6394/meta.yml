@@ -1,0 +1,33 @@
+title: 2026 年的人工智能：模型竞争、推理训练与智能体
+guest: Sebastian Raschka、Nathan Lambert
+guest_role: 机器学习研究者；艾伦人工智能研究所后训练负责人
+tags:
+  - ai-research
+  - coding-agents
+  - hardware
+  - ai-safety
+  - interview
+  - deep-dive
+  - technical
+summary: >
+  Sebastian Raschka 与 Nathan Lambert
+  讨论开放模型、中美竞争及语言模型的训练方法，解释可验证奖励、推理计算和工具调用的作用与局限。两人也谈到编程与学习、硬件成本、机器人安全，以及自动化研究和通用人工智能预测中的不确定性。
+core_ideas:
+  - 开放权重便于部署和改造，但不等于公开训练数据、代码与完整过程。
+  - 预训练、后训练和推理计算都可能改善模型，选择取决于效果、用户规模与成本。
+  - 可验证奖励强化学习能改善解题表现，数据污染使能力来源更难判断。
+  - 智能体依赖工具权限、可靠接口与上下文管理，离稳定完成任意工作仍有距离。
+  - 自动化既能减少琐事，也可能影响学习、工作乐趣和人的自主感。
+id: p-6394
+source: lex-fridman
+source_title: "#490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI"
+published: 2026-02
+published_sort: "20260201"
+duration: 4h40m
+url: https://lexfridman.com/ai-sota-2026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ai-sota-2026
+status: generated
+article_path: episodes/p-6394/article.html
+base: /episodes/p-6394/
+visual_notes: false
+thumbnail: https://lexfridman.com/wordpress/wp-content/uploads/powerpress/lex_fridman_podcast_cover_3000.jpg
+generated_at: 2026-11-25T22:19:35.870Z

@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-11-25T03:03:22.732Z
+refreshed_at: 2026-11-25T18:09:19.905Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 5
-done: 4
+done: 5
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -259,8 +259,12 @@ episodes:
 
 
       Special Guests: Maggie Wang and 徐熠兴.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-25T18:21:50.161Z
+    transcript_job_id: 31206767-0dd5-45e5-9f93-8af224793c24_2twcy1g5e29vuno8hs_023b0e76f17a4b1f994be4170bfc5bdb,8fe25e63-bb4b-4cd8-ba32-08d42e3b2ebe_2sn0bgg5e2fcn48934_17fd2d4b4d1c4f1d9a491bcf656b9f48,3faa35ed-6216-4519-a767-b9d31f2cb7fa_2twj9pg5e2jkzr51xc_9fb94f0e29cc40529636452340a655b4,1d96aad5-866b-42af-bf1f-8ff9a0652917_2twjdjg5e2ont63w8w_8e05cde4b4b74ac1a8d9a2216c69ed03,3ff3328e-f75e-4afa-9f44-56f18fc6ed35_2u6fbtg5e2t3yznn5s_74d34badc7b64e2b9c1530818f1d3a17,e2a335ef-1c04-42d4-a5ff-3565de1ab581_2sn0xsg5e2xfciob28_8afbb7609de3460fbfcb5fc1cc9f037c
+    transcript_completed_at: 2026-11-25T18:30:55.361Z
   - id: bc105fa7-23de-4c70-a338-6d70daf9aed1
     guid: bc105fa7-23de-4c70-a338-6d70daf9aed1
     title: E259｜机械神教与反人性策略：华尔街量化巨头的AI之路

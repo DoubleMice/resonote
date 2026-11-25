@@ -1,0 +1,27 @@
+title: 朝鲜黑客被指盗取 Binance 64 亿美元：资金每转一手，冻结为何更难
+guest: Taylor Monahan、Austin Griffith
+guest_role: 安全研究员；以太坊基金会开发者
+tags:
+  - panel
+  - technical
+summary: |
+  Taylor Monahan 结合追踪被盗加密资产的经验，解释早期冻结、跨链流动和服务方配合之间的关系。节目还讨论稳定币杠杆、以太坊密码学迁移，以及 AI 模型的使用成本和潜在经济影响。
+core_ideas:
+  - 被盗资金在事发初期更容易直接冻结，进入洗钱网络后，追踪成本上升且可能涉及中间人。
+  - 追踪人员需要在资金经过可配合的服务之前准备证据；自动化识别不能代替冻结权限。
+  - 稳定币借贷中的杠杆会放大市场涨跌的影响，抵押品和偿债选择关系到系统风险。
+  - 以太坊讨论迁移签名方案时，需要权衡密码学安全与普通设备运行节点的负担。
+  - 比较 AI 模型要考虑完成同一任务的用量和订阅限制；其未来收益与分配仍有争议。
+id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
+source: unchained
+source_title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
+published: 2026-11
+published_sort: "20261125"
+duration: 1h28m
+url: https://pdrl.fm/98e0b1/traffic.megaphone.fm/LSHML9748430360.mp3
+status: generated
+article_path: episodes/b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f/article.html
+base: /episodes/b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f/
+visual_notes: false
+thumbnail: https://megaphone-images.spotifycdn.com/podcasts/b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f/image/55ae5888a520e9591d70a7638a5a5bc0.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress
+generated_at: 2026-11-25T22:03:10.623Z

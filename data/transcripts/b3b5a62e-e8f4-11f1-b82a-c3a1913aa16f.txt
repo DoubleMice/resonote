@@ -1,0 +1,433 @@
+0.03-13.66 | SPEAKER_00: I'm so convinced of this. I think that we are severely mispricing intelligence because we've pointed intelligence at a thing that you can deflate faster than you can sell it.
+17.98-27.10 | SPEAKER_00: Hey everyone, I'm Tim Marcin, and welcome to Uneasy Money. Because what happens on-chain never stays on-chain. Or again, here is a word from the sponsors that make this show possible.
+27.36-47.41 | SPEAKER_01: This episode is brought to you by CAPE, America's privacy-first mobile carrier. Same premium service you'd expect from any other carrier, but designed so your number, your location, and your data actually stay yours. Get thirty-three percent off six months at cape.co/unchained.
+47.41-65.73 | SPEAKER_00: I'm here with my co-hosts, Taylor Monahan and Austin Griffith, builder and developer at Ethereum Foundation. Taylor is a security expert, erstwhile wallet enjoyer. So our first segment is...
+66.46-67.71 | SPEAKER_00: Jensen's back.
+68.64-71.55 | SPEAKER_00: Um, and the memes have been...
+72.48-99.97 | SPEAKER_00: Just exceptional. If, if nothing else, it was worth it for the memes. I'm not sure. I'm not sure how the board and Jensen feel about it. So Nvidia's board reinstated Jensen. If you missed the deinstatement, it was last week where he was deinstated from the company as CEO, eleven days after he resigned over affairs.
+100.48-110.98 | SPEAKER_00: Parenthetical S there, because it's got one and yeah, well, started with one, and then like someone, someone, I saw some really funny comments about, like, you know, if you have
+111.39-115.75 | SPEAKER_00: two chickens in your house, there's probably more chickens or something. And it was just like...
+115.75-117.44 | SPEAKER_02: Yes.
+117.82-120.11 | SPEAKER_02: There's never, it's never just one.
+120.11-145.02 | SPEAKER_00: Yeah, like, like, yeah. If there's two rabbits in your farm, as, as Austin is on the farm right now, there's probably more than two rabbits out there. So one was with a woman that U.S. intelligence reportedly suspects of spying for China. That's from Fortune. And Trump says that he convinced them.
+146.38-162.14 | SPEAKER_00: To, to put it back, I guess, uh, presumably, um, the stock ripped, uh, and yeah, the timeline, it's just memes all the way down now. Um, like, like such good memes, the memes are just absolutely amazing. Yeah. So, yeah, so.
+162.14-172.19 | SPEAKER_02: Heard, I heard the, they were like, well, if your CEO has an affair with a Chinese spy, you have to fire them, but then...
+172.77-176.41 | SPEAKER_02: Then what do you do? You know, it doesn't like...
+176.41-177.73 | SPEAKER_01: You.
+177.73-189.69 | SPEAKER_02: Well, obviously, you have to find a new CEO. And then if he's like, you know, who are you? If he's the best candidate, I guess you just rehire him, right? Is that, that's what we're doing?
+189.69-219.18 | SPEAKER_00: Yeah, it was, it was, it was a wide, they cast a wide net. They looked for the best guy. I thought one of the best things, one of the best things was, I think Elon posted this. It was like a job, like a, you know, JV for a guy to run the Gigafactory. And it was like, you must have like, you know, thirty-five years of experience running a company that you bootstrapped, and a penchant for leather jackets, et cetera, et cetera.
+219.18-227.09 | SPEAKER_00: Yeah, it's been, it's been funny. So, look, I'll be honest, I did not think this was going to happen.
+227.09-231.71 | SPEAKER_03: It was like, what, twenty percent or ten percent on Polymarket? It was not, it was not priced in.
+231.71-241.69 | SPEAKER_02: No, because once they fired him, I was like, all right, like they, they, you know, and like, yeah, it's over. And also, I, I kind of assume that clearly there was... I mean, I think we all knew there was...
+241.98-256.77 | SPEAKER_02: The story. There wasn't just one affair, but obviously, there was like clearly there's something else that happened that was not just the affair or affairs even, right? Because you don't fire like a generational CEO for...
+256.77-261.93 | SPEAKER_03: Do you? That's my question. I have this big question. Maybe I'm like out of touch, but do you like...
+261.93-287.36 | SPEAKER_00: I was like, sorry. I think when, I think when it was with staff, that probably shifts the calculus a bit. Because now it's like, okay, what if he's fucked like twenty staff members, right? Like, should we just get ahead of this? Because you know, you can kind of cut, you can kind of just like nip it in the bud and ish, like the bud's growing a little bit. You know, it's, it's got some flowers on it.
+287.36-311.49 | SPEAKER_00: If there's twenty chickens in the house and you catch the three, you can kind of squash it. And like people will probably stop looking ish, right? And at least from the company's perspective, you know, the story goes away a little bit. It becomes about like finding a new CEO, et cetera. Obviously, you know, it's gonna follow him around. Now the question is like, you know, you've replanted the flower. So what if there are twenty affairs like...
+311.90-317.06 | SPEAKER_00: And they just keep coming out. Like you're just, you're on the ride at that point. You're like, fuck it, let's go.
+317.22-337.87 | SPEAKER_02: I assume that the, the board has to, and this is what I assume they did the first time around, right? I assume they analyzed the risk, and I assumed that the, because it was, there were, there were women that were his, like, direct reports, or at least also working for the company, um, that, that the board assessed the risk and was like, it's not worth it. Isn't everyone in Nvidia
+337.87-345.41 | SPEAKER_00: his direct report? Doesn't he have like ten thousand employees? At least not like the name, especially the most attractive females.
+345.41-346.46 | SPEAKER_03: Yeah.
+346.46-353.57 | SPEAKER_00: Anyone who is in Nvidia directly reports to him, so you know, he's in close proximity to the whole company.
+353.57-361.01 | SPEAKER_02: Now I just have questions, though, because clearly they, they assess the risk, and then they continue to assess the risk, and they're like, actually...
+361.01-361.97 | SPEAKER_01: You know what? I think I...
+361.97-370.98 | SPEAKER_02: I think this is manageable. I think this is a manageable amount of risk relative to wiping whatever. I mean, when they fired it, right? What was it like? A trillion dollars off?
+370.98-375.10 | SPEAKER_00: Trillion dollars, one, two trillion, some incredible. So they were like...
+375.88-378.03 | SPEAKER_00: Yeah, no, but it will be.
+378.03-379.01 | SPEAKER_02: It will be.
+379.38-384.54 | SPEAKER_00: It will be. It'll be. It'll. It'll go up. So I think. I think like, um, you know.
+385.34-387.87 | SPEAKER_00: There's, there's a couple of...
+389.09-414.11 | SPEAKER_00: Things here, like you know, the, the parallel to the Sam Altman drama, right, where like his nonprofit board said, like you know, he's a liar and a conniving, you know, something such and such or whatever, um, and then that was interesting because you had like the people who at the time, you know, were invaluable. Uh, they've, they've...
+414.59-435.48 | SPEAKER_00: devalued their own value a little bit in the intervening year or whatever as AI has gotten better at doing research. But at the time, you had no choice but have humans to do AI research. And all of the AI researchers are like, listen, board, whoever the fuck you guys are, if you fire this guy, we'll just go, right? And then Microsoft was like,
+435.48-449.09 | SPEAKER_00: We have some offices already prepared for you, right? And so, you know, that one felt like it very quickly escalated, and, and it was, you know, became this like taunt that, you know, they were trying to like get through this.
+449.57-463.12 | SPEAKER_00: At least from my perspective, maybe I'm naive, I just saw zero chance that he was coming back. Like I was like, twenty percent was too high for me. I was like, once they fired him, it wasn't like the...
+463.12-489.00 | SPEAKER_00: It's not the same as OpenAI, which is, you know, was certainly at that time much smaller company. And, and, you know, like, I would say he's a more generational founder than Sam Altman even, which is impressive, right? But it didn't feel like the whole company was going to like rally and say, we're going to leave and go to AMD or something. You know, it just didn't have that vibe. But it sort of felt like, okay, we've...
+489.00-494.24 | SPEAKER_00: Bad things have happened, we've capitulated, and we're going to move on with our lives. And yet here we are. So.
+495.14-496.10 | SPEAKER_00: I don't know.
+496.32-508.89 | SPEAKER_03: The clip where he's like in the company and everyone's cheering and like someone superimposed like their, all of their net worths being up twenty percent at that moment at the same time, I thought that was the best.
+508.89-516.19 | SPEAKER_00: Yeah, that's pretty good. That's pretty good. But yeah, it just... it seems to me like the world is insane.
+516.80-534.72 | SPEAKER_00: Like, it just, like, this would never have happened, you know, maybe I'm just an Ark, as you say. Like, people didn't used to get fired and rehired, like, multi-trillion dollar... we didn't even have multi-trillion dollar companies, let alone, like, if you fired someone, they stayed fired, like...
+534.78-536.98 | SPEAKER_02: This is what I mean. What is happening? What is going...
+536.98-540.43 | SPEAKER_00: up, like that part, also rehiring part is...
+540.43-548.75 | SPEAKER_02: The rehiring is weird. I mean, but let's also be real, the firing for an affair is also a relatively new thing, but.
+548.75-551.17 | SPEAKER_00: It is true. Yeah, all of the news.
+552.11-570.79 | SPEAKER_00: Yeah, people got impeached, but they didn't actually... they didn't... they got impeached, but they didn't kick him out. They didn't kick him out. He got to stay president, man. He got to stay president. Imagine if they de-presidenced him, and then they were like, "Actually, no, we're gonna put him back as president."
+570.79-575.97 | SPEAKER_03: Like, that would be fucking weird, man. Like, once it's a one-way door, you fire...
+575.97-580.29 | SPEAKER_00: CEO, you don't get to just come back like a week later and be like, "Actually, sorry, man."
+580.77-585.73 | SPEAKER_02: In the Sam, I think OpenAI was slightly different, just because there was like an actual...
+586.14-588.19 | SPEAKER_02: So it felt like there was like a...
+588.99-608.51 | SPEAKER_02: I don't know, it just felt different. Like it felt like they, they kicked him out, and then it was like, okay, well, that was, that was a bad choice, that was the wrong move. And so then other people had to leave, right? It was like a whole turnover situation where it's like, this is the road that we're going down, and it was sort of the firing of Sam was the, the first step on this choosing this path, right?
+608.51-613.62 | SPEAKER_00: Correct, yeah. It was like the, the, the, you know, the safety crowd taking over or something like that.
+613.62-625.79 | SPEAKER_02: Exactly. Here it feels different, and I just... I'm wondering, like, if your board fires the CEO and then, and then very rapidly figures out that was a, that was a dumb thing to do and reinstates him.
+626.32-627.46 | SPEAKER_02: We fire the boss.
+627.46-631.97 | SPEAKER_00: Well, my, my question is, like, what were your, what were your priors? That's what I mean.
+632.05-635.75 | SPEAKER_00: What were your priors that you were like?
+635.75-637.35 | SPEAKER_03: Yeah, other than my question.
+637.35-649.41 | SPEAKER_00: Change. Like, what did you think was gonna happen? Did you think the price was gonna go up? That people gonna be like, "Oh, thank God, they got rid of that philandering guy. Now I'm gonna buy the stock." Like, no, man. Like, what? Like...
+650.27-658.14 | SPEAKER_00: And you think you had no choice, and then you were faced with the consequences of your actions, and you capitulated? I don't know. I don't know, man.
+658.14-662.14 | SPEAKER_02: Maybe I'm crazy, and I feel like I'm like the woman in the room, and I should be crazy.
+662.66-673.06 | SPEAKER_02: I should be like, like being like, yeah, we fire CEOs for having affairs, but I'm just like, I don't know. I was... I didn't feel like anyone was calling for his firing in the first place.
+673.22-675.87 | SPEAKER_03: If you were the board, what would you do, Tay?
+676.29-677.30 | SPEAKER_02: I would analyze.
+677.30-678.40 | SPEAKER_03: Thanks.
+678.40-684.22 | SPEAKER_02: Like I would analyze the upside and downside, put it like very objectively, right? And the thing is, like...
+684.90-693.89 | SPEAKER_02: I don't know if there's... if it's hard to say because there is theoretical risk with both the spying angle and the direct report angle. However,
+694.50-697.32 | SPEAKER_02: It doesn't seem like either of those risks have actually...
+697.32-706.49 | SPEAKER_00: The spying angle is a trillion times worse, man. Like I, like I think one Chinese spy sex scandal is like...
+706.49-708.71 | SPEAKER_03: Ten affairs, twenty affairs.
+708.71-735.27 | SPEAKER_00: Fifty! Like, if he literally had sex with every one of the VPs, every one of the VPs in that company, male, female, like, like he could have had sex, that doesn't even come close to, you've had sex with a Chinese spy in this company that's like, exfiltrating fucking chips to China. Like, what? Like, that's not gonna go away.
+735.27-739.01 | SPEAKER_02: Also, the spying angle never... I mean, I don't know.
+740.10-748.38 | SPEAKER_02: I guess she was a spy, but in terms of how spies go, she didn't get him to do much, and you know what I mean? Yeah, I don't know. Like...
+749.33-760.32 | SPEAKER_02: Just kind of an aligned spy. Like he wants to sell more chips, and she's like, "I'll help you sell more chips, bro." And then they had sex on the side, I guess. Like...
+760.93-767.58 | SPEAKER_02: But like, it just... I, I haven't seen that like that gotcha, that really deep gotcha thing where someone has...
+767.58-771.47 | SPEAKER_00: You think the sex was like orthogonal to the spying? It was just like a bo...
+771.47-778.34 | SPEAKER_02: I mean, even the spying didn't seem like anyone's gotten a real, a real gotcha out of it. That like the, the implication is that...
+778.91-804.37 | SPEAKER_02: That she got him to do certain things and maybe share certain things and take action and, and put some, put some ideas in, in DC's head about, you know, whatever. But when you look at like what the things are that he was doing and like what he was going to DC to talk about and policy and et cetera, et cetera, all of those were things that seemingly Nvidia wants to do regardless.
+804.37-808.71 | SPEAKER_02: Yeah, like as a good CEO, like that's what a good CEO should have been doing.
+808.71-811.26 | SPEAKER_00: Like, yeah, like I feel like, you know.
+811.90-820.99 | SPEAKER_00: Jensen and the Chinese spy were fairly aligned in, like, let's sell chips to anyone, and if China's some of anyone, then fine, right?
+821.44-824.81 | SPEAKER_03: That's gonna be the Netflix special. They fall in love.
+824.81-826.29 | SPEAKER_00: Yeah, like it's not about...
+826.29-831.94 | SPEAKER_02: Typically, when we think about spies, we think about spies convincing, especially like the...
+832.42-841.66 | SPEAKER_02: The honey-dip spy. You know what I mean? The spy is convincing Jensen to do something that is against the U.S., against his company, like, right?
+842.23-843.78 | SPEAKER_02: In this case, it just seems like...
+843.78-845.06 | SPEAKER_00: Didn't take much convincing.
+845.28-847.89 | SPEAKER_02: Yeah, he was like, "Yeah, I'm already telling DC that we should."
+847.89-861.78 | SPEAKER_00: Yeah, yeah. No, I'm fine with this, man. Can we keep having sex? Okay. As long as you're influencing me, right? Like, just let's... Yeah, I just need a bit more influence to go and sell more chips to China. So.
+861.78-879.01 | SPEAKER_02: But that's, that's where, that's where I reassess the risk, right? If it was a risk to the company, to the bottom line, to the success, to the future, whether that be the angle, the spying angle, or the affairs with direct reports angle, there are risks there, but they do have to be analyzed, right? And if it's something that's...
+879.49-884.45 | SPEAKER_02: Um, you know, relative to the other risk, right? Because the other risk is that you fire him.
+884.90-890.50 | SPEAKER_02: It used to be that you'd fire him, and then bad things happened, right? You can't find a good enough replacement.
+890.50-895.63 | SPEAKER_00: I mean, like, yeah, like, of course, I'll find a good enough replacement, like.
+895.63-898.67 | SPEAKER_02: That's a risk, though. Like that's a big risk.
+898.67-900.01 | SPEAKER_00: But that was...
+
+The request was rejected because it was considered high risk
+
+0.00-14.97 | SPEAKER_00: Cool system, uh, but then you know, other things came out. The fees started to decline, and then here we are. You know, now I think the the FTV is like one hundred and fifty mil or something. So, uh, you know.
+17.11-26.47 | SPEAKER_00: Yeah, stablecoins are hard. Is the is the conclusion there? Um, and I think Rune's looking to like sell off some tokens and stuff.
+27.16-38.78 | SPEAKER_00: What do you do? Well, if you remember when this happened with Michael from Curve, right? You know, because they had their own stablecoin, they decided issuing stablecoins is a very good business, like.
+39.17-40.57 | SPEAKER_00: You know. Yes.
+40.57-45.87 | SPEAKER_01: It's very good business, but it's also it's an easy way to just get shit on, like.
+45.87-74.88 | SPEAKER_00: Yeah, it's an easy way to blow yourself up. Yeah, you know, debt is hard. Anything that has leverage, any system that has leverage, is inherently unstable, right? So, as soon as you add leverage to something, you're already in a dangerous place. Like, dude, I'm not even kidding. I used to wake up from, call it March 2019, March 2019 until probably 2023 when we changed the system so that there weren't like instantaneous liquidations.
+74.88-76.76 | SPEAKER_01: I woke up every morning.
+78.37-102.64 | SPEAKER_00: And the first thing that I would do, no, no, no, no, no. The first thing that I would do would be look at the stablecoin and be like, "Did I get news? Is it over? Is it over?" Every morning, every morning of my life, I would wake up and the first thing that I would do is be like, "Overnight, did it implode? Did the entire system implode?" Imagine living your fucking life like that. It was, it was nightmarish, right? So, um, you know.
+102.64-115.58 | SPEAKER_00: The the funniest part to me is like a lot of people go, oh, you made all your money selling SNX, and I'm like, no man. The way that I made my money is I levered SNX into ETH.
+116.16-121.09 | SPEAKER_00: I used to just back up the truck every time SNX would go up. I would just buy more ETH.
+121.76-151.30 | SPEAKER_00: And so I would just literally use the the the liquidity of the stablecoin. You could I could take my token SNX, borrow against it, get SUSD, and then we had like some crazy like one hundred million dollars worth of on-chain liquidity from USD to ETH. And so I just bought ETH all day long. Like and every like most of the SNX people just bought ETH. We were so giga bulls on ETH for like such a long time, all the way up to like.
+152.10-168.61 | SPEAKER_00: Like tens of millions of dollars of ETH above four K, like me and Tom Lee are like buying the FIBO top over here, and so yeah, like you know, having leverage, especially in a market that's going, that's like a you know structural bull market.
+168.97-182.41 | SPEAKER_00: Like ETH was for like fucking eight years or whatever is amazing if you've got leverage, but also when it's not, you just you get wrecked, man. You get so wrecked, right? So.
+182.41-194.01 | SPEAKER_02: So what is the move though? If if you if you have put all this token up as collateral and you've taken these loans and these loans are starting to get bad and the token is not the market is not like what do you do?
+194.01-206.11 | SPEAKER_00: You got to find a buyer. So, so, so Michael from Curve turned up and literally started begging all of the DeFi OGs for money. That was his play. He was like, "Hey, please give me some money."
+206.11-233.61 | SPEAKER_00: And like, and I said, please give me some money. It was like buy some Curve, right? Because also, let's not forget, Michael from Curve rubbed his first raise. He sold like thirty percent of the tokens, and then was like, actually, JK, I'm going to keep them all, and gave everyone the money back. And there was like lawsuits for a long time about this, right? So he had like sixty percent. Michael from Curve timed the market better than any other DeFi founder.
+233.61-243.46 | SPEAKER_00: He had something like sixty percent of the supply in a hyperinflationary token. It's crazy, man. He like at one point, it wouldn't shock me to know that.
+243.46-249.37 | SPEAKER_01: That's true. Wait, but doesn't that mean that he could sell some of that Curve, and it's like okay? But that's what he has to do.
+249.37-267.67 | SPEAKER_00: That's what he had to do, right? He had to, he had to, he had borrowed against, against, and so he had to sell some Curve. And so like you know, people like me turned up, and I was like, yeah, I'll buy like five hundred thousand Curve from you or whatever. And so we all bought a bunch of Curve at like fifty cents, and then we all got wrecked. And same thing with Rune.
+267.67-269.71 | SPEAKER_02: Rune's gonna try to sell SKY.
+269.71-274.91 | SPEAKER_00: Yeah, we'll go out and and be like, hey, I need to sell some SKY, and you know, so it's the risk.
+275.14-278.51 | SPEAKER_01: The risk is that you don't. He doesn't want to sell his SKY.
+278.51-288.45 | SPEAKER_00: No, no, he does. He's already said like I'll I'll do some OTC deals and you know, and and again like it's Rune, right? So like there's people that will bail him out.
+289.31-295.94 | SPEAKER_00: A principal, right? And so I think you'll be fine. Like Michael from Curve, right? People like, ah, he's in trouble. I mean, all all will.
+296.10-314.62 | SPEAKER_02: And and these numbers are all fake to me because I'm a poor. But like, how much is seventy-seven million? Yeah, y'all that are post-economic can tell me. Like, is seventy-seven million a lot to Rune? Like, is he is he sweating here, or is he like, ah, I've got to move some money from here to there? Like, how much is seventy-seven million?
+314.62-321.15 | SPEAKER_00: It is a lot, right? Like, and and this is the this, you know, as I said, like at the peak, I probably had like.
+322.19-344.59 | SPEAKER_00: Three hundred million dollars worth of debt. Yeah. Yeah. Like so, like four, four, five X, right? I had to sell. This is gonna fucking blow your mind, right? To stop Synthetix from imploding in 2022, right? After fucking Three Arrows, I had to sell thirty thousand ETH to pay back the debt.
+344.59-346.02 | SPEAKER_01: What you gonna do?
+347.20-348.38 | SPEAKER_00: Now.
+349.76-352.10 | SPEAKER_02: Where was ETH at the time?
+352.10-363.80 | SPEAKER_00: Uh, like fifteen hundred or whatever. Yeah, I know. So, so, so, but like again, you know, so like, don't worry about me. I'm fine. But like.
+363.80-365.21 | SPEAKER_02: Fifteen hundred ETH too. Yeah.
+365.21-369.60 | SPEAKER_00: Yeah, yeah, yeah. So, so, yeah. I'll, I mean, do fifteen hundred ETH.
+369.60-370.51 | SPEAKER_02: I don't know. Yeah.
+370.51-387.70 | SPEAKER_00: So, so, all of that is to say that, like, live by the sword, die by the sword, right? Like, if you lever up and you, you know, load up on, on ETH, right? Like, again, you know, I, like, probably my cost basis on that ETH was like sixteen hundred bucks or something.
+387.70-390.62 | SPEAKER_02: Yeah. Oh, okay. But, but, you know.
+390.85-393.54 | SPEAKER_01: It was still a high cost amount of money. That's such.
+393.54-411.54 | SPEAKER_00: Oh, it's insane, man! It's insane. I look back on it now, and I'm like, "But, but my choices were right. I could have gone out, hat in hand, and said, 'Like, hey, help me out here, guys. Like, you know, sell.' But I didn't want to sell ETH next. This is the, the, the amazing thing. ETH next was like ten dollars, right? So I could have sold."
+411.54-440.78 | SPEAKER_00: I don't know. I call it, you know, ten million ETH next, right? That would have been a hundred million dollars at the time. There was liquidity, you know, ETH next is a billion, there's, there's enough liquidity to sell a hundred million dollars worth of the token, especially OTC. So I could have sold it OTC, and I was like, no, I don't want to sell the token. I'll just sell some ETH, right, and pay down the debt. My other choice would have been letting it nuke itself from space, right, and, and implode, and then I'd probably be in jail.
+440.78-446.62 | SPEAKER_02: And, and does selling the token cause it to go? Like if, if Rune has to go sell a bunch of SKY, does that affect the price of SKY?
+446.62-473.04 | SPEAKER_00: It's fine. But like Maker is fine. I think like, I think with, with SKY, it'll be fine, right? Like, you know, there's investors that are bullish on it. Like I, I genuinely don't think this is a problem. Um, I think that, uh, I think that it'll be fine for him to find buyers for this. Like people are, people are like, you know, uh, long-term bullish on, on SKY and the SKY ecosystem. So I think it's like an annoying thing, um, to, to have to deal with. Uh.
+473.04-483.71 | SPEAKER_02: Seventy-seven million dollars, just as, just a little annoying. I mean, these numbers are seriously fake to me. Like, I have my, my validators. That's like my net worth right there is my ETH validators, like.
+483.74-484.51 | SPEAKER_00: Yeah.
+484.51-488.42 | SPEAKER_02: Thirty-two, sixty-four hundred ETH. You're talking about selling ten thousand.
+488.83-494.24 | SPEAKER_00: Yeah, I know, I know. But I mean, again, you know, like ETH was three dollars, man.
+495.57-499.74 | SPEAKER_02: I don't think I got ETH at three dollars. I think I came in around three or four hundred.
+500.35-515.49 | SPEAKER_00: Yeah, see, like you know, when, when I was buying DAO tokens, the first like real good structural arb that I ever did was buying DAO tokens and selling the DAO tokens for ETH on Poloniex. Like you could just.
+515.49-534.97 | SPEAKER_00: Sell so many, and it was so dislocated. It was, it was crazy, you know. And, and like this was when I had my first startup, and so I didn't have a ton of money. I was like doing pretty well, like the, you know, we were, we were making good revenue at the time, and so I had a lot of free cash. But you know, I didn't have like.
+534.97-547.62 | SPEAKER_00: Tens of millions of dollars to load up, otherwise I probably wouldn't be here right now. But, but you know, like buying ETH at five to ten dollars, like was a generational trade. It's crazy, man, like.
+547.62-552.70 | SPEAKER_02: What, you wouldn't be here because you would be rich enough? Like, are you getting paid for this? What do you mean?
+552.70-579.23 | SPEAKER_00: No, no, no. Like I probably would have. I probably would have. Like genuinely, I would have. Like fucking, I'd be dead if I, like, if I made that much money that quickly. Like, dude, the, I tried to retire. I tried to retire for a year, and I ended up in rehab for six weeks, man. There you go. I need to work. I can't be. I can't be. I need this. I need something to do. So yeah, it's better if I'm a little poorer.
+579.23-584.66 | SPEAKER_00: If I was a, my own good too. Yeah, yeah, it's good.
+584.66-602.66 | SPEAKER_01: I have learned, and being in crypto this long, I have learned that being like just fantastically rich is usually a bad thing. Actually, like there's like, there's like being like, you know, comfortable, and then there's like a point that hits, and it's like it just changes people, and, and kind of like brings out the worst.
+603.36-604.35 | SPEAKER_01: So.
+604.35-616.06 | SPEAKER_02: That number seems insane for other people. Like I'll see people, yeah, yeah, that get to that point with a number to me that is like, that is, that's not enough. Like that's not even close to enough, and you're crashing out over it. Like what's happening? Yeah.
+616.80-640.77 | SPEAKER_00: I think like it is all relative, but I think part of it as well is especially for like the, the, you know, people who like super OG ETH people, um, and Bitcoin people as well. Most of them, in my experience, are pretty psychologically fucked up people. Like for you to believe that this fucking nonsense.
+640.87-656.32 | SPEAKER_00: Right, this nonsensical thing that the world is like, "What the fuck are you talking about?" For you to be so convinced of that, like the level of detachment from reality you had to have to believe ETH at five dollars was like a good buy.
+656.97-658.79 | SPEAKER_01: And to do it, yeah.
+658.79-665.27 | SPEAKER_00: And to do it, and and to do it, and hold it, and like all of that stuff, like you're a pretty fucked up person, your brain has some problems.
+665.27-682.42 | SPEAKER_01: And then to work in the industry, like it's one thing to buy it as an investment, right? Like put some of your net worth. No, no, I'm going to work here too. I'm going to have a hundred percent of my entire life and livelihood in this thing. Like, why work?
+682.42-701.92 | SPEAKER_00: Yeah, like I've met some people with like a lot of, you need like, put it this way. I think one of the best things that you can have as an investor is like insensitivity to pain, right? Where does insensitivity to pain come from? Classically, like horrific trauma.
+701.92-718.30 | SPEAKER_00: So the more traumatic your childhood, you know, and upbringing was, the more capable you are of taking pain and suffering. And if there is one asset that has inflicted more pain and suffering on the world, it's Ethereum. So like,
+719.39-737.92 | SPEAKER_00: you know, being an ETH holder and dealing with like a horrific childhood, like there you're, you are prepared for that shit, man. You're like really prepared for it. So, you know, I just like, there's, there's a pattern in the people who are like ETH whales, where like they're all fucked up, man. They're all fucked up.
+738.56-740.32 | SPEAKER_01: Yeah, I do. You're at the top.
+740.80-746.94 | SPEAKER_01: I do actually. Should we dive out? Okay. This PQA.
+747.07-751.68 | SPEAKER_00: Yeah, I, I have no idea what the fuck this is. So one of you guys is gonna have to take this one.
+751.81-753.83 | SPEAKER_01: I don't know, Austin. How do you say it?
+753.83-783.76 | SPEAKER_02: I say PQA, but I don't know. Like, I think it's post-quantum, post-AI, right? It's like post both of these things, and they're basically like very similar things. We know that like quantum 2030, it's going to do magic computations and be able to do some of these like destroy elliptic curves and things. But they're thinking the AI part of that is that even in the meantime, ECDSA and elliptic curves might get crushed by AI. So
+783.76-787.17 | SPEAKER_02: It's just, they've sped everything up. It seems like that this was like.
+787.68-805.40 | SPEAKER_02: Um, I was talking to Ben on soft computing, Ben Edgington, and he was, he's, he laid out at DevCon, he laid out a kind of DEFCON of what we're at, and I think he was saying we're at DEFCON orange or something. Like we're one step away from like the scariest possible moment. So they were like red, red is the...
+805.53-808.97 | SPEAKER_02: I think so. I think so. I don't know. I don't know. Yeah, yeah.
+808.97-811.03 | SPEAKER_00: So, so, so they're like one away, and, and...
+811.03-828.16 | SPEAKER_02: They're basically saying like all of these kind of EIPs that we spent a lot of time thinking we need to get these in, and, and they're going to like, you know, improve the UX and improve a lot of other things. They're like, no, we like push that stuff out. Let's focus on getting post-quantum, getting post-
+828.16-856.48 | SPEAKER_02: AI or getting on the other side of elliptic curve cryptography and focusing on hash-based signatures. And so it's just there's a lot of focus there. And also I think another interesting thing is that AI is also speeding up the work, right? When we're looking at a hard fork every year or whatever that cadence is, with core devs all being able to, you know, let an AI rip, this should also improve, this should speed up. So AI is putting pressure on us and speeding us up.
+856.48-868.07 | SPEAKER_00: And speed yourself. What's your, what's your take on, like, how is the EF set up for AI? Like you said, you, you don't have Mythos yet, or you just got Mythos? Yep.
+868.07-870.68 | SPEAKER_02: And I think the EF had it a lot longer than I had it.
+872.13-873.15 | SPEAKER_00: Bastards.
+873.38-878.47 | SPEAKER_02: I know, right? No, I think, I think some like, like protocol security people have had it for like months, I think.
+878.47-879.82 | SPEAKER_00: I'm not sure.
+879.82-882.38 | SPEAKER_02: Don't quote me on that. I'm not sure, but I hope they have.
+882.38-883.97 | SPEAKER_00: I fucking hope they yet, man.
+883.97-900.10 | SPEAKER_02: So like this was my questions for Ben, is just like, are, 'cause like, okay, what I notice in, when I do soft computing interviews, what I notice is the people who were like the most nerdy, the most mathy, the most like technical, they're having the hardest time with this. And the, the idea guys are just.
+
+0.00-3.04 | SPEAKER_00: It's like letting it rip and just building cool things. So my
+3.51-28.00 | SPEAKER_00: stereotypical view of a core dev is kind of the the math guy, the the math guy, the the nerdy kind of like takes it very seriously, loves the syntax. And so that was one of my big questions for Ben is like, how many of them are actually letting AI rip? And he he was, he changed my mind on it basically. He made me feel a lot better that like, generally the core devs and and the EF.
+28.74-33.49 | SPEAKER_00: The people who are like in in charge of making these changes and doing this research are
+34.01-38.78 | SPEAKER_00: are letting, yeah, are letting AI rip, and are confident in
+39.32-45.07 | SPEAKER_00: like super intelligence, I don't know, okay, I'm stretching it a little bit, but because like I'm, I'm saying, I'm saying.
+45.07-51.43 | SPEAKER_01: I'm I'm curious practically, right? Like, and you know, don't don't give anything away that.
+51.43-52.95 | SPEAKER_00: I have anything to give away. That's the good thing.
+52.95-71.39 | SPEAKER_01: Fair. Okay. Yeah. Amazing. So, like, I'm curious practically from from those conversations that you're having, like, is the EF, you know, other than providing models, like, how are they are they doling out, you know, because you could spend a million dollars a year as an individual on Mythos.
+72.16-87.78 | SPEAKER_01: Right. Like, is there some resource allocation? Do they have harnesses that they're using? Is everyone building their own stuff? Are they sharing things? Like, I'm so curious this this process of like distribution of of intelligence through an org like that.
+88.48-110.26 | SPEAKER_00: I'm paying for my own Mythos, so I don't know. Yeah, yeah, yeah. But but but uh there is a lot of AI going on inside of the EF, and I guess I do have some alpha. I don't know if I'm allowed to share. There's like some really interesting AI stuff happening where they're they're doing a lot of like.
+110.26-120.38 | SPEAKER_00: Local GPU stuff and training and training models and evals and things like that. So I think that one of the big pushes is obviously Groq and and this idea of like.
+121.34-143.52 | SPEAKER_00: Censorship-resistant open-source privacy security. the the the idea that a local model could build an app or set you up for a transaction. Like if you could just like tell a local model, express your intent to a local model, and it could set you up with the Ethereum transaction. You're just AI is the new UI, but it's all local and private. That's attractive to the EF, and I think that's.
+143.52-159.55 | SPEAKER_00: They they are making big pushes for AI in terms of like local. They want people to be running their own models, and they want to train models to be good at Ethereum. And also, this whole research thing is obviously like a huge deal right now in terms of.
+159.55-185.22 | SPEAKER_00: If elliptic curve cryptography falls apart, we're we're in trouble right now. Like we're we're seeing when I was talking to Ben, he was talking. I was like, well, you know, HTTP and SSH are going to fall apart too. And he's like, no, no, no, they've already switched. Like they're out ahead of things. Like they know that elliptic curve cryptography is going to fail, and they're already crazy. Like HTTPS and SSH are using hash-based signatures already. Like it's just slower for us because we have a protocol, a whole protocol that does this. So.
+185.82-192.29 | SPEAKER_00: It they're moving quickly, but the protocol has to get over to hash-based signatures sooner rather than later, and they know that, and
+192.29-200.17 | SPEAKER_01: And and the issue is just cost, right? Like there's a there's like a computational cost to switching signature schemes, or
+200.17-202.83 | SPEAKER_00: I think it's the complexity of.
+202.98-232.00 | SPEAKER_00: Yeah, yeah, yeah. These these signatures are a lot heavier, right? And if you want Ethereum to be super decentralized, you need all these validators and nodes to be running on consumer hardware. And so the I I don't know if it was ten x or one hundred x. It was when when Ben was talking about it, the size of the signature needed compared to like BLS what we have now, especially when you're aggregating a bunch of signatures, like you have to aggregate like millions of signatures to to get like one block to come together, right? And so to do that with these.
+232.00-247.14 | SPEAKER_00: This new signature scheme, where these signatures are a hundred x bigger, is a lot more, and ZK and all of that stuff. So there's more compute, there's more memory, and it comes down to the boxes that have to run it. That I think that's the the bottleneck.
+247.58-252.87 | SPEAKER_01: Yeah, I mean, man, like my dApp node that I bought in, whenever, like when.
+252.87-256.65 | SPEAKER_00: Yeah, that little box. That little box needs to be able to run Ethereum, right?
+256.65-274.69 | SPEAKER_01: Now, now, sitting next to the fucking dApp node is a 512 M3, you know, Mac Ultra, right? Like, it's a beast, right? Like that thing could easily run, you know, the the validators, right? So it's not like I'm lacking, you know.
+274.69-289.30 | SPEAKER_00: But not everybody has those 512s. Those 512s are hard to get. Like I can't afford one of those 512s, and they want. And and I would say that like I'm, you know, economically higher up than a lot of Ethereum node runners, right? Around the world, like.
+289.30-292.60 | SPEAKER_01: Mumbai, they were stealing your fucking tools to be able to run Val.
+292.60-302.34 | SPEAKER_00: You know, the guy they want to run an Ethereum node on one of these, yes. But that makes it very decentralized, right? And there's a lot of other things with like light clients and ZK proofs and stuff, but.
+303.30-319.46 | SPEAKER_00: It it leads to centralization. If you have that 512 Mac being the only thing that you can run Ethereum on, then you only. I think he said that we have something like fifty-five thousand nodes. That that's going to go way down if we're on a 512.
+320.13-341.72 | SPEAKER_01: Sure, but you know, that's like, that's an extreme, right? I'm saying, like, you know, on one hand, it's the machine that I bought for, fuck me, I think it was like three ETH, man, back in twenty nineteen, twenty twenty, when they first started selling DappNodes, I guess. I don't know, but it was like three ETH or five ETH. It was like a lot of ETH at the time, but it wasn't.
+342.51-349.56 | SPEAKER_00: Yeah, you can run an Ethereum node on like a grand or like a twelve hundred, thirteen hundred dollar machine. Yeah.
+349.56-360.27 | SPEAKER_01: That would have, that, that would have been like a, you know, ten thousand dollar machine or something like that now, right? Wow. So, so, so, but it was at the time, it was just that, you know, I paid an ETH because.
+360.27-361.03 | SPEAKER_00: Right, it's because.
+361.03-362.01 | SPEAKER_01: Because of the.
+362.04-371.80 | SPEAKER_00: The value of ETH going up. The value of ETH went up. The value of the machine has actually gone up. If you bought a machine two years ago, it would be worth more now, which is crazy.
+371.80-393.30 | SPEAKER_01: I know. Yeah, it's the first time we've ever, yeah, we can talk about that, the deflation, deflation stuff. So, all right, let's go to our next segment, Tay, the laundering of the six point four billion dollar of Binance haul. So it's been a month since North Korea's Trader Trader. Is that what we're saying? Like one hundred percent it was those guys now?
+393.30-394.67 | SPEAKER_02: Yeah, one hundred percent.
+394.67-409.04 | SPEAKER_01: Okay, all right. Drained, drained six billion dollars from Binance. Elliptic has mapped the, the trail of the loot. Forty-four percent is frozen, which is apparently a record.
+409.04-434.45 | SPEAKER_02: That's funny. It's a huge record, but, but like, just keep in mind, like the, it's, it's the majority of that is those very, very early actions, right? Very early actions. The hardest thing about Trader Trader today, and is the reason why I don't sit and trace it anymore, is that I don't, we're past the point where the effort is worth the reward. I think Bybit was the first one where we just
+434.45-449.12 | SPEAKER_02: There was initial freezes in the first like week that were good. They were strong. The freezes held. They were able to be recovered, and then there was four solid months of twenty-four-hour tracing. Probably like sixteen people on.
+450.27-452.54 | SPEAKER_02: Uh, sixteen people on a team.
+453.09-458.78 | SPEAKER_02: Between like everyone, so there's like at any given point, there's like sixteen people tracing the funds, right, twenty-four-seven.
+458.78-460.40 | SPEAKER_01: To what end, though?
+460.40-469.67 | SPEAKER_02: And that's the thing, to get the freezes, to get the recovery, to get right. That's the point. But if you're not actually freezing or recovering any decent amount, then which is why.
+469.67-482.07 | SPEAKER_01: Is that, is that, is that because of time or because of the size of the wallets? Like, what's twenty thousand, they've got twenty-five thousand wallets. Like, there's still some money in those wallets. It's still like, you know.
+482.07-484.22 | SPEAKER_02: Yeah. So you land like.
+484.64-507.57 | SPEAKER_02: So it used to be like in twenty twenty-two when we would do like a, if we, if we have like a few good tracers on call or just like we're looking at stuff together and we're coordinating with like FBI or coordinating with Tether or coordinating with basically anyone that they were using, right? You could land like five million dollar freezes, right? Like you had to time it right. You had to work. You had to work. You had to stay up.
+507.57-516.64 | SPEAKER_02: Um, but you could, yeah, you get the cooperation of a couple services, you like prep it up, you, you know, you could get five million dollars. With Bybit, it was like.
+517.22-520.02 | SPEAKER_02: Dude, it was like you work all night for a hundred k.
+520.02-521.43 | SPEAKER_01: Hmm.
+521.43-526.94 | SPEAKER_02: And when you're, when it's a billion dollars, or now we're looking at three billion, four billion dollars, it's just like.
+527.94-533.82 | SPEAKER_02: Like at some point, you have to just be like, "Well, what's, what?" You know, what are we doing?
+534.50-539.52 | SPEAKER_01: Like, how come you've not built a clanker factory to trace this shit?
+539.52-549.46 | SPEAKER_02: We have. I mean, there are clankers. There's like, there's some homegrown clankers by like independent researchers that are pretty good. Right. Chainalysis, Elliptic, TRM are all using various clanker stuff.
+549.46-561.44 | SPEAKER_00: What's the mechanics behind freezing? Like, if it takes them, it took them forty minutes, right? Is it like, is, is it like Kane waking up? Like, we got to hit the button, and like, what happens? Like, why isn't it?
+561.44-583.11 | SPEAKER_02: Like some clanker system, like confidence, the confidence level. So basically, like the, and the, the launderers are always staying one step ahead, right? They're always... So the second you freeze them, that's, it's game over. Like they don't do that again. Whatever the, whatever the flow was, that whether it's a certain service or certain flow or whatever, um.
+583.11-585.34 | SPEAKER_00: And then the other things don't.
+585.34-600.79 | SPEAKER_02: Yeah, because they don't get frozen. Like Thorchain won't, yeah, Thorchain won't do anything. But like, for example, like there's some bridges that, where the, if you're trying to move like real liquidity, like USDT is just like the place, especially when you're going to Tron, for example, like.
+601.39-616.58 | SPEAKER_02: ETH to Tron in volume. If you want to do like fifty million dollars, like that's not a good, ETH to Tron is not a good, not really, but, but USDT on ETH to USDT on Tron is, is a fine flow, right?
+616.97-621.86 | SPEAKER_02: So what they'll do is they'll like hop, hop, hop. They'll have it in like fifty different wallets, and then they'll.
+622.56-628.45 | SPEAKER_02: They'll basically go ETH to USDT really fast, and then bridge the USDT, and then back out.
+629.06-631.14 | SPEAKER_02: The TRX, right? So you got to be waiting.
+631.14-632.79 | SPEAKER_01: For that window.
+632.79-652.00 | SPEAKER_02: And in order to be waiting for that window, you have to know what they're going to do. So you have to like be tracing them up front to know what they're going to do next. And then you have to prep the services, whether that's working with Tether directly or whether that's working for the bridge, right? Whatever bridge they're using, because you basically want, you don't want to be convincing.
+652.64-680.22 | SPEAKER_02: You want everything has to be so high confidence that they're like, okay, right? And so it's like, it's sort of like some prep work up ahead, and then you can land those with the cooperation of, you know, various people. And then, you know, it also depends, like, if the confidence is high enough, even with, sorry, even if the confidence is high enough, a lot of the services still want some sort of like law enforcement backing or Binance to sort of take that the liability of freezing.
+680.22-685.12 | SPEAKER_02: Um, so it's just like a whole bunch of moving pieces. Like I say, it's always like the stars have to align.
+687.42-693.01 | SPEAKER_02: Like I, I just think we have to frontload these freezes as much as possible. I think that's where it hurts the, the.
+693.01-701.46 | SPEAKER_01: Do you have a window? There's like a window of time that first like forty-eight hours or whatever, where you can actually before they fanned out.
+701.46-723.99 | SPEAKER_02: And it's also like that's when it's still like for sure in the hacker's hands. So it's like that's the one. Those are the freezes where you know you're hitting North Korea directly. Once it starts being laundered, like you have, you've, it obviously it has an impact on North Korea. Like don't get me wrong, but sometimes that impact is like an indirect via like one of their Chinese money laundering networks.
+723.99-736.15 | SPEAKER_00: Yeah, imagine you sell something to someone, and then like your money that you just got paid with got frozen. Like that would be, that would suck. And like also, like freezing money is weirdly against decentralization and all of that too. So there.
+736.15-751.94 | SPEAKER_02: We have to. There's a lot of... When I say working with the services, there's a lot of upfront work that we have to do to, you know... um... But yeah, I mean, like with these guys specifically, they use Chinese money laundering networks a lot. They use these Chinese guys a lot. One thing that people are concerned about is like...
+752.70-759.26 | SPEAKER_02: Exactly what Austin just said. Basically, like, why should we freeze the Chinese guys? Like, they just bought some coins. They didn't know.
+760.32-764.16 | SPEAKER_02: Fortunately, everyone involved got the receipts.
+764.59-766.34 | SPEAKER_01: We got the receipts. They knew.
+766.34-793.63 | SPEAKER_02: They know. Yeah, they're buying discounted coins. They know exactly who they're working for. We have chat logs of them bragging about how they're getting cheap, cheap ETH or cheap Bitcoin from Kim Jong Un. They joke about it in the same way that this industry does, like it's fucked up, to be honest. But it is what it is. Oh man. So yeah. So it's just... I mean, it's just a fantastic amount of money. The clankers are working on these. Elliptic has been doing a really good job.
+794.14-798.46 | SPEAKER_02: I think there's been a lot of, a lot of people doing really good jobs. I'm just so.
+800.13-803.93 | SPEAKER_02: Burnt out on like just the sheer volume of this one has.
+803.93-807.34 | SPEAKER_01: It's absolutely insane. It's just so crazy.
+807.34-812.72 | SPEAKER_02: And I also, they say twenty-seven thousand wallets. There's... I feel like that number has to be higher.
+812.72-813.53 | SPEAKER_01: Hmm.
+813.53-816.32 | SPEAKER_02: Like I don't know. Maybe not. Maybe it is, but...
+816.93-817.76 | SPEAKER_02: Yeah, and they...
+817.76-826.81 | SPEAKER_01: Twenty-seven thousand wallets. There's so many. I've got one clanker on one wallet right now, and it's been going for like two weeks. Yeah.
+827.08-838.05 | SPEAKER_01: This is my DappNode wallet. This is my DappNode wallet. It's like it's still going. It's been going for weeks now. That's a lot there on one wallet, right? Like twenty-seven thousand, it would be like, no, I'm out, man. Self-destruct.
+838.30-841.66 | SPEAKER_02: It's, yeah, it's just, it's a lot, and...
+842.30-845.18 | SPEAKER_02: It's just, yeah.
+845.86-873.62 | SPEAKER_02: It's also, it's, it's impressive. This is the first time where we've seen the money launderers are obviously using a lot more automation and scripting and probably AI. I think we've talked about this on the show before. Like, why don't they just automate the thing all the time? That's because like, it's everything's quite janky. So there's like a risk to automation. But yeah, this one, they're definitely... they have a lot more scripts running, and it's...
+873.62-888.99 | SPEAKER_02: Just the, the speed and the volume at which they move the money at is just absolutely insane. But luckily, if you, if they script something or use AI to, to, to move money, super easy to trace with AI.
+889.50-897.73 | SPEAKER_02: It's, it's actually harder to... It's like the, the AI can trace the AI. The scripts can trace the scripts.
+898.62-900.01 | SPEAKER_02: The scripts.
+
+0.00-5.33 | SPEAKER_00: Or the AI cannot so much trace the humans. Like humans are too unpredictable and weird.
+5.97-6.78 | SPEAKER_00: Like.
+6.78-22.85 | SPEAKER_01: Meaning, like even through privacy protocols, they're able to figure out where like money goes in, money goes out, kind of thing? Are we just talking about like on-chain it splits out and fans out and moves across multiple chains and bridges? Are are we talking about that, or are we talking about privacy protocols?
+23.01-33.22 | SPEAKER_00: Well, so for the volume that we're dealing with here, there's not really any privacy anywhere. Like if they go into a privacy protocol, they're just coming right back out the other side. Got it. Got it.
+33.22-40.89 | SPEAKER_01: If you move a billion dollars into any privacy protocol and try to mix it, and then pull a billion dollars out somewhere else, it's obvious what happened. Okay.
+40.89-63.88 | SPEAKER_00: Exactly. And it's also like they commingle it. They'll commingle like the ins and the outs. Like they're the the... it's it's so interesting because people think that the they want people think that this is like the ideal situation for privacy protocols. It's actually not like they they don't want they don't care about privacy. They want obfuscation. They want to like.
+63.94-68.58 | SPEAKER_02: They were like any amount of like, you know, dirt on the trail to.
+68.58-75.97 | SPEAKER_00: Yeah, they're starting to like mess it up. Um, and like I always say, like in order to launder money, you have to do things. You can't just hold the money.
+77.79-82.20 | SPEAKER_02: But they don't. You gotta run the laundry. You gotta actually wash some clothes, right? To launder.
+82.45-90.48 | SPEAKER_02: All right. Let's go to, let's go to, let's go to Google. Google, man. Oh, yeah, I wanted to.
+90.48-94.19 | SPEAKER_00: I was. I wanted to hear from you guys on this because I haven't been.
+94.36-95.41 | SPEAKER_01: You were saying V3.
+95.41-116.06 | SPEAKER_02: Last week, right? So I was, but right. Okay. So so here's the story, right? So um, so Google launched Neon Gemini 4 Neon, right? Um, Google has chosen to use the periodic table of the elements for the names of their, uh, clankers, which is.
+117.09-139.60 | SPEAKER_02: Concerning, there are a lot of elements, man. I don't know if you know. Like the fact that you need to know the atomic weight of plutonium versus uranium to work out which model is smarter is not going to scale. This is not going to scale, guys. You got to stop this nonsense, right? That said, you know, like it's better than the weird than the naming.
+139.60-165.34 | SPEAKER_02: Yeah, yeah, like you know, it's a low bar, right? But now we have this weird situation where Google released like three models in the space of a week, so they have carbon, argon, neon, hydrogen, right? And then they also have their older models, 3.8, and and some other stuff floating around, right? So they need to clean this up, and and we need to we need to figure it out. But
+167.10-172.13 | SPEAKER_02: Neon is so good, man. It's so good. I can't even tell you.
+172.13-173.83 | SPEAKER_01: Cheaper. It's cheaper. It's cheaper.
+173.83-175.94 | SPEAKER_02: Yeah. So, so carbon is, this is like good.
+175.94-178.63 | SPEAKER_01: Good, Sonnet, or their.
+178.63-182.07 | SPEAKER_02: It's like the equivalent of their Sonnet, but it's not right. It's like when.
+182.07-182.98 | SPEAKER_01: When Opus came out.
+183.02-192.29 | SPEAKER_02: Opus 5.5 came out and it was better than Fable, and it was like just switch off Fable, man. Like who's still using Fable? It's more expensive than worse. Like just switch it off.
+192.29-193.09 | SPEAKER_01: Yeah.
+193.09-195.02 | SPEAKER_02: And yeah, Verbose and annoying, right?
+195.02-203.43 | SPEAKER_01: And like I said last week, when you were at Fable and got downgraded to Opus, even the newest Fable, the downgrade wasn't like, it was fine. Okay, Opus 5.5.
+203.43-214.36 | SPEAKER_02: So good, right? Yes. So they've got this weird situation where carbon and argon are, you know, ostensibly better, right? Than.
+214.70-229.98 | SPEAKER_02: More expensive, more expensive, right? But Neon is better than both of them because it is cheaper and like it's it's the Opus 5.5 of of Google, right? I would say to the point where.
+230.66-257.73 | SPEAKER_02: You know, most of the people I know who are building harnesses, you have the guy you talk to, and then all of the masses, right? You don't want to talk to the plebs, right? You want to interface with the best guy. And so, Opus 5.5 has been for however long, like weeks and weeks now, my main guy that I talk to, right? Even I don't really use Fable to talk to. I'll throw Fable into a really hard thing. I often use Fable for like design tasks, like really hard design tasks, like Fable Max, like go and.
+257.73-264.03 | SPEAKER_02: Cook for four hours, man, and come back to me. But I actually don't like talking to Fable. I still prefer talking to Opus 5.5.
+264.93-267.22 | SPEAKER_02: Neon is so good that I actually am happy to.
+267.22-272.97 | SPEAKER_01: Talk to Neon as my main guy. Carbon was so fucking painful to talk to, so.
+273.17-273.96 | SPEAKER_01: You know.
+274.25-297.63 | SPEAKER_02: It will just throw like a wall of weird numbers and shit at you, and I'm like, just human English, man. Like, what are you get? It'll get, it's giving you weird traces and like UUIDs, and it thinks it's being like clear. Neon doesn't do any of that shit. Neon's like, hey, man, like we shipped the thing, and I'm like, oh, what thing? And it's like, ah, don't worry about it. It's like this, it's fine.
+297.63-310.53 | SPEAKER_02: It's it's chill, it's chill, and it's easy to talk to, and it's really smart. And the most interesting thing, I think, right? And this... so here's here's how good Neon is.
+311.20-332.93 | SPEAKER_02: Neon is so good that the thing that I've been putting off in my harness, which is reverse engineering the actual per dollar cost of intelligence in my harness, because I have fifty models in my harness, right? And it's hard to tell. Like, I put two hundred and fifty dollars into DeepSeek six weeks ago, and I haven't used it.
+333.60-336.15 | SPEAKER_01: But that sounds like a perfect task for agents. You just say, how much?
+336.15-337.01 | SPEAKER_02: It is.
+337.01-340.08 | SPEAKER_01: You're saying you tried this before, and it just hasn't gone well.
+340.08-363.87 | SPEAKER_02: Tried it and it's hard. And in order for it to work, you need to be tracking. You know, if you're using hundreds of agents, right, you need to be tracking the capacity of each account. You need to run experiments. You need to go, okay, I'm going to use Neon inside isolation. Isolation. I'm going to, I'm going to run Neon on this one task. How many tokens does it use? You know, tokens are not tokens because you have
+363.87-384.78 | SPEAKER_02: Caching. You have, you know, input output tokens. So, so it's hard to get a number, right? It's hard to work out. And, and ultimately, what you want to know is per dollar that I spend, should I spend a dollar on a, an anti-gravity ultra account, right?
+384.78-397.39 | SPEAKER_02: Which, if I remember correctly, is about four hundred dollars US, right? Or should I spend a dollar on a Claude Ultra account, which is about two hundred and fifty, right? So, you know,
+397.39-424.86 | SPEAKER_02: How much compute do I actually get in reality? It's hard. It's a hard calculation to work out, right? It's, it's not easy to figure out because, you know, you've got multiple agents doing different things, different input output tokens. But finally, Neon was so good that it forced me to actually set up a Clanker, and I said, "Your job now, your life's purpose is to reverse engineer the actual price of computation per unit of computation per dollar."
+424.86-445.86 | SPEAKER_02: Against the top ten models because I need to know because you have this sense of like Neon is worth using, but then it's like actually if you're burning, you know, people see this with Muse. Muse is super smart, right? Um, so I have two Muse Wonder, uh, Max accounts, whatever the accounts are called. Uh, the problem is Muse Wonderful
+445.86-455.46 | SPEAKER_02: will use an entire account, which is, I think, they're two ninety-nine US or something. It'll use an entire account in like four hours.
+456.16-481.57 | SPEAKER_02: And so it's not usable. It's like, oh, this is really smart, but the cost per computation is far too high, right? Now that's, it's unclear whether like they're not subsidizing the account because, again, you know, you don't, they don't say to you, hey, pay five hundred bucks and you get, you know, fifty billion, uh, cached input tokens, right? They just say there's a little meter that says one hundred percent.
+482.14-500.00 | SPEAKER_02: You pay two ninety-nine, and the meter goes down from one hundred percent to zero percent, and then you're over, right? And so working out like how much computation is going on, it's, it's a lot of work. But Neon is so good that I'm like, all right, I'm finally convinced, uh, I'm gonna, I'm gonna try and reverse engineer this and work out. And people have done it. They're like,
+500.00-519.10 | SPEAKER_02: You know, there used to be a list of how much do you get from a Claude account versus a Codex account or whatever. But now with so many models, there's so many variables, right? Like there's so many confounding variables that you can't really even look at those old tables and go, "Oh, Codex gives you X."
+519.10-537.50 | SPEAKER_02: You know, for your two hundred dollar account, right? Like twenty x the API or whatever, because even the APIs, they're not comparable. So when you actually want to know, should I buy a Muse account and use Muse Wonderful 1.0, or should I buy a Google Anti-Gravity Ultra account and use Google Neon?
+538.18-547.23 | SPEAKER_02: You need to be able to compare apples to apples, and right now it's very, very hard to do that. So I'm gonna, I'm gonna try and figure it out. If the Clankers can't do it, then.
+548.03-549.09 | SPEAKER_01: It's over.
+549.09-554.72 | SPEAKER_02: But Neon is so good, man! I highly encourage everyone to try it. The biggest, the biggest.
+556.16-576.97 | SPEAKER_02: Thing we were talking about this with Anthropic, right? Is can Google reel in Anthropic and OpenAI? Man, I don't know what Demis is doing over there since he took over again, but he's got the whips out. Like if, if this trajectory continues for another like month, if
+577.03-577.98 | SPEAKER_02: they can keep producing
+578.03-578.97 | SPEAKER_02: models this fast.
+579.02-579.97 | SPEAKER_02: Man, it's gonna be crazy.
+580.21-584.13 | SPEAKER_02: Google is going to be in the.
+584.70-600.11 | SPEAKER_02: They'll be at the state of the art. They will have a model where you will have no choice, like Opus, like Astra. When Astra first came out, you will have no choice but to use that model because everything else will pale in comparison. I think that's like on the horizon, and.
+600.11-623.55 | SPEAKER_01: Can you get a subscription? Like we talked about the whole Google search thing, right? Yeah, yeah. So Google has a subscription, and it's going to become replacing search. Like I think that's the important thing is like people still like, Tey was saying last week or last week she was saying, she goes to Google to ask a question. It's not looking through the ten results anymore. It's looking at that like nice cached thing.
+623.55-632.83 | SPEAKER_01: That says what's going on, and they figured it out. And if they have a great model, like they, they continue to control search. If they can control.
+632.83-645.58 | SPEAKER_02: If they can, yeah, they can give you AI. Yeah. Now, the interesting thing is the Google, the Google account, you get thirty terabytes of storage with this, you know, because you, they have the Google One account as part of the Google One account, right?
+645.58-652.04 | SPEAKER_00: I think this is why. I was about to say, I think this is why I pay for some fancy Google AI thing now because it was.
+652.04-657.39 | SPEAKER_02: They got bundled. Yeah, got bundled with, with, yeah, with your normal Google account. Yeah, yeah.
+657.47-659.23 | SPEAKER_02: It was super weird. I had Google storage.
+659.49-673.02 | SPEAKER_01: Which, if you're working with a swarm of clankers, you know that you start filling up hard drive space, and you know how expensive an SSD is right now. So having that extra storage with the, the AI is, it makes a lot of sense.
+673.41-703.07 | SPEAKER_02: Yeah, it's, it's nuts. Yeah, I mean, I like my, my clankers have a thing that if we get below twenty gigabytes on the disks that they're running on, they start like throwing errors and stuff, and it's just like errors constantly, man. I'm like constantly expanding these disks. I've got like, I probably something like ten, ten terabytes now in GCP, because the more agents you have, they're all running, you know, five, ten gigs per agent and tens, thousands of agents, it just burns through space. It's crazy.
+703.07-709.76 | SPEAKER_02: But yeah, try, try, try Neon. It's an exceptional model. It's very, very good.
+710.21-715.74 | SPEAKER_01: Well, my clanker just said that Google already passed OpenAI and OpenRouter in spend.
+716.54-717.70 | SPEAKER_02: I'm not surprised.
+718.40-729.53 | SPEAKER_02: I'm not surprised. And, but this is the other thing is like, you know, the, the Ultra account, the Google Anti-Gravity Ultra account, I think costs like four, five hundred bucks US.
+729.53-731.74 | SPEAKER_01: Okay, it's like a higher tier, yeah.
+731.74-752.74 | SPEAKER_02: It's a higher tier, but you get, and this is the thing, you get three hundred x capacity, whatever that means, right? Whereas, you know, remember Claude was like twenty x capacity over the lower tier ones, right? But Google's lowest tier has zero capacity effectively. So three hundred x times what? Like, there's just too many confounding variables to figure out what the hell
+753.34-762.27 | SPEAKER_02: is going on. And so the only way is to, is to try and reverse engineer it and figure out like the per dollar of compute that you're actually getting.
+762.85-782.78 | SPEAKER_02: So yeah, and, and that's not even factoring in, you know, because people were talking about this with DeepSeek. They're like, okay, DeepSeek's really smart and super cheap. But if it takes ten times more tokens to do the same thing, you know, if you say, okay, what's one plus one, and it burns ten thousand tokens, and you know, Neon burns one thousand tokens.
+783.36-796.90 | SPEAKER_02: Then it has to be ten times cheaper for, you know, to solve that particular problem, right? So, you know, there's just... it's really hard right now to work out which model to use, really hard. So...
+796.90-818.62 | SPEAKER_01: But like you saying that you're willing to talk to it, I feel like that's like... this is a common thread here. It's get this guy out of my face. Kane says that every week about the latest model, and I agree about the Opus 5.5. Like I'm... oh man, there's a fly here. I'm... I'm around a lot of cattle out here at the farm, so I got flies flying around. But like, if you're saying you're willing to talk to this guy, that goes a long way.
+819.10-827.86 | SPEAKER_02: Yeah, it's crazy. You can talk to, you can talk to Neon, which is funny because I wouldn't talk to Carbon, the guy that's supposed to be like way smarter than you, yeah.
+827.86-833.93 | SPEAKER_00: Yeah, but the smart guys aren't always the talky ones. Yeah, yeah, yeah. That's like sometimes you hire based on vibes.
+833.93-835.26 | SPEAKER_02: Yeah. Yeah.
+835.35-837.24 | SPEAKER_02: Yeah, exactly, exactly.
+837.24-840.59 | SPEAKER_00: All right. Well, I'll, I'll try it out this week, and we'll.
+840.59-849.57 | SPEAKER_01: I'm gonna run it against ETH Evals too. I feel like we have a nice Ethereum Evals suite. ETH Evals dot com, and I'm gonna run Neon against it as soon as we hang up here.
+851.52-852.28 | SPEAKER_01: All right.
+852.28-859.74 | SPEAKER_02: Let's see. Let's see. So we didn't even get a chance to talk about Anthropic and Rima and this.
+859.74-860.70 | SPEAKER_00: Oh yeah.
+860.70-866.97 | SPEAKER_02: I guess we should talk about like... I don't know, man. Like this is... this is...
+866.97-868.48 | SPEAKER_00: I think it's just fucking cool.
+868.99-877.84 | SPEAKER_02: It's super cool, but you know, and like a lot of people are like, ah, it doesn't really matter. We assumed it was true for all values that are, you know.
+877.84-886.53 | SPEAKER_01: That's the thing. Is like we, does humanity really gain anything by proving these things? It's like they're, like, it's like we're trying to
+887.30-895.95 | SPEAKER_01: like come up with a proof, the thing that we all already think is already like... what, what does humanity gain by these proofs? Like...
+895.95-898.49 | SPEAKER_00: Oh! Oh! Oh! I have an answer.
+
+0.00-1.35 | SPEAKER_00: Uh.
+1.35-10.00 | SPEAKER_01: We're slowly unbundling academia and making all the academics lose their fucking minds that a machine has replaced them.
+10.00-14.41 | SPEAKER_02: Guess that's something we have to gain.
+14.41-26.98 | SPEAKER_01: Well, then, that's a gain depends entirely on your view of academia. Yeah, but that's what I feel like is happening. And you know, it's, I mean, there's obviously, there's more to it than just that, but I do think that like.
+27.84-41.41 | SPEAKER_01: To a certain extent, that academics have gotten just, they've, they've created their own little cult. To it, they've just gone a little bit off the deep end into like Kool-Aid land. I think.
+41.98-43.35 | SPEAKER_01: Reinvigorating that.
+43.35-45.73 | SPEAKER_03: A little bit of, a little bit of competition, yeah.
+45.73-66.48 | SPEAKER_01: Yeah, it's not necessarily the worst thing in the world. Also, just like making it more accessible and like returning those guys to the real world, because keep in mind, like, there's a lot, there's a lot of energy, there's a lot of like money that goes into like literally academia where they just sit around and like try to do things like this. Sure. So like, can we talk about the fact?
+66.48-69.18 | SPEAKER_03: That this is like one guy. This is like one.
+69.18-81.89 | SPEAKER_02: Yeah, that's the coolest thing. This is some dude with some clankers. Yeah, yeah. Or like some dude who's like, I was sick today, so I stayed home and built this thing, and it's solving these math equations that all of academia can't solve.
+82.05-87.78 | SPEAKER_01: Yeah, but I mean, that's, it's gonna be super interesting. I think to see how this right now, it's, it's.
+88.32-113.09 | SPEAKER_01: I mean, it's basically just like academia plus plus, right? It's just like a little bit, but it's the same. I think it's gonna be more interesting when it's like, okay, wait, what does it mean to be like a human in this realm, right? Are you just guiding the clankers? Is that what your existence is about, or are you the one that's gonna turn whatever? How much was this one that had like just the piles and piles of lean? We're like, yeah, we won't even know for like.
+113.38-115.42 | SPEAKER_02: A while, yeah.
+115.42-134.10 | SPEAKER_01: Yeah, so it's like, is your, is the, is the academic path, is the human role right to, uh, guide the clanker, to translate the lean, or is it going to be like some other yet unknown thing that's hopefully more useful to humanity, right?
+134.94-136.51 | SPEAKER_01: I'm betting on the last.
+136.51-150.31 | SPEAKER_02: That is my big question, is like, what are the next like steps of this, and how can it benefit humanity? And when do we start getting to the steps where humanity benefits here, like room temperature semiconductors and the batteries and fusion power?
+151.16-153.15 | SPEAKER_02: Yeah. So you could be able to.
+153.15-180.91 | SPEAKER_01: These proofs, right? Like, and you know, like people have been saying, like, oh, we, we assume that the proofs were, yeah, okay, but like now what, right? And I think that when you for so long people have just gone down this rabbit hole to chase these things, and now that AI is sort of like broken it open and being like, okay, we can actually prove them now, humans don't have to waste this energy. The humans are going to have to figure out where to send the energy, and I'm, I'm a hundred percent on board with that, and that's mostly.
+180.91-184.65 | SPEAKER_03: Dude, they're just gonna go into finance, Ken. They're just gonna, so the math guys will.
+185.28-190.99 | SPEAKER_03: They were like the lost guys that weren't in finance. They're like, ah fuck it. I guess I'll get a job at fucking Citadel or something. Let's do some.
+190.99-193.99 | SPEAKER_02: Tokens next, yeah. Oh, go ahead, sorry. So, so.
+196.54-226.26 | SPEAKER_03: I was, I was having a conversation with the, the Bode guys last night, and I was making my bull case for like all of the intelligence sellers, right? Google, OpenAI, Anthropic. I think that people are, are extremely confused about what is going on right now because of one dynamic. Like, there's one core dynamic here, which is.
+226.26-230.82 | SPEAKER_03: The thing that they are selling the intelligence to do.
+231.81-244.51 | SPEAKER_03: Is building software. That's the primary thing. There, there are some ancillary things like solving math, but like primarily, the consumers of intelligence right now through the labs are building software.
+245.38-273.34 | SPEAKER_03: To the point that they have created the most deflationary pressure on software ever in history, right? Software was going up in price, and now it's going to zero. Yes, it's going to zero, right? Okay. Now, software can go to zero because the inputs to software were the only inputs that mattered really for software, were the human labor to write the lines of code, right?
+273.34-281.98 | SPEAKER_03: There was like one primary input that was the cost. Some, some supporting things. You've now removed the most expensive part of it.
+282.46-308.26 | SPEAKER_03: But here's the crazy dynamic that I don't think people are appreciating. Right, the people that you are selling a thing to to do a thing are producing a thing that you are deflating the value of faster almost than you can sell it. Right, that dynamic will not keep playing out. It will not keep playing out when clankers are good at other things.
+309.50-314.18 | SPEAKER_03: Biology, whatever, biology will not.
+314.75-343.58 | SPEAKER_03: Fucking go to zero, right? Producing medicines will not go to zero because there is not only one input. They're not digital things. They're, you know, to produce medicine, you need factories and all of these things. So the inputs are human intelligence plus a bunch of other things, operational things, right? Software is not that. It was just human intelligence. Once you've got that, it's a digital construct. You can spread it out. It's fine. Like it, but it's still dope. Like I love.
+343.58-349.40 | SPEAKER_02: Software, like we'll still use tons of software. It just won't cost very much to make. Like everyone remaining in their own software.
+349.40-379.10 | SPEAKER_03: That if I'm selling you a thing to make software, and you're like, well, my job is making software that I can sell, but I'm collapsing the price of the salability. It's a weird dynamic to be in, right? Like you're literally collapsing the industry that you is your primary purchaser of the thing. That as soon as it shifts over to one slight degree to the right or to the left, and selling the intelligence does not collapse that industry, right?
+380.35-390.88 | SPEAKER_03: There will be infinite demand for intelligence. If you are Glaxo, right, and clankers are now producing fucking
+391.97-406.69 | SPEAKER_03: cures to weird diseases or common diseases or whatever, and your only path to keeping up with your competitors is to pay for the intelligence that is producing those innovations. You will pay a trillion dollars a year.
+407.30-432.09 | SPEAKER_03: To Anthropic, you won't have a choice, right? Because you will still have all of the regulatory moats, you'll still have the operational moats, you'll still have the, you know, manufacturing moats, right? But you will have no choice but to pay for the intelligence to produce fucking an Alzheimer's vaccine or whatever the hell that thing is, right? And that's coming, like.
+432.09-460.62 | SPEAKER_03: That's coming. We're like six months away from that. So we've been watching this weird software deflationary spiral to zero thing, right? And going, ah, like no, you know, their revenues are great, but it's not like anyone's paying them a trillion dollars a year. Bro, people are going to be paying them a trillion dollars a year so fucking quick, it's going to make your head spin. And they're going to be worth fifty trillion because they've replaced all of the human labor that used to produce the progress in these industries.
+460.62-479.14 | SPEAKER_03: And now it's just you need a factory and some bros who are just like stamping the pills or whatever the fuck they're doing, right? Like, I'm, I'm so convinced of this. I, I think that we are severely mispricing intelligence because we've pointed intelligence at a thing that you can deflate faster than you can sell it.
+479.36-488.42 | SPEAKER_02: And this would be so scary if it was just one player. Like, thank God there's competition here, and other people are creating. Like, superintelligence is going to happen all around us, hopefully.
+489.79-499.33 | SPEAKER_03: So yeah, I think like Google, Meta, OpenAI, Anthropic, these guys are going to fucking a hundred trillion, man. Like.
+501.38-513.92 | SPEAKER_03: I'm, I'm telling like, like how much do we pay? This is what I said to them. I said, how much do we pay humans yearly to produce the progress of society?
+516.83-518.82 | SPEAKER_03: Like all of it.
+519.34-539.36 | SPEAKER_03: It all goes to humans. Humans capture all of that value, whether it's in equity or cash or whatever. All of the progress of society is captured somehow by a human. We're about to fucking have the most huge deflection in where those, where that value flows. It's going to flow to like fucking four labs, man.
+539.36-545.14 | SPEAKER_02: Okay, that was centralized. If it's just four players, that's not enough. Like, no, but it's.
+545.14-554.50 | SPEAKER_01: Well, but then you, then you have to figure out how to get it back to this is like where we started, right? We have to get back to society and humanity, and not destroy humanity, right?
+555.07-566.02 | SPEAKER_01: To progress humanity on the whole, so that and yeah, the labs can capture some value. Like, don't get me wrong, but like ultimately, like it does have to somehow benefit all of us, and not.
+566.14-567.46 | SPEAKER_01: I think, dude, if you have an.
+567.55-568.71 | SPEAKER_01: Alzheimer's vaccine.
+568.71-575.65 | SPEAKER_03: Like you have an Alzheimer's fucking cure, cancer cures, like that's gonna benefit me. I'm super happy about that.
+575.65-580.96 | SPEAKER_01: And that's what I think. I think we're just in this little, this part right now where it does feel very.
+581.47-585.95 | SPEAKER_01: I think it feels quite high risk, and it feels like there's perhaps.
+587.62-605.02 | SPEAKER_01: More harm or violence, like just with like all the hacks, especially you're just like sitting there. You're like, Jesus, this is gonna end the world. But the reality is, like, I think we'll find equilibrium with, especially on the cyber end, and then you look at what it can do.
+605.50-609.31 | SPEAKER_01: I mean, for cyber, but also for everything else. I think we'll be fine.
+609.34-625.41 | SPEAKER_03: I don't know, dude. Like, like making software. No one knows how software works, right? Like, ninety-nine percent of the world does not know how software works. It's like, oh, it's a website or Excel. Just click the button, right? So the fact that this industry has been completely imploded.
+625.41-639.77 | SPEAKER_03: In front of their eyes, there's no way for a regular person to interpret what's going on there, right? Like they, like, but all of a sudden it's pointed at medicine or, you know, fucking room temperature superconductors or fucking, you know, producing ultra hot.
+639.77-647.54 | SPEAKER_02: Or some of this academic stuff is, is helping convince normies that superintelligence is coming, and it's actually a good thing.
+647.54-657.42 | SPEAKER_03: They get math. I think they get math even less than software. If you were to point it at a thing that's less meaningful to the end user, math is like, you know.
+657.62-670.59 | SPEAKER_03: Yeah. So, so, but like we, we are so close to it being pointed at something that has like an actual societal impact, and I'm telling you, the world is going to lose its fucking goddamn mind. We are like in crypto.
+670.59-690.90 | SPEAKER_03: Right now, where like Bitcoin's, you know, five K, ten K, and no one gets it, and then all of a sudden it's a hundred grand, and fucking every trad fire bro is talking about it. We're in that, even though everyone's like, oh, AI bubble. The impact of AI on the average person's life today, ninety-nine percent of the world is zero, fucking zero, man, and so.
+690.90-698.32 | SPEAKER_02: Do you think it'll be those four incumbents that that will rip? Do you think someone else will come out of nowhere with something else?
+698.32-700.21 | SPEAKER_03: I don't. I don't even care, man. I don't.
+700.21-711.42 | SPEAKER_02: We do know that super intelligence is going to rip, and it's going to go to these other industries that will have more impact on real humans. Humans will get it. Humans will buy it, and
+712.06-720.81 | SPEAKER_02: Something's gonna go way up. Yeah. If not these four incumbents, I mean, maybe E. Why not E? Why not E?
+721.09-721.92 | SPEAKER_01: Easy as it is.
+722.39-725.01 | SPEAKER_01: Please, please, all right, then.
+725.01-726.79 | SPEAKER_03: Okay, let's close it out.
+726.96-728.83 | SPEAKER_03: Why not E? Let's let's end.
+728.83-730.86 | SPEAKER_01: On E.
+731.30-754.46 | SPEAKER_03: E to one hundred trillion. All right. Thanks for joining us for this episode of Uneasy Money. Remember, what happens on chain never stays on chain. Be back next week. Thank you, guys. Thank you. See you. Nothing you hear on Uneasy Money is financial advice. We're just three builders talking about what's happening on chain, and we want you to always do your own research before aping anything. You can find all our disclosures at uneasy.com/uneasy-money.
