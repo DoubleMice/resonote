@@ -1,7 +1,7 @@
 source: unchained
-refreshed_at: 2026-11-25T18:09:19.876Z
+refreshed_at: 2026-11-26T03:03:12.488Z
 min_duration: 3300
-min_date: "20261104"
+min_date: "20261105"
 total_candidates: 7
 done: 7
 pending: 0
@@ -115,8 +115,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-25T18:09:21.088Z
     transcript_job_id: 2ff67466-e2e7-4fdd-b539-e317c50ca30d_2sn0lug5e15xzm5ce8_a0e08f6358484b82bb098b0215746e2f,65296c4c-f8ae-4b4e-964b-d2af5e4da2b6_2twrgeg5e1dcaton40_8812abffec6448c7a80193b51087f7bc,3875a584-63c8-4fc2-aeb0-d1d0c548e07d_2twnmxg5e1inx7jls0_5537ed2736bd4761b98a1f3c9cfa009e,818be1c5-40e3-4441-99fc-98ba46ee288c_2twnojg5e1pvtjlzwg_a70ac3f2b74c4b77807df0123a399d7c,d653a131-013f-44b4-9304-c3ffed41bcb9_2tvsx6g5e1xtwf6eww_c9f0f0819ace4dd6a487a0661097b885,df9e76a2-687a-4670-b326-f07e67f23387_2u6f0zg5e23n34rtvk_0265d55bf1bc4c4ab3ff73bb00661af3
+    transcript_submitted_at: 2026-11-25T18:09:21.088Z
     transcript_completed_at: 2026-11-25T18:21:49.678Z
   - id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
     guid: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
@@ -219,8 +219,8 @@ episodes:
     status: generated
     priority: 1
     transcript_provider: mimo
-    transcript_submitted_at: 2026-11-25T18:54:36.994Z
     transcript_job_id: e0b76f47-b892-45f7-89be-6c2212cc4b47_2twexyg5e5738wvoxs_838abe8de49340e8a83c39e61fc05163,f7b9a1b1-9743-4931-80f1-679e2edd20d5_2tvlp9g5e5bvwd6osg_bd41c96bf2ea437581b255edf7c7d716,3b232959-57e1-4b97-93b9-cfcd17edbee9_2twj2gg5e5gwqltybk_0652f4572163478d8a128fe14c4ee086,be8e46e3-a8d7-4822-ba6d-d99eb9c44129_2sn00tg5e5l0rafy0w_fbfbfbd3a78d42e182a11c360e56422d,8a40d55e-4e94-4b2c-9142-999503f8894c_2sn0lug5e5p2svzwu8_d408c105d0d0403cb86e015e06d84270
+    transcript_submitted_at: 2026-11-25T18:54:36.994Z
     transcript_completed_at: 2026-11-25T19:00:56.967Z
   - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     guid: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
