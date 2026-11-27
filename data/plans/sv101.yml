@@ -1,15 +1,138 @@
 source: sv101
-refreshed_at: 2026-11-26T18:08:58.188Z
+refreshed_at: 2026-11-27T03:03:33.431Z
 min_duration: 3600
 min_date: "20260101"
-total_candidates: 5
+total_candidates: 6
 done: 5
 pending: 0
-needs_transcript: 0
+needs_transcript: 1
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
 episodes:
+  - id: 9753c5f7-03dd-4cfa-8d4a-40531f7c4b79
+    guid: 9753c5f7-03dd-4cfa-8d4a-40531f7c4b79
+    title: E261｜表演有效、组团出海，韩国美妆如何抢占美国市场？
+    duration: 5422
+    published: Thu, 26 Nov 2026 15:00:00 -0800
+    published_sort: "20261126"
+    first_seen_at: 2026-11-27T03:03:33.431Z
+    url: https://sv101.fireside.fm/275
+    audio_url: https://aphid.fireside.fm/d/1437767933/f0f20376-8faf-4940-b920-84af6c734e2d/9753c5f7-03dd-4cfa-8d4a-40531f7c4b79.mp3
+    image: https://cdn.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover.jpg?v=6
+    summary: |-
+      在现在这个节骨点，如果问韩国出口全球、销量暴涨的东西，除了三星和海力士的储存芯片外还有什么，那韩妆一定会有姓名。
+
+      早在2025年，韩国的美妆出口额就超过了美国，成为仅次于法国的全球第二大美妆出口国，到了2026年，这个势头变得愈发不可收拾。过去两年，它在全球的销售额增长了一倍多，美国有近25%的家庭都用过韩妆产品，今年前三季度出口英国的韩妆还同比增长了1.8倍。
+
+      平价的定位是韩妆席卷全球的原因之一，消费者会惊叹于只花一两百人民币，或者10-50美元，就能买来看上去很有科技含量的PDRN、蜗牛粘液。但韩妆风靡的背后，其实是韩国一整套配合出海的机制，比如品牌对营销概念的手拿把掐，韩国想要用文化出海辅助产品出海的国策，以及，他们上下游全产业链的组团式出海。
+
+      【主播】
+
+      麻花，硅谷101消费话题研究员，消费101主播
+
+      【嘉宾】
+
+      寒笑 Ray， “美妆内行人 Beauty Insiders”创始主编
+
+      Kelly，商业科技博主，“凯莉彭”账号主理人
+
+      【你将听到】
+
+      韩妆格局大盘点：谁在火，谁在卖
+
+      03:35 韩妆涌进美国线下店，甚至Costco都出了韩妆大套装
+
+      07:05 1/4的美国家庭买过韩妆产品
+
+      11:30 1.0韩妆 vs 2.0韩妆，渠道、特色大不同
+
+      16:04 现在的韩妆甚至不需要消费者记住品牌名
+
+      20:38 新三富 vs 旧三富，韩妆背后的新造富神话
+
+      25:17 当年的特殊事件，反而成了新三富崛起的天时地利人和
+
+      研发制造、零售营销和出海贸易，韩妆链条大拆解
+
+      27:10 中国、韩国和欧美的美妆，研发流程大不同
+
+      35:06 全球美妆ODM双巨头科丝美诗和科玛，能力早不止研发制造了
+
+      44:39 消费者都想美妆产品有功效，而韩妆最擅长“表演有功效”
+
+      51:37 韩式审美为什么强，根源可能是岛国倒逼的审美内卷
+
+      58:16 从Gentle Monster和K-pop，看韩国人表达美玩得有多花
+
+      01:01:07 K-pop辅助韩妆出海，已经纳入“国策”了
+
+      01:07:46 韩国最大的美妆全球贸易商，居然是做半导体起家的
+
+      01:13:15 “韩版屈臣氏”Olive Young，成了外国人接触韩妆的重要渠道
+
+      唱唱反调：韩妆出海那么强，隐患又在哪儿？
+
+      01:20:53 擅长放烟花的韩妆，已经有太多品牌死在了沙滩上
+
+      01:26:40 中国美妆，可以对未来更有信心一点
+
+      【相关阅读和名词解释】
+
+      K-Beauty Goes Global: Sales Surge 53% as Korean Innovation Reshapes Beauty Growth
+
+      快速铺货欧美，K-Beauty 如何长成 “美妆版 Shein” ？
+
+      小市场，大品牌：韩妆为什么比我们更早学会做全球生意？
+
+      本期播客中提到的相关品牌和企业：
+
+       韩妆品牌：Beauty of Joseon朝鮮美人、d'Alba、Torriden 桃瑞丹、Medicube、COSRX、Aestura、TIRTIR， Skin 1004、Round Lab 、Skinfood、Mediheal美迪惠尔、Mixsoon、Anua、兰芝、悦诗风吟、雪花秀、WHOO后、The Face Shop、伊蒂之屋、自然乐园、3CE，Dr.Jart+蒂佳婷
+       韩妆企业：爱茉莉太平洋、LG健康生活、爱敬、APR、d'Alba Global、Goodai Global
+       韩妆ODM公司：科丝美诗 COSMAX、韩国科玛 Kolmar Korea
+       韩妆出海分销商：SILICON2
+       中国美妆：巨子生物、优时颜、玛丽黛佳、珀莱雅、花知晓、创元集团
+       零售商：Musinsa、 Olive Young、T&T Supermarket大统华 、Ulta Beauty、 Target塔吉特、 Sephora丝芙兰
+
+      【新播客：消费101】
+
+      《消费101》是《硅谷101》团队新开设的消费垂类节目，由资深消费记者&研究员麻花担任主播，是一档提供有趣、有料、有用的消费行业观察与品牌解读的播客。每周更新，欢迎关注！
+
+      【监制】
+
+      泓君
+
+      【后期】
+
+      Amei
+
+      【运营】
+
+      朱婕
+
+      【BGM】
+
+      ALL MY GIRLS - ALICE
+
+      Don't Stop - I'MIN
+
+      Fantasize - I'MIN
+
+      STYLE - Ballpoint
+
+      【在这里找到我们】
+
+      公众号：硅谷101
+
+      收听渠道：Apple Podcast｜Spotify｜小宇宙｜喜马拉雅｜蜻蜓FM｜荔枝FM｜网易云音乐｜QQ音乐
+
+      其他平台：YouTube｜Bilibili 搜索「硅谷101播客」
+
+      联系我们：podcast@sv101.net
+
+      Special Guests: Kelly and 寒笑Ray.
+    status: needs_transcript
+    priority: 1
   - id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
     guid: 34b5fd41-4431-485c-98e6-c8a7008b2d62
     title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场
