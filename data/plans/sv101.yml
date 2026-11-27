@@ -1,11 +1,11 @@
 source: sv101
-refreshed_at: 2026-11-27T03:03:33.431Z
+refreshed_at: 2026-11-27T18:08:24.718Z
 min_duration: 3600
 min_date: "20260101"
 total_candidates: 6
-done: 5
+done: 6
 pending: 0
-needs_transcript: 1
+needs_transcript: 0
 transcribing: 0
 transcribe_failed: 0
 downloaded: 0
@@ -131,8 +131,12 @@ episodes:
       联系我们：podcast@sv101.net
 
       Special Guests: Kelly and 寒笑Ray.
-    status: needs_transcript
+    status: generated
     priority: 1
+    transcript_provider: mimo
+    transcript_submitted_at: 2026-11-27T18:08:26.268Z
+    transcript_job_id: 1c0a5883-d162-4790-b819-8cfdb52830a7_2sn0y4g5l600vjk3y8_3fd925e55bd04db983db4826db8fe78c,00982fa9-45bb-475c-832a-431abd1cf1f7_2smz9jg5l64g71lp8g_5f411ec2393c437395693d8b443eb28a,b5a02cca-c376-4199-b8b8-9a8a5f2e959f_2twnp8g5l67mnz91q8_8e08fcfe31e6449b9885552391cf3f85,83ef5a29-f4b5-4543-8939-91bc78e32466_2twhkmg5l6cxu05hj4_e1a7e632c66e4a6d98e6a7a6c988b961,84e20acf-2a86-48fa-9e80-e523d9e12ab7_2tvsx6g5l6ib16z280_2ed9b5e1fa7a4063be1464d146be2501,d863d2ef-78c8-49ed-8bb4-f752c2bc41b8_2twd01g5l6nvpsqosg_10f814bad6aa41089926585f63b5c881,a86960e1-ff83-4a1e-ae9f-5729c918c142_2smzh8g5l6tazzp0xs_2a06072ab2fa4353b193aa1d7369e435
+    transcript_completed_at: 2026-11-27T18:18:04.619Z
   - id: 34b5fd41-4431-485c-98e6-c8a7008b2d62
     guid: 34b5fd41-4431-485c-98e6-c8a7008b2d62
     title: E260｜黄仁勋归来之际，深聊英伟达、CoreWeave和算力信用市场

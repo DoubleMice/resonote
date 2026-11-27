@@ -1,5 +1,5 @@
 source: unchained
-refreshed_at: 2026-11-27T03:03:33.390Z
+refreshed_at: 2026-11-27T18:08:24.680Z
 min_duration: 3300
 min_date: "20261106"
 total_candidates: 6
@@ -13,7 +13,7 @@ episodes:
   - id: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
     guid: b3b5a62e-e8f4-11f1-b82a-c3a1913aa16f
     title: "Uneasy Money: Why Freezing North Korea's $6.4B Binance Haul Gets Harder With Every Hop"
-    duration: 5263
+    duration: 5369
     published: Wed, 25 Nov 2026 17:21:00 -0000
     published_sort: "20261125"
     first_seen_at: 2026-11-25T18:09:19.870Z
@@ -121,7 +121,7 @@ episodes:
   - id: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
     guid: 04211822-e838-11f1-8bbe-0b7c80bf7a3f
     title: How Pearl Could Turn AI Data Centers Into a Challenger to Bitcoin
-    duration: 3827
+    duration: 3857
     published: Tue, 24 Nov 2026 18:51:00 -0000
     published_sort: "20261124"
     first_seen_at: 2026-11-25T03:03:22.690Z
@@ -225,7 +225,7 @@ episodes:
   - id: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     guid: 2fabddb8-e457-11f1-a5c5-d7971c18aa50
     title: "Uneasy Money: Is Anthropic's IPO a 'Must Buy' or an Existential Gamble?"
-    duration: 3976
+    duration: 4006
     published: Thu, 19 Nov 2026 20:24:00 -0000
     published_sort: "20261119"
     first_seen_at: 2026-11-20T03:03:14.867Z
@@ -335,7 +335,7 @@ episodes:
   - id: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     guid: 7e252e40-e2fe-11f1-927a-fbe1f6fcd054
     title: Why So Many Public Companies Are Saying No to Tokenized Stocks
-    duration: 3832
+    duration: 3862
     published: Wed, 18 Nov 2026 03:16:00 -0000
     published_sort: "20261118"
     first_seen_at: 2026-11-18T05:22:51.283Z
@@ -434,7 +434,7 @@ episodes:
   - id: b145fc70-dec4-11f1-9671-1b56aa1d87ba
     guid: b145fc70-dec4-11f1-9671-1b56aa1d87ba
     title: "Uneasy Money: Why Ethereum's 'Ultrasound Money' Meme Finally Ran Out of Road"
-    duration: 4551
+    duration: 4581
     published: Thu, 12 Nov 2026 18:12:00 -0000
     published_sort: "20261112"
     first_seen_at: 2026-11-13T03:03:23.352Z
@@ -546,7 +546,7 @@ episodes:
   - id: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     guid: 517d5018-dd6b-11f1-a60d-2bc1d7680ae1
     title: Why Bitwise's CIO Says the Blue Wave Won't Derail Crypto's Bull Market
-    duration: 3365
+    duration: 3395
     published: Wed, 11 Nov 2026 01:00:00 -0000
     published_sort: "20261111"
     first_seen_at: 2026-11-11T03:02:33.842Z
